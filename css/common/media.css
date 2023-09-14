@@ -1,0 +1,28 @@
+/* |||||||||| |||||||||| |||||||||| |||||||||| sm */
+@media (width <= 576px) {
+	.sm--col-span-0 {
+		grid-column: auto;
+	}
+	.sm--row-span-0 {
+		grid-row: auto;
+	}
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| md */
+@media (width <= 768px) {
+	.list {
+		--indent: var(--indent-off);
+	}
+
+	/* utilities */
+	.md--d-grid {
+		display: grid;
+	}
+	.md--d-none {
+		display: none;
+	}
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| lg */
+@media (width <= 992px) {
+}

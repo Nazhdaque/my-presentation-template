@@ -1,0 +1,46 @@
+:root {
+	--ff-rg: "Mont", sans-serif;
+
+	--fw-lt: 300;
+	--fw-rg: 400;
+	--fw-sb: 600;
+
+	--fs-xs: 0.75rem;
+	--fs-sm: 0.875rem;
+	--fs-rg: 1rem;
+	--fs-md: 1.25rem;
+	--fs-lg: 1.75rem;
+	--fs-xl: 2rem;
+	--fs-2xl: 3rem;
+	--fs-3xl: 4.5rem;
+
+	--lh-rg: 1.65;
+}
+
+/* titles */
+.ttl-rg {
+	font-size: var(--fs-lg);
+}
+.ttl-md {
+	font-size: var(--fs-xl);
+}
+.ttl-lg {
+	font-size: var(--fs-3xl);
+}
+
+/* text */
+.txt-xs {
+	font-size: var(--fs-xs);
+}
+.txt-sm {
+	font-size: var(--fs-sm);
+}
+.txt-rg {
+	font-size: var(--fs-rg);
+}
+.txt-md {
+	font-size: var(--fs-md);
+}
+.txt-lg {
+	font-size: var(--fs-xl);
+}

@@ -1,0 +1,21 @@
+.layout-body {
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+}
+
+.layout-center {
+	display: grid;
+	grid-template-columns: 1fr minmax(0, var(--max-content-width)) 1fr; /* min-content in minmax function  doesn't work with swiper */
+	height: 100%;
+	padding-inline: 1rem;
+
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.layout-center > *:not(.grid-full-width) {
+	grid-column: 2;
+	z-index: 1;
+}

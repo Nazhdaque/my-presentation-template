@@ -1,0 +1,59 @@
+.btn {
+	--btn-radius: 0rem;
+	--btn-border-thickness: 0.1rem;
+	--btn-p-block: 1em;
+	--btn-p-inline: 1.5em;
+	/* --btn-shadow: 0 0.85em 0.5em -0.5em hsl(var(--hue), 100%, 50%, 0.5); */
+
+	color: var(--btn-clr-txt);
+	background-color: var(--btn-clr-bg);
+	border: var(--btn-border-thickness) solid var(--btn-clr-border);
+	box-shadow: var(--btn-shadow);
+
+	border-radius: var(--btn-radius);
+	font-weight: var(--fw-md);
+	line-height: 1;
+	padding: var(--btn-p-block) var(--btn-p-inline);
+	text-transform: inherit;
+	letter-spacing: inherit;
+	transition: color var(--time) var(--easing),
+		background-color var(--time) var(--easing),
+		border-color var(--time) var(--easing);
+	max-width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.btn:where(:hover, :focus-visible) {
+	color: var(--btn-clr-txt--focus-hover);
+	background-color: var(--btn-clr-bg--focus-hover);
+	border-color: var(--btn-clr-border--focus-hover);
+}
+
+.btn:active {
+	color: var(--btn-clr-txt--active);
+	background-color: var(--btn-clr-bg--active);
+	border-color: var(--btn-clr-border--active);
+}
+
+/* |||||||||| */
+.btn--p-x00 {
+	--btn-clr-txt: hsl(var(--hue), 100%, 50%);
+	--btn-clr-bg: var(--hue);
+	--btn-clr-border: var(--hue);
+
+	--btn-clr-txt--focus-hover: hsl(var(--hue), 100%, 50%);
+	--btn-clr-bg--focus-hover: transparent;
+	--btn-clr-border--focus-hover: hsl(var(--hue), 100%, 50%);
+
+	--btn-clr-txt--active: hsl(var(--hue), 100%, 50%);
+	--btn-clr-bg--active: transparent;
+	--btn-clr-border--active: hsl(var(--hue), 100%, 50%);
+}
+
+.outlined {
+	--btn-clr-bg: transparent;
+	--btn-clr-border: var(--hue);
+	--btn-shadow: none;
+}

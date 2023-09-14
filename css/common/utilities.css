@@ -1,0 +1,153 @@
+/* no scroll on open modal */
+.root-scroller {
+	block-size: 100dvb;
+	overflow: auto;
+	scrollbar-gutter: stable both-edges;
+
+	&:has(dialog[open]:modal) {
+		overflow: hidden;
+	}
+}
+
+/* a11y */
+.sr-only,
+.sr-only-focusable:not(:focus):not(:focus-within) {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* grid */
+.grid-x {
+	--shrink: 0.85;
+	--width: var(--max-content-width);
+	--gap: 1rem; /* unit is required even if it is 0! */
+	--count: var(--repeat, auto-fit);
+
+	--col-x: repeat(
+		var(--count),
+		minmax(
+			min(
+				(
+					((var(--width) - var(--gap) * (var(--col) - 1)) / var(--col)) *
+						var(--shrink)
+				),
+				100%
+			),
+			1fr
+		)
+	);
+
+	display: grid;
+	gap: var(--gap);
+	grid-template-columns: var(--col-x);
+}
+
+.flex-x {
+	--shrink: 0.85;
+	--width: var(--max-content-width);
+	--gap: 1rem; /* unit is required even if it is 0! */
+
+	--width-x: min(
+		(
+			((var(--width) - var(--gap) * (var(--col) - 1)) / var(--col)) *
+				var(--shrink)
+		),
+		100%
+	);
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: var(--gap);
+}
+.flex-x > * {
+	flex: 1 1 var(--width-x);
+}
+
+.width-x {
+	--width: var(--max-content-width);
+	--gap: 0rem; /* unit is required even if it is 0! */
+
+	--width-x: min(
+		(
+			((var(--width) - var(--gap) * (var(--col) - 1)) / var(--col)) * var(--x) +
+				var(--gap) * (var(--x) - 1)
+		),
+		100%
+	);
+
+	width: var(--width-x);
+}
+
+/* --- */
+.grid-full-width {
+	grid-column: 1 / -1;
+}
+
+.col-12 {
+	--col: 12;
+}
+.col-6 {
+	--col: 6;
+}
+.col-4 {
+	--col: 4;
+}
+.col-3 {
+	--col: 3;
+}
+.col-2 {
+	--col: 2;
+}
+.col-1 {
+	--col: 1;
+}
+
+.c-span-x {
+	grid-column: span var(--x, 2);
+}
+.r-span-x {
+	grid-row: span var(--x, 2);
+}
+
+/* scroll-snap */
+.scroll-snap-inline {
+	--items: 12; /* number of grid-items */
+	--row: calc(var(--items) / var(--repeat));
+	--flow: column;
+
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	grid-template-rows: repeat(var(--row, auto), min-content);
+	grid-auto-flow: var(--flow, row);
+}
+.scroll-snap-inline > * {
+	scroll-snap-align: center;
+}
+
+/* img */
+.o-fit-cover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.img-box {
+	position: relative;
+}
+.img-box img {
+	position: absolute;
+	inset: 0;
+}
+
+/* --- */
+.v-visible {
+	visibility: visible;
+}

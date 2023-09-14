@@ -1,0 +1,17 @@
+.nav-links {
+	display: flex;
+	gap: 1em;
+}
+
+.nav-links__link {
+	--p-inline: 0.65em;
+
+	padding-inline: var(--p-inline);
+	display: inline-flex;
+	height: var(--logo-height);
+	align-items: center;
+	transition: color var(--time) var(--easing);
+	color: hsl(var(--hue), 100%, 50%);
+}
+/* .nav-links__link:where(:focus-visible, :hover) {
+} */

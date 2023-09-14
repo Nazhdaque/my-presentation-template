@@ -1,0 +1,170 @@
+.sidebar {
+	--col: 3;
+	--x: 1;
+
+	--sb-gap: 0.75rem;
+	--sb-padding: 0 calc(var(--sb-gap) * 2) 0 0;
+	--sb-border: 1px dotted var(--clr-primary-100-solid);
+	--sb-chevron-size: 1em;
+	--sb-chevron-clr: var(--clr-primary-900-solid);
+
+	--marker-lg--font-size: 2rem;
+	--marker-lg--size: calc(var(--marker-lg--font-size) * 2);
+
+	--marker-sm--font-size: 1rem;
+	--marker-sm--size: var(--marker-lg--size);
+
+	overflow-y: scroll;
+	overscroll-behavior: contain;
+	max-height: 100vh;
+	height: min-content;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin-block: auto;
+	z-index: 999;
+	background-color: var(--clr-primary-900-solid);
+	counter-reset: sidebar-counter;
+	translate: var(--width-x);
+	display: none;
+	box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.1);
+	transition: translate var(--time) var(--easing);
+}
+.sidebar.isOpen {
+	translate: initial;
+}
+
+.sidebar > * + * {
+	border-top: var(--sb-border);
+}
+
+.sidebar-item__ttl {
+	position: sticky;
+	top: 0;
+}
+
+.sidebar-item__btn {
+	width: 100%;
+	font-family: inherit;
+	font-size: var(--fs-rg);
+	font-weight: var(--fw-sb);
+	color: var(--clr-primary-900-solid);
+	background-color: var(--clr-primary-100-solid);
+	cursor: pointer;
+	transition: color var(--time) var(--easing);
+	display: grid;
+	grid-template-columns: min-content 1fr min-content;
+	align-items: center;
+	text-align: left;
+	gap: var(--sb-gap);
+	padding: var(--sb-padding);
+}
+
+.chevron {
+	stroke: var(--sb-chevron-clr);
+	width: var(--sb-chevron-size);
+	min-width: var(--sb-chevron-size);
+	aspect-ratio: 1;
+	transition: stroke var(--time) var(--easing),
+		transform var(--time) var(--easing);
+}
+.chevron-right {
+	transform: rotate(-90deg);
+}
+
+/* sidebar-item__links */
+.sidebar-item__links {
+	counter-reset: sidebar-item__counter;
+}
+.sidebar-item__links > * + * {
+	border-top: var(--sb-border);
+}
+
+.sidebar-item__link {
+	display: grid;
+	gap: var(--sb-gap);
+	grid-template-columns: var(--marker-lg--size) 1fr;
+	align-items: center;
+	padding: var(--sb-padding);
+	color: var(--clr-primary-100-solid);
+}
+
+/* marker */
+.marker::before {
+	place-self: start center;
+	/* border-radius: 50%; */
+	line-height: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: var(--fw-sb);
+	font-size: var(--marker-font-size);
+	color: var(--marker-clr-txt);
+	width: var(--marker-size);
+	aspect-ratio: 1;
+	background-color: var(--marker-clr-bg);
+	transition: background-color var(--time) var(--easing),
+		color var(--time) var(--easing);
+}
+.sidebar-item__btn.marker::before {
+	--marker-font-size: var(--marker-lg--font-size);
+	--marker-size: var(--marker-lg--size);
+
+	--marker-clr-bg: var(--clr-primary-900-solid);
+	--marker-clr-txt: var(--clr-primary-100-solid);
+
+	counter-increment: sidebar-counter;
+	content: counter(sidebar-counter);
+}
+.sidebar-item__link.marker::before {
+	--marker-font-size: var(--marker-sm--font-size);
+	--marker-size: var(--marker-sm--size);
+
+	--marker-clr-bg: var(--clr-primary-100-solid);
+	--marker-clr-txt: var(--clr-primary-900-solid);
+
+	counter-increment: sidebar-item__counter;
+	content: counter(sidebar-item__counter);
+}
+
+/* active states */
+.is-active .chevron {
+	--sb-chevron-clr: var(--clr-primary-500-solid);
+
+	transform: rotateX(180deg);
+}
+
+.sidebar-item__btn.marker:where(:focus-visible, :hover)::before,
+.sidebar-item__link.marker:where(:focus-visible, :hover)::before {
+	--marker-clr-bg: var(--clr-primary-500-solid);
+	--marker-clr-txt: var(--clr-primary-100-solid);
+}
+
+/* --- */
+.ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow-x: hidden;
+}
+.ellipsis-container:where(:hover, :focus-visible) .ellipsis {
+	overflow-x: auto;
+	scrollbar-width: none;
+	text-overflow: clip; /* for webkit-based browsers */
+}
+*:where(:hover, :focus) .ellipsis::-webkit-scrollbar {
+	display: none;
+}
+
+/* default accordion library styles */
+.ac-panel {
+	overflow: hidden;
+	transition-property: height, visibility;
+	transition-timing-function: ease;
+}
+.ac.js-enabled .ac-panel {
+	visibility: hidden;
+}
+.ac.is-active .ac-panel {
+	visibility: visible;
+}

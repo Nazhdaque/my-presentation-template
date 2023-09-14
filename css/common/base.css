@@ -1,0 +1,49 @@
+:where(*, *::before, *::after) {
+	box-sizing: border-box !important;
+	margin: 0;
+	padding: 0;
+}
+
+:where(img, picture, canvas, svg) {
+	max-width: 100%;
+	display: block;
+}
+
+:where(ul, ol) {
+	list-style: none;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+	line-height: 1.1;
+}
+
+:where(a, button) {
+	cursor: pointer;
+	font-size: inherit;
+	color: inherit;
+	border: none;
+	outline: none;
+	background: none;
+	text-decoration: none;
+}
+
+*::selection {
+	background-color: hsla(0, 100%, 50%, 0.15);
+}
+
+html,
+body {
+	overflow-x: hidden;
+	max-height: 100vh;
+	max-height: 100dvh;
+	scroll-behavior: smooth;
+	scroll-padding-top: 1rem;
+}
+
+body {
+	font-family: var(--ff-rg);
+	font-weight: var(--fw-rg);
+	font-size: var(--fs-rg);
+	color: var(--clr-neutral-900-solid);
+	line-height: var(--lh-rg);
+}

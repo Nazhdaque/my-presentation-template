@@ -1,0 +1,16 @@
+.main-footer__group {
+	height: var(--header-height);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.social-icon {
+	font-size: 3rem;
+	color: var(--clr-primary-900-solid);
+	transition: color var(--time) var(--easing);
+}
+
+.social-icon:where(:hover, :focus-visible) {
+	color: var(--clr-primary-500-solid);
+}

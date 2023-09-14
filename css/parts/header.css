@@ -1,0 +1,14 @@
+.main-header__group {
+	padding-block: var(--header-top) var(--header-bottom);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: var(--clr-n-100-solid);
+}
+
+/* --- */
+.header-placeholder {
+	max-height: 0;
+	overflow: hidden;
+	margin-bottom: var(--header-height);
+}

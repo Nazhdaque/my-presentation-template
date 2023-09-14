@@ -1,0 +1,28 @@
+@layer common, components, parts, utilities, media;
+
+@import url(./common/fonts.css) layer(common);
+@import url(./common/root.css) layer(common);
+@import url(./common/typography.css) layer(common);
+@import url(./common/base.css) layer(common);
+@import url(./common/layout.css) layer(common);
+
+@import url(./components/header-nav.css) layer(components);
+@import url(./components/sidebar.css) layer(components);
+@import url(./components/swiper.css) layer(components);
+@import url(./components/list.css) layer(components);
+@import url(./components/buttons.css) layer(components);
+@import url(./components/toggle.css) layer(components);
+@import url(./components/modal.css) layer(components);
+
+@import url(./parts/header.css) layer(parts);
+@import url(./parts/slides.css) layer(parts);
+@import url(./parts/slides-bgs.css) layer(parts);
+@import url(./parts/slide-1.css) layer(parts);
+@import url(./parts/slide-2.css) layer(parts);
+@import url(./parts/slide-3.css) layer(parts);
+@import url(./parts/footer.css) layer(parts);
+
+@import url(./common/utilities.css) layer(utilities);
+@import url(./common/media.css) layer(media);
+
+@import url(./common/xxx.css) layer(utilities); /* dev purposes only */

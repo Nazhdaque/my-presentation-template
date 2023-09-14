@@ -1,0 +1,29 @@
+.swiper {
+	--swiper-navigation-size: 2rem;
+	--swiper-navigation-top-offset: 50%;
+	--swiper-navigation-sides-offset: 1rem;
+	--swiper-navigation-color: var(--clr-primary-100-solid);
+
+	--swiper-pagination-color: var(--clr-primary-100-solid);
+	--swiper-pagination-bullet-inactive-color: var(--clr-primary-100-solid);
+	--swiper-pagination-bullet-inactive-opacity: 0.2;
+	--swiper-pagination-bullet-opacity: 1;
+	--swiper-pagination-bullet-size: 1rem;
+	/* --swiper-pagination-bullet-width: 1rem;
+	--swiper-pagination-bullet-height: 1rem; */
+	--swiper-pagination-bullet-horizontal-gap: 0.5rem;
+	--swiper-pagination-bottom: 1rem;
+
+	--swiper-scrollbar-border-radius: 0.75rem;
+	--swiper-scrollbar-bottom: 0.275rem;
+	--swiper-scrollbar-bg-color: rgba(0, 0, 0, 0);
+	--swiper-scrollbar-drag-bg-color: var(--clr-primary-100-solid);
+	--swiper-scrollbar-size: 0.5rem;
+
+	/* max-width: calc(100% + var(--gap) * 2);
+	padding-inline: var(--gap) !important;
+	margin-inline: calc(var(--gap) * -2) !important;
+	justify-self: center; */
+
+	width: 100vw; /* required for chrome */
+}

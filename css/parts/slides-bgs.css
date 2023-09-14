@@ -1,0 +1,205 @@
+.f-bg {
+	/* --f-inline-width: 25%; */
+	/* --f-inline-height: 75%; */
+	/* --f-block-width: 50%; */
+	/* --f-block-height: 15%; */
+
+	--top-side: 0 0 auto 0;
+	--left-side: 0 auto 0 0;
+	--right-side: 0 0 0 auto;
+	--bottom-side: auto 0 0 0;
+
+	--shadow-left: 2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
+	--shadow-right: -2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
+
+	--spike-deg-add: 85%;
+	--spike-deg-sub: calc(100% - var(--spike-deg-add));
+	--spike-top-btm: 50%;
+
+	--spike-add-left: polygon(
+		var(--spike-deg-sub) 0,
+		100% 0%,
+		100% 100%,
+		var(--spike-deg-sub) 100%,
+		0 var(--spike-top-btm)
+	);
+	--spike-add-right: polygon(
+		0% 0%,
+		var(--spike-deg-add) 0%,
+		100% var(--spike-top-btm),
+		var(--spike-deg-add) 100%,
+		0% 100%
+	);
+
+	--spike-sub-left: polygon(
+		100% 0,
+		100% 100%,
+		0% 100%,
+		var(--spike-deg-sub) var(--spike-top-btm),
+		0% 0%
+	);
+	--spike-sub-right: polygon(
+		0 0,
+		100% 0,
+		var(--spike-deg-add) var(--spike-top-btm),
+		100% 100%,
+		0% 100%
+	);
+
+	--spike-add-top: polygon(
+		0 0,
+		100% 0%,
+		100% var(--spike-deg-sub),
+		var(--spike-top-btm) 100%,
+		0 var(--spike-deg-sub)
+	);
+	--spike-add-bottom: polygon(
+		var(--spike-top-btm) 0,
+		100% var(--spike-deg-add),
+		100% 100%,
+		0 100%,
+		0 var(--spike-deg-add)
+	);
+}
+
+/* figure common styles */
+.f-bg::before,
+.f-bg::after {
+	content: "";
+	position: absolute;
+	margin: auto;
+}
+.f-bg::before {
+	z-index: -1;
+	background-color: var(--clr-primary-500-solid-opposite);
+}
+.f-bg::after {
+	background-color: var(--clr-primary-100-solid);
+	mix-blend-mode: difference;
+	pointer-events: none;
+}
+
+/* inline figures */
+.f-inline::before,
+.f-inline::after {
+	width: var(--f-inline-width, 15%);
+	height: var(--f-inline-height, 100%);
+}
+/* left side */
+.f-left::before,
+.f-left::after {
+	inset: var(--left-side);
+}
+/* right side */
+.f-right::before,
+.f-right::after {
+	inset: var(--right-side);
+}
+
+/* block figures */
+.f-block::before,
+.f-block::after {
+	width: var(--f-block-width, var(--max-content-width));
+	height: var(--f-block-height, 15%);
+}
+/* top-side */
+.f-top::before,
+.f-top::after {
+	inset: var(--top-side);
+}
+/* bottom side */
+.f-bottom::before,
+.f-bottom::after {
+	inset: var(--bottom-side);
+}
+
+/* figure types */
+/* --- */
+.diag-left,
+.diag-right {
+	--tilt: -15deg;
+	--overflow-inline: -100%;
+	--left-side: 0 auto 0 var(--overflow-inline);
+	--right-side: 0 var(--overflow-inline) 0 auto;
+	--f-inline-width: 115%;
+}
+.diag-left::before,
+.diag-left::after,
+.diag-right::before,
+.diag-right::after {
+	transform: skew(var(--tilt));
+}
+
+/* --- */
+.rounded::before,
+.rounded::after {
+	border-radius: 50%;
+	transform: scale(1.5);
+}
+
+/* --- */
+.spike-left::before,
+.spike-left::after {
+	clip-path: var(--spike-add-right);
+}
+.spike-right::before,
+.spike-right::after {
+	clip-path: var(--spike-add-left);
+}
+
+.spike-sub-left::before,
+.spike-sub-left::after {
+	clip-path: var(--spike-sub-right);
+}
+.spike-sub-right::before,
+.spike-sub-right::after {
+	clip-path: var(--spike-sub-left);
+}
+
+.spike-top::before,
+.spike-top::after {
+	clip-path: var(--spike-add-top);
+}
+.spike-bottom::before,
+.spike-bottom::after {
+	clip-path: var(--spike-add-bottom);
+}
+
+/* --- https://css-generators.com/ */
+.waves-left::before,
+.waves-left::after {
+	--mask: radial-gradient(
+				6.71rem at calc(100% - 9rem) 50%,
+				#000 99%,
+				#0000 101%
+			)
+			0 calc(50% - 6rem) / 100% 12rem,
+		radial-gradient(6.71rem at calc(100% + 6rem) 50%, #0000 99%, #000 101%)
+			calc(100% - 3rem) 50%/100% 12rem repeat-y;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+}
+
+.waves-right::before,
+.waves-right::after {
+	--mask: radial-gradient(6.71rem at 9rem 50%, #000 99%, #0000 101%) 0
+			calc(50% - 6rem) / 100% 12rem,
+		radial-gradient(6.71rem at -6rem 50%, #0000 99%, #000 101%) 3rem 50%/100%
+			12rem repeat-y;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+}
+
+/* --- */
+.zigzag-left::before,
+.zigzag-left::after {
+	--mask: conic-gradient(
+			from -157.5deg at right,
+			#0000,
+			#000 1deg 134deg,
+			#0000 135deg
+		)
+		50%/100% 9.66rem;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+}
