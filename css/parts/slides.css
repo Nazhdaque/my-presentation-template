@@ -69,8 +69,8 @@
 .overlay::after {
 	--overlay: linear-gradient(
 		90deg,
-		hsla(0, 0%, 0%, 0.85) 50%,
-		hsla(0, 0%, 0%, 0.5) 100%
+		hsl(0, 0%, 0%, 0.85) 50%,
+		hsl(0, 0%, 0%, 0.5) 100%
 	);
 
 	inset: 0;

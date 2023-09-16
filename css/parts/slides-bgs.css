@@ -1,5 +1,5 @@
 .f-bg {
-	/* --f-inline-width: 25%; */
+	--f-inline-width: 45%;
 	/* --f-inline-height: 75%; */
 	/* --f-block-width: 50%; */
 	/* --f-block-height: 15%; */
@@ -11,55 +11,6 @@
 
 	--shadow-left: 2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
 	--shadow-right: -2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
-
-	--spike-deg-add: 85%;
-	--spike-deg-sub: calc(100% - var(--spike-deg-add));
-	--spike-top-btm: 50%;
-
-	--spike-add-left: polygon(
-		var(--spike-deg-sub) 0,
-		100% 0%,
-		100% 100%,
-		var(--spike-deg-sub) 100%,
-		0 var(--spike-top-btm)
-	);
-	--spike-add-right: polygon(
-		0% 0%,
-		var(--spike-deg-add) 0%,
-		100% var(--spike-top-btm),
-		var(--spike-deg-add) 100%,
-		0% 100%
-	);
-
-	--spike-sub-left: polygon(
-		100% 0,
-		100% 100%,
-		0% 100%,
-		var(--spike-deg-sub) var(--spike-top-btm),
-		0% 0%
-	);
-	--spike-sub-right: polygon(
-		0 0,
-		100% 0,
-		var(--spike-deg-add) var(--spike-top-btm),
-		100% 100%,
-		0% 100%
-	);
-
-	--spike-add-top: polygon(
-		0 0,
-		100% 0%,
-		100% var(--spike-deg-sub),
-		var(--spike-top-btm) 100%,
-		0 var(--spike-deg-sub)
-	);
-	--spike-add-bottom: polygon(
-		var(--spike-top-btm) 0,
-		100% var(--spike-deg-add),
-		100% 100%,
-		0 100%,
-		0 var(--spike-deg-add)
-	);
 }
 
 /* figure common styles */
@@ -68,6 +19,7 @@
 	content: "";
 	position: absolute;
 	margin: auto;
+	inset: 0;
 }
 .f-bg::before {
 	z-index: -1;
@@ -82,7 +34,7 @@
 /* inline figures */
 .f-inline::before,
 .f-inline::after {
-	width: var(--f-inline-width, 15%);
+	width: var(--f-inline-width, 25%);
 	height: var(--f-inline-height, 100%);
 }
 /* left side */
@@ -114,20 +66,56 @@
 }
 
 /* figure types */
-/* --- */
-.diag-left,
-.diag-right {
-	--tilt: -15deg;
-	--overflow-inline: -100%;
-	--left-side: 0 auto 0 var(--overflow-inline);
-	--right-side: 0 var(--overflow-inline) 0 auto;
-	--f-inline-width: 115%;
+.trapeze-left,
+.trapeze-right {
+	--tilt-l: 25%;
+	--tilt-r: calc(100% - var(--tilt-l));
 }
+.trapeze-left::before,
+.trapeze-left::after {
+	clip-path: polygon(0 0, 100% 0, var(--tilt-l, 50%) 100%, 0% 100%);
+}
+.trapeze-right::before,
+.trapeze-right::after {
+	clip-path: polygon(var(--tilt-r, 50%) 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* --- */
 .diag-left::before,
-.diag-left::after,
-.diag-right::before,
-.diag-right::after {
-	transform: skew(var(--tilt));
+.diag-left::after {
+	--tilt: 35%;
+
+	clip-path: polygon(
+		var(--tilt, 25%) 0%,
+		100% 0%,
+		calc(100% - var(--tilt, 25%)) 100%,
+		0% 100%
+	);
+}
+
+/* --- */
+.triangle-left-top,
+.triangle-right-top,
+.triangle-left-bottom,
+.triangle-right-bottom {
+	--tilt-l: 15%;
+	--tilt-r: calc(100% - var(--tilt-l));
+}
+.triangle-left-top::before,
+.triangle-left-top::after {
+	clip-path: polygon(100% 0, 0 var(--tilt-l, 25%), 0 0);
+}
+.triangle-right-top::before,
+.triangle-right-top::after {
+	clip-path: polygon(0 0, 100% 0, 100% var(--tilt-l, 25%));
+}
+.triangle-left-bottom::before,
+.triangle-left-bottom::after {
+	clip-path: polygon(0 var(--tilt-r, 75%), 0% 100%, 100% 100%);
+}
+.triangle-right-bottom::before,
+.triangle-right-bottom::after {
+	clip-path: polygon(100% var(--tilt-r, 75%), 0% 100%, 100% 100%);
 }
 
 /* --- */
@@ -138,34 +126,89 @@
 }
 
 /* --- */
+.spike-left,
+.spike-right,
+.spike-top,
+.spike-bottom {
+	--spike-add--form: 60%;
+	--spike-left--trend: 20%;
+	--spike-sub--form: calc(100% - var(--spike-add--form));
+	--spike-right--trend: calc(100% - var(--spike-left--trend));
+
+	--spike-left--add: polygon(
+		0% 0%,
+		var(--spike-add--form) 0%,
+		100% var(--spike-left--trend),
+		var(--spike-add--form) 100%,
+		0% 100%
+	);
+	--spike-right--add: polygon(
+		100% 0,
+		calc(100% - var(--spike-add--form)) 0,
+		0 var(--spike-right--trend),
+		calc(100% - var(--spike-add--form)) 100%,
+		100% 100%
+	);
+
+	--spike-left--subtract: polygon(
+		0% 0%,
+		100% 0%,
+		var(--spike-add--form) var(--spike-right--trend),
+		100% 100%,
+		0% 100%
+	);
+	--spike-right--subtract: polygon(
+		100% 0,
+		0 0,
+		var(--spike-sub--form) var(--spike-left--trend),
+		0 100%,
+		100% 100%
+	);
+
+	--spike-top--add: polygon(
+		0% 0%,
+		100% 0,
+		100% var(--spike-add--form),
+		var(--spike-left--trend) 100%,
+		0 var(--spike-add--form)
+	);
+	--spike-bottom--add: polygon(
+		0 100%,
+		100% 100%,
+		100% var(--spike-sub--form),
+		var(--spike-right--trend) 0,
+		0 var(--spike-sub--form)
+	);
+}
+
 .spike-left::before,
 .spike-left::after {
-	clip-path: var(--spike-add-right);
+	clip-path: var(--spike-left--add);
 }
 .spike-right::before,
 .spike-right::after {
-	clip-path: var(--spike-add-left);
+	clip-path: var(--spike-right--add);
 }
 
-.spike-sub-left::before,
-.spike-sub-left::after {
-	clip-path: var(--spike-sub-right);
+.spike-left.subtract::before,
+.spike-left.subtract::after {
+	clip-path: var(--spike-left--subtract);
 }
-.spike-sub-right::before,
-.spike-sub-right::after {
-	clip-path: var(--spike-sub-left);
+.spike-right.subtract::before,
+.spike-right.subtract::after {
+	clip-path: var(--spike-right--subtract);
 }
 
 .spike-top::before,
 .spike-top::after {
-	clip-path: var(--spike-add-top);
+	clip-path: var(--spike-top--add);
 }
 .spike-bottom::before,
 .spike-bottom::after {
-	clip-path: var(--spike-add-bottom);
+	clip-path: var(--spike-bottom--add);
 }
 
-/* --- https://css-generators.com/ */
+/* --- waves https://css-generators.com/ */
 .waves-left::before,
 .waves-left::after {
 	--mask: radial-gradient(
@@ -202,4 +245,19 @@
 		50%/100% 9.66rem;
 	-webkit-mask: var(--mask);
 	mask: var(--mask);
+}
+
+/* with image */
+.w-img::before {
+	--gradient-1: hsl(270, 75%, 10%, 0.25);
+	--overlay-1: linear-gradient(var(--gradient-1), var(--gradient-1));
+
+	background-image: var(--overlay-1), url(/images/group-trucks-parked-row.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: invert(1);
+	background-blend-mode: darken;
+}
+.w-img:nth-child(2n)::before {
+	background-position: right center;
 }
