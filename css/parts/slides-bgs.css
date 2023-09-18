@@ -4,28 +4,45 @@
 	--w-block: 50%, var(--max-content-width);
 	--h-block: 15%;
 
+	--w: var(--w-inline);
+	--h: var(--h-inline);
+
 	--ts: 0 0 auto 0;
 	--ls: 0 auto 0 0;
 	--rs: 0 0 0 auto;
 	--bs: auto 0 0 0;
+	--cs: 0 -100vw 0 -100vw;
 
 	--lts: 0 auto auto 0;
 	--lbs: auto auto 0 0;
 	--rts: 0 0 auto auto;
 	--rbs: auto 0 0 auto;
 
-	--shadow-left: 2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
-	--shadow-right: -2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
+	--tilt-base: 75%;
+	--trend-base: 50%;
+	--tilt-pair: calc(100% - var(--tilt-base));
+	--trend-pair: calc(100% - var(--trend-base));
+
+	--scale: 2.5;
+
+	--img-1-url: url(/images/group-trucks-parked-row.webp);
+
+	/* --shadow-left: 2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
+	--shadow-right: -2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1); */
 }
 
-/* figure common styles */
+/* figures common styles */
 .f-bg::before,
 .f-bg::after {
 	content: "";
 	position: absolute;
 	margin: auto;
-	inset: var(--pos);
-	width: var(--w-inline);
+	inset: var(--side);
+	width: var(--w);
+	height: var(--h);
+	clip-path: var(--clip, none);
+	mask: var(--mask, none);
+	-webkit-mask: var(--mask, none);
 }
 .f-bg::before {
 	z-index: -1;
@@ -37,89 +54,62 @@
 	pointer-events: none;
 }
 
-/* figure types */
-.diag::before,
-.diag::after {
-	--w-inline: max(50%, 768px);
-	--tilt: 35%;
-
-	inset: 0 -100vw 0 -100vw;
-	clip-path: polygon(
-		var(--tilt, 25%) 0%,
-		100% 0%,
-		calc(100% - var(--tilt, 25%)) 100%,
-		0% 100%
-	);
-}
-
-/* --- */
+/* figures */
 .rounded::before,
 .rounded::after {
 	border-radius: 50%;
-	transform: scale(1.5);
+	transform: scale(var(--scale, 1.5));
+}
+
+/* --- */
+.diag {
+	--w-inline: max(50%, 768px);
+	--lf: polygon(0 0, var(--tilt-base) 0, 100% 100%, var(--tilt-pair) 100%);
+	--rf: polygon(var(--tilt-pair) 0%, 100% 0%, var(--tilt-base) 100%, 0% 100%);
 }
 
 /* --- */
 .trapeze {
-	--tilt-l: 25%;
-	--tilt-r: calc(100% - var(--tilt-l));
-
-	--lf: polygon(0 0, 100% 0, var(--tilt-l, 50%) 100%, 0% 100%);
-	--rf: polygon(var(--tilt-r, 50%) 0, 100% 0, 100% 100%, 0% 100%);
-}
-.trapeze::before,
-.trapeze::after {
-	clip-path: var(--fig);
+	--lf: polygon(0 0, 100% 0, var(--tilt-base, 50%) 100%, 0% 100%);
+	--rf: polygon(var(--tilt-pair, 50%) 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 /* --- */
 .triangle {
-	--tilt-l: 100%;
-	--tilt-r: calc(100% - var(--tilt-l));
-
-	--ltf: polygon(100% 0, 0 var(--tilt-l, 25%), 0 0);
-	--rtf: polygon(0 0, 100% 0, 100% var(--tilt-l, 25%));
-	--lbf: polygon(0 var(--tilt-r, 75%), 0% 100%, 100% 100%);
-	--rbf: polygon(100% var(--tilt-r, 75%), 0% 100%, 100% 100%);
-}
-.triangle::before,
-.triangle::after {
-	clip-path: var(--fig);
+	--ltf: polygon(100% 0, 0 var(--tilt-base), 0 0);
+	--rtf: polygon(0 0, 100% 0, 100% var(--tilt-base));
+	--lbf: polygon(0 var(--tilt-pair), 0% 100%, 100% 100%);
+	--rbf: polygon(100% var(--tilt-pair), 0% 100%, 100% 100%);
 }
 
 /* --- */
 .spike {
-	--spike-add--form: 75%;
-	--spike-left--trend: 50%;
-	--spike-sub--form: calc(100% - var(--spike-add--form));
-	--spike-right--trend: calc(100% - var(--spike-left--trend));
-
 	--lf: polygon(
 		0% 0%,
-		var(--spike-add--form) 0%,
-		100% var(--spike-left--trend),
-		var(--spike-add--form) 100%,
+		var(--tilt-base) 0%,
+		100% var(--trend-base),
+		var(--tilt-base) 100%,
 		0% 100%
 	);
 	--rf: polygon(
 		100% 0,
-		calc(100% - var(--spike-add--form)) 0,
-		0 var(--spike-right--trend),
-		calc(100% - var(--spike-add--form)) 100%,
+		calc(100% - var(--tilt-base)) 0,
+		0 var(--trend-pair),
+		calc(100% - var(--tilt-base)) 100%,
 		100% 100%
 	);
 
 	--lf-sub: polygon(
 		0% 0%,
 		100% 0%,
-		var(--spike-add--form) var(--spike-right--trend),
+		var(--tilt-base) var(--trend-pair),
 		100% 100%,
 		0% 100%
 	);
 	--rf-sub: polygon(
 		100% 0,
 		0 0,
-		var(--spike-sub--form) var(--spike-left--trend),
+		var(--tilt-pair) var(--trend-base),
 		0 100%,
 		100% 100%
 	);
@@ -127,21 +117,17 @@
 	--tf: polygon(
 		0% 0%,
 		100% 0,
-		100% var(--spike-add--form),
-		var(--spike-left--trend) 100%,
-		0 var(--spike-add--form)
+		100% var(--tilt-base),
+		var(--trend-base) 100%,
+		0 var(--tilt-base)
 	);
 	--bf: polygon(
 		0 100%,
 		100% 100%,
-		100% var(--spike-sub--form),
-		var(--spike-right--trend) 0,
-		0 var(--spike-sub--form)
+		100% var(--tilt-pair),
+		var(--trend-pair) 0,
+		0 var(--tilt-pair)
 	);
-}
-.spike::before,
-.spike::after {
-	clip-path: var(--fig);
 }
 
 /* --- waves https://css-generators.com/ */
@@ -156,11 +142,6 @@
 		radial-gradient(6.71rem at -6rem 50%, #0000 99%, #000 101%) 3rem 50%/100%
 			12rem repeat-y;
 }
-.waves::before,
-.waves::after {
-	mask: var(--fig);
-	-webkit-mask: var(--fig);
-}
 
 /* --- */
 .zigzag {
@@ -172,18 +153,13 @@
 		)
 		50%/100% 9.66rem;
 }
-.zigzag::before,
-.zigzag::after {
-	mask: var(--fig);
-	-webkit-mask: var(--fig);
-}
 
 /* with image */
 .w-img::before {
-	--gradient-1: hsl(270, 75%, 10%, 0.25);
-	--overlay-1: linear-gradient(var(--gradient-1), var(--gradient-1));
+	--grad-1: hsla(230, 84%, 12%, 0.5);
+	--over-1: linear-gradient(var(--grad-1), var(--grad-1));
 
-	background-image: var(--overlay-1), url(/images/group-trucks-parked-row.webp);
+	background-image: var(--over-1), var(--img-1-url);
 	background-repeat: no-repeat;
 	background-position: center;
 	filter: invert(1);
