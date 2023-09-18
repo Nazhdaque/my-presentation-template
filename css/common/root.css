@@ -2,18 +2,17 @@
 ::backdrop {
 	--max-content-width: 100rem;
 
-	--clr-primary-100-solid: hsl(0, 0%, 99%);
-	--clr-primary-100-solid-opposite: hsl(180, 0%, 1%);
-	--clr-primary-500-solid: hsl(0, 78%, 54%);
-	--clr-primary-500-solid-opposite: hsl(180, 78%, 46%);
-	--clr-primary-900-solid: hsl(0, 1%, 25%);
+	--clr-0-100-solid: hsl(0, 0%, 96%);
+	--clr-0-900-solid: hsl(0, 0%, 13%);
 
-	--clr-secondary-300-solid: hsl(233, 9%, 65%);
-	--clr-secondary-500-solid: hsl(44, 85%, 55%);
-	--clr-secondary-600-solid: hsl(146, 43%, 41%);
-	--clr-secondary-700-solid: hsl(261, 35%, 43%);
+	--clr-1-500-solid: hsl(0, 78%, 54%);
+	--clr-1-500-solid-invert: hsl(180, 78%, 46%);
+	--clr-1-900-solid: hsl(0, 1%, 25%);
 
-	--clr-neutral-900-solid: hsl(0, 0%, 8%);
+	--clr-2-300-solid: hsl(233, 9%, 65%);
+	--clr-2-500-solid: hsl(44, 85%, 55%);
+	--clr-2-600-solid: hsl(146, 43%, 41%);
+	--clr-2-700-solid: hsl(261, 35%, 43%);
 
 	--time: 0.25s;
 	--easing: ease-in;

@@ -4,9 +4,9 @@
 
 	--sb-gap: 0.75rem;
 	--sb-padding: 0 calc(var(--sb-gap) * 2) 0 0;
-	--sb-border: 1px dotted var(--clr-primary-100-solid);
+	--sb-border: 1px dotted var(--clr-0-100-solid);
 	--sb-chevron-size: 1em;
-	--sb-chevron-clr: var(--clr-primary-900-solid);
+	--sb-chevron-clr: var(--clr-1-900-solid);
 
 	--marker-lg--font-size: 2rem;
 	--marker-lg--size: calc(var(--marker-lg--font-size) * 2);
@@ -24,7 +24,7 @@
 	bottom: 0;
 	margin-block: auto;
 	z-index: 999;
-	background-color: var(--clr-primary-900-solid);
+	background-color: var(--clr-1-900-solid);
 	counter-reset: sidebar-counter;
 	translate: var(--width-x);
 	display: none;
@@ -49,8 +49,8 @@
 	font-family: inherit;
 	font-size: var(--fs-rg);
 	font-weight: var(--fw-sb);
-	color: var(--clr-primary-900-solid);
-	background-color: var(--clr-primary-100-solid);
+	color: var(--clr-1-900-solid);
+	background-color: var(--clr-0-100-solid);
 	cursor: pointer;
 	transition: color var(--time) var(--easing);
 	display: grid;
@@ -87,7 +87,7 @@
 	grid-template-columns: var(--marker-lg--size) 1fr;
 	align-items: center;
 	padding: var(--sb-padding);
-	color: var(--clr-primary-100-solid);
+	color: var(--clr-0-100-solid);
 }
 
 /* marker */
@@ -111,8 +111,8 @@
 	--marker-font-size: var(--marker-lg--font-size);
 	--marker-size: var(--marker-lg--size);
 
-	--marker-clr-bg: var(--clr-primary-900-solid);
-	--marker-clr-txt: var(--clr-primary-100-solid);
+	--marker-clr-bg: var(--clr-1-900-solid);
+	--marker-clr-txt: var(--clr-0-100-solid);
 
 	counter-increment: sidebar-counter;
 	content: counter(sidebar-counter);
@@ -121,8 +121,8 @@
 	--marker-font-size: var(--marker-sm--font-size);
 	--marker-size: var(--marker-sm--size);
 
-	--marker-clr-bg: var(--clr-primary-100-solid);
-	--marker-clr-txt: var(--clr-primary-900-solid);
+	--marker-clr-bg: var(--clr-0-100-solid);
+	--marker-clr-txt: var(--clr-1-900-solid);
 
 	counter-increment: sidebar-item__counter;
 	content: counter(sidebar-item__counter);
@@ -130,15 +130,15 @@
 
 /* active states */
 .is-active .chevron {
-	--sb-chevron-clr: var(--clr-primary-500-solid);
+	--sb-chevron-clr: var(--clr-1-500-solid);
 
 	transform: rotateX(180deg);
 }
 
 .sidebar-item__btn.marker:where(:focus-visible, :hover)::before,
 .sidebar-item__link.marker:where(:focus-visible, :hover)::before {
-	--marker-clr-bg: var(--clr-primary-500-solid);
-	--marker-clr-txt: var(--clr-primary-100-solid);
+	--marker-clr-bg: var(--clr-1-500-solid);
+	--marker-clr-txt: var(--clr-0-100-solid);
 }
 
 /* --- */

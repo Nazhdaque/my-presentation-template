@@ -44,6 +44,6 @@ body {
 	font-family: var(--ff-rg);
 	font-weight: var(--fw-rg);
 	font-size: var(--fs-rg);
-	color: var(--clr-neutral-900-solid);
+	color: var(--clr-0-900-solid);
 	line-height: var(--lh-rg);
 }

@@ -1,17 +1,15 @@
-/* |||||||||| |||||||||| |||||||||| |||||||||| slide 1 */
 .slide-1 {
-	color: var(--clr-primary-100-solid);
+	color: var(--clr-0-100-solid);
 }
 
 .slide-1__bg {
-	filter: grayscale(100%) contrast(120%);
+	filter: grayscale(50%) contrast(50%);
 }
 
 .slide-1__layout {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: end;
 }
 
 .slide-1__top-group {
@@ -22,14 +20,14 @@
 }
 .slide-1__top-group::before {
 	content: "";
-	background-color: var(--clr-primary-500-solid);
+	background-color: var(--clr-1-500-solid);
 }
 
 h1 {
 	--x: 2;
 	--col: 3;
 
-	color: var(--clr-primary-100-solid);
+	color: var(--clr-0-100-solid);
 	font-weight: var(--fw-sb);
 }
 
@@ -46,6 +44,6 @@ h1 {
 	content: "";
 	inset: 0 -1000% 0 0;
 	z-index: -1;
-	background-color: var(--clr-primary-500-solid);
+	background-color: var(--clr-1-500-solid);
 	transform: skew(-30deg) translateX(-3rem);
 }

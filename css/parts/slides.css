@@ -55,12 +55,6 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| all slides */
-.slider-slide {
-	background-color: var(--clr-primary-100-solid);
-	padding-block: 1rem 4rem;
-	overflow: hidden;
-}
-
 .slide-content {
 	margin-top: 3rem;
 }
@@ -69,8 +63,8 @@
 .overlay::after {
 	--overlay: linear-gradient(
 		90deg,
-		hsl(0, 0%, 0%, 0.85) 50%,
-		hsl(0, 0%, 0%, 0.5) 100%
+		hsl(0, 0%, 0%, 0.75) 50%,
+		hsl(0, 0%, 0%, 0.25) 100%
 	);
 
 	inset: 0;

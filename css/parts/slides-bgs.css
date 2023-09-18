@@ -1,4 +1,4 @@
-.f-bg {
+.slide-bg {
 	--w-inline: max(25%, 10rem);
 	--h-inline: 100%;
 	--w-block: 50%, var(--max-content-width);
@@ -25,15 +25,13 @@
 
 	--scale: 2.5;
 
-	--img-1-url: url(/images/group-trucks-parked-row.webp);
-
 	/* --shadow-left: 2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
 	--shadow-right: -2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1); */
 }
 
 /* figures common styles */
-.f-bg::before,
-.f-bg::after {
+.slide-bg::before,
+.slide-bg::after {
 	content: "";
 	position: absolute;
 	margin: auto;
@@ -44,12 +42,12 @@
 	mask: var(--mask, none);
 	-webkit-mask: var(--mask, none);
 }
-.f-bg::before {
+.slide-bg::before {
 	z-index: -1;
-	background-color: var(--clr-primary-500-solid-opposite);
+	background-color: var(--clr-1-500-solid-invert);
 }
-.f-bg::after {
-	background-color: var(--clr-primary-100-solid);
+.slide-bg::after {
+	background-color: var(--clr-0-100-solid);
 	mix-blend-mode: difference;
 	pointer-events: none;
 }
@@ -156,14 +154,19 @@
 
 /* with image */
 .w-img::before {
-	--grad-1: hsla(230, 84%, 12%, 0.5);
-	--over-1: linear-gradient(var(--grad-1), var(--grad-1));
+	--clr-1: hsla(0, 0%, 0%, 0.25);
+	--clr-2: hsla(0, 0%, 0%, 0.75);
+	--tint-1: hsla(284, 83%, 42%, 0.25);
+	--image-1: url(/images/bg-1.webp);
+	--overlay-1: linear-gradient(90deg, var(--clr-1) 0%, var(--clr-2) 100%);
 
-	background-image: var(--over-1), var(--img-1-url);
+	background-color: var(--tint-1);
+	background-image: var(--overlay-1), var(--image-1);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	filter: invert(1);
-	background-blend-mode: darken;
+	background-blend-mode: luminosity;
 }
 .w-img:nth-child(2n)::before {
 	background-position: right center;

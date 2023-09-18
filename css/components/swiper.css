@@ -2,10 +2,10 @@
 	--swiper-navigation-size: 2rem;
 	--swiper-navigation-top-offset: 50%;
 	--swiper-navigation-sides-offset: 1rem;
-	--swiper-navigation-color: var(--clr-primary-100-solid);
+	--swiper-navigation-color: var(--clr-0-100-solid);
 
-	--swiper-pagination-color: var(--clr-primary-100-solid);
-	--swiper-pagination-bullet-inactive-color: var(--clr-primary-100-solid);
+	--swiper-pagination-color: var(--clr-0-100-solid);
+	--swiper-pagination-bullet-inactive-color: var(--clr-0-100-solid);
 	--swiper-pagination-bullet-inactive-opacity: 0.2;
 	--swiper-pagination-bullet-opacity: 1;
 	--swiper-pagination-bullet-size: 1rem;
@@ -17,7 +17,7 @@
 	--swiper-scrollbar-border-radius: 0.75rem;
 	--swiper-scrollbar-bottom: 0.275rem;
 	--swiper-scrollbar-bg-color: rgba(0, 0, 0, 0);
-	--swiper-scrollbar-drag-bg-color: var(--clr-primary-100-solid);
+	--swiper-scrollbar-drag-bg-color: var(--clr-0-100-solid);
 	--swiper-scrollbar-size: 0.5rem;
 
 	/* max-width: calc(100% + var(--gap) * 2);
@@ -26,4 +26,16 @@
 	justify-self: center; */
 
 	width: 100vw; /* required for chrome */
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination {
+	mix-blend-mode: difference;
+}
+
+.swiper-slide {
+	background-color: var(--clr-0-100-solid);
+	padding-block: 1rem 4rem;
+	overflow: hidden;
 }
