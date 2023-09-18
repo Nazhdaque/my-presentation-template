@@ -9,7 +9,7 @@
 	display: grid;
 	grid-template-columns: 1fr minmax(0, var(--max-content-width)) 1fr; /* min-content in minmax function  doesn't work with swiper */
 	height: 100%;
-	padding-inline: 1rem;
+	padding-inline: max(1rem, 5vmin);
 
 	overflow-x: hidden;
 	overflow-y: auto;

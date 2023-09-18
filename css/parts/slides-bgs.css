@@ -1,13 +1,18 @@
 .f-bg {
-	--f-inline-width: 45%;
-	/* --f-inline-height: 75%; */
-	/* --f-block-width: 50%; */
-	/* --f-block-height: 15%; */
+	--w-inline: max(25%, 10rem);
+	--h-inline: 100%;
+	--w-block: 50%, var(--max-content-width);
+	--h-block: 15%;
 
-	--top-side: 0 0 auto 0;
-	--left-side: 0 auto 0 0;
-	--right-side: 0 0 0 auto;
-	--bottom-side: auto 0 0 0;
+	--ts: 0 0 auto 0;
+	--ls: 0 auto 0 0;
+	--rs: 0 0 0 auto;
+	--bs: auto 0 0 0;
+
+	--lts: 0 auto auto 0;
+	--lbs: auto auto 0 0;
+	--rts: 0 0 auto auto;
+	--rbs: auto 0 0 auto;
 
 	--shadow-left: 2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
 	--shadow-right: -2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
@@ -19,7 +24,8 @@
 	content: "";
 	position: absolute;
 	margin: auto;
-	inset: 0;
+	inset: var(--pos);
+	width: var(--w-inline);
 }
 .f-bg::before {
 	z-index: -1;
@@ -31,91 +37,19 @@
 	pointer-events: none;
 }
 
-/* inline figures */
-.f-inline::before,
-.f-inline::after {
-	width: var(--f-inline-width, 25%);
-	height: var(--f-inline-height, 100%);
-}
-/* left side */
-.f-left::before,
-.f-left::after {
-	inset: var(--left-side);
-}
-/* right side */
-.f-right::before,
-.f-right::after {
-	inset: var(--right-side);
-}
-
-/* block figures */
-.f-block::before,
-.f-block::after {
-	width: var(--f-block-width, var(--max-content-width));
-	height: var(--f-block-height, 15%);
-}
-/* top-side */
-.f-top::before,
-.f-top::after {
-	inset: var(--top-side);
-}
-/* bottom side */
-.f-bottom::before,
-.f-bottom::after {
-	inset: var(--bottom-side);
-}
-
 /* figure types */
-.trapeze-left,
-.trapeze-right {
-	--tilt-l: 25%;
-	--tilt-r: calc(100% - var(--tilt-l));
-}
-.trapeze-left::before,
-.trapeze-left::after {
-	clip-path: polygon(0 0, 100% 0, var(--tilt-l, 50%) 100%, 0% 100%);
-}
-.trapeze-right::before,
-.trapeze-right::after {
-	clip-path: polygon(var(--tilt-r, 50%) 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-/* --- */
-.diag-left::before,
-.diag-left::after {
+.diag::before,
+.diag::after {
+	--w-inline: max(50%, 768px);
 	--tilt: 35%;
 
+	inset: 0 -100vw 0 -100vw;
 	clip-path: polygon(
 		var(--tilt, 25%) 0%,
 		100% 0%,
 		calc(100% - var(--tilt, 25%)) 100%,
 		0% 100%
 	);
-}
-
-/* --- */
-.triangle-left-top,
-.triangle-right-top,
-.triangle-left-bottom,
-.triangle-right-bottom {
-	--tilt-l: 15%;
-	--tilt-r: calc(100% - var(--tilt-l));
-}
-.triangle-left-top::before,
-.triangle-left-top::after {
-	clip-path: polygon(100% 0, 0 var(--tilt-l, 25%), 0 0);
-}
-.triangle-right-top::before,
-.triangle-right-top::after {
-	clip-path: polygon(0 0, 100% 0, 100% var(--tilt-l, 25%));
-}
-.triangle-left-bottom::before,
-.triangle-left-bottom::after {
-	clip-path: polygon(0 var(--tilt-r, 75%), 0% 100%, 100% 100%);
-}
-.triangle-right-bottom::before,
-.triangle-right-bottom::after {
-	clip-path: polygon(100% var(--tilt-r, 75%), 0% 100%, 100% 100%);
 }
 
 /* --- */
@@ -126,23 +60,48 @@
 }
 
 /* --- */
-.spike-left,
-.spike-right,
-.spike-top,
-.spike-bottom {
-	--spike-add--form: 60%;
-	--spike-left--trend: 20%;
+.trapeze {
+	--tilt-l: 25%;
+	--tilt-r: calc(100% - var(--tilt-l));
+
+	--lf: polygon(0 0, 100% 0, var(--tilt-l, 50%) 100%, 0% 100%);
+	--rf: polygon(var(--tilt-r, 50%) 0, 100% 0, 100% 100%, 0% 100%);
+}
+.trapeze::before,
+.trapeze::after {
+	clip-path: var(--fig);
+}
+
+/* --- */
+.triangle {
+	--tilt-l: 100%;
+	--tilt-r: calc(100% - var(--tilt-l));
+
+	--ltf: polygon(100% 0, 0 var(--tilt-l, 25%), 0 0);
+	--rtf: polygon(0 0, 100% 0, 100% var(--tilt-l, 25%));
+	--lbf: polygon(0 var(--tilt-r, 75%), 0% 100%, 100% 100%);
+	--rbf: polygon(100% var(--tilt-r, 75%), 0% 100%, 100% 100%);
+}
+.triangle::before,
+.triangle::after {
+	clip-path: var(--fig);
+}
+
+/* --- */
+.spike {
+	--spike-add--form: 75%;
+	--spike-left--trend: 50%;
 	--spike-sub--form: calc(100% - var(--spike-add--form));
 	--spike-right--trend: calc(100% - var(--spike-left--trend));
 
-	--spike-left--add: polygon(
+	--lf: polygon(
 		0% 0%,
 		var(--spike-add--form) 0%,
 		100% var(--spike-left--trend),
 		var(--spike-add--form) 100%,
 		0% 100%
 	);
-	--spike-right--add: polygon(
+	--rf: polygon(
 		100% 0,
 		calc(100% - var(--spike-add--form)) 0,
 		0 var(--spike-right--trend),
@@ -150,14 +109,14 @@
 		100% 100%
 	);
 
-	--spike-left--subtract: polygon(
+	--lf-sub: polygon(
 		0% 0%,
 		100% 0%,
 		var(--spike-add--form) var(--spike-right--trend),
 		100% 100%,
 		0% 100%
 	);
-	--spike-right--subtract: polygon(
+	--rf-sub: polygon(
 		100% 0,
 		0 0,
 		var(--spike-sub--form) var(--spike-left--trend),
@@ -165,14 +124,14 @@
 		100% 100%
 	);
 
-	--spike-top--add: polygon(
+	--tf: polygon(
 		0% 0%,
 		100% 0,
 		100% var(--spike-add--form),
 		var(--spike-left--trend) 100%,
 		0 var(--spike-add--form)
 	);
-	--spike-bottom--add: polygon(
+	--bf: polygon(
 		0 100%,
 		100% 100%,
 		100% var(--spike-sub--form),
@@ -180,71 +139,43 @@
 		0 var(--spike-sub--form)
 	);
 }
-
-.spike-left::before,
-.spike-left::after {
-	clip-path: var(--spike-left--add);
-}
-.spike-right::before,
-.spike-right::after {
-	clip-path: var(--spike-right--add);
-}
-
-.spike-left.subtract::before,
-.spike-left.subtract::after {
-	clip-path: var(--spike-left--subtract);
-}
-.spike-right.subtract::before,
-.spike-right.subtract::after {
-	clip-path: var(--spike-right--subtract);
-}
-
-.spike-top::before,
-.spike-top::after {
-	clip-path: var(--spike-top--add);
-}
-.spike-bottom::before,
-.spike-bottom::after {
-	clip-path: var(--spike-bottom--add);
+.spike::before,
+.spike::after {
+	clip-path: var(--fig);
 }
 
 /* --- waves https://css-generators.com/ */
-.waves-left::before,
-.waves-left::after {
-	--mask: radial-gradient(
-				6.71rem at calc(100% - 9rem) 50%,
-				#000 99%,
-				#0000 101%
-			)
+.waves {
+	--lf: radial-gradient(6.71rem at calc(100% - 9rem) 50%, #000 99%, #0000 101%)
 			0 calc(50% - 6rem) / 100% 12rem,
 		radial-gradient(6.71rem at calc(100% + 6rem) 50%, #0000 99%, #000 101%)
 			calc(100% - 3rem) 50%/100% 12rem repeat-y;
-	-webkit-mask: var(--mask);
-	mask: var(--mask);
-}
 
-.waves-right::before,
-.waves-right::after {
-	--mask: radial-gradient(6.71rem at 9rem 50%, #000 99%, #0000 101%) 0
+	--rf: radial-gradient(6.71rem at 9rem 50%, #000 99%, #0000 101%) 0
 			calc(50% - 6rem) / 100% 12rem,
 		radial-gradient(6.71rem at -6rem 50%, #0000 99%, #000 101%) 3rem 50%/100%
 			12rem repeat-y;
-	-webkit-mask: var(--mask);
-	mask: var(--mask);
+}
+.waves::before,
+.waves::after {
+	mask: var(--fig);
+	-webkit-mask: var(--fig);
 }
 
 /* --- */
-.zigzag-left::before,
-.zigzag-left::after {
-	--mask: conic-gradient(
+.zigzag {
+	--lf: conic-gradient(
 			from -157.5deg at right,
 			#0000,
 			#000 1deg 134deg,
 			#0000 135deg
 		)
 		50%/100% 9.66rem;
-	-webkit-mask: var(--mask);
-	mask: var(--mask);
+}
+.zigzag::before,
+.zigzag::after {
+	mask: var(--fig);
+	-webkit-mask: var(--fig);
 }
 
 /* with image */

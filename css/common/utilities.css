@@ -52,7 +52,7 @@
 .flex-x {
 	--shrink: 0.85;
 	--width: var(--max-content-width);
-	--gap: 1rem; /* unit is required even if it is 0! */
+	--gap: 0rem; /* unit is required even if it is 0! */
 
 	--width-x: min(
 		(
@@ -74,6 +74,8 @@
 .width-x {
 	--width: var(--max-content-width);
 	--gap: 0rem; /* unit is required even if it is 0! */
+	/* --x: 2;
+	--col: 3; */
 
 	--width-x: min(
 		(
@@ -89,25 +91,6 @@
 /* --- */
 .grid-full-width {
 	grid-column: 1 / -1;
-}
-
-.col-12 {
-	--col: 12;
-}
-.col-6 {
-	--col: 6;
-}
-.col-4 {
-	--col: 4;
-}
-.col-3 {
-	--col: 3;
-}
-.col-2 {
-	--col: 2;
-}
-.col-1 {
-	--col: 1;
 }
 
 .c-span-x {

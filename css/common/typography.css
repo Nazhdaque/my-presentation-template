@@ -5,16 +5,24 @@
 	--fw-rg: 400;
 	--fw-sb: 600;
 
-	--fs-xs: 0.75rem;
-	--fs-sm: 0.875rem;
-	--fs-rg: 1rem;
-	--fs-md: 1.25rem;
-	--fs-lg: 1.75rem;
-	--fs-xl: 2rem;
-	--fs-2xl: 3rem;
-	--fs-3xl: 4.5rem;
+	/* --fs-xs: 0.75rem; */
+	/* --fs-sm: 0.875rem; */
+	--fs-rg: clamp(1rem, 0.633vw + 0.696rem, 1.25rem); /* md ~ xxl: 16px ~ 20px */
+	/* --fs-md: 1.25rem; */
+	/* --fs-lg: 1.75rem; */
+	/* --fs-xl: 2rem; */
+	/* --fs-2xl: 3rem; */
+	--fs-3xl: clamp(
+		2.25rem,
+		5.696vw + -0.484rem,
+		4.5rem
+	); /* md ~ xxl: 36px ~ 72px */
 
-	--lh-rg: 1.65;
+	--lh-rg: clamp(
+		1.5rem,
+		1.582vw + 0.741rem,
+		2.125rem
+	); /* md ~ xxl: 1.5 ~ 1.7 */
 }
 
 /* titles */

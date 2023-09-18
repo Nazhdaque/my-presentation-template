@@ -38,6 +38,7 @@
 			var(--c2) 0 240deg,
 			var(--c3) 0
 		);
+
 	background-size: calc(var(--s) * 1.732) var(--s);
 }
 
@@ -55,7 +56,6 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| all slides */
 .slider-slide {
-	color: var(--clr-primary-100-solid);
 	background-color: var(--clr-primary-100-solid);
 	padding-block: 1rem 4rem;
 	overflow: hidden;
