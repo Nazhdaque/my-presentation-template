@@ -17,6 +17,7 @@
 	},
 	"dependencies": {
 		"accordion-js": "^3.3.4",
+		"material-icons": "^1.13.11",
 		"swiper": "^10.2.0"
 	}
 }

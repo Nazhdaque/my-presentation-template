@@ -1,15 +1,14 @@
 .slide-1 {
-	color: var(--clr-0-100-solid);
-}
-
-.slide-1__bg {
-	filter: grayscale(50%) contrast(50%);
+	--image: url(/images/group-trucks-parked-row.webp);
+	--overlay: var(--overlay-2);
+	--tint: var(--tint-1);
 }
 
 .slide-1__layout {
 	display: flex;
+	gap: 2rem;
 	flex-direction: column;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 
 .slide-1__top-group {
@@ -20,30 +19,31 @@
 }
 .slide-1__top-group::before {
 	content: "";
-	background-color: var(--clr-1-500-solid);
+	background-color: var(--clr-1-500-solid-invert);
 }
 
 h1 {
-	--x: 2;
-	--col: 3;
+	--x: 3;
+	--col: 5;
 
-	color: var(--clr-0-100-solid);
 	font-weight: var(--fw-sb);
 }
 
-.our-solution {
+.ribbon {
 	position: relative;
-	padding-block: 1.5rem 1.25rem;
+	padding-block: 1.5rem 1.4rem;
 	align-self: end;
 	text-transform: uppercase;
 	font-weight: var(--fw-lt);
 	line-height: 1;
+	color: var(--clr-0-100-solid);
 }
-.our-solution::before {
+.ribbon::before {
 	position: absolute;
 	content: "";
 	inset: 0 -1000% 0 0;
 	z-index: -1;
-	background-color: var(--clr-1-500-solid);
+	background-color: var(--clr-1-500-solid-invert);
 	transform: skew(-30deg) translateX(-3rem);
+	box-shadow: -0.25rem -0.25rem 0.5rem 0.25rem hsla(0, 0%, 100%, 0.15);
 }

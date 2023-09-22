@@ -28,7 +28,7 @@
 }
 
 *::selection {
-	background-color: hsla(0, 100%, 50%, 0.15);
+	background-color: hsl(var(--clr-1-500-alpha), 0.15);
 }
 
 html,

@@ -7,6 +7,8 @@
 
 	--clr-1-500-solid: hsl(0, 78%, 54%);
 	--clr-1-500-solid-invert: hsl(180, 78%, 46%);
+	--clr-1-500-alpha: 0, 78%, 54%;
+
 	--clr-1-900-solid: hsl(0, 1%, 25%);
 
 	--clr-2-300-solid: hsl(233, 9%, 65%);
@@ -14,17 +16,26 @@
 	--clr-2-600-solid: hsl(146, 43%, 41%);
 	--clr-2-700-solid: hsl(261, 35%, 43%);
 
-	--time: 0.25s;
+	--time: 0.1s;
 	--easing: ease-in;
 
-	--logo-size: 10rem;
-	--logo-x: 9;
-	--logo-y: 3;
-	--logo-height: calc(var(--logo-size) / var(--logo-x)) * var(--logo-y);
+	--logo-size: 3rem;
+	--logo-x: 1;
+	--logo-y: 1;
+	--logo-height: calc((var(--logo-size) / var(--logo-x)) * var(--logo-y));
 
 	--header-top: 1rem;
 	--header-bottom: 1rem;
 	--header-height: calc(
 		var(--header-top) + var(--logo-height) + var(--header-bottom)
 	);
+
+	/* slides bgs */
+	--clr-1: hsl(0, 0%, 0%, 0.25);
+	--clr-2: hsl(0, 0%, 0%, 0.75);
+	--tint-1: hsl(175, 56%, 12%);
+	--tint-2: hsl(58, 56%, 12%);
+	--overlay-1: linear-gradient(90deg, var(--clr-1) 0%, var(--clr-2) 100%);
+	--overlay-2: linear-gradient(90deg, var(--clr-2) 25%, var(--clr-1) 100%);
+	--overlay-3: linear-gradient(90deg, var(--clr-2) 10%, var(--clr-1) 50%);
 }

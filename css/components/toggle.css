@@ -51,8 +51,8 @@
 	inset: var(--space) 0 0 0;
 }
 
-.sidebar-toggle:where(:focus-visible) .sidebar-toggle-img {
-	--sidebar-toggle-clr: hsl(var(--hue), 100%, 50%);
+.sidebar-toggle:where(:hover, :focus-visible) .sidebar-toggle-img {
+	--sidebar-toggle-clr: var(--clr-1-500-solid);
 
 	background: var(--bg-fill);
 	background-size: 300% auto;

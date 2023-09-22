@@ -152,16 +152,19 @@
 		50%/100% 9.66rem;
 }
 
+/* --- */
+.full-fill::before,
+.full-fill::after {
+	--w: 100%;
+	--h: 100%;
+
+	inset: 0;
+}
+
 /* with image */
 .w-img::before {
-	--clr-1: hsla(0, 0%, 0%, 0.25);
-	--clr-2: hsla(0, 0%, 0%, 0.75);
-	--tint-1: hsla(284, 83%, 42%, 0.25);
-	--image-1: url(/images/bg-1.webp);
-	--overlay-1: linear-gradient(90deg, var(--clr-1) 0%, var(--clr-2) 100%);
-
-	background-color: var(--tint-1);
-	background-image: var(--overlay-1), var(--image-1);
+	background-color: var(--tint);
+	background-image: var(--overlay), var(--image);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

@@ -1,6 +1,6 @@
 /* https://gwfh.mranftl.com/fonts */
 
-/* @font-face {
+@font-face {
 	font-family: "Montserrat";
 	font-display: swap;
 	font-weight: 100 900;
@@ -12,9 +12,9 @@
 	font-display: swap;
 	font-weight: 100 900;
 	src: url(/fonts/Montserrat-Italic-VariableFont_wght.ttf) format(truetype);
-} */
+}
 
-@font-face {
+/* @font-face {
 	font-display: swap;
 	font-family: "Mont";
 	font-style: normal;
@@ -36,7 +36,7 @@
 	font-style: normal;
 	font-weight: 600;
 	src: url("/fonts/Mont-SemiBold.woff") format("woff");
-}
+} */
 
 /* --- */
 @font-face {

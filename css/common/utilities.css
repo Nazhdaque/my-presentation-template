@@ -134,3 +134,7 @@
 .v-visible {
 	visibility: visible;
 }
+
+.margin-l-auto {
+	margin-left: auto;
+}

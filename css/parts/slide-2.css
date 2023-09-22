@@ -1,0 +1,16 @@
+.slide-2 {
+	--image: url(/images/group-trucks-parked-row.webp);
+	--overlay: var(--overlay-1);
+	--tint: var(--tint-2);
+}
+
+.slide-2 .w-img {
+	--side: var(--ls);
+	--clip: var(--lf);
+}
+.slide-2 .w-img:nth-child(2) {
+	--side: var(--rs);
+	--clip: var(--rf);
+	--rs: 0 -17% auto auto;
+	--overlay: var(--overlay-3);
+}

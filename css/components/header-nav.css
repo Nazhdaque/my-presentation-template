@@ -10,8 +10,26 @@
 	display: inline-flex;
 	height: var(--logo-height);
 	align-items: center;
-	transition: color var(--time) var(--easing);
-	color: hsl(var(--hue), 100%, 50%);
 }
-/* .nav-links__link:where(:focus-visible, :hover) {
-} */
+.nav-links__link {
+	position: relative;
+}
+.nav-links__link:where(:focus-visible, :hover) {
+	color: var(--clr-1-500-solid);
+}
+
+.nav-links__link::before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0.25em;
+	background-color: var(--clr-1-500-solid);
+	left: 0;
+	right: 0;
+	bottom: calc(var(--header-bottom) * -1);
+	margin-inline: auto;
+	transition: width var(--time) var(--easing);
+}
+.nav-links__link:where(:focus-visible, :hover)::before {
+	width: calc(100% - var(--p-inline) * 2);
+}

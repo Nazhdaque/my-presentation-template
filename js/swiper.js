@@ -51,7 +51,7 @@ const swiperCreative = new Swiper(".swiper-creative", {
 	// 	sensitivity: 2,
 	// 	invert: true,
 	// },
-	grabCursor: true,
+	// grabCursor: true,
 	slidesPerView: 1,
 });
 
