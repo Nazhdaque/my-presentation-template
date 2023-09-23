@@ -6,36 +6,33 @@
 
 .slide-1__layout {
 	display: flex;
+	justify-content: space-between;
 	gap: 2rem;
 	flex-direction: column;
-	/* justify-content: space-between; */
+	height: 100%;
 }
 
 .slide-1__top-group {
 	display: grid;
 	grid-template-columns: 1rem 1fr;
 	grid-template-rows: repeat(2, min-content);
-	gap: 3rem;
+	gap: 2em;
 }
 .slide-1__top-group::before {
 	content: "";
 	background-color: var(--clr-1-500-solid-invert);
 }
 
-h1 {
+.main-ttl {
 	--x: 3;
 	--col: 5;
-
-	font-weight: var(--fw-sb);
 }
 
 .ribbon {
 	position: relative;
-	padding-block: 1.5rem 1.4rem;
+	padding-block: 1em;
 	align-self: end;
-	text-transform: uppercase;
-	font-weight: var(--fw-lt);
-	line-height: 1;
+	/* margin-top: auto; */
 	color: var(--clr-0-100-solid);
 }
 .ribbon::before {
@@ -44,6 +41,6 @@ h1 {
 	inset: 0 -1000% 0 0;
 	z-index: -1;
 	background-color: var(--clr-1-500-solid-invert);
-	transform: skew(-30deg) translateX(-3rem);
+	transform: skew(-30deg) translateX(-2em);
 	box-shadow: -0.25rem -0.25rem 0.5rem 0.25rem hsla(0, 0%, 100%, 0.15);
 }

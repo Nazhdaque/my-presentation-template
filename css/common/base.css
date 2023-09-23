@@ -13,10 +13,6 @@
 	list-style: none;
 }
 
-:where(h1, h2, h3, h4, h5, h6) {
-	line-height: 1.1;
-}
-
 :where(a, button) {
 	cursor: pointer;
 	font-size: inherit;
@@ -25,6 +21,15 @@
 	outline: none;
 	background: none;
 	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.1;
 }
 
 *::selection {

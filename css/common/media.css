@@ -10,6 +10,18 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| md */
 @media (width <= 768px) {
+	:root {
+		/* 	375px ~ 768px: major second */
+		--fs-3xl: clamp(1.802rem, 0.919vw + 1.587rem, 2.027rem);
+		--fs-2xl: clamp(1.602rem, 0.814vw + 1.411rem, 1.802rem);
+		--fs-xl: clamp(1.424rem, 0.725vw + 1.254rem, 1.602rem);
+		--fs-lg: clamp(1.266rem, 0.644vw + 1.115rem, 1.424rem);
+		--fs-md: clamp(1.125rem, 0.573vw + 0.991rem, 1.266rem);
+		--fs-rg: clamp(1rem, 0.509vw + 0.881rem, 1.125rem);
+		--fs-sm: clamp(0.889rem, 0.453vw + 0.783rem, 1rem);
+		--fs-xs: clamp(0.79rem, 0.402vw + 0.696rem, 0.889rem);
+	}
+
 	.list {
 		--indent: var(--indent-off);
 	}

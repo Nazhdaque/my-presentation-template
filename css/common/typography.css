@@ -1,60 +1,67 @@
 :root {
 	--ff-rg: "Montserrat", sans-serif;
 
-	--fw-tn: 100;
-	--fw-el: 200;
+	--fw-ul: 100;
+	--fw-tn: 200;
 	--fw-lt: 300;
 	--fw-rg: 400;
 	--fw-md: 500;
 	--fw-sb: 600;
 	--fw-bd: 700;
-	--fw-eb: 800;
+	--fw-hv: 800;
 	--fw-bk: 900;
 
-	/* --fs-xs: 0.75rem; */
-	/* --fs-sm: 0.875rem; */
-	--fs-rg: clamp(1rem, 0.633vw + 0.696rem, 1.25rem); /* md ~ xxl: 16px ~ 20px */
-	/* --fs-md: 1.25rem; */
-	/* --fs-lg: 1.75rem; */
-	/* --fs-xl: 2rem; */
-	/* --fs-2xl: 3rem; */
-	--fs-3xl: clamp(
-		2.25rem,
-		5.696vw + -0.484rem,
-		4.5rem
-	); /* md ~ xxl: 36px ~ 72px */
+	/* ---
+	https://fluidtypography.com/
+	https://typescale.com/
+	--- */
 
-	--lh-rg: clamp(
-		1.5rem,
-		1.582vw + 0.741rem,
-		2.125rem
-	); /* md ~ xxl: 1.5 ~ 1.7 */
+	/* 768px ~ 1600px: major third */
+	--fs-3xl: clamp(3.052rem, 1.192vw + 2.623rem, 3.815rem);
+	--fs-2xl: clamp(2.441rem, 0.954vw + 2.098rem, 3.052rem);
+	--fs-xl: clamp(1.953rem, 0.763vw + 1.679rem, 2.441rem);
+	--fs-lg: clamp(1.563rem, 0.61vw + 1.343rem, 1.953rem);
+	--fs-md: clamp(1.25rem, 0.488vw + 1.074rem, 1.563rem);
+	--fs-rg: clamp(1rem, 0.391vw + 0.859rem, 1.25rem);
+	--fs-sm: clamp(0.8rem, 0.312vw + 0.688rem, 1rem);
+	--fs-xs: clamp(0.64rem, 0.25vw + 0.55rem, 0.8rem);
+
+	--lh-md: 1.6;
+	--lh-rg: 1.5;
+
+	--fs-mod: 1;
 }
 
-/* titles */
-.ttl-rg {
-	font-size: var(--fs-lg);
+/* |||||||||| |||||||||| |||||||||| titles */
+.ttl-xl {
+	font-size: var(--fs-3xl);
+	font-weight: var(--fw-sb);
+}
+.ttl-lg {
+	font-size: var(--fs-2xl);
 }
 .ttl-md {
 	font-size: var(--fs-xl);
 }
-.ttl-lg {
-	font-size: var(--fs-3xl);
+.ttl-rg {
+	font-size: var(--fs-lg);
 }
 
-/* text */
-.txt-xs {
-	font-size: var(--fs-xs);
-}
-.txt-sm {
-	font-size: var(--fs-sm);
+/* |||||||||| |||||||||| |||||||||| text */
+.txt-md {
+	font-size: var(--fs-md);
 }
 .txt-rg {
 	font-size: var(--fs-rg);
 }
-.txt-md {
-	font-size: var(--fs-md);
+.txt-sm {
+	font-size: var(--fs-sm);
 }
-.txt-lg {
-	font-size: var(--fs-xl);
+.txt-xs {
+	font-size: var(--fs-xs);
+}
+
+/* |||||||||| |||||||||| |||||||||| text utilities */
+.caps {
+	text-transform: uppercase;
 }
