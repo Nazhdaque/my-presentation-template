@@ -1,0 +1,8 @@
+.slide-3 .slide-bg {
+	--side: var(--right);
+	--clip: var(--clp-right);
+
+	--image: url(/images/group-trucks-parked-row.webp);
+	--overlay: var(--overlay-3);
+	--tint: var(--tint-2);
+}

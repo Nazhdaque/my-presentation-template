@@ -27,7 +27,6 @@
 .grid-x {
 	--shrink: 0.85;
 	--width: var(--max-content-width);
-	--gap: 1rem; /* unit is required even if it is 0! */
 	--count: var(--repeat, auto-fit);
 
 	--col-x: repeat(

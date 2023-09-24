@@ -1,4 +1,7 @@
-.slide-1 {
+.slide-1 .slide-bg {
+	--side: 0;
+	--w: 100%;
+
 	--image: url(/images/group-trucks-parked-row.webp);
 	--overlay: var(--overlay-2);
 	--tint: var(--tint-1);
@@ -43,4 +46,9 @@
 	background-color: var(--clr-1-500-solid-invert);
 	transform: skew(-30deg) translateX(-2em);
 	box-shadow: -0.25rem -0.25rem 0.5rem 0.25rem hsla(0, 0%, 100%, 0.15);
+}
+
+.x {
+	--col: 3;
+	--gap: 3rem; /* unit is required even if it is 0! */
 }

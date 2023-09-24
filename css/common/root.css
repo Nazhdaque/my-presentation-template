@@ -12,9 +12,13 @@
 	--clr-1-900-solid: hsl(0, 1%, 25%);
 
 	--clr-2-300-solid: hsl(233, 9%, 65%);
+	--clr-2-300-alpha: 233, 9%, 65%;
 	--clr-2-500-solid: hsl(44, 85%, 55%);
+	--clr-2-500-alpha: 44, 85%, 55%;
 	--clr-2-600-solid: hsl(146, 43%, 41%);
+	--clr-2-600-alpha: 146, 43%, 41%;
 	--clr-2-700-solid: hsl(261, 35%, 43%);
+	--clr-2-700-alpha: 261, 35%, 43%;
 
 	--time: 0.1s;
 	--easing: ease-in;
@@ -34,8 +38,12 @@
 	--clr-1: hsl(0, 0%, 0%, 0.25);
 	--clr-2: hsl(0, 0%, 0%, 0.75);
 	--tint-1: hsl(175, 56%, 12%);
-	--tint-2: hsl(58, 56%, 12%);
+	--tint-2: hsl(225, 65%, 20%);
+	/* --tint-2: hsl(var(--clr-2-600-alpha), 0.5); */
 	--overlay-1: linear-gradient(90deg, var(--clr-1) 0%, var(--clr-2) 100%);
 	--overlay-2: linear-gradient(90deg, var(--clr-2) 25%, var(--clr-1) 100%);
 	--overlay-3: linear-gradient(90deg, var(--clr-2) 10%, var(--clr-1) 50%);
+
+	--shadow-left: 2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
+	--shadow-right: -2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
 }
