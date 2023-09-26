@@ -40,7 +40,8 @@ html,
 body {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
-	scroll-padding-top: 1rem;
+	scroll-padding-top: var(--header-height);
+	height: 100%;
 }
 
 body {

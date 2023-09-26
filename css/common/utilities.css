@@ -34,7 +34,7 @@
 		minmax(
 			min(
 				(
-					((var(--width) - var(--gap) * (var(--col) - 1)) / var(--col)) *
+					((var(--width) - var(--gap-x, 0rem) * (var(--col) - 1)) / var(--col)) *
 						var(--shrink)
 				),
 				100%
@@ -44,18 +44,18 @@
 	);
 
 	display: grid;
-	gap: var(--gap);
+	column-gap: var(--gap-x, 0rem);
+	row-gap: var(--gap-y, 0rem);
 	grid-template-columns: var(--col-x);
 }
 
 .flex-x {
 	--shrink: 0.85;
 	--width: var(--max-content-width);
-	--gap: 0rem; /* unit is required even if it is 0! */
 
 	--width-x: min(
 		(
-			((var(--width) - var(--gap) * (var(--col) - 1)) / var(--col)) *
+			((var(--width) - var(--gap-x, 0rem) * (var(--col) - 1)) / var(--col)) *
 				var(--shrink)
 		),
 		100%
@@ -64,7 +64,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: var(--gap);
+	column-gap: var(--gap-x, 0rem);
+	row-gap: var(--gap-y, 0rem);
 }
 .flex-x > * {
 	flex: 1 1 var(--width-x);
@@ -72,14 +73,13 @@
 
 .width-x {
 	--width: var(--max-content-width);
-	--gap: 0rem; /* unit is required even if it is 0! */
-	/* --x: 2;
-	--col: 3; */
+	/* --x: 2; */
+	/* --col: 3; */
 
 	--width-x: min(
 		(
-			((var(--width) - var(--gap) * (var(--col) - 1)) / var(--col)) * var(--x) +
-				var(--gap) * (var(--x) - 1)
+			((var(--width) - var(--gap-x, 0rem) * (var(--col) - 1)) / var(--col)) *
+				var(--x) + var(--gap-x, 0rem) * (var(--x) - 1)
 		),
 		100%
 	);
@@ -97,6 +97,13 @@
 }
 .r-span-x {
 	grid-row: span var(--x, 2);
+}
+
+.a-self-s {
+	align-self: start;
+}
+.a-self-e {
+	align-self: end;
 }
 
 /* scroll-snap */

@@ -2,7 +2,7 @@
 .slide-2 .slide-bg-overlay {
 	--side: var(--left);
 	--clip: var(--clp-left);
-	--clr-filter: rgba(200, 100, 10, 0.2);
+	--clr-filter: rgba(26, 22, 108, 0.2);
 
 	--image: url(/images/group-trucks-parked-row.webp);
 	--overlay: var(--overlay-1);

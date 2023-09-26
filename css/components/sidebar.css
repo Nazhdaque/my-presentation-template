@@ -22,7 +22,7 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-	margin-block: auto;
+	margin-block: var(--header-height) auto;
 	z-index: 999;
 	background-color: var(--clr-1-900-solid);
 	counter-reset: sidebar-counter;

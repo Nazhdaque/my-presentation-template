@@ -17,14 +17,24 @@
 	--- */
 
 	/* 768px ~ 1600px: major third */
-	--fs-3xl: clamp(3.052rem, 1.192vw + 2.623rem, 3.815rem);
+
+	/* --fs-3xl: clamp(3.052rem, 1.192vw + 2.623rem, 3.815rem);
 	--fs-2xl: clamp(2.441rem, 0.954vw + 2.098rem, 3.052rem);
 	--fs-xl: clamp(1.953rem, 0.763vw + 1.679rem, 2.441rem);
 	--fs-lg: clamp(1.563rem, 0.61vw + 1.343rem, 1.953rem);
 	--fs-md: clamp(1.25rem, 0.488vw + 1.074rem, 1.563rem);
 	--fs-rg: clamp(1rem, 0.391vw + 0.859rem, 1.25rem);
 	--fs-sm: clamp(0.8rem, 0.312vw + 0.688rem, 1rem);
-	--fs-xs: clamp(0.64rem, 0.25vw + 0.55rem, 0.8rem);
+	--fs-xs: clamp(0.64rem, 0.25vw + 0.55rem, 0.8rem); */
+
+	--fs-3xl: 3.052rem;
+	--fs-2xl: 2.441rem;
+	--fs-xl: 1.953rem;
+	--fs-lg: 1.563rem;
+	--fs-md: 1.25rem;
+	--fs-rg: 1rem;
+	--fs-sm: 0.8rem;
+	--fs-xs: 0.64rem;
 
 	--lh-md: 1.6;
 	--lh-rg: 1.5;

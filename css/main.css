@@ -10,12 +10,13 @@
 @import url(./components/sidebar.css) layer(components);
 @import url(./components/swiper.css) layer(components);
 @import url(./components/list.css) layer(components);
+@import url(./components/table.css) layer(components);
 @import url(./components/buttons.css) layer(components);
 @import url(./components/toggle.css) layer(components);
 @import url(./components/modal.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
-@import url(./parts/slides.css) layer(parts);
+@import url(./parts/main-content.css) layer(parts);
 @import url(./parts/slides-bgs.css) layer(parts);
 @import url(./parts/slide-1.css) layer(parts);
 @import url(./parts/slide-2.css) layer(parts);

@@ -2,7 +2,29 @@ import "./css/main.css";
 import "./js/swiper.js";
 import "./js/sidebar.js";
 import "material-icons/iconfont/round.css";
+import { SizeSetter } from "./js/sizeSetter.js";
+import { AttrSetter } from "./js/attrSetter";
+import { accenTable } from "./js/accenTable";
 
+// ---
+accenTable(document.querySelectorAll("table"));
+
+const attrSetter = new AttrSetter();
+attrSetter.initWith("role", {
+	table: "table",
+	caption: "caption",
+	thead: "rowgroup",
+	tbody: "rowgroup",
+	tfoot: "rowgroup",
+	tr: "row",
+	td: "cell",
+	th: "columnheader",
+	"th[scope=row]": "rowheader",
+});
+
+// ---
+const sizeSetter = new SizeSetter();
+sizeSetter.initWith([["master-1", "slave-1"]]);
 // ---
 const sidebar = document.querySelector(".sidebar");
 const sidebarToggle = document.querySelector(".sidebar-toggle");

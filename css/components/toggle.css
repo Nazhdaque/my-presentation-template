@@ -1,6 +1,6 @@
 .sidebar-toggle {
-	--size: 2rem;
-	--thikness: 0.25rem;
+	--size: 1.6rem;
+	--thikness: 0.2rem;
 	--rotate: 225deg;
 	--space: calc(var(--thikness) * 2);
 	--transform: translateY(var(--space)) rotate(var(--rotate));

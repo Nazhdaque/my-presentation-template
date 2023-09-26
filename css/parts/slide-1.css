@@ -10,7 +10,7 @@
 .slide-1__layout {
 	display: flex;
 	justify-content: space-between;
-	gap: 2rem;
+	gap: 5rem;
 	flex-direction: column;
 	height: 100%;
 }
@@ -20,22 +20,17 @@
 	grid-template-columns: 1rem 1fr;
 	grid-template-rows: repeat(2, min-content);
 	gap: 2em;
+	align-self: start;
 }
 .slide-1__top-group::before {
 	content: "";
 	background-color: var(--clr-1-500-solid-invert);
 }
 
-.main-ttl {
-	--x: 3;
-	--col: 5;
-}
-
 .ribbon {
 	position: relative;
 	padding-block: 1em;
-	align-self: end;
-	/* margin-top: auto; */
+	place-self: end;
 	color: var(--clr-0-100-solid);
 }
 .ribbon::before {
@@ -46,9 +41,4 @@
 	background-color: var(--clr-1-500-solid-invert);
 	transform: skew(-30deg) translateX(-2em);
 	box-shadow: -0.25rem -0.25rem 0.5rem 0.25rem hsla(0, 0%, 100%, 0.15);
-}
-
-.x {
-	--col: 3;
-	--gap: 3rem; /* unit is required even if it is 0! */
 }
