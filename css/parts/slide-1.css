@@ -7,38 +7,6 @@
 	--tint: var(--tint-1);
 }
 
-.slide-1__layout {
-	display: flex;
-	justify-content: space-between;
-	gap: 5rem;
-	flex-direction: column;
-	height: 100%;
-}
-
-.slide-1__top-group {
-	display: grid;
-	grid-template-columns: 1rem 1fr;
-	grid-template-rows: repeat(2, min-content);
-	gap: 2em;
-	align-self: start;
-}
-.slide-1__top-group::before {
-	content: "";
-	background-color: var(--clr-1-500-solid-invert);
-}
-
-.ribbon {
-	position: relative;
-	padding-block: 1em;
-	place-self: end;
-	color: var(--clr-0-100-solid);
-}
-.ribbon::before {
-	position: absolute;
-	content: "";
-	inset: 0 -1000% 0 0;
-	z-index: -1;
-	background-color: var(--clr-1-500-solid-invert);
-	transform: skew(-30deg) translateX(-2em);
-	box-shadow: -0.25rem -0.25rem 0.5rem 0.25rem hsla(0, 0%, 100%, 0.15);
+.slide-1 .slide-content {
+	grid-auto-rows: min-content 1fr min-content;
 }

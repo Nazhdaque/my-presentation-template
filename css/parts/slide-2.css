@@ -11,3 +11,7 @@
 .slide-2 .w-img::before {
 	filter: invert(1) grayscale(1);
 }
+
+.slide-2 .slide-content {
+	grid-auto-rows: min-content 1fr;
+}

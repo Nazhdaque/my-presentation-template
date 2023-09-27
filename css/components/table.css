@@ -42,7 +42,6 @@ table {
 	--indent: 0.75rem;
 	--inner-radius: 8px;
 	--outer-radius: calc(var(--inner-radius) + var(--thickness));
-	--table-shadow: 0rem 2rem 4rem -2rem rgba(0, 0, 0, 0.25);
 
 	border-spacing: 0 var(--thickness);
 

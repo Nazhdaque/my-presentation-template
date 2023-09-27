@@ -58,22 +58,8 @@
 .slide-content {
 	margin-top: 3rem;
 	display: grid;
+	gap: 3rem;
 	align-items: center;
-}
-
-.heading {
-	--col: 3;
-	--x: 1;
-
-	display: grid;
-	grid-template-columns: 0.33em 1fr;
-	grid-template-rows: repeat(2, min-content);
-	column-gap: 0.5em;
-	align-self: start;
-}
-.heading::before {
-	content: "";
-	background-color: var(--clr-1-500-solid-invert);
 }
 
 .main-ttl {

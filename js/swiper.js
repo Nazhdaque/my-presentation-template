@@ -19,7 +19,6 @@ const className = "swiper-bullet";
 
 const swiperCreative = new Swiper(".swiper-creative", {
 	modules: [Navigation, Pagination, Keyboard, Mousewheel, EffectCreative],
-	// autoHeight: true,
 	initialSlide: 0,
 	pagination: {
 		el: ".swiper-pagination",
