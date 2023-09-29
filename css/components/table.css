@@ -22,7 +22,6 @@ tbody th {
 
 table,
 caption {
-	isolation: isolate;
 	background-color: var(--clr-txt--lt);
 }
 
@@ -54,6 +53,7 @@ table {
 
 	overflow: hidden;
 	box-shadow: var(--table-shadow);
+	isolation: isolate;
 }
 
 tbody tr:last-child > *:first-child {
@@ -69,7 +69,7 @@ caption {
 
 	border-top-left-radius: var(--inner-radius);
 	border-top-right-radius: var(--inner-radius);
-	position: relative;
+	/* position: relative; */
 }
 
 caption,

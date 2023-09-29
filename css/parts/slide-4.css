@@ -2,3 +2,25 @@
 	--side: var(--left);
 	--clip: var(--clp-left);
 }
+
+.slide-4 .slide-content {
+	grid-auto-rows: min-content 1fr;
+}
+.slide-4 .slide-content > *:last-child {
+	margin-bottom: var(--heading-bottom-indent-x2);
+}
+
+.slide-4 .list {
+	--col: 4;
+	--gap-x: 2rem;
+	--gap-y: 4rem;
+	--li-gap-x: 2.25rem;
+	--li-gap-y: 2rem;
+}
+
+.slide-4 .heading {
+	row-gap: 0.25em;
+}
+.slide-4 .heading::before {
+	background-color: var(--clr-0-900-solid);
+}

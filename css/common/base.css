@@ -23,15 +23,6 @@
 	text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	line-height: 1.1;
-}
-
 *::selection {
 	background-color: hsl(var(--clr-1-500-alpha), 0.15);
 }

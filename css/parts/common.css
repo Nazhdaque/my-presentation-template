@@ -1,4 +1,4 @@
-/* |||||||||| |||||||||| |||||||||| |||||||||| common */
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 .pattern-bg {
 	--s: 84px; /* control the size*/
 	--c1: hsl(0, 0%, 99%);
@@ -42,6 +42,7 @@
 	background-size: calc(var(--s) * 1.732) var(--s);
 }
 
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 .logo-link {
 	display: block;
 	width: var(--logo-size);
@@ -54,17 +55,30 @@
 	height: 100%;
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| all slides */
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 .slide-content {
-	margin-top: 3rem;
+	margin-top: calc(
+		var(--swiper-pagination-height) - var(--swiper-pagination-bottom)
+	);
 	display: grid;
-	gap: 3rem;
+	gap: var(--heading-bottom-indent);
 	align-items: center;
 }
 
-.main-ttl {
-	--x: 3;
-	--col: 5;
-
-	row-gap: 1em;
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.txt-link {
+	position: relative;
+	color: var(--clr-1-500-solid);
+}
+.txt-link::before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 1px;
+	bottom: -0.1rem;
+	background-color: var(--clr-1-500-solid);
+	transition: width 0.1s;
+}
+.txt-link:where(:focus-visible, :hover)::before {
+	width: 100%;
 }

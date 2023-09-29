@@ -15,3 +15,15 @@
 .slide-2 .slide-content {
 	grid-auto-rows: min-content 1fr;
 }
+
+.slide-2 .list {
+	--col: 3;
+	--gap-x: 2rem;
+	--gap-y: 4rem;
+	--li-gap-x: 0rem;
+	--li-gap-y: 2rem;
+}
+
+.slide-2 .slide-content > *:last-child {
+	margin-bottom: var(--heading-bottom-indent-x2);
+}

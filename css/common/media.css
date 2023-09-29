@@ -35,7 +35,7 @@
 		--fs-xs: 0.79rem;
 	}
 
-	.list {
+	.list:not(.list-w-imgs, .list-w-icns) {
 		--indent: var(--indent-off);
 	}
 

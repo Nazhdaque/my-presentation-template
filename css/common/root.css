@@ -3,6 +3,7 @@
 	font-size: clamp(1.3rem, 1dvw + 1dvh + 0.5vmin, 1.6rem);
 	--max-content-width: 100rem;
 
+	/* |||||||||| |||||||||| |||||||||| |||||||||| colors */
 	--clr-0-100-solid: hsl(0, 0%, 96%);
 	--clr-0-100-alpha: 0, 0%, 96%;
 	--clr-0-900-solid: hsl(0, 0%, 13%);
@@ -24,9 +25,11 @@
 	--clr-2-700-solid: hsl(261, 35%, 43%);
 	--clr-2-700-alpha: 261, 35%, 43%;
 
+	/* |||||||||| |||||||||| |||||||||| |||||||||| transition */
 	--time: 0.1s;
 	--easing: ease-in;
 
+	/* |||||||||| |||||||||| |||||||||| |||||||||| logo & header */
 	--logo-size: 2rem;
 	--logo-x: 1;
 	--logo-y: 1;
@@ -39,7 +42,7 @@
 	);
 	--main-height: calc(100% - var(--header-height) * 2);
 
-	/* slides bgs */
+	/* |||||||||| |||||||||| |||||||||| |||||||||| slides bgs */
 	--clr-1: hsl(0, 0%, 0%, 0.25);
 	--clr-2: hsl(0, 0%, 0%, 0.75);
 	--tint-1: hsl(175, 56%, 12%);
@@ -52,4 +55,32 @@
 	--shadow-left: 2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
 	--shadow-right: -2rem 0rem 1.5rem -1.5rem rgba(0, 0, 0, 0.1);
 	--table-shadow: 0rem 2rem 4rem -2rem rgba(0, 0, 0, 0.25);
+
+	/* |||||||||| |||||||||| |||||||||| |||||||||| swiper */
+	--swiper-navigation-size: 2rem;
+	--swiper-navigation-top-offset: 50%;
+	--swiper-navigation-sides-offset: 1rem;
+	--swiper-navigation-color: var(--clr-0-100-solid);
+	--swiper-pagination-color: var(--clr-0-100-solid);
+	--swiper-pagination-bullet-inactive-color: var(--clr-0-100-solid);
+	--swiper-pagination-bullet-inactive-opacity: 0.2;
+	--swiper-pagination-bullet-opacity: 1;
+	--swiper-pagination-bullet-horizontal-gap: 0.5rem;
+	--swiper-pagination-bottom: 1rem;
+	--swiper-pagination-bullet-size: 1rem;
+	/* --swiper-pagination-bullet-width: 1rem;
+	--swiper-pagination-bullet-height: 1rem; */
+	/* --swiper-scrollbar-border-radius: 0.75rem;
+	--swiper-scrollbar-bottom: 0.275rem;
+	--swiper-scrollbar-bg-color: rgba(0, 0, 0, 0);
+	--swiper-scrollbar-drag-bg-color: var(--clr-0-100-solid);
+	--swiper-scrollbar-size: 0.5rem; */
+
+	--swiper-pagination-height: calc(
+		var(--swiper-pagination-bullet-size) + var(--swiper-pagination-bottom) * 2
+	);
+
+	/* |||||||||| |||||||||| |||||||||| |||||||||| */
+	--heading-bottom-indent: 6rem;
+	--heading-bottom-indent-x2: 12rem;
 }
