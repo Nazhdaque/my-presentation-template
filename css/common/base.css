@@ -22,6 +22,10 @@
 	background: none;
 	text-decoration: none;
 }
+:where(h1, h2, h3, h4, h5, h6) {
+	font-size: inherit;
+	font-weight: inherit;
+}
 
 *::selection {
 	background-color: hsl(var(--clr-1-500-alpha), 0.15);

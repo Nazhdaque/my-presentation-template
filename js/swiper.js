@@ -23,7 +23,7 @@ const swiperCreative = new Swiper(".swiper-creative", {
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
-		// dynamicBullets: true,
+		dynamicBullets: true,
 	},
 	effect: "creative",
 	creativeEffect: {
@@ -53,6 +53,11 @@ const swiperCreative = new Swiper(".swiper-creative", {
 	// },
 	// grabCursor: true,
 	slidesPerView: 1,
+	breakpoints: {
+		576: {
+			pagination: { dynamicBullets: false },
+		},
+	},
 });
 
 // ---

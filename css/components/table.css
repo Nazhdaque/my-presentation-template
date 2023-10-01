@@ -53,6 +53,7 @@ table {
 
 	overflow: hidden;
 	box-shadow: var(--table-shadow);
+
 	isolation: isolate;
 }
 

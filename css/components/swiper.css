@@ -13,8 +13,7 @@
 	mix-blend-mode: difference;
 }
 .swiper-pagination {
-	display: flex;
-	justify-content: center;
+	margin-bottom: -8px;
 }
 
 .swiper-slide {

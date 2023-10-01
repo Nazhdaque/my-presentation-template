@@ -2,7 +2,7 @@
 .slide-2 .slide-bg-overlay {
 	--side: var(--left);
 	--clip: var(--clp-left);
-	--clr-filter: rgba(26, 22, 108, 0.2);
+	--clr-filter: rgba(66, 59, 202, 0.2);
 
 	--image: url(/images/group-trucks-parked-row.webp);
 	--overlay: var(--overlay-1);
@@ -12,11 +12,7 @@
 	filter: invert(1) grayscale(1);
 }
 
-.slide-2 .slide-content {
-	grid-auto-rows: min-content 1fr;
-}
-
-.slide-2 .list {
+.slide-2 .list-w-arrow {
 	--col: 3;
 	--gap-x: 2rem;
 	--gap-y: 4rem;

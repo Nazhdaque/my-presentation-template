@@ -3,9 +3,6 @@
 	--clip: var(--clp-left);
 }
 
-.slide-4 .slide-content {
-	grid-auto-rows: min-content 1fr;
-}
 .slide-4 .slide-content > *:last-child {
 	margin-bottom: var(--heading-bottom-indent-x2);
 }

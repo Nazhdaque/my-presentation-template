@@ -11,6 +11,7 @@
 @import url(./components/swiper.css) layer(components);
 @import url(./components/heading.css) layer(components);
 @import url(./components/ribbon.css) layer(components);
+@import url(./components/list-w-arrow.css) layer(components);
 @import url(./components/list.css) layer(components);
 @import url(./components/table.css) layer(components);
 @import url(./components/buttons.css) layer(components);
