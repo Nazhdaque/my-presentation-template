@@ -22,9 +22,14 @@
 	background: none;
 	text-decoration: none;
 }
+
 :where(h1, h2, h3, h4, h5, h6) {
 	font-size: inherit;
 	font-weight: inherit;
+}
+
+b {
+	font-weight: var(--fw-sb);
 }
 
 *::selection {

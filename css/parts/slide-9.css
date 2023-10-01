@@ -1,0 +1,9 @@
+.slide-9 .slide-bg,
+.slide-9 .slide-bg-overlay {
+	--side: var(--right);
+	--mask: var(--clp-right);
+
+	--image: url(/images/group-trucks-parked-row.webp);
+	--overlay: var(--overlay-2);
+	--tint: var(--tint-1);
+}

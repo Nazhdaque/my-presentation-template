@@ -1,9 +1,16 @@
-.slide-5 .slide-bg {
-	--w: auto;
-	--h: 80%;
-	--side: var(--center);
+.slide-5 .slide-bg,
+.slide-5 .slide-bg-overlay {
+	--side: var(--right);
+	--clip: var(--clp-right);
 
 	--image: url(/images/group-trucks-parked-row.webp);
-	--overlay: var(--overlay-3);
-	--tint: var(--tint-1);
+	--overlay: var(--overlay-2);
+	--tint: var(--tint-2);
+}
+
+.slide-5 .slide-bg:first-child,
+.slide-5 .slide-bg-overlay:first-child {
+	--left: 0 auto 0 -19%;
+	--side: var(--left);
+	--clip: var(--clp-left);
 }
