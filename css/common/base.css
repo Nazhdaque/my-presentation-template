@@ -32,6 +32,10 @@ b {
 	font-weight: var(--fw-sb);
 }
 
+p + p {
+	margin-top: 1rem;
+}
+
 *::selection {
 	background-color: hsl(var(--clr-1-500-alpha), 0.15);
 }

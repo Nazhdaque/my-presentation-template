@@ -1,0 +1,119 @@
+.cards-x {
+	--img-shadow-bottom: 0rem 0.5rem 0.5rem -0.25rem rgba(0, 0, 0, 0.25);
+	--img-shadow-right: 0.5rem 0rem 0.5rem -0.25rem rgba(0, 0, 0, 0.25);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| cards 1 */
+.cards-1 > * {
+	display: grid;
+	grid-template-columns: var(--cards-item-cols, 1fr);
+	grid-auto-rows: var(--cards-item-rows, 1fr);
+	column-gap: var(--li-gap-x, var(--gap-x));
+	row-gap: var(--li-gap-y, var(--gap-y));
+	align-items: start;
+}
+
+.cards-1 .img-box {
+	height: 100%;
+	box-shadow: var(--card-img-shadow, var(--img-shadow-bottom));
+}
+
+.cards-1 .card-body {
+	display: grid; /* for ellipsis */
+}
+
+.cards-1 .card-head {
+	margin-bottom: var(--gap-x);
+
+	max-width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.cards-1 .card-head::after {
+	margin-top: 0.5rem;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 0.25em;
+	background: linear-gradient(
+		to left,
+		transparent 25%,
+		var(--clr-1-500-solid) 100%
+	);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| cards 2 */
+.cards-2 > * {
+	display: grid;
+	grid-template-columns: var(--cards-item-cols, 1fr);
+	grid-auto-rows: var(--cards-item-rows, 1fr);
+	column-gap: var(--li-gap-x, var(--gap-x));
+	row-gap: var(--li-gap-y, var(--gap-y));
+	align-items: start;
+}
+
+.cards-2 .card-head,
+.cards-2 .img-box {
+	grid-area: 1 / 1;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.cards-2 .card-head {
+	color: var(--clr-0-100-solid);
+	padding-inline: var(--gap-x);
+	z-index: 1;
+}
+
+.cards-2 .card-head > * {
+	max-width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+
+	/* writing-mode: vertical-rl;
+	writing-mode: sideways-lr;
+	text-orientation: upright; */
+}
+
+.cards-2 .img-box {
+	position: relative;
+	box-shadow: var(--card-img-shadow, var(--img-shadow-bottom));
+}
+
+.cards-2 .img-box::after {
+	position: absolute;
+	content: "";
+	inset: 0;
+	margin: auto;
+	max-height: 2em;
+	background: linear-gradient(
+		to left,
+		hsla(0, 0%, 0%, 0) 15%,
+		hsla(0, 0%, 0%, 0.6) 33%,
+		hsla(0, 0%, 0%, 0.6) 66%,
+		hsla(0, 0%, 0%, 0) 85%
+	);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| cards with bg */
+.cards-w-bg > * {
+	background-color: hsl(var(--clr-1-900-alpha), 0.1);
+	column-gap: 0;
+	row-gap: 0;
+}
+.cards-w-bg .card-body {
+	padding: var(--gap-x);
+}
+
+.cards-w-rounded-img .img-box {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1;
+	align-self: center;
+}

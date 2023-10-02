@@ -30,9 +30,13 @@
 	isolation: isolate;
 	grid-area: var(--rl-li-head-marker-position, auto);
 
-	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-		rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-		rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset;
+	background: radial-gradient(
+		circle at 65% 15%,
+		white 1px,
+		var(--clr-1-500-solid) 3%,
+		var(--clr-1-500-solid-dark) 60%,
+		var(--clr-1-500-solid) 100%
+	);
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| arrow */
@@ -65,7 +69,7 @@
 	justify-items: var(--rl-li-head-text-side, end);
 	margin: var(--rl-li-head-margin, 0 calc(var(--marker-size) / -3) 0 0);
 }
-.li-head > * {
+.list-w-arrows .li-head > * {
 	padding: var(--rl-li-head-padding, 0 0 0 1rem);
 	max-width: 100%;
 	text-overflow: ellipsis;

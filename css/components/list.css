@@ -21,18 +21,18 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| li-head bg */
-/* .li-head {
+.li-head {
 	grid-area: 1 / 2;
 	font-weight: var(--fw-rg);
 	font-size: var(--fs-rg);
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-} */
+}
 
-/* .li-body {
+.li-body {
 	grid-area: var(--indent);
-} */
+}
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| list with images left */
 .list-w-imgs-left {

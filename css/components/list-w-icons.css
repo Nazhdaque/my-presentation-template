@@ -1,4 +1,4 @@
-.list-w-icons {
+.cards-w-icons {
 	--marker-size: 4rem;
 	--indent-on: 2 / 2;
 	--indent-off: 2 / 1 / 2 / -1;
@@ -8,7 +8,7 @@
 	grid-auto-rows: min-content;
 }
 
-.list-w-icons > * {
+.cards-w-icons > * {
 	display: grid;
 	grid-template-columns: min-content 1fr;
 	grid-auto-rows: min-content;
@@ -17,16 +17,16 @@
 	row-gap: var(--li-gap-y, var(--gap-y));
 }
 
-.list-w-icons .li-head {
+.cards-w-icons .card-head {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
 
-.list-w-icons .li-body {
+.cards-w-icons .card-body {
 	grid-area: var(--indent);
 }
 
-.list-w-icons .list-icon {
+.cards-w-icons .list-icon {
 	min-width: var(--marker-size);
 }

@@ -7,7 +7,7 @@
 	margin-bottom: var(--heading-bottom-indent-x2);
 }
 
-.slide-4 .list {
+.slide-4 .cards-x {
 	--col: 4;
 	--gap-x: 2rem;
 	--gap-y: 4rem;
