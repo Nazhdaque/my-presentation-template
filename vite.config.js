@@ -1,3 +1,3 @@
 import { defineConfig } from "vite";
 
-export default defineConfig({ base: "/myPresentation/" });
+export default defineConfig({ base: "/my-presentation-template/" });
