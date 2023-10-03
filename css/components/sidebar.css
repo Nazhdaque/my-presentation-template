@@ -90,8 +90,7 @@
 
 /* marker */
 .marker::before {
-	place-self: start center;
-	/* border-radius: 50%; */
+	align-self: stretch;
 	line-height: 1;
 	display: flex;
 	align-items: center;
