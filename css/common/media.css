@@ -3,10 +3,10 @@
 	:root {
 	}
 
-	.sm--col-span-0 {
+	.sm-col-span-0 {
 		grid-column: auto;
 	}
-	.sm--row-span-0 {
+	.sm-row-span-0 {
 		grid-row: auto;
 	}
 }
@@ -14,10 +14,10 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| md */
 @media (width <= 768px) {
 	/* utilities */
-	.md--d-grid {
+	.md-d-grid {
 		display: grid;
 	}
-	.md--d-none {
+	.md-d-none {
 		display: none;
 	}
 }

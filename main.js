@@ -1,5 +1,5 @@
 import "./css/main.css";
-import "./js/importHTML.js";
+// import "./js/importHTML.js";
 import "./js/swiper.js";
 import "./js/sidebar.js";
 import "material-icons/iconfont/round.css";

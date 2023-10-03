@@ -98,7 +98,7 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| right */
-.list-w-arrows--right {
+.list-w-arrows-left {
 	--rl-li-head-bg: right;
 	--rl-le-head-arrow-trend: polygon(
 		25% 0%,

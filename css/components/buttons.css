@@ -38,7 +38,7 @@
 }
 
 /* |||||||||| */
-.btn--p-x00 {
+.btn-p-x00 {
 	--btn-clr-txt: hsl(var(--hue), 100%, 50%);
 	--btn-clr-bg: var(--hue);
 	--btn-clr-border: var(--hue);
