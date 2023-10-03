@@ -4,20 +4,759 @@
 
 <head>
 	<!-- head content -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+				content="IE=edge">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title"
+				content="myPresentation template">
+	<meta property="og:description"
+				content="Шаблон презентации, альтернатива .pptx. Разрабатывается функциональная база для удобной кастомизации, но проект готов к использованию. Весь контент условный.">
+	<meta property="og:type"
+				content="website">
+	<meta property="og:url"
+				content="https://nazhdaque.github.io/my-presentation-template/">
+	<meta property="og:image"
+				content="./images/demo/preview.jpg">
+	<meta property="og:image:width"
+				content="1000">
+	<meta property="og:image:height"
+				content="564">
+	<!-- Twitter -->
+	<meta name="twitter:card"
+				content="summary_large_image">
+	<meta name="twitter:title"
+				content="myPresentation template">
+	<meta name="twitter:description"
+				content="Шаблон презентации, альтернатива .pptx. Разрабатывается функциональная база для удобной кастомизации, но проект готов к использованию. Весь контент условный.">
+	<meta name="twitter:url"
+				content="https://nazhdaque.github.io/my-presentation-template/">
+	<meta name="twitter:image"
+				content="./images/preview.jpg">
+	<!-- // -->
+	<meta name="description"
+				content="Шаблон презентации, альтернатива .pptx. Разрабатывается функциональная база для удобной кастомизации, но проект готов к использованию. Весь контент условный.">
+	<title>myPresentation template</title>
+	<link rel="icon"
+				type="image/svg+xml"
+				href="/images/demo/vite.svg">
 </head>
 
 <body class="layout-body pattern-bg">
 	<ul class="sidebar width-x">
 		<!-- sidebar items -->
+		<li class="sidebar-item">
+			<h2 class="ac-header sidebar-item__ttl">
+				<button class="sidebar-item__btn marker ellipsis-container slide-to"
+								type="button">
+					<span class="ellipsis">Ссылка на слайд</span>
+					<svg class="chevron chevron-right">
+						<use href="images/chevron.svg#chevron"></use>
+					</svg>
+				</button>
+			</h2>
+		</li>
+
+		<!-- sidebar-item -->
+		<li class="ac sidebar-item">
+			<h2 class="ac-header sidebar-item__ttl">
+				<button class="ac-trigger sidebar-item__btn marker ellipsis-container"
+								type="button">
+					<span class="ellipsis">Несколько слайдов на одну тему</span>
+					<svg class="chevron">
+						<use href="images/chevron.svg#chevron"></use>
+					</svg>
+				</button>
+			</h2>
+
+			<div class="ac-panel">
+				<ol class="sidebar-item__links">
+					<li>
+						<a href="#"
+							 class="marker sidebar-item__link ellipsis-container slide-to">
+							<span class="ellipsis"
+										tabindex="-1">Lorem ipsum dolor.</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="#"
+							 class="marker sidebar-item__link ellipsis-container slide-to">
+							<span class="ellipsis"
+										tabindex="-1">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+								inventore.
+							</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="#"
+							 class="marker sidebar-item__link ellipsis-container slide-to">
+							<span class="ellipsis"
+										tabindex="-1">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+								inventore.
+							</span>
+						</a>
+					</li>
+				</ol>
+			</div>
+		</li>
+
+		<!-- sidebar-item -->
+		<li class="sidebar-item">
+			<h2 class="ac-header sidebar-item__ttl">
+				<button class="sidebar-item__btn marker ellipsis-container slide-to"
+								type="button">
+					<span class="ellipsis">Ссылка на слайд</span>
+					<svg class="chevron chevron-right">
+						<use href="images/chevron.svg#chevron"></use>
+					</svg>
+				</button>
+			</h2>
+		</li>
 	</ul>
 
 	<header class="main-header layout-center">
 		<!-- header content -->
+		<div class="main-header__group">
+			<a href="https://hh.ru/resume/1b5be24eff08e1e5cd0039ed1f5270454c4b49"
+				 class="brand-logo logo-link"
+				 aria-label="home">
+				<img class="logo-link__img"
+						 src="/images/hh.svg"
+						 alt="brand-logo">
+			</a>
+
+			<nav class="md--d-none"
+					 aria-label="Header">
+				<ul class="nav-links">
+					<li><a href="#"
+							 class="nav-links__link">link</a></li>
+					<li><a href="#"
+							 class="nav-links__link">link</a></li>
+					<li><a href="#"
+							 class="nav-links__link">link</a></li>
+				</ul>
+			</nav>
+
+			<button class="sidebar-toggle"
+							aria-label="show / hide sidebar">
+				<span class="sidebar-toggle-img"></span>
+			</button>
+		</div>
 	</header>
 
 	<main class="swiper swiper-creative">
 		<ul class="swiper-wrapper">
 			<!-- slides -->
+			<li class="swiper-slide slide-1">
+				<div class="layout-center">
+					<div class="slide-content">
+						<div class="slide-bg w-img"></div>
+						<div class="slide-bg-overlay"></div>
+						<div class="heading fs-3xl">
+							<h1 class="fs-3xl width-x">Это шаблон презентации. Альтернатива .pptx</h1>
+							<p class="fs-md grid-full-width">Проект находится в стадии разработки</p>
+						</div>
+
+						<ul class="cards-w-icons grid-x">
+							<li>
+								<img class="list-icon"
+										 src="images/demo/icons/figure-1.svg"
+										 alt="" />
+								<h2 class="caps">Следует понимать</h2>
+								<div class="card-body">
+									<p>Весь текстовый и графический контент представлен в демонстрационных целях. Он может быть абсолютно
+										любым.</p>
+								</div>
+							</li>
+
+							<li>
+								<img class="list-icon"
+										 src="images/demo/icons/figure-2.svg"
+										 alt="" />
+								<h2 class="caps">Важно подчеркнуть</h2>
+								<div class="card-body">
+									<p>Основные усилия направлены на создание универсальной
+										функциональности без привязки к конкретному контенту.</p>
+								</div>
+							</li>
+
+							<li>
+								<img class="list-icon"
+										 src="images/demo/icons/figure-3.svg"
+										 alt="" />
+								<h2 class="caps">Стоит отметить</h2>
+								<div class="card-body">
+									<p>Быстрая и удобная кастомизация под конкретные задачи и содержание — главная
+										цель проекта.</p>
+								</div>
+							</li>
+
+							<li>
+								<img class="list-icon"
+										 src="images/demo/icons/figure-4.svg"
+										 alt="" />
+								<h2 class="caps">Тем не менее</h2>
+								<div class="card-body">
+									<p>Уже сейчас это полнофункциональный продукт, готовый к использованию по назначению.</p>
+								</div>
+							</li>
+						</ul>
+
+						<p class="ribbon fs-rg caps">under development</p>
+					</div>
+				</div>
+			</li>
+
+			<li class="swiper-slide slide-2">
+				<div class="layout-center">
+					<div class="slide-content">
+						<div class="slide-bg trapeze w-img"></div>
+						<div class="slide-bg-overlay trapeze"></div>
+
+						<div class="heading fs-xl">
+							<h2 class="fs-xl width-x">Чем такая презентация лучше MS PowerPoint</h2>
+							<p class="fs-md grid-full-width">Спойлер: пожалуй, всем! Счет 12:2 не в пользу PP</p>
+						</div>
+
+						<ol class="flex-x list-w-arrows">
+							<li class="master-1">
+								<div class="li-head">
+									<h3>Готово к использованию</h3>
+								</div>
+								<div class="li-body">
+									<p>Не нужны никакие спец. программы для просмотра — все открывается по ссылке и работает в любом
+										браузере, на любом устройстве.</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="li-head">
+									<h3>Без лишних телодвижений</h3>
+								</div>
+								<div class="li-body">
+									<p>Нет необходимости скачивать и / или пересылать файлы по почте, хранить их где-то. Кроме того, они
+										имеют замечательное свойство теряться.</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="li-head">
+									<h3>Интуитивно понятно</h3>
+								</div>
+								<div class="li-body">
+									<p>Привычные каждому пользователю возможности управления мышкой, клавиатурой, тачпэдом ноутбука,
+										жестами на сенсорных дисплеях: листаем слайды стрелками, колесом мыши, драг-н-дропом, перемещаемся
+										между интерактивными элементами (ссылки, кнопки, поля формы) по Tab, свайпаем, тапаем, масштабируем
+										и т.д. </p>
+								</div>
+							</li>
+
+							<li>
+								<div class="li-head">
+									<h3>Выглядит отлично</h3>
+								</div>
+								<div class="li-body">
+									<p>Все
+										мы примерно представляем, как выглядит среднестатистическая презентация в .pptx, да еще, как
+										водится,
+										хорошенько пожатая в при конвертации в .pdf. Как правило, не важно.
+									</p>
+									<p>Здесь же за качество
+										визуализации отвечает браузер, он
+										использует аппаратные
+										ресурсы ПК, чтобы идеально отрисовать все на вашем мониторе. Поэтому: яркие, насыщенные цвета,
+										четкие линии, шрифты, плавные градиенты, хай-рез, никакого муара, пиксельной каши и т.д. Словом —
+										максимальное качество картинки в любом
+										разрешении.</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="li-head">
+									<h3>Аккуратно</h3>
+								</div>
+								<div class="li-body">
+									<p>Опрятность, перфектность во всем, что касается макета и расположения элементов на
+										странице. Модульная сетка, отступы, размеры, формы,
+										позиционирование, поведение на странице, цвета —
+										абсолютно все задается параметрически, программным кодом, а не на глазок, вручную, как это часто
+										бывает
+										при создании .pptx презентации.
+									</p>
+									<p>Когда презентация элементарно аккуратно выполнена — это уже треть
+										всего успеха, даже без особых дизайнерских изысков и навыков.</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="li-head">
+									<h3>Все поместится</h3>
+								</div>
+								<div class="li-body">
+									<p>Добавить контент в слайд —
+										никаких проблем даже в том случае, если что-то не помещается в область просмотра. Просто появится
+										возможность вертикальной прокрутки. Как на этой странице, например.
+									</p>
+									<p>Провернуть такой трюк с .pptx,
+										очевидно, не удастся. Все знают, как это бывает: либо новый слайд, либо вот эти пятнашки, когда все
+										куда-то сдвигается, уплотняется, налезает и в итоге выглядит печально.</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="li-head">
+									<h3>Легко кастомизировать</h3>
+								</div>
+								<div class="li-body">
+									<p>Здесь разница просто колоссальная. В .pptx презентации любые изменения —
+										это утомительный ручной труд в каждом слайде, которых у вас может быть несколько десятков. Поменять
+										фон, актуализировать айдентику в нескольких презентациях — целая проблема: неудобно,
+										времязатратно.
+									</p>
+									<p>В веб-проекте же можно моментально изменить стилизацию любого компонента:
+										шрифты, цвета, размеры, положение на странице, изображения. Это делается
+										централизованно, изменения затрагивают все однотипные элементы сразу.</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="li-head">
+									<h3>Reusability</h3>
+								</div>
+								<div class="li-body">
+									<p>Это преимущество прямо следует из предыдущего пункта. PP-презентация — вещь, как правило,
+										одноразовая, это статичный формат, тяжело поддающийся радикальной перебаботке. Веб-проект — совсем
+										другое дело: потратив время и усилия на разработку с нуля, вы получаете функциональную базу для всех
+										последующих проектов. И с каждой итерацией эта база усовершенствуется, оптимизируется,
+										дополняется новыми возможностями.</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="li-head">
+									<h3>Адаптивность и responsive</h3>
+								</div>
+								<div class="li-body">
+									<p>Возможность комфортного просмотра на любом устройстве, с т.ч. с экрана смартфона. В
+										этом легко убедиться: потяните за уголок окна браузера, чтобы уменьшить область просмотра до
+										размеров экрана смартфона. Макет
+										страницы гибко подстроится под эти изменения, сохраняя при этом аккуратный вид и
+										читаемость. В нужный момент появится возможность вертикальной прокрутки и т.д. А теперь вспомните,
+										что из себя представляет просмотр .pdf или .pptx на смартфоне.
+									</p>
+								</div>
+							</li>
+
+							<li class="master-1">
+								<div class="li-head">
+									<h3>Огромный потенциал</h3>
+								</div>
+								<div class="li-body">
+									<p>Возможности связки HTML — CSS — JS в плане визуализации контента несоизмеримо шире,
+										чем в PowerPoint (далее PP). Экскаватор и лопата, танк и самокат — такие примерно ассоциации должны
+										возникать при
+										сравнении инструментов веб-разработки и PP.</p>
+								</div>
+							</li>
+
+							<li class="slave-1">
+								<div class="li-head">
+									<h3>Сторонние библиотеки</h3>
+								</div>
+								<div class="li-body">
+									<p>Доступно множество профессиональных решений мирового уровня, позволяющих создавать
+										интересный, функциональный, впечатляющий контент. Простой пример: интерактивные графики с
+										помощью
+										<a class="txt-link"
+											 href="https://www.chartjs.org/"
+											 target="_blank"
+											 rel="noopener noreferrer">chart.js</a>, слайдеры (кстати, в этом проекте используется <a
+											 class="txt-link"
+											 href="http://"
+											 target="_blank"
+											 rel="noopener noreferrer">swiper.js</a>
+										), анимации…
+									</p>
+								</div>
+							</li>
+
+							<li class="slave-1">
+								<div class="li-head">
+									<h3>Полноценный веб-ресурс</h3>
+								</div>
+								<div class="li-body">
+									<p>Который начинает работать на вас с момента публикации на домене компании. Страница
+										проиндексируется и будет попадать в выдачу поисковиков. Если контент годный, его удобно потреблять
+										(помним про адаптивность, доступность с мобильных устройств), все сделано технически грамотно,
+										быстро грузится и т.д., вы
+										получаете трафик.</p>
+									<p>Также помимо
+										собственно текстового контента
+										в вашем распоряжении есть метатеги — один из основных инструментов SEO-продвижения. Формы обратной
+										связи, если это вам нужно.</p>
+								</div>
+							</li>
+						</ol>
+
+						<h2 class="heading fs-xl width-x">Плюсы MS PowerPoint</h2>
+						<ol class="flex-x list-w-arrows list-w-arrows--right">
+							<li class="slave-1">
+								<div class="li-head">
+									<h3>Что-то получится даже у ребенка</h3>
+								</div>
+								<div class="li-body">
+									<p>Сделать презентацию в PP <b>с нуля</b> куда проще и быстрее, чем сверстать и настроить веб-проект.
+										Но только обычную,
+										заурядную, доморощенного
+										вида,
+										словом,
+										сферическую в
+										вакууме. Думается, всем хорошо знаком этот общепринятый стандарт, который вполне себе норма даже в
+										крупных, даже в
+										транснациональных
+										компаниях-гигантах типа HP.
+									</p>
+									<p>Профессиональное владение PP мне
+										встречалось только на Ютубе. Это отдельный вид искусства, такие умельцы, как правило, только этим и
+										зарабатывают. Нужно быть профессиональным дизайнером плюс освоить PP в совершенстве.</p>
+									<p>Парадокс здесь
+										заключается в том, что многие из тех удивительных трюков, которые они демонстрируют,
+										— это зачастую имитация совершенно обычных для веб-проекта вещей. И делать все это в PP сложно.</p>
+								</div>
+							</li>
+
+							<li class="slave-1">
+								<div class="li-head">
+									<h3>Никаких сюрпризов</h3>
+								</div>
+								<div class="li-body">
+									<p>Пожалуй, главное преимущество PP заключается в том, что такая презентация будет выглядеть одинаково
+										на любом устройстве. С оговоркой, правда, что на этом устройстве должен быть установлен собственно
+										MS PP. Google docs не очень хорошо умеет открывать сделанные в MS PP презентации, особенно если там
+										что-то не совсем примитивное. Поэтому для бизнес-задач — только конвертация в PDF. А .pdf — это
+										просто статичное изображение. Т.е. совершенно точно никаких интересных динамических эффектов,
+										анимаций. Плюс, как
+										правило,
+										еще и
+										очень заметная потеря качества.</p>
+								</div>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</li>
+
+			<li class="swiper-slide slide-3">
+				<div class="layout-center">
+					<div class="slide-content">
+						<div class="slide-bg rounded"></div>
+
+						<table>
+							<caption>Адаптивная и семантически корректная таблица с полезным функционалом</caption>
+
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col">thead th-1</th>
+									<th scope="col">thead th-2</th>
+									<th scope="col">thead th-3</th>
+									<th scope="col">thead th-4</th>
+									<th scope="col">thead th-5</th>
+									<th scope="col">thead th-6</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<th scope="row">tbody th-1</th>
+									<td data-cell="thead th-1">tbody tr-1 td-1</td>
+									<td data-cell="thead th-2">tbody tr-1 td-2</td>
+									<td data-cell="thead th-3">tbody tr-1 td-3</td>
+									<td data-cell="thead th-4">tbody tr-1 td-4</td>
+									<td data-cell="thead th-5">tbody tr-1 td-5</td>
+									<td data-cell="thead th-6">tbody tr-1 td-6</td>
+								</tr>
+
+								<tr>
+									<th scope="row">tbody th-2</th>
+									<td data-cell="thead th-1">tbody tr-2 td-1</td>
+									<td data-cell="thead th-2">tbody tr-2 td-2</td>
+									<td data-cell="thead th-3">tbody tr-2 td-3</td>
+									<td data-cell="thead th-4">tbody tr-2 td-4</td>
+									<td data-cell="thead th-5">tbody tr-2 td-5</td>
+									<td data-cell="thead th-6">tbody tr-2 td-6</td>
+								</tr>
+
+								<tr>
+									<th scope="row">tbody th-3</th>
+									<td data-cell="thead th-1">tbody tr-3 td-1</td>
+									<td data-cell="thead th-2">tbody tr-3 td-2</td>
+									<td data-cell="thead th-3">tbody tr-3 td-3</td>
+									<td data-cell="thead th-4">tbody tr-3 td-4</td>
+									<td data-cell="thead th-5">tbody tr-3 td-5</td>
+									<td data-cell="thead th-6">tbody tr-3 td-6</td>
+								</tr>
+
+								<tr>
+									<th scope="row">tbody th-4</th>
+									<td data-cell="thead th-1">tbody tr-4 td-1</td>
+									<td data-cell="thead th-2">tbody tr-4 td-2</td>
+									<td data-cell="thead th-3">tbody tr-4 td-3</td>
+									<td data-cell="thead th-4">tbody tr-4 td-4</td>
+									<td data-cell="thead th-5">tbody tr-4 td-5</td>
+									<td data-cell="thead th-6">tbody tr-4 td-6</td>
+								</tr>
+
+								<tr>
+									<th scope="row">tbody th-5</th>
+									<td data-cell="thead th-1">tbody tr-5 td-1</td>
+									<td data-cell="thead th-2">tbody tr-5 td-2</td>
+									<td data-cell="thead th-3">tbody tr-5 td-3</td>
+									<td data-cell="thead th-4">tbody tr-5 td-4</td>
+									<td data-cell="thead th-5">tbody tr-5 td-5</td>
+									<td data-cell="thead th-6">tbody tr-5 td-6</td>
+								</tr>
+
+								<tr>
+									<th scope="row">tbody th-6</th>
+									<td data-cell="thead th-1">tbody tr-6 td-1</td>
+									<td data-cell="thead th-2">tbody tr-6 td-2</td>
+									<td data-cell="thead th-3">tbody tr-6 td-3</td>
+									<td data-cell="thead th-4">tbody tr-6 td-4</td>
+									<td data-cell="thead th-5">tbody tr-6 td-5</td>
+									<td data-cell="thead th-6">tbody tr-6 td-6</td>
+								</tr>
+
+								<tr>
+									<th scope="row">tbody th-7</th>
+									<td data-cell="thead th-1">tbody tr-7 td-1</td>
+									<td data-cell="thead th-2">tbody tr-7 td-2</td>
+									<td data-cell="thead th-3">tbody tr-7 td-3</td>
+									<td data-cell="thead th-4">tbody tr-7 td-4</td>
+									<td data-cell="thead th-5">tbody tr-7 td-5</td>
+									<td data-cell="thead th-6">tbody tr-7 td-6</td>
+								</tr>
+
+								<tr>
+									<th scope="row">tbody th-8</th>
+									<td data-cell="thead th-1">tbody tr-8 td-1</td>
+									<td data-cell="thead th-2">tbody tr-8 td-2</td>
+									<td data-cell="thead th-3">tbody tr-8 td-3</td>
+									<td data-cell="thead th-4">tbody tr-8 td-4</td>
+									<td data-cell="thead th-5">tbody tr-8 td-5</td>
+									<td data-cell="thead th-6">tbody tr-8 td-6</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+			</li>
+
+			<li class="swiper-slide slide-4">
+				<div class="layout-center">
+					<div class="slide-content">
+						<div class="slide-bg spike"></div>
+						<h2 class="heading fs-xl width-x">Lorem ipsum dolor sit</h2>
+
+						<ul class="grid-x cards-x cards-1 cards-w-rounded-img"
+								style="--cards-item-cols: 2fr 3fr; --card-img-shadow: var(--img-shadow-right)">
+							<li>
+								<div class="img-box">
+									<img class="o-fit-cover"
+											 src="images/demo/list-demo-img-1.webp"
+											 alt="" />
+								</div>
+
+								<div class="card-body">
+									<h3 class="card-head caps">Lorem ipsum</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error deserunt ipsum rem quod quisquam
+										asperiores eaque porro vel unde? Itaque?</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="img-box">
+									<img class="o-fit-cover"
+											 src="images/demo/list-demo-img-2.webp"
+											 alt="" />
+								</div>
+
+								<div class="card-body">
+									<h3 class="card-head caps">Lorem ipsum</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error deserunt ipsum rem quod quisquam
+										asperiores eaque porro vel unde? Itaque?</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="img-box">
+									<img class="o-fit-cover"
+											 src="images/demo/list-demo-img-3.webp"
+											 alt="" />
+								</div>
+								<div class="card-body">
+									<h3 class="card-head caps">Lorem ipsum</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error deserunt ipsum rem quod quisquam
+										asperiores eaque porro vel unde? Itaque?</p>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="grid-x cards-x cards-2"
+								style="--cards-item-rows: 2fr 1fr">
+							<li>
+								<div class="img-box">
+									<img class="o-fit-cover"
+											 src="images/demo/list-demo-img-1.webp"
+											 alt="" />
+								</div>
+								<div class="card-head">
+									<h3 class="caps">Lorem ipsum</h3>
+								</div>
+								<div class="card-body">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error deserunt ipsum rem quod quisquam
+										asperiores eaque porro vel unde? Itaque?</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="img-box">
+									<img class="o-fit-cover"
+											 src="images/demo/list-demo-img-2.webp"
+											 alt="" />
+								</div>
+								<div class="card-head">
+									<h3 class="caps">Lorem ipsum</h3>
+								</div>
+								<div class="card-body">
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam maxime fugit suscipit, odio
+										nostrum rerum obcaecati quidem sapiente. Modi quo voluptatum placeat architecto, corporis officiis
+										et aspernatur expedita.</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="img-box">
+									<img class="o-fit-cover"
+											 src="images/demo/list-demo-img-3.webp"
+											 alt="" />
+								</div>
+								<div class="card-head">
+									<h3 class="caps">Lorem ipsum</h3>
+								</div>
+								<div class="card-body">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, quod, tempore labore asperiores
+										alias facilis odio non eaque vitae sed error quam culpa quae.</p>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="grid-x cards-x cards-2 cards-w-bg"
+								style="--cards-item-cols: 2fr 3fr; --card-body-padding: var(--for-img-left); --card-img-shadow: var(--img-shadow-right)">
+							<li>
+								<div class="img-box">
+									<img class="o-fit-cover"
+											 src="images/demo/list-demo-img-1.webp"
+											 alt="" />
+								</div>
+								<div class="card-head">
+									<h3 class="caps">Lorem ipsum</h3>
+								</div>
+								<div class="card-body">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error deserunt ipsum rem quod quisquam
+										asperiores eaque porro vel unde? Itaque?</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="img-box">
+									<img class="o-fit-cover"
+											 src="images/demo/list-demo-img-2.webp"
+											 alt="" />
+								</div>
+								<div class="card-head">
+									<h3 class="caps">Lorem ipsum</h3>
+								</div>
+								<div class="card-body">
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam maxime fugit suscipit, odio
+										nostrum rerum obcaecati quidem sapiente. Modi quo voluptatum placeat architecto, corporis officiis
+										et aspernatur expedita.</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="img-box">
+									<img class="o-fit-cover"
+											 src="images/demo/list-demo-img-3.webp"
+											 alt="" />
+								</div>
+								<div class="card-head">
+									<h3 class="caps">Lorem ipsum</h3>
+								</div>
+								<div class="card-body">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, quod, tempore labore asperiores
+										alias facilis odio non eaque vitae sed error quam culpa quae.</p>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="grid-x cards-x cards-2 cards-w-bg">
+							<li>
+								<div class="img-box">
+									<img class="o-fit-cover"
+											 src="images/demo/list-demo-img-1.webp"
+											 alt="" />
+								</div>
+								<div class="card-head">
+									<h3 class="caps">Lorem ipsum</h3>
+								</div>
+								<div class="card-body">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error deserunt ipsum rem quod quisquam
+										asperiores eaque porro vel unde? Itaque?</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="img-box">
+									<img class="o-fit-cover"
+											 src="images/demo/list-demo-img-2.webp"
+											 alt="" />
+								</div>
+								<div class="card-head">
+									<h3 class="caps">Lorem ipsum</h3>
+								</div>
+								<div class="card-body">
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam maxime fugit suscipit, odio
+										nostrum rerum obcaecati quidem sapiente. Modi quo voluptatum placeat architecto, corporis officiis
+										et aspernatur expedita.</p>
+								</div>
+							</li>
+
+							<li>
+								<div class="img-box">
+									<img class="o-fit-cover"
+											 src="images/demo/list-demo-img-3.webp"
+											 alt="" />
+								</div>
+								<div class="card-head">
+									<h3 class="caps">Lorem ipsum</h3>
+								</div>
+								<div class="card-body">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, quod, tempore labore asperiores
+										alias facilis odio non eaque vitae sed error quam culpa quae.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
 		</ul>
 
 		<div class="swiper-pagination"></div>
@@ -27,6 +766,19 @@
 
 	<footer class="main-footer layout-center">
 		<!-- footer content -->
+		<div class="main-footer__group">
+			<a href="#"
+				 class="social-icon icon-vk"></a>
+			<a href="#"
+				 class="social-icon icon-youtube"></a>
+			<a href="#"
+				 class="social-icon icon-telegram"></a>
+
+			<a href="#"
+				 class="contacts-icon phone material-icons-round margin-l-auto"><span aria-hidden="true">phone</span></a>
+			<a href="mailto:nospam@google.com"
+				 class="contacts-icon material-icons-round"><span aria-hidden="true">alternate_email</span></a>
+		</div>
 	</footer>
 
 	<!-- <dialog class="modal">
