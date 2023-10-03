@@ -39,7 +39,7 @@ const swiperCreative = new Swiper(".swiper-creative", {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
 	},
-	speed: 0,
+	speed: 500,
 	spaceBetween: 16,
 	direction: "horizontal",
 	keyboard: {
@@ -51,7 +51,7 @@ const swiperCreative = new Swiper(".swiper-creative", {
 	// 	sensitivity: 2,
 	// 	invert: true,
 	// },
-	// grabCursor: true,
+	grabCursor: true,
 	slidesPerView: 1,
 	breakpoints: {
 		576: {
