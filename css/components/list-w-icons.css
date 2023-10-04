@@ -27,6 +27,7 @@
 	grid-area: var(--indent);
 }
 
-.cards-w-icons .list-icon {
+.cards-w-icons .img-box {
 	min-width: var(--marker-size);
+	aspect-ratio: 1;
 }

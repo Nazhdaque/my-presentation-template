@@ -14,11 +14,11 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| li-marker */
 .list-w-arrows > *::before {
+	content: counter(list-item-counter);
+	counter-increment: list-item-counter;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	counter-increment: list-item-counter;
-	content: counter(list-item-counter);
 	min-width: var(--marker-size);
 	aspect-ratio: 1;
 	line-height: 1;
@@ -28,15 +28,9 @@
 	background-color: var(--clr-1-500-solid);
 	border-radius: 50%;
 	isolation: isolate;
-	grid-area: var(--rl-li-head-marker-position, auto);
-
-	background: radial-gradient(
-		circle at 65% 15%,
-		white 1px,
-		var(--clr-1-500-solid) 3%,
-		var(--clr-1-500-solid-dark) 60%,
-		var(--clr-1-500-solid) 100%
-	);
+	grid-area: var(--rl-li-head-marker-position, 1 / 1);
+	overflow: hidden;
+	background: var(--sphere);
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| arrow */
@@ -113,4 +107,8 @@
 	--rl-li-head-padding: 0 1rem 0 0;
 	--rl-li-head-margin: 0 0 0 calc(var(--marker-size) / -3);
 	--rl-li-body-padding: 0 0 0 1rem;
+}
+
+.list-w-arrows .icon-bg-1 {
+	grid-area: var(--rl-li-head-marker-position, 1 / 1);
 }

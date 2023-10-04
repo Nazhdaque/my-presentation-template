@@ -26,6 +26,15 @@
 	--clr-2-700-solid: hsl(261, 35%, 43%);
 	--clr-2-700-alpha: 261, 35%, 43%;
 
+	/* |||||||||| |||||||||| |||||||||| |||||||||| */
+	--sphere: radial-gradient(
+		circle at 65% 15%,
+		white 1px,
+		var(--clr-1-500-solid) 3%,
+		var(--clr-1-500-solid-dark) 60%,
+		var(--clr-1-500-solid) 100%
+	);
+
 	/* |||||||||| |||||||||| |||||||||| |||||||||| transition */
 	--time: 0.1s;
 	--easing: ease-in;

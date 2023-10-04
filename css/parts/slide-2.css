@@ -4,7 +4,7 @@
 	--clip: var(--clp-left);
 	--clr-filter: rgba(66, 59, 202, 0.2);
 
-	--image: url(/images/group-trucks-parked-row.webp);
+	--image: url(/images/bg-1.webp);
 	--overlay: var(--overlay-1);
 	--tint: var(--tint-2);
 }

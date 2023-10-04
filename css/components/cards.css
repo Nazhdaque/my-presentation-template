@@ -109,6 +109,7 @@
 	padding: var(--gap-x);
 }
 
+/* |||||||||| |||||||||| |||||||||| |||||||||| cards with bg */
 .cards-w-rounded-img .img-box {
 	border-radius: 50%;
 	overflow: hidden;

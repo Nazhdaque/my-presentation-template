@@ -70,7 +70,6 @@ caption {
 
 	border-top-left-radius: var(--inner-radius);
 	border-top-right-radius: var(--inner-radius);
-	/* position: relative; */
 }
 
 caption,

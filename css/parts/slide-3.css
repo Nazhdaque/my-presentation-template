@@ -2,7 +2,7 @@
 	--side: var(--right);
 	--clip: var(--clp-right);
 
-	--image: url(/images/group-trucks-parked-row.webp);
+	--image: url(/images/bg-1.webp);
 	--overlay: var(--overlay-3);
 	--tint: var(--tint-2);
 }
