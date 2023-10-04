@@ -77,9 +77,11 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 
 			<ul class="cards-w-icons grid-x">
 				<li>
-					<img class="list-icon"
-							 src="images/demo/icons/figure-1.svg"
-							 alt="">
+					<div class="img-box">
+						<img class="icon"
+								 src="images/icons/figure-1-white.svg"
+								 alt="">
+					</div>
 					<h2 class="caps">Следует понимать</h2>
 					<div class="card-body">
 						<p>Весь текстовый и графический контент представлен в демонстрационных целях. Он может быть абсолютно
@@ -88,9 +90,11 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				</li>
 
 				<li>
-					<img class="list-icon"
-							 src="images/demo/icons/figure-2.svg"
-							 alt="">
+					<div class="img-box">
+						<img class="icon"
+								 src="images/icons/figure-3-white.svg"
+								 alt="">
+					</div>
 					<h2 class="caps">Важно подчеркнуть</h2>
 					<div class="card-body">
 						<p>Основные усилия направлены на создание универсальной
@@ -99,9 +103,11 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				</li>
 
 				<li>
-					<img class="list-icon"
-							 src="images/demo/icons/figure-3.svg"
-							 alt="">
+					<div class="img-box">
+						<img class="icon"
+								 src="images/icons/figure-2-white.svg"
+								 alt="">
+					</div>
 					<h2 class="caps">Стоит отметить</h2>
 					<div class="card-body">
 						<p>Быстрая и удобная кастомизация под конкретные задачи и содержание — главная
@@ -110,9 +116,11 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				</li>
 
 				<li>
-					<img class="list-icon"
-							 src="images/demo/icons/figure-4.svg"
-							 alt="">
+					<div class="img-box icon-bg-1">
+						<img class="icon"
+								 src="images/icons/figure-2-white.svg"
+								 alt="">
+					</div>
 					<h2 class="caps">Тем не менее</h2>
 					<div class="card-body">
 						<p>Уже сейчас это полнофункциональный продукт, готовый к использованию по назначению.</p>
@@ -146,6 +154,11 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				</li>
 
 				<li>
+					<div class="img-box icon-bg-1">
+						<img class="icon"
+								 src="images/icons/figure-2-white.svg"
+								 alt="">
+					</div>
 					<div class="li-head">
 						<h3>Без лишних телодвижений</h3>
 					</div>
@@ -317,6 +330,11 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 			<h2 class="heading fs-xl width-x">Плюсы MS PowerPoint</h2>
 			<ol class="flex-x list-w-arrows list-w-arrows-left">
 				<li class="slave-1">
+					<div class="img-box icon-bg-1">
+						<img class="icon"
+								 src="images/icons/figure-1-white.svg"
+								 alt="">
+					</div>
 					<div class="li-head">
 						<h3>Что-то получится даже у ребенка</h3>
 					</div>
@@ -342,6 +360,11 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				</li>
 
 				<li class="slave-1">
+					<div class="img-box icon-bg-1">
+						<img class="icon"
+								 src="images/icons/figure-10-white.svg"
+								 alt="">
+					</div>
 					<div class="li-head">
 						<h3>Никаких сюрпризов</h3>
 					</div>
@@ -476,7 +499,7 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo/list-demo-img-1.webp"
+								 src="images/demo-img-720p.webp"
 								 alt="">
 					</div>
 
@@ -488,9 +511,9 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				</li>
 
 				<li>
-					<div class="img-box">
-						<img class="o-fit-cover"
-								 src="images/demo/list-demo-img-2.webp"
+					<div class="img-box icon-bg-1">
+						<img class="icon"
+								 src="images/icons/figure-2-white.svg"
 								 alt="">
 					</div>
 
@@ -502,9 +525,12 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				</li>
 
 				<li>
-					<div class="img-box">
+					<div class="img-box icon-bg-2">
+						<img class="icon"
+								 src="images/icons/figure-2-white.svg"
+								 alt="">
 						<img class="o-fit-cover"
-								 src="images/demo/list-demo-img-3.webp"
+								 src="images/demo-img-720p.webp"
 								 alt="">
 					</div>
 					<div class="card-body">
@@ -520,7 +546,7 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo/list-demo-img-1.webp"
+								 src="images/demo-img-720p.webp"
 								 alt="">
 					</div>
 					<div class="card-head">
@@ -535,7 +561,7 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo/list-demo-img-2.webp"
+								 src="images/demo-img-720p.webp"
 								 alt="">
 					</div>
 					<div class="card-head">
@@ -551,7 +577,7 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo/list-demo-img-3.webp"
+								 src="images/demo-img-720p.webp"
 								 alt="">
 					</div>
 					<div class="card-head">
@@ -569,7 +595,7 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo/list-demo-img-1.webp"
+								 src="images/demo-img-720p.webp"
 								 alt="">
 					</div>
 					<div class="card-head">
@@ -584,7 +610,7 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo/list-demo-img-2.webp"
+								 src="images/demo-img-720p.webp"
 								 alt="">
 					</div>
 					<div class="card-head">
@@ -600,7 +626,7 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo/list-demo-img-3.webp"
+								 src="images/demo-img-720p.webp"
 								 alt="">
 					</div>
 					<div class="card-head">
@@ -617,7 +643,7 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo/list-demo-img-1.webp"
+								 src="images/demo-img-720p.webp"
 								 alt="">
 					</div>
 					<div class="card-head">
@@ -632,7 +658,7 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo/list-demo-img-2.webp"
+								 src="images/demo-img-720p.webp"
 								 alt="">
 					</div>
 					<div class="card-head">
@@ -648,7 +674,7 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo/list-demo-img-3.webp"
+								 src="images/demo-img-720p.webp"
 								 alt="">
 					</div>
 					<div class="card-head">
