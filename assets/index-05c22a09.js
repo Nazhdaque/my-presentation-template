@@ -494,8 +494,9 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 			<div class="slide-bg spike"></div>
 			<h2 class="heading fs-xl width-x">Lorem ipsum dolor sit</h2>
 
-			<ul class="grid-x cards-x cards-1"
-					style="--cards-item-cols: 2fr 3fr; --card-img-shadow: var(--img-shadow-right)">
+			<ul class="grid-x cards-ttl-underscore sm-col-1"
+					style="--card-cols: 2fr 3fr;
+			--card-img-shadow: var(--img-shadow-right);">
 				<li>
 					<div class="img-box circle">
 						<img class="o-fit-cover"
@@ -541,8 +542,8 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				</li>
 			</ul>
 
-			<ul class="grid-x cards-x cards-2"
-					style="--cards-item-rows: 2fr 1fr">
+			<ul class="grid-x cards-ttl-bg"
+					style="--card-rows: 2fr 1fr;">
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
@@ -590,8 +591,8 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				</li>
 			</ul>
 
-			<ul class="grid-x cards-x cards-2 cards-w-bg"
-					style="--cards-item-cols: 2fr 3fr; --card-body-padding: var(--for-img-left); --card-img-shadow: var(--img-shadow-right)">
+			<ul class="grid-x cards-ttl-bg cards-w-bg"
+					style="--card-cols: 2fr 3fr; --card-body-padding: var(--for-img-left); --card-img-shadow: var(--img-shadow-right)">
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
@@ -639,7 +640,7 @@ var re=Object.defineProperty;var ae=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 				</li>
 			</ul>
 
-			<ul class="grid-x cards-x cards-2 cards-w-bg">
+			<ul class="grid-x cards-ttl-bg cards-w-bg">
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
