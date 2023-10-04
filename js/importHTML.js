@@ -1,6 +1,6 @@
 // import headContent from "../html/parts/headContent.html?raw";
 // import headerContent from "../html/parts/headerContent.html?raw";
-import sidebarContent from "../html/parts/sidebarContent.html?raw";
+import sidebarContent from "../html/parts/sidebar.html?raw";
 import slide_1 from "../html/parts/slide-1.html?raw";
 import slide_2 from "../html/parts/slide-2.html?raw";
 import slide_3 from "../html/parts/slide-3.html?raw";

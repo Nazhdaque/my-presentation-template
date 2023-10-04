@@ -1,28 +1,30 @@
-.cards-x {
+.cards-ttl-underscore,
+.cards-ttl-bg {
 	--img-shadow-bottom: 0rem 0.5rem 0.5rem -0.25rem rgba(0, 0, 0, 0.25);
 	--img-shadow-right: 0.5rem 0rem 0.5rem -0.25rem rgba(0, 0, 0, 0.25);
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| cards 1 */
-.cards-1 > * {
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.cards-ttl-underscore > * {
 	display: grid;
-	grid-template-columns: var(--cards-item-cols, 1fr);
-	grid-auto-rows: var(--cards-item-rows, 1fr);
+	grid-template-columns: var(--card-cols, 1fr);
+	grid-auto-rows: var(--card-rows, 1fr);
 	column-gap: var(--li-gap-x, var(--gap-x));
 	row-gap: var(--li-gap-y, var(--gap-y));
 	align-items: start;
 }
 
-.cards-1 .img-box {
-	height: 100%;
+.cards-ttl-underscore .img-box {
+	max-height: 100%;
+	align-self: center;
 	box-shadow: var(--card-img-shadow, var(--img-shadow-bottom));
 }
 
-.cards-1 .card-body {
+.cards-ttl-underscore .card-body {
 	display: grid; /* for ellipsis */
 }
 
-.cards-1 .card-head {
+.cards-ttl-underscore .card-head {
 	margin-bottom: var(--gap-x);
 
 	max-width: 100%;
@@ -31,7 +33,7 @@
 	overflow: hidden;
 }
 
-.cards-1 .card-head::after {
+.cards-ttl-underscore .card-head::after {
 	margin-top: 0.5rem;
 	display: block;
 	content: "";
@@ -44,31 +46,31 @@
 	);
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| cards 2 */
-.cards-2 > * {
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.cards-ttl-bg > * {
 	display: grid;
-	grid-template-columns: var(--cards-item-cols, 1fr);
-	grid-auto-rows: var(--cards-item-rows, 1fr);
+	grid-template-columns: var(--card-cols, 1fr);
+	grid-auto-rows: var(--card-rows, 1fr);
 	column-gap: var(--li-gap-x, var(--gap-x));
 	row-gap: var(--li-gap-y, var(--gap-y));
 	align-items: start;
 }
 
-.cards-2 .card-head,
-.cards-2 .img-box {
+.cards-ttl-bg .card-head,
+.cards-ttl-bg .img-box {
 	grid-area: 1 / 1;
 	height: 100%;
 	display: grid;
 	place-items: center;
 }
 
-.cards-2 .card-head {
+.cards-ttl-bg .card-head {
 	color: var(--clr-0-100-solid);
 	padding-inline: var(--gap-x);
 	z-index: 1;
 }
 
-.cards-2 .card-head > * {
+.cards-ttl-bg .card-head > * {
 	max-width: 100%;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -79,12 +81,12 @@
 	text-orientation: upright; */
 }
 
-.cards-2 .img-box {
+.cards-ttl-bg .img-box {
 	position: relative;
 	box-shadow: var(--card-img-shadow, var(--img-shadow-bottom));
 }
 
-.cards-2 .img-box::after {
+.cards-ttl-bg .img-box::after {
 	position: absolute;
 	content: "";
 	inset: 0;
