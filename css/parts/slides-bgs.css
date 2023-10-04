@@ -84,13 +84,6 @@
 }
 
 /* |||||||||| |||||||||| */
-.circle:before,
-.circle::after {
-	border-radius: 50%;
-	aspect-ratio: 1;
-}
-
-/* |||||||||| |||||||||| */
 .diag {
 	--w-inline: max(50%, 768px);
 	--clp-left: polygon(

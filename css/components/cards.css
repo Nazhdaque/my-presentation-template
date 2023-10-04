@@ -108,13 +108,3 @@
 .cards-w-bg .card-body {
 	padding: var(--gap-x);
 }
-
-/* |||||||||| |||||||||| |||||||||| |||||||||| cards with bg */
-.cards-w-rounded-img .img-box {
-	border-radius: 50%;
-	overflow: hidden;
-	width: 100%;
-	height: auto;
-	aspect-ratio: 1;
-	align-self: center;
-}

@@ -26,13 +26,20 @@
 	--clr-2-700-solid: hsl(261, 35%, 43%);
 	--clr-2-700-alpha: 261, 35%, 43%;
 
-	/* |||||||||| |||||||||| |||||||||| |||||||||| */
+	/* |||||||||| |||||||||| |||||||||| |||||||||| icons bgs and img overlays */
 	--sphere: radial-gradient(
 		circle at 65% 15%,
 		white 1px,
 		var(--clr-1-500-solid) 3%,
 		var(--clr-1-500-solid-dark) 60%,
 		var(--clr-1-500-solid) 100%
+	);
+
+	--eye: radial-gradient(
+		circle at 50% 50%,
+		hsl(0, 0%, 50%, 0.15) 25%,
+		hsl(0, 0%, 0%, 0.85) 75%,
+		hsl(0, 0%, 50%, 0.15) 100%
 	);
 
 	/* |||||||||| |||||||||| |||||||||| |||||||||| transition */
@@ -52,7 +59,7 @@
 	);
 	--main-height: calc(100% - var(--header-height) * 2);
 
-	/* |||||||||| |||||||||| |||||||||| |||||||||| slides bgs */
+	/* |||||||||| |||||||||| |||||||||| |||||||||| slides bgs and overlays */
 	--clr-1: hsl(0, 0%, 0%, 0.25);
 	--clr-2: hsl(0, 0%, 0%, 0.75);
 	--tint-1: hsl(175, 56%, 12%);

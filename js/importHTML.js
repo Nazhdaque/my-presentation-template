@@ -11,7 +11,7 @@ import slide_4 from "../html/parts/slide-4.html?raw";
 // import slide_8 from "../html/parts/slide-8.html?raw";
 // import slide_9 from "../html/parts/slide-9.html?raw";
 // import slide_10 from "../html/parts/slide-10.html?raw";
-// import slide_11 from "../html/parts/slide-11.html?raw";
+import slide_11 from "../html/parts/slide-11.html?raw";
 // import footerContent from "../html/parts/footerContent.html?raw";
 
 // const head = document.querySelector("head");
@@ -34,7 +34,7 @@ slidesContainer.insertAdjacentHTML("beforeend", slide_4);
 // slidesContainer.insertAdjacentHTML("beforeend", slide_8);
 // slidesContainer.insertAdjacentHTML("beforeend", slide_9);
 // slidesContainer.insertAdjacentHTML("beforeend", slide_10);
-// slidesContainer.insertAdjacentHTML("beforeend", slide_11);
+slidesContainer.insertAdjacentHTML("beforeend", slide_11);
 
 // const footer = document.querySelector("footer");
 // footer.insertAdjacentHTML("beforeend", footerContent);

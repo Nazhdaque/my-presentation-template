@@ -26,11 +26,12 @@
 	font-size: 2rem;
 	color: var(--clr-0-100-solid);
 	background-color: var(--clr-1-500-solid);
-	border-radius: 50%;
 	isolation: isolate;
 	grid-area: var(--rl-li-head-marker-position, 1 / 1);
-	overflow: hidden;
+
 	background: var(--sphere);
+	border-radius: 50%;
+	overflow: hidden;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| arrow */
@@ -109,6 +110,8 @@
 	--rl-li-body-padding: 0 0 0 1rem;
 }
 
-.list-w-arrows .icon-bg-1 {
+.list-w-arrows .img-box {
 	grid-area: var(--rl-li-head-marker-position, 1 / 1);
+	border-radius: 50%;
+	overflow: hidden;
 }
