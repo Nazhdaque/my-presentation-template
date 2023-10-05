@@ -138,21 +138,6 @@
 	--marker-clr-txt: var(--clr-0-100-solid);
 }
 
-/* --- */
-.ellipsis {
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow-x: hidden;
-}
-.ellipsis-container:where(:hover, :focus-visible) .ellipsis {
-	overflow-x: auto;
-	scrollbar-width: none;
-	text-overflow: clip; /* for webkit-based browsers */
-}
-*:where(:hover, :focus) .ellipsis::-webkit-scrollbar {
-	display: none;
-}
-
 /* default accordion library styles */
 .ac-panel {
 	overflow: hidden;

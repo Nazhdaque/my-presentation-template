@@ -1,11 +1,11 @@
-.cards-ttl-underscore,
-.cards-ttl-bg {
+.cards {
 	--img-shadow-bottom: 0rem 0.5rem 0.5rem -0.25rem rgba(0, 0, 0, 0.25);
 	--img-shadow-right: 0.5rem 0rem 0.5rem -0.25rem rgba(0, 0, 0, 0.25);
+
+	--card-rows: minmax(10rem, auto) 1fr;
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| */
-.cards-ttl-underscore > * {
+.cards > * {
 	display: grid;
 	grid-template-columns: var(--card-cols, 1fr);
 	grid-auto-rows: var(--card-rows, 1fr);
@@ -14,26 +14,26 @@
 	align-items: start;
 }
 
-.cards-ttl-underscore .img-box {
+.cards .img-box {
+	box-shadow: var(--card-img-shadow, var(--img-shadow-bottom));
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.card-ttl-underscore .img-box {
 	max-height: 100%;
 	align-self: center;
 	box-shadow: var(--card-img-shadow, var(--img-shadow-bottom));
 }
 
-.cards-ttl-underscore .card-body {
+.card-ttl-underscore .card-body {
 	display: grid; /* for ellipsis */
 }
 
-.cards-ttl-underscore .card-head {
+.card-ttl-underscore .card-head {
 	margin-bottom: var(--gap-x);
-
-	max-width: 100%;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
 }
 
-.cards-ttl-underscore .card-head::after {
+.card-ttl-underscore .card-head::after {
 	margin-top: 0.5rem;
 	display: block;
 	content: "";
@@ -47,46 +47,27 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
-.cards-ttl-bg > * {
-	display: grid;
-	grid-template-columns: var(--card-cols, 1fr);
-	grid-auto-rows: var(--card-rows, 1fr);
-	column-gap: var(--li-gap-x, var(--gap-x));
-	row-gap: var(--li-gap-y, var(--gap-y));
-	align-items: start;
-}
-
-.cards-ttl-bg .card-head,
-.cards-ttl-bg .img-box {
+.card-ttl-bg .card-head,
+.card-ttl-bg .img-box {
 	grid-area: 1 / 1;
 	height: 100%;
 	display: grid;
 	place-items: center;
 }
 
-.cards-ttl-bg .card-head {
+.card-ttl-bg .card-head {
 	color: var(--clr-0-100-solid);
 	padding-inline: var(--gap-x);
 	z-index: 1;
 }
 
-.cards-ttl-bg .card-head > * {
-	max-width: 100%;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-
+.card-ttl-bg .card-head > * {
 	/* writing-mode: vertical-rl;
 	writing-mode: sideways-lr;
 	text-orientation: upright; */
 }
 
-.cards-ttl-bg .img-box {
-	position: relative;
-	box-shadow: var(--card-img-shadow, var(--img-shadow-bottom));
-}
-
-.cards-ttl-bg .img-box::after {
+.card-ttl-bg .img-box::after {
 	position: absolute;
 	content: "";
 	inset: 0;
@@ -102,11 +83,16 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| cards with bg */
-.cards-w-bg > * {
+.card-w-bg > * {
 	background-color: hsl(var(--clr-1-900-alpha), 0.1);
 	column-gap: 0;
 	row-gap: 0;
 }
-.cards-w-bg .card-body {
+.card-w-bg .card-body {
 	padding: var(--gap-x);
+}
+
+.card-img-left {
+	--card-cols: 2fr 3fr;
+	--card-img-shadow: var(--img-shadow-right);
 }

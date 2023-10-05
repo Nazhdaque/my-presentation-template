@@ -1,13 +1,16 @@
-/* |||||||||| |||||||||| |||||||||| |||||||||| sm */
-@media (width <= 576px) {
-	:root {
+/* |||||||||| |||||||||| |||||||||| |||||||||| xl */
+@media (width <= 1200px) {
+	.slide-content {
+		--col: 2;
+		--x: 1;
+		justify-self: center;
 	}
+}
 
-	.sm-col-span-0 {
-		grid-column: auto;
-	}
-	.sm-row-span-0 {
-		grid-row: auto;
+/* |||||||||| |||||||||| |||||||||| |||||||||| lg */
+@media (width <= 992px) {
+	.slide-content {
+		--col: 3;
 	}
 }
 
@@ -22,6 +25,16 @@
 	}
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| lg */
-@media (width <= 992px) {
+/* |||||||||| |||||||||| |||||||||| |||||||||| sm */
+@media (width <= 576px) {
+	.cards > * {
+		--card-cols: 1fr;
+	}
+
+	/* .sm-col-span-0 {
+		grid-column: auto;
+	}
+	.sm-row-span-0 {
+		grid-row: auto;
+	} */
 }
