@@ -5,41 +5,40 @@ import {
 	Pagination,
 	// Autoplay,
 	Keyboard,
-	Mousewheel,
+	// Mousewheel,
 	// Scrollbar,
 	// Parallax,
-	EffectCreative,
+	// EffectCreative,
 	// EffectCoverflow,
 } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import "swiper/css/parallax";
 // import "swiper/css/scrollbar";
-const className = "swiper-bullet";
 
 const swiperCreative = new Swiper(".swiper-creative", {
-	modules: [Navigation, Pagination, Keyboard, Mousewheel, EffectCreative],
+	modules: [Navigation, Pagination, Keyboard],
 	initialSlide: 0,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
 		dynamicBullets: true,
 	},
-	effect: "creative",
-	creativeEffect: {
-		prev: {
-			shadow: true,
-			translate: [0, 0, -400],
-		},
-		next: {
-			translate: ["100%", 0, 0],
-		},
-	},
+	// effect: "creative",
+	// creativeEffect: {
+	// 	prev: {
+	// 		shadow: true,
+	// 		translate: [0, 0, -400],
+	// 	},
+	// 	next: {
+	// 		translate: ["100%", 0, 0],
+	// 	},
+	// },
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
 	},
-	speed: 500,
+	speed: 0,
 	spaceBetween: 16,
 	direction: "horizontal",
 	keyboard: {
@@ -51,12 +50,10 @@ const swiperCreative = new Swiper(".swiper-creative", {
 	// 	sensitivity: 2,
 	// 	invert: true,
 	// },
-	grabCursor: true,
+	// grabCursor: true,
 	slidesPerView: 1,
 	breakpoints: {
-		576: {
-			pagination: { dynamicBullets: false },
-		},
+		576: { pagination: { dynamicBullets: false } },
 	},
 });
 

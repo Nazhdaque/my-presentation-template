@@ -23,5 +23,5 @@
 }
 
 .swiper-wrapper {
-	overflow: hidden;
+	/* overflow: hidden; */ /* used with effectCreative */
 }
