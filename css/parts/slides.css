@@ -7,7 +7,7 @@
 	--side: 0;
 	--w: 100%;
 
-	--overlay: var(--overlay-2);
+	--overlay: var(--lr-dark-light);
 	--tint: var(--tint-1);
 }
 
@@ -33,12 +33,12 @@
 .slide-2 .slide-bg-overlay {
 	--side: var(--left);
 	--clip: var(--clp-left);
-	--clr-filter: rgba(20, 20, 200, 0.2);
 
-	--overlay: var(--overlay-1);
+	--clr-filter: rgba(20, 20, 200, 0.2);
+	--overlay: var(--lr-light-dark);
 	--tint: var(--tint-2);
 }
-.slide-2 .w-img::before {
+.slide-2 .slide-bg::before {
 	filter: invert(1) grayscale(1);
 }
 
@@ -91,8 +91,8 @@
 	--side: var(--right);
 	--clip: var(--clp-right);
 
-	--overlay: var(--overlay-2);
-	--tint: var(--tint-2);
+	--overlay: var(--lr-dark-light);
+	--tint: var(--tint-3);
 }
 
 .slide-5 .slide-bg:first-child,
@@ -118,8 +118,8 @@
 	--side: var(--bottom);
 	--clip: var(--clp-bottom);
 
-	--overlay: var(--overlay-2);
-	--tint: var(--tint-2);
+	--overlay: var(--lr-dark-light);
+	--tint: var(--tint-4);
 }
 
 .slide-6 .slide-bg:first-child,
@@ -134,8 +134,8 @@
 	--side: var(--center);
 	--clip: var(--clp-right);
 
-	--overlay: var(--overlay-2);
-	--tint: var(--tint-1);
+	--overlay: var(--lr-dark-light);
+	--tint: var(--tint-3);
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| */
@@ -144,8 +144,8 @@
 	--side: var(--left);
 	--mask: var(--clp-left);
 
-	--overlay: var(--overlay-2);
-	--tint: var(--tint-1);
+	--overlay: var(--lr-dark-light);
+	--tint: var(--tint-2);
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| */
@@ -154,8 +154,8 @@
 	--side: var(--right);
 	--mask: var(--clp-right);
 
-	--overlay: var(--overlay-2);
-	--tint: var(--tint-1);
+	--overlay: var(--lr-dark-light);
+	--tint: var(--tint-4);
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| */
@@ -173,7 +173,7 @@
 	--side: var(--left);
 	--clip: var(--clp-left);
 
-	--overlay: var(--overlay-2);
+	--overlay: var(--lr-dark-light);
 	--tint: var(--tint-2);
 }
 
@@ -189,11 +189,8 @@
 	--h: 80%;
 	--side: var(--center);
 
-	--overlay: var(--overlay-3);
-	--tint: var(--tint-1);
+	--overlay: var(--lr-dark-light-1);
+	--tint: var(--tint-5);
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| */
-/* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| */
-/* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| */
 /* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| */

@@ -58,8 +58,8 @@
 
 /* |||||||||| |||||||||| with image */
 .w-img::before {
-	background-color: var(--tint);
-	background-image: var(--overlay), var(--image);
+	background-color: var(--tint, none);
+	background-image: var(--overlay, none), var(--image);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

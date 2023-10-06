@@ -18,10 +18,6 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| md */
 @media (width <= 768px) {
-	.slide-bg {
-		--image: url(/images/demo-img-720p.webp);
-	}
-
 	/* utilities */
 	.md-d-grid {
 		display: grid;
@@ -34,7 +30,7 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| sm */
 @media (width <= 576px) {
 	.slide-bg {
-		--image: url(/images/demo-img-480p.webp);
+		--image: url(/images/demo-img-720p.webp);
 	}
 
 	.cards > * {
