@@ -13,7 +13,7 @@ accenTable(document.querySelectorAll("table"));
 const attrSetter = new AttrSetter();
 attrSetter.initWith("role", {
 	table: "table",
-	caption: "caption",
+	// caption: "caption",
 	thead: "rowgroup",
 	tbody: "rowgroup",
 	tfoot: "rowgroup",

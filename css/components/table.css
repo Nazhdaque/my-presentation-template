@@ -20,20 +20,17 @@ tbody th {
 	z-index: 1;
 } */
 
-table,
-caption {
-	background-color: var(--clr-txt--lt);
-}
-
 table {
+	/* --clr-0-100-solid: hsl(0, 0%, 93%); */
+
 	--clr-txt--lt: var(--clr-0-100-solid);
 	--clr-txt--dk: var(--clr-0-900-solid);
 
 	--clr-bg-0: var(--clr-txt--dk);
 	--clr-bg-1--lt: hsl(var(--clr-1-900-alpha), 0.1);
-	--clr-bg-1--dk: hsl(var(--clr-1-900-alpha), 0.5);
+	--clr-bg-1--dk: hsl(var(--clr-1-900-alpha), 0.75);
 	--clr-bg-2--lt: hsl(var(--clr-1-500-alpha), 0.1);
-	--clr-bg-2--dk: hsl(var(--clr-1-500-alpha), 0.5);
+	--clr-bg-2--dk: hsl(var(--clr-1-500-alpha), 0.75);
 	--clr-accent: var(--clr-1-500-solid);
 
 	--thickness: 2px;
@@ -42,7 +39,8 @@ table {
 	--inner-radius: 8px;
 	--outer-radius: calc(var(--inner-radius) + var(--thickness));
 
-	border-spacing: 0 var(--thickness);
+	/* border-spacing: 0 var(--thickness); */
+	border-spacing: var(--thickness);
 
 	font-size: var(--fs-rg);
 	text-align: left;
@@ -54,7 +52,8 @@ table {
 	overflow: hidden;
 	box-shadow: var(--table-shadow);
 
-	isolation: isolate;
+	/* isolation: isolate; */
+	z-index: 1;
 }
 
 tbody tr:last-child > *:first-child {
@@ -70,6 +69,17 @@ caption {
 
 	border-top-left-radius: var(--inner-radius);
 	border-top-right-radius: var(--inner-radius);
+	color: var(--clr-txt--dk) !important;
+	background-color: var(--clr-txt--lt);
+	position: relative;
+	overflow: hidden;
+}
+caption::before {
+	position: absolute;
+	content: "";
+	inset: 0;
+	background-color: var(--clr-txt--lt);
+	z-index: -1;
 }
 
 caption,
@@ -86,13 +96,17 @@ td {
 }
 
 tr:nth-child(2n) * {
-	background-color: var(--clr-bg-2--lt);
+	/* background-color: var(--clr-bg-2--lt); */
 }
 
 thead th {
-	background-color: var(--clr-bg-2--dk);
-	color: var(--clr-txt--lt);
 	text-align: center;
+}
+thead th:nth-child(2n-1):not(:first-child) {
+	color: var(--clr-txt--dk);
+}
+thead th:first-child {
+	/* background-color: var(--clr-bg-1--lt); */
 }
 
 thead th:nth-child(2n):not(:first-child) {
@@ -112,7 +126,8 @@ tbody tr:nth-child(2n-1) th {
 	background-color: var(--clr-bg-1--dk);
 }
 tbody tr:nth-child(2n) th {
-	background-color: var(--clr-bg-2--dk);
+	background-color: var(--clr-bg-1--lt);
+	color: var(--clr-txt-1--dk);
 }
 
 table *::selection {
@@ -137,6 +152,7 @@ th {
 .clr-accent,
 th:not(thead th:first-child):hover {
 	background-color: var(--clr-accent) !important;
+	color: var(--clr-txt--lt) !important;
 }
 .clr-accent::before,
 th::before,
@@ -149,32 +165,33 @@ th::after {
 thead .clr-accent::before,
 thead th:not(thead th:first-child):hover::before {
 	top: calc(100% + var(--thickness));
-	/* left: var(--offset); */
-	left: 0;
+	left: var(--offset);
+	/* left: 0; */
 	height: 9999%;
 	width: var(--thickness);
 }
 thead .clr-accent::after,
 thead th:not(thead th:first-child):hover::after {
 	top: calc(100% + var(--thickness));
-	/* right: var(--offset); */
-	right: 0;
+	right: var(--offset);
+	/* right: 0; */
 	height: 9999%;
 	width: var(--thickness);
 }
+
 tbody .clr-accent::before,
 tbody th:hover::before {
 	bottom: var(--offset);
-	/* left: calc(100% + var(--thickness)); */
-	left: 100%;
+	left: calc(100% + var(--thickness));
+	/* left: 100%; */
 	height: var(--thickness);
 	width: 9999%;
 }
 tbody .clr-accent::after,
 tbody th:hover::after {
 	top: var(--offset);
-	/* left: calc(100% + var(--thickness)); */
-	left: 100%;
+	left: calc(100% + var(--thickness));
+	/* left: 100%; */
 	height: var(--thickness);
 	width: 9999%;
 }
