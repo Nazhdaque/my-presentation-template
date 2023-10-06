@@ -1,9 +1,0 @@
-.slide-11 .slide-bg {
-	--w: auto;
-	--h: 80%;
-	--side: var(--center);
-
-	--image: url(/images/bg-1.webp);
-	--overlay: var(--overlay-3);
-	--tint: var(--tint-1);
-}
