@@ -3,8 +3,8 @@ import "swiper/css";
 import {
 	Navigation,
 	Pagination,
-	// Autoplay,
 	Keyboard,
+	// Autoplay,
 	// Mousewheel,
 	// Scrollbar,
 	// Parallax,
@@ -16,14 +16,32 @@ import "swiper/css/pagination";
 // import "swiper/css/parallax";
 // import "swiper/css/scrollbar";
 
-const swiperCreative = new Swiper(".swiper-creative", {
+const mainSlider = new Swiper(".main-slider", {
 	modules: [Navigation, Pagination, Keyboard],
 	initialSlide: 0,
+	slidesPerView: 1,
+	speed: 0,
+	spaceBetween: 0,
+	direction: "horizontal",
+	virtual: { enabled: true },
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
 		dynamicBullets: true,
 	},
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	keyboard: {
+		enabled: true,
+		onlyInViewport: true,
+		pageUpDown: true,
+	},
+	breakpoints: {
+		576: { pagination: { dynamicBullets: false } },
+	},
+
 	// effect: "creative",
 	// creativeEffect: {
 	// 	prev: {
@@ -34,31 +52,15 @@ const swiperCreative = new Swiper(".swiper-creative", {
 	// 		translate: ["100%", 0, 0],
 	// 	},
 	// },
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-	speed: 0,
-	spaceBetween: 16,
-	direction: "horizontal",
-	keyboard: {
-		enabled: true,
-		onlyInViewport: true,
-		pageUpDown: true,
-	},
 	// mousewheel: {
 	// 	sensitivity: 2,
 	// 	invert: true,
 	// },
 	// grabCursor: true,
-	slidesPerView: 1,
-	breakpoints: {
-		576: { pagination: { dynamicBullets: false } },
-	},
 });
 
 // ---
-const jumpToSlide = number => swiperCreative.slideTo(number);
+const jumpToSlide = number => mainSlider.slideTo(number);
 
 document
 	.querySelectorAll(".slide-to")
