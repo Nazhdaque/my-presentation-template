@@ -494,7 +494,7 @@ var ne=Object.defineProperty;var re=(i,t,e)=>t in i?ne(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box circle">
 						<img class="o-fit-cover"
-								 src="images/demo-img-720p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 
@@ -523,7 +523,7 @@ var ne=Object.defineProperty;var re=(i,t,e)=>t in i?ne(i,t,{enumerable:!0,config
 								 src="images/icons/figure-2-white.svg"
 								 alt="">
 						<img class="o-fit-cover"
-								 src="images/demo-img-720p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-body ellipsis-box">
@@ -538,7 +538,7 @@ var ne=Object.defineProperty;var re=(i,t,e)=>t in i?ne(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-720p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-head ellipsis-box">
@@ -553,7 +553,7 @@ var ne=Object.defineProperty;var re=(i,t,e)=>t in i?ne(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-720p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-head ellipsis-box">
@@ -569,7 +569,7 @@ var ne=Object.defineProperty;var re=(i,t,e)=>t in i?ne(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-720p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-head ellipsis-box">
@@ -586,7 +586,7 @@ var ne=Object.defineProperty;var re=(i,t,e)=>t in i?ne(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-720p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-head ellipsis-box">
@@ -601,7 +601,7 @@ var ne=Object.defineProperty;var re=(i,t,e)=>t in i?ne(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-720p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-head ellipsis-box">
@@ -617,7 +617,7 @@ var ne=Object.defineProperty;var re=(i,t,e)=>t in i?ne(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-720p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-head ellipsis-box">
@@ -634,7 +634,7 @@ var ne=Object.defineProperty;var re=(i,t,e)=>t in i?ne(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-720p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-head ellipsis-box">
@@ -649,7 +649,7 @@ var ne=Object.defineProperty;var re=(i,t,e)=>t in i?ne(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-720p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-head ellipsis-box">
@@ -665,7 +665,7 @@ var ne=Object.defineProperty;var re=(i,t,e)=>t in i?ne(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-720p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-head ellipsis-box">
