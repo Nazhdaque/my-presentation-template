@@ -11,26 +11,17 @@ import { accenTable } from "./js/accenTable";
 accenTable(document.querySelectorAll("table"));
 
 const attrSetter = new AttrSetter();
-const handleChangeEvent = event => {
-	if (event.matches) {
-		attrSetter.initWith("role", {
-			table: "table",
-			caption: "caption",
-			thead: "rowgroup",
-			tbody: "rowgroup",
-			tfoot: "rowgroup",
-			tr: "row",
-			td: "cell",
-			th: "columnheader",
-			"th[scope=row]": "rowheader",
-		});
-	}
-};
-const setTableAttr = breakpoint => {
-	const mediaQueryList = window.matchMedia(`(max-width: ${breakpoint}px)`);
-	mediaQueryList.addEventListener("change", handleChangeEvent);
-};
-setTableAttr(992);
+attrSetter.initWith("role", {
+	table: "table",
+	caption: "caption",
+	thead: "rowgroup",
+	tbody: "rowgroup",
+	tfoot: "rowgroup",
+	tr: "row",
+	td: "cell",
+	th: "columnheader",
+	"th[scope=row]": "rowheader",
+});
 
 // ---
 const sizeSetter = new SizeSetter();
