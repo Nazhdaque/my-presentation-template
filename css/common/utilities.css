@@ -134,8 +134,9 @@
 
 .img-box {
 	position: relative;
+	container: img-container / inline-size;
 }
-.img-box img {
+.img-box > * {
 	position: absolute;
 	inset: 0;
 }

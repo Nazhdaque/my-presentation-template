@@ -18,7 +18,7 @@ import "swiper/css/pagination";
 
 const swiperCreative = new Swiper(".swiper-creative", {
 	modules: [Navigation, Pagination, Keyboard],
-	initialSlide: 0,
+	initialSlide: 3,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,

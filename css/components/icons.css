@@ -23,3 +23,11 @@
 	padding: 7.5%;
 	z-index: 1;
 }
+
+.mui-icon {
+	color: var(--clr-0-100-solid) !important;
+	font-size: 75cqw !important;
+	display: grid !important;
+	place-items: center;
+	z-index: 1;
+}
