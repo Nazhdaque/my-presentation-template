@@ -18,10 +18,10 @@ import "swiper/css/pagination";
 
 const mainSlider = new Swiper(".main-slider", {
 	modules: [Navigation, Pagination, Keyboard],
-	initialSlide: 0,
+	initialSlide: 4,
 	slidesPerView: 1,
 	speed: 0,
-	spaceBetween: 0,
+	spaceBetween: 32,
 	direction: "horizontal",
 	virtual: { enabled: true },
 	pagination: {

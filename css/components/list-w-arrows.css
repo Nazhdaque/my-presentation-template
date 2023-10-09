@@ -10,12 +10,12 @@
 	grid-auto-rows: min-content;
 	column-gap: var(--li-gap-x, var(--gap-x));
 	row-gap: var(--li-gap-y, var(--gap-y));
+	counter-increment: list-item-counter;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| li-marker */
 .list-w-arrows > *::before {
 	content: counter(list-item-counter);
-	counter-increment: list-item-counter;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -25,7 +25,6 @@
 	font-weight: var(--fw-bd);
 	font-size: 2rem;
 	color: var(--clr-0-100-solid);
-	background-color: var(--clr-1-500-solid);
 	isolation: isolate;
 	grid-area: var(--rl-li-head-marker-position, 1 / 1);
 

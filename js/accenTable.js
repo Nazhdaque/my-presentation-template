@@ -16,16 +16,19 @@ export const accenTable = tables => {
 					colHeads[colIndex].classList.remove("clr-accent");
 					rowHeads[rowIndex].classList.remove("clr-accent");
 				};
+				const handleClick = () => cell.classList.toggle("clr-accent");
 
 				const setState = isDesktop => {
 					switch (isDesktop) {
 						case true:
 							cell.addEventListener("mouseover", handleOver);
 							cell.addEventListener("mouseout", handleOut);
+							cell.addEventListener("click", handleClick);
 							break;
 						case false:
 							cell.removeEventListener("mouseover", handleOver);
 							cell.removeEventListener("mouseout", handleOut);
+							cell.removeEventListener("click", handleClick);
 							break;
 					}
 				};

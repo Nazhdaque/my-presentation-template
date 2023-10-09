@@ -13,6 +13,7 @@
 @import url(./components/ribbon.css) layer(components);
 @import url(./components/list-w-arrows.css) layer(components);
 @import url(./components/list-w-icons.css) layer(components);
+@import url(./components/scroll-snap.css) layer(components);
 @import url(./components/cards.css) layer(components);
 @import url(./components/icons.css) layer(components);
 @import url(./components/table.css) layer(components);

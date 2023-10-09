@@ -98,28 +98,6 @@
 	grid-row: span var(--x, 2);
 }
 
-.a-self-s {
-	align-self: start;
-}
-.a-self-e {
-	align-self: end;
-}
-
-/* |||||||||| |||||||||| |||||||||| |||||||||| scroll-snap */
-.scroll-snap-inline {
-	--items: 12; /* number of grid-items */
-	--row: calc(var(--items) / var(--repeat));
-	--flow: column;
-
-	overflow-x: scroll;
-	scroll-snap-type: x mandatory;
-	grid-template-rows: repeat(var(--row, auto), min-content);
-	grid-auto-flow: var(--flow, row);
-}
-.scroll-snap-inline > * {
-	scroll-snap-align: center;
-}
-
 /* |||||||||| |||||||||| |||||||||| |||||||||| img */
 .o-fit-cover {
 	width: 100%;
@@ -171,4 +149,44 @@
 }
 *:where(:hover, :focus) .ellipsis::-webkit-scrollbar {
 	display: none;
+}
+
+/* |||||||||| |||||||||| |||||||||| ||||||||||  counter */
+.counter {
+	counter-reset: items-counter;
+}
+.counter > * {
+	counter-increment: items-counter;
+}
+.counter > *::before {
+	--indent: 1rem;
+
+	min-width: 3rem;
+	font-size: 20cqw;
+	font-weight: var(--fw-bd);
+	color: var(--clr-0-100-solid);
+	inset: 0;
+	margin: auto;
+	opacity: 0.5;
+	/* background: var(--sphere); */
+	/* border: 0.2rem solid white; */
+
+	position: absolute;
+	content: counter(items-counter);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	aspect-ratio: 1;
+	line-height: 1;
+	border-radius: 50%;
+	overflow: hidden;
+	z-index: 1;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.overlay::after {
+	position: absolute;
+	content: "";
+	inset: 0;
+	background: var(--clr-filter);
 }

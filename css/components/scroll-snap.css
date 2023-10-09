@@ -1,0 +1,129 @@
+/* |||||||||| |||||||||| |||||||||| |||||||||| scroll-snap */
+.scroll-snap-inline,
+.scroll-snap-block {
+	--clp-between-inline: polygon(
+		0 0,
+		calc(100% - 3rem) 0,
+		calc(100% - 3rem) calc(50% + 3.58rem),
+		100% 50%,
+		calc(100% - 3rem) calc(50% - 3.58rem),
+		calc(100% - 3rem) 100%,
+		0 100%,
+
+		calc(0% - 3rem) 100%,
+		0 calc(50% + 0.09rem + 3.58rem),
+		calc(3rem + 0.08rem) 50%,
+		0 calc(50% - 0.09rem - 3.58rem),
+		calc(0% - 3rem) 0%
+	);
+
+	--clp-first-inline: polygon(
+		0 0,
+		calc(100% - 3rem) 0,
+		calc(100% - 3rem) calc(50% + 3.58rem),
+		100% 50%,
+		calc(100% - 3rem) calc(50% - 3.58rem),
+		calc(100% - 3rem) 100%,
+		0 100%
+	);
+
+	--clp-last-inline: polygon(
+		0 0,
+		100% 0,
+		100% 100%,
+
+		calc(0% - 3rem) 100%,
+		0 calc(50% + 0.09rem + 3.58rem),
+		calc(3rem + 0.08rem) 50%,
+		0 calc(50% - 0.09rem - 3.58rem),
+		calc(0% - 3rem) 0%
+	);
+
+	/* --- */
+	--clp-between-block: polygon(
+		0 0,
+		100% 0,
+		100% calc(100% - 3rem),
+		calc(50% + 3.58rem) calc(100% - 3rem),
+		50% 100%,
+		calc(50% - 3.58rem) calc(100% - 3rem),
+		0 calc(100% - 3rem),
+		0 0,
+		calc(50% - 0.09rem - 3.58rem) 0,
+		50% calc(3rem + 0.08rem),
+		calc(50% + 0.09rem + 3.58rem) 0
+	);
+
+	--clp-first-block: polygon(
+		0 0,
+		100% 0,
+		100% calc(100% - 3rem),
+		calc(50% + 3.58rem) calc(100% - 3rem),
+		50% 100%,
+		calc(50% - 3.58rem) calc(100% - 3rem),
+		0 calc(100% - 3rem)
+	);
+
+	--clp-last-block: polygon(
+		0 0,
+		calc(50% - 0.09rem - 3.58rem) 0,
+		50% calc(3rem + 0.08rem),
+		calc(50% + 0.09rem + 3.58rem) 0,
+		100% 0,
+		100% 100%,
+		0 100%
+	);
+
+	display: grid;
+	height: 100%;
+	width: 100%;
+}
+
+.scroll-snap-inline > *,
+.scroll-snap-block > * {
+	scroll-snap-align: end;
+	scroll-snap-stop: always;
+}
+
+/* |||||||||| |||||||||| inline */
+.scroll-snap-inline {
+	overflow: auto hidden;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x mandatory;
+	grid-auto-flow: column;
+	grid-template-columns: 100%;
+	grid-auto-columns: calc(100% - 2.75rem * 2);
+}
+
+.scroll-snap-inline > *:first-child {
+	clip-path: var(--clp-first-inline);
+	margin-left: 0;
+}
+.scroll-snap-inline > * {
+	clip-path: var(--clp-between-inline);
+	margin-left: -2.75rem;
+}
+.scroll-snap-inline > *:last-child {
+	clip-path: var(--clp-last-inline);
+}
+
+/* |||||||||| |||||||||| block */
+.scroll-snap-block {
+	overflow: hidden auto;
+	overscroll-behavior-y: contain;
+	scroll-snap-type: y mandatory;
+	grid-auto-flow: row;
+	grid-template-rows: 100%;
+	grid-auto-rows: calc(100% - 2.75rem * 2);
+}
+
+.scroll-snap-block > *:first-child {
+	clip-path: var(--clp-first-block);
+}
+.scroll-snap-block > * {
+	clip-path: var(--clp-between-block);
+	margin-top: -2.75rem;
+}
+.scroll-snap-block > *:last-child {
+	clip-path: var(--clp-last-block);
+}

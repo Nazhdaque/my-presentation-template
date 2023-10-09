@@ -102,6 +102,38 @@
 	--clip: var(--clp-left);
 }
 
+.slide-5 .cards {
+	--col: 3;
+	--gap-x: 2rem;
+	--gap-y: 4rem;
+	--li-gap-x: 2.25rem;
+	--li-gap-y: 2rem;
+}
+
+.slide-5 .slide-content {
+	--col: 2;
+	--shrink: 0.5 !important;
+	--gap-x: 2rem;
+	--gap-y: 2rem;
+}
+
+.slide-5 .overlay:nth-child(4n + 1) {
+	--clr-filter: hsla(275, 50%, 25%, 0.25);
+}
+.slide-5 .overlay:nth-child(4n + 2) {
+	--clr-filter: hsla(125, 50%, 25%, 0.25);
+}
+.slide-5 .overlay:nth-child(4n + 3) {
+	--clr-filter: hsla(75, 50%, 25%, 0.25);
+}
+.slide-5 .overlay:nth-child(4n + 4) {
+	--clr-filter: hsla(0, 50%, 25%, 0.25);
+}
+
+.slide-5-img-filter {
+	filter: grayscale(1) brightness(0.5) contrast(1.25);
+}
+
 /* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| */
 .slide-6 .slide-bg,
 .slide-6 .slide-bg-overlay,
