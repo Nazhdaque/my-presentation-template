@@ -160,6 +160,14 @@
 	--clip: var(--clp-top);
 }
 
+.slide-6-layout {
+	--col: 3;
+	--gap-x: 3rem;
+	--gap-y: 3rem;
+
+	z-index: 1;
+}
+
 /* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| */
 .slide-7 .slide-bg,
 .slide-7 .slide-bg-overlay {

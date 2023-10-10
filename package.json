@@ -17,6 +17,8 @@
 	},
 	"dependencies": {
 		"accordion-js": "^3.3.4",
+		"chart.js": "^4.4.0",
+		"chartjs-plugin-datalabels": "^2.2.0",
 		"material-icons": "^1.13.12",
 		"swiper": "^10.3.1"
 	}

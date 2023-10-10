@@ -91,6 +91,11 @@
 	grid-column: 1 / -1;
 }
 
+.grid-center {
+	display: grid;
+	place-items: center;
+}
+
 .c-span-x {
 	grid-column: span var(--x, 2);
 }

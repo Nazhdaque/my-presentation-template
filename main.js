@@ -7,6 +7,9 @@ import "material-icons/iconfont/sharp.css";
 import { SizeSetter } from "./js/sizeSetter.js";
 import { AttrSetter } from "./js/attrSetter";
 import { accenTable } from "./js/accenTable";
+import "./js/chartDoughnut.js";
+import "./js/chartBar.js";
+import "./js/chartLine.js";
 
 // ---
 accenTable(document.querySelectorAll("table"));
