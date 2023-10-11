@@ -4,17 +4,12 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 const ctx = document.getElementById("chart-doughnut");
 
 const data = {
-	labels: ["Red", "Blue", "Yellow"],
+	labels: ["Data-1", "Data-2", "Data-3", "Data-4", "Data-5"],
 	datasets: [
 		{
-			label: "My First Dataset",
-			data: [128, 256, 512],
-			backgroundColor: [
-				"rgb(255, 99, 132)",
-				"rgb(54, 162, 235)",
-				"rgb(255, 205, 86)",
-			],
-			hoverOffset: 4,
+			label: "Amount",
+			data: [65, 72, 88, 43, 56],
+			hoverOffset: 50,
 		},
 	],
 };
@@ -22,6 +17,9 @@ const data = {
 const options = {
 	cutout: 50,
 	plugins: {
+		colors: {
+			enabled: true,
+		},
 		datalabels: {
 			backgroundColor: "#000",
 			borderRadius: 3,

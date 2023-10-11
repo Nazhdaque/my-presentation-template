@@ -59,6 +59,7 @@
 	color: var(--clr-0-100-solid);
 	padding-inline: var(--gap-x);
 	z-index: 1;
+	position: relative;
 }
 
 .card-ttl-bg .card-head > * {
@@ -67,7 +68,7 @@
 	text-orientation: upright; */
 }
 
-.card-ttl-bg .img-box::after {
+.card-ttl-bg .card-head::after {
 	position: absolute;
 	content: "";
 	inset: 0;
@@ -80,6 +81,7 @@
 		hsla(0, 0%, 0%, 0.6) 66%,
 		hsla(0, 0%, 0%, 0) 85%
 	);
+	z-index: -1;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| cards with bg */

@@ -7,12 +7,20 @@ const data = {
 	labels: labels,
 	datasets: [
 		{
-			label: "My First Dataset",
+			label: "Data-1",
 			data: [65, 34, 82, 75, 47, 55, 91],
-			borderColor: "rgb(75, 192, 192)",
 			fill: {
-				target: "origin",
-				above: "rgba(255, 159, 64, 0.2)",
+				target: true,
+				above: "rgba(54, 162, 235, 0.1)",
+			},
+			tension: 0.25,
+		},
+		{
+			label: "Data-2",
+			data: [25, 44, 54, 32, 14, 46, 52],
+			fill: {
+				target: true,
+				above: "rgba(255, 99, 132, 0.1)",
 			},
 			tension: 0.25,
 		},

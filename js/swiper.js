@@ -18,7 +18,7 @@ import "swiper/css/pagination";
 
 const mainSlider = new Swiper(".main-slider", {
 	modules: [Navigation, Pagination, Keyboard],
-	initialSlide: 5,
+	initialSlide: 0,
 	slidesPerView: 1,
 	speed: 0,
 	spaceBetween: 32,
