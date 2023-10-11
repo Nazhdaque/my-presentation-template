@@ -541,7 +541,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 						<div class="corners-1"></div>
 						<div class="corners-2"></div>
 						<div class="glitch"
-								 style="background-image: url(/images/demo-img-360p.webp)">
+								 style="background-image: url(images/demo-img-360p.webp)">
 							<div class="channel r"></div>
 							<div class="channel g"></div>
 							<div class="channel b"></div>
