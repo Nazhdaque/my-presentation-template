@@ -1,0 +1,110 @@
+/* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| */
+.corners-1,
+.corners-2 {
+	--size: 4cqw;
+	--indent: 1cqw;
+	--border: 0.5cqw solid var(--clr-1-500-solid);
+	position: absolute;
+}
+.corners-1::before,
+.corners-1::after,
+.corners-2::before,
+.corners-2::after {
+	position: absolute;
+	content: "";
+	height: var(--size);
+	width: var(--size);
+	/* z-index: 1; */
+}
+.corners-1::before {
+	inset: var(--indent) auto auto var(--indent);
+	border-top: var(--border);
+	border-left: var(--border);
+}
+.corners-2::before {
+	inset: var(--indent) var(--indent) auto auto;
+	border-top: var(--border);
+	border-right: var(--border);
+}
+.corners-1::after {
+	inset: auto var(--indent) var(--indent) auto;
+	border-bottom: var(--border);
+	border-right: var(--border);
+}
+.corners-2::after {
+	inset: auto auto var(--indent) var(--indent);
+	border-bottom: var(--border);
+	border-left: var(--border);
+}
+
+.rec {
+	--size: 2cqw;
+
+	inset: 2.75cqw 3cqw auto auto !important;
+	color: var(--clr-0-100-solid);
+	font-size: var(--size);
+	line-height: 1;
+	display: grid;
+	grid-template-columns: var(--size) min-content;
+	gap: 0.5cqw;
+	/* z-index: 1; */
+}
+
+.rec::before {
+	content: "";
+	grid-column: 1;
+	background-color: var(--clr-1-500-solid);
+	border-radius: 50%;
+	animation: blinky 1s ease-in-out infinite;
+}
+
+@keyframes blinky {
+	0% {
+		background-color: transparent;
+	}
+	49% {
+		background-color: transparent;
+	}
+	50% {
+		background-color: var(--clr-1-500-solid);
+	}
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| looks like too much for my notebook's GPU, disabled */
+.slide-4 .noise::after {
+	--clr-filter: hsla(175, 85%, 30%, 0.25);
+
+	content: "";
+	position: absolute;
+	top: -12.5%;
+	left: -12.5%;
+	/* z-index: -1; */
+	width: 125%;
+	height: 125%;
+	background: url(images/noise-texture.png) repeat center center
+		var(--clr-filter);
+	opacity: 0.75;
+	animation: noiseMovement 0.09s steps(6) infinite;
+}
+
+@keyframes noiseMovement {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+	10% {
+		transform: translate(0%, -10%);
+	}
+	30% {
+		transform: translate(-10%, 5%);
+	}
+	50% {
+		transform: translate(0%, 10%);
+	}
+	70% {
+		transform: translate(10%, -5%);
+	}
+	90% {
+		transform: translate(10%, 5%);
+	}
+}
