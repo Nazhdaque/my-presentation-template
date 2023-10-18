@@ -698,7 +698,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 				<h2 class="fs-xl width-x">Scroll-snap</h2>
 			</div>
 
-			<div class="grid-x img-gallery">
+			<div class="grid-x width-x slide-body">
 				<ul class="scroll-snap-block">
 					<li class="img-box overlay">
 						<img class="o-fit-cover slide-5-img-filter"
@@ -761,7 +761,13 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 			<div class="slide-bg spike"></div>
 			<div class="slide-bg spike w-img"></div>
 
-			<div class="grid-x slide-6-layout">
+			<div class="heading fs-xl">
+				<h2 class="fs-xl width-x">chart.js</h2>
+				<p class="fs-md grid-full-width">Графики</p>
+			</div>
+
+			<!-- <div class="grid-x slide-6-layout"> -->
+			<div class="grid-x width-x slide-body">
 				<div class="grid-center">
 					<canvas id="chart-bar"></canvas>
 				</div>
@@ -772,7 +778,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 					<canvas id="chart-line"></canvas>
 				</div>
 			</div>
-
+			<!-- </div> -->
 		</div>
 	</div>
 </li>`,da=`<li class="swiper-slide slide-7"
@@ -780,7 +786,6 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg diag w-img"></div>
-
 		</div>
 	</div>
 </li>`,ha=`<li class="swiper-slide slide-8"
