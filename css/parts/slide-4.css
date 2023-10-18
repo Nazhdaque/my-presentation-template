@@ -1,0 +1,31 @@
+.slide-4 .slide-bg {
+	--side: var(--left);
+	--clip: var(--clp-left);
+}
+
+.slide-4 .slide-content > *:last-child {
+	margin-bottom: var(--heading-bottom-indent-x2);
+}
+
+.slide-4 .cards {
+	--col: 3;
+	--gap-x: 2rem;
+	--gap-y: 4rem;
+	--li-gap-x: 2.25rem;
+	--li-gap-y: 2rem;
+}
+
+.slide-4 .heading {
+	row-gap: 0.25em;
+}
+.slide-4 .heading::before {
+	background-color: var(--clr-0-900-solid);
+}
+
+.slide-4 .overlay {
+	--clr-filter: hsla(175, 85%, 30%, 0.25);
+}
+
+.slide-4 .filter {
+	filter: grayscale(1) contrast(1.5);
+}

@@ -3,27 +3,27 @@
 .scroll-snap-block {
 	--clp-between-inline: polygon(
 		0 0,
-		calc(100% - 3rem) 0,
-		calc(100% - 3rem) calc(50% + 3.58rem),
+		calc(100% - 3cqh) 0,
+		calc(100% - 3cqh) calc(50% + 3.58cqh),
 		100% 50%,
-		calc(100% - 3rem) calc(50% - 3.58rem),
-		calc(100% - 3rem) 100%,
+		calc(100% - 3cqh) calc(50% - 3.58cqh),
+		calc(100% - 3cqh) 100%,
 		0 100%,
 
-		calc(0% - 3rem) 100%,
-		0 calc(50% + 0.09rem + 3.58rem),
-		calc(3rem + 0.08rem) 50%,
-		0 calc(50% - 0.09rem - 3.58rem),
-		calc(0% - 3rem) 0%
+		calc(0% - 3cqh) 100%,
+		0 calc(50% + 0.09cqh + 3.58cqh),
+		calc(3cqh + 0.08cqh) 50%,
+		0 calc(50% - 0.09cqh - 3.58cqh),
+		calc(0% - 3cqh) 0%
 	);
 
 	--clp-first-inline: polygon(
 		0 0,
-		calc(100% - 3rem) 0,
-		calc(100% - 3rem) calc(50% + 3.58rem),
+		calc(100% - 3cqh) 0,
+		calc(100% - 3cqh) calc(50% + 3.58cqh),
 		100% 50%,
-		calc(100% - 3rem) calc(50% - 3.58rem),
-		calc(100% - 3rem) 100%,
+		calc(100% - 3cqh) calc(50% - 3.58cqh),
+		calc(100% - 3cqh) 100%,
 		0 100%
 	);
 
@@ -32,43 +32,43 @@
 		100% 0,
 		100% 100%,
 
-		calc(0% - 3rem) 100%,
-		0 calc(50% + 0.09rem + 3.58rem),
-		calc(3rem + 0.08rem) 50%,
-		0 calc(50% - 0.09rem - 3.58rem),
-		calc(0% - 3rem) 0%
+		calc(0% - 3cqh) 100%,
+		0 calc(50% + 0.09cqh + 3.58cqh),
+		calc(3cqh + 0.08cqh) 50%,
+		0 calc(50% - 0.09cqh - 3.58cqh),
+		calc(0% - 3cqh) 0%
 	);
 
 	/* --- */
 	--clp-between-block: polygon(
 		0 0,
 		100% 0,
-		100% calc(100% - 3rem),
-		calc(50% + 3.58rem) calc(100% - 3rem),
+		100% calc(100% - 3cqh),
+		calc(50% + 3.58cqh) calc(100% - 3cqh),
 		50% 100%,
-		calc(50% - 3.58rem) calc(100% - 3rem),
-		0 calc(100% - 3rem),
+		calc(50% - 3.58cqh) calc(100% - 3cqh),
+		0 calc(100% - 3cqh),
 		0 0,
-		calc(50% - 0.09rem - 3.58rem) 0,
-		50% calc(3rem + 0.08rem),
-		calc(50% + 0.09rem + 3.58rem) 0
+		calc(50% - 0.09cqh - 3.58cqh) 0,
+		50% calc(3cqh + 0.08cqh),
+		calc(50% + 0.09cqh + 3.58cqh) 0
 	);
 
 	--clp-first-block: polygon(
 		0 0,
 		100% 0,
-		100% calc(100% - 3rem),
-		calc(50% + 3.58rem) calc(100% - 3rem),
+		100% calc(100% - 3cqh),
+		calc(50% + 3.58cqh) calc(100% - 3cqh),
 		50% 100%,
-		calc(50% - 3.58rem) calc(100% - 3rem),
-		0 calc(100% - 3rem)
+		calc(50% - 3.58cqh) calc(100% - 3cqh),
+		0 calc(100% - 3cqh)
 	);
 
 	--clp-last-block: polygon(
 		0 0,
-		calc(50% - 0.09rem - 3.58rem) 0,
-		50% calc(3rem + 0.08rem),
-		calc(50% + 0.09rem + 3.58rem) 0,
+		calc(50% - 0.09cqh - 3.58cqh) 0,
+		50% calc(3cqh + 0.08cqh),
+		calc(50% + 0.09cqh + 3.58cqh) 0,
 		100% 0,
 		100% 100%,
 		0 100%
@@ -92,7 +92,7 @@
 	scroll-snap-type: x mandatory;
 	grid-auto-flow: column;
 	grid-template-columns: 100%;
-	grid-auto-columns: calc(100% - 2.75rem * 2);
+	grid-auto-columns: calc(100% - 2.75cqh * 2);
 }
 
 .scroll-snap-inline > *:first-child {
@@ -101,7 +101,7 @@
 }
 .scroll-snap-inline > * {
 	clip-path: var(--clp-between-inline);
-	margin-left: -2.75rem;
+	margin-left: -2.75cqh;
 }
 .scroll-snap-inline > *:last-child {
 	clip-path: var(--clp-last-inline);
@@ -114,7 +114,7 @@
 	scroll-snap-type: y mandatory;
 	grid-auto-flow: row;
 	grid-template-rows: 100%;
-	grid-auto-rows: calc(100% - 2.75rem * 2);
+	grid-auto-rows: calc(100% - 2.75cqh * 2);
 }
 
 .scroll-snap-block > *:first-child {
@@ -122,7 +122,7 @@
 }
 .scroll-snap-block > * {
 	clip-path: var(--clp-between-block);
-	margin-top: -2.75rem;
+	margin-top: -2.75cqh;
 }
 .scroll-snap-block > *:last-child {
 	clip-path: var(--clp-last-block);

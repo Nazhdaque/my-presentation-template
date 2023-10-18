@@ -1,0 +1,8 @@
+.slide-7 .slide-bg,
+.slide-7 .slide-bg-overlay {
+	--side: var(--center);
+	--clip: var(--clp-right);
+
+	--overlay: var(--lr-dark-light);
+	--tint: var(--tint-3);
+}

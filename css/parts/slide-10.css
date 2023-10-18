@@ -1,0 +1,23 @@
+.slide-10 .slide-bg,
+.slide-10 .slide-bg-overlay,
+.slide-10 .slide-bg:first-child,
+.slide-10 .slide-bg-overlay:first-child {
+	--w-inline: max(15%, 10rem);
+	--tilt-base: 40%;
+	--trend-base: 20%;
+}
+
+.slide-10 .slide-bg,
+.slide-10 .slide-bg-overlay {
+	--side: var(--left);
+	--clip: var(--clp-left);
+
+	--overlay: var(--lr-dark-light);
+	--tint: var(--tint-2);
+}
+
+.slide-10 .slide-bg:first-child,
+.slide-10 .slide-bg-overlay:first-child {
+	--side: var(--right);
+	--clip: var(--clp-right);
+}

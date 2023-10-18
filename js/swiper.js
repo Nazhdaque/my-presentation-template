@@ -4,6 +4,7 @@ import {
 	Navigation,
 	Pagination,
 	Keyboard,
+	HashNavigation,
 	// Autoplay,
 	// Mousewheel,
 	// Scrollbar,
@@ -17,12 +18,13 @@ import "swiper/css/pagination";
 // import "swiper/css/scrollbar";
 
 const mainSlider = new Swiper(".main-slider", {
-	modules: [Navigation, Pagination, Keyboard],
+	modules: [Navigation, Pagination, Keyboard, HashNavigation],
 	initialSlide: 0,
 	slidesPerView: 1,
 	speed: 0,
 	spaceBetween: 32,
 	direction: "horizontal",
+	hashNavigation: true,
 	virtual: { enabled: true },
 	pagination: {
 		el: ".swiper-pagination",
@@ -38,8 +40,12 @@ const mainSlider = new Swiper(".main-slider", {
 		onlyInViewport: true,
 		pageUpDown: true,
 	},
+	simulateTouch: true,
 	breakpoints: {
-		576: { pagination: { dynamicBullets: false } },
+		576: {
+			pagination: { dynamicBullets: false },
+			simulateTouch: false,
+		},
 	},
 
 	// effect: "creative",
@@ -56,7 +62,6 @@ const mainSlider = new Swiper(".main-slider", {
 	// 	sensitivity: 2,
 	// 	invert: true,
 	// },
-	// grabCursor: true,
 });
 
 // ---

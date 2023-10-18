@@ -6,6 +6,15 @@
 	color: var(--clr-n-100-solid);
 }
 
+.brand-logo {
+	display: block;
+	max-width: var(--logo-size);
+	min-width: var(--logo-size);
+	aspect-ratio: var(--logo-x) / var(--logo-y);
+	outline: none;
+	overflow: hidden;
+}
+
 /* --- */
 .header-placeholder {
 	max-height: 0;

@@ -18,14 +18,25 @@
 @import url(./components/glitch-img.css) layer(components);
 @import url(./components/cards.css) layer(components);
 @import url(./components/icons.css) layer(components);
+@import url(./components/txt-link.css) layer(components);
 @import url(./components/table.css) layer(components);
 @import url(./components/buttons.css) layer(components);
 @import url(./components/toggle.css) layer(components);
 @import url(./components/modal.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
-@import url(./parts/common.css) layer(parts);
 @import url(./parts/slides-bgs.css) layer(parts);
+@import url(./parts/slide-1.css) layer(parts);
+@import url(./parts/slide-2.css) layer(parts);
+@import url(./parts/slide-3.css) layer(parts);
+@import url(./parts/slide-4.css) layer(parts);
+@import url(./parts/slide-5.css) layer(parts);
+@import url(./parts/slide-6.css) layer(parts);
+@import url(./parts/slide-7.css) layer(parts);
+@import url(./parts/slide-8.css) layer(parts);
+@import url(./parts/slide-9.css) layer(parts);
+@import url(./parts/slide-10.css) layer(parts);
+@import url(./parts/slide-11.css) layer(parts);
 @import url(./parts/slides.css) layer(parts);
 @import url(./parts/footer.css) layer(parts);
 

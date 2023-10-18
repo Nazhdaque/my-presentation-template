@@ -1,0 +1,64 @@
+.slide-5 .slide-bg,
+.slide-5 .slide-bg-overlay {
+	--side: var(--right);
+	--clip: var(--clp-right);
+
+	--overlay: var(--lr-dark-light);
+	--tint: var(--tint-3);
+}
+.slide-5 .slide-bg:first-child,
+.slide-5 .slide-bg-overlay:first-child {
+	--left: 0 auto 0 -19%;
+	--side: var(--left);
+	--clip: var(--clp-left);
+}
+
+.slide-5 .heading::before {
+	background-color: var(--clr-0-900-solid);
+}
+
+.slide-5 .slide-content {
+	grid-auto-rows: min-content 1fr;
+}
+
+.slide-5 .img-gallery {
+	--col: 2;
+	--shrink: 0.5 !important;
+	--gap-x: 2rem;
+	--gap-y: 2rem;
+
+	height: 100%;
+}
+.slide-5 .img-gallery > * {
+	min-height: 50vh;
+}
+
+.slide-5 .overlay:nth-child(4n + 1) {
+	--clr-filter: hsla(275, 50%, 25%, 0.1);
+}
+.slide-5 .overlay:nth-child(4n + 2) {
+	--clr-filter: hsla(125, 50%, 25%, 0.1);
+}
+.slide-5 .overlay:nth-child(4n + 3) {
+	--clr-filter: hsla(75, 50%, 25%, 0.1);
+}
+.slide-5 .overlay:nth-child(4n + 4) {
+	--clr-filter: hsla(0, 50%, 25%, 0.1);
+}
+
+.slide-5 .img-gallery > *:nth-child(2) .overlay:nth-child(4n + 1) {
+	--clr-filter: hsla(0, 50%, 25%, 0.1);
+}
+.slide-5 .img-gallery > *:nth-child(2) .overlay:nth-child(4n + 2) {
+	--clr-filter: hsla(75, 50%, 25%, 0.1);
+}
+.slide-5 .img-gallery > *:nth-child(2) .overlay:nth-child(4n + 3) {
+	--clr-filter: hsla(125, 50%, 25%, 0.1);
+}
+.slide-5 .img-gallery > *:nth-child(2) .overlay:nth-child(4n + 4) {
+	--clr-filter: hsla(275, 50%, 25%, 0.1);
+}
+
+.slide-5-img-filter {
+	filter: grayscale(1) brightness(0.5) contrast(1.25);
+}

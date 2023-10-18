@@ -1,0 +1,8 @@
+.slide-9 .slide-bg,
+.slide-9 .slide-bg-overlay {
+	--side: var(--right);
+	--mask: var(--clp-right);
+
+	--overlay: var(--lr-dark-light);
+	--tint: var(--tint-4);
+}

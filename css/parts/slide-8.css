@@ -1,0 +1,8 @@
+.slide-8 .slide-bg,
+.slide-8 .slide-bg-overlay {
+	--side: var(--left);
+	--mask: var(--clp-left);
+
+	--overlay: var(--lr-dark-light);
+	--tint: var(--tint-2);
+}

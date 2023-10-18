@@ -213,11 +213,15 @@ tbody th:hover::after {
 		text-orientation: upright; */
 		display: grid;
 		place-items: center;
+		background-color: var(--clr-bg-1--dk) !important;
+		color: var(--clr-txt--lt) !important;
 	}
 
-	tr:nth-child(2n - 1) td:nth-child(2n),
-	tr:nth-child(2n) td:nth-child(2n) {
-		background-color: var(--clr-txt--lt);
+	td {
+		background-color: var(--clr-txt--lt) !important;
+	}
+	td:nth-child(2n) {
+		background-color: var(--clr-bg-1--lt) !important;
 	}
 
 	caption {
@@ -233,12 +237,10 @@ tbody th:hover::after {
 
 	td {
 		display: grid;
+		align-items: center;
 		gap: 1rem;
 		grid-template-columns: max-content 1fr;
-		align-items: center;
 		position: static;
-	}
-	td {
 		margin-top: var(--thickness);
 	}
 

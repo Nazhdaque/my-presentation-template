@@ -1,0 +1,24 @@
+.slide-2 .slide-bg,
+.slide-2 .slide-bg-overlay {
+	--side: var(--left);
+	--clip: var(--clp-left);
+
+	--clr-filter: rgba(20, 20, 200, 0.1);
+	--overlay: var(--lr-light-dark);
+	--tint: var(--tint-5);
+}
+.slide-2 .slide-bg::before {
+	filter: invert(1) grayscale(1);
+}
+
+.slide-2 .list-w-arrows {
+	--col: 3;
+	--gap-x: 4rem;
+	--gap-y: 4rem;
+	--li-gap-x: 0rem;
+	--li-gap-y: 2rem;
+}
+
+.slide-2 .slide-content > *:last-child {
+	margin-bottom: var(--heading-bottom-indent-x2);
+}

@@ -1,0 +1,24 @@
+.slide-1 .slide-bg {
+	--side: 0;
+	--w: 100%;
+
+	--overlay: var(--lr-dark-light);
+	--tint: var(--tint-1);
+}
+
+.slide-1 .slide-content {
+	grid-auto-rows: min-content 1fr min-content;
+}
+
+.slide-1 .heading {
+	--x: 3;
+	--col: 7;
+}
+
+.slide-1 .cards-w-icons {
+	--col: 4;
+	--gap-x: 2rem;
+	--gap-y: 4rem;
+	--li-gap-x: 2.25rem;
+	--li-gap-y: 2rem;
+}
