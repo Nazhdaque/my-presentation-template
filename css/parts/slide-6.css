@@ -23,13 +23,23 @@
 	--clip: var(--clp-top);
 }
 
-.slide-6-layout {
-	--col: 3;
-	--gap-x: 3rem;
-	--gap-y: 3rem;
+.slide-6 .heading::before {
+	background-color: var(--clr-0-900-solid);
+}
+
+.slide-6 .slide-content {
+	grid-auto-rows: min-content;
+}
+
+.slide-6 .slide-body {
+	--col: 4;
+	--x: 3;
+	--gap-x: 2rem;
+	--gap-y: 2rem;
 
 	z-index: 1;
 	background-color: var(--clr-0-100-solid);
-	padding: 2rem;
 	border-radius: 8px;
+	place-self: start center;
+	padding: 2rem;
 }
