@@ -836,7 +836,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 				<li></li>
 				<li></li>
 				<li><img class="o-fit-cover"
-							 src="/images/demo-img-360p.webp"
+							 src="images/demo-img-720p.webp"
 							 alt=""></li>
 				<li></li>
 				<li></li>
@@ -857,7 +857,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 						style="--x: 5"></li>
 				<li class="r-span-x"
 						style="--x: 3"><img class="o-fit-cover"
-							 src="/images/demo-img-360p.webp"
+							 src="images/demo-img-720p.webp"
 							 alt=""></li>
 				<li class="r-span-x"
 						style="--x: 6"></li>
@@ -865,7 +865,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 						style="--x: 4"></li>
 				<li class="r-span-x"
 						style="--x: 5"><img class="o-fit-cover"
-							 src="/images/demo-img-360p.webp"
+							 src="images/demo-img-720p.webp"
 							 alt=""></li>
 				<li class="r-span-x"
 						style="--x: 5"></li>
@@ -873,7 +873,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 						style="--x: 2"></li>
 				<li class="r-span-x"
 						style="--x: 5"><img class="o-fit-cover"
-							 src="/images/demo-img-360p.webp"
+							 src="images/demo-img-720p.webp"
 							 alt=""></li>
 				<li class="r-span-x"
 						style="--x: 4"></li>
