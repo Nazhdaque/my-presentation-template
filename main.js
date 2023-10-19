@@ -10,6 +10,7 @@ import { accenTable } from "./js/accenTable";
 import "./js/chartDoughnut.js";
 import "./js/chartBar.js";
 import "./js/chartLine.js";
+import { Demo } from "./js/demo.js";
 
 // ---
 accenTable(document.querySelectorAll("table"));
@@ -29,7 +30,10 @@ attrSetter.initWith("role", {
 
 // ---
 const sizeSetter = new SizeSetter();
-sizeSetter.initWith([["master-1", "slave-1"]]);
+sizeSetter.initWith([
+	["master-1", "slave-1"],
+	["master-2", "slave-2"],
+]);
 
 // ---
 const sidebar = document.querySelector(".sidebar");
@@ -70,6 +74,12 @@ const handleEmailClick = () => {
 	mailTimerId = setTimeout(setProxiEmail, 1);
 };
 mail.addEventListener("click", handleEmailClick);
+
+// ---
+const demo = new Demo();
+demo.setClass();
+// demo.setColor();
+// demo.getInfo();
 
 // ---
 console.log(

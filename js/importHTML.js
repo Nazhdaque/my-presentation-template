@@ -10,7 +10,8 @@ import slide_8 from "../html/parts/slide-8.html?raw";
 import slide_9 from "../html/parts/slide-9.html?raw";
 import slide_10 from "../html/parts/slide-10.html?raw";
 import slide_11 from "../html/parts/slide-11.html?raw";
-// import slide_12 from "../html/parts/slide-12.html?raw";
+import slide_12 from "../html/parts/slide-12.html?raw";
+
 // import modalContent from "../html/parts/modal.html?raw";
 
 const sidebar = document.querySelector(".sidebar");
@@ -28,7 +29,7 @@ slidesContainer.insertAdjacentHTML("beforeend", slide_8);
 slidesContainer.insertAdjacentHTML("beforeend", slide_9);
 slidesContainer.insertAdjacentHTML("beforeend", slide_10);
 slidesContainer.insertAdjacentHTML("beforeend", slide_11);
-// slidesContainer.insertAdjacentHTML("beforeend", slide_12);
+slidesContainer.insertAdjacentHTML("beforeend", slide_12);
 
 // const modal = document.querySelector(".modal");
 // modal.insertAdjacentHTML("beforeend", modalContent);

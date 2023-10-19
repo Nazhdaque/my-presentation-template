@@ -1,6 +1,6 @@
 /* quick area highlighting */
 .xxx {
-	--clr-shift: 220;
+	--clr-shift: 310;
 	--hue: calc(var(--clr-shift) + var(--deg));
 	--thickness: 0.1rem;
 	--density: 2;

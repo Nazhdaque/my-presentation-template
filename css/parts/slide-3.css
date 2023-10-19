@@ -2,3 +2,7 @@
 	--side: var(--right);
 	--clip: var(--clp-right);
 }
+
+.slide-3 .slide-content {
+	grid-auto-rows: auto;
+}

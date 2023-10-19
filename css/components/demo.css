@@ -1,0 +1,129 @@
+/* |||||||||| |||||||||| |||||||||| |||||||||| demo */
+.demo {
+	--gap-x: 1rem;
+	--gap-y: 1rem;
+
+	counter-reset: counter;
+	height: 100%;
+}
+
+.demo > * {
+	--grid-item-height: var(--header-height, 4em);
+
+	display: grid !important;
+	min-height: var(--heading-bottom-indent);
+	font-size: 0.85rem;
+	color: hsl(var(--hue), 25%, 50%);
+	overflow: hidden;
+}
+
+.demo > * > *:not(img) {
+	padding: 1rem;
+}
+
+.demo + .demo {
+	padding-top: 0; /* for parallax slide content */
+}
+
+.demo > *::before {
+	--bg: hsl(0, 0%, 0%, 0.5);
+
+	font-size: var(--fs-rg);
+	position: absolute;
+	place-self: center;
+	content: counter(counter);
+	counter-increment: counter;
+	min-width: calc(var(--heading-bottom-indent) * 0.75);
+	padding: 0.33em;
+	aspect-ratio: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: hsl(var(--hue), 100%, 50%);
+	border-radius: 50%;
+	border: var(--border);
+	background-color: var(--bg);
+	z-index: 1;
+}
+.demo.grid-x > *::before {
+	content: "grid-x";
+}
+.demo.flex-x > *::before {
+	content: "flex-x";
+}
+.demo .width-x::before {
+	content: "width-x";
+}
+.demo.gta > *::before {
+	content: counter(counter, upper-alpha);
+}
+
+.demo .width-x:not(:last-child) {
+	margin-bottom: var(--gap-y);
+}
+
+/* grid-template-areas */
+.gta {
+	display: grid;
+	gap: var(--gap-x);
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-areas:
+		"b a a a a"
+		"b c c g i"
+		"b c c h i"
+		"b d e h i"
+		"b f f f i";
+}
+
+.demo.gta > *:nth-child(1) {
+	grid-area: a;
+}
+.demo.gta > *:nth-child(2) {
+	grid-area: b;
+}
+.demo.gta > *:nth-child(3) {
+	grid-area: c;
+}
+.demo.gta > *:nth-child(4) {
+	grid-area: d;
+}
+.demo.gta > *:nth-child(5) {
+	grid-area: e;
+}
+.demo.gta > *:nth-child(6) {
+	grid-area: f;
+}
+.demo.gta > *:nth-child(7) {
+	grid-area: g;
+}
+.demo.gta > *:nth-child(8) {
+	grid-area: h;
+}
+.demo.gta > *:nth-child(9) {
+	grid-area: i;
+}
+
+@media (width <= 576px) {
+	.gta {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"a"
+			"b"
+			"c"
+			"d"
+			"e"
+			"f"
+			"g"
+			"h"
+			"i";
+	}
+}
+
+/* masonry */
+.masonry {
+	grid-auto-rows: calc(var(--header-height));
+}
+
+.masonry > * {
+	padding: 0;
+}

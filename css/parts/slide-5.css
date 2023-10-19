@@ -17,10 +17,6 @@
 	background-color: var(--clr-0-900-solid);
 }
 
-.slide-5 .slide-content {
-	grid-auto-rows: min-content;
-}
-
 .slide-5 .slide-body {
 	--col: 3;
 	--x: 2;

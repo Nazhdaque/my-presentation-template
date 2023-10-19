@@ -9,4 +9,5 @@
 	display: grid;
 	gap: var(--heading-bottom-indent);
 	align-items: center;
+	grid-auto-rows: min-content;
 }

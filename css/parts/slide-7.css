@@ -1,8 +1,11 @@
-.slide-7 .slide-bg,
-.slide-7 .slide-bg-overlay {
-	--side: var(--center);
-	--clip: var(--clp-right);
+.slide-7 .slide-bg {
+	--side: 0;
+	--w: 100%;
 
-	--overlay: var(--lr-dark-light);
+	--overlay: linear-gradient(
+		90deg,
+		hsla(0, 0%, 0%, 0.75) 0%,
+		hsla(0, 0%, 0%, 0.75) 100%
+	);
 	--tint: var(--tint-3);
 }

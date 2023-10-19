@@ -1,8 +1,35 @@
 .slide-8 .slide-bg,
 .slide-8 .slide-bg-overlay {
+	--w-inline: max(50%, 10rem);
 	--side: var(--left);
 	--mask: var(--clp-left);
 
 	--overlay: var(--lr-dark-light);
 	--tint: var(--tint-2);
+}
+
+.slide-8 .slide-body {
+	--col: 3;
+	--x: 2;
+	--shrink: 1 !important;
+	--gap-x: 2rem;
+	--gap-y: 2rem;
+
+	place-self: start center;
+}
+
+.slide-8 .list-w-arrows {
+	--col: 3;
+	--gap-x: 4rem;
+	--gap-y: 4rem;
+	--li-gap-x: 0rem;
+	--li-gap-y: 2rem;
+}
+
+.slide-8 .ellipsis-box {
+	z-index: 1;
+}
+
+.slide-8 .list-w-arrows > * {
+	grid-auto-rows: min-content 1fr;
 }

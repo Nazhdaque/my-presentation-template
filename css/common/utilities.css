@@ -94,6 +94,7 @@
 .grid-center {
 	display: grid;
 	place-items: center;
+	place-content: center;
 }
 
 .c-span-x {
