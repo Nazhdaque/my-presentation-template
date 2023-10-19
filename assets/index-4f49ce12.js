@@ -72,8 +72,8 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 			<div class="slide-bg w-img"></div>
 			<div class="slide-bg-overlay"></div>
 			<div class="heading fs-3xl">
-				<h1 class="fs-3xl width-x">Это шаблон презентации. Альтернатива .pptx</h1>
-				<p class="fs-md grid-full-width">Проект находится в стадии разработки</p>
+				<h1 class="fs-3xl width-x">Шаблон-конструктор презентаций</h1>
+				<p class="fs-md grid-full-width">Альтернатива .pptx</p>
 			</div>
 
 			<ul class="cards-w-icons grid-x">
@@ -85,8 +85,8 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 					</div>
 					<h2 class="caps">Следует понимать</h2>
 					<div class="card-body">
-						<p>Весь текстовый и графический контент представлен в демонстрационных целях. Он может быть абсолютно
-							любым.</p>
+						<p>Дизайн, контент, макеты слайдов представлены в демонстрационных целях. Они могут быть абсолютно
+							любыми.</p>
 					</div>
 				</li>
 
@@ -99,7 +99,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 					<h2 class="caps">Важно подчеркнуть</h2>
 					<div class="card-body">
 						<p>Основные усилия направлены на создание универсальной
-							функциональности без привязки к конкретному контенту.</p>
+							функциональности без привязки к контенту.</p>
 					</div>
 				</li>
 
@@ -129,7 +129,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 				</li>
 			</ul>
 
-			<p class="ribbon fs-rg caps">under development</p>
+			<p class="ribbon fs-rg caps">Проект находится в стадии разработки</p>
 		</div>
 	</div>
 </li>`,oa=`<li class="swiper-slide slide-2"
