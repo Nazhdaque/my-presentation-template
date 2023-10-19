@@ -766,7 +766,6 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 				<p class="fs-md grid-full-width">Графики</p>
 			</div>
 
-			<!-- <div class="grid-x slide-6-layout"> -->
 			<div class="grid-x width-x slide-body">
 				<div class="grid-center">
 					<canvas id="chart-bar"></canvas>
@@ -778,7 +777,6 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 					<canvas id="chart-line"></canvas>
 				</div>
 			</div>
-			<!-- </div> -->
 		</div>
 	</div>
 </li>`,da=`<li class="swiper-slide slide-7"
