@@ -43,3 +43,7 @@
 	place-self: start center;
 	padding: 2rem;
 }
+
+.slide-6 .slide-body > * {
+	aspect-ratio: 1;
+}

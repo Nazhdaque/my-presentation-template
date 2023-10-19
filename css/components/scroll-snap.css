@@ -82,6 +82,7 @@
 .scroll-snap-block > * {
 	scroll-snap-align: end;
 	scroll-snap-stop: always;
+	position: relative;
 }
 
 /* |||||||||| |||||||||| inline */
@@ -125,4 +126,27 @@
 }
 .scroll-snap-block > *:last-child {
 	clip-path: var(--clp-last-block);
+}
+
+/* |||||||||| |||||||||| triangles */
+.scroll-snap-inline > *:not(:last-child)::before,
+.scroll-snap-block > *:not(:last-child)::before {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	width: 0;
+	height: 0;
+	z-index: 1;
+}
+.scroll-snap-inline > *:not(:last-child)::before {
+	inset: 0 0.2cqh 0 auto;
+	margin-block: auto;
+	border-width: 1cqh 0 1cqh 0.8cqh;
+	border-color: transparent transparent transparent var(--clr-1-500-solid);
+}
+.scroll-snap-block > *:not(:last-child)::before {
+	inset: auto 0 0.2cqh 0;
+	margin-inline: auto;
+	border-width: 0.8cqh 1cqh 0 1cqh;
+	border-color: var(--clr-1-500-solid) transparent transparent transparent;
 }
