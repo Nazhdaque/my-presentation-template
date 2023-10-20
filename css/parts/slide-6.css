@@ -4,8 +4,8 @@
 .slide-6 .slide-bg-overlay:first-child {
 	--w: var(--w-block);
 	--h: var(--h-block);
-	--tilt-base: 40%;
-	--trend-base: 20%;
+	--tilt-base: -25%;
+	--trend-base: 90%;
 }
 
 .slide-6 .slide-bg,
@@ -24,7 +24,7 @@
 }
 
 .slide-6 .heading::before {
-	background-color: var(--clr-0-900-solid);
+	/* background-color: var(--clr-0-900-solid); */
 }
 
 .slide-6 .slide-body {

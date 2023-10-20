@@ -10,7 +10,6 @@ import { accenTable } from "./js/accenTable";
 import "./js/chartDoughnut.js";
 import "./js/chartBar.js";
 import "./js/chartLine.js";
-import { Demo } from "./js/demo.js";
 
 // ---
 accenTable(document.querySelectorAll("table"));
@@ -74,12 +73,6 @@ const handleEmailClick = () => {
 	mailTimerId = setTimeout(setProxiEmail, 1);
 };
 mail.addEventListener("click", handleEmailClick);
-
-// ---
-const demo = new Demo();
-demo.setClass();
-// demo.setColor();
-// demo.getInfo();
 
 // ---
 console.log(
