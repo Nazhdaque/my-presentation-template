@@ -44,7 +44,7 @@
 	background-color: var(--bg);
 	z-index: 1;
 }
-.demo.grid-x > *::before {
+/* .demo.grid-x > *::before {
 	content: "grid-x";
 }
 .demo.flex-x > *::before {
@@ -52,7 +52,7 @@
 }
 .demo .width-x::before {
 	content: "width-x";
-}
+} */
 .demo.gta > *::before {
 	content: counter(counter, upper-alpha);
 }

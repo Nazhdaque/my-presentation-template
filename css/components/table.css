@@ -51,11 +51,12 @@ table {
 	border-bottom-left-radius: var(--outer-radius);
 	border-bottom-right-radius: var(--outer-radius);
 
-	overflow: hidden;
 	box-shadow: var(--table-shadow);
 
-	/* isolation: isolate; */
 	z-index: 1;
+	position: relative;
+	/* isolation: isolate; */
+	overflow: hidden;
 }
 
 tbody tr:last-child > *:first-child {
@@ -74,7 +75,6 @@ caption {
 	color: var(--clr-txt--dk) !important;
 	background-color: var(--clr-txt--lt);
 	position: relative;
-	overflow: hidden;
 }
 caption::before {
 	position: absolute;
@@ -82,6 +82,8 @@ caption::before {
 	inset: 0;
 	background-color: var(--clr-txt--lt);
 	z-index: -1;
+	border-top-left-radius: var(--inner-radius);
+	border-top-right-radius: var(--inner-radius);
 }
 
 caption,
