@@ -330,7 +330,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 			</ol>
 
 			<h2 class="heading fs-xl width-x">Плюсы MS PowerPoint</h2>
-			<ol class="flex-x list-w-arrows list-w-arrows-left">
+			<ol class="flex-x list-w-arrows list-w-arrows-in list-w-arrows-pair-rl">
 				<li class="slave-1">
 					<div class="img-box bg-sphere">
 						<i class="material-icons-round mui-icon">child_care</i>
@@ -382,7 +382,10 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 			<div class="slide-bg rounded"></div>
 
 			<table>
-				<caption>Адаптивная и семантически корректная таблица с полезным функционалом</caption>
+				<caption>
+					<div class="ribbon-left-bottom-cutout fs-sm">awesome!</div>
+					Адаптивная и семантически корректная таблица с полезным функционалом
+				</caption>
 
 				<thead>
 					<tr>
@@ -894,7 +897,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 			</div>
 
 			<div class="grid-x width-x slide-body">
-				<ol class="grid-x list-w-arrows list-w-arrows-right">
+				<ol class="grid-x list-w-arrows list-w-arrows-out">
 					<li>
 						<div class="img-box bg-sphere">
 							<i class="material-icons-round mui-icon">monitor</i>
