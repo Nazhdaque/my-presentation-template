@@ -144,7 +144,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 				<p class="fs-md grid-full-width">Спойлер: пожалуй, всем! Счет 12:2 не в пользу PP</p>
 			</div>
 
-			<ol class="flex-x list-w-arrows">
+			<ol class="flex-x list-w-ribbons">
 				<li class="master-1">
 					<div class="img-box bg-sphere">
 						<img class="icon"
@@ -330,7 +330,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 			</ol>
 
 			<h2 class="heading fs-xl width-x">Плюсы MS PowerPoint</h2>
-			<ol class="flex-x list-w-arrows list-w-arrows-in list-w-arrows-pair-rl">
+			<ol class="flex-x list-w-ribbons in lr">
 				<li class="slave-1">
 					<div class="img-box bg-sphere">
 						<i class="material-icons-round mui-icon">child_care</i>
@@ -383,7 +383,6 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 
 			<table>
 				<caption>
-					<div class="ribbon-left-bottom-cutout fs-sm">awesome!</div>
 					Адаптивная и семантически корректная таблица с полезным функционалом
 				</caption>
 
@@ -897,7 +896,7 @@ var ea=Object.defineProperty;var ia=(i,t,e)=>t in i?ea(i,t,{enumerable:!0,config
 			</div>
 
 			<div class="grid-x width-x slide-body">
-				<ol class="grid-x list-w-arrows list-w-arrows-out">
+				<ol class="grid-x list-w-ribbons out">
 					<li>
 						<div class="img-box bg-sphere">
 							<i class="material-icons-round mui-icon">monitor</i>
