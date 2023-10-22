@@ -42,7 +42,6 @@
 	border-radius: 50%;
 	border: var(--border);
 	background-color: var(--bg);
-	z-index: 1;
 }
 /* .demo.grid-x > *::before {
 	content: "grid-x";
@@ -119,11 +118,11 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| masonry */
-.masonry {
-	grid-auto-rows: calc(var(--header-height));
+.demo.masonry {
+	grid-auto-rows: var(--heading-bottom-indent);
 }
 
-.masonry > * {
+.demo.masonry > * {
 	padding: 0;
 }
 
@@ -149,7 +148,6 @@
 		transparent var(--thickness) calc(var(--thickness) * var(--density))
 	);
 	background-clip: padding-box;
-	z-index: 100;
 }
 .demo > *:nth-child(3n + 1) {
 	--deg: 0;
@@ -171,5 +169,4 @@
 }
 .demo > * > * {
 	--deg: 210;
-	z-index: 100;
 }

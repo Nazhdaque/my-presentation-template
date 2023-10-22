@@ -19,9 +19,9 @@
 .swiper-slide {
 	background-color: var(--clr-0-100-solid);
 	padding-block: var(--swiper-pagination-bottom) var(--swiper-pagination-height);
-	overflow: hidden;
+	overflow: hidden; /* required */
 }
 
 .swiper-wrapper {
-	/* overflow: hidden; */ /* used with effectCreative */
+	/* overflow: hidden; */ /* required for effectCreative */
 }

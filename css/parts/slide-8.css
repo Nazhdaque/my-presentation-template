@@ -18,7 +18,7 @@
 	place-self: start center;
 }
 
-.slide-8 .list-w-arrows {
+.slide-8 .list-w-ribbons {
 	--col: 3;
 	--gap-x: 4rem;
 	--gap-y: 4rem;
@@ -30,6 +30,6 @@
 	z-index: 1;
 }
 
-.slide-8 .list-w-arrows > * {
+.slide-8 .list-w-ribbons > * {
 	grid-auto-rows: min-content 1fr;
 }
