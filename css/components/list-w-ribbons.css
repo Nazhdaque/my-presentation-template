@@ -92,12 +92,6 @@
 	/* padding: var(--li-body-padding, 0 1rem 0 0); */
 }
 
-.list-w-ribbons .img-box {
-	grid-area: var(--li-head-marker-position, 1 / 1);
-	border-radius: 50%;
-	overflow: hidden;
-}
-
 /* |||||||||| |||||||||| |||||||||| |||||||||| mods */
 .list-w-ribbons.left,
 .list-w-ribbons.in > *:nth-child(2n),
@@ -119,4 +113,10 @@
 .list-w-ribbons.cut,
 .list-w-ribbons.in.rl > *:nth-child(2n-1) {
 	--li-head-arrow-trend: polygon(0% 0%, 100% 0, 75% 50%, 100% 100%, 0% 100%);
+}
+
+.list-w-ribbons .img-box {
+	grid-area: var(--li-head-marker-position, 1 / 1);
+	border-radius: 50%;
+	overflow: hidden;
 }
