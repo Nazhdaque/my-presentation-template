@@ -21,17 +21,17 @@ tbody th {
 } */
 
 table {
-	/* --clr-0-100-solid: hsl(0, 0%, 93%); */
+	/* --clr-0a-solid: hsl(0, 0%, 93%); */
 
-	--clr-txt--lt: var(--clr-0-100-solid);
-	--clr-txt--dk: var(--clr-0-900-solid);
+	--clr-txt--lt: var(--clr-0a-solid);
+	--clr-txt--dk: var(--clr-0b-solid);
 
 	--clr-bg-0: var(--clr-txt--dk);
-	--clr-bg-1--lt: hsl(var(--clr-1-900-alpha), 0.1);
-	--clr-bg-1--dk: hsl(var(--clr-1-900-alpha), 0.75);
-	--clr-bg-2--lt: hsl(var(--clr-1-500-alpha), 0.1);
-	--clr-bg-2--dk: hsl(var(--clr-1-500-alpha), 0.75);
-	--clr-accent: var(--clr-1-500-solid);
+	--clr-bg-1--lt: hsl(var(--clr-1a-alpha), 0.1);
+	--clr-bg-1--dk: hsl(var(--clr-1a-alpha), 1);
+	--clr-bg-2--lt: hsl(var(--clr-1b-alpha), 0.1);
+	--clr-bg-2--dk: hsl(var(--clr-1b-alpha), 1);
+	--clr-accent: var(--clr-bg-2--dk);
 
 	--table-shadow: 0rem 1rem 5rem -1rem rgba(0, 0, 0, 0.25);
 

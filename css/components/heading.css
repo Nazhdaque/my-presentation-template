@@ -10,6 +10,6 @@
 }
 .heading::before {
 	content: "";
-	background-color: var(--clr-1-500-solid);
+	background-color: var(--heading-bg-clr, var(--clr-1b-solid));
 	isolation: isolate;
 }

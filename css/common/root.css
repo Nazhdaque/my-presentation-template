@@ -4,35 +4,88 @@
 	--max-content-width: 100rem;
 
 	/* |||||||||| |||||||||| |||||||||| |||||||||| colors */
-	--clr-0-100-solid: hsl(0, 0%, 96%);
-	--clr-0-100-alpha: 0, 0%, 96%;
-	--clr-0-900-solid: hsl(0, 0%, 13%);
+	/* #f5f5f5 */
+	--clr-0a-solid: hsl(0, 0%, 96%);
+	--clr-0a-alpha: 0, 0%, 96%;
+	--clr-0b-solid: hsl(0, 0%, 13%);
 
-	--clr-1-500-solid: hsl(0, 78%, 54%);
-	--clr-1-500-solid-invert: hsl(180, 78%, 46%);
-	--clr-1-500-solid-dark: hsl(0, 78%, 24%);
-	--clr-1-500-alpha: 0, 78%, 54%;
-	--clr-1-500-alpha-invert: 180, 78%, 46%;
+	/* #1c355e */
+	--clr-1a-solid: hsl(217, 54%, 24%);
+	--clr-1a-alpha: 217, 54%, 24%;
+	--clr-1a-solid-invert: hsl(397, 54%, 76%);
+	--clr-1a-solid-darken-50: hsl(217, 54%, 12%);
 
-	--clr-1-900-solid: hsl(0, 1%, 25%);
-	--clr-1-900-alpha: 0, 1%, 25%;
+	/* #ef991f */
+	--clr-1b-solid: hsl(35, 87%, 53%);
+	--clr-1b-alpha: 35, 87%, 53%;
+	--clr-1b-solid-invert: hsl(215, 87%, 47%);
+	--clr-1b-solid-darken-50: hsl(35, 87%, 26.5%);
 
-	--clr-2-300-solid: hsl(233, 9%, 65%);
-	--clr-2-300-alpha: 233, 9%, 65%;
-	--clr-2-500-solid: hsl(44, 85%, 55%);
-	--clr-2-500-alpha: 44, 85%, 55%;
-	--clr-2-600-solid: hsl(146, 43%, 41%);
-	--clr-2-600-alpha: 146, 43%, 41%;
-	--clr-2-700-solid: hsl(261, 35%, 43%);
-	--clr-2-700-alpha: 261, 35%, 43%;
+	/* #2d7ad2 */
+	--clr-2a-solid: hsl(212, 65%, 50%);
+	--clr-2a-alpha: 212, 65%, 50%;
+	--clr-2a-solid-invert: hsl(392, 65%, 50%);
+	--clr-2a-solid-darken-50: hsl(212, 65%, 25%);
+
+	/* #dd3c4f */
+	--clr-2b-solid: hsl(353, 70%, 55%);
+	--clr-2b-alpha: 353, 70%, 55%;
+	--clr-2b-solid-invert: hsl(173, 70%, 45%);
+	--clr-2b-solid-darken-50: hsl(353, 70%, 27.5%);
+
+	/* #c7c5d3 */
+	--clr-2c-solid: hsl(249, 14%, 80%);
+	--clr-2c-alpha: 249, 13%, 80%;
+	--clr-2c-solid-invert: hsl(69, 13%, 20%);
+	--clr-2c-solid-darken-50: hsl(249, 13%, 40%);
 
 	/* |||||||||| |||||||||| |||||||||| |||||||||| icons bgs and img overlays */
-	--sphere: radial-gradient(
+	--sphere-1a: radial-gradient(
 		circle at 65% 15%,
 		white 1px,
-		var(--clr-1-500-solid) 3%,
-		var(--clr-1-500-solid-dark) 60%,
-		var(--clr-1-500-solid) 100%
+		var(--clr-1a-solid) 3%,
+		var(--clr-1a-solid-darken-50) 60%,
+		var(--clr-1a-solid) 100%
+	);
+
+	--sphere-1b: radial-gradient(
+		circle at 65% 15%,
+		white 1px,
+		var(--clr-1b-solid) 3%,
+		var(--clr-1b-solid-darken-50) 60%,
+		var(--clr-1b-solid) 100%
+	);
+
+	--sphere-2a: radial-gradient(
+		circle at 65% 15%,
+		white 1px,
+		var(--clr-2a-solid) 3%,
+		var(--clr-2a-solid-darken-50) 60%,
+		var(--clr-2a-solid) 100%
+	);
+
+	--sphere-2b: radial-gradient(
+		circle at 65% 15%,
+		white 1px,
+		var(--clr-2b-solid) 3%,
+		var(--clr-2b-solid-darken-50) 60%,
+		var(--clr-2b-solid) 100%
+	);
+
+	--sphere-2c: radial-gradient(
+		circle at 65% 15%,
+		white 1px,
+		var(--clr-2c-solid) 3%,
+		var(--clr-2c-solid-darken-50) 60%,
+		var(--clr-2c-solid) 100%
+	);
+
+	--sphere-2c-1a: radial-gradient(
+		circle at 65% 15%,
+		white 1px,
+		var(--clr-2c-solid) 3%,
+		var(--clr-1a-solid-darken-50) 60%,
+		var(--clr-2c-solid) 100%
 	);
 
 	--eye: radial-gradient(
@@ -80,9 +133,9 @@
 	--swiper-navigation-size: 2rem;
 	--swiper-navigation-top-offset: 50%;
 	--swiper-navigation-sides-offset: 1rem;
-	--swiper-navigation-color: var(--clr-0-100-solid);
-	--swiper-pagination-color: var(--clr-0-100-solid);
-	--swiper-pagination-bullet-inactive-color: var(--clr-0-100-solid);
+	--swiper-navigation-color: var(--clr-0a-solid);
+	--swiper-pagination-color: var(--clr-0a-solid);
+	--swiper-pagination-bullet-inactive-color: var(--clr-0a-solid);
 	--swiper-pagination-bullet-inactive-opacity: 0.2;
 	--swiper-pagination-bullet-opacity: 1;
 	--swiper-pagination-bullet-horizontal-gap: 0.5rem;
@@ -93,7 +146,7 @@
 	/* --swiper-scrollbar-border-radius: 0.75rem;
 	--swiper-scrollbar-bottom: 0.275rem;
 	--swiper-scrollbar-bg-color: rgba(0, 0, 0, 0);
-	--swiper-scrollbar-drag-bg-color: var(--clr-0-100-solid);
+	--swiper-scrollbar-drag-bg-color: var(--clr-0a-solid);
 	--swiper-scrollbar-size: 0.5rem; */
 
 	--swiper-pagination-height: calc(

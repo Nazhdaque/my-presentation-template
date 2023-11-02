@@ -42,7 +42,7 @@
 	background: linear-gradient(
 		to left,
 		transparent 25%,
-		var(--clr-1-500-solid) 100%
+		var(--clr-1b-solid) 100%
 	);
 }
 
@@ -56,7 +56,6 @@
 }
 
 .card-ttl-bg .card-head {
-	color: var(--clr-0-100-solid);
 	padding-inline: var(--gap-x);
 	z-index: 1;
 	position: relative;
@@ -68,7 +67,10 @@
 	text-orientation: upright; */
 }
 
-.card-ttl-bg .card-head::after {
+.card-ttl-bg .card-head.w-bg {
+	color: var(--clr-0a-solid);
+}
+.card-ttl-bg .card-head.w-bg::after {
 	position: absolute;
 	content: "";
 	inset: 0;
@@ -86,7 +88,7 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| cards with bg */
 .card-w-bg > * {
-	background-color: hsl(var(--clr-1-900-alpha), 0.1);
+	background-color: hsl(var(--clr-2c-alpha), 0.15);
 	column-gap: 0;
 	row-gap: 0;
 }

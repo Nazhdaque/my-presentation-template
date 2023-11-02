@@ -24,11 +24,11 @@
 	line-height: 1;
 	font-weight: var(--fw-bd);
 	font-size: 2rem;
-	color: var(--clr-0-100-solid);
+	color: var(--clr-0a-solid);
 	isolation: isolate;
 	grid-area: var(--li-head-marker-position, 1 / 1);
 
-	background: var(--sphere);
+	background: var(--sphere, var(--sphere-1b));
 	border-radius: 50%;
 	overflow: hidden;
 }
@@ -40,7 +40,7 @@
 		--li-head-arrow-trend,
 		polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)
 	);
-	background-color: var(--clr-1-500-solid);
+	background-color: hsl(var(--ribbon-clr-alpha, var(--clr-1a-alpha)), 1);
 	min-width: var(--marker-size);
 	isolation: isolate;
 
@@ -53,7 +53,7 @@
 	font-size: var(--fs-sm);
 	font-weight: var(--fw-sb);
 	letter-spacing: 1px;
-	color: var(--clr-0-100-solid);
+	color: var(--clr-0a-solid);
 	position: relative;
 	display: grid;
 	align-items: center;
@@ -79,8 +79,8 @@
 	z-index: -1;
 	background: linear-gradient(
 		to var(--li-head-bg, left),
-		hsl(var(--clr-1-500-alpha), 1) var(--marker-size),
-		hsl(var(--clr-1-500-alpha), 0) 100%,
+		hsl(var(--ribbon-clr-alpha, var(--clr-1a-alpha)), 1) var(--marker-size),
+		hsl(var(--ribbon-clr-alpha, var(--clr-1a-alpha)), 0) 100%,
 		transparent 100%
 	);
 }

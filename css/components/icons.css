@@ -2,7 +2,7 @@
 	content: "";
 	position: absolute;
 	inset: 0;
-	background: var(--sphere);
+	background: var(--sphere, var(--sphere-1b));
 	z-index: 1;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .mui-icon {
-	color: var(--clr-0-100-solid) !important;
+	color: var(--clr-0a-solid) !important;
 	font-size: 75cqw !important;
 	display: grid !important;
 	place-items: center;

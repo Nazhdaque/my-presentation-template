@@ -22,3 +22,7 @@
 	--li-gap-x: 2.25rem;
 	--li-gap-y: 2rem;
 }
+
+.slide-1 .bg-sphere {
+	--sphere-clr: var(--clr-1a-solid);
+}

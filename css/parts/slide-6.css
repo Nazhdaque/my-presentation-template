@@ -1,7 +1,5 @@
 .slide-6 .slide-bg,
-.slide-6 .slide-bg-overlay,
-.slide-6 .slide-bg:first-child,
-.slide-6 .slide-bg-overlay:first-child {
+.slide-6 .slide-bg-overlay {
 	--w: var(--w-block);
 	--h: var(--h-block);
 	--tilt-base: -25%;
@@ -12,19 +10,20 @@
 .slide-6 .slide-bg-overlay {
 	--side: var(--bottom);
 	--clip: var(--clp-bottom);
-
-	--overlay: var(--lr-dark-light);
-	--tint: var(--tint-4);
 }
 
-.slide-6 .slide-bg:first-child,
-.slide-6 .slide-bg-overlay:first-child {
+.slide-6 .slide-bg:nth-child(1),
+.slide-6 .slide-bg-overlay:nth-child(1) {
 	--side: var(--top);
 	--clip: var(--clp-top);
+
+	--image: url(/images/wave-square-top-1.svg) !important;
 }
 
-.slide-6 .heading::before {
-	/* background-color: var(--clr-0-900-solid); */
+.slide-6 .slide-bg:nth-child(2),
+.slide-6 .slide-bg-overlay:nth-child(2) {
+	--overlay: var(--lr-dark-light);
+	--tint: var(--tint-4);
 }
 
 .slide-6 .slide-body {
@@ -34,7 +33,7 @@
 	--gap-y: 2rem;
 
 	z-index: 1;
-	background-color: var(--clr-0-100-solid);
+	background-color: var(--clr-0a-solid);
 	border-radius: 8px;
 	place-self: start center;
 	padding: 2rem;

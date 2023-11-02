@@ -1,5 +1,7 @@
 .slide-bg,
 .slide-bg-overlay {
+	--slide-bg-clr-invert: var(--clr-1b-solid-invert);
+
 	--w-inline: max(25%, 10rem);
 	--h-inline: 100%;
 	--w-block: 50%, var(--max-content-width);
@@ -49,10 +51,10 @@
 }
 .slide-bg::before {
 	z-index: -1;
-	background-color: var(--clr-1-500-solid-invert);
+	background-color: var(--slide-bg-clr-invert, var(--clr-1a-solid-invert));
 }
 .slide-bg::after {
-	background-color: var(--clr-0-100-solid);
+	background-color: var(--clr-0a-solid);
 	mix-blend-mode: difference;
 }
 

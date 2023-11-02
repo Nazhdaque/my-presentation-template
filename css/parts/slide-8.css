@@ -33,3 +33,11 @@
 .slide-8 .list-w-ribbons > * {
 	grid-auto-rows: min-content 1fr;
 }
+.slide-8 .list-w-ribbons > *:first-child {
+	--ribbon-clr-alpha: var(--clr-1b-alpha);
+	--sphere: var(--sphere-1b);
+}
+.slide-8 .list-w-ribbons > *:last-child {
+	--ribbon-clr-alpha: var(--clr-1a-alpha);
+	--sphere: var(--sphere-2c-1a);
+}

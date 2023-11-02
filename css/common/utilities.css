@@ -172,7 +172,7 @@
 	min-width: 3rem;
 	font-size: 20cqw;
 	font-weight: var(--fw-bd);
-	color: var(--clr-0-100-solid);
+	color: var(--clr-0a-solid);
 	inset: 0;
 	margin: auto;
 	opacity: 0.5;
@@ -197,4 +197,9 @@
 	content: "";
 	inset: 0;
 	background: var(--clr-filter);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.clr-txt-0a {
+	color: var(--clr-0a-solid);
 }

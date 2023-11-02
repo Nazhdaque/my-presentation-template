@@ -17,7 +17,7 @@
 }
 
 .swiper-slide {
-	background-color: var(--clr-0-100-solid);
+	background-color: var(--clr-0a-solid);
 	padding-block: var(--swiper-pagination-bottom) var(--swiper-pagination-height);
 	overflow: hidden; /* required */
 }

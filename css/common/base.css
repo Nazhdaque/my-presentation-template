@@ -37,7 +37,7 @@ p + p {
 }
 
 *::selection {
-	background-color: hsl(var(--clr-1-500-alpha), 0.15);
+	background-color: hsl(var(--clr-1a-alpha), 0.15);
 }
 
 html,
@@ -52,7 +52,7 @@ body {
 	font-family: var(--ff-rg);
 	font-weight: var(--fw-rg);
 	font-size: var(--fs-rg);
-	color: var(--clr-0-900-solid);
+	color: var(--clr-0b-solid);
 	line-height: var(--lh-rg);
 }
 
@@ -98,4 +98,5 @@ body {
 		);
 
 	background-size: calc(var(--s) * 1.732) var(--s);
+	background-position: center;
 }

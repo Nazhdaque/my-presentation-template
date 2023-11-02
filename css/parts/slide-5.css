@@ -13,8 +13,8 @@
 	--clip: var(--clp-left);
 }
 
-.slide-5 .heading::before {
-	background-color: var(--clr-0-900-solid);
+.slide-5 .heading {
+	--heading-bg-clr: var(--clr-1a-solid);
 }
 
 .slide-5 .slide-body {

@@ -11,12 +11,12 @@
 /* icomoon icons */
 .social-icon {
 	font-size: var(--icon-bg-size) !important;
-	color: var(--clr-1-900-solid) !important;
+	color: var(--clr-1a-solid) !important;
 	width: 1em;
 	transition: color var(--icon-time);
 }
 .social-icon:where(:hover, :focus-visible) {
-	color: var(--clr-1-500-solid) !important;
+	color: var(--clr-1b-solid) !important;
 }
 .icon-vk,
 .icon-youtube {
@@ -26,7 +26,7 @@
 /* mui icons with custom round bg https://marella.me/material-icons/demo/ */
 .contacts-icon {
 	position: relative;
-	color: var(--clr-0-100-solid);
+	color: var(--clr-0a-solid);
 	font-size: var(--icon-bg-size) !important;
 	display: grid !important;
 	grid-template-columns: repeat(2, min-content);
@@ -46,14 +46,14 @@
 	width: 1em;
 	aspect-ratio: 1;
 	content: "";
-	background-color: var(--clr-1-900-solid);
+	background-color: var(--clr-1a-solid);
 	border-radius: 50%;
 	grid-column: 1;
 	grid-row: 1;
 	transition: background-color var(--icon-time);
 }
 .contacts-icon:where(:hover, :focus-visible)::before {
-	background-color: var(--clr-1-500-solid);
+	background-color: var(--clr-1b-solid);
 }
 
 .phone::after {
@@ -62,8 +62,8 @@
 	width: 2em;
 	padding-inline: 0;
 	content: "+7 (985) 285-66-68";
-	background-color: var(--clr-1-900-solid);
-	color: var(--clr-0-100-solid);
+	background-color: var(--clr-1a-solid);
+	color: var(--clr-0a-solid);
 	border-radius: 100vw;
 	z-index: -2;
 	place-items: center;
@@ -79,6 +79,6 @@
 .phone:where(:hover, :focus-visible)::after {
 	width: 10em;
 	padding-inline: 1.5em 0.25em;
-	background-color: var(--clr-1-500-solid);
+	background-color: var(--clr-1b-solid);
 	opacity: 1;
 }

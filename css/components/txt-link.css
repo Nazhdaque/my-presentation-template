@@ -1,6 +1,6 @@
 .txt-link {
 	position: relative;
-	color: var(--clr-1-500-solid);
+	color: var(--clr-1b-solid);
 }
 .txt-link::before {
 	position: absolute;
@@ -8,7 +8,7 @@
 	width: 0;
 	height: 1px;
 	bottom: -0.1rem;
-	background-color: var(--clr-1-500-solid);
+	background-color: var(--clr-1b-solid);
 	transition: width 0.1s;
 }
 .txt-link:where(:focus-visible, :hover)::before {

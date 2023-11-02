@@ -1,4 +1,5 @@
 .slide-4 .slide-bg {
+	--slide-bg-clr-invert: var(--clr-1a-solid-invert);
 	--side: var(--left);
 	--clip: var(--clp-left);
 }
@@ -17,9 +18,6 @@
 
 .slide-4 .heading {
 	row-gap: 0.25em;
-}
-.slide-4 .heading::before {
-	background-color: var(--clr-0-900-solid);
 }
 
 .slide-4 .overlay {

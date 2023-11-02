@@ -2,7 +2,7 @@
 	position: relative;
 	padding-block: 1em;
 	place-self: end;
-	color: var(--clr-0-100-solid);
+	color: var(--clr-0a-solid);
 	isolation: isolate;
 }
 .ribbon::before {
@@ -10,7 +10,7 @@
 	content: "";
 	inset: 0 -1000% 0 0;
 	z-index: -1;
-	background-color: var(--clr-1-500-solid);
+	background-color: var(--clr-1b-solid);
 	transform: skew(-30deg) translateX(-2em);
 	box-shadow: -0.25rem -0.25rem 0.5rem 0.25rem hsla(0, 0%, 0%, 0.15);
 }

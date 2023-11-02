@@ -1,7 +1,31 @@
 import Chart from "chart.js/auto";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 
-const ctx = document.getElementById("chart-doughnut");
+class BrandColors {
+	constructor() {
+		this.brandColors = [];
+	}
+
+	getValues = colorNames => {
+		colorNames.forEach(colorName =>
+			this.brandColors.push(
+				getComputedStyle(document.documentElement, null).getPropertyValue(
+					colorName
+				)
+			)
+		);
+		return this.brandColors;
+	};
+}
+
+const brandColors = new BrandColors();
+const chartColors = brandColors.getValues([
+	"--clr-1a-solid",
+	"--clr-1b-solid",
+	"--clr-2a-solid",
+	"--clr-2b-solid",
+	"--clr-2c-solid",
+]);
 
 const data = {
 	labels: ["Data-1", "Data-2", "Data-3", "Data-4", "Data-5"],
@@ -9,6 +33,13 @@ const data = {
 		{
 			label: "Amount",
 			data: [65, 72, 88, 43, 56],
+			backgroundColor: [
+				chartColors[0],
+				chartColors[1],
+				chartColors[2],
+				chartColors[3],
+				chartColors[4],
+			],
 			hoverOffset: 50,
 		},
 	],
@@ -47,4 +78,4 @@ const config = {
 	data: data,
 };
 
-new Chart(ctx, config);
+new Chart(document.getElementById("chart-doughnut"), config);

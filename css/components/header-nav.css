@@ -15,7 +15,7 @@
 	position: relative;
 }
 .nav-links__link:where(:focus-visible, :hover) {
-	color: var(--clr-1-500-solid);
+	color: var(--clr-1b-solid);
 }
 
 .nav-links__link::before {
@@ -23,7 +23,7 @@
 	content: "";
 	width: 0;
 	height: 0.25em;
-	background-color: var(--clr-1-500-solid);
+	background-color: var(--clr-1b-solid);
 	left: 0;
 	right: 0;
 	bottom: calc(var(--header-bottom) * -1);
