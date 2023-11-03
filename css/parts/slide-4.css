@@ -27,3 +27,33 @@
 .slide-4 .filter {
 	filter: grayscale(1) contrast(1.5);
 }
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| ribbon */
+.ribbon-rounded-neg-right {
+	--f: 0.4em; /* control the folded part */
+	--r: 0.8em; /* control the cutout */
+
+	position: absolute;
+	border: solid #0000;
+	border-width: 0 calc(2 * var(--f)) var(--r) 0;
+	background: radial-gradient(50% 100% at bottom, #0005 98%, #0000 101%) 100% 0 /
+		calc(2 * var(--f)) var(--f) no-repeat border-box;
+	background-color: var(--clr-2b-solid);
+	border-radius: var(--f) var(--f) 0 0;
+	clip-path: polygon(
+		100% 0,
+		0 0,
+		0 100%,
+		calc(50% - var(--f)) calc(100% - var(--r)),
+		calc(100% - 2 * var(--f)) 100%,
+		calc(100% - 2 * var(--f)) var(--f),
+		100% var(--f)
+	);
+
+	z-index: 1;
+	padding: 1em;
+	width: min-content;
+	height: min-content;
+	inset: calc(-1 * var(--f)) 1rem auto auto !important;
+	color: var(--clr-0a-solid);
+}
