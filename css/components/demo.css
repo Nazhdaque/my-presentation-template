@@ -128,7 +128,7 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| demo colors */
 .demo > * {
-	--clr-shift: 310;
+	--clr-shift: 0;
 	--hue: calc(var(--clr-shift) + var(--deg));
 	--thickness: 0.1rem;
 	--density: 2;
@@ -150,23 +150,23 @@
 	background-clip: padding-box;
 }
 .demo > *:nth-child(3n + 1) {
-	--deg: 0;
+	--deg: 180;
 }
 .demo > *:nth-child(3n + 2) {
-	--deg: 120;
+	--deg: 300;
 }
 .demo > *:nth-child(3n + 3) {
-	--deg: 240;
+	--deg: 60;
 }
 .demo > *:where(:hover, :focus-visible) {
-	--hue: calc(var(--clr-shift) + var(--deg) + 180);
+	--hue: calc(var(--clr-shift) + var(--deg) + 30);
 }
-.demo > *:focus-visible {
+/* .demo > *:focus-visible {
 	--hue: calc(var(--clr-shift) + var(--deg) + 270);
 }
 .demo > *:where(a:active, button:active) {
 	--hue: calc(var(--clr-shift) + var(--deg) + 90);
-}
+} */
 .demo > * > * {
 	--deg: 210;
 }

@@ -122,6 +122,10 @@
 	--clr-1: hsl(0, 0%, 0%, 0.25);
 	--clr-2: hsl(0, 0%, 0%, 0.75);
 
+	--filter-darken-50: linear-gradient(
+		hsla(0, 0%, 0%, 0.5) 0%,
+		hsla(0, 0%, 0%, 0.5) 100%
+	);
 	--lr-light-dark: linear-gradient(90deg, var(--clr-1) 0%, var(--clr-2) 100%);
 	--lr-dark-light: linear-gradient(90deg, var(--clr-2) 25%, var(--clr-1) 100%);
 	--lr-dark-light-1: linear-gradient(90deg, var(--clr-2) 10%, var(--clr-1) 50%);

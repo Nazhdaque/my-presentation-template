@@ -21,7 +21,7 @@
 }
 
 .slide-4 .overlay {
-	--clr-filter: hsla(175, 85%, 30%, 0.25);
+	--clr-filter: hsl(175, 85%, 30%, 0.25);
 }
 
 .slide-4 .filter {

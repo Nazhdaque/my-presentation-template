@@ -3,9 +3,9 @@
 	--side: var(--left);
 	--clip: var(--clp-left);
 
-	--clr-filter: rgba(20, 20, 200, 0.1);
+	--clr-filter: hsl(275, 85%, 45%, 0.1);
 	--overlay: var(--lr-light-dark);
-	--tint: var(--tint-5);
+	/* --tint: var(--tint-5); */
 }
 .slide-2 .slide-bg::before {
 	filter: invert(1) grayscale(1);
