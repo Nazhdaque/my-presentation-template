@@ -266,7 +266,7 @@ var ia=Object.defineProperty;var sa=(i,t,e)=>t in i?ia(i,t,{enumerable:!0,config
 						<p>Возможность комфортного просмотра на любом устройстве, с т.ч. с экрана смартфона. В
 							этом легко убедиться: потяните за уголок окна браузера, чтобы уменьшить область просмотра до
 							размеров экрана смартфона. Макет
-							страницы гибко подстроится под эти изменения, сохраняя при этом аккуратный вид и
+							страницы гибко подстроится («резиновая» верстка) под эти изменения, сохраняя при этом аккуратный вид и
 							читаемость. В нужный момент появится возможность вертикальной прокрутки и т.д. А теперь вспомните,
 							что из себя представляет просмотр .pdf или .pptx на смартфоне.
 						</p>
@@ -527,7 +527,7 @@ var ia=Object.defineProperty;var sa=(i,t,e)=>t in i?ia(i,t,{enumerable:!0,config
 								 src="images/icons/figure-2-white.svg"
 								 alt="">
 						<img class="o-fit-cover"
-								 src="images/demo-img-1-360p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-body ellipsis-box">
@@ -583,7 +583,7 @@ var ia=Object.defineProperty;var sa=(i,t,e)=>t in i?ia(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-3-360p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-head w-bg ellipsis-box">
@@ -600,7 +600,7 @@ var ia=Object.defineProperty;var sa=(i,t,e)=>t in i?ia(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-2-360p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<!-- <div class="card-head ellipsis-box">
@@ -631,7 +631,7 @@ var ia=Object.defineProperty;var sa=(i,t,e)=>t in i?ia(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-1-360p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-head w-bg ellipsis-box">
@@ -646,14 +646,12 @@ var ia=Object.defineProperty;var sa=(i,t,e)=>t in i?ia(i,t,{enumerable:!0,config
 
 			<ul class="grid-x cards card-ttl-bg card-w-bg">
 				<li>
-					<div class="img-box">
-						<img class="o-fit-cover"
-								 src="images/demo-img-1-360p.webp"
-								 alt="">
+					<div class="img-box pattern-bg-2">
+						<div class="corners-1"></div>
 					</div>
-					<!-- <div class="card-head ellipsis-box">
+					<div class="card-head ellipsis-box">
 						<h3 class="caps ellipsis">Lorem ipsum</h3>
-					</div> -->
+					</div>
 					<div class="card-body">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error deserunt ipsum rem quod quisquam
 							asperiores eaque porro vel unde? Itaque?</p>
@@ -661,26 +659,19 @@ var ia=Object.defineProperty;var sa=(i,t,e)=>t in i?ia(i,t,{enumerable:!0,config
 				</li>
 
 				<li>
-					<div class="img-box pattern-bg">
-						<div class="corners-1"></div>
-						<!-- <img class="o-fit-cover"
-								 src="images/demo-img-2-360p.webp"
-								 alt=""> -->
-					</div>
-					<div class="card-head ellipsis-box">
-						<h3 class="caps ellipsis">Lorem ipsum</h3>
-					</div>
 					<div class="card-body">
 						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam maxime fugit suscipit, odio
 							nostrum rerum obcaecati quidem sapiente. Modi quo voluptatum placeat architecto, corporis officiis
 							et aspernatur expedita.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quia nihil porro reprehenderit laudantium
+							dolore recusandae quisquam maxime, expedita iste qui vero.</p>
 					</div>
 				</li>
 
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-img-3-360p.webp"
+								 src="images/demo-img-360p.webp"
 								 alt="">
 					</div>
 					<div class="card-head w-bg ellipsis-box">
@@ -795,7 +786,7 @@ var ia=Object.defineProperty;var sa=(i,t,e)=>t in i?ia(i,t,{enumerable:!0,config
 
 			<div class="heading fs-xl">
 				<h2 class="fs-xl width-x">Модульная сетка</h2>
-				<p class="fs-md grid-full-width">Настраиваемая, любой конфигурации, responsive</p>
+				<p class="fs-md grid-full-width">Настраиваемая, любой конфигурации, «резиновая», responsive</p>
 			</div>
 
 			<ol class="demo grid-x"
