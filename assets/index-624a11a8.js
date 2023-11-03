@@ -2,7 +2,7 @@ var ia=Object.defineProperty;var sa=(i,t,e)=>t in i?ia(i,t,{enumerable:!0,config
 	<h2 class="ac-header sidebar-item__ttl">
 		<button class="sidebar-item__btn marker ellipsis-box slide-to"
 						type="button">
-			<span class="ellipsis">Ссылка на слайд</span>
+			<span class="ellipsis">Перейти к слайду</span>
 			<svg class="chevron chevron-right">
 				<use href="images/chevron.svg#chevron"></use>
 			</svg>
@@ -15,7 +15,7 @@ var ia=Object.defineProperty;var sa=(i,t,e)=>t in i?ia(i,t,{enumerable:!0,config
 	<h2 class="ac-header sidebar-item__ttl">
 		<button class="ac-trigger sidebar-item__btn marker ellipsis-box"
 						type="button">
-			<span class="ellipsis">Несколько слайдов на одну тему</span>
+			<span class="ellipsis">Перейти к группе слайдов одной тематики</span>
 			<svg class="chevron">
 				<use href="images/chevron.svg#chevron"></use>
 			</svg>
@@ -59,7 +59,7 @@ var ia=Object.defineProperty;var sa=(i,t,e)=>t in i?ia(i,t,{enumerable:!0,config
 	<h2 class="ac-header sidebar-item__ttl">
 		<button class="sidebar-item__btn marker ellipsis-box slide-to"
 						type="button">
-			<span class="ellipsis">Ссылка на слайд</span>
+			<span class="ellipsis">Перейти к слайду</span>
 			<svg class="chevron chevron-right">
 				<use href="images/chevron.svg#chevron"></use>
 			</svg>
@@ -565,6 +565,7 @@ var ia=Object.defineProperty;var sa=(i,t,e)=>t in i?ia(i,t,{enumerable:!0,config
 
 				<li>
 					<div class="img-box pattern-bg">
+						<div class="ribbon-rounded-neg-right">Nice!</div>
 						<!-- <img class="o-fit-cover"
 								 src="images/demo-img-2-360p.webp"
 								 alt=""> -->
