@@ -11,7 +11,7 @@
 .slide-4 .cards {
 	--col: 3;
 	--gap-x: 2rem;
-	--gap-y: 4rem;
+	--gap-y: 2rem;
 	--li-gap-x: 2.25rem;
 	--li-gap-y: 2rem;
 }

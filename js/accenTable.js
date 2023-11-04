@@ -48,12 +48,12 @@ export const accenTable = tables => {
 					);
 				};
 
-				const turnOffOn = breakpoint => {
+				const disableOn = breakpoint => {
 					checkState(breakpoint);
 					watchState(breakpoint);
 				};
 
-				turnOffOn(992);
+				disableOn(992);
 			});
 		});
 	});

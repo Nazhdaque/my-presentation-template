@@ -10,34 +10,40 @@
 	--clr-0b-solid: hsl(0, 0%, 13%);
 
 	/* #1c355e */
-	--clr-1a-solid: hsl(217, 54%, 24%);
+	--clr-1a-solid: rgb(28, 53, 94);
 	--clr-1a-alpha: 217, 54%, 24%;
-	--clr-1a-solid-invert: hsl(397, 54%, 76%);
+	/* --clr-1a-solid-invert: hsl(37, 54%, 76%); */ /* true invert */
+	/* invert considering --clr-0a-solid: rgb 255 - 245 = 10; R - 10, G - 10, B - 10 */
+	--clr-1a-solid-invert: rgb(217, 192, 151);
 	--clr-1a-solid-darken-50: hsl(217, 54%, 12%);
 
 	/* #ef991f */
-	--clr-1b-solid: hsl(35, 87%, 53%);
+	--clr-1b-solid: rgb(239, 153, 31);
 	--clr-1b-alpha: 35, 87%, 53%;
-	--clr-1b-solid-invert: hsl(215, 87%, 47%);
+	/* --clr-1b-solid-invert: hsl(215, 87%, 47%); */
+	--clr-1b-solid-invert: rgb(6, 92, 214);
 	--clr-1b-solid-darken-50: hsl(35, 87%, 26.5%);
 
 	/* #2d7ad2 */
-	--clr-2a-solid: hsl(212, 65%, 50%);
+	--clr-2a-solid: rgb(45, 122, 210);
 	--clr-2a-alpha: 212, 65%, 50%;
-	--clr-2a-solid-invert: hsl(392, 65%, 50%);
+	/* --clr-2a-solid-invert: hsl(32, 65%, 50%); */
+	--clr-2a-solid-invert: rgb(200, 123, 35);
 	--clr-2a-solid-darken-50: hsl(212, 65%, 25%);
 
 	/* #dd3c4f */
-	--clr-2b-solid: hsl(353, 70%, 55%);
+	--clr-2b-solid: rgb(221, 60, 79);
 	--clr-2b-alpha: 353, 70%, 55%;
-	--clr-2b-solid-invert: hsl(173, 70%, 45%);
+	/* --clr-2b-solid-invert: hsl(173, 70%, 45%); */
+	--clr-2b-solid-invert: rgb(24, 185, 166);
 	--clr-2b-solid-darken-50: hsl(353, 70%, 27.5%);
 
 	/* #c7c5d3 */
-	--clr-2c-solid: hsl(249, 14%, 80%);
-	--clr-2c-alpha: 249, 13%, 80%;
-	--clr-2c-solid-invert: hsl(69, 13%, 20%);
-	--clr-2c-solid-darken-50: hsl(249, 13%, 40%);
+	--clr-2c-solid: rgb(199, 197, 211);
+	--clr-2c-alpha: 249, 14%, 80%;
+	/* --clr-2c-solid-invert: hsl(69, 14%, 20%); */
+	--clr-2c-solid-invert: rgb(46, 48, 34);
+	--clr-2c-solid-darken-50: hsl(249, 14%, 40%);
 
 	/* |||||||||| |||||||||| |||||||||| |||||||||| icons bgs and img overlays */
 	--sphere-1a: radial-gradient(

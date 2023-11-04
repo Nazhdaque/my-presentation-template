@@ -57,7 +57,7 @@ body {
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| https://css-generators.com/ */
-.pattern-bg {
+.pattern-bg-1 {
 	--s: 84px; /* control the size*/
 	--c1: hsl(0, 0%, 99%);
 	--c2: hsl(0, 0%, 96%);
