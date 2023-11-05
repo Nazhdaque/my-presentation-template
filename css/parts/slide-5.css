@@ -2,15 +2,19 @@
 .slide-5 .slide-bg-overlay {
 	--side: var(--right);
 	--clip: var(--clp-right);
-
+	--slide-bg-clr-invert: var(--clr-1a-solid-invert);
 	--overlay: var(--lr-dark-light);
-	--tint: var(--tint-3);
+
+	--image: url(/images/demo-4.webp);
 }
 .slide-5 .slide-bg:first-child,
 .slide-5 .slide-bg-overlay:first-child {
 	--left: 0 auto 0 -19%;
 	--side: var(--left);
 	--clip: var(--clp-left);
+}
+.slide-5 .slide-bg::before {
+	background-position: 60%;
 }
 
 .slide-5 .heading {
@@ -32,32 +36,28 @@
 	box-shadow: 0rem 2rem 2rem -1rem hsl(0, 0%, 0%, 0.33);
 }
 
-.slide-5 .overlay:nth-child(4n + 1) {
-	--clr-filter: hsla(275, 50%, 25%, 0.1);
+.slide-5 .scroll-snap-block > *:nth-child(4n + 1) img {
+	object-position: 100%;
 }
-.slide-5 .overlay:nth-child(4n + 2) {
-	--clr-filter: hsla(125, 50%, 25%, 0.1);
+.slide-5 .scroll-snap-block > *:nth-child(4n + 2) img {
+	object-position: 66%;
 }
-.slide-5 .overlay:nth-child(4n + 3) {
-	--clr-filter: hsla(75, 50%, 25%, 0.1);
+.slide-5 .scroll-snap-block > *:nth-child(4n + 3) img {
+	object-position: 33%;
 }
-.slide-5 .overlay:nth-child(4n + 4) {
-	--clr-filter: hsla(0, 50%, 25%, 0.1);
-}
-
-.slide-5 .slide-body > *:nth-child(2) .overlay:nth-child(4n + 1) {
-	--clr-filter: hsla(0, 50%, 25%, 0.1);
-}
-.slide-5 .slide-body > *:nth-child(2) .overlay:nth-child(4n + 2) {
-	--clr-filter: hsla(75, 50%, 25%, 0.1);
-}
-.slide-5 .slide-body > *:nth-child(2) .overlay:nth-child(4n + 3) {
-	--clr-filter: hsla(125, 50%, 25%, 0.1);
-}
-.slide-5 .slide-body > *:nth-child(2) .overlay:nth-child(4n + 4) {
-	--clr-filter: hsla(275, 50%, 25%, 0.1);
+.slide-5 .scroll-snap-block > *:nth-child(4n + 4) img {
+	object-position: 0%;
 }
 
-.slide-5-img-filter {
-	filter: grayscale(1) brightness(0.5) contrast(1.25);
+.slide-5 .scroll-snap-inline > *:nth-child(4n + 1) img {
+	object-position: 0%;
+}
+.slide-5 .scroll-snap-inline > *:nth-child(4n + 2) img {
+	object-position: 33%;
+}
+.slide-5 .scroll-snap-inline > *:nth-child(4n + 3) img {
+	object-position: 66%;
+}
+.slide-5 .scroll-snap-inline > *:nth-child(4n + 4) img {
+	object-position: 100%;
 }

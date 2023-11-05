@@ -30,7 +30,7 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| sm */
 @media (width <= 576px) {
 	.slide-bg {
-		--image: url(/images/demo-img-720p.webp);
+		--image: url(/images/demo-3.webp);
 	}
 
 	.cards > * {

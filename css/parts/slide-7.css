@@ -7,5 +7,15 @@
 		hsla(0, 0%, 0%, 0.75) 0%,
 		hsla(0, 0%, 0%, 0.75) 100%
 	);
-	--tint: var(--tint-3);
+	--tint: hsla(250, 70%, 40%, 0.5);
+}
+
+.slide-7 .masonry > *:nth-child(4) img {
+	object-position: 80%;
+}
+.slide-7 .masonry > *:nth-child(7) img {
+	object-position: 40%;
+}
+.slide-7 .masonry > *:nth-child(10) img {
+	object-position: 10%;
 }

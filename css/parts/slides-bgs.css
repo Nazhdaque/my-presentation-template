@@ -71,9 +71,9 @@
 	filter: invert(1);
 	background-blend-mode: luminosity;
 }
-.w-img:nth-child(2n)::before {
+/* .w-img:nth-child(2n)::before {
 	background-position: right center;
-}
+} */
 
 /* |||||||||| |||||||||| addition overlay for using with grayscale filter, color filters */
 .slide-bg-overlay::before {

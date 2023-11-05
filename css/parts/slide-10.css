@@ -1,16 +1,23 @@
 .slide-10 .slide-bg,
 .slide-10 .slide-bg-overlay {
-	--w-inline: max(15%, 10rem);
-	--tilt-base: 40%;
+	--w-inline: max(10%, 5rem);
+	--tilt-base: -10%;
 	--trend-base: 15%;
+}
+
+.slide-10 .slide-bg:nth-child(1)::before {
+	filter: invert(1);
 }
 
 .slide-10 .slide-bg:nth-child(1),
 .slide-10 .slide-bg-overlay:nth-child(1) {
 	--side: var(--left);
 	--clip: var(--clp-left);
-	--overlay: var(--lr-dark-light);
-	--tint: var(--tint-2);
+	--tint: var(--clr-2c-solid);
+	--image: url(/images/demo-4.webp) !important;
+}
+.slide-10 .slide-bg::before {
+	background-position: 80%;
 }
 
 .slide-10 .slide-bg:nth-child(2) {

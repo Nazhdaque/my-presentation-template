@@ -4,6 +4,12 @@
 	--h: var(--h-block);
 	--tilt-base: -25%;
 	--trend-base: 90%;
+
+	--image: url(/images/demo-4.webp);
+}
+
+.slide-6 .slide-bg:nth-child(2):before {
+	background-position: center 20%;
 }
 
 .slide-6 .slide-bg,
@@ -22,8 +28,7 @@
 
 .slide-6 .slide-bg:nth-child(2),
 .slide-6 .slide-bg-overlay:nth-child(2) {
-	--overlay: var(--lr-dark-light);
-	--tint: var(--tint-4);
+	/* --overlay: var(--lr-dark-light); */
 }
 
 .slide-6 .slide-body {

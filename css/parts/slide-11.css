@@ -4,5 +4,5 @@
 	--side: var(--center);
 
 	--overlay: var(--lr-dark-light-1);
-	--tint: var(--tint-5);
+	--image: url(/images/demo-3.webp);
 }
