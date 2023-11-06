@@ -2,7 +2,6 @@
 	--w: auto;
 	--h: 80%;
 	--side: var(--center);
-
 	--overlay: var(--lr-dark-light-1);
 	--image: url(/images/demo-3.webp);
 }

@@ -1,7 +1,5 @@
 .slide-bg,
 .slide-bg-overlay {
-	--slide-bg-clr-invert: var(--clr-1b-solid-invert);
-
 	--w-inline: max(25%, 10rem);
 	--h-inline: 100%;
 	--w-block: 50%, var(--max-content-width);
@@ -51,10 +49,12 @@
 	border-radius: var(--radius, none);
 	transform: var(--transform, none);
 	/* overflow: hidden; */
+	aspect-ratio: var(--asp-ratio, none);
 }
 .slide-bg::before {
 	z-index: -1;
-	background-color: var(--slide-bg-clr-invert, var(--clr-1a-solid-invert));
+	background-color: var(--bg-clr, var(--clr-1a-solid-invert));
+	background-position: var(--bg-pos, center);
 }
 .slide-bg::after {
 	background-color: var(--clr-0a-solid);
@@ -66,18 +66,14 @@
 	background-color: var(--tint, none);
 	background-image: var(--overlay, none), var(--image);
 	background-repeat: no-repeat;
-	background-position: center;
 	background-size: cover;
-	filter: invert(1);
-	background-blend-mode: luminosity;
+	filter: var(--filters, invert(1));
+	background-blend-mode: var(--bg-blend-mode, luminosity);
 }
-/* .w-img:nth-child(2n)::before {
-	background-position: right center;
-} */
 
 /* |||||||||| |||||||||| addition overlay for using with grayscale filter, color filters */
 .slide-bg-overlay::before {
-	background-color: var(--clr-filter);
+	background: var(--clr-filter);
 	z-index: -1;
 }
 
@@ -167,6 +163,17 @@
 	);
 }
 
+.heptagon {
+	--clip: polygon(
+		50% 0%,
+		90% 20%,
+		100% 60%,
+		75% 100%,
+		25% 100%,
+		0% 60%,
+		10% 20%
+	);
+}
 /* |||||||||| |||||||||| waves https://css-generators.com/ */
 .waves {
 	--clp-left: radial-gradient(

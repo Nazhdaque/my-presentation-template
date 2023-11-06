@@ -1,7 +1,6 @@
 .slide-7 .slide-bg {
 	--side: 0;
 	--w: 100%;
-
 	--overlay: linear-gradient(
 		90deg,
 		hsla(0, 0%, 0%, 0.75) 0%,

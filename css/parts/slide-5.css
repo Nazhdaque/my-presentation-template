@@ -2,10 +2,10 @@
 .slide-5 .slide-bg-overlay {
 	--side: var(--right);
 	--clip: var(--clp-right);
-	--slide-bg-clr-invert: var(--clr-1a-solid-invert);
+	--bg-clr: var(--clr-1a-solid-invert);
 	--overlay: var(--lr-dark-light);
-
 	--image: url(/images/demo-4.webp);
+	--bg-pos: 60%;
 }
 .slide-5 .slide-bg:first-child,
 .slide-5 .slide-bg-overlay:first-child {
@@ -13,12 +13,9 @@
 	--side: var(--left);
 	--clip: var(--clp-left);
 }
-.slide-5 .slide-bg::before {
-	background-position: 60%;
-}
 
 .slide-5 .heading {
-	--heading-bg-clr: var(--clr-1a-solid);
+	--heading-bg-clr: var(--clr-2b-solid);
 }
 
 .slide-5 .slide-body {

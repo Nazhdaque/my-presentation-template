@@ -3,7 +3,6 @@
 	--w-inline: max(50%, 10rem);
 	--side: var(--left);
 	--mask: var(--clp-left);
-
 	--overlay: var(--lr-dark-light);
 	--tint: var(--clr-1b-solid);
 }
@@ -34,10 +33,10 @@
 	grid-auto-rows: min-content 1fr;
 }
 .slide-8 .list-w-ribbons > *:first-child {
-	--ribbon-clr-alpha: var(--clr-1a-alpha);
+	--ribbon-clr-alpha: var(--clr-1b-alpha);
 	--sphere: var(--sphere-2c-1a);
 }
 .slide-8 .list-w-ribbons > *:last-child {
-	--ribbon-clr-alpha: var(--clr-1b-alpha);
+	--ribbon-clr-alpha: var(--clr-1a-alpha);
 	--sphere: var(--sphere-1b);
 }

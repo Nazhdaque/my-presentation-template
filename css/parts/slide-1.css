@@ -1,7 +1,6 @@
 .slide-1 .slide-bg {
 	--side: 0;
 	--w: 100%;
-
 	--overlay: var(--lr-dark-light);
 	--tint: var(--clr-1a-solid);
 }
@@ -13,7 +12,6 @@
 .slide-1 .heading {
 	--x: 3;
 	--col: 7;
-	/* --heading-bg-clr: var(--clr-1a-solid); */
 }
 
 .slide-1 .cards-w-icons {
@@ -22,8 +20,4 @@
 	--gap-y: 4rem;
 	--li-gap-x: 2.25rem;
 	--li-gap-y: 2rem;
-}
-
-.slide-1 .bg-sphere {
-	/* --sphere: var(--sphere-1a); */
 }

@@ -1,8 +1,6 @@
 .slide-bg {
 	--image: url(/images/demo-1.webp);
-}
-.slide-bg::before {
-	background-position: 80%;
+	--bg-pos: 90%;
 }
 
 .slide-content {

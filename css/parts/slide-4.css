@@ -1,5 +1,5 @@
 .slide-4 .slide-bg {
-	--slide-bg-clr-invert: var(--clr-1a-solid-invert);
+	--bg-clr: var(--clr-1a-solid-invert);
 	--side: var(--left);
 	--clip: var(--clp-left);
 }
@@ -14,6 +14,10 @@
 	--gap-y: 2rem;
 	--li-gap-x: 2.25rem;
 	--li-gap-y: 2rem;
+}
+
+.slide-4 .pattern-bg-1 {
+	--s: 6.25rem;
 }
 
 .slide-4 .card-ttl-underscore > *:nth-child(1) img {

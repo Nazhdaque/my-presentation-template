@@ -2,16 +2,12 @@
 .slide-2 .slide-bg-overlay {
 	--side: var(--left);
 	--clip: var(--clp-left);
-
-	/* --clr-filter: hsla(200, 75%, 25%, 0.25); */
-	/* --overlay: var(--lr-light-dark); */
+	--overlay: var(--lr-light-dark);
 	--tint: var(--clr-2b-solid);
-
 	--image: url(/images/demo-3.webp);
-}
-.slide-2 .slide-bg::before {
-	filter: invert(1) grayscale(0.5) contrast(0.5);
-	background-position: 90%;
+	--filters: invert(1) grayscale(0.5) contrast(0.75);
+	--bg-pos: 80%;
+	/* --clr-filter: hsla(173, 77%, 41%, 0.1); */
 }
 
 .slide-2 .heading {
@@ -24,7 +20,6 @@
 	--gap-y: 4rem;
 	--li-gap-x: 0rem;
 	--li-gap-y: 2rem;
-
 	--ribbon-clr-alpha: var(--clr-2b-alpha);
 	--sphere: var(--sphere-2c-1a);
 }

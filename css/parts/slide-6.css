@@ -2,20 +2,12 @@
 .slide-6 .slide-bg-overlay {
 	--w: var(--w-block);
 	--h: var(--h-block);
+	--side: var(--bottom);
+	--clip: var(--clp-bottom);
 	--tilt-base: -25%;
 	--trend-base: 90%;
 
 	--image: url(/images/demo-4.webp);
-}
-
-.slide-6 .slide-bg:nth-child(2):before {
-	background-position: center 20%;
-}
-
-.slide-6 .slide-bg,
-.slide-6 .slide-bg-overlay {
-	--side: var(--bottom);
-	--clip: var(--clp-bottom);
 }
 
 .slide-6 .slide-bg:nth-child(1),
@@ -26,9 +18,8 @@
 	--image: url(/images/wave-square-top-1.svg) !important;
 }
 
-.slide-6 .slide-bg:nth-child(2),
-.slide-6 .slide-bg-overlay:nth-child(2) {
-	/* --overlay: var(--lr-dark-light); */
+.slide-6 .slide-bg:nth-child(2) {
+	--bg-pos: center 20%;
 }
 
 .slide-6 .slide-body {

@@ -1,17 +1,15 @@
 .slide-9 .slide-bg:nth-child(1) {
-	/* --slide-bg-clr-invert: var(--clr-1a-solid-invert); */
 	--left: -10% auto 0 -10%;
 	--side: var(--left);
 	--w-inline: max(45%, 10rem);
 	--h-inline: 80%;
 	--radius: 62% 38% 75% 25% / 54% 58% 42% 46%;
-
 	--overlay: var(--lr-light-dark);
 	--tint: var(--tint-4);
 }
 
 .slide-9 .slide-bg:nth-child(2) {
-	--slide-bg-clr-invert: var(--clr-1a-solid-invert);
+	--bg-clr: var(--clr-1a-solid-invert);
 	--right: 50% -7% 0 auto;
 	--side: var(--right);
 	--w-inline: max(35%, 7rem);
@@ -20,7 +18,7 @@
 }
 
 .slide-9 .slide-bg:nth-child(3) {
-	--slide-bg-clr-invert: var(--clr-1b-solid-invert);
+	--bg-clr: var(--clr-1b-solid-invert);
 	--right: 35% 45% 0 auto;
 	--side: var(--right);
 	--w-inline: max(10%, 4rem);
@@ -38,7 +36,6 @@
 	--gap-y: 2rem;
 	--li-gap-x: 2.25rem;
 	--li-gap-y: 2rem;
-
 	--sphere: var(--sphere-2b);
 }
 

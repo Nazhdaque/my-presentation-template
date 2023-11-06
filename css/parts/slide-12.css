@@ -2,10 +2,7 @@
 .slide-12 .slide-bg-overlay {
 	--side: var(--center);
 	--clip: var(--clp-right);
-
-	/* --overlay: var(--lr-dark-light); */
 	--tint: hsla(var(--clr-2b-alpha), 0.5);
-
 	--image: url(/images/demo-4.webp);
 }
 
