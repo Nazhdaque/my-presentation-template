@@ -3,7 +3,14 @@
 	--side: var(--left);
 	--w-inline: max(45%, 10rem);
 	--h-inline: unset;
-	--overlay: var(--lr-light-dark);
+	/* --overlay: var(--lr-light-dark); */
+	--overlay: repeating-linear-gradient(
+		90deg,
+		hsla(0, 0%, 0%, 0) 0,
+		hsla(0, 0%, 0%, 0.15) 10%,
+		hsla(0, 0%, 0%, 0.15) 10%,
+		hsla(0, 0%, 0%, 0.3) 20%
+	);
 	--tint: var(--clr-1a-solid);
 	--bg-blend-mode: luminosity, overlay;
 }
@@ -54,9 +61,11 @@
 .slide-13 .cards > *:nth-child(1) .txt-col-x {
 	--col: 3;
 	--gap: 2rem;
+	--shrink: 0.75;
 }
 
 .slide-13 .cards > *:nth-child(2) .txt-col-x {
 	--col: 4;
 	--gap: 2rem;
+	--shrink: 0.75;
 }

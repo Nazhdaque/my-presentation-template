@@ -1,9 +1,8 @@
 import "./css/main.css";
 import "./js/importHTML.js";
-import "./js/swiper.js";
 import "./js/sidebar.js";
+import "./js/swiper.js";
 import "material-icons/iconfont/round.css";
-import "material-icons/iconfont/sharp.css";
 import { SizeSetter } from "./js/sizeSetter.js";
 import { AttrSetter } from "./js/attrSetter";
 import { accenTable } from "./js/accenTable";
@@ -79,3 +78,5 @@ console.log(
 	"%cCoded by ✨Nazhdaque✨\nhttps://www.frontendmentor.io/profile/Nazhdaque/solutions",
 	"background: #222; color: chartreuse; font-size: 1.25rem"
 );
+
+// --- test area

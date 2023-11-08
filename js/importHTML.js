@@ -12,6 +12,7 @@ import slide_10 from "../html/parts/slide-10.html?raw";
 import slide_11 from "../html/parts/slide-11.html?raw";
 import slide_12 from "../html/parts/slide-12.html?raw";
 import slide_13 from "../html/parts/slide-13.html?raw";
+import slide_14 from "../html/parts/slide-14.html?raw";
 
 // import modalContent from "../html/parts/modal.html?raw";
 
@@ -32,6 +33,7 @@ slidesContainer.insertAdjacentHTML("beforeend", slide_10);
 slidesContainer.insertAdjacentHTML("beforeend", slide_11);
 slidesContainer.insertAdjacentHTML("beforeend", slide_12);
 slidesContainer.insertAdjacentHTML("beforeend", slide_13);
+// slidesContainer.insertAdjacentHTML("beforeend", slide_14);
 
 // const modal = document.querySelector(".modal");
 // modal.insertAdjacentHTML("beforeend", modalContent);

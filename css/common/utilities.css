@@ -25,17 +25,17 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| grid system */
 .grid-x {
-	--shrink: 0.75;
-	--width: var(--container-width, var(--max-content-width));
-	--count: var(--repeat, auto-fit);
-
 	--col-x: repeat(
-		var(--count),
+		var(--repeat, auto-fit),
 		minmax(
 			min(
 				(
-					((var(--width) - var(--gap-x, 0rem) * (var(--col) - 1)) / var(--col)) *
-						var(--shrink)
+					(
+							(
+									var(--container-width, var(--max-content-width)) -
+										var(--gap-x, 0rem) * (var(--col) - 1)
+								) / var(--col)
+						) * var(--shrink, 0.75)
 				),
 				100%
 			),
@@ -51,13 +51,14 @@
 
 /* |||||||||| |||||||||| |||||||||| flex */
 .flex-x {
-	--shrink: 0.75;
-	--width: var(--container-width, var(--max-content-width));
-
 	--width-x: min(
 		(
-			((var(--width) - var(--gap-x, 0rem) * (var(--col) - 1)) / var(--col)) *
-				var(--shrink)
+			(
+					(
+							var(--container-width, var(--max-content-width)) -
+								var(--gap-x, 0rem) * (var(--col) - 1)
+						) / var(--col)
+				) * var(--shrink, 0.75)
 		),
 		100%
 	);
@@ -74,11 +75,14 @@
 
 /* |||||||||| |||||||||| |||||||||| width */
 .width-x {
-	--width: var(--container-width, var(--max-content-width));
 	--width-x: min(
 		(
-			((var(--width) - var(--gap-x, 0rem) * (var(--col) - 1)) / var(--col)) *
-				var(--x) + var(--gap-x, 0rem) * (var(--x) - 1)
+			(
+					(
+							var(--container-width, var(--max-content-width)) -
+								var(--gap-x, 0rem) * (var(--col) - 1)
+						) / var(--col)
+				) * var(--x) + var(--gap-x, 0rem) * (var(--x) - 1)
 		),
 		100%
 	);
@@ -112,10 +116,10 @@
 						var(--container-width, var(--max-content-width)) - var(--gap, 0rem) *
 							(var(--col) - 1)
 					) / var(--col)
-			) * var(--shrink, 0)
+			) * var(--shrink)
 	);
 	columns: var(--col) var(--min-col-width);
-	column-gap: var(--gap, 0);
+	column-gap: var(--gap, 0rem);
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| img */
