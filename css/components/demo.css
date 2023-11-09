@@ -42,6 +42,7 @@
 	border-radius: 50%;
 	border: var(--border);
 	background-color: var(--bg);
+	pointer-events: none;
 }
 /* .demo.grid-x > *::before {
 	content: "grid-x";
@@ -148,6 +149,7 @@
 		transparent var(--thickness) calc(var(--thickness) * var(--density))
 	);
 	background-clip: padding-box;
+	pointer-events: none;
 }
 .demo > *:nth-child(3n + 1) {
 	--deg: 180;

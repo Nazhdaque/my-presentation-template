@@ -9,6 +9,7 @@ import { accenTable } from "./js/accenTable";
 import "./js/chartDoughnut.js";
 import "./js/chartBar.js";
 import "./js/chartLine.js";
+import "./js/__plarson.js";
 
 // ---
 accenTable(document.querySelectorAll("table"));
@@ -76,7 +77,7 @@ mail.addEventListener("click", handleEmailClick);
 // ---
 console.log(
 	"%cCoded by ✨Nazhdaque✨\nhttps://www.frontendmentor.io/profile/Nazhdaque/solutions",
-	"background: #222; color: chartreuse; font-size: 1.25rem"
+	"background: #222; color: chartreuse;"
 );
 
 // --- test area

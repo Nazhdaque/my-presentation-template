@@ -1,0 +1,55 @@
+.plarson-test .slide-content {
+	grid-auto-rows: min-content 59dvh;
+}
+
+.plarson-test .slide-bg {
+	--side: 0;
+	--w: 100%;
+	--overlay: linear-gradient(
+		90deg,
+		hsla(0, 0%, 0%, 0.75) 0%,
+		hsla(0, 0%, 0%, 0.75) 100%
+	);
+	--tint: hsla(250, 70%, 40%, 0.5);
+}
+
+/* adapt the settings of my demo class to this specific test page conditions */
+.chat.demo > * {
+	min-height: auto;
+}
+
+/* |||||||||| plarson test |||||||||| */
+.chat {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: minmax(50px, min-content) 1fr minmax(100px, min-content);
+	grid-template-areas:
+		"chat-header chat-header"
+		"chat-members chat-messages"
+		"chat-footer chat-footer";
+	gap: 0.5em;
+}
+
+.chat-header {
+	grid-area: chat-header;
+}
+.chat-members {
+	grid-area: chat-members;
+}
+.chat-messages {
+	grid-area: chat-messages;
+}
+.chat-footer {
+	grid-area: chat-footer;
+}
+
+.dummy-items {
+	overflow-y: scroll;
+	overscroll-behavior: contain;
+	display: grid;
+	gap: 1rem;
+}
+
+.dummy-items > * {
+	cursor: pointer;
+}
