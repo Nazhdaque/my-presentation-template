@@ -11,15 +11,35 @@
 		hsla(0, 0%, 0%, 0.75) 100%
 	);
 	--tint: hsla(250, 70%, 40%, 0.5);
+	--image: url(/images/demo-3.webp);
 }
 
-/* adapt the settings of my demo class to this specific test page conditions */
-.chat.demo > * {
+.plarson-chat.demo > * {
 	min-height: auto;
 }
 
-/* |||||||||| plarson test |||||||||| */
-.chat {
+/* |||||||||| |||||||||| PLARSON TEST |||||||||| |||||||||| */
+/* --- the shortest solution --- */
+.plarson-chat {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: minmax(50px, min-content) 1fr minmax(100px, min-content);
+	gap: 0.5em;
+}
+
+.plarson-col-span-2 {
+	grid-column: span 2;
+}
+
+.plarson-dummy-items {
+	overflow-y: scroll;
+	overscroll-behavior: contain;
+	display: grid;
+	gap: 1rem;
+}
+
+/* --- alternative solution, the appropriate class names should be added to the html --- */
+/* .chat {
 	display: grid;
 	grid-template-columns: 200px 1fr;
 	grid-template-rows: minmax(50px, min-content) 1fr minmax(100px, min-content);
@@ -29,7 +49,6 @@
 		"chat-footer chat-footer";
 	gap: 0.5em;
 }
-
 .chat-header {
 	grid-area: chat-header;
 }
@@ -41,15 +60,4 @@
 }
 .chat-footer {
 	grid-area: chat-footer;
-}
-
-.dummy-items {
-	overflow-y: scroll;
-	overscroll-behavior: contain;
-	display: grid;
-	gap: 1rem;
-}
-
-.dummy-items > * {
-	cursor: pointer;
-}
+} */
