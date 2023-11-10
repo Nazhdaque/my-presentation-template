@@ -1129,15 +1129,15 @@ var nr=Object.defineProperty;var or=(i,t,e)=>t in i?nr(i,t,{enumerable:!0,config
 			<div class="slide-bg w-img"></div>
 
 			<div class="heading fs-xl">
-				<h2 class="fs-xl width-x">plarson test</h2>
-				<p class="fs-md grid-full-width">Шапка / подвал растягиваются под контент по высоте</p>
+				<h2 class="fs-xl">Plars[on]</h2>
+				<p class="fs-md grid-full-width">test: chat interface layout</p>
 			</div>
 
-			<!-- |||||||||| plarson test start |||||||||| -->
-			<div class="chat demo">
-				<div class="chat-header"></div>
-				<div class="chat-members">
-					<ul class="dummy-items">
+			<!-- |||||||||| |||||||||| PLARSON TEST starts here |||||||||| |||||||||| -->
+			<div class="plarson-chat demo">
+				<div class="plarson-col-span-2"></div>
+				<div>
+					<ul class="plarson-dummy-items">
 						<li>dummy-item</li>
 						<li>dummy-item</li>
 						<li>dummy-item</li>
@@ -1170,12 +1170,27 @@ var nr=Object.defineProperty;var or=(i,t,e)=>t in i?nr(i,t,{enumerable:!0,config
 						<li>dummy-item</li>
 					</ul>
 				</div>
-				<div class="chat-messages">
-					<ul class="dummy-items">
-						<li>dummy-item</li>
-						<li>dummy-item</li>
-						<li>dummy-item</li>
-						<li>dummy-item</li>
+				<div>
+					<ul class="plarson-dummy-items">
+						<li>
+							<p>👍 The min-height of the header / footer is fixed, the max-height depends on the content.
+							</p>
+						</li>
+						<li>
+							<a href="https://github.com/Nazhdaque/my-presentation-template/blob/main/html/parts/__plarson.html"
+								 target="_blank"
+								 rel="noopener noreferrer">🔗 The html-markup is here</a>
+						</li>
+						<li>
+							<a href="https://github.com/Nazhdaque/my-presentation-template/blob/main/css/parts/__plarson.css"
+								 target="_blank"
+								 rel="noopener noreferrer">🔗 The CSS is here (there are two grid-based solutions there)</a>
+						</li>
+						<li>
+							<a href="https://github.com/Nazhdaque/my-presentation-template/blob/main/js/__plarson.js"
+								 target="_blank"
+								 rel="noopener noreferrer">🔗 The JS test code is here</a>
+						</li>
 						<li>dummy-item</li>
 						<li>dummy-item</li>
 						<li>dummy-item</li>
@@ -1204,9 +1219,9 @@ var nr=Object.defineProperty;var or=(i,t,e)=>t in i?nr(i,t,{enumerable:!0,config
 						<li>dummy-item</li>
 					</ul>
 				</div>
-				<div class="chat-footer"></div>
-				<!-- |||||||||| plarson test end |||||||||| -->
+				<div class="plarson-col-span-2"></div>
 			</div>
+			<!-- |||||||||| |||||||||| PLARSON TEST: ends here |||||||||| |||||||||| -->
 		</div>
 	</div>
 </li>`,_r=document.querySelector(".sidebar");_r.insertAdjacentHTML("beforeend",ar);const nt=document.querySelector(".swiper-wrapper");nt.insertAdjacentHTML("beforeend",rr);nt.insertAdjacentHTML("beforeend",lr);nt.insertAdjacentHTML("beforeend",cr);nt.insertAdjacentHTML("beforeend",dr);nt.insertAdjacentHTML("beforeend",hr);nt.insertAdjacentHTML("beforeend",ur);nt.insertAdjacentHTML("beforeend",fr);nt.insertAdjacentHTML("beforeend",pr);nt.insertAdjacentHTML("beforeend",gr);nt.insertAdjacentHTML("beforeend",mr);nt.insertAdjacentHTML("beforeend",br);nt.insertAdjacentHTML("beforeend",vr);nt.insertAdjacentHTML("beforeend",xr);nt.insertAdjacentHTML("beforeend",yr);/**
