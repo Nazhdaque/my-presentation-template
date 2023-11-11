@@ -126,11 +126,12 @@
 .img-box {
 	position: relative;
 	container: img-container / inline-size;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 .img-box > * {
 	position: absolute;
 	inset: 0;
+	margin: auto;
 }
 
 .o-fit-cover {

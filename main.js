@@ -10,6 +10,7 @@ import "./js/chartDoughnut.js";
 import "./js/chartBar.js";
 import "./js/chartLine.js";
 import "./js/__plarson.js";
+import "./js/video.js";
 
 // ---
 accenTable(document.querySelectorAll("table"));
