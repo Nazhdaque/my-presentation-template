@@ -20,7 +20,7 @@ const setupVideo = video => {
 		video.appendChild(iframe);
 	});
 
-	link.removeAttribute("href");
+	// link.removeAttribute("href");
 	video.classList.add("video--enabled");
 };
 
