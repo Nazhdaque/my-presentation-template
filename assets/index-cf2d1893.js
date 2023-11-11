@@ -1079,13 +1079,13 @@ var or=Object.defineProperty;var ar=(i,t,e)=>t in i?or(i,t,{enumerable:!0,config
 				<li>
 					<figure class="video">
 						<a class="video__link"
-							 href="https://youtu.be/URVHRhBSjj8">
+							 href="https://www.youtube.com/watch?v=URVHRhBSjj8">
 							<picture>
 								<source srcset="https://i.ytimg.com/vi_webp/URVHRhBSjj8/maxresdefault.webp"
 												type="image/webp">
 								<img class="video__media"
 										 src="https://i.ytimg.com/vi/URVHRhBSjj8/maxresdefault.jpg"
-										 alt="=== Just a video sample ===">
+										 alt="Just a video sample">
 							</picture>
 						</a>
 						<button class="video__button"
