@@ -1,0 +1,38 @@
+.form-modal {
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+	max-height: 100%;
+	background-color: hsl(var(--clr-1a-alpha), 0.5);
+	border: none;
+	place-items: center;
+	z-index: 1;
+}
+.form-modal[open] {
+	display: grid;
+}
+
+.form-modal__content {
+	--col: 4;
+	--x: 1;
+
+	background-color: var(--clr-0a-solid);
+	border-radius: 8px;
+	display: grid;
+	grid-template-rows: min-content 2.5fr min-content;
+	padding-inline: 2rem;
+	padding-block: 1.5rem 2rem;
+	gap: 1.25rem;
+}
+
+.form-modal__txt {
+	display: grid;
+	gap: 0.75rem;
+	margin-bottom: auto;
+}
+
+.form-modal__icon {
+	width: 2rem;
+	aspect-ratio: 1;
+	margin-top: auto;
+}

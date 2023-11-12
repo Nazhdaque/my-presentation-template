@@ -170,7 +170,7 @@
 	max-width: 100%;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 .ellipsis-box:where(:hover, :focus-visible) .ellipsis {
 	overflow-x: auto;

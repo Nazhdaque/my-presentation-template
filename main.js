@@ -11,6 +11,7 @@ import "./js/chartBar.js";
 import "./js/chartLine.js";
 import "./js/__plarson.js";
 import "./js/video.js";
+import "./js/form.js";
 
 // ---
 accenTable(document.querySelectorAll("table"));

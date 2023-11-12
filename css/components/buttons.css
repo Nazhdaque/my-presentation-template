@@ -1,59 +1,162 @@
-.btn {
-	--btn-radius: 0rem;
-	--btn-border-thickness: 0.1rem;
-	--btn-p-block: 1em;
-	--btn-p-inline: 1.5em;
-	/* --btn-shadow: 0 0.85em 0.5em -0.5em hsl(var(--hue), 100%, 50%, 0.5); */
-
-	color: var(--btn-clr-txt);
-	background-color: var(--btn-clr-bg);
-	border: var(--btn-border-thickness) solid var(--btn-clr-border);
-	box-shadow: var(--btn-shadow);
-
-	border-radius: var(--btn-radius);
+.btn-plain {
+	color: var(--btn-clr-txt, black);
+	background-color: var(--btn-clr-bg, transparent);
+	border: var(--btn-border-thickness, 0.1rem) solid var(--btn-clr-border);
+	box-shadow: var(--btn-shadow, none);
+	border-radius: var(--btn-radius, 0rem);
 	font-weight: var(--fw-md);
+	padding: var(--btn-p-block, 1em) var(--btn-p-inline, 1.5em);
 	line-height: 1;
-	padding: var(--btn-p-block) var(--btn-p-inline);
-	text-transform: inherit;
-	letter-spacing: inherit;
 	transition: color var(--time) var(--easing),
 		background-color var(--time) var(--easing),
-		border-color var(--time) var(--easing);
+		border-color var(--time) var(--easing), box-shadow var(--time) var(--easing);
 	max-width: 100%;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
 
-.btn:where(:hover, :focus-visible) {
-	color: var(--btn-clr-txt--focus-hover);
+.btn-plain:where(:hover, :focus-visible) {
+	color: var(--btn-clr-txt--focus-hover, var(--btn-clr-txt));
 	background-color: var(--btn-clr-bg--focus-hover);
 	border-color: var(--btn-clr-border--focus-hover);
+	box-shadow: var(--btn-shadow--focus-hover, none);
 }
 
-.btn:active {
+.btn-plain:active {
 	color: var(--btn-clr-txt--active);
 	background-color: var(--btn-clr-bg--active);
 	border-color: var(--btn-clr-border--active);
 }
 
-/* |||||||||| */
-.btn-p-x00 {
-	--btn-clr-txt: hsl(var(--hue), 100%, 50%);
-	--btn-clr-bg: var(--hue);
-	--btn-clr-border: var(--hue);
+.btn-plain {
+	--btn-clr-txt: var(--clr-0a-solid);
+	--btn-clr-bg: var(--clr-1a-solid);
+	--btn-clr-border: var(--clr-1a-solid);
+	--btn-radius: 8px;
+	--btn-shadow: 0 0.85em 0.5em -0.5em hsl(var(--clr-1a-alpha), 0.25);
 
-	--btn-clr-txt--focus-hover: hsl(var(--hue), 100%, 50%);
-	--btn-clr-bg--focus-hover: transparent;
-	--btn-clr-border--focus-hover: hsl(var(--hue), 100%, 50%);
+	--btn-clr-txt--focus-hover: var(--clr-1a-solid);
+	--btn-clr-bg--focus-hover: var(--clr-1b-solid);
+	--btn-clr-border--focus-hover: var(--clr-1a-solid);
+	--btn-shadow--focus-hover: 0 0.85em 0.5em -0.5em hsl(var(--clr-1b-alpha), 0.25);
 
-	--btn-clr-txt--active: hsl(var(--hue), 100%, 50%);
-	--btn-clr-bg--active: transparent;
-	--btn-clr-border--active: hsl(var(--hue), 100%, 50%);
+	--btn-clr-txt--active: var(--clr-0a-solid);
+	--btn-clr-bg--active: var(--clr-1a-solid);
+	--btn-clr-border--active: var(--clr-1a-solid);
 }
 
 .outlined {
+	--btn-clr-txt: var(--clr-1a-solid);
 	--btn-clr-bg: transparent;
-	--btn-clr-border: var(--hue);
+	--btn-clr-border: var(--clr-1a-solid);
 	--btn-shadow: none;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| btn-glow */
+.btn-glow {
+	--btn-bg-size: 400% auto;
+	--btn-bg-pos: right center;
+	--btn-bg-img: linear-gradient(
+		to right,
+		var(--clr-1a-solid) 0%,
+		var(--clr-1a-solid) 51%,
+		var(--clr-2b-solid) 76%,
+		var(--clr-1b-solid) 100%
+	);
+	--easing: ease-in;
+	--time: 0.25s;
+	--time-active: 0.1s;
+
+	color: var(--clr-0a-solid);
+	background-size: var(--btn-bg-size, auto);
+	background-image: var(--btn-bg-img, none);
+	padding: var(--btn-p-block, 1em) var(--btn-p-inline, 1.5em);
+	border-radius: 8px;
+	transition: background-position var(--time) var(--easing),
+		transform var(--time-active) var(--easing);
+	transform: scale(1);
+	transform-style: preserve-3d;
+	display: grid;
+	width: 100%;
+}
+
+.btn-glow::before {
+	--offset-y: 0;
+	--spread: 0;
+	--blur: 0;
+
+	content: "";
+	position: absolute;
+	inset: var(--spread);
+	background-size: var(--btn-bg-size, auto);
+	background-image: var(--btn-bg-img);
+	filter: blur(var(--blur));
+	transform: translate3d(0px, var(--offset-y), -1px);
+	border-radius: inherit;
+	pointer-events: none;
+	transition: background-position var(--time) var(--easing),
+		filter var(--time) var(--easing), transform var(--time) var(--easing),
+		inset var(--time) var(--easing);
+}
+
+.btn-glow:not(.form-btn):where(:hover, :focus-visible) {
+	background-position: var(--btn-bg-pos);
+}
+
+.btn-glow:active {
+	transform: scale(0.98);
+}
+.btn-glow:active::before {
+	--offset-y: 0.25rem !important;
+	--spread: 0.125rem !important;
+	--blur: 0.5rem !important;
+
+	transition: filter var(--time-active) var(--easing),
+		transform var(--time-active) var(--easing),
+		inset var(--time-active) var(--easing);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| form-btn */
+.form-btn {
+	grid-template-columns: 1rem 1fr 1rem;
+	place-items: center;
+	column-gap: 0.25rem;
+}
+
+.form-btn.unlocked {
+	background-position: var(--btn-bg-pos);
+}
+
+.form-btn > * {
+	grid-column: 2;
+}
+
+.form-btn::after {
+	background-image: url(/images/icons/lock.svg);
+	content: "";
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 1;
+	width: 100%;
+	aspect-ratio: 1;
+	grid-column: 3;
+	opacity: 0;
+	transition: opacity var(--time), transform var(--time);
+	transform: scale(2);
+}
+
+.form-btn.locked:where(:hover, :focus-visible)::after {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| btn-glow form-btn */
+.btn-glow:not(.form-btn):where(:hover, :focus-visible)::before,
+.form-btn.unlocked:where(:hover, :focus-visible)::before {
+	--offset-y: 0.75rem;
+	--spread: 0.5rem;
+	--blur: 1.5rem;
+
+	background-position: var(--btn-bg-pos);
 }

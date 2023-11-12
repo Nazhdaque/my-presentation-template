@@ -28,3 +28,10 @@
 .slide-10 .slide-bg:nth-child(2)::before {
 	background-position: center;
 }
+
+.slide-10 .slide-body {
+	--col: 4;
+	--x: 1;
+
+	place-self: start center;
+}

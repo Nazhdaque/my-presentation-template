@@ -25,6 +25,8 @@
 @import url(./components/modal.css) layer(components);
 @import url(./components/demo.css) layer(components);
 @import url(./components/video.css) layer(components);
+@import url(./components/form.css) layer(components);
+@import url(./components/form-modal.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
 @import url(./parts/slides-bgs.css) layer(parts);
