@@ -41,8 +41,8 @@
 	<link rel="icon"
 				type="image/svg+xml"
 				href="/my-presentation-template/images/vite.svg">
-  <script type="module" crossorigin src="/my-presentation-template/assets/index-d1926604.js"></script>
-  <link rel="stylesheet" href="/my-presentation-template/assets/index-8ce48b3b.css">
+  <script type="module" crossorigin src="/my-presentation-template/assets/index-7d4fa7ee.js"></script>
+  <link rel="stylesheet" href="/my-presentation-template/assets/index-a6288b7b.css">
 </head>
 
 <body class="layout-body pattern-bg-1">
@@ -103,7 +103,30 @@
 		</div>
 	</footer>
 
-	<dialog class="modal"></dialog>
+	<dialog class="form-modal">
+		<div class="form-modal__content width-x">
+			<img class="form-modal__icon"
+					 src="/my-presentation-template/images/icons/icon-success.svg"
+					 alt="round orange-pink gradient check mark icon svg">
+
+			<div class="form-modal__txt">
+				<h2 class="fs-lg fw-sb">Ура, все получилось!</h2>
+				<p>Ваш email <span class="user-email fw-bd"></span> зарегистрирован в нашей базе данных! <small><em>На самом
+							деле
+							нет,
+							потому что бэкенда нет.</em></small></p>
+			</div>
+
+			<form method="dialog">
+				<div class="sign-up__form-item">
+					<button class="btn-glow fw-bd"
+									type="submit">Ок</button>
+				</div>
+			</form>
+		</div>
+	</dialog>
+
+	<!-- <dialog class="modal"></dialog> -->
 
 	
 </body>
