@@ -80,7 +80,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<svg class="icon">
-							<use href="/images/icons/sprites/figures.svg#figure-1"></use>
+							<use href="images/icons/sprites/figures.svg#figure-1"></use>
 						</svg>
 					</div>
 					<h2 class="caps">Следует понимать</h2>
@@ -93,7 +93,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<svg class="icon">
-							<use href="/images/icons/sprites/figures.svg#figure-3"></use>
+							<use href="images/icons/sprites/figures.svg#figure-3"></use>
 						</svg>
 					</div>
 					<h2 class="caps">Важно подчеркнуть</h2>
@@ -106,7 +106,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<svg class="icon">
-							<use href="/images/icons/sprites/figures.svg#figure-2"></use>
+							<use href="images/icons/sprites/figures.svg#figure-2"></use>
 						</svg>
 					</div>
 					<h2 class="caps">Стоит отметить</h2>
@@ -119,7 +119,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box circle bg-sphere">
 						<svg class="icon">
-							<use href="/images/icons/sprites/figures.svg#figure-2"></use>
+							<use href="images/icons/sprites/figures.svg#figure-2"></use>
 						</svg>
 					</div>
 					<h2 class="caps">Тем не менее</h2>
@@ -312,7 +312,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 					</div>
 					<div class="img-box bg-sphere">
 						<svg class="icon figures">
-							<use href="/images/icons/sprites/figures.svg#figure-2"></use>
+							<use href="images/icons/sprites/figures.svg#figure-2"></use>
 						</svg>
 					</div>
 					<div class="li-body">
@@ -524,7 +524,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box circle bg-eye">
 						<svg class="icon figures">
-							<use href="/images/icons/sprites/figures.svg#figure-2"></use>
+							<use href="images/icons/sprites/figures.svg#figure-2"></use>
 						</svg>
 						<img class="o-fit-cover"
 								 src="images/demo-4.webp"
@@ -1233,7 +1233,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 	</div>
 </li>`,$a=`<div class="form-modal__content width-x">
 	<img class="form-modal__icon"
-			 src="/images/icons/icon-success.svg"
+			 src="images/icons/icon-success.svg"
 			 alt="round orange-pink gradient check mark icon svg">
 
 	<div class="form-modal__txt">
