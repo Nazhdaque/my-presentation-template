@@ -55,3 +55,16 @@
 /* .slide-13 .slide-content > *:last-child {
 	margin-bottom: var(--heading-bottom-indent-x2);
 } */
+
+.icon-bg:nth-of-type(1) {
+	--icon-size-x: 2;
+	--icon-bg-clr: var(--clr-1b-solid);
+}
+.icon-bg:nth-of-type(2) {
+	--icon-size-x: 3;
+	--icon-bg-clr: var(--clr-2a-solid);
+}
+.icon-bg:nth-of-type(3) {
+	--icon-size-x: 4;
+	--icon-bg-clr: var(--clr-2b-solid);
+}
