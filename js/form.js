@@ -11,7 +11,7 @@ const elements = {
 const messages = {
 	emptyMessage: "Заполните это поле",
 	errorMessage: "Некорректный email",
-	successMessage: "Успешно",
+	successMessage: "Подходит",
 };
 
 const cssClasses = {

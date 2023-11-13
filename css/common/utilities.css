@@ -126,7 +126,7 @@
 .img-box {
 	position: relative;
 	container: img-container / inline-size;
-	overflow: hidden;
+	/* overflow: hidden; */ /* ribbons doesn't work with this */
 }
 .img-box > * {
 	position: absolute;
@@ -150,7 +150,7 @@
 .circle::after {
 	--h-inline: unset;
 
-	border-radius: 50%;
+	border-radius: var(--radius, 50%);
 	aspect-ratio: 1;
 	overflow: hidden;
 }
@@ -181,7 +181,7 @@
 	display: none;
 }
 
-/* |||||||||| |||||||||| |||||||||| ||||||||||  counter */
+/* |||||||||| |||||||||| |||||||||| |||||||||| counter */
 .counter {
 	counter-reset: items-counter;
 }

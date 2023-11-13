@@ -1,4 +1,4 @@
-import sidebarContent from "../html/parts/sidebar.html?raw";
+import sidebar from "../html/parts/sidebar.html?raw";
 import slide_1 from "../html/parts/slide-1.html?raw";
 import slide_2 from "../html/parts/slide-2.html?raw";
 import slide_3 from "../html/parts/slide-3.html?raw";
@@ -13,11 +13,9 @@ import slide_11 from "../html/parts/slide-11.html?raw";
 import slide_12 from "../html/parts/slide-12.html?raw";
 import slide_13 from "../html/parts/slide-13.html?raw";
 import slide_14 from "../html/parts/__plarson.html?raw";
+import formModal from "../html/parts/form-modal.html?raw";
 
-// import modalContent from "../html/parts/modal.html?raw";
-
-const sidebar = document.querySelector(".sidebar");
-sidebar.insertAdjacentHTML("beforeend", sidebarContent);
+document.querySelector(".sidebar").insertAdjacentHTML("beforeend", sidebar);
 
 const slidesContainer = document.querySelector(".swiper-wrapper");
 slidesContainer.insertAdjacentHTML("beforeend", slide_1);
@@ -35,5 +33,6 @@ slidesContainer.insertAdjacentHTML("beforeend", slide_12);
 slidesContainer.insertAdjacentHTML("beforeend", slide_13);
 slidesContainer.insertAdjacentHTML("beforeend", slide_14);
 
-// const modal = document.querySelector(".modal");
-// modal.insertAdjacentHTML("beforeend", modalContent);
+document
+	.querySelector(".form-modal")
+	.insertAdjacentHTML("beforeend", formModal);

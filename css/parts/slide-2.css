@@ -24,10 +24,10 @@
 	--sphere: var(--sphere-2c-1a);
 }
 
-.slide-2 .slide-content > *:last-child {
-	margin-bottom: var(--heading-bottom-indent-x2);
-}
-
 .slide-2 .list-w-ribbons {
 	--sphere: var(--sphere-2c-1a);
+}
+
+.slide-2 .slide-content > *:last-child {
+	margin-bottom: var(--heading-bottom-indent-x2);
 }

@@ -5,6 +5,7 @@
 
 	display: grid;
 	gap: 1rem;
+	color: var(--clr-1a-solid);
 }
 
 .sign-up-form__item {
@@ -32,6 +33,7 @@
 
 	border: var(--border-thikness) solid var(--clr-2c-solid);
 	background-color: var(--clr-0a-solid);
+	color: var(--clr-1a-solid);
 }
 .input-field::placeholder {
 	color: var(--clr-2c-solid);
@@ -48,7 +50,7 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| form validation styles */
 .labels {
 	font-size: var(--fs-xs);
-	font-weight: var(--fw-bd);
+	font-weight: var(--fw-sb);
 	position: absolute;
 	right: 0;
 }
@@ -72,4 +74,4 @@
 	outline: none;
 }
 
-/* form btn styles components > buttons.css */
+/* form btn styles: components > buttons.css */

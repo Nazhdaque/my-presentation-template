@@ -108,3 +108,7 @@
 .caps {
 	text-transform: uppercase;
 }
+
+.ital {
+	font-style: italic;
+}

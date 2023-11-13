@@ -48,8 +48,8 @@
 	-webkit-mask: var(--mask, none);
 	border-radius: var(--radius, none);
 	transform: var(--transform, none);
-	/* overflow: hidden; */
 	aspect-ratio: var(--asp-ratio, none);
+	/* overflow: hidden; */
 }
 .slide-bg::before {
 	z-index: -1;

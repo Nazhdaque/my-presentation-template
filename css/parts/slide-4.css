@@ -4,10 +4,6 @@
 	--clip: var(--clp-left);
 }
 
-.slide-4 .slide-content > *:last-child {
-	margin-bottom: var(--heading-bottom-indent-x2);
-}
-
 .slide-4 .cards {
 	--col: 3;
 	--gap-x: 2rem;
