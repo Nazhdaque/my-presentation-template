@@ -11,7 +11,7 @@ const template = i => html`
 				type="button">
 				<span class="ellipsis">Перейти к слайду</span>
 				<svg class="chevron chevron-right">
-					<use href="images/chevron.svg#chevron"></use>
+					<use href="images/icons/chevron.svg#chevron"></use>
 				</svg>
 			</button>
 		</h2>

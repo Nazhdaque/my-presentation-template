@@ -3,9 +3,8 @@
 	--side: var(--left);
 	--w-inline: max(40%, 10rem);
 	--h-inline: unset;
-	--radius: 62% 38% 47% 53% / 35% 38% 62% 65%;
+	--radius: 35% 65% 37% 63% / 52% 66% 34% 48%;
 	--overlay: var(--lr-light-dark);
-	--tint: var(--tint-4);
 	--asp-ratio: 1;
 }
 
@@ -15,7 +14,7 @@
 	--side: var(--right);
 	--w-inline: max(30%, 7rem);
 	--h-inline: unset;
-	--radius: 50% 50% 67% 33% / 72% 46% 54% 28%;
+	--radius: 64% 36% 46% 54% / 37% 31% 69% 63%;
 	--asp-ratio: 1;
 }
 
@@ -39,9 +38,6 @@
 	--gap-y: 2rem;
 	--shrink: 0.75;
 	--gap: 2rem;
-	/* --li-gap-x: 2.25rem;
-	--li-gap-y: 2rem;
-	--sphere: var(--sphere-2b); */
 }
 
 .slide-13 .cards > *:nth-child(1) .txt-col-x {
@@ -52,19 +48,19 @@
 	--col: 4;
 }
 
-/* .slide-13 .slide-content > *:last-child {
-	margin-bottom: var(--heading-bottom-indent-x2);
-} */
-
 .icon-bg:nth-of-type(1) {
 	--icon-size-x: 2;
-	--icon-bg-clr: var(--clr-1b-solid);
+	--icon-bg-clr: var(--clr-2a-solid);
 }
 .icon-bg:nth-of-type(2) {
 	--icon-size-x: 3;
-	--icon-bg-clr: var(--clr-2a-solid);
+	--icon-bg-clr: var(--clr-1a-solid);
 }
 .icon-bg:nth-of-type(3) {
 	--icon-size-x: 4;
 	--icon-bg-clr: var(--clr-2b-solid);
 }
+
+/* .slide-13 .slide-content > *:last-child {
+	margin-bottom: var(--heading-bottom-indent-x2);
+} */

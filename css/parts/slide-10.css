@@ -5,9 +5,9 @@
 	--trend-base: 15%;
 }
 
-.slide-10 .slide-bg:nth-child(1)::before {
+/* .slide-10 .slide-bg:nth-child(1)::before {
 	filter: invert(1);
-}
+} */
 
 .slide-10 .slide-bg:nth-child(1),
 .slide-10 .slide-bg-overlay:nth-child(1) {

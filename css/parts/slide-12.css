@@ -2,10 +2,8 @@
 .slide-12 .slide-bg-overlay {
 	--side: var(--center);
 	--clip: var(--clp-right);
-	--tint: hsla(var(--clr-2b-alpha), 0.5);
 	--image: url(/images/demo-4.webp);
-}
-
-.slide-12 .slide-bg::before {
-	background-position: 100%;
+	--filters: invert(1) grayscale(1) contrast(0.85);
+	--bg-pos: 20%;
+	--clr-filter: hsl(100, 100%, 50%, 0.1);
 }
