@@ -14,7 +14,9 @@
 	background: var(--eye);
 }
 
-.icon {
+.bg-sphere .icon,
+.bg-eye .icon,
+.icon-bg .icon {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
