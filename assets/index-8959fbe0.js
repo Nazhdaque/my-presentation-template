@@ -4,7 +4,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 						type="button">
 			<span class="ellipsis">Перейти к слайду</span>
 			<svg class="chevron chevron-right">
-				<use href="images/chevron.svg#chevron"></use>
+				<use href="images/icons/chevron.svg#chevron"></use>
 			</svg>
 		</button>
 	</h2>
@@ -17,7 +17,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 						type="button">
 			<span class="ellipsis">Перейти к группе слайдов одной тематики</span>
 			<svg class="chevron">
-				<use href="images/chevron.svg#chevron"></use>
+				<use href="images/icons/chevron.svg#chevron"></use>
 			</svg>
 		</button>
 	</h2>
@@ -61,7 +61,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 						type="button">
 			<span class="ellipsis">Перейти к слайду</span>
 			<svg class="chevron chevron-right">
-				<use href="images/chevron.svg#chevron"></use>
+				<use href="images/icons/chevron.svg#chevron"></use>
 			</svg>
 		</button>
 	</h2>
@@ -79,9 +79,9 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 			<ul class="cards-w-icons grid-x">
 				<li>
 					<div class="img-box">
-						<img class="icon"
-								 src="images/icons/figure-1-white.svg"
-								 alt="">
+						<svg class="icon">
+							<use href="/images/icons/sprites/figures.svg#figure-1"></use>
+						</svg>
 					</div>
 					<h2 class="caps">Следует понимать</h2>
 					<div class="card-body">
@@ -92,9 +92,9 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 
 				<li>
 					<div class="img-box">
-						<img class="icon"
-								 src="images/icons/figure-3-white.svg"
-								 alt="">
+						<svg class="icon">
+							<use href="/images/icons/sprites/figures.svg#figure-3"></use>
+						</svg>
 					</div>
 					<h2 class="caps">Важно подчеркнуть</h2>
 					<div class="card-body">
@@ -105,9 +105,9 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 
 				<li>
 					<div class="img-box">
-						<img class="icon"
-								 src="images/icons/figure-2-white.svg"
-								 alt="">
+						<svg class="icon">
+							<use href="/images/icons/sprites/figures.svg#figure-2"></use>
+						</svg>
 					</div>
 					<h2 class="caps">Стоит отметить</h2>
 					<div class="card-body">
@@ -118,9 +118,9 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 
 				<li>
 					<div class="img-box circle bg-sphere">
-						<img class="icon"
-								 src="images/icons/figure-2-white.svg"
-								 alt="">
+						<svg class="icon">
+							<use href="/images/icons/sprites/figures.svg#figure-2"></use>
+						</svg>
 					</div>
 					<h2 class="caps">Тем не менее</h2>
 					<div class="card-body">
@@ -311,9 +311,9 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 						<h3>Полноценный веб-ресурс</h3>
 					</div>
 					<div class="img-box bg-sphere">
-						<img class="icon"
-								 src="images/icons/figure-2-white.svg"
-								 alt="">
+						<svg class="icon figures">
+							<use href="/images/icons/sprites/figures.svg#figure-2"></use>
+						</svg>
 					</div>
 					<div class="li-body">
 						<p>Который начинает работать на вас с момента публикации на домене компании. Страница
@@ -523,9 +523,9 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 
 				<li>
 					<div class="img-box circle bg-eye">
-						<img class="icon"
-								 src="images/icons/figure-2-white.svg"
-								 alt="">
+						<svg class="icon figures">
+							<use href="/images/icons/sprites/figures.svg#figure-2"></use>
+						</svg>
 						<img class="o-fit-cover"
 								 src="images/demo-4.webp"
 								 alt="">
@@ -1057,6 +1057,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg diag w-img"></div>
+			<div class="slide-bg-overlay diag"></div>
 		</div>
 	</div>
 </li>`,Fa=`<li class="swiper-slide slide-13"
@@ -1075,8 +1076,8 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 					<div class="card-body txt-col-x">
 						<div class="img-box circle icon-bg">
 							<img class="icon"
-									 src="./images/rubiks_cube_solved.svg"
-									 alt="собранный кубик рубика">
+									 src="./images/rubiks-cube-solved-blue.svg"
+									 alt="">
 						</div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis molestiae tempora dolor inventore sunt
 							reprehenderit, accusamus natus neque eum ut saepe voluptatibus officiis, est labore laborum dignissimos
@@ -1088,8 +1089,8 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 							saepe eum atque minus veritatis neque?</p>
 						<div class="img-box circle icon-bg">
 							<img class="icon"
-									 src="./images/rubiks_cube_solved.svg"
-									 alt="собранный кубик рубика">
+									 src="./images/rubiks-cube-solved-yellow.svg"
+									 alt="">
 						</div>
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, officiis? Accusamus expedita totam,
 							sapiente distinctio optio facere voluptates laborum vitae quae quas autem! Aliquid beatae cum porro quos?
@@ -1098,8 +1099,8 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 							alias nam.</p>
 						<div class="img-box circle icon-bg">
 							<img class="icon"
-									 src="./images/rubiks_cube_unsolved.svg"
-									 alt="несобранный кубик рубика">
+									 src="./images/rubiks-cube-unsolved.svg"
+									 alt="">
 						</div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam obcaecati est nulla impedit commodi ipsa
 							qui nam necessitatibus quae, aut sed iste omnis quidem ab tempore cum hic perferendis! Est, quia neque
@@ -1264,7 +1265,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				type="button">
 				<span class="ellipsis">Перейти к слайду</span>
 				<svg class="chevron chevron-right">
-					<use href="images/chevron.svg#chevron"></use>
+					<use href="images/icons/chevron.svg#chevron"></use>
 				</svg>
 			</button>
 		</h2>
