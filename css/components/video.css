@@ -5,7 +5,7 @@
 	/* padding-bottom: 56.25%; */
 	background-color: black;
 	box-shadow: var(--card-img-shadow, var(--img-shadow-bottom));
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .video__link,
@@ -59,29 +59,11 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
-.video__ribbon {
-	color: var(--clr-0a-solid);
-	position: absolute;
-	inset: auto 1cqh 1cqh auto;
-	z-index: 1;
-	line-height: 1;
-	padding: 0.5em;
+.video .side-ribbon {
 	pointer-events: none;
 	opacity: 1;
 	transition: opacity 0.5s 1s ease;
 }
-
-.video__ribbon::before {
-	position: absolute;
-	content: "";
-	inset: 0;
-	width: 150%;
-	height: 100%;
-	z-index: -1;
-	background: var(--clr-1b-solid);
-	transform: skew(-20deg) translateX(-0.75em);
-}
-
-.video:hover .video__ribbon {
+.video:hover .side-ribbon {
 	opacity: 0;
 }

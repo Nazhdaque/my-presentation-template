@@ -225,3 +225,7 @@
 .clr-txt-0a {
 	color: var(--clr-0a-solid);
 }
+
+.o-hidden {
+	overflow: hidden;
+}

@@ -3,7 +3,7 @@
 .corners-2 {
 	--size: 4cqw;
 	--indent: 1cqw;
-	--border: 0.5cqw solid var(--clr-1a-solid);
+	--border: 0.5cqw solid var(--clr, var(--clr-1a-solid));
 	position: absolute;
 }
 .corners-1::before,

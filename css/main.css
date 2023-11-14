@@ -10,7 +10,7 @@
 @import url(./components/sidebar.css) layer(components);
 @import url(./components/swiper.css) layer(components);
 @import url(./components/heading.css) layer(components);
-@import url(./components/ribbon.css) layer(components);
+@import url(./components/ribbons.css) layer(components);
 @import url(./components/list-w-ribbons.css) layer(components);
 @import url(./components/cards-w-icons.css) layer(components);
 @import url(./components/scroll-snap.css) layer(components);

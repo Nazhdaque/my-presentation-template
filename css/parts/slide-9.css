@@ -51,9 +51,15 @@
 
 .slide-9 .heading {
 	--heading-bg-clr: var(--clr-2b-solid);
+
 	row-gap: 0.25em;
 }
 
 .slide-9 .img-box {
 	aspect-ratio: 16 / 9;
+}
+
+.slide-9 .side-ribbon {
+	--place: var(--top-left);
+	--move-ribbon: var(--left);
 }
