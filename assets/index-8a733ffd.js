@@ -80,7 +80,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<svg class="icon">
-							<use href="images/icons/sprites/figures.svg#figure-1"></use>
+							<use href="./images/icons/sprites/figures.svg#figure-1"></use>
 						</svg>
 					</div>
 					<h2 class="caps">Следует понимать</h2>
@@ -93,7 +93,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<svg class="icon">
-							<use href="images/icons/sprites/figures.svg#figure-3"></use>
+							<use href="./images/icons/sprites/figures.svg#figure-3"></use>
 						</svg>
 					</div>
 					<h2 class="caps">Важно подчеркнуть</h2>
@@ -106,7 +106,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<svg class="icon">
-							<use href="images/icons/sprites/figures.svg#figure-2"></use>
+							<use href="./images/icons/sprites/figures.svg#figure-2"></use>
 						</svg>
 					</div>
 					<h2 class="caps">Стоит отметить</h2>
@@ -119,7 +119,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box circle bg-sphere">
 						<svg class="icon">
-							<use href="images/icons/sprites/figures.svg#figure-2"></use>
+							<use href="./images/icons/sprites/figures.svg#figure-2"></use>
 						</svg>
 					</div>
 					<h2 class="caps">Тем не менее</h2>
@@ -129,7 +129,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				</li>
 			</ul>
 
-			<p class="ribbon fs-rg caps">under development</p>
+			<p class="slide-ribbon fs-rg caps">under development</p>
 		</div>
 	</div>
 </li>`,Ma=`<li class="swiper-slide slide-2"
@@ -312,7 +312,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 					</div>
 					<div class="img-box bg-sphere">
 						<svg class="icon figures">
-							<use href="images/icons/sprites/figures.svg#figure-2"></use>
+							<use href="./images/icons/sprites/figures.svg#figure-2"></use>
 						</svg>
 					</div>
 					<div class="li-body">
@@ -497,7 +497,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box circle">
 						<img class="o-fit-cover"
-								 src="images/demo-4.webp"
+								 src="./images/demo-4.webp"
 								 alt="">
 					</div>
 
@@ -524,10 +524,10 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box circle bg-eye">
 						<svg class="icon figures">
-							<use href="images/icons/sprites/figures.svg#figure-2"></use>
+							<use href="./images/icons/sprites/figures.svg#figure-2"></use>
 						</svg>
 						<img class="o-fit-cover"
-								 src="images/demo-4.webp"
+								 src="./images/demo-4.webp"
 								 alt="">
 					</div>
 					<div class="card-body ellipsis-box">
@@ -559,7 +559,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 
 				<li>
 					<div class="img-box pattern-bg-1">
-						<div class="ribbon-rounded-neg-right">Nice!</div>
+						<div class="polygon-ribbon-rounded-cutout-tl">Nice!</div>
 					</div>
 					<div class="card-head ellipsis-box">
 						<h3 class="caps ellipsis">Lorem ipsum</h3>
@@ -574,7 +574,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-2.webp"
+								 src="./images/demo-2.webp"
 								 alt="">
 					</div>
 					<div class="card-head w-bg ellipsis-box">
@@ -591,7 +591,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-2.webp"
+								 src="./images/demo-2.webp"
 								 alt="">
 					</div>
 					<div class="card-body">
@@ -603,7 +603,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box pattern-bg">
 						<img class="o-fit-cover"
-								 src="images/low-poly-grid-haikei.svg"
+								 src="./images/low-poly-grid-haikei.svg"
 								 alt="">
 					</div>
 					<div class="card-head ellipsis-box">
@@ -619,7 +619,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-3.webp"
+								 src="./images/demo-3.webp"
 								 alt="">
 					</div>
 					<div class="card-head w-bg ellipsis-box">
@@ -659,7 +659,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<li>
 					<div class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-4.webp"
+								 src="./images/demo-4.webp"
 								 alt="">
 					</div>
 					<div class="card-head w-bg ellipsis-box">
@@ -689,25 +689,25 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<ul class="scroll-snap-block">
 					<li class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-4.webp"
+								 src="./images/demo-4.webp"
 								 alt="">
 					</li>
 
 					<li class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-4.webp"
+								 src="./images/demo-4.webp"
 								 alt="">
 					</li>
 
 					<li class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-4.webp"
+								 src="./images/demo-4.webp"
 								 alt="">
 					</li>
 
 					<li class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-4.webp"
+								 src="./images/demo-4.webp"
 								 alt="">
 					</li>
 				</ul>
@@ -715,25 +715,25 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 				<ul class="scroll-snap-inline">
 					<li class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-4.webp"
+								 src="./images/demo-4.webp"
 								 alt="">
 					</li>
 
 					<li class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-4.webp"
+								 src="./images/demo-4.webp"
 								 alt="">
 					</li>
 
 					<li class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-4.webp"
+								 src="./images/demo-4.webp"
 								 alt="">
 					</li>
 
 					<li class="img-box">
 						<img class="o-fit-cover"
-								 src="images/demo-4.webp"
+								 src="./images/demo-4.webp"
 								 alt="">
 					</li>
 				</ul>
@@ -940,7 +940,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 
 			<ul class="grid-x cards card-ttl-bg card-w-bg">
 				<li>
-					<figure class="video">
+					<figure class="video o-hidden">
 						<a href="https://www.youtube.com/watch?v=URVHRhBSjj8"
 							 class="video__link"
 							 rel="noopener noreferrer"
@@ -965,7 +965,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 											d="M 45,24 27,14 27,34"></path>
 							</svg>
 						</button>
-						<figcaption class="video__ribbon fs-xs caps">Just a video sample</figcaption>
+						<figcaption class="side-ribbon fs-xs caps">Just a video sample</figcaption>
 					</figure>
 
 					<div class="card-body">
@@ -1233,7 +1233,7 @@ var ya=Object.defineProperty;var _a=(i,t,e)=>t in i?ya(i,t,{enumerable:!0,config
 	</div>
 </li>`,$a=`<div class="form-modal__content width-x">
 	<img class="form-modal__icon"
-			 src="images/icons/icon-success.svg"
+			 src="./images/icons/icon-success.svg"
 			 alt="round orange-pink gradient check mark icon svg">
 
 	<div class="form-modal__txt">
