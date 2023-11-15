@@ -30,7 +30,7 @@
 		flex-direction: column;
 	}
 
-	.md-h-slave-off {
+	.md-min-h-auto {
 		min-height: auto !important;
 	}
 }
