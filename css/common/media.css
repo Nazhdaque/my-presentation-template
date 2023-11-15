@@ -29,6 +29,10 @@
 	.md-flex-dir-col {
 		flex-direction: column;
 	}
+
+	.md-h-slave-off {
+		min-height: auto !important;
+	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| sm */
