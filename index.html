@@ -41,8 +41,8 @@
 	<link rel="icon"
 				type="image/svg+xml"
 				href="/my-presentation-template/images/vite.svg">
-  <script type="module" crossorigin src="/my-presentation-template/assets/index-8a733ffd.js"></script>
-  <link rel="stylesheet" href="/my-presentation-template/assets/index-58882b63.css">
+  <script type="module" crossorigin src="/my-presentation-template/assets/index-64940f02.js"></script>
+  <link rel="stylesheet" href="/my-presentation-template/assets/index-e1f4b60d.css">
 </head>
 
 <body class="layout-body pattern-bg-1">
@@ -53,8 +53,11 @@
 			<a href="https://hh.ru/resume/1b5be24eff08e1e5cd0039ed1f5270454c4b49"
 				 class="brand-logo"
 				 aria-label="home">
-				<img src="/my-presentation-template/images/hh.svg"
-						 alt="brand-logo">
+				<!-- <img src="/images/hh.svg"
+						 alt="brand-logo"> -->
+				<svg class="o-fit-contain">
+					<use href="./images/icons/sprites/hh.svg#hh"></use>
+				</svg>
 			</a>
 
 			<nav class="md-d-none"
@@ -86,7 +89,14 @@
 	<footer class="main-footer layout-center">
 		<div class="main-footer__group">
 			<a href="#"
-				 class="social-icon icon-vk"
+				 class="img-box icon-bg contacts-icon phone"
+				 aria-label="phone"><i class="material-icons-round mui-icon">phone</i></a>
+			<a href="mailto:nospam@google.com"
+				 class="img-box icon-bg contacts-icon"
+				 aria-label="email"><i class="material-icons-round mui-icon">alternate_email</i></a>
+
+			<a href="#"
+				 class="social-icon icon-vk margin-l-auto"
 				 aria-label="vk"></a>
 			<a href="#"
 				 class="social-icon icon-youtube"
@@ -94,12 +104,6 @@
 			<a href="#"
 				 class="social-icon icon-telegram"
 				 aria-label="telegram"></a>
-			<a href="#"
-				 class="contacts-icon phone material-icons-round margin-l-auto"
-				 aria-label="phone"><span aria-hidden="true">phone</span></a>
-			<a href="mailto:nospam@google.com"
-				 class="contacts-icon material-icons-round"
-				 aria-label="email"><span aria-hidden="true">alternate_email</span></a>
 		</div>
 	</footer>
 
