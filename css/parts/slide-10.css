@@ -23,10 +23,7 @@
 .slide-10 .slide-bg:nth-child(2) {
 	--side: var(--right);
 	--clip: var(--clp-right);
-	--image: url(/images/low-poly-grid-haikei.svg) !important;
-}
-.slide-10 .slide-bg:nth-child(2)::before {
-	background-position: center;
+	--image: url(/images/demo-bg-1.svg) !important;
 }
 
 .slide-10 .slide-body {

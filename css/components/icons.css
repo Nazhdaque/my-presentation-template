@@ -1,46 +1,111 @@
-.bg-sphere::before {
+.icon-bg {
+	width: var(--size, 100%);
+	aspect-ratio: 1;
+	border-radius: 50%;
+	/* overflow: hidden; */
+}
+.icon-bg::after {
 	content: "";
 	position: absolute;
 	inset: 0;
-	background: var(--sphere, var(--sphere-1b));
-	z-index: 1;
+	background: var(--bg, none);
+	transition: var(--tsn, none);
+	border-radius: 50%;
+	aspect-ratio: 1;
 }
 
-.bg-eye::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	z-index: 1;
-	background: var(--eye);
-}
-
-.bg-sphere .icon,
-.bg-eye .icon,
 .icon-bg .icon {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-	object-position: center;
 	padding: 7.5%;
 	z-index: 1;
 }
 
+.icon-bg.img-box {
+	height: auto;
+}
+
+.bg-sphere {
+	--bg: var(--sphere, var(--sphere-1b));
+}
+.bg-eye {
+	--bg: var(--eye);
+}
+
+.txt-icon {
+	--unit: calc(var(--fs-rg) * var(--lh-rg));
+	--leading: calc(var(--unit) - var(--fs-rg));
+	--size: calc(var(--unit) * var(--size-x, 3) + var(--leading));
+
+	float: left;
+	margin: var(--leading) var(--fs-rg) 0 0;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| material ui icons */
 .mui-icon {
 	color: var(--clr-0a-solid) !important;
-	font-size: 75cqw !important;
+	font-size: var(--icon-size, 75cqh) !important;
 	display: grid !important;
 	place-items: center;
 	z-index: 1;
 }
 
-.icon-bg {
-	--unit: calc(var(--fs-rg) * var(--lh-rg));
-	--icon-bg-size: calc(var(--unit) * var(--icon-size-x, 3) + var(--unit) / 3);
-	--leading: calc(var(--unit) - var(--fs-rg));
+/* |||||||||| |||||||||| |||||||||| */
+.contacts-icon {
+	--size: var(--logo-height);
+	--bg: var(--clr-1a-solid);
+	--tsn: background-color var(--time);
+	--icon-size: 65cqh;
+}
+.contacts-icon:where(:hover, :focus-visible) {
+	--bg: var(--clr-1b-solid);
+}
 
-	width: var(--icon-bg-size, 100%);
-	aspect-ratio: 1;
-	background: var(--icon-bg-clr, var(--clr-1a-solid));
-	float: left;
-	margin: var(--leading) var(--fs-rg) 0 0;
+.phone {
+	--content-width: 10em;
+
+	transition: margin-right var(--time);
+}
+.phone:where(:hover, :focus-visible) {
+	margin-right: var(--content-width);
+}
+
+.phone::before {
+	height: 100%;
+	font-family: var(--ff-rg);
+	padding-inline: 0;
+	content: "+7 (985) 285-66-68";
+	background-color: var(--clr-1a-solid);
+	color: var(--clr-0a-solid);
+	border-radius: 100vw;
+	display: grid;
+	place-items: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: width var(--time), padding-inline var(--time),
+		border-radius var(--time), background-color var(--time), opacity var(--time);
+}
+.phone:where(:hover, :focus-visible)::before {
+	width: var(--content-width);
+	padding-inline: 1.5em 0.25em;
+	background-color: var(--clr-1b-solid);
+	opacity: 1;
+}
+
+.phone::after {
+	width: var(--logo-height);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| icomoon icons */
+.social-icon {
+	font-size: var(--logo-height) !important;
+	color: var(--clr-1a-solid) !important;
+	width: 1em;
+	transition: color var(--time);
+}
+.social-icon:where(:hover, :focus-visible) {
+	color: var(--clr-1b-solid) !important;
+}
+
+.icon-vk,
+.icon-youtube {
+	font-size: calc(var(--logo-height) + 2px) !important;
 }

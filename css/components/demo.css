@@ -27,7 +27,7 @@
 .demo > *::before {
 	--bg: hsl(0, 0%, 0%, 0.5);
 
-	font-size: var(--fs-rg);
+	font-size: var(--fs-md);
 	position: absolute;
 	place-self: center;
 	content: counter(counter);

@@ -6,20 +6,20 @@
 	--clip: var(--clp-bottom);
 	--tilt-base: -25%;
 	--trend-base: 90%;
-
-	--image: url(/images/demo-4.webp);
 }
 
 .slide-6 .slide-bg:nth-child(1),
 .slide-6 .slide-bg-overlay:nth-child(1) {
 	--side: var(--top);
 	--clip: var(--clp-top);
+	--bg-clr: var(--clr-1b-solid-invert);
 
-	--image: url(/images/wave-square-top-1.svg) !important;
+	/* --image: url(/images/wave-square-top-1.svg) !important; */
 }
 
 .slide-6 .slide-bg:nth-child(2) {
 	--bg-pos: center 20%;
+	--image: url(/images/demo-4.webp);
 }
 
 .slide-6 .slide-body {

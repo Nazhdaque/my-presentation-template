@@ -25,6 +25,10 @@
 	.md-d-none {
 		display: none;
 	}
+
+	.md-flex-dir-col {
+		flex-direction: column;
+	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| sm */

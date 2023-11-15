@@ -16,11 +16,11 @@
 
 .cards .img-box {
 	box-shadow: var(--card-img-shadow, var(--img-shadow-bottom));
+	height: 100%;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
 .card-ttl-underscore .img-box {
-	max-height: 100%;
 	align-self: center;
 	box-shadow: var(--card-img-shadow, var(--img-shadow-bottom));
 }
@@ -50,12 +50,12 @@
 .card-ttl-bg .card-head,
 .card-ttl-bg .img-box {
 	grid-area: 1 / 1;
-	height: 100%;
 	display: grid;
 	place-items: center;
 }
 
 .card-ttl-bg .card-head {
+	height: 100%;
 	padding-inline: var(--gap-x);
 	z-index: 1;
 	position: relative;

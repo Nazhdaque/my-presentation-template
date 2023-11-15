@@ -64,7 +64,7 @@
 /* |||||||||| |||||||||| with image */
 .w-img::before {
 	background-color: var(--tint, none);
-	background-image: var(--overlay, none), var(--image);
+	background-image: var(--overlay, none), var(--image, none);
 	background-repeat: no-repeat;
 	background-size: cover;
 	filter: var(--filters, invert(1));
@@ -163,6 +163,12 @@
 	);
 }
 
+.circle {
+	--radius: 50%;
+	--asp-ratio: 1;
+	--h-inline: unset;
+}
+
 .heptagon {
 	--clip: polygon(
 		50% 0%,
@@ -173,6 +179,8 @@
 		0% 60%,
 		10% 20%
 	);
+	--h-inline: unset;
+	--asp-ratio: 1;
 }
 /* |||||||||| |||||||||| waves https://css-generators.com/ */
 .waves {

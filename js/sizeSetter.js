@@ -1,11 +1,21 @@
 export class SizeSetter {
+	constructor(prop) {
+		this.prop = prop;
+	}
+
 	observer = slaves =>
 		new ResizeObserver(masters =>
 			masters.forEach(master => {
 				const width = master.borderBoxSize[0].inlineSize;
-				// const height = master.borderBoxSize[0].blockSize;
-				slaves.forEach(slave => (slave.style.maxWidth = `${width}px`));
-				// slaves.forEach(slave => (slave.style.height = `${height}px`));
+				const height = master.borderBoxSize[0].blockSize;
+				switch (this.prop) {
+					case "w":
+						slaves.forEach(slave => (slave.style.maxWidth = `${width}px`));
+						break;
+					case "h":
+						slaves.forEach(slave => (slave.style.minHeight = `${height}px`));
+						break;
+				}
 			})
 		);
 
@@ -23,9 +33,3 @@ export class SizeSetter {
 		});
 	};
 }
-
-// const sizeSetter = new SizeSetter();
-// sizeSetter.initWith([
-// 	["master-1", "slave-1"],
-// 	["master-2", "slave-2"],
-// ]);

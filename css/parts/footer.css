@@ -1,84 +1,8 @@
 .main-footer__group {
-	--icon-time: 0.25s;
-	--icon-bg-size: var(--logo-height);
+	--time: 0.25s;
 
 	height: var(--header-height);
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
-}
-
-/* icomoon icons */
-.social-icon {
-	font-size: var(--icon-bg-size) !important;
-	color: var(--clr-1a-solid) !important;
-	width: 1em;
-	transition: color var(--icon-time);
-}
-.social-icon:where(:hover, :focus-visible) {
-	color: var(--clr-1b-solid) !important;
-}
-.icon-vk,
-.icon-youtube {
-	font-size: calc(var(--icon-bg-size) + 2px) !important;
-}
-
-/* mui icons with custom round bg https://marella.me/material-icons/demo/ */
-.contacts-icon {
-	position: relative;
-	color: var(--clr-0a-solid);
-	font-size: var(--icon-bg-size) !important;
-	display: grid !important;
-	grid-template-columns: repeat(2, min-content);
-}
-
-.contacts-icon span {
-	position: absolute;
-	inset: 0;
-	display: grid;
-	place-items: center start;
-	font-size: 0.675em;
-	padding: 0.25em;
-}
-
-.contacts-icon::before {
-	display: grid;
-	width: 1em;
-	aspect-ratio: 1;
-	content: "";
-	background-color: var(--clr-1a-solid);
-	border-radius: 50%;
-	grid-column: 1;
-	grid-row: 1;
-	transition: background-color var(--icon-time);
-}
-.contacts-icon:where(:hover, :focus-visible)::before {
-	background-color: var(--clr-1b-solid);
-}
-
-.phone::after {
-	font-family: var(--ff-rg);
-	font-size: 0.5em;
-	width: 2em;
-	padding-inline: 0;
-	content: "+7 (985) 285-66-68";
-	background-color: var(--clr-1a-solid);
-	color: var(--clr-0a-solid);
-	border-radius: 100vw;
-	z-index: -2;
-	place-items: center;
-	display: grid;
-	grid-column: 1;
-	grid-row: 1;
-	pointer-events: none;
-	opacity: 0;
-	transition: width var(--icon-time), padding-inline var(--icon-time),
-		border-radius var(--icon-time), background-color var(--icon-time),
-		opacity var(--icon-time);
-}
-.phone:where(:hover, :focus-visible)::after {
-	width: 10em;
-	padding-inline: 1.5em 0.25em;
-	background-color: var(--clr-1b-solid);
-	opacity: 1;
 }

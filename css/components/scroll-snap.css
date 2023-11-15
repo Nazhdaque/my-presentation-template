@@ -1,6 +1,6 @@
 .scroll-snap-inline,
 .scroll-snap-block {
-	--scroll-snap-arrow-clr: var(--clr-2b-solid);
+	--clr: var(--clr-2b-solid);
 
 	--clp-between-inline: polygon(
 		0 0,
@@ -141,14 +141,14 @@
 	z-index: 1;
 }
 .scroll-snap-inline > *:not(:last-child)::before {
-	inset: 0 0.2cqh 0 auto;
+	inset: 0 0.3cqh 0 auto;
 	margin-block: auto;
-	border-width: 1cqh 0 1cqh 0.8cqh;
-	border-color: transparent transparent transparent var(--scroll-snap-arrow-clr);
+	border-width: 1.9cqh 0 1.9cqh 1.6cqh;
+	border-color: transparent transparent transparent var(--clr);
 }
 .scroll-snap-block > *:not(:last-child)::before {
-	inset: auto 0 0.2cqh 0;
+	inset: auto 0 0.3cqw 0;
 	margin-inline: auto;
-	border-width: 0.8cqh 1cqh 0 1cqh;
-	border-color: var(--scroll-snap-arrow-clr) transparent transparent transparent;
+	border-width: 1.6cqw 1.9cqw 0 1.9cqw;
+	border-color: var(--clr) transparent transparent transparent;
 }

@@ -2,8 +2,6 @@
 	--left: -50% auto 0 50%;
 	--side: var(--left);
 	--w-inline: max(45%, 10rem);
-	--h-inline: unset;
-	/* --overlay: var(--lr-light-dark); */
 	--overlay: repeating-linear-gradient(
 		90deg,
 		hsla(0, 0%, 0%, 0) 0,
@@ -19,7 +17,6 @@
 	--left: 60% 60% 0 auto;
 	--side: var(--left);
 	--w-inline: max(35%, 7rem);
-	--h-inline: 60%;
 	--overlay: var(--lr-dark-light);
 	--tint: var(--clr-2b-solid);
 	--bg-blend-mode: luminosity, overlay;
@@ -31,9 +28,7 @@
 	--left: 75% 15% 0 auto;
 	--side: var(--left);
 	--w-inline: max(10%, 4rem);
-	--h-inline: unset;
 	--transform: rotate(45deg);
-	--asp-ratio: 1;
 }
 
 .slide-9 .cards {
@@ -55,11 +50,24 @@
 	row-gap: 0.25em;
 }
 
-.slide-9 .img-box {
+.slide-9 .img-box:not(.icon-bg) {
 	aspect-ratio: 16 / 9;
 }
 
 .slide-9 .side-ribbon {
 	--place: var(--top-left);
 	--move-ribbon: var(--left);
+}
+
+.slide-9 .icon-bg:nth-of-type(1) {
+	--size-x: 2;
+	--bg: var(--clr-2a-solid);
+}
+.slide-9 .icon-bg:nth-of-type(2) {
+	--size-x: 3;
+	--bg: var(--clr-1a-solid);
+}
+.slide-9 .icon-bg:nth-of-type(3) {
+	--size-x: 4;
+	--bg: var(--clr-2b-solid);
 }

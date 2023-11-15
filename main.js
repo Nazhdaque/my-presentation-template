@@ -30,10 +30,17 @@ attrSetter.initWith("role", {
 });
 
 // ---
-const sizeSetter = new SizeSetter();
-sizeSetter.initWith([
-	["master-1", "slave-1"],
-	["master-2", "slave-2"],
+const widthSetter = new SizeSetter("w");
+widthSetter.initWith([
+	["w-master-1", "w-slave-1"],
+	["w-master-2", "w-slave-2"],
+]);
+
+const heightSetter = new SizeSetter("h");
+heightSetter.initWith([
+	["h-master-1", "h-slave-1"],
+	["h-master-2", "h-slave-2"],
+	["h-master-3", "h-slave-3"],
 ]);
 
 // ---

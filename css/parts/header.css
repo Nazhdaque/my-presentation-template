@@ -3,16 +3,21 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	color: var(--clr-n-100-solid);
+	color: var(--clr-1a-solid);
 }
 
 .brand-logo {
+	--clr: var(--clr-1a-solid);
+
 	display: block;
 	max-width: var(--logo-size);
 	min-width: var(--logo-size);
 	aspect-ratio: var(--logo-x) / var(--logo-y);
 	outline: none;
 	overflow: hidden;
+}
+.brand-logo:hover {
+	--clr: #d6001c;
 }
 
 /* --- */
