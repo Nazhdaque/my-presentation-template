@@ -116,7 +116,7 @@
 						var(--container-width, var(--max-content-width)) - var(--gap, 0rem) *
 							(var(--col) - 1)
 					) / var(--col)
-			) * var(--shrink)
+			) * var(--shrink, 0.9)
 	);
 	columns: var(--col) var(--min-col-width);
 	column-gap: var(--gap, 0rem);
@@ -222,4 +222,7 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| colors */
 .clr-txt-0a {
 	color: var(--clr-0a-solid);
+}
+.clr-txt-2b {
+	color: var(--clr-2b-solid);
 }

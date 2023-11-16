@@ -14,12 +14,11 @@
 	--col: 7;
 }
 
-.slide-1 .cards-w-icons {
+.slide-1 .cards {
 	--col: 4;
 	--gap-x: 2rem;
 	--gap-y: 4rem;
-	--li-gap-x: 2.25rem;
-	--li-gap-y: 2rem;
+	--img-size: 4rem;
 }
 
 .slide-ribbon {

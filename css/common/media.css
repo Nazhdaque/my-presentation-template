@@ -45,6 +45,10 @@
 		--card-cols: 1fr;
 	}
 
+	.sm-grid-a-flow-row {
+		grid-auto-flow: row;
+	}
+
 	/* .sm-col-span-0 {
 		grid-column: auto;
 	}

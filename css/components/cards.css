@@ -2,75 +2,43 @@
 	--img-shadow-bottom: 0rem 0.5rem 0.5rem -0.25rem hsl(0, 0%, 0%, 0.25);
 	--img-shadow-right: 0.5rem 0rem 0.5rem -0.25rem hsl(0, 0%, 0%, 0.25);
 
-	--card-rows: minmax(10rem, auto) 1fr;
+	--img-size: 10rem;
+	--card-gap: var(--gap-x);
 }
 
 .cards > * {
 	display: grid;
-	grid-template-columns: var(--card-cols, 1fr);
-	grid-auto-rows: var(--card-rows, 1fr);
-	column-gap: var(--li-gap-x, var(--gap-x));
-	row-gap: var(--li-gap-y, var(--gap-y));
-	align-items: start;
+	grid-auto-flow: row;
+	grid-auto-rows: minmax(var(--img-size), auto) 1fr;
+	gap: var(--card-gap);
 }
 
-.cards .img-box {
-	box-shadow: var(--card-img-shadow, var(--img-shadow-bottom));
-	height: 100%;
-}
-
-/* |||||||||| |||||||||| |||||||||| |||||||||| */
-.card-ttl-underscore .img-box {
-	align-self: center;
-	box-shadow: var(--card-img-shadow, var(--img-shadow-bottom));
-}
-
-.card-ttl-underscore .card-body {
-	display: grid; /* for ellipsis */
-}
-
-.card-ttl-underscore .card-head {
-	margin-bottom: var(--gap-x);
-}
-
-.card-ttl-underscore .card-head::after {
-	margin-top: 0.5rem;
-	display: block;
-	content: "";
-	width: 100%;
-	height: 0.25em;
-	background: linear-gradient(
-		to left,
-		transparent 25%,
-		var(--clr-1b-solid) 100%
-	);
-}
-
-/* |||||||||| |||||||||| |||||||||| |||||||||| */
-.card-ttl-bg .card-head,
-.card-ttl-bg .img-box {
-	grid-area: 1 / 1;
+/* |||||||||| |||||||||| |||||||||| |||||||||| card head */
+.card-head {
 	display: grid;
+	position: relative;
 	place-items: center;
 }
 
-.card-ttl-bg .card-head {
+.cards .img-box {
+	box-shadow: var(--shadow, var(--img-shadow-bottom));
+	width: var(--size, 100%);
 	height: 100%;
-	padding-inline: var(--gap-x);
+	grid-area: 1 / 1;
+}
+.cards .icon-bg {
+	max-width: var(--img-size);
+}
+
+/* |||||||||| |||||||||| card-head title */
+.card-head__ttl {
+	grid-area: 1 / 1;
 	z-index: 1;
-	position: relative;
-}
-
-.card-ttl-bg .card-head > * {
-	/* writing-mode: vertical-rl;
-	writing-mode: sideways-lr;
-	text-orientation: upright; */
-}
-
-.card-ttl-bg .card-head.w-bg {
 	color: var(--clr-0a-solid);
+	place-self: center;
+	padding: 1em;
 }
-.card-ttl-bg .card-head.w-bg::after {
+.card-head__ttl::before {
 	position: absolute;
 	content: "";
 	inset: 0;
@@ -86,17 +54,82 @@
 	z-index: -1;
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| cards with bg */
-.card-w-bg > * {
-	background-color: hsl(var(--clr-2c-alpha), 0.15);
-	column-gap: 0;
-	row-gap: 0;
-}
-.card-w-bg .card-body {
-	padding: var(--gap-x);
+/* |||||||||| |||||||||| |||||||||| |||||||||| card body */
+/* |||||||||| |||||||||| title box */
+.ttl-box {
+	padding: 0 0 calc(var(--card-gap) / 2) 0;
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	grid-template-rows: repeat(2, min-content);
+	align-items: center;
 }
 
-.card-img-left {
-	--card-cols: 2fr 3fr;
-	--card-img-shadow: var(--img-shadow-right);
+/* .ttl-box::after, */
+.ttl-box::before {
+	isolation: isolate;
+	content: "";
+	background: var(--bg, var(--clr-1b-solid));
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 1em;
+
+	height: 100%;
+	width: 0.15rem;
+}
+.ttl-box::before {
+	grid-area: 1 / 1;
+}
+.ttl-box::after {
+	grid-area: 2 / 1;
+}
+.ttl-box.sphere::before {
+	--bg: var(--sphere-1b);
+
+	border-radius: 50%;
+	width: 1rem;
+	height: auto;
+	aspect-ratio: 1;
+}
+
+.card-body__ttl {
+	grid-area: 1 / 2;
+}
+.card-body__sub {
+	margin-top: 0.25em;
+	grid-area: 2 / 1 / 2 / -1;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| x-axis */
+.cards > *.x-axis {
+	--shadow: var(--img-shadow-right);
+
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(var(--img-size), auto) 1fr;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| card with bg */
+.cards .w-bg {
+	gap: initial;
+}
+.cards .w-bg .card-body {
+	background-color: hsl(var(--clr-2c-alpha), 0.15);
+	padding: var(--card-gap);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| ttl right */
+.ttl-right {
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(var(--img-size), auto) 1fr;
+	gap: var(--card-gap);
+}
+
+.ttl-right .card-head__ttl {
+	grid-area: auto;
+	justify-self: start;
+	color: var(--clr-0b-solid);
+	z-index: -1;
+	padding-left: 0;
+}
+.ttl-right .card-head__ttl::before {
+	display: none;
 }
