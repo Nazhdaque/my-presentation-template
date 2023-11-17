@@ -19,8 +19,8 @@
 }
 
 .slide-5 .slide-body {
-	--col: 3;
-	--x: 2;
+	--col: 4;
+	--x: 3;
 	--gap-x: 2rem;
 	--gap-y: 2rem;
 
@@ -28,7 +28,7 @@
 }
 .slide-5 .slide-body > * {
 	width: 100%;
-	aspect-ratio: 1;
+	aspect-ratio: 16 / 9;
 	z-index: 1;
 	box-shadow: 0rem 2rem 2rem -1rem hsl(0, 0%, 0%, 0.33);
 }

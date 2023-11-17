@@ -141,13 +141,13 @@
 	z-index: 1;
 }
 .scroll-snap-inline > *:not(:last-child)::before {
-	inset: 0 0.3cqh 0 auto;
+	inset: 0 0.9cqw 0 auto;
 	margin-block: auto;
-	border-width: 1.9cqh 0 1.9cqh 1.6cqh;
+	border-width: 1.9cqw 0 1.9cqw 1.6cqw;
 	border-color: transparent transparent transparent var(--clr);
 }
 .scroll-snap-block > *:not(:last-child)::before {
-	inset: auto 0 0.3cqw 0;
+	inset: auto 0 0.9cqw 0;
 	margin-inline: auto;
 	border-width: 1.6cqw 1.9cqw 0 1.9cqw;
 	border-color: var(--clr) transparent transparent transparent;
