@@ -21,7 +21,7 @@
 	);
 
 	z-index: 1;
-	padding: 1em;
+	padding: 0.75em;
 	width: min-content;
 	height: min-content;
 	inset: calc(-1 * var(--f)) 1rem auto auto !important;

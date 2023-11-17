@@ -84,9 +84,21 @@ const handleEmailClick = () => {
 mail.addEventListener("click", handleEmailClick);
 
 // ---
+const scrollDownPromptDisable = (scrollContainer, prompt) => {
+	const prompts = document.querySelectorAll(`.${scrollContainer} .${prompt}`);
+	prompts.forEach(el => {
+		const container = el.closest(`.${scrollContainer}`);
+		const handler = () => {
+			el.style.display = "none";
+			container.removeEventListener("scrollend", handler);
+		};
+		container.addEventListener("scrollend", handler);
+	});
+};
+scrollDownPromptDisable("layout-center", "scroll-down");
+
+// ---
 console.log(
 	"%cCoded by ✨Nazhdaque✨\nhttps://www.frontendmentor.io/profile/Nazhdaque/solutions",
 	"background: #222; color: chartreuse;"
 );
-
-// --- test area

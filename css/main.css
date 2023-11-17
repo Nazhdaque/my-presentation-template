@@ -27,6 +27,7 @@
 @import url(./components/video.css) layer(components);
 @import url(./components/form.css) layer(components);
 @import url(./components/form-modal.css) layer(components);
+@import url(./components/scroll-down.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
 @import url(./parts/slides-bgs.css) layer(parts);

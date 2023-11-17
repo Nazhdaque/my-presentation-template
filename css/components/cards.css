@@ -13,6 +13,10 @@
 	gap: var(--card-gap);
 }
 
+.cards .icon-bg {
+	--shadow: var(--img-shadow-bottom);
+}
+
 /* |||||||||| |||||||||| |||||||||| |||||||||| card head */
 .card-head {
 	display: grid;
@@ -38,7 +42,7 @@
 	place-self: center;
 	padding: 1em;
 }
-.card-head__ttl::before {
+.card-head__ttl:not(.ttl-box)::before {
 	position: absolute;
 	content: "";
 	inset: 0;
@@ -52,6 +56,11 @@
 		hsla(0, 0%, 0%, 0) 85%
 	);
 	z-index: -1;
+}
+
+.card-head__ttl.ttl-box {
+	color: var(--clr-0b-solid);
+	padding-bottom: initial;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| card body */
@@ -72,7 +81,6 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 1em;
-
 	height: 100%;
 	width: 0.15rem;
 }
@@ -127,9 +135,19 @@
 	grid-area: auto;
 	justify-self: start;
 	color: var(--clr-0b-solid);
-	z-index: -1;
 	padding-left: 0;
 }
 .ttl-right .card-head__ttl::before {
 	display: none;
+}
+
+.ttl-right .card-head__ttl,
+.ttl-right .card-body__ttl,
+.ttl-right .card-body__sub {
+	z-index: -1;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| test area */
+.card-body__img {
+	max-height: var(--img-size);
 }

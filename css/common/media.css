@@ -19,20 +19,20 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| md */
 @media (width <= 768px) {
 	/* utilities */
-	.md-d-grid {
-		display: grid;
-	}
-	.md-d-none {
-		display: none;
-	}
 
 	.md-flex-dir-col {
 		flex-direction: column;
 	}
-
 	.md-min-h-auto {
 		min-height: auto !important;
 	}
+
+	/* .md-d-grid {
+		display: grid;
+	}
+	.md-d-none {
+		display: none;
+	} */
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| sm */
@@ -44,11 +44,14 @@
 	.cards > * {
 		--card-cols: 1fr;
 	}
+	.cards > *.x-axis {
+		--shadow: var(--img-shadow-bottom);
+	}
 
+	/* utilities */
 	.sm-grid-a-flow-row {
 		grid-auto-flow: row;
 	}
-
 	/* .sm-col-span-0 {
 		grid-column: auto;
 	}
