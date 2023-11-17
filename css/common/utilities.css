@@ -108,6 +108,12 @@
 	grid-row: span var(--x, 2);
 }
 
+.order-start-1 {
+	order: -1;
+}
+.order-end-1 {
+	order: 1;
+}
 /* |||||||||| |||||||||| |||||||||| |||||||||| text columns */
 .txt-col-x {
 	--min-col-width: calc(
@@ -116,10 +122,11 @@
 						var(--container-width, var(--max-content-width)) - var(--gap, 0rem) *
 							(var(--col) - 1)
 					) / var(--col)
-			) * var(--shrink, 0.9)
+			) * var(--shrink, 0.75)
 	);
 	columns: var(--col) var(--min-col-width);
 	column-gap: var(--gap, 0rem);
+	column-rule: dotted 2px;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| ellipsis */
@@ -222,6 +229,9 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| colors */
 .clr-txt-0a {
 	color: var(--clr-0a-solid);
+}
+.clr-txt-0b {
+	color: var(--clr-0b-solid);
 }
 .clr-txt-2b {
 	color: var(--clr-2b-solid);

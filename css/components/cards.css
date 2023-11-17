@@ -59,7 +59,6 @@
 }
 
 .card-head__ttl.ttl-box {
-	color: var(--clr-0b-solid);
 	padding-bottom: initial;
 }
 
@@ -107,6 +106,11 @@
 	grid-area: 2 / 1 / 2 / -1;
 }
 
+.card-body .card-head {
+	min-height: var(--img-size);
+	margin-bottom: var(--gap-x);
+}
+
 /* |||||||||| |||||||||| |||||||||| |||||||||| x-axis */
 .cards > *.x-axis {
 	--shadow: var(--img-shadow-right);
@@ -148,6 +152,3 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| test area */
-.card-body__img {
-	max-height: var(--img-size);
-}

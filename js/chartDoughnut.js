@@ -78,4 +78,6 @@ const config = {
 	data: data,
 };
 
-new Chart(document.getElementById("chart-doughnut"), config);
+document
+	.querySelectorAll(".chart-doughnut")
+	.forEach(chart => new Chart(chart, config));
