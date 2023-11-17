@@ -1,5 +1,5 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| no scroll on open modal */
-.root-scroller {
+/* .root-scroller {
 	block-size: 100dvb;
 	overflow: auto;
 	scrollbar-gutter: stable both-edges;
@@ -7,7 +7,7 @@
 	&:has(dialog[open]:modal) {
 		overflow: hidden;
 	}
-}
+} */
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| a11y */
 .sr-only,
