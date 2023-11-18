@@ -3,7 +3,11 @@
 	--w-inline: max(50%, 10rem);
 	--side: var(--left);
 	--mask: var(--clp-left);
-	--overlay: var(--lr-dark-light);
+	--overlay: linear-gradient(
+		-90deg,
+		hsl(0, 0%, 0%, 0.2) 10%,
+		hsl(0, 0%, 0%, 0.8) 90%
+	);
 	--tint: var(--clr-1b-solid);
 }
 

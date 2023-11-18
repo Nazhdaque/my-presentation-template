@@ -41,10 +41,7 @@
 		--image: url(/images/demo-3.webp);
 	}
 
-	.cards > * {
-		--card-cols: 1fr;
-	}
-	.cards > *.x-axis {
+	.cards .x-axis {
 		--shadow: var(--img-shadow-bottom);
 	}
 

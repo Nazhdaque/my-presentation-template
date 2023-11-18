@@ -6,7 +6,7 @@
 	display: grid;
 	position: absolute;
 	/* top: calc(var(--size) * -1.25); */
-	bottom: 15%;
+	bottom: calc(var(--header-height) * 2);
 	left: 0;
 	right: 0;
 	margin-inline: auto;

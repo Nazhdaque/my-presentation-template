@@ -17,7 +17,11 @@
 	--left: 60% 60% 0 auto;
 	--side: var(--left);
 	--w-inline: max(35%, 7rem);
-	--overlay: var(--lr-dark-light);
+	--overlay: linear-gradient(
+		0deg,
+		hsl(0, 0%, 0%, 0.2) 20%,
+		hsl(0, 0%, 0%, 0.8) 90%
+	);
 	--tint: var(--clr-2b-solid);
 	--bg-blend-mode: luminosity, overlay;
 	--image: url(/images/demo-3.webp);
@@ -34,14 +38,13 @@
 .slide-9 .cards {
 	--col: 3;
 	--gap-x: 2rem;
-	--gap-y: 2rem;
-	--li-gap-x: 2.25rem;
-	--li-gap-y: 2rem;
+	--gap-y: var(--gap-x);
 	--sphere: var(--sphere-2b);
 }
 
-.slide-9 .cards:nth-of-type(2) {
-	--col: 1;
+.slide-9 .img-box {
+	--asp: 16 / 9;
+	--img-h: auto;
 }
 
 .slide-9 .heading {
@@ -50,24 +53,7 @@
 	row-gap: 0.25em;
 }
 
-.slide-9 .img-box:not(.icon-bg) {
-	aspect-ratio: 16 / 9;
-}
-
 .slide-9 .side-ribbon {
 	--place: var(--top-left);
 	--move-ribbon: var(--left);
-}
-
-.slide-9 .icon-bg:nth-of-type(1) {
-	--size-x: 2;
-	--bg: var(--clr-2a-solid);
-}
-.slide-9 .icon-bg:nth-of-type(2) {
-	--size-x: 3;
-	--bg: var(--clr-1a-solid);
-}
-.slide-9 .icon-bg:nth-of-type(3) {
-	--size-x: 4;
-	--bg: var(--clr-2b-solid);
 }

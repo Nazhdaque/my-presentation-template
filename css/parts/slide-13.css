@@ -4,7 +4,11 @@
 	--w-inline: max(40%, 10rem);
 	--h-inline: unset;
 	--radius: 35% 65% 37% 63% / 52% 66% 34% 48%;
-	--overlay: var(--lr-light-dark);
+	--overlay: linear-gradient(
+		90deg,
+		hsl(0, 0%, 0%, 0.2) 10%,
+		hsl(0, 0%, 0%, 0.8) 90%
+	);
 	--asp-ratio: 1;
 }
 

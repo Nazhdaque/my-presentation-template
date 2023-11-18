@@ -1,8 +1,9 @@
 .icon-bg {
-	width: var(--size, 100%);
-	aspect-ratio: 1;
+	--img-w: var(--img-h);
+
+	max-width: var(--img-w, 100%);
 	border-radius: 50%;
-	/* overflow: hidden; */
+	aspect-ratio: var(--asp, auto);
 }
 .icon-bg::after {
 	content: "";
@@ -11,16 +12,12 @@
 	background: var(--bg, none);
 	transition: var(--tsn, none);
 	border-radius: 50%;
-	aspect-ratio: 1;
 }
 
 .inner-icon {
 	padding: 7.5%;
 	z-index: 1;
-}
-
-.icon-bg.img-box {
-	height: auto;
+	aspect-ratio: 1;
 }
 
 .bg-sphere {
@@ -33,7 +30,7 @@
 .txt-icon {
 	--unit: calc(var(--fs-rg) * var(--lh-rg));
 	--leading: calc(var(--unit) - var(--fs-rg));
-	--size: calc(var(--unit) * var(--size-x, 3) + var(--leading));
+	--img-h: calc(var(--unit) * var(--size-x, 3) + var(--leading));
 
 	float: left;
 	margin: var(--leading) var(--fs-rg) 0 0;
@@ -46,14 +43,15 @@
 	display: grid !important;
 	place-items: center;
 	z-index: 1;
+	height: 100%;
 }
 
 /* |||||||||| |||||||||| |||||||||| */
 .contacts-icon {
-	--size: var(--logo-height);
+	--icon-size: 65cqh;
+	--img-h: var(--logo-height);
 	--bg: var(--clr-1a-solid);
 	--tsn: background-color var(--time);
-	--icon-size: 65cqh;
 }
 .contacts-icon:where(:hover, :focus-visible) {
 	--bg: var(--clr-1b-solid);

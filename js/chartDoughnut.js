@@ -47,16 +47,14 @@ const data = {
 
 const options = {
 	cutout: 50,
+	maintainAspectRatio: false,
 	plugins: {
-		colors: {
-			enabled: true,
-		},
+		legend: { position: "left" },
+		colors: { enabled: true },
 		datalabels: {
 			backgroundColor: "#000",
 			borderRadius: 3,
-			font: {
-				size: 14,
-			},
+			font: { size: 14 },
 			formatter: (value, ctx) => {
 				const datapoints = ctx.chart.data.datasets[0].data;
 				const total = datapoints.reduce(

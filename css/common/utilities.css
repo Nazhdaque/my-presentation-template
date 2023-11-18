@@ -189,11 +189,13 @@
 .img-box {
 	position: relative;
 	container: img-container / size;
+	width: var(--img-w, 100%);
+	height: var(--img-h, 100%);
+	aspect-ratio: var(--asp, auto);
 }
 .img-box > * {
 	position: absolute;
 	inset: 0;
-	margin: auto;
 }
 
 .o-fit-cover {

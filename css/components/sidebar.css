@@ -1,18 +1,9 @@
 .sidebar {
 	--col: 3;
 	--x: 1;
-
-	--sb-gap: 0.75rem;
-	--sb-padding: 0 calc(var(--sb-gap) * 2) 0 0;
 	--sb-border: 1px dotted var(--clr-0a-solid);
-	--sb-chevron-size: 1em;
-	--sb-chevron-clr: var(--clr-1a-solid);
-
-	--marker-lg--font-size: 2rem;
-	--marker-lg--size: calc(var(--marker-lg--font-size) * 2);
-
-	--marker-sm--font-size: 1rem;
-	--marker-sm--size: var(--marker-lg--size);
+	--clr-bg: var(--clr-1a-solid);
+	--clr-txt: var(--clr-0a-solid);
 
 	overflow-y: scroll;
 	overscroll-behavior: contain;
@@ -21,7 +12,7 @@
 	position: fixed;
 	inset: 0 0 0 auto;
 	margin-block: var(--header-height) auto;
-	z-index: 999;
+	z-index: 2;
 	background-color: var(--clr-1a-solid);
 	counter-reset: sidebar-counter;
 	translate: var(--width-x);
@@ -55,14 +46,24 @@
 	grid-template-columns: min-content 1fr min-content;
 	align-items: center;
 	text-align: left;
-	gap: var(--sb-gap);
-	padding: var(--sb-padding);
+	gap: 0.75em;
+	padding-right: 1.5em;
+}
+
+.sidebar-item__btn .icon-bg {
+	--bg: var(--clr-bg);
+	--tsn: background-color var(--time) var(--easing);
+
+	grid-area: 1 / 1;
 }
 
 .chevron {
-	stroke: var(--sb-chevron-clr);
-	width: var(--sb-chevron-size);
-	min-width: var(--sb-chevron-size);
+	--size: 1em;
+	--clr: var(--clr-1a-solid);
+
+	stroke: var(--clr);
+	width: var(--size);
+	min-width: var(--size);
 	aspect-ratio: 1;
 	transition: stroke var(--time) var(--easing),
 		transform var(--time) var(--easing);
@@ -81,61 +82,56 @@
 
 .sidebar-item__link {
 	display: grid;
-	gap: var(--sb-gap);
-	grid-template-columns: var(--marker-lg--size) 1fr;
+	grid-template-columns: min-content 1fr;
 	align-items: center;
-	padding: var(--sb-padding);
 	color: var(--clr-0a-solid);
+	gap: 0.75em;
+	padding-right: 1.5em;
 }
 
 /* marker */
 .marker::before {
+	grid-area: 1 / 1;
 	align-self: stretch;
 	line-height: 1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-weight: var(--fw-sb);
-	font-size: var(--marker-font-size);
-	color: var(--marker-clr-txt);
-	width: var(--marker-size);
 	aspect-ratio: 1;
-	background-color: var(--marker-clr-bg);
 	transition: background-color var(--time) var(--easing),
 		color var(--time) var(--easing);
+	font-weight: var(--fw-sb);
+	background-color: var(--clr-bg);
+	color: var(--clr-txt);
+	font-size: 2rem;
+	width: 2em;
 }
 .sidebar-item__btn.marker::before {
-	--marker-font-size: var(--marker-lg--font-size);
-	--marker-size: var(--marker-lg--size);
-
-	--marker-clr-bg: var(--clr-1a-solid);
-	--marker-clr-txt: var(--clr-0a-solid);
-
 	counter-increment: sidebar-counter;
 	content: counter(sidebar-counter);
 }
 .sidebar-item__link.marker::before {
-	--marker-font-size: var(--marker-sm--font-size);
-	--marker-size: var(--marker-sm--size);
-
-	--marker-clr-bg: var(--clr-0a-solid);
-	--marker-clr-txt: var(--clr-1a-solid);
+	--clr-bg: var(--clr-0a-solid);
+	--clr-txt: var(--clr-1a-solid);
 
 	counter-increment: sidebar-item__counter;
 	content: counter(sidebar-item__counter);
+	font-size: 1rem;
+	width: 4em;
 }
 
 /* active states */
 .is-active .chevron {
-	--sb-chevron-clr: var(--clr-1b-solid);
+	--clr: var(--clr-1b-solid);
 
 	transform: rotateX(180deg);
 }
 
 .sidebar-item__btn.marker:where(:focus-visible, :hover)::before,
-.sidebar-item__link.marker:where(:focus-visible, :hover)::before {
-	--marker-clr-bg: var(--clr-1b-solid);
-	--marker-clr-txt: var(--clr-0a-solid);
+.sidebar-item__link.marker:where(:focus-visible, :hover)::before,
+.sidebar-item__btn:where(:focus-visible, :hover) .icon-bg {
+	--clr-bg: var(--clr-1b-solid);
+	--clr-txt: var(--clr-0a-solid);
 }
 
 /* default accordion library styles */

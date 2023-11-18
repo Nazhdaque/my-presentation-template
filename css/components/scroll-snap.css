@@ -1,5 +1,7 @@
 .scroll-snap-inline,
 .scroll-snap-block {
+	--img-w: auto;
+	--img-h: auto;
 	--clr: var(--clr-2b-solid);
 
 	--clp-between-inline: polygon(
@@ -76,8 +78,6 @@
 	);
 
 	display: grid;
-	height: 100%;
-	width: 100%;
 }
 
 .scroll-snap-inline > *,

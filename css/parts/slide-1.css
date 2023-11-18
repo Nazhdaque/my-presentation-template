@@ -1,7 +1,11 @@
 .slide-1 .slide-bg {
 	--side: 0;
 	--w: 100%;
-	--overlay: var(--lr-dark-light);
+	--overlay: linear-gradient(
+		-90deg,
+		hsl(0, 0%, 0%, 0.4) 0%,
+		hsl(0, 0%, 0%, 0.8) 100%
+	);
 	--tint: var(--clr-1a-solid);
 }
 
@@ -18,7 +22,7 @@
 	--col: 4;
 	--gap-x: 2rem;
 	--gap-y: 4rem;
-	--img-size: 4rem;
+	--img-h: 4rem;
 }
 
 .slide-ribbon {

@@ -3,13 +3,14 @@
 	--img-shadow-right: 0.5rem 0rem 0.5rem -0.25rem hsl(0, 0%, 0%, 0.25);
 
 	--img-size: 10rem;
+	--img-h: var(--img-size);
 	--card-gap: var(--gap-x);
 }
 
 .cards > * {
 	display: grid;
 	grid-auto-flow: row;
-	grid-auto-rows: minmax(var(--img-size), auto) 1fr;
+	grid-auto-rows: minmax(var(--img-h), auto) 1fr;
 	gap: var(--card-gap);
 }
 
@@ -26,12 +27,7 @@
 
 .cards .img-box {
 	box-shadow: var(--shadow, var(--img-shadow-bottom));
-	width: var(--size, 100%);
-	height: 100%;
 	grid-area: 1 / 1;
-}
-.cards .icon-bg {
-	max-width: var(--img-size);
 }
 
 /* |||||||||| |||||||||| card-head title */
@@ -107,16 +103,24 @@
 }
 
 .card-body .card-head {
-	min-height: var(--img-size);
+	min-height: var(--img-h);
 	margin-bottom: var(--gap-x);
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| x-axis */
-.cards > *.x-axis {
+.cards .x-axis {
 	--shadow: var(--img-shadow-right);
 
 	grid-auto-flow: column;
-	grid-auto-columns: minmax(var(--img-size), auto) 1fr;
+	grid-auto-columns: minmax(var(--img-h), auto) 1fr;
+}
+.x-axis .img-box {
+	--img-h: 100%;
+}
+.x-axis .icon-bg {
+	--img-w: var(--img-size);
+	--img-h: auto;
+	--asp: 1;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| card with bg */
@@ -131,7 +135,7 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| ttl right */
 .ttl-right {
 	grid-auto-flow: column;
-	grid-auto-columns: minmax(var(--img-size), auto) 1fr;
+	grid-auto-columns: minmax(var(--img-h), auto) 1fr;
 	gap: var(--card-gap);
 }
 
