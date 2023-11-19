@@ -11,15 +11,20 @@
 				<span class="scroll-down__text">Scroll down</span>
 			</div>
 
-			<div class="heading fs-xl">
-				<h2 class="fs-xl width-x">Карточки</h2>
-				<p class="fs-md grid-full-width">инфоблоки с картинками, иконками и т.д.</p>
+			<div class="ttl-box fs-xl">
+				<div class="ttl-box__img img-box icon-bg bg-sphere">
+					<svg class="o-fit-contain inner-icon figures">
+						<use href="./images/icons/sprites/figures.svg#figure-2"></use>
+					</svg>
+				</div>
+				<h2 class="ttl-box__ttl">Карточки</h2>
+				<p class="ttl-box__sub fs-md">инфоблоки с картинками, иконками и т.д.</p>
 			</div>
 
 			<ul class="grid-x cards">
-				<li>
-					<div class="card-head">
-						<div class="img-box overlay">
+				<li class="card">
+					<div class="card__head">
+						<div class="card__img img-box overlay">
 							<div class="glitch"
 									 style="background-image: url(images/lekom-360p.webp)">
 								<div class="channel r"></div>
@@ -31,11 +36,10 @@
 							<div class="rec">REC</div>
 						</div>
 					</div>
-					<div class="card-body">
-						<div class="ttl-box sphere">
-							<h3 class="card-body__ttl caps">Lekom ipsum dolor</h3>
-							<p class="card-body__sub fs-sm ">Lorem ipsum dolor sit amet consectetur
-								adipisicing</p>
+					<div class="card__body">
+						<div class="ttl-box ttl-box_bg-pipe">
+							<h3 class="ttl-box__ttl caps">Lekom ipsum dolor</h3>
+							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 						</div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
 							quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
@@ -44,20 +48,20 @@
 					</div>
 				</li>
 
-				<li class="x-axis sm-grid-a-flow-row">
-					<div class="card-head">
-						<div class="img-box">
+				<li class="card x-axis sm-a-flow-row">
+					<div class="card__head">
+						<div class="card__img img-box sm-shadow-bottom">
 							<img class="o-fit-cover"
 									 style="--pos: 85%"
 									 src="./images/demo-4.webp"
 									 alt="">
 						</div>
 					</div>
-					<div class="card-body">
+					<div class="card__body">
 						<div class="ttl-box">
-							<h3 class="card-body__ttl caps">Lorem ipsum dolor</h3>
-							<p class="card-body__sub fs-sm ">Lorem ipsum dolor sit amet consectetur
-								adipisicing</p>
+							<div class="ttl-box__img img-box icon-bg bg-sphere"></div>
+							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
+							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 						</div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
 							quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
@@ -66,16 +70,16 @@
 					</div>
 				</li>
 
-				<li>
-					<div class="card-head">
-						<div class="img-box">
+				<li class="card">
+					<div class="card__head">
+						<div class="card__img img-box">
 							<img class="o-fit-cover"
 									 src="./images/demo-4.webp"
 									 alt="">
 						</div>
-						<h3 class="card-head__ttl caps ellipsis">Lorem ipsum dolor</h3>
+						<h3 class="card__ttl card__ttl_bg caps ellipsis">Lorem ipsum dolor</h3>
 					</div>
-					<div class="card-body">
+					<div class="card__body">
 						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi officia illum facere expedita
 							aspernatur nisi non alias enim ducimus repellendus accusamus eum iure voluptates suscipit asperiores
 							laborum animi magnam, iusto delectus.</p>
@@ -86,16 +90,18 @@
 					</div>
 				</li>
 
-				<li>
-					<div class="card-body">
+				<li class="card">
+					<div class="card__body">
 						<div class="ttl-box">
-							<h3 class="card-body__ttl caps">Lorem ipsum dolor</h3>
+							<div class="ttl-box__img img-box icon-bg bg-sphere"></div>
+							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
+							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 						</div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, nesciunt quas? Amet, dignissimos
 							eligendi? Sed, rerum maiores, quidem saepe laudantium iste laborum quae nam doloremque ipsum culpa placeat
 							in sit!</p>
 						<div class="img-box icon-bg txt-icon"
-								 style="	--size-x: 3;
+								 style="--size-x: 3;
 						--bg: var(--clr-2b-solid);">
 							<img class="inner-icon"
 									 src="./images/rubik-0.svg"
@@ -109,8 +115,8 @@
 					</div>
 				</li>
 
-				<li>
-					<div class="img-box"
+				<li class="card">
+					<div class="card__img img-box"
 							 style="--shadow: none; --img-h: 100%;">
 						<img class="o-fit-contain"
 								 src="./images/rubik-0.svg"
@@ -118,20 +124,19 @@
 					</div>
 				</li>
 
-				<li class="x-axis sm-grid-a-flow-row w-bg">
-					<div class="card-head">
-						<div class="img-box">
+				<li class="card x-axis sm-a-flow-row gap-0">
+					<div class="card__head">
+						<div class="card__img img-box sm-shadow-bottom">
 							<img class="o-fit-cover"
 									 style="--pos: 80%"
 									 src="./images/demo-3.webp"
 									 alt="">
 						</div>
 					</div>
-					<div class="card-body">
-						<div class="ttl-box sphere">
-							<h3 class="card-body__ttl caps">Lorem ipsum dolor</h3>
-							<p class="card-body__sub fs-sm ">Lorem ipsum dolor sit amet consectetur
-								adipisicing</p>
+					<div class="card__body card__body_bg">
+						<div class="ttl-box ttl-box_bg-pipe">
+							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
+							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 						</div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
 							quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
@@ -140,18 +145,19 @@
 					</div>
 				</li>
 
-				<li class="w-bg">
-					<div class="card-head">
-						<div class="img-box">
+				<li class="card gap-0">
+					<div class="card__head">
+						<div class="card__img img-box">
 							<img class="o-fit-cover"
 									 style="--pos: center 100%"
 									 src="./images/demo-2.webp"
 									 alt="">
 						</div>
 					</div>
-					<div class="card-body">
-						<div class="ttl-box">
-							<h3 class="card-body__ttl caps">Lorem ipsum dolor</h3>
+					<div class="card__body card__body_bg">
+						<div class="ttl-box ttl-box_bg-pipe">
+							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
+							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 						</div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
 							quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
@@ -160,18 +166,18 @@
 					</div>
 				</li>
 
-				<li>
-					<div class="card-head">
-						<div class="img-box icon-bg">
+				<li class="card">
+					<div class="card__head">
+						<div class="card__img img-box icon-bg">
 							<img class="o-fit-cover round"
 									 style="--pos: 100%"
 									 src="./images/demo-3.webp"
 									 alt="">
 						</div>
-						<h3 class="card-head__ttl caps ellipsis">Lorem ipsum dolor sit</h3>
+						<h3 class="card__ttl card__ttl_bg caps ellipsis">Lorem ipsum dolor sit</h3>
 					</div>
 
-					<div class="card-body">
+					<div class="card__body">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio voluptatum quae! Eveniet incidunt
 							accusantium veritatis, nostrum sunt dolores ratione. Exercitationem distinctio adipisci repellat
 							repellendus beatae molestiae dolores! Exercitationem pariatur ipsa enim saepe ab, harum totam beatae fuga
@@ -179,22 +185,20 @@
 					</div>
 				</li>
 
-				<li>
-					<div class="card-head ttl-right sm-grid-a-flow-row">
-						<div class="img-box icon-bg bg-sphere">
+				<li class="card">
+					<div class="card__head card__head_ttl-side sm-a-flow-row">
+						<div class="card__img img-box icon-bg bg-sphere">
 							<svg class="o-fit-contain inner-icon figures">
 								<use href="./images/icons/sprites/figures.svg#figure-2"></use>
 							</svg>
 						</div>
-						<!-- <h3 class="card-head__ttl caps">Lorem ipsum dolor sit</h3> -->
-						<div class="ttl-box sphere">
-							<h3 class="card-body__ttl caps">Lorem ipsum dolor</h3>
-							<p class="card-body__sub fs-sm ">Lorem ipsum dolor sit amet consectetur
-								adipisicing</p>
+						<div class="ttl-box ttl-box_bg-pipe">
+							<h3 class="ttl-box__ttl caps z-down">Lorem ipsum dolor</h3>
+							<p class="ttl-box__sub fs-sm z-down">Lorem ipsum dolor sit amet</p>
 						</div>
 					</div>
 
-					<div class="card-body">
+					<div class="card__body">
 						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi aut eaque architecto cum quos iste,
 							molestias eum vero. Ea porro deleniti ut dolor quasi nesciunt exercitationem, totam sapiente adipisci
 							minus! Beatae eum ipsa odit ex.</p>
@@ -203,43 +207,46 @@
 					</div>
 				</li>
 
-				<li class="x-axis sm-grid-a-flow-row">
-					<div class="card-head">
-						<div class="img-box icon-bg bg-sphere"><i class="material-icons-round mui-icon">home</i></div>
+				<li class="card x-axis sm-a-flow-row">
+					<div class="card__head">
+						<div class="card__img img-box icon-bg bg-sphere sm-shadow-bottom">
+							<i class="material-icons-round mui-icon">home</i>
+						</div>
 					</div>
 
-					<div class="card-body">
-						<div class="ttl-box">
-							<h3 class="card-body__ttl caps">Lorem ipsum dolor</h3>
-							<p class="card-body__sub fs-sm ">Lorem ipsum dolor sit amet consectetur
-								adipisicing</p>
+					<div class="card__body card__body_bg">
+						<div class="ttl-box ttl-box_bg-pipe">
+							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
+							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 						</div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio voluptatum quae! Eveniet incidunt
 							accusantium veritatis, nostrum sunt dolores ratione. Exercitationem distinctio adipisci?</p>
 					</div>
 				</li>
 
-				<li>
-					<div class="card-head">
-						<div class="img-box pattern-bg-1">
+				<li class="card">
+					<div class="card__head">
+						<div class="card__img img-box pattern-bg-1">
 							<div class="polygon-ribbon-rounded-cutout-tl fs-sm">Nice!</div>
 						</div>
-						<!-- <h3 class="card-head__ttl caps ellipsis">Lorem ipsum dolor</h3> -->
-						<div class="ttl-box card-head__ttl clr-txt-0b">
-							<h3 class="card-body__ttl caps">Lorem ipsum dolor</h3>
-							<p class="card-body__sub fs-sm ">Lorem ipsum dolor sit amet consectetur
-								adipisicing</p>
+						<div class="card__ttl">
+							<div class="ttl-box">
+								<div class="ttl-box__img img-box icon-bg bg-sphere"></div>
+								<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
+								<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+							</div>
 						</div>
+
 					</div>
-					<div class="card-body">
+					<div class="card__body">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, pariatur aspernatur exercitationem et
 							earum consectetur dolor quisquam ipsam esse tempore!</p>
 					</div>
 				</li>
 
-				<li class="x-axis sm-grid-a-flow-row">
-					<div class="card-head">
-						<div class="img-box icon-bg bg-eye">
+				<li class="card x-axis sm-a-flow-row">
+					<div class="card__head">
+						<div class="card__img img-box icon-bg bg-eye sm-shadow-bottom">
 							<img class="o-fit-cover round"
 									 style="--pos: 100%"
 									 src="./images/demo-4.webp"
@@ -250,34 +257,96 @@
 						</div>
 					</div>
 
-					<div class="card-body">
-						<div class="ttl-box sphere">
-							<h3 class="card-body__ttl caps">Lorem ipsum dolor</h3>
-							<p class="card-body__sub fs-sm ">Lorem ipsum dolor sit amet consectetur
-								adipisicing</p>
+					<div class="card__body">
+						<div class="ttl-box">
+							<div class="ttl-box__img img-box icon-bg bg-sphere"></div>
+							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
+							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 						</div>
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae exercitationem suscipit unde
 							laudantium perspiciatis eius ex repellendus odio cum nemo accusamus nam eos non dolor doloribus ratione
 							quo facilis facere labore, quas et excepturi rem corrupti! Nam consectetur sint fugit?</p>
 					</div>
 				</li>
+
+				<li class="card gap-0">
+					<div class="card__body card__body_bg">
+						<div class="ttl-box ttl-box_bg-pipe">
+							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
+							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque cum minima blanditiis enim
+							quas itaque nemo eaque perspiciatis iste?</p>
+					</div>
+					<div class="card__head">
+						<div class="card__img img-box">
+							<img class="o-fit-cover"
+									 style="--pos: top"
+									 src="./images/demo-3.webp"
+									 alt="">
+						</div>
+					</div>
+					<div class="card__body card__body_bg">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perspiciatis quasi eaque rem omnis,
+							repudiandae eveniet non quod dolores odio odit doloribus sunt quas officiis est nihil recusandae neque
+							aliquam?</p>
+					</div>
+				</li>
+
+				<li class="card x-axis gap-0 card_triple lg-a-flow-row c-span-x lg-c-span-0"
+						style="--span: 2">
+					<div class="card__body card__body_bg">
+						<div class="ttl-box">
+							<div class="ttl-box__img img-box icon-bg bg-sphere">
+								<i class="material-icons-round mui-icon">home</i>
+							</div>
+							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
+							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
+							quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
+							repudiandae. Eveniet placeat ducimus reprehenderit enim tempore atque ipsam consectetur repudiandae
+							quaerat!</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea blanditiis, itaque ipsum aut illo
+							repellat reprehenderit omnis unde minima.</p>
+					</div>
+
+					<div class="card__head">
+						<div class="card__img img-box lg-shadow-bottom">
+							<img class="o-fit-cover"
+									 style="--pos: left"
+									 src="./images/demo-1.webp"
+									 alt="">
+						</div>
+					</div>
+
+					<div class="card__body card__body_bg">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
+							quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
+							repudiandae. Eveniet placeat ducimus reprehenderit enim tempore atque ipsam consectetur repudiandae
+							quaerat!</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae omnis, enim, assumenda iure iusto
+							laborum magnam ut eaque tempora consectetur et qui nemo, error nobis doloribus molestias ipsum voluptatum
+							exercitationem quo temporibus. Quia ex quae ad nulla excepturi? Vero, provident!</p>
+					</div>
+				</li>
 			</ul>
 
 			<ul class="cards">
-				<li class="w-bg">
-					<div class="card-head">
-						<div class="img-box">
+				<li class="card gap-0">
+					<div class="card__head">
+						<div class="card__img img-box">
 							<img class="o-fit-cover"
 									 style="--pos: center 80%"
 									 src="./images/demo-1.webp"
 									 alt="">
 						</div>
-						<h3 class="card-head__ttl caps ellipsis">Lorem ipsum dolor</h3>
+						<h3 class="card__ttl card__ttl_bg caps ellipsis">Lorem ipsum dolor</h3>
 					</div>
-					<div class="card-body txt-col-x"
+					<div class="card__body card__body_bg txt-col-x"
 							 style="--col: 3">
 						<div class="img-box icon-bg txt-icon"
-								 style="	--size-x: 4;
+								 style="--size-x: 4;
 						--bg: var(--clr-2b-solid);">
 							<img class="inner-icon"
 									 src="./images/rubik-1.svg"
@@ -294,7 +363,7 @@
 							laudantium totam! Itaque, harum, sapiente iure, dicta eligendi cum dolor nesciunt odio.</p>
 
 						<div class="img-box icon-bg txt-icon"
-								 style="	--size-x: 3;
+								 style="--size-x: 3;
 						--bg: var(--clr-1b-solid);">
 							<img class="inner-icon"
 									 src="./images/rubik-2.svg"
@@ -306,7 +375,7 @@
 							odit nobis. Praesentium dolorum sequi iure atque minima, voluptate eum.</p>
 
 						<div class="img-box icon-bg txt-icon"
-								 style="	--size-x: 2;
+								 style="--size-x: 2;
 						--bg: var(--clr-2a-solid);">
 							<img class="inner-icon"
 									 src="./images/rubik-0.svg"
@@ -321,19 +390,16 @@
 			</ul>
 
 			<ul class="cards">
-				<li>
-					<div class="card-body txt-col-x"
+				<li class="card">
+					<div class="card__body txt-col-x"
 							 style="--col: 4">
-						<div class="card-head">
-							<div class="img-box">
+						<div class="card__head">
+							<div class="card__img img-box">
 								<img class="o-fit-cover"
 										 src="./images/demo-2.webp"
 										 alt="">
 							</div>
-							<!-- <div class="ttl-box card-head__ttl sphere">
-								<h3 class="card-body__ttl caps">Lorem ipsum</h3>
-							</div> -->
-							<h3 class="card-head__ttl caps ellipsis">Lorem ipsum</h3>
+							<h3 class="card__ttl card__ttl_bg caps ellipsis">Lorem ipsum</h3>
 						</div>
 
 						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti odit perspiciatis dolor debitis atque,
@@ -346,8 +412,8 @@
 							magnam vero recusandae doloribus maxime sed soluta, ut error? Pariatur adipisci rem consequuntur
 							laudantium totam! Itaque, harum, sapiente iure, dicta eligendi cum dolor nesciunt odio.</p>
 
-						<div class="card-head">
-							<div class="img-box icon-bg bg-eye">
+						<div class="card__head">
+							<div class="card__img img-box icon-bg bg-eye">
 								<img class="o-fit-cover round"
 										 style="--pos: 20%"
 										 src="./images/demo-4.webp"

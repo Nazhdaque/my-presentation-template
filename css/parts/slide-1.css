@@ -13,7 +13,7 @@
 	grid-auto-rows: min-content 1fr min-content;
 }
 
-.slide-1 .heading {
+.slide-1 .ttl-box {
 	--x: 3;
 	--col: 7;
 }

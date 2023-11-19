@@ -14,12 +14,24 @@
 	}
 
 	/* .table media styles are in the table.css */
+
+	/* utilities */
+	.lg-shadow-bottom {
+		--shadow: var(--img-shadow-bottom);
+	}
+
+	.lg-a-flow-row {
+		grid-auto-flow: row;
+	}
+
+	.lg-c-span-0 {
+		grid-column: auto;
+	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| md */
 @media (width <= 768px) {
 	/* utilities */
-
 	.md-flex-dir-col {
 		flex-direction: column;
 	}
@@ -41,12 +53,12 @@
 		--image: url(/images/demo-3.webp);
 	}
 
-	.cards .x-axis {
+	.sm-shadow-bottom {
 		--shadow: var(--img-shadow-bottom);
 	}
 
 	/* utilities */
-	.sm-grid-a-flow-row {
+	.sm-a-flow-row {
 		grid-auto-flow: row;
 	}
 	/* .sm-col-span-0 {

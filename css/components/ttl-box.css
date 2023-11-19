@@ -1,0 +1,35 @@
+.ttl-box {
+	--img-h: 1.5em;
+	--img-size: 1.5em;
+	--gap: 0.5em;
+
+	display: grid;
+	align-items: center;
+	grid-auto-columns: min-content 1fr;
+	row-gap: var(--gap);
+}
+
+.ttl-box__img {
+	grid-area: 1 / 1;
+	margin-right: var(--gap);
+}
+
+.ttl-box_bg-pipe::before {
+	isolation: isolate;
+	content: "";
+	background: var(--bg, var(--clr-1b-solid));
+	margin-right: var(--gap);
+	height: 100%;
+	width: 0.2em;
+}
+.ttl-box::before {
+	grid-area: 1 / 1;
+}
+
+.ttl-box__ttl {
+	grid-column: 2;
+}
+
+.ttl-box__sub {
+	grid-column: 1 / span 2;
+}

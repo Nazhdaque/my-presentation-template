@@ -15,6 +15,7 @@
 @import url(./components/scroll-snap.css) layer(components);
 @import url(./components/decor.css) layer(components);
 @import url(./components/glitch-img.css) layer(components);
+@import url(./components/ttl-box.css) layer(components);
 @import url(./components/cards.css) layer(components);
 @import url(./components/icons.css) layer(components);
 @import url(./components/txt-link.css) layer(components);
