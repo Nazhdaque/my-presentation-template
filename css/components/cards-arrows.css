@@ -1,0 +1,110 @@
+.cards_arrows {
+	--col: 3;
+	--x: 1;
+	--gap-x: 3rem;
+	--gap-y: var(--gap-x);
+	--img-h: 3rem;
+
+	--head-bg-clr: var(--clr-2b-alpha);
+	--bg: var(--clr-2b-solid);
+	--sphere: var(--sphere-2b);
+}
+
+.cards_arrows_counter {
+	counter-reset: arrow-list-counter 0;
+}
+
+.cards_arrows_counter > * {
+	counter-increment: arrow-list-counter;
+}
+.cards_arrows_counter .card__img::before {
+	content: counter(arrow-list-counter);
+	font-family: var(--ff-rg);
+}
+
+.card__head_arrow {
+	--padding: 0 20% 0 0;
+
+	padding: var(--padding);
+}
+
+.card__head_arrow::before,
+.card__head_arrow::after {
+	position: absolute;
+	content: "";
+	/* z-index: -1; */
+}
+
+.card__head_arrow::before {
+	left: var(--img-h);
+	height: calc(var(--img-h) / 1.5);
+	width: calc(100% - (var(--img-h) + var(--img-h) / 3));
+	background: linear-gradient(
+		90deg,
+		hsl(var(--head-bg-clr), 0) 80%,
+		hsl(var(--head-bg-clr), 1) 95%
+	);
+}
+
+.card__head_arrow::after {
+	right: 0;
+	left: auto;
+	border-top: calc(var(--img-h) / 2) solid transparent;
+	border-bottom: calc(var(--img-h) / 2) solid transparent;
+	border-left: calc(var(--img-h) / 2) solid hsl(var(--head-bg-clr), 1);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| rl */
+.cards_arrows_rl .card__head,
+.cards_arrows_odd_rl > *:nth-child(2n-1) .card__head {
+	grid-auto-columns: 1fr minmax(var(--img-h), auto);
+}
+.cards_arrows_rl .card__img,
+.cards_arrows_odd_rl > *:nth-child(2n-1) .card__img {
+	grid-column: 2;
+}
+.cards_arrows_rl .ttl-box,
+.cards_arrows_odd_rl > *:nth-child(2n-1) .ttl-box {
+	justify-self: end;
+}
+
+.cards_arrows_rl .card__head_arrow,
+.cards_arrows_odd_rl > *:nth-child(2n-1) .card__head_arrow {
+	--padding: 0 0 0 20%;
+}
+
+.cards_arrows_rl .card__head_arrow::before,
+.cards_arrows_odd_rl > *:nth-child(2n-1) .card__head_arrow::before {
+	left: initial;
+	right: var(--img-h);
+	background: linear-gradient(
+		-90deg,
+		hsl(var(--head-bg-clr), 0) 80%,
+		hsl(var(--head-bg-clr), 1) 95%
+	);
+}
+
+.cards_arrows_rl .card__head_arrow::after,
+.cards_arrows_odd_rl > *:nth-child(2n-1) .card__head_arrow::after {
+	right: auto;
+	left: 0;
+	border-left: initial;
+	border-right: calc(var(--img-h) / 2) solid hsl(var(--head-bg-clr), 1);
+}
+
+.cards_arrows_rl .ttl-box,
+.cards_arrows_odd_rl > *:nth-child(2n-1) .ttl-box {
+	grid-auto-columns: 1fr min-content;
+	margin-right: 0;
+}
+
+.cards_arrows_rl .ttl-box__ttl,
+.cards_arrows_odd_rl > *:nth-child(2n-1) .ttl-box__ttl {
+	grid-column: 1;
+}
+
+.cards_arrows_rl .ttl-box::before,
+.cards_arrows_odd_rl > *:nth-child(2n-1) .ttl-box::before {
+	grid-column: 2;
+	margin: 0 0 0 var(--gap);
+}

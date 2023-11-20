@@ -8,7 +8,7 @@
 		var(--swiper-pagination-height) - var(--swiper-pagination-bottom)
 	);
 	display: grid;
-	gap: var(--heading-bottom-indent);
+	gap: 4rem;
 	align-items: center;
 	grid-auto-rows: min-content;
 }

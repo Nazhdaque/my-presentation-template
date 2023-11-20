@@ -5,6 +5,10 @@
 		--x: 1;
 		justify-self: center;
 	}
+
+	.xl-flex-dir-col {
+		flex-direction: column;
+	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| lg */
@@ -16,6 +20,10 @@
 	/* .table media styles are in the table.css */
 
 	/* utilities */
+	.lg-flex-dir-col {
+		flex-direction: column;
+	}
+
 	.lg-shadow-bottom {
 		--shadow: var(--img-shadow-bottom);
 	}

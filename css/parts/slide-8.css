@@ -4,19 +4,18 @@
 	--side: var(--left);
 	--mask: var(--clp-left);
 	--overlay: linear-gradient(
-		-90deg,
-		hsl(0, 0%, 0%, 0.2) 10%,
-		hsl(0, 0%, 0%, 0.8) 90%
+		90deg,
+		hsl(0, 0%, 0%, 0.33) 0%,
+		hsl(0, 0%, 0%, 0.66) 50%
 	);
 	--tint: var(--clr-1b-solid);
 }
 
 .slide-8 .slide-body {
-	--col: 3;
-	--x: 2;
-	--shrink: 1 !important;
-	--gap-x: 2rem;
-	--gap-y: 2rem;
+	--col: 4;
+	--x: 3;
+	--gap-x: 3rem;
+	--gap-y: var(--gap-x);
 
 	place-self: start center;
 }
@@ -26,26 +25,18 @@
 	--x: 1;
 }
 
-.slide-8 .list-w-ribbons {
-	--col: 3;
-	--gap-x: 4rem;
-	--gap-y: 4rem;
-	--li-gap-x: 0rem;
-	--li-gap-y: 2rem;
+.slide-8 .cards_arrows_odd_rl {
+	--img-h: 5rem;
 }
 
-.slide-8 .ellipsis-box {
-	z-index: 1;
-}
+.cards_arrows_odd_rl > *:nth-child(2n-1) {
+	--bg: var(--clr-1b-solid);
 
-.slide-8 .list-w-ribbons > * {
-	grid-auto-rows: min-content 1fr;
-}
-.slide-8 .list-w-ribbons > *:first-child {
-	--ribbon-clr-alpha: var(--clr-1b-alpha);
 	--sphere: var(--sphere-2c-1a);
+	--head-bg-clr: var(--clr-1b-alpha);
 }
-.slide-8 .list-w-ribbons > *:last-child {
-	--ribbon-clr-alpha: var(--clr-1a-alpha);
+.cards_arrows_odd_rl > *:nth-child(2n) {
+	--bg: var(--clr-1a-solid);
 	--sphere: var(--sphere-1b);
+	--head-bg-clr: var(--clr-1a-alpha);
 }

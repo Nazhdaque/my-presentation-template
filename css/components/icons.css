@@ -5,6 +5,12 @@
 	transition: var(--tsn, none);
 	border-radius: var(--radius, initial);
 	line-height: normal;
+
+	display: grid;
+	place-items: center;
+	color: var(--clr-0a-solid);
+	font-weight: var(--fw-hv);
+	font-size: calc(var(--img-h) / 2);
 }
 
 .inner-icon {
@@ -34,8 +40,10 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| material ui icons */
 .mui-icon {
+	--icon-size: calc(var(--img-w) * 0.75);
+
 	color: var(--clr-0a-solid) !important;
-	font-size: var(--icon-size, 75cqh) !important;
+	font-size: var(--icon-size) !important;
 	display: grid !important;
 	place-items: center;
 	z-index: 1;
@@ -43,7 +51,7 @@
 
 /* |||||||||| |||||||||| |||||||||| */
 .contacts-icon {
-	--icon-size: 65cqh;
+	--icon-size: calc(var(--img-h) * 0.65);
 	--img-h: var(--logo-height);
 	--bg: var(--clr-1a-solid);
 	--tsn: background-color var(--time);

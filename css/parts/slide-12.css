@@ -3,7 +3,7 @@
 	--side: var(--center);
 	--clip: var(--clp-right);
 	--image: url(/images/demo-4.webp);
-	--filters: invert(1) grayscale(1) contrast(0.85) brightness(1.75);
+	--filters: invert(1) grayscale(1) contrast(0.85) brightness(1.25);
 	--pos: 20%;
 	--clr-filter: hsl(100, 100%, 50%, 0.1);
 }
@@ -14,35 +14,16 @@
 	align-items: start;
 	gap: var(--header-height);
 }
-.slide-12 .slide-body > * {
+.slide-12 .slide-body > .width-x {
 	--col: 3;
 	--x: 1;
+
+	display: grid;
+	gap: var(--heading-bottom-indent);
 }
 
-.slide-12 .ttl-box {
-	--col: 3;
-	--x: 1;
-}
-
-.slide-12 .list-w-ribbons {
-	--marker-size: 2.5rem;
-	/* --col: 3; */
-	--gap-x: 3rem;
-	--gap-y: 3rem;
-	--li-gap-x: 0rem;
-	--li-gap-y: 1rem;
-	--ribbon-clr-alpha: var(--clr-2a-alpha);
+.slide-12 .cards_arrows_rl {
+	--head-bg-clr: var(--clr-2a-alpha);
+	--bg: var(--clr-2a-solid);
 	--sphere: var(--sphere-2a);
-}
-.slide-12 .list-w-ribbons:nth-of-type(2) {
-	--ribbon-clr-alpha: var(--clr-2b-alpha);
-	--sphere: var(--sphere-2b);
-}
-
-.slide-12 .cards {
-	--col: 2;
-	--gap-x: 2rem;
-	--gap-y: 2rem;
-	--li-gap-x: 2.25rem;
-	--li-gap-y: 2rem;
 }
