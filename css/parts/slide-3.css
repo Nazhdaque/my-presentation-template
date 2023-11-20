@@ -1,7 +1,7 @@
 .slide-3 .slide-bg {
 	--side: var(--right);
 	--clip: var(--clp-right);
-	--bg-clr: var(--clr-1b-solid-invert);
+	--bg: var(--clr-1b-solid-invert);
 }
 
 .slide-3 .slide-content {

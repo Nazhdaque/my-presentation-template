@@ -10,7 +10,7 @@
 	--tint: var(--clr-2b-solid);
 	--image: url(/images/demo-3.webp);
 	--filters: invert(1) grayscale(0.5) contrast(0.75);
-	--bg-pos: 80%;
+	--pos: 80%;
 }
 
 .slide-2 .ttl-box {

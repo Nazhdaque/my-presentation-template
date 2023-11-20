@@ -1,5 +1,5 @@
 .slide-4 .slide-bg {
-	--bg-clr: var(--clr-1a-solid-invert);
+	--bg: var(--clr-1a-solid-invert);
 	--side: var(--left);
 	--clip: var(--clp-left);
 }
@@ -21,7 +21,7 @@
 }
 
 .slide-4 .overlay {
-	--clr-filter: hsl(175, 85%, 30%, 0.25);
+	--bg: hsl(175, 85%, 30%, 0.25);
 }
 
 .slide-4 .filter {

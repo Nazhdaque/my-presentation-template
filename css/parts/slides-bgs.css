@@ -53,8 +53,8 @@
 }
 .slide-bg::before {
 	z-index: -1;
-	background-color: var(--bg-clr, var(--clr-1a-solid-invert));
-	background-position: var(--bg-pos, center);
+	background-color: var(--bg, var(--clr-1a-solid-invert));
+	background-position: var(--pos, center);
 }
 .slide-bg::after {
 	background-color: var(--clr-0a-solid);

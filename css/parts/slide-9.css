@@ -28,7 +28,7 @@
 }
 
 .slide-9 .slide-bg:nth-child(3) {
-	--bg-clr: var(--clr-1b-solid-invert);
+	--bg: var(--clr-1b-solid-invert);
 	--left: 75% 15% 0 auto;
 	--side: var(--left);
 	--w-inline: max(10%, 4rem);

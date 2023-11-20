@@ -2,14 +2,14 @@
 .slide-5 .slide-bg-overlay {
 	--side: var(--right);
 	--clip: var(--clp-right);
-	--bg-clr: var(--clr-1a-solid-invert);
+	--bg: var(--clr-1a-solid-invert);
 	--overlay: linear-gradient(
 		-90deg,
 		hsl(0, 0%, 0%, 0.1) 0%,
 		hsl(0, 0%, 0%, 0.7) 70%
 	);
 	--image: url(/images/demo-4.webp);
-	--bg-pos: 60%;
+	--pos: 60%;
 }
 .slide-5 .slide-bg:first-child,
 .slide-5 .slide-bg-overlay:first-child {

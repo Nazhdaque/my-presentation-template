@@ -13,7 +13,7 @@
 }
 
 .slide-13 .slide-bg:nth-child(2) {
-	--bg-clr: var(--clr-1a-solid-invert);
+	--bg: var(--clr-1a-solid-invert);
 	--right: 40% -7% 0 auto;
 	--side: var(--right);
 	--w-inline: max(30%, 7rem);
@@ -23,7 +23,7 @@
 }
 
 .slide-13 .slide-bg:nth-child(3) {
-	--bg-clr: var(--clr-1b-solid-invert);
+	--bg: var(--clr-1b-solid-invert);
 	--right: -45% 35% 0 auto;
 	--side: var(--right);
 	--w-inline: max(10%, 4rem);

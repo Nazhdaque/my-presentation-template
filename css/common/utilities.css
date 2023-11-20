@@ -189,7 +189,7 @@
 	position: absolute;
 	content: "";
 	inset: 0;
-	background: var(--clr-filter);
+	background: var(--bg);
 }
 
 .img-box {
@@ -198,10 +198,12 @@
 	width: var(--img-w, 100%);
 	height: var(--img-h, 100%);
 	aspect-ratio: var(--asp, auto);
+	border-radius: var(--radius, initial);
 }
 .img-box > * {
 	position: absolute;
 	inset: 0;
+	border-radius: var(--radius, initial);
 }
 
 .o-fit-cover {
@@ -221,10 +223,12 @@
 	overflow: hidden;
 }
 
-.round {
+/* .round,
+.round::before,
+.round::after {
 	border-radius: 50%;
 	aspect-ratio: 1;
-}
+} */
 
 .v-visible {
 	visibility: visible;

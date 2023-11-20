@@ -4,7 +4,7 @@
 	--clip: var(--clp-right);
 	--image: url(/images/demo-4.webp);
 	--filters: invert(1) grayscale(1) contrast(0.85) brightness(1.75);
-	--bg-pos: 20%;
+	--pos: 20%;
 	--clr-filter: hsl(100, 100%, 50%, 0.1);
 }
 
