@@ -69,7 +69,8 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 				<p class="ttl-box__sub fs-md">Альтернатива .pptx</p>
 			</div>
 
-			<ul class="grid-x cards">
+			<ul class="grid-x cards"
+					style="--shadow: none;">
 				<li class="card">
 					<div class="card__head card__head_ttl-side">
 						<div class="card__img img-box icon-bg">
@@ -327,7 +328,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 					<div class="li-head">
 						<h3>Полноценный веб-ресурс</h3>
 					</div>
-					<div class="img-box icon-bg bg-sphere">
+					<div class="img-box icon-bg round bg-sphere">
 						<svg class="inner-icon figures">
 							<use href="./images/icons/sprites/figures.svg#figure-2"></use>
 						</svg>
@@ -349,7 +350,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 			<h2 class="heading fs-xl width-x">Плюсы MS PowerPoint</h2>
 			<ol class="flex-x list-w-ribbons in lr">
 				<li class="w-slave-1">
-					<div class="img-box icon-bg bg-sphere">
+					<div class="img-box icon-bg round bg-sphere">
 						<i class="material-icons-round mui-icon">child_care</i>
 					</div>
 					<div class="li-head">
@@ -371,7 +372,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 				</li>
 
 				<li class="w-slave-1">
-					<div class="img-box icon-bg bg-sphere">
+					<div class="img-box icon-bg round bg-sphere">
 						<i class="material-icons-round mui-icon">screenshot_monitor</i>
 					</div>
 					<div class="li-head">
@@ -514,7 +515,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 			</div>
 
 			<div class="ttl-box fs-xl width-x">
-				<div class="ttl-box__img img-box icon-bg bg-sphere">
+				<div class="ttl-box__img img-box icon-bg round bg-sphere">
 					<svg class="o-fit-contain inner-icon figures">
 						<use href="./images/icons/sprites/figures.svg#figure-2"></use>
 					</svg>
@@ -561,7 +562,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 					</div>
 					<div class="card__body">
 						<div class="ttl-box">
-							<div class="ttl-box__img img-box icon-bg bg-sphere"></div>
+							<div class="ttl-box__img img-box icon-bg round bg-sphere"></div>
 							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
 							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 						</div>
@@ -595,14 +596,14 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 				<li class="card">
 					<div class="card__body">
 						<div class="ttl-box">
-							<div class="ttl-box__img img-box icon-bg bg-sphere"></div>
+							<div class="ttl-box__img img-box icon-bg round bg-sphere"></div>
 							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
 							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 						</div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, nesciunt quas? Amet, dignissimos
 							eligendi? Sed, rerum maiores, quidem saepe laudantium iste laborum quae nam doloremque ipsum culpa placeat
 							in sit!</p>
-						<div class="img-box icon-bg txt-icon"
+						<div class="img-box icon-bg round txt-icon"
 								 style="--size-x: 3;
 						--bg: var(--clr-2b-solid);">
 							<img class="inner-icon"
@@ -670,8 +671,8 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 
 				<li class="card">
 					<div class="card__head">
-						<div class="card__img img-box icon-bg">
-							<img class="o-fit-cover round"
+						<div class="card__img img-box icon-bg round">
+							<img class="o-fit-cover"
 									 style="--pos: 100%"
 									 src="./images/demo-3.webp"
 									 alt="">
@@ -689,7 +690,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 
 				<li class="card">
 					<div class="card__head card__head_ttl-side sm-a-flow-row">
-						<div class="card__img img-box icon-bg bg-sphere">
+						<div class="card__img img-box icon-bg round bg-sphere">
 							<svg class="o-fit-contain inner-icon figures">
 								<use href="./images/icons/sprites/figures.svg#figure-2"></use>
 							</svg>
@@ -711,7 +712,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 
 				<li class="card x-axis sm-a-flow-row">
 					<div class="card__head">
-						<div class="card__img img-box icon-bg bg-sphere sm-shadow-bottom">
+						<div class="card__img img-box icon-bg round bg-sphere sm-shadow-bottom">
 							<i class="material-icons-round mui-icon">home</i>
 						</div>
 					</div>
@@ -733,7 +734,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 						</div>
 						<div class="card__ttl">
 							<div class="ttl-box">
-								<div class="ttl-box__img img-box icon-bg bg-sphere"></div>
+								<div class="ttl-box__img img-box icon-bg round bg-sphere"></div>
 								<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
 								<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 							</div>
@@ -748,8 +749,8 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 
 				<li class="card x-axis sm-a-flow-row">
 					<div class="card__head">
-						<div class="card__img img-box icon-bg bg-eye sm-shadow-bottom">
-							<img class="o-fit-cover round"
+						<div class="card__img img-box icon-bg round bg-eye sm-shadow-bottom">
+							<img class="o-fit-cover"
 									 style="--pos: 100%"
 									 src="./images/demo-4.webp"
 									 alt="">
@@ -761,7 +762,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 
 					<div class="card__body">
 						<div class="ttl-box">
-							<div class="ttl-box__img img-box icon-bg bg-sphere"></div>
+							<div class="ttl-box__img img-box icon-bg round bg-sphere"></div>
 							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
 							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 						</div>
@@ -799,7 +800,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 						style="--span: 2">
 					<div class="card__body card__body_bg">
 						<div class="ttl-box">
-							<div class="ttl-box__img img-box icon-bg bg-sphere">
+							<div class="ttl-box__img img-box icon-bg round bg-sphere">
 								<i class="material-icons-round mui-icon">home</i>
 							</div>
 							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
@@ -847,7 +848,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 					</div>
 					<div class="card__body card__body_bg txt-col-x"
 							 style="--col: 3">
-						<div class="img-box icon-bg txt-icon"
+						<div class="img-box icon-bg round txt-icon"
 								 style="--size-x: 4;
 						--bg: var(--clr-2b-solid);">
 							<img class="inner-icon"
@@ -864,7 +865,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 							magnam vero recusandae doloribus maxime sed soluta, ut error? Pariatur adipisci rem consequuntur
 							laudantium totam! Itaque, harum, sapiente iure, dicta eligendi cum dolor nesciunt odio.</p>
 
-						<div class="img-box icon-bg txt-icon"
+						<div class="img-box icon-bg round txt-icon"
 								 style="--size-x: 3;
 						--bg: var(--clr-1b-solid);">
 							<img class="inner-icon"
@@ -876,7 +877,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 							vel ab cum ullam animi incidunt distinctio aliquid. Explicabo nemo quidem, alias exercitationem molestias
 							odit nobis. Praesentium dolorum sequi iure atque minima, voluptate eum.</p>
 
-						<div class="img-box icon-bg txt-icon"
+						<div class="img-box icon-bg round txt-icon"
 								 style="--size-x: 2;
 						--bg: var(--clr-2a-solid);">
 							<img class="inner-icon"
@@ -915,8 +916,8 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 							laudantium totam! Itaque, harum, sapiente iure, dicta eligendi cum dolor nesciunt odio.</p>
 
 						<div class="card__head">
-							<div class="card__img img-box icon-bg bg-eye">
-								<img class="o-fit-cover round"
+							<div class="card__img img-box icon-bg round bg-eye">
+								<img class="o-fit-cover"
 										 style="--pos: 20%"
 										 src="./images/demo-4.webp"
 										 alt="">
@@ -1151,7 +1152,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 			<div class="grid-x width-x slide-body">
 				<ul class="grid-x list-w-ribbons out">
 					<li>
-						<div class="img-box icon-bg bg-sphere">
+						<div class="img-box icon-bg round bg-sphere">
 							<i class="material-icons-round mui-icon">monitor</i>
 						</div>
 						<div class="li-head">
@@ -1170,7 +1171,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 					</li>
 
 					<li>
-						<div class="img-box icon-bg bg-sphere">
+						<div class="img-box icon-bg round bg-sphere">
 							<i class="material-icons-round mui-icon">phone_android</i>
 						</div>
 						<div class="li-head">
@@ -1339,7 +1340,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 						</div>
 
 						<div class="card__body txt-col-x">
-							<div class="img-box icon-bg txt-icon"
+							<div class="img-box icon-bg round txt-icon"
 									 style="--size-x: 4;">
 								<img class="o-fit-cover"
 										 style="--pos: 0%"
@@ -1359,7 +1360,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 					<div class="card">
 						<div class="card__body txt-col-x">
 							<div class="ttl-box">
-								<div class="ttl-box__img img-box icon-bg bg-sphere"></div>
+								<div class="ttl-box__img img-box icon-bg round bg-sphere"></div>
 								<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
 								<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 							</div>
@@ -1401,7 +1402,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 			<div class="slide-body md-flex-dir-col">
 				<ol class="flex-x list-w-ribbons width-x">
 					<li class="h-master-1">
-						<div class="img-box icon-bg bg-sphere">
+						<div class="img-box icon-bg round bg-sphere">
 							<i class="material-icons-round mui-icon">alarm_on</i>
 						</div>
 						<div class="li-head">
@@ -1415,7 +1416,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="h-slave-2 md-min-h-auto">
-						<div class="img-box icon-bg bg-sphere">
+						<div class="img-box icon-bg round bg-sphere">
 							<i class="material-icons-round mui-icon">airport_shuttle</i>
 						</div>
 						<div class="li-head">
@@ -1429,7 +1430,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="h-slave-3 md-min-h-auto">
-						<div class="img-box icon-bg bg-sphere">
+						<div class="img-box icon-bg round bg-sphere">
 							<i class="material-icons-round mui-icon">blur_on</i>
 						</div>
 						<div class="li-head">
@@ -1445,7 +1446,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 
 				<ol class="flex-x list-w-ribbons left cut width-x">
 					<li class="h-slave-1 md-min-h-auto">
-						<div class="img-box icon-bg bg-sphere">
+						<div class="img-box icon-bg round bg-sphere">
 							<i class="material-icons-round mui-icon">calendar_month</i>
 						</div>
 						<div class="li-head">
@@ -1458,7 +1459,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="h-master-2">
-						<div class="img-box icon-bg bg-sphere">
+						<div class="img-box icon-bg round bg-sphere">
 							<i class="material-icons-round mui-icon">build</i>
 						</div>
 						<div class="li-head">
@@ -1474,7 +1475,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="h-master-3">
-						<div class="img-box icon-bg bg-sphere">
+						<div class="img-box icon-bg round bg-sphere">
 							<i class="material-icons-round mui-icon">bug_report</i>
 						</div>
 						<div class="li-head">
