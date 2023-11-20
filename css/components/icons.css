@@ -1,13 +1,10 @@
 .icon-bg {
 	--img-w: var(--img-h);
-}
-.icon-bg::after {
-	content: "";
-	position: absolute;
-	inset: 0;
+
 	background: var(--bg, none);
 	transition: var(--tsn, none);
 	border-radius: var(--radius, initial);
+	line-height: normal;
 }
 
 .inner-icon {
@@ -19,11 +16,11 @@
 .round {
 	--radius: 50%;
 }
-.bg-sphere {
+.sphere {
 	--bg: var(--sphere, var(--sphere-1b));
 }
-.bg-eye {
-	--bg: var(--eye);
+.eye {
+	--overlay: var(--eye);
 }
 
 .txt-icon {

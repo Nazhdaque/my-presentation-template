@@ -20,10 +20,6 @@
 	--col: 2;
 }
 
-.slide-4 .overlay {
-	--bg: hsl(175, 85%, 30%, 0.25);
-}
-
 .slide-4 .filter {
 	filter: grayscale(1) contrast(1.5);
 }

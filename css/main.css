@@ -9,7 +9,6 @@
 @import url(./components/header-nav.css) layer(components);
 @import url(./components/sidebar.css) layer(components);
 @import url(./components/swiper.css) layer(components);
-@import url(./components/heading.css) layer(components);
 @import url(./components/ribbons.css) layer(components);
 @import url(./components/list-w-ribbons.css) layer(components);
 @import url(./components/scroll-snap.css) layer(components);

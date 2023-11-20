@@ -186,10 +186,11 @@
 }
 
 .overlay::after {
-	position: absolute;
 	content: "";
+	position: absolute;
 	inset: 0;
-	background: var(--bg);
+	background: var(--overlay, none);
+	border-radius: var(--radius, initial);
 }
 
 .img-box {
@@ -222,13 +223,6 @@
 .o-hidden {
 	overflow: hidden;
 }
-
-/* .round,
-.round::before,
-.round::after {
-	border-radius: 50%;
-	aspect-ratio: 1;
-} */
 
 .v-visible {
 	visibility: visible;

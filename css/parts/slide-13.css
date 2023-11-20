@@ -43,48 +43,51 @@
 	--gap-x: 3rem;
 	--gap-y: var(--gap-x);
 	--img-h: 3rem;
-	--head-bg-clr: var(--clr-1b-alpha);
+	--head-bg-clr: var(--clr-2b-alpha);
+	--bg: var(--clr-2b-solid);
+	--sphere: var(--sphere-2b);
 
 	counter-reset: arrow-list-counter 0;
 }
 
+/* .img-box is not working properly on chrome because of "container: img-container" / size; the counter is not incrementing */
 .cards_arrows .card__img {
 	counter-increment: arrow-list-counter;
-	border-radius: 50%;
-}
-
-.cards_arrows .card__img::before {
-	content: counter(arrow-list-counter);
-	background: var(--sphere, var(--sphere-1b));
 	display: grid;
 	place-items: center;
 	border-radius: 50%;
 	color: var(--clr-0a-solid);
-	font-weight: var(--fw-bd);
-	font-size: 1.5em;
+	font-weight: var(--fw-hv);
+	font-size: calc(var(--img-h) / 2);
 	height: var(--img-h);
+	width: var(--img-h);
 	aspect-ratio: 1;
+}
+
+.cards_arrows .card__img::before {
+	content: counter(arrow-list-counter);
+	font-family: var(--ff-rg);
 }
 
 .card__head_arrow::before,
 .card__head_arrow::after {
 	position: absolute;
+	content: "";
 	z-index: -1;
 }
+
 .card__head_arrow::before {
-	content: "";
 	left: var(--img-h);
 	height: calc(var(--img-h) / 1.5);
 	width: calc(100% - (var(--img-h) + var(--img-h) / 3));
 	background: linear-gradient(
 		90deg,
-		hsl(var(--head-bg-clr), 0) 75%,
+		hsl(var(--head-bg-clr), 0) 80%,
 		hsl(var(--head-bg-clr), 1) 95%
 	);
 }
 
 .card__head_arrow::after {
-	content: "";
 	right: 0;
 	left: auto;
 	border-top: calc(var(--img-h) / 2) solid transparent;
