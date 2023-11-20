@@ -32,3 +32,8 @@
 
 	place-self: start center;
 }
+
+.slide-10 .ttl-box {
+	--col: 3;
+	--x: 1;
+}

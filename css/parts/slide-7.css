@@ -9,6 +9,11 @@
 	--tint: hsla(250, 70%, 40%, 0.5);
 }
 
+.slide-7 .ttl-box {
+	--col: 3;
+	--x: 1;
+}
+
 .slide-7 .masonry > *:nth-child(4) img {
 	object-position: 80%;
 }

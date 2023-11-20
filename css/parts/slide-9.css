@@ -47,10 +47,10 @@
 	--img-h: auto;
 }
 
-.slide-9 .heading {
-	--heading-bg-clr: var(--clr-2b-solid);
-
-	row-gap: 0.25em;
+.slide-9 .ttl-box {
+	--col: 3;
+	--x: 1;
+	--bg: var(--clr-2b-solid);
 }
 
 .slide-9 .side-ribbon {

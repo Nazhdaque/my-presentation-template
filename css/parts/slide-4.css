@@ -4,8 +4,9 @@
 	--clip: var(--clp-left);
 }
 
-.slide-4 .heading {
-	row-gap: 0.25em;
+.slide-4 .ttl-box {
+	--col: 3;
+	--x: 1;
 }
 
 .slide-4 .cards {

@@ -21,6 +21,11 @@
 	place-self: start center;
 }
 
+.slide-8 .ttl-box {
+	--col: 3;
+	--x: 1;
+}
+
 .slide-8 .list-w-ribbons {
 	--col: 3;
 	--gap-x: 4rem;

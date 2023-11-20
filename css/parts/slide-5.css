@@ -18,8 +18,10 @@
 	--clip: var(--clp-left);
 }
 
-.slide-5 .heading {
-	--heading-bg-clr: var(--clr-2b-solid);
+.slide-5 .ttl-box {
+	--col: 3;
+	--x: 1;
+	--bg: var(--clr-2b-solid);
 }
 
 .slide-5 .slide-body {

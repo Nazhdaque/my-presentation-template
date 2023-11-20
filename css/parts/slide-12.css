@@ -19,6 +19,11 @@
 	--x: 1;
 }
 
+.slide-12 .ttl-box {
+	--col: 3;
+	--x: 1;
+}
+
 .slide-12 .list-w-ribbons {
 	--marker-size: 2.5rem;
 	/* --col: 3; */

@@ -13,8 +13,6 @@
 	--side: var(--top);
 	--clip: var(--clp-top);
 	--bg-clr: var(--clr-1b-solid-invert);
-
-	/* --image: url(/images/wave-square-top-1.svg) !important; */
 }
 
 .slide-6 .slide-bg:nth-child(2) {
@@ -37,4 +35,9 @@
 
 .slide-6 .slide-body > * {
 	aspect-ratio: 1;
+}
+
+.slide-6 .ttl-box {
+	--col: 3;
+	--x: 1;
 }

@@ -32,6 +32,11 @@
 	--asp-ratio: 1;
 }
 
+.slide-13 .ttl-box {
+	--col: 3;
+	--x: 1;
+}
+
 .cards_arrows {
 	--col: 3;
 	--x: 1;

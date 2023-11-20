@@ -19,6 +19,11 @@
 	--img-h: 25rem;
 }
 
+.slide-11 .ttl-box {
+	--col: 3;
+	--x: 1;
+}
+
 .txt-col-x {
 	--col: 2;
 	--gap: 3rem;

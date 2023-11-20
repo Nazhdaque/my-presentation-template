@@ -13,8 +13,10 @@
 	--bg-pos: 80%;
 }
 
-.slide-2 .heading {
-	--heading-bg-clr: var(--clr-2b-solid);
+.slide-2 .ttl-box {
+	--col: 3;
+	--x: 1;
+	--bg: var(--clr-2b-solid);
 }
 
 .slide-2 .list-w-ribbons {
