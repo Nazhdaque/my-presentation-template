@@ -1502,7 +1502,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 			<div class="slide-bg"></div>
 
 			<div class="ttl-box fs-3xl width-x">
-				<div class="ttl-box__img img-box icon-bg bg-sphere"
+				<div class="ttl-box__img img-box round icon-bg bg-sphere"
 						 style="--bg: var(--sphere-2b)">
 					<!-- <svg class="o-fit-contain inner-icon figures">
 						<use href="./images/icons/sprites/figures.svg#figure-2"></use>
