@@ -63,6 +63,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 		<div class="slide-content width-x">
 			<div class="slide-bg w-img"></div>
 			<div class="slide-bg-overlay"></div>
+
 			<div class="ttl-box ttl-box_bg-pipe fs-3xl width-x">
 				<h1 class="ttl-box__ttl">Шаблон-конструктор презентаций</h1>
 				<p class="ttl-box__sub fs-md">Альтернатива .pptx</p>
@@ -154,9 +155,9 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 				<span class="scroll-down__text">Scroll down</span>
 			</div>
 
-			<div class="heading fs-xl">
-				<h2 class="fs-xl width-x">Чем такая презентация лучше MS PowerPoint</h2>
-				<p class="fs-md grid-full-width">Спойлер: пожалуй, всем! Счет 12:2 не в пользу PP</p>
+			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
+				<h2 class="ttl-box__ttl">Чем такая презентация лучше MS PowerPoint</h2>
+				<p class="ttl-box__sub fs-md">Спойлер: пожалуй, всем! Счет 12:2 не в пользу PP</p>
 			</div>
 
 			<ol class="flex-x list-w-ribbons">
@@ -512,7 +513,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 				<span class="scroll-down__text">Scroll down</span>
 			</div>
 
-			<div class="ttl-box fs-xl">
+			<div class="ttl-box fs-xl width-x">
 				<div class="ttl-box__img img-box icon-bg bg-sphere">
 					<svg class="o-fit-contain inner-icon figures">
 						<use href="./images/icons/sprites/figures.svg#figure-2"></use>
@@ -944,9 +945,9 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 			<div class="slide-bg trapeze"></div>
 			<div class="slide-bg trapeze w-img"></div>
 
-			<div class="heading fs-xl">
-				<h2 class="fs-xl width-x">Scroll-snap</h2>
-				<p class="fs-md grid-full-width">какие-то галереи изображений, слайды и т.д.</p>
+			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
+				<h2 class="ttl-box__ttl">Scroll-snap</h2>
+				<p class="ttl-box__sub fs-md">какие-то галереи изображений, слайды и т.д.</p>
 			</div>
 
 			<div class="grid-x width-x slide-body">
@@ -1012,9 +1013,9 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 			<div class="slide-bg spike"></div>
 			<div class="slide-bg spike w-img"></div>
 
-			<div class="heading fs-xl">
-				<h2 class="fs-xl width-x">Сhart.js</h2>
-				<p class="fs-md grid-full-width">Интерактивные графики на любой вкус</p>
+			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
+				<h2 class="ttl-box__ttl">Сhart.js</h2>
+				<p class="ttl-box__sub fs-md">Интерактивные графики на любой вкус</p>
 			</div>
 
 			<div class="grid-x width-x slide-body">
@@ -1043,9 +1044,9 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 				<span class="scroll-down__text">Scroll down</span>
 			</div>
 
-			<div class="heading fs-xl">
-				<h2 class="fs-xl width-x">Модульная сетка</h2>
-				<p class="fs-md grid-full-width">Настраиваемая, любой конфигурации, «резиновая», responsive</p>
+			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
+				<h2 class="ttl-box__ttl">Модульная сетка</h2>
+				<p class="ttl-box__sub fs-md">Настраиваемая, любой конфигурации, «резиновая», responsive</p>
 			</div>
 
 			<ol class="demo grid-x"
@@ -1142,9 +1143,9 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 		<div class="slide-content width-x">
 			<div class="slide-bg zigzag w-img"></div>
 
-			<div class="heading fs-xl">
-				<h2 class="fs-xl width-x">Типографика</h2>
-				<p class="fs-md grid-full-width">fluid, + дополнительно адаптируется к размеру экрана на 768px</p>
+			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
+				<h2 class="ttl-box__ttl">Типографика</h2>
+				<p class="ttl-box__sub fs-md">fluid, + дополнительно адаптируется к размеру экрана на 768px</p>
 			</div>
 
 			<div class="grid-x width-x slide-body">
@@ -1205,8 +1206,9 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 			<div class="slide-bg circle w-img"></div>
 			<div class="slide-bg circle w-img"></div>
 			<div class="slide-bg heptagon"></div>
-			<div class="heading fs-xl">
-				<h2 class="fs-xl width-x">Подгрузка видео по клику</h2>
+
+			<div class="ttl-box ttl-box_bg-pipe fs-xl">
+				<h2 class="ttl-box__ttl">Подгрузка видео по клику</h2>
 			</div>
 
 			<ul class="grid-x cards">
@@ -1286,10 +1288,9 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 			<div class="slide-bg spike w-img"></div>
 			<div class="slide-bg spike w-img"></div>
 
-			<div class="heading fs-xl width-x">
-				<h2 class="fs-xl">Форма обратной связи</h2>
-				<p class="fs-md grid-full-width">С валидацией на фронте и сообщением об успешной отправке
-				</p>
+			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
+				<h2 class="ttl-box__ttl">Форма обратной связи</h2>
+				<p class="ttl-box__sub fs-md">С валидацией на фронте и сообщением об успешной отправке</p>
 			</div>
 
 			<div class="grid-x width-x slide-body">
@@ -1393,8 +1394,8 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 			<div class="slide-bg diag w-img"></div>
 			<div class="slide-bg-overlay diag"></div>
 
-			<div class="heading fs-xl">
-				<h2 class="fs-xl width-x">js heightSetter test</h2>
+			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
+				<h2 class="ttl-box__ttl">js heightSetter test</h2>
 			</div>
 
 			<div class="slide-body md-flex-dir-col">
@@ -1499,7 +1500,7 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 			<div class="slide-bg"></div>
 			<div class="slide-bg"></div>
 
-			<div class="ttl-box fs-3xl">
+			<div class="ttl-box fs-3xl width-x">
 				<div class="ttl-box__img img-box icon-bg bg-sphere"
 						 style="--bg: var(--sphere-2b)">
 					<!-- <svg class="o-fit-contain inner-icon figures">
@@ -1588,9 +1589,9 @@ var _a=Object.defineProperty;var wa=(i,t,e)=>t in i?_a(i,t,{enumerable:!0,config
 		<div class="slide-content width-x">
 			<div class="slide-bg w-img"></div>
 
-			<div class="heading fs-xl">
-				<h2 class="fs-xl">Plars[on]</h2>
-				<p class="fs-md grid-full-width">test: chat interface layout</p>
+			<div class="ttl-box ttl-box_bg-pipe fs-xl">
+				<h2 class="ttl-box__ttl">Plarson test</h2>
+				<p class="ttl-box__sub fs-md">chat interface layout</p>
 			</div>
 
 			<!-- |||||||||| |||||||||| PLARSON TEST starts here |||||||||| |||||||||| -->
