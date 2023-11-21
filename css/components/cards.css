@@ -32,6 +32,7 @@
 	place-self: center;
 	padding: 1em;
 	z-index: 1;
+	pointer-events: none;
 }
 
 .card__ttl_bg {

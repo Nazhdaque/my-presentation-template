@@ -27,22 +27,24 @@
 @import url(./components/form.css) layer(components);
 @import url(./components/form-modal.css) layer(components);
 @import url(./components/scroll-down.css) layer(components);
+@import url(./components/tag.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
 @import url(./parts/slides-bgs.css) layer(parts);
-@import url(./parts/slide-1.css) layer(parts);
-@import url(./parts/slide-2.css) layer(parts);
-@import url(./parts/slide-3.css) layer(parts);
-@import url(./parts/slide-4.css) layer(parts);
-@import url(./parts/slide-5.css) layer(parts);
-@import url(./parts/slide-6.css) layer(parts);
-@import url(./parts/slide-7.css) layer(parts);
-@import url(./parts/slide-8.css) layer(parts);
-@import url(./parts/slide-9.css) layer(parts);
-@import url(./parts/slide-10.css) layer(parts);
-@import url(./parts/slide-11.css) layer(parts);
-@import url(./parts/slide-12.css) layer(parts);
-@import url(./parts/slide-13.css) layer(parts);
+@import url(./parts/slide-title-slide.css) layer(parts);
+@import url(./parts/slide-advantages) layer(parts);
+@import url(./parts/slide-table.css) layer(parts);
+@import url(./parts/slide-cards.css) layer(parts);
+@import url(./parts/slide-charts.css) layer(parts);
+@import url(./parts/slide-grid-system.css) layer(parts);
+@import url(./parts/slide-typography.css) layer(parts);
+@import url(./parts/slide-video.css) layer(parts);
+@import url(./parts/slide-doughnut.css) layer(parts);
+@import url(./parts/slide-trapeze-bg.css) layer(parts);
+@import url(./parts/slide-form.css) layer(parts);
+
+@import url(./parts/slide-diag-bg.css) layer(parts);
+@import url(./parts/slide-blobs-bg.css) layer(parts);
 @import url(./parts/__plarson.css) layer(parts);
 @import url(./parts/slides.css) layer(parts);
 @import url(./parts/footer.css) layer(parts);

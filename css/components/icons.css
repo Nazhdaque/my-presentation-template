@@ -10,7 +10,6 @@
 	place-items: center;
 	color: var(--clr-0a-solid);
 	font-weight: var(--fw-hv);
-	font-size: calc(var(--img-h) / 2);
 }
 
 .inner-icon {

@@ -1,0 +1,25 @@
+.slide-trapeze-bg .slide-bg,
+.slide-trapeze-bg .slide-bg-overlay {
+	--side: var(--right);
+	--clip: var(--clp-right);
+	--bg: var(--clr-1a-solid-invert);
+	--overlay: linear-gradient(
+		-90deg,
+		hsl(0, 0%, 0%, 0.1) 0%,
+		hsl(0, 0%, 0%, 0.7) 70%
+	);
+	--image: url(/images/demo-4.webp);
+	--pos: 60%;
+}
+.slide-trapeze-bg .slide-bg:first-child,
+.slide-trapeze-bg .slide-bg-overlay:first-child {
+	--left: 0 auto 0 -19%;
+	--side: var(--left);
+	--clip: var(--clp-left);
+}
+
+.slide-trapeze-bg .ttl-box {
+	--col: 3;
+	--x: 1;
+	--bg: var(--clr-2b-solid);
+}

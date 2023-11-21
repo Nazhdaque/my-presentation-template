@@ -1,83 +1,9 @@
 .scroll-snap-inline,
 .scroll-snap-block {
-	--img-w: auto;
-	--img-h: auto;
 	--clr: var(--clr-2b-solid);
 
-	--clp-between-inline: polygon(
-		0 0,
-		calc(100% - 1cqh) 0,
-		calc(100% - 1cqh) calc(50% + 1.19cqh),
-		100% 50%,
-		calc(100% - 1cqh) calc(50% - 1.19cqh),
-		calc(100% - 1cqh) 100%,
-		0 100%,
-
-		calc(0% - 1cqh) 100%,
-		0 calc(50% + 0.04cqh + 1.19cqh),
-		calc(1cqh + 0.03cqh) 50%,
-		0 calc(50% - 0.04cqh - 1.19cqh),
-		calc(0% - 1cqh) 0%
-	);
-
-	--clp-first-inline: polygon(
-		0 0,
-		calc(100% - 1cqh) 0,
-		calc(100% - 1cqh) calc(50% + 1.19cqh),
-		100% 50%,
-		calc(100% - 1cqh) calc(50% - 1.19cqh),
-		calc(100% - 1cqh) 100%,
-		0 100%
-	);
-
-	--clp-last-inline: polygon(
-		0 0,
-		100% 0,
-		100% 100%,
-
-		calc(0% - 1cqh) 100%,
-		0 calc(50% + 0.04cqh + 1.19cqh),
-		calc(1cqh + 0.03cqh) 50%,
-		0 calc(50% - 0.04cqh - 1.19cqh),
-		calc(0% - 1cqh) 0%
-	);
-
-	/* --- */
-	--clp-between-block: polygon(
-		0 0,
-		100% 0,
-		100% calc(100% - 1cqh),
-		calc(50% + 1.19cqh) calc(100% - 1cqh),
-		50% 100%,
-		calc(50% - 1.19cqh) calc(100% - 1cqh),
-		0 calc(100% - 1cqh),
-		0 0,
-		calc(50% - 0.04cqh - 1.19cqh) 0,
-		50% calc(1cqh + 0.03cqh),
-		calc(50% + 0.04cqh + 1.19cqh) 0
-	);
-
-	--clp-first-block: polygon(
-		0 0,
-		100% 0,
-		100% calc(100% - 1cqh),
-		calc(50% + 1.19cqh) calc(100% - 1cqh),
-		50% 100%,
-		calc(50% - 1.19cqh) calc(100% - 1cqh),
-		0 calc(100% - 1cqh)
-	);
-
-	--clp-last-block: polygon(
-		0 0,
-		calc(50% - 0.04cqh - 1.19cqh) 0,
-		50% calc(1cqh + 0.03cqh),
-		calc(50% + 0.04cqh + 1.19cqh) 0,
-		100% 0,
-		100% 100%,
-		0 100%
-	);
-
 	display: grid;
+	gap: 1rem;
 }
 
 .scroll-snap-inline > *,
@@ -94,19 +20,6 @@
 	scroll-snap-type: x mandatory;
 	grid-auto-flow: column;
 	grid-template-columns: 100%;
-	grid-auto-columns: calc(100% - 0.9cqh * 2);
-}
-
-.scroll-snap-inline > *:first-child {
-	clip-path: var(--clp-first-inline);
-	margin-left: 0;
-}
-.scroll-snap-inline > * {
-	clip-path: var(--clp-between-inline);
-	margin-left: -0.9cqh;
-}
-.scroll-snap-inline > *:last-child {
-	clip-path: var(--clp-last-inline);
 }
 
 /* |||||||||| |||||||||| block */
@@ -116,16 +29,4 @@
 	scroll-snap-type: y mandatory;
 	grid-auto-flow: row;
 	grid-template-rows: 100%;
-	grid-auto-rows: calc(100% - 0.9cqh * 2);
-}
-
-.scroll-snap-block > *:first-child {
-	clip-path: var(--clp-first-block);
-}
-.scroll-snap-block > * {
-	clip-path: var(--clp-between-block);
-	margin-top: -0.9cqh;
-}
-.scroll-snap-block > *:last-child {
-	clip-path: var(--clp-last-block);
 }

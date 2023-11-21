@@ -1,9 +1,9 @@
-.slide-13 .slide-bg:nth-child(1) {
+.slide-blobs-bg .slide-bg:nth-child(1) {
 	--left: -10% auto 0 -10%;
 	--side: var(--left);
 	--w-inline: max(40%, 10rem);
 	--h-inline: unset;
-	--radius: 35% 65% 37% 63% / 52% 66% 34% 48%;
+	--radius: 27% 73% 76% 24% / 57% 25% 75% 43%;
 	--overlay: linear-gradient(
 		90deg,
 		hsl(0, 0%, 0%, 0.2) 10%,
@@ -12,17 +12,17 @@
 	--asp-ratio: 1;
 }
 
-.slide-13 .slide-bg:nth-child(2) {
+.slide-blobs-bg .slide-bg:nth-child(2) {
 	--bg: var(--clr-1a-solid-invert);
 	--right: 40% -7% 0 auto;
 	--side: var(--right);
 	--w-inline: max(30%, 7rem);
 	--h-inline: unset;
-	--radius: 64% 36% 46% 54% / 37% 31% 69% 63%;
+	--radius: 36% 64% 16% 84% / 57% 38% 62% 43%;
 	--asp-ratio: 1;
 }
 
-.slide-13 .slide-bg:nth-child(3) {
+.slide-blobs-bg .slide-bg:nth-child(3) {
 	--bg: var(--clr-1b-solid-invert);
 	--right: -45% 35% 0 auto;
 	--side: var(--right);

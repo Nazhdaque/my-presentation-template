@@ -1,37 +1,37 @@
 import sidebar from "../html/parts/sidebar.html?raw";
-import slide_1 from "../html/parts/slide-1.html?raw";
-import slide_2 from "../html/parts/slide-2.html?raw";
-import slide_3 from "../html/parts/slide-3.html?raw";
-import slide_4 from "../html/parts/slide-4.html?raw";
-import slide_5 from "../html/parts/slide-5.html?raw";
-import slide_6 from "../html/parts/slide-6.html?raw";
-import slide_7 from "../html/parts/slide-7.html?raw";
-import slide_8 from "../html/parts/slide-8.html?raw";
-import slide_9 from "../html/parts/slide-9.html?raw";
-import slide_10 from "../html/parts/slide-10.html?raw";
-import slide_11 from "../html/parts/slide-11.html?raw";
-import slide_12 from "../html/parts/slide-12.html?raw";
-import slide_13 from "../html/parts/slide-13.html?raw";
-import slide_14 from "../html/parts/__plarson.html?raw";
+import slide_title from "../html/parts/slide-title-slide.html?raw";
+import slide_advantages from "../html/parts/slide-advantages.html?raw";
+import slide_grid from "../html/parts/slide-grid-system.html?raw";
+import slide_table from "../html/parts/slide-table.html?raw";
+import slide_cards from "../html/parts/slide-cards.html?raw";
+import slide_trapeze_bg from "../html/parts/slide-trapeze-bg.html?raw";
+import slide_charts from "../html/parts/slide-charts.html?raw";
+import slide_typography from "../html/parts/slide-typography.html?raw";
+import slide_video from "../html/parts/slide-video.html?raw";
+import slide_form from "../html/parts/slide-form.html?raw";
+import slide_doughnut from "../html/parts/slide-doughnut.html?raw";
+import slide_diag_bg from "../html/parts/slide-diag-bg.html?raw";
+import slide_blobs_bg from "../html/parts/slide-blobs-bg.html?raw";
+import slide_plarson from "../html/parts/__plarson.html?raw";
 import formModal from "../html/parts/form-modal.html?raw";
 
 document.querySelector(".sidebar").insertAdjacentHTML("beforeend", sidebar);
 
 const slidesContainer = document.querySelector(".swiper-wrapper");
-slidesContainer.insertAdjacentHTML("beforeend", slide_1);
-slidesContainer.insertAdjacentHTML("beforeend", slide_2);
-slidesContainer.insertAdjacentHTML("beforeend", slide_3);
-slidesContainer.insertAdjacentHTML("beforeend", slide_4);
-slidesContainer.insertAdjacentHTML("beforeend", slide_5);
-slidesContainer.insertAdjacentHTML("beforeend", slide_6);
-slidesContainer.insertAdjacentHTML("beforeend", slide_7);
-slidesContainer.insertAdjacentHTML("beforeend", slide_8);
-slidesContainer.insertAdjacentHTML("beforeend", slide_9);
-slidesContainer.insertAdjacentHTML("beforeend", slide_10);
-slidesContainer.insertAdjacentHTML("beforeend", slide_11);
-slidesContainer.insertAdjacentHTML("beforeend", slide_12);
-slidesContainer.insertAdjacentHTML("beforeend", slide_13);
-slidesContainer.insertAdjacentHTML("beforeend", slide_14);
+slidesContainer.insertAdjacentHTML("beforeend", slide_title);
+slidesContainer.insertAdjacentHTML("beforeend", slide_advantages);
+slidesContainer.insertAdjacentHTML("beforeend", slide_grid);
+slidesContainer.insertAdjacentHTML("beforeend", slide_typography);
+slidesContainer.insertAdjacentHTML("beforeend", slide_cards);
+slidesContainer.insertAdjacentHTML("beforeend", slide_video);
+slidesContainer.insertAdjacentHTML("beforeend", slide_table);
+slidesContainer.insertAdjacentHTML("beforeend", slide_charts);
+slidesContainer.insertAdjacentHTML("beforeend", slide_doughnut);
+slidesContainer.insertAdjacentHTML("beforeend", slide_form);
+slidesContainer.insertAdjacentHTML("beforeend", slide_trapeze_bg);
+slidesContainer.insertAdjacentHTML("beforeend", slide_diag_bg);
+slidesContainer.insertAdjacentHTML("beforeend", slide_blobs_bg);
+slidesContainer.insertAdjacentHTML("beforeend", slide_plarson);
 
 document
 	.querySelector(".form-modal")

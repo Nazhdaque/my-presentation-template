@@ -1,5 +1,5 @@
-.slide-8 .slide-bg,
-.slide-8 .slide-bg-overlay {
+.slide-typography .slide-bg,
+.slide-typography .slide-bg-overlay {
 	--w-inline: max(50%, 10rem);
 	--side: var(--left);
 	--mask: var(--clp-left);
@@ -11,21 +11,21 @@
 	--tint: var(--clr-1b-solid);
 }
 
-.slide-8 .slide-body {
+.slide-typography .slide-body {
 	--col: 4;
 	--x: 3;
-	--gap-x: 3rem;
-	--gap-y: var(--gap-x);
 
 	place-self: start center;
 }
 
-.slide-8 .ttl-box {
+.slide-typography .ttl-box {
 	--col: 3;
 	--x: 1;
 }
 
-.slide-8 .cards_arrows_odd_rl {
+.slide-typography .cards_arrows_odd_rl {
+	--gap-x: 6rem;
+	--gap-y: 3rem;
 	--img-h: 5rem;
 }
 
@@ -39,4 +39,8 @@
 	--bg: var(--clr-1a-solid);
 	--sphere: var(--sphere-1b);
 	--head-bg-clr: var(--clr-1a-alpha);
+}
+
+.slide-typography .card__body > *:not(:last-child) {
+	margin-bottom: 0.33rem;
 }

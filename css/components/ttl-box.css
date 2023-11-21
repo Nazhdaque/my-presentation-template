@@ -1,25 +1,24 @@
 .ttl-box {
 	--img-h: 1.5em;
 	--img-size: 1.5em;
-	--gap: 0.5em;
 
 	display: grid;
 	align-items: center;
 	grid-auto-columns: min-content 1fr;
 	grid-auto-rows: min-content;
-	row-gap: var(--gap);
+	row-gap: 0.5em;
 }
 
 .ttl-box__img {
 	grid-area: 1 / 1;
-	margin: 0 var(--gap) 0 0;
+	margin: 0 1em 0 0;
 }
 
 .ttl-box_bg-pipe::before {
 	isolation: isolate;
 	content: "";
 	background: var(--bg, var(--clr-1b-solid));
-	margin: 0 var(--gap) 0 0;
+	margin: 0 1em 0 0;
 	height: 100%;
 	width: 0.2em;
 }
@@ -33,4 +32,18 @@
 
 .ttl-box__sub {
 	grid-column: 1 / span 2;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| */
+.ttl-box_bg-pipe-down {
+	font-size: 0.5em;
+}
+.ttl-box_bg-pipe-down .ttl-box__ttl {
+	grid-column: auto / span 2;
+}
+.ttl-box_bg-pipe-down::before {
+	grid-area: 2 / 1;
+}
+.ttl-box_bg-pipe-down .ttl-box__sub {
+	grid-column: auto;
 }

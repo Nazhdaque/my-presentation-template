@@ -1,5 +1,5 @@
-.slide-12 .slide-bg,
-.slide-12 .slide-bg-overlay {
+.slide-diag-bg .slide-bg,
+.slide-diag-bg .slide-bg-overlay {
 	--side: var(--center);
 	--clip: var(--clp-right);
 	--image: url(/images/demo-4.webp);
@@ -8,13 +8,13 @@
 	--clr-filter: hsl(100, 100%, 50%, 0.1);
 }
 
-.slide-12 .slide-body {
+.slide-diag-bg .slide-body {
 	display: flex;
 	justify-content: space-between;
 	align-items: start;
 	gap: var(--header-height);
 }
-.slide-12 .slide-body > .width-x {
+.slide-diag-bg .slide-body > .width-x {
 	--col: 3;
 	--x: 1;
 
@@ -22,7 +22,7 @@
 	gap: var(--heading-bottom-indent);
 }
 
-.slide-12 .cards_arrows_rl {
+.slide-diag-bg .cards_arrows_rl {
 	--head-bg-clr: var(--clr-2a-alpha);
 	--bg: var(--clr-2a-solid);
 	--sphere: var(--sphere-2a);

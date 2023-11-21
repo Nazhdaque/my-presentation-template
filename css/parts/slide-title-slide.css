@@ -1,4 +1,4 @@
-.slide-1 .slide-bg {
+.slide-title-slide .slide-bg {
 	--side: 0;
 	--w: 100%;
 	--overlay: linear-gradient(
@@ -9,16 +9,16 @@
 	--tint: var(--clr-1a-solid);
 }
 
-.slide-1 .slide-content {
+.slide-title-slide .slide-content {
 	grid-auto-rows: min-content 1fr min-content;
 }
 
-.slide-1 .ttl-box {
+.slide-title-slide .ttl-box {
 	--col: 7;
 	--x: 3;
 }
 
-.slide-1 .cards {
+.slide-title-slide .cards {
 	--col: 4;
 	--gap-x: 2rem;
 	--gap-y: 4rem;

@@ -32,12 +32,8 @@ b {
 	font-weight: var(--fw-sb);
 }
 
-/* p + p {
-	margin-top: 1rem;
-} */
-
 p:not(:only-child, :last-child, :last-of-type) {
-	margin-bottom: 1rem;
+	margin-bottom: 1em;
 }
 
 *::selection {

@@ -85,9 +85,9 @@ mail.addEventListener("click", handleEmailClick);
 
 // ---
 const scrollDownPromptDisable = (scrollContainer, prompt) => {
-	const prompts = document.querySelectorAll(`.${scrollContainer} .${prompt}`);
+	const prompts = document.querySelectorAll(`${scrollContainer} ${prompt}`);
 	prompts.forEach(el => {
-		const container = el.closest(`.${scrollContainer}`);
+		const container = el.closest(`${scrollContainer}`);
 		const handler = () => {
 			el.style.display = "none";
 			container.removeEventListener("scrollend", handler);
@@ -95,7 +95,7 @@ const scrollDownPromptDisable = (scrollContainer, prompt) => {
 		container.addEventListener("scrollend", handler);
 	});
 };
-scrollDownPromptDisable("layout-center", "scroll-down");
+scrollDownPromptDisable(".layout-center", ".scroll-down");
 
 // ---
 console.log(

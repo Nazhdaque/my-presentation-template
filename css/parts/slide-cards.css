@@ -1,30 +1,30 @@
-.slide-4 .slide-bg {
+.demo-cards .slide-bg {
 	--bg: var(--clr-1a-solid-invert);
 	--side: var(--left);
 	--clip: var(--clp-left);
 }
 
-.slide-4 .ttl-box {
+.demo-cards .ttl-box {
 	--col: 3;
 	--x: 1;
 }
 
-.slide-4 .cards {
+.demo-cards .cards {
 	--gap-x: 2rem;
 	--gap-y: 6rem;
 }
-.slide-4 .cards:nth-of-type(1) {
+.demo-cards .cards:nth-of-type(1) {
 	--col: 3;
 }
-.slide-4 .cards:nth-of-type(2) {
+.demo-cards .cards:nth-of-type(2) {
 	--col: 2;
 }
 
-.slide-4 .filter {
+.demo-cards .filter {
 	filter: grayscale(1) contrast(1.5);
 }
 
-.slide-4 .txt-col-x {
+.demo-cards .txt-col-x {
 	--gap: calc(var(--card-gap) * 3);
 	--shrink: 0.75;
 }

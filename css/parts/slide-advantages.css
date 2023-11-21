@@ -1,5 +1,5 @@
-.slide-2 .slide-bg,
-.slide-2 .slide-bg-overlay {
+.slide-advantages .slide-bg,
+.slide-advantages .slide-bg-overlay {
 	--side: var(--left);
 	--clip: var(--clp-left);
 	--overlay: linear-gradient(
@@ -13,19 +13,19 @@
 	--pos: 80%;
 }
 
-.slide-2 .ttl-box {
+.slide-advantages .ttl-box {
 	--col: 3;
 	--x: 1;
 	--bg: var(--clr-2b-solid);
 }
 
-.slide-2 .slide-content {
+.slide-advantages .slide-content {
 	display: flex;
 	justify-content: space-between;
 	align-items: start;
 	gap: var(--header-height);
 }
-.slide-2 .slide-content > .width-x {
+.slide-advantages .slide-content > .width-x {
 	--col: 5;
 	--x: 2;
 
@@ -33,7 +33,7 @@
 	gap: var(--heading-bottom-indent);
 }
 
-.slide-2 .cards_arrows_rl .ttl-box {
+.slide-advantages .cards_arrows_rl .ttl-box {
 	/* --head-bg-clr: var(--clr-2a-alpha); */
 	--bg: var(--clr-1a-solid) !important;
 	/* --sphere: var(--sphere-2a); */

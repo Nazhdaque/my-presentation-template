@@ -1,0 +1,20 @@
+.tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5em;
+	padding-inline: 0.25em 0.5em;
+	margin-inline: 0.25em;
+	border-radius: 100vw;
+	color: var(--clr-0a-solid);
+	background-color: hsl(var(--clr-1b-alpha), 1);
+	isolation: isolate;
+}
+.tag::before {
+	isolation: isolate;
+	content: "";
+	background: var(--sphere-2c-1a);
+	background-size: contain;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+}

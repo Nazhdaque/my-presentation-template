@@ -1,4 +1,5 @@
-.slide-7 .slide-bg {
+.slide-grid-system .slide-bg {
+	--image: url(/images/demo-3.webp);
 	--side: 0;
 	--w: 100%;
 	--overlay: linear-gradient(
@@ -9,17 +10,17 @@
 	--tint: hsla(250, 70%, 40%, 0.5);
 }
 
-.slide-7 .ttl-box {
+.slide-grid-system .ttl-box {
 	--col: 3;
 	--x: 1;
 }
 
-.slide-7 .masonry > *:nth-child(4) img {
+.slide-grid-system .masonry > *:nth-child(4) img {
 	object-position: 80%;
 }
-.slide-7 .masonry > *:nth-child(7) img {
+.slide-grid-system .masonry > *:nth-child(7) img {
 	object-position: 40%;
 }
-.slide-7 .masonry > *:nth-child(10) img {
+.slide-grid-system .masonry > *:nth-child(10) img {
 	object-position: 10%;
 }

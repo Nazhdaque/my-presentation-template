@@ -1,5 +1,5 @@
-.slide-6 .slide-bg,
-.slide-6 .slide-bg-overlay {
+.slide-charts .slide-bg,
+.slide-charts .slide-bg-overlay {
 	--w: var(--w-block);
 	--h: var(--h-block);
 	--side: var(--bottom);
@@ -8,19 +8,19 @@
 	--trend-base: 90%;
 }
 
-.slide-6 .slide-bg:nth-child(1),
-.slide-6 .slide-bg-overlay:nth-child(1) {
+.slide-charts .slide-bg:nth-child(1),
+.slide-charts .slide-bg-overlay:nth-child(1) {
 	--side: var(--top);
 	--clip: var(--clp-top);
 	--bg: var(--clr-1b-solid-invert);
 }
 
-.slide-6 .slide-bg:nth-child(2) {
+.slide-charts .slide-bg:nth-child(2) {
 	--pos: center 20%;
 	--image: url(/images/demo-4.webp);
 }
 
-.slide-6 .slide-body {
+.slide-charts .slide-body {
 	--col: 4;
 	--x: 3;
 	--gap-x: 2rem;
@@ -33,11 +33,11 @@
 	padding: 2rem;
 }
 
-.slide-6 .slide-body > * {
+.slide-charts .slide-body > * {
 	aspect-ratio: 1;
 }
 
-.slide-6 .ttl-box {
+.slide-charts .ttl-box {
 	--col: 3;
 	--x: 1;
 }

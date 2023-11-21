@@ -20,6 +20,7 @@
 .cards_arrows_counter .card__img::before {
 	content: counter(arrow-list-counter);
 	font-family: var(--ff-rg);
+	font-size: 1.5em;
 }
 
 .card__head_arrow {
@@ -101,10 +102,11 @@
 .cards_arrows_rl .ttl-box__ttl,
 .cards_arrows_odd_rl > *:nth-child(2n-1) .ttl-box__ttl {
 	grid-column: 1;
+	text-align: right;
 }
 
 .cards_arrows_rl .ttl-box::before,
 .cards_arrows_odd_rl > *:nth-child(2n-1) .ttl-box::before {
 	grid-column: 2;
-	margin: 0 0 0 var(--gap);
+	margin: 0 0 0 1em;
 }

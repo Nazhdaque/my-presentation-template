@@ -1,4 +1,4 @@
-.slide-11 .slide-bg {
+.slide-doughnut .slide-bg {
 	--w: auto;
 	--h: 80%;
 	--side: var(--center);
@@ -10,16 +10,16 @@
 	--image: url(/images/demo-3.webp);
 }
 
-.slide-11 .grid-x {
+.slide-doughnut .grid-x {
 	--gap-x: 5vw;
 	--gap-y: 5vw;
 }
 
-.slide-11 .cards:nth-of-type(1) > * {
+.slide-doughnut .cards:nth-of-type(1) > * {
 	--img-h: 25rem;
 }
 
-.slide-11 .ttl-box {
+.slide-doughnut .ttl-box {
 	--col: 3;
 	--x: 1;
 }
