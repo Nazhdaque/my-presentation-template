@@ -9,7 +9,7 @@
 	--x: 1;
 }
 
-.demo-cards .cards {
+.demo-cards .cards:not(.cards_plain-list) {
 	--gap-x: 2rem;
 	--gap-y: 6rem;
 }

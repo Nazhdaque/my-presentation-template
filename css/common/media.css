@@ -69,6 +69,9 @@
 	.sm-a-flow-row {
 		grid-auto-flow: row;
 	}
+	.sm-grid-col-a {
+		grid-column: auto;
+	}
 	/* .sm-col-span-0 {
 		grid-column: auto;
 	}

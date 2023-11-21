@@ -100,4 +100,46 @@
 	gap: var(--card-gap);
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| test area */
+/* |||||||||| |||||||||| |||||||||| |||||||||| ordered list */
+.cards_ordered-list {
+	counter-reset: list-counter 0;
+}
+
+.cards_ordered-list > * {
+	counter-increment: list-counter;
+}
+.cards_ordered-list .sphere.card__img::before {
+	content: counter(list-counter);
+	font-family: var(--ff-rg);
+	font-size: calc(var(--img-w) / 2);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| plain list */
+.cards_plain-list {
+	--gap-y: 0.5em;
+	--img-size: 1.5rem;
+	--head-bg-clr: var(--clr-1a-alpha);
+	--sphere: var(--sphere-2c-1a);
+	--shadow: none;
+
+	margin-block: 1em;
+}
+
+.cards_plain-list .ttl-box {
+	margin-bottom: initial;
+}
+
+.cards_plain-list .card__head {
+	--card-gap: 1em;
+
+	margin-bottom: initial;
+}
+
+.cards_plain-list .sphere.card__img::before {
+	font-weight: var(--fw-sb);
+	font-size: calc(var(--img-w) / 1.25);
+}
+
+.cards_plain-list .card__img {
+	align-self: start;
+}

@@ -127,6 +127,31 @@
 	padding: 0;
 }
 
+/* |||||||||| |||||||||| |||||||||| |||||||||| masonry */
+/* .chess-grid-12 {
+	--col: 6;
+	--shrink: 0.25;
+}
+
+.chess-grid-12 > *:nth-child(3n + 1) {
+	grid-column: 1;
+}
+.chess-grid-12 > *:nth-child(3n + 2) {
+	grid-column: 3;
+}
+.chess-grid-12 > *:nth-child(3n + 3) {
+	grid-column: 5;
+}
+.chess-grid-12 > *:nth-child(6n + 4) {
+	grid-column: 2;
+}
+.chess-grid-12 > *:nth-child(6n + 5) {
+	grid-column: 4;
+}
+.chess-grid-12 > *:nth-child(6n + 6) {
+	grid-column: 6;
+} */
+
 /* |||||||||| |||||||||| |||||||||| |||||||||| demo colors */
 .demo > * {
 	--clr-shift: 0;

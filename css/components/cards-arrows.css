@@ -10,19 +10,6 @@
 	--sphere: var(--sphere-2b);
 }
 
-.cards_arrows_counter {
-	counter-reset: arrow-list-counter 0;
-}
-
-.cards_arrows_counter > * {
-	counter-increment: arrow-list-counter;
-}
-.cards_arrows_counter .card__img::before {
-	content: counter(arrow-list-counter);
-	font-family: var(--ff-rg);
-	font-size: 1.5em;
-}
-
 .card__head_arrow {
 	--padding: 0 20% 0 0;
 
