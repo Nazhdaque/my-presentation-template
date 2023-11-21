@@ -809,7 +809,7 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 				</li>
 
 				<li class="card">
-					<div class="card__img img-box"
+					<div class="card__img img-box filters"
 							 style="--shadow: none; --img-h: 100%;">
 						<img class="o-fit-contain"
 								 src="./images/rubik-0.svg"
@@ -1561,7 +1561,7 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 						<div class="card__head">
 							<div class="card__img img-box"
 									 style="--shadow: none;">
-								<img class="o-fit-contain"
+								<img class="o-fit-contain filters"
 										 src="./images/rubik-1.svg"
 										 alt="">
 							</div>
