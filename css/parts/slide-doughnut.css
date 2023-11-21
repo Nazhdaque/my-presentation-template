@@ -10,6 +10,10 @@
 	--image: url(/images/demo-3.webp);
 }
 
+.slide-doughnut .card__img {
+	--filters: drop-shadow(0 0 0.5rem var(--clr-1a-solid));
+}
+
 .slide-doughnut .grid-x {
 	--gap-x: 5vw;
 	--gap-y: 5vw;

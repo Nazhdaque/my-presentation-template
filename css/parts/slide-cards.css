@@ -20,11 +20,11 @@
 	--col: 2;
 }
 
-.demo-cards .filter {
-	filter: grayscale(1) contrast(1.5);
-}
-
 .demo-cards .txt-col-x {
 	--gap: calc(var(--card-gap) * 3);
 	--shrink: 0.75;
+}
+
+.demo-cards .filters {
+	--filters: drop-shadow(0 0 0.75rem var(--clr-1a-solid));
 }

@@ -214,6 +214,10 @@
 	z-index: -1;
 }
 
+.filters {
+	filter: var(--filters, none);
+}
+
 /* |||||||||| |||||||||| |||||||||| |||||||||| colors */
 .clr-txt-0a {
 	color: var(--clr-0a-solid);
