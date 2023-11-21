@@ -57,8 +57,8 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 			</li>
 		</ol>
 	</div>
-</li>`,Mr=`<li class="swiper-slide slide-1"
-		data-hash="slide-1">
+</li>`,Mr=`<li class="swiper-slide slide-title-slide"
+		data-hash="title-slide">
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg w-img"></div>
@@ -142,8 +142,8 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 			<p class="slide-ribbon fs-rg caps">under development</p>
 		</div>
 	</div>
-</li>`,Cr=`<li class="swiper-slide slide-2"
-		data-hash="slide-2">
+</li>`,Cr=`<li class="swiper-slide slide-advantages"
+		data-hash="advantages">
 	<div class="layout-center">
 		<div class="slide-content width-x xl-flex-dir-col">
 			<div class="slide-bg trapeze w-img"></div>
@@ -218,7 +218,7 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 
 			<div class="width-x">
 				<div class="ttl-box ttl-box_bg-pipe fs-xl"
-						 style="--bg: var(--clr-1a-solid)">
+						 style="--bg: var(--clr-2b-solid)">
 					<h2 class="ttl-box__ttl">Чем такая презентация <br>лучше, чем MS PowerPoint</h2>
 					<p class="ttl-box__sub fs-md">Спойлер: пожалуй, всем! Счет 12:2 не в пользу PP</p>
 				</div>
@@ -450,15 +450,131 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 			</div>
 		</div>
 	</div>
-</li>`,kr=`<li class="swiper-slide slide-3"
-		data-hash="slide-3">
+</li>`,kr=`<li class="swiper-slide slide-grid-system"
+		data-hash="grid-system">
+	<div class="layout-center">
+		<div class="slide-content width-x">
+			<div class="slide-bg w-img"></div>
+
+			<div class="scroll-down">
+				<div class="scroll-down__chevron"></div>
+				<div class="scroll-down__chevron"></div>
+				<div class="scroll-down__chevron"></div>
+				<span class="scroll-down__text">Scroll down</span>
+			</div>
+
+			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
+				<h2 class="ttl-box__ttl">Модульная сетка</h2>
+				<p class="ttl-box__sub fs-md">Настраиваемая, любой конфигурации, «резиновая», responsive</p>
+			</div>
+
+			<ol class="demo grid-x"
+					id="grid-x"
+					style="--col: 12;">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+
+			<!-- <ol class="demo"
+					id="width-x">
+				<li class="width-x"
+						style="--col: 12; --x: 3"></li>
+				<li class="width-x"
+						style="--col: 12; --x: 6"></li>
+				<li class="width-x"
+						style="--col: 12; --x: 9"></li>
+			</ol> -->
+
+			<ol class="flex-x demo"
+					id="flex-x"
+					style="--col: 3">
+				<li class="w-master-2"></li>
+				<li></li>
+				<li></li>
+				<li class="w-slave-2"></li>
+				<li class="w-slave-2"></li>
+			</ol>
+
+			<ol class="demo gta"
+					id="gta">
+				<li></li>
+				<li></li>
+				<li><img class="o-fit-cover"
+							 src="images/demo-1.webp"
+							 alt=""></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+
+			<ol class="demo grid-x masonry"
+					id="masonry"
+					style="--col: 6">
+				<li class="r-span-x"
+						style="--span: 4"></li>
+				<li class="r-span-x"
+						style="--span: 2"></li>
+				<li class="r-span-x"
+						style="--span: 5"></li>
+				<li class="r-span-x"
+						style="--span: 3"><img class="o-fit-cover"
+							 src="images/demo-1.webp"
+							 alt=""></li>
+				<li class="r-span-x"
+						style="--span: 6"></li>
+				<li class="r-span-x"
+						style="--span: 4"></li>
+				<li class="r-span-x"
+						style="--span: 5"><img class="o-fit-cover"
+							 src="images/demo-1.webp"
+							 alt=""></li>
+				<li class="r-span-x"
+						style="--span: 5"></li>
+				<li class="r-span-x"
+						style="--span: 2"></li>
+				<li class="r-span-x"
+						style="--span: 5"><img class="o-fit-cover"
+							 src="images/demo-1.webp"
+							 alt=""></li>
+				<li class="r-span-x"
+						style="--span: 4"></li>
+				<li class="r-span-x"
+						style="--span: 3"></li>
+			</ol>
+		</div>
+	</div>
+</li>`,Er=`<li class="swiper-slide slide-table"
+		data-hash="demo-table">
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg rounded"></div>
 
 			<table>
 				<caption>
-					Адаптивная и семантически корректная таблица с подсветкой строк, колонок, заголовков
+					<div class="ttl-box">
+						<h2 class="ttl-box__ttl caps fs-md">Таблица</h2>
+						<p class="ttl-box__sub fs-xs">
+							<span class="tag">Адаптивная,</span>
+							<span class="tag">семантически
+								корректная,</span>
+							<span class="tag">с
+								подсветкой строк, колонок, заголовков,</span>
+							<span class="tag">маркировкой ячеек по клику</span>
+						</p>
+					</div>
 				</caption>
 
 				<thead>
@@ -558,8 +674,8 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 
 		</div>
 	</div>
-</li>`,Er=`<li class="swiper-slide slide-4"
-		data-hash="slide-4">
+</li>`,Tr=`<li class="swiper-slide demo-cards"
+		data-hash="demo-cards">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg spike"></div>
@@ -571,7 +687,7 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 				<span class="scroll-down__text">Scroll down</span>
 			</div>
 
-			<div class="ttl-box fs-xl width-x">
+			<div class="ttl-box width-x fs-xl">
 				<div class="ttl-box__img img-box icon-bg round sphere">
 					<svg class="o-fit-contain inner-icon figures">
 						<use href="./images/icons/sprites/figures.svg#figure-2"></use>
@@ -599,7 +715,7 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 					</div>
 					<div class="card__body">
 						<div class="ttl-box ttl-box_bg-pipe">
-							<h3 class="ttl-box__ttl caps">Lekom ipsum dolor</h3>
+							<h3 class="ttl-box__ttl caps">Lekom ipsum dolor sit</h3>
 							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 						</div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
@@ -771,7 +887,7 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 				<li class="card x-axis sm-a-flow-row">
 					<div class="card__head">
 						<div class="card__img img-box icon-bg round sphere sm-shadow-bottom">
-							<i class="material-icons-round mui-icon">home</i>
+							<i class="material-icons-round mui-icon">gpp_good</i>
 						</div>
 					</div>
 
@@ -787,9 +903,8 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 
 				<li class="card">
 					<div class="card__head">
-						<div class="card__img img-box pattern-bg-1">
-							<div class="polygon-ribbon-rounded-cutout-tl fs-sm">Nice!</div>
-						</div>
+						<div class="polygon-ribbon-rounded-cutout-tl fs-sm">Nice!</div>
+						<div class="card__img img-box pattern-bg-1"></div>
 						<div class="card__ttl">
 							<div class="ttl-box">
 								<div class="ttl-box__img img-box icon-bg round sphere"></div>
@@ -860,7 +975,7 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 					<div class="card__body card__body_bg">
 						<div class="ttl-box">
 							<div class="ttl-box__img img-box icon-bg round sphere">
-								<i class="material-icons-round mui-icon">home</i>
+								<i class="material-icons-round mui-icon">gpp_good</i>
 							</div>
 							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
 							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
@@ -979,9 +1094,14 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 									 style="--overlay: var(--eye)">
 								<img class="o-fit-cover"
 										 style="--pos: 20%"
-										 src="./images/demo-4.webp"
+										 src="./images/demo-person-1.webp"
 										 alt="">
 							</div>
+						</div>
+
+						<div class="ttl-box ttl-box_bg-pipe ttl-box_bg-pipe-down">
+							<p class="ttl-box__ttl caps fs-xs">Anthony Lekomski</p>
+							<small class="ttl-box__sub fs-xs">Senior Printer Guru at Lorem Printum company</small>
 						</div>
 
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora unde enim sequi facilis. Aliquam quia
@@ -999,76 +1119,22 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 			</ul>
 		</div>
 	</div>
-</li>`,Tr=`<li class="swiper-slide slide-5"
-		data-hash="slide-5">
+</li>`,Lr=`<li class="swiper-slide slide-trapeze-bg"
+		data-hash="trapeze-bg">
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg trapeze"></div>
 			<div class="slide-bg trapeze w-img"></div>
 
 			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
-				<h2 class="ttl-box__ttl">Scroll-snap</h2>
-				<p class="ttl-box__sub fs-md">какие-то галереи изображений, слайды и т.д.</p>
-			</div>
-
-			<div class="grid-x width-x slide-body">
-				<ul class="scroll-snap-block">
-					<li class="img-box">
-						<img class="o-fit-cover"
-								 src="./images/demo-4.webp"
-								 alt="">
-					</li>
-
-					<li class="img-box">
-						<img class="o-fit-cover"
-								 src="./images/demo-4.webp"
-								 alt="">
-					</li>
-
-					<li class="img-box">
-						<img class="o-fit-cover"
-								 src="./images/demo-4.webp"
-								 alt="">
-					</li>
-
-					<li class="img-box">
-						<img class="o-fit-cover"
-								 src="./images/demo-4.webp"
-								 alt="">
-					</li>
-				</ul>
-
-				<ul class="scroll-snap-inline">
-					<li class="img-box">
-						<img class="o-fit-cover"
-								 src="./images/demo-4.webp"
-								 alt="">
-					</li>
-
-					<li class="img-box">
-						<img class="o-fit-cover"
-								 src="./images/demo-4.webp"
-								 alt="">
-					</li>
-
-					<li class="img-box">
-						<img class="o-fit-cover"
-								 src="./images/demo-4.webp"
-								 alt="">
-					</li>
-
-					<li class="img-box">
-						<img class="o-fit-cover"
-								 src="./images/demo-4.webp"
-								 alt="">
-					</li>
-				</ul>
+				<h2 class="ttl-box__ttl">Lorem ipsum dolor</h2>
+				<p class="ttl-box__sub fs-md">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
 			</div>
 
 		</div>
 	</div>
-</li>`,Lr=`<li class="swiper-slide slide-6"
-		data-hash="slide-6">
+</li>`,Pr=`<li class="swiper-slide slide-charts"
+		data-hash="demo-charts">
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg spike"></div>
@@ -1092,114 +1158,8 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 			</div>
 		</div>
 	</div>
-</li>`,Pr=`<li class="swiper-slide slide-7"
-		data-hash="slide-7">
-	<div class="layout-center">
-		<div class="slide-content width-x">
-			<div class="slide-bg w-img"></div>
-
-			<div class="scroll-down">
-				<div class="scroll-down__chevron"></div>
-				<div class="scroll-down__chevron"></div>
-				<div class="scroll-down__chevron"></div>
-				<span class="scroll-down__text">Scroll down</span>
-			</div>
-
-			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
-				<h2 class="ttl-box__ttl">Модульная сетка</h2>
-				<p class="ttl-box__sub fs-md">Настраиваемая, любой конфигурации, «резиновая», responsive</p>
-			</div>
-
-			<ol class="demo grid-x"
-					id="grid-x"
-					style="--col: 12;">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ol>
-
-			<!-- <ol class="demo"
-					id="width-x">
-				<li class="width-x"
-						style="--col: 12; --x: 3"></li>
-				<li class="width-x"
-						style="--col: 12; --x: 6"></li>
-				<li class="width-x"
-						style="--col: 12; --x: 9"></li>
-			</ol> -->
-
-			<ol class="flex-x demo"
-					id="flex-x"
-					style="--col: 3">
-				<li class="w-master-2"></li>
-				<li></li>
-				<li></li>
-				<li class="w-slave-2"></li>
-				<li class="w-slave-2"></li>
-			</ol>
-
-			<ol class="demo gta"
-					id="gta">
-				<li></li>
-				<li></li>
-				<li><img class="o-fit-cover"
-							 src="images/demo-1.webp"
-							 alt=""></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ol>
-
-			<ol class="demo grid-x masonry"
-					id="masonry"
-					style="--col: 6">
-				<li class="r-span-x"
-						style="--span: 4"></li>
-				<li class="r-span-x"
-						style="--span: 2"></li>
-				<li class="r-span-x"
-						style="--span: 5"></li>
-				<li class="r-span-x"
-						style="--span: 3"><img class="o-fit-cover"
-							 src="images/demo-1.webp"
-							 alt=""></li>
-				<li class="r-span-x"
-						style="--span: 6"></li>
-				<li class="r-span-x"
-						style="--span: 4"></li>
-				<li class="r-span-x"
-						style="--span: 5"><img class="o-fit-cover"
-							 src="images/demo-1.webp"
-							 alt=""></li>
-				<li class="r-span-x"
-						style="--span: 5"></li>
-				<li class="r-span-x"
-						style="--span: 2"></li>
-				<li class="r-span-x"
-						style="--span: 5"><img class="o-fit-cover"
-							 src="images/demo-1.webp"
-							 alt=""></li>
-				<li class="r-span-x"
-						style="--span: 4"></li>
-				<li class="r-span-x"
-						style="--span: 3"></li>
-			</ol>
-		</div>
-	</div>
-</li>`,Ar=`<li class="swiper-slide slide-8"
-		data-hash="slide-8">
+</li>`,Ar=`<li class="swiper-slide slide-typography"
+		data-hash="typography">
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg zigzag w-img"></div>
@@ -1222,16 +1182,16 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 							</div>
 						</div>
 
-						<div class="card__body grid-center">
-							<p class="fs-3xl">Lorem ipsum</p>
-							<p class="fs-2xl">Lorem ipsum</p>
-							<p class="fs-xl">Lorem ipsum</p>
-							<p class="fs-lg">Lorem ipsum</p>
-							<p class="fs-md">Lorem ipsum</p>
-							<p class="fs-rg">Lorem ipsum</p>
-							<p class="fs-sm">Lorem ipsum</p>
-							<p class="fs-xs">Lorem ipsum</p>
-						</div>
+						<ul class="card__body grid-center">
+							<li class="fs-3xl">Lorem ipsum</li>
+							<li class="fs-2xl">Lorem ipsum</li>
+							<li class="fs-xl">Lorem ipsum</li>
+							<li class="fs-lg">Lorem ipsum</li>
+							<li class="fs-md">Lorem ipsum</li>
+							<li class="fs-rg">Lorem ipsum</li>
+							<li class="fs-sm">Lorem ipsum</li>
+							<li class="fs-xs">Lorem ipsum</li>
+						</ul>
 					</li>
 
 					<li class="card">
@@ -1244,80 +1204,31 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 							</div>
 						</div>
 
-						<div class="card__body grid-center">
-							<p class="fs-3xl"
-								 style="--fs-3xl: 1.802rem;">Lorem ipsum</p>
-							<p class="fs-2xl"
-								 style="--fs-2xl: 1.602rem;">Lorem ipsum</p>
-							<p class="fs-xl"
-								 style="--fs-xl: 1.424rem;">Lorem ipsum</p>
-							<p class="fs-lg"
-								 style="--fs-lg: 1.266rem;">Lorem ipsum</p>
-							<p class="fs-md"
-								 style="--fs-md: 1.125rem;">Lorem ipsum</p>
-							<p class="fs-rg"
-								 style="--fs-rg: 1rem;">Lorem ipsum</p>
-							<p class="fs-sm"
-								 style="--fs-sm: 0.889rem;">Lorem ipsum</p>
-							<p class="fs-xs"
-								 style="--fs-xs: 0.79rem;">Lorem ipsum</p>
-						</div>
+						<ul class="card__body grid-center">
+							<li class="fs-3xl"
+									style="--fs-3xl: 1.802rem;">Lorem ipsum</li>
+							<li class="fs-2xl"
+									style="--fs-2xl: 1.602rem;">Lorem ipsum</li>
+							<li class="fs-xl"
+									style="--fs-xl: 1.424rem;">Lorem ipsum</li>
+							<li class="fs-lg"
+									style="--fs-lg: 1.266rem;">Lorem ipsum</li>
+							<li class="fs-md"
+									style="--fs-md: 1.125rem;">Lorem ipsum</li>
+							<li class="fs-rg"
+									style="--fs-rg: 1rem;">Lorem ipsum</li>
+							<li class="fs-sm"
+									style="--fs-sm: 0.889rem;">Lorem ipsum</li>
+							<li class="fs-xs"
+									style="--fs-xs: 0.79rem;">Lorem ipsum</li>
+						</ul>
 					</li>
 				</ul>
-
-
-				<!-- <ul class="grid-x list-w-ribbons out">
-					<li>
-						<div class="img-box icon-bg round sphere">
-							<i class="material-icons-round mui-icon">monitor</i>
-						</div>
-						<div class="li-head">
-							<h3>Большая терция</h3>
-						</div>
-						<div class="li-body grid-center">
-							<p class="fs-3xl">Lorem ipsum</p>
-							<p class="fs-2xl">Lorem ipsum</p>
-							<p class="fs-xl">Lorem ipsum</p>
-							<p class="fs-lg">Lorem ipsum</p>
-							<p class="fs-md">Lorem ipsum</p>
-							<p class="fs-rg">Lorem ipsum</p>
-							<p class="fs-sm">Lorem ipsum</p>
-							<p class="fs-xs">Lorem ipsum</p>
-						</div>
-					</li>
-
-					<li>
-						<div class="img-box icon-bg round sphere">
-							<i class="material-icons-round mui-icon">phone_android</i>
-						</div>
-						<div class="li-head">
-							<h3>Большая секунда</h3>
-						</div>
-						<div class="li-body grid-center">
-							<p class="fs-3xl"
-								 style="--fs-3xl: 1.802rem;">Lorem ipsum</p>
-							<p class="fs-2xl"
-								 style="--fs-2xl: 1.602rem;">Lorem ipsum</p>
-							<p class="fs-xl"
-								 style="--fs-xl: 1.424rem;">Lorem ipsum</p>
-							<p class="fs-lg"
-								 style="--fs-lg: 1.266rem;">Lorem ipsum</p>
-							<p class="fs-md"
-								 style="--fs-md: 1.125rem;">Lorem ipsum</p>
-							<p class="fs-rg"
-								 style="--fs-rg: 1rem;">Lorem ipsum</p>
-							<p class="fs-sm"
-								 style="--fs-sm: 0.889rem;">Lorem ipsum</p>
-							<p class="fs-xs"
-								 style="--fs-xs: 0.79rem;">Lorem ipsum</p>
-						</div>
-					</li>
-				</ul> -->
 			</div>
 		</div>
 	</div>
-</li>`,Or=`<li class="swiper-slide slide-9"
-		data-hash="slide-9">
+</li>`,Or=`<li class="swiper-slide slide-video"
+		data-hash="demo-video-and-scroll-snap">
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg circle w-img"></div>
@@ -1325,7 +1236,7 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 			<div class="slide-bg heptagon"></div>
 
 			<div class="ttl-box ttl-box_bg-pipe fs-xl">
-				<h2 class="ttl-box__ttl">Подгрузка видео по клику</h2>
+				<h2 class="ttl-box__ttl">Подгрузка видео по клику и scroll-snap</h2>
 			</div>
 
 			<ul class="grid-x cards">
@@ -1386,20 +1297,50 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae expedita eveniet
 							voluptatibus, magnam accusantium sunt architecto esse nam et voluptates facere.</p>
 					</div>
+
 					<div class="card__head">
+						<h3 class="card__ttl card__ttl_bg caps ellipsis">Scroll-snap</h3>
+
 						<div class="card__img img-box">
-							<img class="o-fit-cover"
-									 src="./images/demo-3.webp"
-									 alt="">
+							<ul class="scroll-snap-block">
+								<li class="img-box">
+									<img class="o-fit-cover"
+											 src="./images/demo-4.webp"
+											 alt="">
+								</li>
+
+								<li class="img-box">
+									<img class="o-fit-cover"
+											 src="./images/demo-3.webp"
+											 alt="">
+								</li>
+
+								<li class="img-box">
+									<img class="o-fit-cover"
+											 src="./images/demo-2.webp"
+											 alt="">
+								</li>
+
+								<li class="img-box">
+									<img class="o-fit-cover"
+											 src="./images/demo-1.webp"
+											 alt="">
+								</li>
+							</ul>
 						</div>
-						<!-- <h3 class="card__ttl card__ttl_bg caps ellipsis">Lorem ipsum dolor</h3> -->
+						<div class="scroll-down">
+							<div class="scroll-down__chevron"></div>
+							<div class="scroll-down__chevron"></div>
+							<div class="scroll-down__chevron"></div>
+							<span class="scroll-down__text">Scroll down</span>
+						</div>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</div>
-</li>`,Ir=`<li class="swiper-slide slide-10"
-		data-hash="slide-10">
+</li>`,Ir=`<li class="swiper-slide slide-form"
+		data-hash="demo-form">
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg spike w-img"></div>
@@ -1438,8 +1379,8 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 			</div>
 		</div>
 	</div>
-</li>`,Dr=`<li class="swiper-slide slide-11"
-		data-hash="slide-11">
+</li>`,Dr=`<li class="swiper-slide slide-doughnut"
+		data-hash="demo-doughnut-chart">
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg circle w-img"></div>
@@ -1504,8 +1445,8 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 			</div>
 		</div>
 	</div>
-</li>`,Fr=`<li class="swiper-slide slide-12"
-		data-hash="slide-12">
+</li>`,Fr=`<li class="swiper-slide slide-diag-bg"
+		data-hash="diag-bg">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg diag w-img"></div>
@@ -1522,7 +1463,7 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 							<li class="card h-master-1">
 								<div class="card__head card__head_ttl-side card__head_arrow">
 									<div class="card__img img-box icon-bg round sphere">
-										<i class="material-icons-round mui-icon">child_care</i>
+										<i class="material-icons-round mui-icon">add_reaction</i>
 									</div>
 									<div class="ttl-box ttl-box_bg-pipe">
 										<h3 class="ttl-box__ttl caps z-down">Lorem ipsum dolor</h3>
@@ -1541,10 +1482,10 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 							<li class="card h-slave-2">
 								<div class="card__head card__head_ttl-side card__head_arrow">
 									<div class="card__img img-box icon-bg round sphere">
-										<i class="material-icons-round mui-icon">screenshot_monitor</i>
+										<i class="material-icons-round mui-icon">add_moderator</i>
 									</div>
 									<div class="ttl-box ttl-box_bg-pipe">
-										<h3 class="ttl-box__ttl caps z-down">Никаких сюрпризов</h3>
+										<h3 class="ttl-box__ttl caps z-down">Lorem ipsum dolor sit</h3>
 									</div>
 								</div>
 
@@ -1559,10 +1500,10 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 							<li class="card h-slave-2">
 								<div class="card__head card__head_ttl-side card__head_arrow">
 									<div class="card__img img-box icon-bg round sphere">
-										<i class="material-icons-round mui-icon">screenshot_monitor</i>
+										<i class="material-icons-round mui-icon">announcement</i>
 									</div>
 									<div class="ttl-box ttl-box_bg-pipe">
-										<h3 class="ttl-box__ttl caps z-down">Никаких сюрпризов</h3>
+										<h3 class="ttl-box__ttl caps z-down">Lorem ipsum dolor sit amet</h3>
 									</div>
 								</div>
 
@@ -1580,10 +1521,10 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 							<li class="card h-slave-1">
 								<div class="card__head card__head_ttl-side card__head_arrow">
 									<div class="card__img img-box icon-bg round sphere">
-										<i class="material-icons-round mui-icon">child_care</i>
+										<i class="material-icons-round mui-icon">architecture</i>
 									</div>
 									<div class="ttl-box ttl-box_bg-pipe">
-										<h3 class="ttl-box__ttl caps z-down">Что-то получится даже у ребенка</h3>
+										<h3 class="ttl-box__ttl caps z-down">Lorem ipsum</h3>
 									</div>
 								</div>
 
@@ -1597,10 +1538,10 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 							<li class="card h-master-2">
 								<div class="card__head card__head_ttl-side card__head_arrow">
 									<div class="card__img img-box icon-bg round sphere">
-										<i class="material-icons-round mui-icon">screenshot_monitor</i>
+										<i class="material-icons-round mui-icon">archive</i>
 									</div>
 									<div class="ttl-box ttl-box_bg-pipe">
-										<h3 class="ttl-box__ttl caps z-down">Никаких сюрпризов</h3>
+										<h3 class="ttl-box__ttl caps z-down">Lorem ipsum dolor sit amet</h3>
 									</div>
 								</div>
 
@@ -1619,10 +1560,10 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 							<li class="card h-master-3">
 								<div class="card__head card__head_ttl-side card__head_arrow">
 									<div class="card__img img-box icon-bg round sphere">
-										<i class="material-icons-round mui-icon">screenshot_monitor</i>
+										<i class="material-icons-round mui-icon">apartment</i>
 									</div>
 									<div class="ttl-box ttl-box_bg-pipe">
-										<h3 class="ttl-box__ttl caps z-down">Никаких сюрпризов</h3>
+										<h3 class="ttl-box__ttl caps z-down">Lorem ipsum dolor sit</h3>
 									</div>
 								</div>
 
@@ -1642,8 +1583,8 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 			</div>
 		</div>
 	</div>
-</li>`,zr=`<li class="swiper-slide slide-13"
-		data-hash="slide-13">
+</li>`,zr=`<li class="swiper-slide slide-blobs-bg"
+		data-hash="blobs-bg">
 	<div class="layout-center">
 		<div class="slide-content width-x lg-flex-dir-col">
 			<div class="slide-bg w-img"></div>
@@ -1786,7 +1727,7 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
 							type="submit">Ок</button>
 		</div>
 	</form>
-</div>`;document.querySelector(".sidebar").insertAdjacentHTML("beforeend",Sr);const at=document.querySelector(".swiper-wrapper");at.insertAdjacentHTML("beforeend",Mr);at.insertAdjacentHTML("beforeend",Cr);at.insertAdjacentHTML("beforeend",kr);at.insertAdjacentHTML("beforeend",Er);at.insertAdjacentHTML("beforeend",Tr);at.insertAdjacentHTML("beforeend",Lr);at.insertAdjacentHTML("beforeend",Pr);at.insertAdjacentHTML("beforeend",Ar);at.insertAdjacentHTML("beforeend",Or);at.insertAdjacentHTML("beforeend",Ir);at.insertAdjacentHTML("beforeend",Dr);at.insertAdjacentHTML("beforeend",Fr);at.insertAdjacentHTML("beforeend",zr);at.insertAdjacentHTML("beforeend",$r);document.querySelector(".form-modal").insertAdjacentHTML("beforeend",Rr);/**
+</div>`;document.querySelector(".sidebar").insertAdjacentHTML("beforeend",Sr);const at=document.querySelector(".swiper-wrapper");at.insertAdjacentHTML("beforeend",Mr);at.insertAdjacentHTML("beforeend",Cr);at.insertAdjacentHTML("beforeend",kr);at.insertAdjacentHTML("beforeend",Ar);at.insertAdjacentHTML("beforeend",Tr);at.insertAdjacentHTML("beforeend",Or);at.insertAdjacentHTML("beforeend",Er);at.insertAdjacentHTML("beforeend",Pr);at.insertAdjacentHTML("beforeend",Dr);at.insertAdjacentHTML("beforeend",Ir);at.insertAdjacentHTML("beforeend",Lr);at.insertAdjacentHTML("beforeend",Fr);at.insertAdjacentHTML("beforeend",zr);at.insertAdjacentHTML("beforeend",$r);document.querySelector(".form-modal").insertAdjacentHTML("beforeend",Rr);/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -1828,5 +1769,5 @@ var yr=Object.defineProperty;var wr=(i,t,e)=>t in i?yr(i,t,{enumerable:!0,config
  * (c) 2017-2022 chartjs-plugin-datalabels contributors
  * Released under the MIT license
  */var Go=function(){if(typeof window<"u"){if(window.devicePixelRatio)return window.devicePixelRatio;var i=window.screen;if(i)return(i.deviceXDPI||1)/(i.logicalXDPI||1)}return 1}(),je={toTextLines:function(i){var t=[],e;for(i=[].concat(i);i.length;)e=i.pop(),typeof e=="string"?t.unshift.apply(t,e.split(`
-`)):Array.isArray(e)?i.push.apply(i,e):D(i)||t.unshift(""+e);return t},textSize:function(i,t,e){var s=[].concat(t),n=s.length,o=i.font,a=0,r;for(i.font=e.string,r=0;r<n;++r)a=Math.max(i.measureText(s[r]).width,a);return i.font=o,{height:n*e.lineHeight,width:a}},bound:function(i,t,e){return Math.max(i,Math.min(t,e))},arrayDiff:function(i,t){var e=i.slice(),s=[],n,o,a,r;for(n=0,a=t.length;n<a;++n)r=t[n],o=e.indexOf(r),o===-1?s.push([r,1]):e.splice(o,1);for(n=0,a=e.length;n<a;++n)s.push([e[n],-1]);return s},rasterize:function(i){return Math.round(i*Go)/Go}};function ys(i,t){var e=t.x,s=t.y;if(e===null)return{x:0,y:-1};if(s===null)return{x:1,y:0};var n=i.x-e,o=i.y-s,a=Math.sqrt(n*n+o*o);return{x:a?n/a:0,y:a?o/a:-1}}function Dp(i,t,e,s,n){switch(n){case"center":e=s=0;break;case"bottom":e=0,s=1;break;case"right":e=1,s=0;break;case"left":e=-1,s=0;break;case"top":e=0,s=-1;break;case"start":e=-e,s=-s;break;case"end":break;default:n*=Math.PI/180,e=Math.cos(n),s=Math.sin(n);break}return{x:i,y:t,vx:e,vy:s}}var Fp=0,hr=1,fr=2,pr=4,mr=8;function Si(i,t,e){var s=Fp;return i<e.left?s|=hr:i>e.right&&(s|=fr),t<e.top?s|=mr:t>e.bottom&&(s|=pr),s}function zp(i,t){for(var e=i.x0,s=i.y0,n=i.x1,o=i.y1,a=Si(e,s,t),r=Si(n,o,t),l,c,d;!(!(a|r)||a&r);)l=a||r,l&mr?(c=e+(n-e)*(t.top-s)/(o-s),d=t.top):l&pr?(c=e+(n-e)*(t.bottom-s)/(o-s),d=t.bottom):l&fr?(d=s+(o-s)*(t.right-e)/(n-e),c=t.right):l&hr&&(d=s+(o-s)*(t.left-e)/(n-e),c=t.left),l===a?(e=c,s=d,a=Si(e,s,t)):(n=c,o=d,r=Si(n,o,t));return{x0:e,x1:n,y0:s,y1:o}}function Mi(i,t){var e=t.anchor,s=i,n,o;return t.clamp&&(s=zp(s,t.area)),e==="start"?(n=s.x0,o=s.y0):e==="end"?(n=s.x1,o=s.y1):(n=(s.x0+s.x1)/2,o=(s.y0+s.y1)/2),Dp(n,o,i.vx,i.vy,t.align)}var Ci={arc:function(i,t){var e=(i.startAngle+i.endAngle)/2,s=Math.cos(e),n=Math.sin(e),o=i.innerRadius,a=i.outerRadius;return Mi({x0:i.x+s*o,y0:i.y+n*o,x1:i.x+s*a,y1:i.y+n*a,vx:s,vy:n},t)},point:function(i,t){var e=ys(i,t.origin),s=e.x*i.options.radius,n=e.y*i.options.radius;return Mi({x0:i.x-s,y0:i.y-n,x1:i.x+s,y1:i.y+n,vx:e.x,vy:e.y},t)},bar:function(i,t){var e=ys(i,t.origin),s=i.x,n=i.y,o=0,a=0;return i.horizontal?(s=Math.min(i.x,i.base),o=Math.abs(i.base-i.x)):(n=Math.min(i.y,i.base),a=Math.abs(i.base-i.y)),Mi({x0:s,y0:n+a,x1:s+o,y1:n,vx:e.x,vy:e.y},t)},fallback:function(i,t){var e=ys(i,t.origin);return Mi({x0:i.x,y0:i.y,x1:i.x+(i.width||0),y1:i.y+(i.height||0),vx:e.x,vy:e.y},t)}},Ot=je.rasterize;function $p(i){var t=i.borderWidth||0,e=i.padding,s=i.size.height,n=i.size.width,o=-n/2,a=-s/2;return{frame:{x:o-e.left-t,y:a-e.top-t,w:n+e.width+t*2,h:s+e.height+t*2},text:{x:o,y:a,w:n,h:s}}}function Rp(i,t){var e=t.chart.getDatasetMeta(t.datasetIndex).vScale;if(!e)return null;if(e.xCenter!==void 0&&e.yCenter!==void 0)return{x:e.xCenter,y:e.yCenter};var s=e.getBasePixel();return i.horizontal?{x:s,y:null}:{x:null,y:s}}function Vp(i){return i instanceof he?Ci.arc:i instanceof He?Ci.point:i instanceof qe?Ci.bar:Ci.fallback}function Bp(i,t,e,s,n,o){var a=Math.PI/2;if(o){var r=Math.min(o,n/2,s/2),l=t+r,c=e+r,d=t+s-r,u=e+n-r;i.moveTo(t,c),l<d&&c<u?(i.arc(l,c,r,-Math.PI,-a),i.arc(d,c,r,-a,0),i.arc(d,u,r,0,a),i.arc(l,u,r,a,Math.PI)):l<d?(i.moveTo(l,e),i.arc(d,c,r,-a,a),i.arc(l,c,r,a,Math.PI+a)):c<u?(i.arc(l,c,r,-Math.PI,0),i.arc(l,u,r,0,Math.PI)):i.arc(l,c,r,-Math.PI,Math.PI),i.closePath(),i.moveTo(t,e)}else i.rect(t,e,s,n)}function Np(i,t,e){var s=e.backgroundColor,n=e.borderColor,o=e.borderWidth;!s&&(!n||!o)||(i.beginPath(),Bp(i,Ot(t.x)+o/2,Ot(t.y)+o/2,Ot(t.w)-o,Ot(t.h)-o,e.borderRadius),i.closePath(),s&&(i.fillStyle=s,i.fill()),n&&o&&(i.strokeStyle=n,i.lineWidth=o,i.lineJoin="miter",i.stroke()))}function Hp(i,t,e){var s=e.lineHeight,n=i.w,o=i.x,a=i.y+s/2;return t==="center"?o+=n/2:(t==="end"||t==="right")&&(o+=n),{h:s,w:n,x:o,y:a}}function qp(i,t,e){var s=i.shadowBlur,n=e.stroked,o=Ot(e.x),a=Ot(e.y),r=Ot(e.w);n&&i.strokeText(t,o,a,r),e.filled&&(s&&n&&(i.shadowBlur=0),i.fillText(t,o,a,r),s&&n&&(i.shadowBlur=s))}function jp(i,t,e,s){var n=s.textAlign,o=s.color,a=!!o,r=s.font,l=t.length,c=s.textStrokeColor,d=s.textStrokeWidth,u=c&&d,h;if(!(!l||!a&&!u))for(e=Hp(e,n,r),i.font=r.string,i.textAlign=n,i.textBaseline="middle",i.shadowBlur=s.textShadowBlur,i.shadowColor=s.textShadowColor,a&&(i.fillStyle=o),u&&(i.lineJoin="round",i.lineWidth=d,i.strokeStyle=c),h=0,l=t.length;h<l;++h)qp(i,t[h],{stroked:u,filled:a,w:e.w,x:e.x,y:e.y+e.h*h})}var gr=function(i,t,e,s){var n=this;n._config=i,n._index=s,n._model=null,n._rects=null,n._ctx=t,n._el=e};yt(gr.prototype,{_modelize:function(i,t,e,s){var n=this,o=n._index,a=U(N([e.font,{}],s,o)),r=N([e.color,G.color],s,o);return{align:N([e.align,"center"],s,o),anchor:N([e.anchor,"center"],s,o),area:s.chart.chartArea,backgroundColor:N([e.backgroundColor,null],s,o),borderColor:N([e.borderColor,null],s,o),borderRadius:N([e.borderRadius,0],s,o),borderWidth:N([e.borderWidth,0],s,o),clamp:N([e.clamp,!1],s,o),clip:N([e.clip,!1],s,o),color:r,display:i,font:a,lines:t,offset:N([e.offset,4],s,o),opacity:N([e.opacity,1],s,o),origin:Rp(n._el,s),padding:Q(N([e.padding,4],s,o)),positioner:Vp(n._el),rotation:N([e.rotation,0],s,o)*(Math.PI/180),size:je.textSize(n._ctx,t,a),textAlign:N([e.textAlign,"start"],s,o),textShadowBlur:N([e.textShadowBlur,0],s,o),textShadowColor:N([e.textShadowColor,r],s,o),textStrokeColor:N([e.textStrokeColor,r],s,o),textStrokeWidth:N([e.textStrokeWidth,0],s,o)}},update:function(i){var t=this,e=null,s=null,n=t._index,o=t._config,a,r,l,c=N([o.display,!0],i,n);c&&(a=i.dataset.data[n],r=I(B(o.formatter,[a,i]),a),l=D(r)?[]:je.toTextLines(r),l.length&&(e=t._modelize(c,l,o,i),s=$p(e))),t._model=e,t._rects=s},geometry:function(){return this._rects?this._rects.frame:{}},rotation:function(){return this._model?this._model.rotation:0},visible:function(){return this._model&&this._model.opacity},model:function(){return this._model},draw:function(i,t){var e=this,s=i.ctx,n=e._model,o=e._rects,a;this.visible()&&(s.save(),n.clip&&(a=n.area,s.beginPath(),s.rect(a.left,a.top,a.right-a.left,a.bottom-a.top),s.clip()),s.globalAlpha=je.bound(0,n.opacity,1),s.translate(Ot(t.x),Ot(t.y)),s.rotate(n.rotation),Np(s,o.frame,n),jp(s,n.lines,o.text,n),s.restore())}});var Wp=Number.MIN_SAFE_INTEGER||-9007199254740991,Gp=Number.MAX_SAFE_INTEGER||9007199254740991;function Te(i,t,e){var s=Math.cos(e),n=Math.sin(e),o=t.x,a=t.y;return{x:o+s*(i.x-o)-n*(i.y-a),y:a+n*(i.x-o)+s*(i.y-a)}}function Yo(i,t){var e=Gp,s=Wp,n=t.origin,o,a,r,l,c;for(o=0;o<i.length;++o)a=i[o],r=a.x-n.x,l=a.y-n.y,c=t.vx*r+t.vy*l,e=Math.min(e,c),s=Math.max(s,c);return{min:e,max:s}}function ki(i,t){var e=t.x-i.x,s=t.y-i.y,n=Math.sqrt(e*e+s*s);return{vx:(t.x-i.x)/n,vy:(t.y-i.y)/n,origin:i,ln:n}}var br=function(){this._rotation=0,this._rect={x:0,y:0,w:0,h:0}};yt(br.prototype,{center:function(){var i=this._rect;return{x:i.x+i.w/2,y:i.y+i.h/2}},update:function(i,t,e){this._rotation=e,this._rect={x:t.x+i.x,y:t.y+i.y,w:t.w,h:t.h}},contains:function(i){var t=this,e=1,s=t._rect;return i=Te(i,t.center(),-t._rotation),!(i.x<s.x-e||i.y<s.y-e||i.x>s.x+s.w+e*2||i.y>s.y+s.h+e*2)},intersects:function(i){var t=this._points(),e=i._points(),s=[ki(t[0],t[1]),ki(t[0],t[3])],n,o,a;for(this._rotation!==i._rotation&&s.push(ki(e[0],e[1]),ki(e[0],e[3])),n=0;n<s.length;++n)if(o=Yo(t,s[n]),a=Yo(e,s[n]),o.max<a.min||a.max<o.min)return!1;return!0},_points:function(){var i=this,t=i._rect,e=i._rotation,s=i.center();return[Te({x:t.x,y:t.y},s,e),Te({x:t.x+t.w,y:t.y},s,e),Te({x:t.x+t.w,y:t.y+t.h},s,e),Te({x:t.x,y:t.y+t.h},s,e)]}});function vr(i,t,e){var s=t.positioner(i,t),n=s.vx,o=s.vy;if(!n&&!o)return{x:s.x,y:s.y};var a=e.w,r=e.h,l=t.rotation,c=Math.abs(a/2*Math.cos(l))+Math.abs(r/2*Math.sin(l)),d=Math.abs(a/2*Math.sin(l))+Math.abs(r/2*Math.cos(l)),u=1/Math.max(Math.abs(n),Math.abs(o));return c*=n*u,d*=o*u,c+=t.offset*n,d+=t.offset*o,{x:s.x+c,y:s.y+d}}function Yp(i,t){var e,s,n,o;for(e=i.length-1;e>=0;--e)for(n=i[e].$layout,s=e-1;s>=0&&n._visible;--s)o=i[s].$layout,o._visible&&n._box.intersects(o._box)&&t(n,o);return i}function Xp(i){var t,e,s,n,o,a,r;for(t=0,e=i.length;t<e;++t)s=i[t],n=s.$layout,n._visible&&(r=new Proxy(s._el,{get:(l,c)=>l.getProps([c],!0)[c]}),o=s.geometry(),a=vr(r,s.model(),o),n._box.update(a,o,s.rotation()));return Yp(i,function(l,c){var d=l._hidable,u=c._hidable;d&&u||u?c._visible=!1:d&&(l._visible=!1)})}var We={prepare:function(i){var t=[],e,s,n,o,a;for(e=0,n=i.length;e<n;++e)for(s=0,o=i[e].length;s<o;++s)a=i[e][s],t.push(a),a.$layout={_box:new br,_hidable:!1,_visible:!0,_set:e,_idx:a._index};return t.sort(function(r,l){var c=r.$layout,d=l.$layout;return c._idx===d._idx?d._set-c._set:d._idx-c._idx}),this.update(t),t},update:function(i){var t=!1,e,s,n,o,a;for(e=0,s=i.length;e<s;++e)n=i[e],o=n.model(),a=n.$layout,a._hidable=o&&o.display==="auto",a._visible=n.visible(),t|=a._hidable;t&&Xp(i)},lookup:function(i,t){var e,s;for(e=i.length-1;e>=0;--e)if(s=i[e].$layout,s&&s._visible&&s._box.contains(t))return i[e];return null},draw:function(i,t){var e,s,n,o,a,r;for(e=0,s=t.length;e<s;++e)n=t[e],o=n.$layout,o._visible&&(a=n.geometry(),r=vr(n._el,n.model(),a),o._box.update(r,a,n.rotation()),n.draw(i,r))}},Up=function(i){if(D(i))return null;var t=i,e,s,n;if(F(i))if(!D(i.label))t=i.label;else if(!D(i.r))t=i.r;else for(t="",e=Object.keys(i),n=0,s=e.length;n<s;++n)t+=(n!==0?", ":"")+e[n]+": "+i[e[n]];return""+t},Kp={align:"center",anchor:"center",backgroundColor:null,borderColor:null,borderRadius:0,borderWidth:0,clamp:!1,clip:!1,color:void 0,display:!0,font:{family:void 0,lineHeight:1.2,size:void 0,style:void 0,weight:null},formatter:Up,labels:void 0,listeners:{},offset:4,opacity:1,padding:{top:4,right:4,bottom:4,left:4},rotation:0,textAlign:"start",textStrokeColor:void 0,textStrokeWidth:0,textShadowBlur:0,textShadowColor:void 0},nt="$datalabels",_r="$default";function Zp(i,t){var e=i.datalabels,s={},n=[],o,a;return e===!1?null:(e===!0&&(e={}),t=yt({},[t,e]),o=t.labels||{},a=Object.keys(o),delete t.labels,a.length?a.forEach(function(r){o[r]&&n.push(yt({},[t,o[r],{_key:r}]))}):n.push(t),s=n.reduce(function(r,l){return V(l.listeners||{},function(c,d){r[d]=r[d]||{},r[d][l._key||_r]=c}),delete l.listeners,r},{}),{labels:n,listeners:s})}function qs(i,t,e,s){if(t){var n=e.$context,o=e.$groups,a;t[o._set]&&(a=t[o._set][o._key],a&&B(a,[n,s])===!0&&(i[nt]._dirty=!0,e.update(n)))}}function Jp(i,t,e,s,n){var o,a;!e&&!s||(e?s?e!==s&&(a=o=!0):a=!0:o=!0,a&&qs(i,t.leave,e,n),o&&qs(i,t.enter,s,n))}function Qp(i,t){var e=i[nt],s=e._listeners,n,o;if(!(!s.enter&&!s.leave)){if(t.type==="mousemove")o=We.lookup(e._labels,t);else if(t.type!=="mouseout")return;n=e._hovered,e._hovered=o,Jp(i,s,n,o,t)}}function tm(i,t){var e=i[nt],s=e._listeners.click,n=s&&We.lookup(e._labels,t);n&&qs(i,s,n,t)}var em={id:"datalabels",defaults:Kp,beforeInit:function(i){i[nt]={_actives:[]}},beforeUpdate:function(i){var t=i[nt];t._listened=!1,t._listeners={},t._datasets=[],t._labels=[]},afterDatasetUpdate:function(i,t,e){var s=t.index,n=i[nt],o=n._datasets[s]=[],a=i.isDatasetVisible(s),r=i.data.datasets[s],l=Zp(r,e),c=t.meta.data||[],d=i.ctx,u,h,f,p,m,b,_,g;for(d.save(),u=0,f=c.length;u<f;++u)if(_=c[u],_[nt]=[],a&&_&&i.getDataVisibility(u)&&!_.skip)for(h=0,p=l.labels.length;h<p;++h)m=l.labels[h],b=m._key,g=new gr(m,d,_,u),g.$groups={_set:s,_key:b||_r},g.$context={active:!1,chart:i,dataIndex:u,dataset:r,datasetIndex:s},g.update(g.$context),_[nt].push(g),o.push(g);d.restore(),yt(n._listeners,l.listeners,{merger:function(v,x,y){x[v]=x[v]||{},x[v][t.index]=y[v],n._listened=!0}})},afterUpdate:function(i){i[nt]._labels=We.prepare(i[nt]._datasets)},afterDatasetsDraw:function(i){We.draw(i,i[nt]._labels)},beforeEvent:function(i,t){if(i[nt]._listened){var e=t.event;switch(e.type){case"mousemove":case"mouseout":Qp(i,e);break;case"click":tm(i,e);break}}},afterEvent:function(i){var t=i[nt],e=t._actives,s=t._actives=i.getActiveElements(),n=je.arrayDiff(e,s),o,a,r,l,c,d,u;for(o=0,a=n.length;o<a;++o)if(c=n[o],c[1])for(u=c[0].element[nt]||[],r=0,l=u.length;r<l;++r)d=u[r],d.$context.active=c[1]===1,d.update(d.$context);(t._dirty||n.length)&&(We.update(t._labels),i.render()),delete t._dirty}};class im{constructor(){E(this,"getValues",t=>(t.forEach(e=>this.brandColors.push(getComputedStyle(document.documentElement,null).getPropertyValue(e))),this.brandColors));this.brandColors=[]}}const sm=new im,Le=sm.getValues(["--clr-1a-solid","--clr-1b-solid","--clr-2a-solid","--clr-2b-solid","--clr-2c-solid"]),nm={labels:["Data-1","Data-2","Data-3","Data-4","Data-5"],datasets:[{label:"Amount",data:[65,72,88,43,56],backgroundColor:[Le[0],Le[1],Le[2],Le[3],Le[4]],hoverOffset:50}]},om={cutout:50,maintainAspectRatio:!1,plugins:{legend:{position:"left"},colors:{enabled:!0},datalabels:{backgroundColor:"#000",borderRadius:3,font:{size:14},formatter:(i,t)=>{const s=t.chart.data.datasets[0].data.reduce((o,a)=>o+a,0);return(i/s*100).toFixed(2)+"%"},color:"#fff"}}},am={type:"doughnut",plugins:[em],options:om,data:nm};document.querySelectorAll(".chart-doughnut").forEach(i=>new ft(i,am));const rm=document.getElementById("chart-bar"),lm=["January","February","March","April","May","June","July"],cm={labels:lm,datasets:[{label:"Dataset-1",data:[65,34,82,75,47,55,91],backgroundColor:["rgba(255, 99, 132, 0.2)","rgba(255, 159, 64, 0.2)","rgba(255, 205, 86, 0.2)","rgba(75, 192, 192, 0.2)","rgba(54, 162, 235, 0.2)","rgba(153, 102, 255, 0.2)","rgba(201, 203, 207, 0.2)"],borderColor:["rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(153, 102, 255)","rgb(201, 203, 207)"],borderWidth:1}]},dm={maintainAspectRatio:!1,scales:{y:{beginAtZero:!0}}},um={type:"bar",data:cm,options:dm};new ft(rm,um);const hm=document.getElementById("chart-line"),fm=["January","February","March","April","May","June","July"],pm={labels:fm,datasets:[{label:"Data-1",data:[65,34,82,75,47,55,91],fill:{target:!0,above:"rgba(54, 162, 235, 0.1)"},tension:.25},{label:"Data-2",data:[25,44,54,32,14,46,52],fill:{target:!0,above:"rgba(255, 99, 132, 0.1)"},tension:.25}]},mm={maintainAspectRatio:!1,scales:{y:{beginAtZero:!0}}},gm={type:"line",data:pm,options:mm};new ft(hm,gm);const Xo=()=>new Date(new Date().getTime()-new Date().getTimezoneOffset()*6e4).toISOString().replace(/T/," ").replace(/\./,"::").replace(/Z/,"ms"),bm="документ прочитан",vm="документ прочитан, ресурсы загружены",Uo=(i,t)=>console.log(`%cPLARSON test message: ${t} - ${i}`,"background: #222; color: magenta;"),_m=()=>{document.onreadystatechange=i=>{switch(i.target.readyState){case"interactive":return Uo(bm,Xo());case"complete":return Uo(vm,Xo())}}};_m();const xm=()=>{const i=document.querySelectorAll(".video");for(let t=0;t<i.length;t++)ym(i[t])},ym=i=>{const t=i.querySelector(".video__link"),e=i.querySelector(".video__media"),s=i.querySelector(".video__button"),n=wm(e);i.addEventListener("click",()=>{const o=Sm(n);t.remove(),s.remove(),i.appendChild(o)}),i.classList.add("video--enabled")},wm=i=>{const t=/https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;return i.src.match(t)[1]},Sm=i=>{const t=document.createElement("iframe");return t.setAttribute("allowfullscreen",""),t.setAttribute("allow","autoplay"),t.setAttribute("src",Mm(i)),t.classList.add("video__media"),t},Mm=i=>{const t="?rel=0&showinfo=0&autoplay=1";return"https://www.youtube.com/embed/"+i+t};xm();var Cm=Object.defineProperty,km=(i,t,e)=>t in i?Cm(i,t,{enumerable:!0,configurable:!0,writable:!0,value:e}):i[t]=e,R=(i,t,e)=>(km(i,typeof t!="symbol"?t+"":t,e),e);const Em=/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,Tm=/^-?[0-9]\d*$/,Lm=/^(?=.*[A-Za-z])(?=.*\d).{8,}$/,Pm=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,Am=i=>{let t=i;return typeof i=="string"&&(t=i.trim()),!t},Om=i=>Em.test(i),Im=(i,t)=>i.length>t,Dm=(i,t)=>i.length<t,Fm=i=>typeof i!="string"?!1:!isNaN(+i)&&!isNaN(parseFloat(i)),zm=i=>Tm.test(i),$m=i=>Lm.test(i),Rm=i=>Pm.test(i),Vm=(i,t)=>i>t,Bm=(i,t)=>i<t,Ct=i=>typeof i!="string"||i==="";var z=(i=>(i.Required="required",i.Email="email",i.MinLength="minLength",i.MaxLength="maxLength",i.Password="password",i.Number="number",i.Integer="integer",i.MaxNumber="maxNumber",i.MinNumber="minNumber",i.StrongPassword="strongPassword",i.CustomRegexp="customRegexp",i.MinFilesCount="minFilesCount",i.MaxFilesCount="maxFilesCount",i.Files="files",i))(z||{}),js=(i=>(i.Required="required",i))(js||{}),xr=(i=>(i.Label="label",i.LabelArrow="labelArrow",i))(xr||{});const Ko=[{key:z.Required,dict:{en:"The field is required"}},{key:z.Email,dict:{en:"Email has invalid format"}},{key:z.MaxLength,dict:{en:"The field must contain a maximum of :value characters"}},{key:z.MinLength,dict:{en:"The field must contain a minimum of :value characters"}},{key:z.Password,dict:{en:"Password must contain minimum eight characters, at least one letter and one number"}},{key:z.StrongPassword,dict:{en:"Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"}},{key:z.Number,dict:{en:"Value should be a number"}},{key:z.MaxNumber,dict:{en:"Number should be less or equal than :value"}},{key:z.MinNumber,dict:{en:"Number should be more or equal than :value"}},{key:z.MinFilesCount,dict:{en:"Files count should be more or equal than :value"}},{key:z.MaxFilesCount,dict:{en:"Files count should be less or equal than :value"}},{key:z.Files,dict:{en:"Uploaded files have one or several invalid properties (extension/size/type etc)."}}],Nm="Value is incorrect",Pe=i=>typeof i=="object"&&i!==null&&"then"in i&&typeof i.then=="function",Hm=i=>{let t=i;const e=[];for(;t;)e.unshift(t),t=t.parentNode;return e},qm=(i,t)=>{const e=[...t].reverse();for(let s=0,n=e.length;s<n;++s){const o=e[s];for(const a in i){const r=i[a];if(r.groupElem===o)return[a,r]}}return null},bt=i=>Array.isArray(i)?i.filter(t=>t.length>0):typeof i=="string"&&i.trim()?[...i.split(" ").filter(t=>t.length>0)]:[],Ae=i=>i instanceof Element||i instanceof HTMLDocument,jm=".just-validate-error-label[data-tooltip=true]{position:fixed;padding:4px 8px;background:#423f3f;color:#fff;white-space:nowrap;z-index:10;border-radius:4px;transform:translateY(-5px)}.just-validate-error-label[data-tooltip=true]:before{content:'';width:0;height:0;border-left:solid 5px transparent;border-right:solid 5px transparent;border-bottom:solid 5px #423f3f;position:absolute;z-index:3;display:block;bottom:-5px;transform:rotate(180deg);left:calc(50% - 5px)}.just-validate-error-label[data-tooltip=true][data-direction=left]{transform:translateX(-5px)}.just-validate-error-label[data-tooltip=true][data-direction=left]:before{right:-7px;bottom:auto;left:auto;top:calc(50% - 2px);transform:rotate(90deg)}.just-validate-error-label[data-tooltip=true][data-direction=right]{transform:translateX(5px)}.just-validate-error-label[data-tooltip=true][data-direction=right]:before{right:auto;bottom:auto;left:-7px;top:calc(50% - 2px);transform:rotate(-90deg)}.just-validate-error-label[data-tooltip=true][data-direction=bottom]{transform:translateY(5px)}.just-validate-error-label[data-tooltip=true][data-direction=bottom]:before{right:auto;bottom:auto;left:calc(50% - 5px);top:-5px;transform:rotate(0)}",Ei=5,ws={errorFieldStyle:{color:"#b81111",border:"1px solid #B81111"},errorFieldCssClass:"just-validate-error-field",successFieldCssClass:"just-validate-success-field",errorLabelStyle:{color:"#b81111"},errorLabelCssClass:"just-validate-error-label",successLabelCssClass:"just-validate-success-label",focusInvalidField:!0,lockForm:!0,testingMode:!1,validateBeforeSubmitting:!1};class Wm{constructor(t,e,s){R(this,"form",null),R(this,"fields",{}),R(this,"groupFields",{}),R(this,"errors",{}),R(this,"isValid",!1),R(this,"isSubmitted",!1),R(this,"globalConfig",ws),R(this,"errorLabels",{}),R(this,"successLabels",{}),R(this,"eventListeners",[]),R(this,"dictLocale",Ko),R(this,"currentLocale","en"),R(this,"customStyleTags",{}),R(this,"onSuccessCallback"),R(this,"onFailCallback"),R(this,"onValidateCallback"),R(this,"tooltips",[]),R(this,"lastScrollPosition"),R(this,"isScrollTick"),R(this,"fieldIds",new Map),R(this,"getKeyByFieldSelector",n=>this.fieldIds.get(n)),R(this,"getFieldSelectorByKey",n=>{for(const[o,a]of this.fieldIds)if(n===a)return o}),R(this,"getCompatibleFields",()=>{const n={};return Object.keys(this.fields).forEach(o=>{let a=o;const r=this.getFieldSelectorByKey(o);typeof r=="string"&&(a=r),n[a]={...this.fields[o]}}),n}),R(this,"setKeyByFieldSelector",n=>{if(this.fieldIds.has(n))return this.fieldIds.get(n);const o=String(this.fieldIds.size+1);return this.fieldIds.set(n,o),o}),R(this,"refreshAllTooltips",()=>{this.tooltips.forEach(n=>{n.refresh()})}),R(this,"handleDocumentScroll",()=>{this.lastScrollPosition=window.scrollY,this.isScrollTick||(window.requestAnimationFrame(()=>{this.refreshAllTooltips(),this.isScrollTick=!1}),this.isScrollTick=!0)}),R(this,"formSubmitHandler",n=>{n.preventDefault(),this.isSubmitted=!0,this.validateHandler(n)}),R(this,"handleFieldChange",n=>{let o;for(const a in this.fields)if(this.fields[a].elem===n){o=a;break}o&&(this.fields[o].touched=!0,this.validateField(o,!0))}),R(this,"handleGroupChange",n=>{let o;for(const a in this.groupFields)if(this.groupFields[a].elems.find(l=>l===n)){o=a;break}o&&(this.groupFields[o].touched=!0,this.validateGroup(o,!0))}),R(this,"handlerChange",n=>{n.target&&(this.handleFieldChange(n.target),this.handleGroupChange(n.target),this.renderErrors())}),this.initialize(t,e,s)}initialize(t,e,s){if(this.form=null,this.errors={},this.isValid=!1,this.isSubmitted=!1,this.globalConfig=ws,this.errorLabels={},this.successLabels={},this.eventListeners=[],this.customStyleTags={},this.tooltips=[],this.currentLocale="en",typeof t=="string"){const n=document.querySelector(t);if(!n)throw Error(`Form with ${t} selector not found! Please check the form selector`);this.setForm(n)}else if(t instanceof HTMLFormElement)this.setForm(t);else throw Error("Form selector is not valid. Please specify a string selector or a DOM element.");if(this.globalConfig={...ws,...e},s&&(this.dictLocale=[...s,...Ko]),this.isTooltip()){const n=document.createElement("style");n.textContent=jm,this.customStyleTags[xr.Label]=document.head.appendChild(n),this.addListener("scroll",document,this.handleDocumentScroll)}}getLocalisedString(t,e,s){var n;const o=s??t;let a=(n=this.dictLocale.find(r=>r.key===o))==null?void 0:n.dict[this.currentLocale];if(a||s&&(a=s),a&&e!==void 0)switch(t){case z.MaxLength:case z.MinLength:case z.MaxNumber:case z.MinNumber:case z.MinFilesCount:case z.MaxFilesCount:a=a.replace(":value",String(e))}return a||s||Nm}getFieldErrorMessage(t,e){const s=typeof t.errorMessage=="function"?t.errorMessage(this.getElemValue(e),this.fields):t.errorMessage;return this.getLocalisedString(t.rule,t.value,s)}getFieldSuccessMessage(t,e){const s=typeof t=="function"?t(this.getElemValue(e),this.fields):t;return this.getLocalisedString(void 0,void 0,s)}getGroupErrorMessage(t){return this.getLocalisedString(t.rule,void 0,t.errorMessage)}getGroupSuccessMessage(t){if(t.successMessage)return this.getLocalisedString(void 0,void 0,t.successMessage)}setFieldInvalid(t,e){this.fields[t].isValid=!1,this.fields[t].errorMessage=this.getFieldErrorMessage(e,this.fields[t].elem)}setFieldValid(t,e){this.fields[t].isValid=!0,e!==void 0&&(this.fields[t].successMessage=this.getFieldSuccessMessage(e,this.fields[t].elem))}setGroupInvalid(t,e){this.groupFields[t].isValid=!1,this.groupFields[t].errorMessage=this.getGroupErrorMessage(e)}setGroupValid(t,e){this.groupFields[t].isValid=!0,this.groupFields[t].successMessage=this.getGroupSuccessMessage(e)}getElemValue(t){switch(t.type){case"checkbox":return t.checked;case"file":return t.files;default:return t.value}}validateGroupRule(t,e,s){switch(s.rule){case js.Required:e.every(n=>!n.checked)?this.setGroupInvalid(t,s):this.setGroupValid(t,s)}}validateFieldRule(t,e,s,n=!1){const o=s.value,a=this.getElemValue(e);if(s.plugin){s.plugin(a,this.getCompatibleFields())||this.setFieldInvalid(t,s);return}switch(s.rule){case z.Required:{Am(a)&&this.setFieldInvalid(t,s);break}case z.Email:{if(Ct(a))break;Om(a)||this.setFieldInvalid(t,s);break}case z.MaxLength:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof o!="number"){console.error(`Value for ${s.rule} rule for [${t}] should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Ct(a))break;Im(a,o)&&this.setFieldInvalid(t,s);break}case z.MinLength:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof o!="number"){console.error(`Value for ${s.rule} rule for [${t}] should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Ct(a))break;Dm(a,o)&&this.setFieldInvalid(t,s);break}case z.Password:{if(Ct(a))break;$m(a)||this.setFieldInvalid(t,s);break}case z.StrongPassword:{if(Ct(a))break;Rm(a)||this.setFieldInvalid(t,s);break}case z.Number:{if(Ct(a))break;Fm(a)||this.setFieldInvalid(t,s);break}case z.Integer:{if(Ct(a))break;zm(a)||this.setFieldInvalid(t,s);break}case z.MaxNumber:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof o!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Ct(a))break;const r=+a;(Number.isNaN(r)||Vm(r,o))&&this.setFieldInvalid(t,s);break}case z.MinNumber:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof o!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Ct(a))break;const r=+a;(Number.isNaN(r)||Bm(r,o))&&this.setFieldInvalid(t,s);break}case z.CustomRegexp:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);return}let r;try{r=new RegExp(o)}catch{console.error(`Value for ${s.rule} rule for [${t}] should be a valid regexp. This field will be always invalid.`),this.setFieldInvalid(t,s);break}const l=String(a);l!==""&&!r.test(l)&&this.setFieldInvalid(t,s);break}case z.MinFilesCount:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof o!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Number.isFinite(a==null?void 0:a.length)&&a.length<o){this.setFieldInvalid(t,s);break}break}case z.MaxFilesCount:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof o!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Number.isFinite(a==null?void 0:a.length)&&a.length>o){this.setFieldInvalid(t,s);break}break}case z.Files:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);return}if(typeof o!="object"){console.error(`Value for ${s.rule} rule for [${t}] field should be an object. This field will be always invalid.`),this.setFieldInvalid(t,s);return}const r=o.files;if(typeof r!="object"){console.error(`Value for ${s.rule} rule for [${t}] field should be an object with files array. This field will be always invalid.`),this.setFieldInvalid(t,s);return}const l=(c,d)=>{const u=Number.isFinite(d.minSize)&&c.size<d.minSize,h=Number.isFinite(d.maxSize)&&c.size>d.maxSize,f=Array.isArray(d.names)&&!d.names.includes(c.name),p=Array.isArray(d.extensions)&&!d.extensions.includes(c.name.split(".")[c.name.split(".").length-1]),m=Array.isArray(d.types)&&!d.types.includes(c.type);return u||h||f||p||m};if(typeof a=="object"&&a!==null)for(let c=0,d=a.length;c<d;++c){const u=a.item(c);if(!u){this.setFieldInvalid(t,s);break}if(l(u,r)){this.setFieldInvalid(t,s);break}}break}default:{if(typeof s.validator!="function"){console.error(`Validator for custom rule for [${t}] field should be a function. This field will be always invalid.`),this.setFieldInvalid(t,s);return}const r=s.validator(a,this.getCompatibleFields());if(typeof r!="boolean"&&typeof r!="function"&&console.error(`Validator return value for [${t}] field should be boolean or function. It will be cast to boolean.`),typeof r=="function")if(n)this.fields[t].asyncCheckPending=!0;else{this.fields[t].asyncCheckPending=!1;const l=r();if(!Pe(l)){console.error(`Validator function for custom rule for [${t}] field should return a Promise. This field will be always invalid.`),this.setFieldInvalid(t,s);return}return l.then(c=>{c||this.setFieldInvalid(t,s)}).catch(()=>{this.setFieldInvalid(t,s)})}r||this.setFieldInvalid(t,s)}}}isFormValid(){let t=!0;for(let e=0,s=Object.values(this.fields).length;e<s;++e){const n=Object.values(this.fields)[e];if(n.isValid===void 0){t=void 0;break}if(n.isValid===!1){t=!1;break}}for(let e=0,s=Object.values(this.groupFields).length;e<s;++e){const n=Object.values(this.groupFields)[e];if(n.isValid===void 0){t=void 0;break}if(n.isValid===!1){t=!1;break}}return t}validateField(t,e=!1){var s;const n=this.fields[t];n.isValid=!0;const o=[];return[...n.rules].reverse().forEach(a=>{const r=this.validateFieldRule(t,n.elem,a,e);Pe(r)&&o.push(r)}),n.isValid&&this.setFieldValid(t,(s=n.config)==null?void 0:s.successMessage),Promise.allSettled(o).finally(()=>{var a;e&&((a=this.onValidateCallback)==null||a.call(this,{isValid:this.isFormValid(),isSubmitted:this.isSubmitted,fields:this.getCompatibleFields(),groups:{...this.groupFields}}))})}revalidateField(t){if(typeof t!="string"&&!Ae(t))throw Error("Field selector is not valid. Please specify a string selector or a valid DOM element.");const e=this.getKeyByFieldSelector(t);return!e||!this.fields[e]?(console.error("Field not found. Check the field selector."),Promise.reject()):new Promise(s=>{this.validateField(e,!0).finally(()=>{this.clearFieldStyle(e),this.clearFieldLabel(e),this.renderFieldError(e,!0),s(!!this.fields[e].isValid)})})}revalidateGroup(t){if(typeof t!="string"&&!Ae(t))throw Error("Group selector is not valid. Please specify a string selector or a valid DOM element.");const e=this.getKeyByFieldSelector(t);return!e||!this.groupFields[e]?(console.error("Group not found. Check the group selector."),Promise.reject()):new Promise(s=>{this.validateGroup(e).finally(()=>{this.clearFieldLabel(e),this.renderGroupError(e,!0),s(!!this.groupFields[e].isValid)})})}validateGroup(t,e=!1){const s=this.groupFields[t],n=[];return[...s.rules].reverse().forEach(o=>{const a=this.validateGroupRule(t,s.elems,o);Pe(a)&&n.push(a)}),Promise.allSettled(n).finally(()=>{var o;e&&((o=this.onValidateCallback)==null||o.call(this,{isValid:this.isFormValid(),isSubmitted:this.isSubmitted,fields:this.getCompatibleFields(),groups:{...this.groupFields}}))})}focusInvalidField(){for(const t in this.fields){const e=this.fields[t];if(!e.isValid){setTimeout(()=>e.elem.focus(),0);break}}}afterSubmitValidation(t=!1){this.renderErrors(t),this.globalConfig.focusInvalidField&&this.focusInvalidField()}validate(t=!1){return new Promise(e=>{const s=[];Object.keys(this.fields).forEach(n=>{const o=this.validateField(n);Pe(o)&&s.push(o)}),Object.keys(this.groupFields).forEach(n=>{const o=this.validateGroup(n);Pe(o)&&s.push(o)}),Promise.allSettled(s).then(()=>{var n;this.afterSubmitValidation(t),(n=this.onValidateCallback)==null||n.call(this,{isValid:this.isFormValid(),isSubmitted:this.isSubmitted,fields:this.getCompatibleFields(),groups:{...this.groupFields}}),e(!!s.length)})})}revalidate(){return new Promise(t=>{this.validateHandler(void 0,!0).finally(()=>{this.globalConfig.focusInvalidField&&this.focusInvalidField(),t(this.isValid)})})}validateHandler(t,e=!1){return this.globalConfig.lockForm&&this.lockForm(),this.validate(e).finally(()=>{var s,n;this.globalConfig.lockForm&&this.unlockForm(),this.isValid?(s=this.onSuccessCallback)==null||s.call(this,t):(n=this.onFailCallback)==null||n.call(this,this.getCompatibleFields(),this.groupFields)})}setForm(t){this.form=t,this.form.setAttribute("novalidate","novalidate"),this.removeListener("submit",this.form,this.formSubmitHandler),this.addListener("submit",this.form,this.formSubmitHandler)}addListener(t,e,s){e.addEventListener(t,s),this.eventListeners.push({type:t,elem:e,func:s})}removeListener(t,e,s){e.removeEventListener(t,s),this.eventListeners=this.eventListeners.filter(n=>n.type!==t||n.elem!==e)}addField(t,e,s){if(typeof t!="string"&&!Ae(t))throw Error("Field selector is not valid. Please specify a string selector or a valid DOM element.");let n;if(typeof t=="string"?n=this.form.querySelector(t):n=t,!n)throw Error("Field doesn't exist in the DOM! Please check the field selector.");if(!Array.isArray(e)||!e.length)throw Error("Rules argument should be an array and should contain at least 1 element.");e.forEach(a=>{if(!("rule"in a||"validator"in a||"plugin"in a))throw Error("Rules argument must contain at least one rule or validator property.");if(!a.validator&&!a.plugin&&(!a.rule||!Object.values(z).includes(a.rule)))throw Error(`Rule should be one of these types: ${Object.values(z).join(", ")}. Provided value: ${a.rule}`)});const o=this.setKeyByFieldSelector(t);return this.fields[o]={elem:n,rules:e,isValid:void 0,touched:!1,config:s},this.setListeners(n),(this.isSubmitted||this.globalConfig.validateBeforeSubmitting)&&this.validateField(o),this}removeField(t){if(typeof t!="string"&&!Ae(t))throw Error("Field selector is not valid. Please specify a string selector or a valid DOM element.");const e=this.getKeyByFieldSelector(t);if(!e||!this.fields[e])return console.error("Field not found. Check the field selector."),this;const s=this.getListenerType(this.fields[e].elem.type);return this.removeListener(s,this.fields[e].elem,this.handlerChange),this.clearErrors(),delete this.fields[e],this}removeGroup(t){if(typeof t!="string")throw Error("Group selector is not valid. Please specify a string selector.");const e=this.getKeyByFieldSelector(t);return!e||!this.groupFields[e]?(console.error("Group not found. Check the group selector."),this):(this.groupFields[e].elems.forEach(s=>{const n=this.getListenerType(s.type);this.removeListener(n,s,this.handlerChange)}),this.clearErrors(),delete this.groupFields[e],this)}addRequiredGroup(t,e,s,n){if(typeof t!="string"&&!Ae(t))throw Error("Group selector is not valid. Please specify a string selector or a valid DOM element.");let o;if(typeof t=="string"?o=this.form.querySelector(t):o=t,!o)throw Error("Group selector not found! Please check the group selector.");const a=o.querySelectorAll("input"),r=Array.from(a).filter(c=>{const d=qm(this.groupFields,Hm(c));return d?d[1].elems.find(u=>u!==c):!0}),l=this.setKeyByFieldSelector(t);return this.groupFields[l]={rules:[{rule:js.Required,errorMessage:e,successMessage:n}],groupElem:o,elems:r,touched:!1,isValid:void 0,config:s},a.forEach(c=>{this.setListeners(c)}),this}getListenerType(t){switch(t){case"checkbox":case"select-one":case"file":case"radio":return"change";default:return"input"}}setListeners(t){const e=this.getListenerType(t.type);this.removeListener(e,t,this.handlerChange),this.addListener(e,t,this.handlerChange)}clearFieldLabel(t){var e,s;(e=this.errorLabels[t])==null||e.remove(),(s=this.successLabels[t])==null||s.remove()}clearFieldStyle(t){var e,s,n,o;const a=this.fields[t],r=((e=a.config)==null?void 0:e.errorFieldStyle)||this.globalConfig.errorFieldStyle;Object.keys(r).forEach(c=>{a.elem.style[c]=""});const l=((s=a.config)==null?void 0:s.successFieldStyle)||this.globalConfig.successFieldStyle||{};Object.keys(l).forEach(c=>{a.elem.style[c]=""}),a.elem.classList.remove(...bt(((n=a.config)==null?void 0:n.errorFieldCssClass)||this.globalConfig.errorFieldCssClass),...bt(((o=a.config)==null?void 0:o.successFieldCssClass)||this.globalConfig.successFieldCssClass))}clearErrors(){var t,e;Object.keys(this.errorLabels).forEach(s=>this.errorLabels[s].remove()),Object.keys(this.successLabels).forEach(s=>this.successLabels[s].remove());for(const s in this.fields)this.clearFieldStyle(s);for(const s in this.groupFields){const n=this.groupFields[s],o=((t=n.config)==null?void 0:t.errorFieldStyle)||this.globalConfig.errorFieldStyle;Object.keys(o).forEach(r=>{n.elems.forEach(l=>{var c;l.style[r]="",l.classList.remove(...bt(((c=n.config)==null?void 0:c.errorFieldCssClass)||this.globalConfig.errorFieldCssClass))})});const a=((e=n.config)==null?void 0:e.successFieldStyle)||this.globalConfig.successFieldStyle||{};Object.keys(a).forEach(r=>{n.elems.forEach(l=>{var c;l.style[r]="",l.classList.remove(...bt(((c=n.config)==null?void 0:c.successFieldCssClass)||this.globalConfig.successFieldCssClass))})})}this.tooltips=[]}isTooltip(){return!!this.globalConfig.tooltip}lockForm(){const t=this.form.querySelectorAll("input, textarea, button, select");for(let e=0,s=t.length;e<s;++e)t[e].setAttribute("data-just-validate-fallback-disabled",t[e].disabled?"true":"false"),t[e].setAttribute("disabled","disabled"),t[e].style.pointerEvents="none",t[e].style.webkitFilter="grayscale(100%)",t[e].style.filter="grayscale(100%)"}unlockForm(){const t=this.form.querySelectorAll("input, textarea, button, select");for(let e=0,s=t.length;e<s;++e)t[e].getAttribute("data-just-validate-fallback-disabled")!=="true"&&t[e].removeAttribute("disabled"),t[e].style.pointerEvents="",t[e].style.webkitFilter="",t[e].style.filter=""}renderTooltip(t,e,s){var n;const{top:o,left:a,width:r,height:l}=t.getBoundingClientRect(),c=e.getBoundingClientRect(),d=s||((n=this.globalConfig.tooltip)==null?void 0:n.position);switch(d){case"left":{e.style.top=`${o+l/2-c.height/2}px`,e.style.left=`${a-c.width-Ei}px`;break}case"top":{e.style.top=`${o-c.height-Ei}px`,e.style.left=`${a+r/2-c.width/2}px`;break}case"right":{e.style.top=`${o+l/2-c.height/2}px`,e.style.left=`${a+r+Ei}px`;break}case"bottom":{e.style.top=`${o+l+Ei}px`,e.style.left=`${a+r/2-c.width/2}px`;break}}return e.dataset.direction=d,{refresh:()=>{this.renderTooltip(t,e,s)}}}createErrorLabelElem(t,e,s){const n=document.createElement("div");n.innerHTML=e;const o=this.isTooltip()?s==null?void 0:s.errorLabelStyle:(s==null?void 0:s.errorLabelStyle)||this.globalConfig.errorLabelStyle;return Object.assign(n.style,o),n.classList.add(...bt((s==null?void 0:s.errorLabelCssClass)||this.globalConfig.errorLabelCssClass),"just-validate-error-label"),this.isTooltip()&&(n.dataset.tooltip="true"),this.globalConfig.testingMode&&(n.dataset.testId=`error-label-${t}`),this.errorLabels[t]=n,n}createSuccessLabelElem(t,e,s){if(e===void 0)return null;const n=document.createElement("div");n.innerHTML=e;const o=(s==null?void 0:s.successLabelStyle)||this.globalConfig.successLabelStyle;return Object.assign(n.style,o),n.classList.add(...bt((s==null?void 0:s.successLabelCssClass)||this.globalConfig.successLabelCssClass),"just-validate-success-label"),this.globalConfig.testingMode&&(n.dataset.testId=`success-label-${t}`),this.successLabels[t]=n,n}renderErrorsContainer(t,e){const s=e||this.globalConfig.errorsContainer;if(typeof s=="string"){const n=this.form.querySelector(s);if(n)return n.appendChild(t),!0;console.error(`Error container with ${s} selector not found. Errors will be rendered as usual`)}return s instanceof Element?(s.appendChild(t),!0):(s!==void 0&&console.error("Error container not found. It should be a string or existing Element. Errors will be rendered as usual"),!1)}renderGroupLabel(t,e,s,n){!n&&this.renderErrorsContainer(e,s)||t.appendChild(e)}renderFieldLabel(t,e,s,n){var o,a,r,l,c,d,u;if(!(!n&&this.renderErrorsContainer(e,s)))if(t.type==="checkbox"||t.type==="radio"){const h=document.querySelector(`label[for="${t.getAttribute("id")}"]`);((a=(o=t.parentElement)==null?void 0:o.tagName)==null?void 0:a.toLowerCase())==="label"?(l=(r=t.parentElement)==null?void 0:r.parentElement)==null||l.appendChild(e):h?(c=h.parentElement)==null||c.appendChild(e):(d=t.parentElement)==null||d.appendChild(e)}else(u=t.parentElement)==null||u.appendChild(e)}showLabels(t,e){Object.keys(t).forEach((s,n)=>{const o=t[s],a=this.getKeyByFieldSelector(s);if(!a||!this.fields[a]){console.error("Field not found. Check the field selector.");return}const r=this.fields[a];r.isValid=!e,this.clearFieldStyle(a),this.clearFieldLabel(a),this.renderFieldError(a,!1,o),n===0&&this.globalConfig.focusInvalidField&&setTimeout(()=>r.elem.focus(),0)})}showErrors(t){if(typeof t!="object")throw Error("[showErrors]: Errors should be an object with key: value format");this.showLabels(t,!0)}showSuccessLabels(t){if(typeof t!="object")throw Error("[showSuccessLabels]: Labels should be an object with key: value format");this.showLabels(t,!1)}renderFieldError(t,e=!1,s){var n,o,a,r,l,c;const d=this.fields[t];if(d.isValid===!1&&(this.isValid=!1),d.isValid===void 0||!e&&!this.isSubmitted&&!d.touched&&s===void 0)return;if(d.isValid){if(!d.asyncCheckPending){const h=this.createSuccessLabelElem(t,s!==void 0?s:d.successMessage,d.config);h&&this.renderFieldLabel(d.elem,h,(n=d.config)==null?void 0:n.errorsContainer,!0),d.elem.classList.add(...bt(((o=d.config)==null?void 0:o.successFieldCssClass)||this.globalConfig.successFieldCssClass))}return}d.elem.classList.add(...bt(((a=d.config)==null?void 0:a.errorFieldCssClass)||this.globalConfig.errorFieldCssClass));const u=this.createErrorLabelElem(t,s!==void 0?s:d.errorMessage,d.config);this.renderFieldLabel(d.elem,u,(r=d.config)==null?void 0:r.errorsContainer),this.isTooltip()&&this.tooltips.push(this.renderTooltip(d.elem,u,(c=(l=d.config)==null?void 0:l.tooltip)==null?void 0:c.position))}renderGroupError(t,e=!0){var s,n,o,a;const r=this.groupFields[t];if(r.isValid===!1&&(this.isValid=!1),r.isValid===void 0||!e&&!this.isSubmitted&&!r.touched)return;if(r.isValid){r.elems.forEach(d=>{var u,h;Object.assign(d.style,((u=r.config)==null?void 0:u.successFieldStyle)||this.globalConfig.successFieldStyle),d.classList.add(...bt(((h=r.config)==null?void 0:h.successFieldCssClass)||this.globalConfig.successFieldCssClass))});const c=this.createSuccessLabelElem(t,r.successMessage,r.config);c&&this.renderGroupLabel(r.groupElem,c,(s=r.config)==null?void 0:s.errorsContainer,!0);return}this.isValid=!1,r.elems.forEach(c=>{var d,u;Object.assign(c.style,((d=r.config)==null?void 0:d.errorFieldStyle)||this.globalConfig.errorFieldStyle),c.classList.add(...bt(((u=r.config)==null?void 0:u.errorFieldCssClass)||this.globalConfig.errorFieldCssClass))});const l=this.createErrorLabelElem(t,r.errorMessage,r.config);this.renderGroupLabel(r.groupElem,l,(n=r.config)==null?void 0:n.errorsContainer),this.isTooltip()&&this.tooltips.push(this.renderTooltip(r.groupElem,l,(a=(o=r.config)==null?void 0:o.tooltip)==null?void 0:a.position))}renderErrors(t=!1){if(!(!this.isSubmitted&&!t&&!this.globalConfig.validateBeforeSubmitting)){this.clearErrors(),this.isValid=!0;for(const e in this.groupFields)this.renderGroupError(e);for(const e in this.fields)this.renderFieldError(e)}}destroy(){this.eventListeners.forEach(t=>{this.removeListener(t.type,t.elem,t.func)}),Object.keys(this.customStyleTags).forEach(t=>{this.customStyleTags[t].remove()}),this.clearErrors(),this.globalConfig.lockForm&&this.unlockForm()}refresh(){this.destroy(),this.form?(this.initialize(this.form,this.globalConfig),Object.keys(this.fields).forEach(t=>{const e=this.getFieldSelectorByKey(t);e&&this.addField(e,[...this.fields[t].rules],this.fields[t].config)})):console.error("Cannot initialize the library! Form is not defined")}setCurrentLocale(t){if(typeof t!="string"&&t!==void 0){console.error("Current locale should be a string");return}this.currentLocale=t,this.isSubmitted&&this.validate()}onSuccess(t){return this.onSuccessCallback=t,this}onFail(t){return this.onFailCallback=t,this}onValidate(t){return this.onValidateCallback=t,this}}const cn={form:document.querySelector("#sign-up-form"),input:document.querySelector("#email"),btn:document.querySelector("#submit-form"),modal:document.querySelector(".form-modal"),userEmail:document.querySelector(".user-email")},Ss={emptyMessage:"Заполните это поле",errorMessage:"Некорректный email",successMessage:"Подходит"},te={fields:{success:"success-field",error:"error-field"},labels:{general:"labels",success:"success-label",error:"error-label"},modifiers:{granted:"unlocked",denied:"locked"}},Gm=new Wm(cn.form,{successFieldCssClass:[te.fields.success],errorFieldCssClass:[te.fields.error],successLabelCssClass:[te.labels.general,te.labels.success],errorLabelCssClass:[te.labels.general,te.labels.error],validateBeforeSubmitting:!0});Gm.addField(cn.input,[{rule:"required",errorMessage:Ss.emptyMessage},{rule:"email",errorMessage:Ss.errorMessage}],{successMessage:Ss.successMessage});class Ym{constructor(t,e){E(this,"unlockSubmitBtn",()=>{this.btn.classList.replace(this.cssClasses.modifiers.denied,this.cssClasses.modifiers.granted)});E(this,"lockSubmitBtn",()=>{this.btn.classList.replace(this.cssClasses.modifiers.granted,this.cssClasses.modifiers.denied)});E(this,"getState",()=>this.input.classList.contains(this.cssClasses.fields.success));E(this,"handleInputChange",()=>this.getState()?this.unlockSubmitBtn():this.lockSubmitBtn());E(this,"removeSuccessLabel",()=>document.querySelector(`.${this.cssClasses.labels.success}`).remove());E(this,"clearInput",()=>this.input.value="");E(this,"insertUserEmail",()=>this.userEmail.textContent=this.input.value);E(this,"restoreInitialState",()=>{this.clearInput(),this.removeSuccessLabel(),this.lockSubmitBtn()});E(this,"handleFormSubmit",t=>{this.getState()&&(t.preventDefault(),this.insertUserEmail(),this.modal.showModal(),this.restoreInitialState())});E(this,"init",()=>{this.input.addEventListener("input",this.handleInputChange),this.form.addEventListener("submit",this.handleFormSubmit)});this.form=t.form,this.input=t.input,this.btn=t.btn,this.modal=t.modal,this.userEmail=t.userEmail,this.cssClasses=e}}const Xm=new Ym(cn,te);Xm.init();Ec(document.querySelectorAll("table"));const Um=new kc;Um.initWith("role",{table:"table",thead:"rowgroup",tbody:"rowgroup",tfoot:"rowgroup",tr:"row",td:"cell",th:"columnheader","th[scope=row]":"rowheader"});const Km=new pa("w");Km.initWith([["w-master-2","w-slave-2"]]);const Zm=new pa("h");Zm.initWith([["h-master-1","h-slave-1"],["h-master-2","h-slave-2"],["h-master-3","h-slave-3"]]);const se=document.querySelector(".sidebar"),Zo=document.querySelector(".sidebar-toggle");let Jo=null;Zo.addEventListener("click",()=>{Zo.classList.toggle("active"),se.classList.contains("isOpen")?(se.classList.remove("isOpen"),clearTimeout(Jo)):(se.style.display="initial",Jo=setTimeout(()=>requestAnimationFrame(()=>se.classList.add("isOpen")),.1))});se.addEventListener("transitionend",()=>!se.classList.contains("isOpen")&&(se.style.display="none"));const dn=document.querySelector('[href="mailto:nospam@google.com"]');let Qo=null;const Jm=()=>dn.setAttribute("href","mailto:KrivoshlykovNN@yandex.ru"),Qm=()=>dn.setAttribute("href","mailto:nospampls@google.com"),tg=()=>{clearTimeout(Qo),Jm(),Qo=setTimeout(Qm,1)};dn.addEventListener("click",tg);const eg=(i,t)=>{document.querySelectorAll(`.${i} .${t}`).forEach(s=>{const n=s.closest(`.${i}`),o=()=>{s.style.display="none",n.removeEventListener("scrollend",o)};n.addEventListener("scrollend",o)})};eg("layout-center","scroll-down");console.log(`%cCoded by ✨Nazhdaque✨
+`)):Array.isArray(e)?i.push.apply(i,e):D(i)||t.unshift(""+e);return t},textSize:function(i,t,e){var s=[].concat(t),n=s.length,o=i.font,a=0,r;for(i.font=e.string,r=0;r<n;++r)a=Math.max(i.measureText(s[r]).width,a);return i.font=o,{height:n*e.lineHeight,width:a}},bound:function(i,t,e){return Math.max(i,Math.min(t,e))},arrayDiff:function(i,t){var e=i.slice(),s=[],n,o,a,r;for(n=0,a=t.length;n<a;++n)r=t[n],o=e.indexOf(r),o===-1?s.push([r,1]):e.splice(o,1);for(n=0,a=e.length;n<a;++n)s.push([e[n],-1]);return s},rasterize:function(i){return Math.round(i*Go)/Go}};function ys(i,t){var e=t.x,s=t.y;if(e===null)return{x:0,y:-1};if(s===null)return{x:1,y:0};var n=i.x-e,o=i.y-s,a=Math.sqrt(n*n+o*o);return{x:a?n/a:0,y:a?o/a:-1}}function Dp(i,t,e,s,n){switch(n){case"center":e=s=0;break;case"bottom":e=0,s=1;break;case"right":e=1,s=0;break;case"left":e=-1,s=0;break;case"top":e=0,s=-1;break;case"start":e=-e,s=-s;break;case"end":break;default:n*=Math.PI/180,e=Math.cos(n),s=Math.sin(n);break}return{x:i,y:t,vx:e,vy:s}}var Fp=0,hr=1,fr=2,pr=4,mr=8;function Si(i,t,e){var s=Fp;return i<e.left?s|=hr:i>e.right&&(s|=fr),t<e.top?s|=mr:t>e.bottom&&(s|=pr),s}function zp(i,t){for(var e=i.x0,s=i.y0,n=i.x1,o=i.y1,a=Si(e,s,t),r=Si(n,o,t),l,c,d;!(!(a|r)||a&r);)l=a||r,l&mr?(c=e+(n-e)*(t.top-s)/(o-s),d=t.top):l&pr?(c=e+(n-e)*(t.bottom-s)/(o-s),d=t.bottom):l&fr?(d=s+(o-s)*(t.right-e)/(n-e),c=t.right):l&hr&&(d=s+(o-s)*(t.left-e)/(n-e),c=t.left),l===a?(e=c,s=d,a=Si(e,s,t)):(n=c,o=d,r=Si(n,o,t));return{x0:e,x1:n,y0:s,y1:o}}function Mi(i,t){var e=t.anchor,s=i,n,o;return t.clamp&&(s=zp(s,t.area)),e==="start"?(n=s.x0,o=s.y0):e==="end"?(n=s.x1,o=s.y1):(n=(s.x0+s.x1)/2,o=(s.y0+s.y1)/2),Dp(n,o,i.vx,i.vy,t.align)}var Ci={arc:function(i,t){var e=(i.startAngle+i.endAngle)/2,s=Math.cos(e),n=Math.sin(e),o=i.innerRadius,a=i.outerRadius;return Mi({x0:i.x+s*o,y0:i.y+n*o,x1:i.x+s*a,y1:i.y+n*a,vx:s,vy:n},t)},point:function(i,t){var e=ys(i,t.origin),s=e.x*i.options.radius,n=e.y*i.options.radius;return Mi({x0:i.x-s,y0:i.y-n,x1:i.x+s,y1:i.y+n,vx:e.x,vy:e.y},t)},bar:function(i,t){var e=ys(i,t.origin),s=i.x,n=i.y,o=0,a=0;return i.horizontal?(s=Math.min(i.x,i.base),o=Math.abs(i.base-i.x)):(n=Math.min(i.y,i.base),a=Math.abs(i.base-i.y)),Mi({x0:s,y0:n+a,x1:s+o,y1:n,vx:e.x,vy:e.y},t)},fallback:function(i,t){var e=ys(i,t.origin);return Mi({x0:i.x,y0:i.y,x1:i.x+(i.width||0),y1:i.y+(i.height||0),vx:e.x,vy:e.y},t)}},Ot=je.rasterize;function $p(i){var t=i.borderWidth||0,e=i.padding,s=i.size.height,n=i.size.width,o=-n/2,a=-s/2;return{frame:{x:o-e.left-t,y:a-e.top-t,w:n+e.width+t*2,h:s+e.height+t*2},text:{x:o,y:a,w:n,h:s}}}function Rp(i,t){var e=t.chart.getDatasetMeta(t.datasetIndex).vScale;if(!e)return null;if(e.xCenter!==void 0&&e.yCenter!==void 0)return{x:e.xCenter,y:e.yCenter};var s=e.getBasePixel();return i.horizontal?{x:s,y:null}:{x:null,y:s}}function Vp(i){return i instanceof he?Ci.arc:i instanceof He?Ci.point:i instanceof qe?Ci.bar:Ci.fallback}function Bp(i,t,e,s,n,o){var a=Math.PI/2;if(o){var r=Math.min(o,n/2,s/2),l=t+r,c=e+r,d=t+s-r,u=e+n-r;i.moveTo(t,c),l<d&&c<u?(i.arc(l,c,r,-Math.PI,-a),i.arc(d,c,r,-a,0),i.arc(d,u,r,0,a),i.arc(l,u,r,a,Math.PI)):l<d?(i.moveTo(l,e),i.arc(d,c,r,-a,a),i.arc(l,c,r,a,Math.PI+a)):c<u?(i.arc(l,c,r,-Math.PI,0),i.arc(l,u,r,0,Math.PI)):i.arc(l,c,r,-Math.PI,Math.PI),i.closePath(),i.moveTo(t,e)}else i.rect(t,e,s,n)}function Np(i,t,e){var s=e.backgroundColor,n=e.borderColor,o=e.borderWidth;!s&&(!n||!o)||(i.beginPath(),Bp(i,Ot(t.x)+o/2,Ot(t.y)+o/2,Ot(t.w)-o,Ot(t.h)-o,e.borderRadius),i.closePath(),s&&(i.fillStyle=s,i.fill()),n&&o&&(i.strokeStyle=n,i.lineWidth=o,i.lineJoin="miter",i.stroke()))}function Hp(i,t,e){var s=e.lineHeight,n=i.w,o=i.x,a=i.y+s/2;return t==="center"?o+=n/2:(t==="end"||t==="right")&&(o+=n),{h:s,w:n,x:o,y:a}}function qp(i,t,e){var s=i.shadowBlur,n=e.stroked,o=Ot(e.x),a=Ot(e.y),r=Ot(e.w);n&&i.strokeText(t,o,a,r),e.filled&&(s&&n&&(i.shadowBlur=0),i.fillText(t,o,a,r),s&&n&&(i.shadowBlur=s))}function jp(i,t,e,s){var n=s.textAlign,o=s.color,a=!!o,r=s.font,l=t.length,c=s.textStrokeColor,d=s.textStrokeWidth,u=c&&d,h;if(!(!l||!a&&!u))for(e=Hp(e,n,r),i.font=r.string,i.textAlign=n,i.textBaseline="middle",i.shadowBlur=s.textShadowBlur,i.shadowColor=s.textShadowColor,a&&(i.fillStyle=o),u&&(i.lineJoin="round",i.lineWidth=d,i.strokeStyle=c),h=0,l=t.length;h<l;++h)qp(i,t[h],{stroked:u,filled:a,w:e.w,x:e.x,y:e.y+e.h*h})}var gr=function(i,t,e,s){var n=this;n._config=i,n._index=s,n._model=null,n._rects=null,n._ctx=t,n._el=e};yt(gr.prototype,{_modelize:function(i,t,e,s){var n=this,o=n._index,a=U(N([e.font,{}],s,o)),r=N([e.color,G.color],s,o);return{align:N([e.align,"center"],s,o),anchor:N([e.anchor,"center"],s,o),area:s.chart.chartArea,backgroundColor:N([e.backgroundColor,null],s,o),borderColor:N([e.borderColor,null],s,o),borderRadius:N([e.borderRadius,0],s,o),borderWidth:N([e.borderWidth,0],s,o),clamp:N([e.clamp,!1],s,o),clip:N([e.clip,!1],s,o),color:r,display:i,font:a,lines:t,offset:N([e.offset,4],s,o),opacity:N([e.opacity,1],s,o),origin:Rp(n._el,s),padding:Q(N([e.padding,4],s,o)),positioner:Vp(n._el),rotation:N([e.rotation,0],s,o)*(Math.PI/180),size:je.textSize(n._ctx,t,a),textAlign:N([e.textAlign,"start"],s,o),textShadowBlur:N([e.textShadowBlur,0],s,o),textShadowColor:N([e.textShadowColor,r],s,o),textStrokeColor:N([e.textStrokeColor,r],s,o),textStrokeWidth:N([e.textStrokeWidth,0],s,o)}},update:function(i){var t=this,e=null,s=null,n=t._index,o=t._config,a,r,l,c=N([o.display,!0],i,n);c&&(a=i.dataset.data[n],r=I(B(o.formatter,[a,i]),a),l=D(r)?[]:je.toTextLines(r),l.length&&(e=t._modelize(c,l,o,i),s=$p(e))),t._model=e,t._rects=s},geometry:function(){return this._rects?this._rects.frame:{}},rotation:function(){return this._model?this._model.rotation:0},visible:function(){return this._model&&this._model.opacity},model:function(){return this._model},draw:function(i,t){var e=this,s=i.ctx,n=e._model,o=e._rects,a;this.visible()&&(s.save(),n.clip&&(a=n.area,s.beginPath(),s.rect(a.left,a.top,a.right-a.left,a.bottom-a.top),s.clip()),s.globalAlpha=je.bound(0,n.opacity,1),s.translate(Ot(t.x),Ot(t.y)),s.rotate(n.rotation),Np(s,o.frame,n),jp(s,n.lines,o.text,n),s.restore())}});var Wp=Number.MIN_SAFE_INTEGER||-9007199254740991,Gp=Number.MAX_SAFE_INTEGER||9007199254740991;function Te(i,t,e){var s=Math.cos(e),n=Math.sin(e),o=t.x,a=t.y;return{x:o+s*(i.x-o)-n*(i.y-a),y:a+n*(i.x-o)+s*(i.y-a)}}function Yo(i,t){var e=Gp,s=Wp,n=t.origin,o,a,r,l,c;for(o=0;o<i.length;++o)a=i[o],r=a.x-n.x,l=a.y-n.y,c=t.vx*r+t.vy*l,e=Math.min(e,c),s=Math.max(s,c);return{min:e,max:s}}function ki(i,t){var e=t.x-i.x,s=t.y-i.y,n=Math.sqrt(e*e+s*s);return{vx:(t.x-i.x)/n,vy:(t.y-i.y)/n,origin:i,ln:n}}var br=function(){this._rotation=0,this._rect={x:0,y:0,w:0,h:0}};yt(br.prototype,{center:function(){var i=this._rect;return{x:i.x+i.w/2,y:i.y+i.h/2}},update:function(i,t,e){this._rotation=e,this._rect={x:t.x+i.x,y:t.y+i.y,w:t.w,h:t.h}},contains:function(i){var t=this,e=1,s=t._rect;return i=Te(i,t.center(),-t._rotation),!(i.x<s.x-e||i.y<s.y-e||i.x>s.x+s.w+e*2||i.y>s.y+s.h+e*2)},intersects:function(i){var t=this._points(),e=i._points(),s=[ki(t[0],t[1]),ki(t[0],t[3])],n,o,a;for(this._rotation!==i._rotation&&s.push(ki(e[0],e[1]),ki(e[0],e[3])),n=0;n<s.length;++n)if(o=Yo(t,s[n]),a=Yo(e,s[n]),o.max<a.min||a.max<o.min)return!1;return!0},_points:function(){var i=this,t=i._rect,e=i._rotation,s=i.center();return[Te({x:t.x,y:t.y},s,e),Te({x:t.x+t.w,y:t.y},s,e),Te({x:t.x+t.w,y:t.y+t.h},s,e),Te({x:t.x,y:t.y+t.h},s,e)]}});function vr(i,t,e){var s=t.positioner(i,t),n=s.vx,o=s.vy;if(!n&&!o)return{x:s.x,y:s.y};var a=e.w,r=e.h,l=t.rotation,c=Math.abs(a/2*Math.cos(l))+Math.abs(r/2*Math.sin(l)),d=Math.abs(a/2*Math.sin(l))+Math.abs(r/2*Math.cos(l)),u=1/Math.max(Math.abs(n),Math.abs(o));return c*=n*u,d*=o*u,c+=t.offset*n,d+=t.offset*o,{x:s.x+c,y:s.y+d}}function Yp(i,t){var e,s,n,o;for(e=i.length-1;e>=0;--e)for(n=i[e].$layout,s=e-1;s>=0&&n._visible;--s)o=i[s].$layout,o._visible&&n._box.intersects(o._box)&&t(n,o);return i}function Xp(i){var t,e,s,n,o,a,r;for(t=0,e=i.length;t<e;++t)s=i[t],n=s.$layout,n._visible&&(r=new Proxy(s._el,{get:(l,c)=>l.getProps([c],!0)[c]}),o=s.geometry(),a=vr(r,s.model(),o),n._box.update(a,o,s.rotation()));return Yp(i,function(l,c){var d=l._hidable,u=c._hidable;d&&u||u?c._visible=!1:d&&(l._visible=!1)})}var We={prepare:function(i){var t=[],e,s,n,o,a;for(e=0,n=i.length;e<n;++e)for(s=0,o=i[e].length;s<o;++s)a=i[e][s],t.push(a),a.$layout={_box:new br,_hidable:!1,_visible:!0,_set:e,_idx:a._index};return t.sort(function(r,l){var c=r.$layout,d=l.$layout;return c._idx===d._idx?d._set-c._set:d._idx-c._idx}),this.update(t),t},update:function(i){var t=!1,e,s,n,o,a;for(e=0,s=i.length;e<s;++e)n=i[e],o=n.model(),a=n.$layout,a._hidable=o&&o.display==="auto",a._visible=n.visible(),t|=a._hidable;t&&Xp(i)},lookup:function(i,t){var e,s;for(e=i.length-1;e>=0;--e)if(s=i[e].$layout,s&&s._visible&&s._box.contains(t))return i[e];return null},draw:function(i,t){var e,s,n,o,a,r;for(e=0,s=t.length;e<s;++e)n=t[e],o=n.$layout,o._visible&&(a=n.geometry(),r=vr(n._el,n.model(),a),o._box.update(r,a,n.rotation()),n.draw(i,r))}},Up=function(i){if(D(i))return null;var t=i,e,s,n;if(F(i))if(!D(i.label))t=i.label;else if(!D(i.r))t=i.r;else for(t="",e=Object.keys(i),n=0,s=e.length;n<s;++n)t+=(n!==0?", ":"")+e[n]+": "+i[e[n]];return""+t},Kp={align:"center",anchor:"center",backgroundColor:null,borderColor:null,borderRadius:0,borderWidth:0,clamp:!1,clip:!1,color:void 0,display:!0,font:{family:void 0,lineHeight:1.2,size:void 0,style:void 0,weight:null},formatter:Up,labels:void 0,listeners:{},offset:4,opacity:1,padding:{top:4,right:4,bottom:4,left:4},rotation:0,textAlign:"start",textStrokeColor:void 0,textStrokeWidth:0,textShadowBlur:0,textShadowColor:void 0},nt="$datalabels",_r="$default";function Zp(i,t){var e=i.datalabels,s={},n=[],o,a;return e===!1?null:(e===!0&&(e={}),t=yt({},[t,e]),o=t.labels||{},a=Object.keys(o),delete t.labels,a.length?a.forEach(function(r){o[r]&&n.push(yt({},[t,o[r],{_key:r}]))}):n.push(t),s=n.reduce(function(r,l){return V(l.listeners||{},function(c,d){r[d]=r[d]||{},r[d][l._key||_r]=c}),delete l.listeners,r},{}),{labels:n,listeners:s})}function qs(i,t,e,s){if(t){var n=e.$context,o=e.$groups,a;t[o._set]&&(a=t[o._set][o._key],a&&B(a,[n,s])===!0&&(i[nt]._dirty=!0,e.update(n)))}}function Jp(i,t,e,s,n){var o,a;!e&&!s||(e?s?e!==s&&(a=o=!0):a=!0:o=!0,a&&qs(i,t.leave,e,n),o&&qs(i,t.enter,s,n))}function Qp(i,t){var e=i[nt],s=e._listeners,n,o;if(!(!s.enter&&!s.leave)){if(t.type==="mousemove")o=We.lookup(e._labels,t);else if(t.type!=="mouseout")return;n=e._hovered,e._hovered=o,Jp(i,s,n,o,t)}}function tm(i,t){var e=i[nt],s=e._listeners.click,n=s&&We.lookup(e._labels,t);n&&qs(i,s,n,t)}var em={id:"datalabels",defaults:Kp,beforeInit:function(i){i[nt]={_actives:[]}},beforeUpdate:function(i){var t=i[nt];t._listened=!1,t._listeners={},t._datasets=[],t._labels=[]},afterDatasetUpdate:function(i,t,e){var s=t.index,n=i[nt],o=n._datasets[s]=[],a=i.isDatasetVisible(s),r=i.data.datasets[s],l=Zp(r,e),c=t.meta.data||[],d=i.ctx,u,h,f,p,m,b,_,g;for(d.save(),u=0,f=c.length;u<f;++u)if(_=c[u],_[nt]=[],a&&_&&i.getDataVisibility(u)&&!_.skip)for(h=0,p=l.labels.length;h<p;++h)m=l.labels[h],b=m._key,g=new gr(m,d,_,u),g.$groups={_set:s,_key:b||_r},g.$context={active:!1,chart:i,dataIndex:u,dataset:r,datasetIndex:s},g.update(g.$context),_[nt].push(g),o.push(g);d.restore(),yt(n._listeners,l.listeners,{merger:function(v,x,y){x[v]=x[v]||{},x[v][t.index]=y[v],n._listened=!0}})},afterUpdate:function(i){i[nt]._labels=We.prepare(i[nt]._datasets)},afterDatasetsDraw:function(i){We.draw(i,i[nt]._labels)},beforeEvent:function(i,t){if(i[nt]._listened){var e=t.event;switch(e.type){case"mousemove":case"mouseout":Qp(i,e);break;case"click":tm(i,e);break}}},afterEvent:function(i){var t=i[nt],e=t._actives,s=t._actives=i.getActiveElements(),n=je.arrayDiff(e,s),o,a,r,l,c,d,u;for(o=0,a=n.length;o<a;++o)if(c=n[o],c[1])for(u=c[0].element[nt]||[],r=0,l=u.length;r<l;++r)d=u[r],d.$context.active=c[1]===1,d.update(d.$context);(t._dirty||n.length)&&(We.update(t._labels),i.render()),delete t._dirty}};class im{constructor(){E(this,"getValues",t=>(t.forEach(e=>this.brandColors.push(getComputedStyle(document.documentElement,null).getPropertyValue(e))),this.brandColors));this.brandColors=[]}}const sm=new im,Le=sm.getValues(["--clr-1a-solid","--clr-1b-solid","--clr-2a-solid","--clr-2b-solid","--clr-2c-solid"]),nm={labels:["Data-1","Data-2","Data-3","Data-4","Data-5"],datasets:[{label:"Amount",data:[65,72,88,43,56],backgroundColor:[Le[0],Le[1],Le[2],Le[3],Le[4]],hoverOffset:50}]},om={cutout:50,maintainAspectRatio:!1,plugins:{legend:{position:"left"},colors:{enabled:!0},datalabels:{backgroundColor:"#000",borderRadius:3,font:{size:14},formatter:(i,t)=>{const s=t.chart.data.datasets[0].data.reduce((o,a)=>o+a,0);return(i/s*100).toFixed(2)+"%"},color:"#fff"}}},am={type:"doughnut",plugins:[em],options:om,data:nm};document.querySelectorAll(".chart-doughnut").forEach(i=>new ft(i,am));const rm=document.getElementById("chart-bar"),lm=["January","February","March","April","May","June","July"],cm={labels:lm,datasets:[{label:"Dataset-1",data:[65,34,82,75,47,55,91],backgroundColor:["rgba(255, 99, 132, 0.2)","rgba(255, 159, 64, 0.2)","rgba(255, 205, 86, 0.2)","rgba(75, 192, 192, 0.2)","rgba(54, 162, 235, 0.2)","rgba(153, 102, 255, 0.2)","rgba(201, 203, 207, 0.2)"],borderColor:["rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(153, 102, 255)","rgb(201, 203, 207)"],borderWidth:1}]},dm={maintainAspectRatio:!1,scales:{y:{beginAtZero:!0}}},um={type:"bar",data:cm,options:dm};new ft(rm,um);const hm=document.getElementById("chart-line"),fm=["January","February","March","April","May","June","July"],pm={labels:fm,datasets:[{label:"Data-1",data:[65,34,82,75,47,55,91],fill:{target:!0,above:"rgba(54, 162, 235, 0.1)"},tension:.25},{label:"Data-2",data:[25,44,54,32,14,46,52],fill:{target:!0,above:"rgba(255, 99, 132, 0.1)"},tension:.25}]},mm={maintainAspectRatio:!1,scales:{y:{beginAtZero:!0}}},gm={type:"line",data:pm,options:mm};new ft(hm,gm);const Xo=()=>new Date(new Date().getTime()-new Date().getTimezoneOffset()*6e4).toISOString().replace(/T/," ").replace(/\./,"::").replace(/Z/,"ms"),bm="документ прочитан",vm="документ прочитан, ресурсы загружены",Uo=(i,t)=>console.log(`%cPLARSON test message: ${t} - ${i}`,"background: #222; color: magenta;"),_m=()=>{document.onreadystatechange=i=>{switch(i.target.readyState){case"interactive":return Uo(bm,Xo());case"complete":return Uo(vm,Xo())}}};_m();const xm=()=>{const i=document.querySelectorAll(".video");for(let t=0;t<i.length;t++)ym(i[t])},ym=i=>{const t=i.querySelector(".video__link"),e=i.querySelector(".video__media"),s=i.querySelector(".video__button"),n=wm(e);i.addEventListener("click",()=>{const o=Sm(n);t.remove(),s.remove(),i.appendChild(o)}),i.classList.add("video--enabled")},wm=i=>{const t=/https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;return i.src.match(t)[1]},Sm=i=>{const t=document.createElement("iframe");return t.setAttribute("allowfullscreen",""),t.setAttribute("allow","autoplay"),t.setAttribute("src",Mm(i)),t.classList.add("video__media"),t},Mm=i=>{const t="?rel=0&showinfo=0&autoplay=1";return"https://www.youtube.com/embed/"+i+t};xm();var Cm=Object.defineProperty,km=(i,t,e)=>t in i?Cm(i,t,{enumerable:!0,configurable:!0,writable:!0,value:e}):i[t]=e,R=(i,t,e)=>(km(i,typeof t!="symbol"?t+"":t,e),e);const Em=/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,Tm=/^-?[0-9]\d*$/,Lm=/^(?=.*[A-Za-z])(?=.*\d).{8,}$/,Pm=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,Am=i=>{let t=i;return typeof i=="string"&&(t=i.trim()),!t},Om=i=>Em.test(i),Im=(i,t)=>i.length>t,Dm=(i,t)=>i.length<t,Fm=i=>typeof i!="string"?!1:!isNaN(+i)&&!isNaN(parseFloat(i)),zm=i=>Tm.test(i),$m=i=>Lm.test(i),Rm=i=>Pm.test(i),Vm=(i,t)=>i>t,Bm=(i,t)=>i<t,Ct=i=>typeof i!="string"||i==="";var z=(i=>(i.Required="required",i.Email="email",i.MinLength="minLength",i.MaxLength="maxLength",i.Password="password",i.Number="number",i.Integer="integer",i.MaxNumber="maxNumber",i.MinNumber="minNumber",i.StrongPassword="strongPassword",i.CustomRegexp="customRegexp",i.MinFilesCount="minFilesCount",i.MaxFilesCount="maxFilesCount",i.Files="files",i))(z||{}),js=(i=>(i.Required="required",i))(js||{}),xr=(i=>(i.Label="label",i.LabelArrow="labelArrow",i))(xr||{});const Ko=[{key:z.Required,dict:{en:"The field is required"}},{key:z.Email,dict:{en:"Email has invalid format"}},{key:z.MaxLength,dict:{en:"The field must contain a maximum of :value characters"}},{key:z.MinLength,dict:{en:"The field must contain a minimum of :value characters"}},{key:z.Password,dict:{en:"Password must contain minimum eight characters, at least one letter and one number"}},{key:z.StrongPassword,dict:{en:"Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"}},{key:z.Number,dict:{en:"Value should be a number"}},{key:z.MaxNumber,dict:{en:"Number should be less or equal than :value"}},{key:z.MinNumber,dict:{en:"Number should be more or equal than :value"}},{key:z.MinFilesCount,dict:{en:"Files count should be more or equal than :value"}},{key:z.MaxFilesCount,dict:{en:"Files count should be less or equal than :value"}},{key:z.Files,dict:{en:"Uploaded files have one or several invalid properties (extension/size/type etc)."}}],Nm="Value is incorrect",Pe=i=>typeof i=="object"&&i!==null&&"then"in i&&typeof i.then=="function",Hm=i=>{let t=i;const e=[];for(;t;)e.unshift(t),t=t.parentNode;return e},qm=(i,t)=>{const e=[...t].reverse();for(let s=0,n=e.length;s<n;++s){const o=e[s];for(const a in i){const r=i[a];if(r.groupElem===o)return[a,r]}}return null},bt=i=>Array.isArray(i)?i.filter(t=>t.length>0):typeof i=="string"&&i.trim()?[...i.split(" ").filter(t=>t.length>0)]:[],Ae=i=>i instanceof Element||i instanceof HTMLDocument,jm=".just-validate-error-label[data-tooltip=true]{position:fixed;padding:4px 8px;background:#423f3f;color:#fff;white-space:nowrap;z-index:10;border-radius:4px;transform:translateY(-5px)}.just-validate-error-label[data-tooltip=true]:before{content:'';width:0;height:0;border-left:solid 5px transparent;border-right:solid 5px transparent;border-bottom:solid 5px #423f3f;position:absolute;z-index:3;display:block;bottom:-5px;transform:rotate(180deg);left:calc(50% - 5px)}.just-validate-error-label[data-tooltip=true][data-direction=left]{transform:translateX(-5px)}.just-validate-error-label[data-tooltip=true][data-direction=left]:before{right:-7px;bottom:auto;left:auto;top:calc(50% - 2px);transform:rotate(90deg)}.just-validate-error-label[data-tooltip=true][data-direction=right]{transform:translateX(5px)}.just-validate-error-label[data-tooltip=true][data-direction=right]:before{right:auto;bottom:auto;left:-7px;top:calc(50% - 2px);transform:rotate(-90deg)}.just-validate-error-label[data-tooltip=true][data-direction=bottom]{transform:translateY(5px)}.just-validate-error-label[data-tooltip=true][data-direction=bottom]:before{right:auto;bottom:auto;left:calc(50% - 5px);top:-5px;transform:rotate(0)}",Ei=5,ws={errorFieldStyle:{color:"#b81111",border:"1px solid #B81111"},errorFieldCssClass:"just-validate-error-field",successFieldCssClass:"just-validate-success-field",errorLabelStyle:{color:"#b81111"},errorLabelCssClass:"just-validate-error-label",successLabelCssClass:"just-validate-success-label",focusInvalidField:!0,lockForm:!0,testingMode:!1,validateBeforeSubmitting:!1};class Wm{constructor(t,e,s){R(this,"form",null),R(this,"fields",{}),R(this,"groupFields",{}),R(this,"errors",{}),R(this,"isValid",!1),R(this,"isSubmitted",!1),R(this,"globalConfig",ws),R(this,"errorLabels",{}),R(this,"successLabels",{}),R(this,"eventListeners",[]),R(this,"dictLocale",Ko),R(this,"currentLocale","en"),R(this,"customStyleTags",{}),R(this,"onSuccessCallback"),R(this,"onFailCallback"),R(this,"onValidateCallback"),R(this,"tooltips",[]),R(this,"lastScrollPosition"),R(this,"isScrollTick"),R(this,"fieldIds",new Map),R(this,"getKeyByFieldSelector",n=>this.fieldIds.get(n)),R(this,"getFieldSelectorByKey",n=>{for(const[o,a]of this.fieldIds)if(n===a)return o}),R(this,"getCompatibleFields",()=>{const n={};return Object.keys(this.fields).forEach(o=>{let a=o;const r=this.getFieldSelectorByKey(o);typeof r=="string"&&(a=r),n[a]={...this.fields[o]}}),n}),R(this,"setKeyByFieldSelector",n=>{if(this.fieldIds.has(n))return this.fieldIds.get(n);const o=String(this.fieldIds.size+1);return this.fieldIds.set(n,o),o}),R(this,"refreshAllTooltips",()=>{this.tooltips.forEach(n=>{n.refresh()})}),R(this,"handleDocumentScroll",()=>{this.lastScrollPosition=window.scrollY,this.isScrollTick||(window.requestAnimationFrame(()=>{this.refreshAllTooltips(),this.isScrollTick=!1}),this.isScrollTick=!0)}),R(this,"formSubmitHandler",n=>{n.preventDefault(),this.isSubmitted=!0,this.validateHandler(n)}),R(this,"handleFieldChange",n=>{let o;for(const a in this.fields)if(this.fields[a].elem===n){o=a;break}o&&(this.fields[o].touched=!0,this.validateField(o,!0))}),R(this,"handleGroupChange",n=>{let o;for(const a in this.groupFields)if(this.groupFields[a].elems.find(l=>l===n)){o=a;break}o&&(this.groupFields[o].touched=!0,this.validateGroup(o,!0))}),R(this,"handlerChange",n=>{n.target&&(this.handleFieldChange(n.target),this.handleGroupChange(n.target),this.renderErrors())}),this.initialize(t,e,s)}initialize(t,e,s){if(this.form=null,this.errors={},this.isValid=!1,this.isSubmitted=!1,this.globalConfig=ws,this.errorLabels={},this.successLabels={},this.eventListeners=[],this.customStyleTags={},this.tooltips=[],this.currentLocale="en",typeof t=="string"){const n=document.querySelector(t);if(!n)throw Error(`Form with ${t} selector not found! Please check the form selector`);this.setForm(n)}else if(t instanceof HTMLFormElement)this.setForm(t);else throw Error("Form selector is not valid. Please specify a string selector or a DOM element.");if(this.globalConfig={...ws,...e},s&&(this.dictLocale=[...s,...Ko]),this.isTooltip()){const n=document.createElement("style");n.textContent=jm,this.customStyleTags[xr.Label]=document.head.appendChild(n),this.addListener("scroll",document,this.handleDocumentScroll)}}getLocalisedString(t,e,s){var n;const o=s??t;let a=(n=this.dictLocale.find(r=>r.key===o))==null?void 0:n.dict[this.currentLocale];if(a||s&&(a=s),a&&e!==void 0)switch(t){case z.MaxLength:case z.MinLength:case z.MaxNumber:case z.MinNumber:case z.MinFilesCount:case z.MaxFilesCount:a=a.replace(":value",String(e))}return a||s||Nm}getFieldErrorMessage(t,e){const s=typeof t.errorMessage=="function"?t.errorMessage(this.getElemValue(e),this.fields):t.errorMessage;return this.getLocalisedString(t.rule,t.value,s)}getFieldSuccessMessage(t,e){const s=typeof t=="function"?t(this.getElemValue(e),this.fields):t;return this.getLocalisedString(void 0,void 0,s)}getGroupErrorMessage(t){return this.getLocalisedString(t.rule,void 0,t.errorMessage)}getGroupSuccessMessage(t){if(t.successMessage)return this.getLocalisedString(void 0,void 0,t.successMessage)}setFieldInvalid(t,e){this.fields[t].isValid=!1,this.fields[t].errorMessage=this.getFieldErrorMessage(e,this.fields[t].elem)}setFieldValid(t,e){this.fields[t].isValid=!0,e!==void 0&&(this.fields[t].successMessage=this.getFieldSuccessMessage(e,this.fields[t].elem))}setGroupInvalid(t,e){this.groupFields[t].isValid=!1,this.groupFields[t].errorMessage=this.getGroupErrorMessage(e)}setGroupValid(t,e){this.groupFields[t].isValid=!0,this.groupFields[t].successMessage=this.getGroupSuccessMessage(e)}getElemValue(t){switch(t.type){case"checkbox":return t.checked;case"file":return t.files;default:return t.value}}validateGroupRule(t,e,s){switch(s.rule){case js.Required:e.every(n=>!n.checked)?this.setGroupInvalid(t,s):this.setGroupValid(t,s)}}validateFieldRule(t,e,s,n=!1){const o=s.value,a=this.getElemValue(e);if(s.plugin){s.plugin(a,this.getCompatibleFields())||this.setFieldInvalid(t,s);return}switch(s.rule){case z.Required:{Am(a)&&this.setFieldInvalid(t,s);break}case z.Email:{if(Ct(a))break;Om(a)||this.setFieldInvalid(t,s);break}case z.MaxLength:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof o!="number"){console.error(`Value for ${s.rule} rule for [${t}] should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Ct(a))break;Im(a,o)&&this.setFieldInvalid(t,s);break}case z.MinLength:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof o!="number"){console.error(`Value for ${s.rule} rule for [${t}] should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Ct(a))break;Dm(a,o)&&this.setFieldInvalid(t,s);break}case z.Password:{if(Ct(a))break;$m(a)||this.setFieldInvalid(t,s);break}case z.StrongPassword:{if(Ct(a))break;Rm(a)||this.setFieldInvalid(t,s);break}case z.Number:{if(Ct(a))break;Fm(a)||this.setFieldInvalid(t,s);break}case z.Integer:{if(Ct(a))break;zm(a)||this.setFieldInvalid(t,s);break}case z.MaxNumber:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof o!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Ct(a))break;const r=+a;(Number.isNaN(r)||Vm(r,o))&&this.setFieldInvalid(t,s);break}case z.MinNumber:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof o!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Ct(a))break;const r=+a;(Number.isNaN(r)||Bm(r,o))&&this.setFieldInvalid(t,s);break}case z.CustomRegexp:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);return}let r;try{r=new RegExp(o)}catch{console.error(`Value for ${s.rule} rule for [${t}] should be a valid regexp. This field will be always invalid.`),this.setFieldInvalid(t,s);break}const l=String(a);l!==""&&!r.test(l)&&this.setFieldInvalid(t,s);break}case z.MinFilesCount:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof o!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Number.isFinite(a==null?void 0:a.length)&&a.length<o){this.setFieldInvalid(t,s);break}break}case z.MaxFilesCount:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof o!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Number.isFinite(a==null?void 0:a.length)&&a.length>o){this.setFieldInvalid(t,s);break}break}case z.Files:{if(o===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);return}if(typeof o!="object"){console.error(`Value for ${s.rule} rule for [${t}] field should be an object. This field will be always invalid.`),this.setFieldInvalid(t,s);return}const r=o.files;if(typeof r!="object"){console.error(`Value for ${s.rule} rule for [${t}] field should be an object with files array. This field will be always invalid.`),this.setFieldInvalid(t,s);return}const l=(c,d)=>{const u=Number.isFinite(d.minSize)&&c.size<d.minSize,h=Number.isFinite(d.maxSize)&&c.size>d.maxSize,f=Array.isArray(d.names)&&!d.names.includes(c.name),p=Array.isArray(d.extensions)&&!d.extensions.includes(c.name.split(".")[c.name.split(".").length-1]),m=Array.isArray(d.types)&&!d.types.includes(c.type);return u||h||f||p||m};if(typeof a=="object"&&a!==null)for(let c=0,d=a.length;c<d;++c){const u=a.item(c);if(!u){this.setFieldInvalid(t,s);break}if(l(u,r)){this.setFieldInvalid(t,s);break}}break}default:{if(typeof s.validator!="function"){console.error(`Validator for custom rule for [${t}] field should be a function. This field will be always invalid.`),this.setFieldInvalid(t,s);return}const r=s.validator(a,this.getCompatibleFields());if(typeof r!="boolean"&&typeof r!="function"&&console.error(`Validator return value for [${t}] field should be boolean or function. It will be cast to boolean.`),typeof r=="function")if(n)this.fields[t].asyncCheckPending=!0;else{this.fields[t].asyncCheckPending=!1;const l=r();if(!Pe(l)){console.error(`Validator function for custom rule for [${t}] field should return a Promise. This field will be always invalid.`),this.setFieldInvalid(t,s);return}return l.then(c=>{c||this.setFieldInvalid(t,s)}).catch(()=>{this.setFieldInvalid(t,s)})}r||this.setFieldInvalid(t,s)}}}isFormValid(){let t=!0;for(let e=0,s=Object.values(this.fields).length;e<s;++e){const n=Object.values(this.fields)[e];if(n.isValid===void 0){t=void 0;break}if(n.isValid===!1){t=!1;break}}for(let e=0,s=Object.values(this.groupFields).length;e<s;++e){const n=Object.values(this.groupFields)[e];if(n.isValid===void 0){t=void 0;break}if(n.isValid===!1){t=!1;break}}return t}validateField(t,e=!1){var s;const n=this.fields[t];n.isValid=!0;const o=[];return[...n.rules].reverse().forEach(a=>{const r=this.validateFieldRule(t,n.elem,a,e);Pe(r)&&o.push(r)}),n.isValid&&this.setFieldValid(t,(s=n.config)==null?void 0:s.successMessage),Promise.allSettled(o).finally(()=>{var a;e&&((a=this.onValidateCallback)==null||a.call(this,{isValid:this.isFormValid(),isSubmitted:this.isSubmitted,fields:this.getCompatibleFields(),groups:{...this.groupFields}}))})}revalidateField(t){if(typeof t!="string"&&!Ae(t))throw Error("Field selector is not valid. Please specify a string selector or a valid DOM element.");const e=this.getKeyByFieldSelector(t);return!e||!this.fields[e]?(console.error("Field not found. Check the field selector."),Promise.reject()):new Promise(s=>{this.validateField(e,!0).finally(()=>{this.clearFieldStyle(e),this.clearFieldLabel(e),this.renderFieldError(e,!0),s(!!this.fields[e].isValid)})})}revalidateGroup(t){if(typeof t!="string"&&!Ae(t))throw Error("Group selector is not valid. Please specify a string selector or a valid DOM element.");const e=this.getKeyByFieldSelector(t);return!e||!this.groupFields[e]?(console.error("Group not found. Check the group selector."),Promise.reject()):new Promise(s=>{this.validateGroup(e).finally(()=>{this.clearFieldLabel(e),this.renderGroupError(e,!0),s(!!this.groupFields[e].isValid)})})}validateGroup(t,e=!1){const s=this.groupFields[t],n=[];return[...s.rules].reverse().forEach(o=>{const a=this.validateGroupRule(t,s.elems,o);Pe(a)&&n.push(a)}),Promise.allSettled(n).finally(()=>{var o;e&&((o=this.onValidateCallback)==null||o.call(this,{isValid:this.isFormValid(),isSubmitted:this.isSubmitted,fields:this.getCompatibleFields(),groups:{...this.groupFields}}))})}focusInvalidField(){for(const t in this.fields){const e=this.fields[t];if(!e.isValid){setTimeout(()=>e.elem.focus(),0);break}}}afterSubmitValidation(t=!1){this.renderErrors(t),this.globalConfig.focusInvalidField&&this.focusInvalidField()}validate(t=!1){return new Promise(e=>{const s=[];Object.keys(this.fields).forEach(n=>{const o=this.validateField(n);Pe(o)&&s.push(o)}),Object.keys(this.groupFields).forEach(n=>{const o=this.validateGroup(n);Pe(o)&&s.push(o)}),Promise.allSettled(s).then(()=>{var n;this.afterSubmitValidation(t),(n=this.onValidateCallback)==null||n.call(this,{isValid:this.isFormValid(),isSubmitted:this.isSubmitted,fields:this.getCompatibleFields(),groups:{...this.groupFields}}),e(!!s.length)})})}revalidate(){return new Promise(t=>{this.validateHandler(void 0,!0).finally(()=>{this.globalConfig.focusInvalidField&&this.focusInvalidField(),t(this.isValid)})})}validateHandler(t,e=!1){return this.globalConfig.lockForm&&this.lockForm(),this.validate(e).finally(()=>{var s,n;this.globalConfig.lockForm&&this.unlockForm(),this.isValid?(s=this.onSuccessCallback)==null||s.call(this,t):(n=this.onFailCallback)==null||n.call(this,this.getCompatibleFields(),this.groupFields)})}setForm(t){this.form=t,this.form.setAttribute("novalidate","novalidate"),this.removeListener("submit",this.form,this.formSubmitHandler),this.addListener("submit",this.form,this.formSubmitHandler)}addListener(t,e,s){e.addEventListener(t,s),this.eventListeners.push({type:t,elem:e,func:s})}removeListener(t,e,s){e.removeEventListener(t,s),this.eventListeners=this.eventListeners.filter(n=>n.type!==t||n.elem!==e)}addField(t,e,s){if(typeof t!="string"&&!Ae(t))throw Error("Field selector is not valid. Please specify a string selector or a valid DOM element.");let n;if(typeof t=="string"?n=this.form.querySelector(t):n=t,!n)throw Error("Field doesn't exist in the DOM! Please check the field selector.");if(!Array.isArray(e)||!e.length)throw Error("Rules argument should be an array and should contain at least 1 element.");e.forEach(a=>{if(!("rule"in a||"validator"in a||"plugin"in a))throw Error("Rules argument must contain at least one rule or validator property.");if(!a.validator&&!a.plugin&&(!a.rule||!Object.values(z).includes(a.rule)))throw Error(`Rule should be one of these types: ${Object.values(z).join(", ")}. Provided value: ${a.rule}`)});const o=this.setKeyByFieldSelector(t);return this.fields[o]={elem:n,rules:e,isValid:void 0,touched:!1,config:s},this.setListeners(n),(this.isSubmitted||this.globalConfig.validateBeforeSubmitting)&&this.validateField(o),this}removeField(t){if(typeof t!="string"&&!Ae(t))throw Error("Field selector is not valid. Please specify a string selector or a valid DOM element.");const e=this.getKeyByFieldSelector(t);if(!e||!this.fields[e])return console.error("Field not found. Check the field selector."),this;const s=this.getListenerType(this.fields[e].elem.type);return this.removeListener(s,this.fields[e].elem,this.handlerChange),this.clearErrors(),delete this.fields[e],this}removeGroup(t){if(typeof t!="string")throw Error("Group selector is not valid. Please specify a string selector.");const e=this.getKeyByFieldSelector(t);return!e||!this.groupFields[e]?(console.error("Group not found. Check the group selector."),this):(this.groupFields[e].elems.forEach(s=>{const n=this.getListenerType(s.type);this.removeListener(n,s,this.handlerChange)}),this.clearErrors(),delete this.groupFields[e],this)}addRequiredGroup(t,e,s,n){if(typeof t!="string"&&!Ae(t))throw Error("Group selector is not valid. Please specify a string selector or a valid DOM element.");let o;if(typeof t=="string"?o=this.form.querySelector(t):o=t,!o)throw Error("Group selector not found! Please check the group selector.");const a=o.querySelectorAll("input"),r=Array.from(a).filter(c=>{const d=qm(this.groupFields,Hm(c));return d?d[1].elems.find(u=>u!==c):!0}),l=this.setKeyByFieldSelector(t);return this.groupFields[l]={rules:[{rule:js.Required,errorMessage:e,successMessage:n}],groupElem:o,elems:r,touched:!1,isValid:void 0,config:s},a.forEach(c=>{this.setListeners(c)}),this}getListenerType(t){switch(t){case"checkbox":case"select-one":case"file":case"radio":return"change";default:return"input"}}setListeners(t){const e=this.getListenerType(t.type);this.removeListener(e,t,this.handlerChange),this.addListener(e,t,this.handlerChange)}clearFieldLabel(t){var e,s;(e=this.errorLabels[t])==null||e.remove(),(s=this.successLabels[t])==null||s.remove()}clearFieldStyle(t){var e,s,n,o;const a=this.fields[t],r=((e=a.config)==null?void 0:e.errorFieldStyle)||this.globalConfig.errorFieldStyle;Object.keys(r).forEach(c=>{a.elem.style[c]=""});const l=((s=a.config)==null?void 0:s.successFieldStyle)||this.globalConfig.successFieldStyle||{};Object.keys(l).forEach(c=>{a.elem.style[c]=""}),a.elem.classList.remove(...bt(((n=a.config)==null?void 0:n.errorFieldCssClass)||this.globalConfig.errorFieldCssClass),...bt(((o=a.config)==null?void 0:o.successFieldCssClass)||this.globalConfig.successFieldCssClass))}clearErrors(){var t,e;Object.keys(this.errorLabels).forEach(s=>this.errorLabels[s].remove()),Object.keys(this.successLabels).forEach(s=>this.successLabels[s].remove());for(const s in this.fields)this.clearFieldStyle(s);for(const s in this.groupFields){const n=this.groupFields[s],o=((t=n.config)==null?void 0:t.errorFieldStyle)||this.globalConfig.errorFieldStyle;Object.keys(o).forEach(r=>{n.elems.forEach(l=>{var c;l.style[r]="",l.classList.remove(...bt(((c=n.config)==null?void 0:c.errorFieldCssClass)||this.globalConfig.errorFieldCssClass))})});const a=((e=n.config)==null?void 0:e.successFieldStyle)||this.globalConfig.successFieldStyle||{};Object.keys(a).forEach(r=>{n.elems.forEach(l=>{var c;l.style[r]="",l.classList.remove(...bt(((c=n.config)==null?void 0:c.successFieldCssClass)||this.globalConfig.successFieldCssClass))})})}this.tooltips=[]}isTooltip(){return!!this.globalConfig.tooltip}lockForm(){const t=this.form.querySelectorAll("input, textarea, button, select");for(let e=0,s=t.length;e<s;++e)t[e].setAttribute("data-just-validate-fallback-disabled",t[e].disabled?"true":"false"),t[e].setAttribute("disabled","disabled"),t[e].style.pointerEvents="none",t[e].style.webkitFilter="grayscale(100%)",t[e].style.filter="grayscale(100%)"}unlockForm(){const t=this.form.querySelectorAll("input, textarea, button, select");for(let e=0,s=t.length;e<s;++e)t[e].getAttribute("data-just-validate-fallback-disabled")!=="true"&&t[e].removeAttribute("disabled"),t[e].style.pointerEvents="",t[e].style.webkitFilter="",t[e].style.filter=""}renderTooltip(t,e,s){var n;const{top:o,left:a,width:r,height:l}=t.getBoundingClientRect(),c=e.getBoundingClientRect(),d=s||((n=this.globalConfig.tooltip)==null?void 0:n.position);switch(d){case"left":{e.style.top=`${o+l/2-c.height/2}px`,e.style.left=`${a-c.width-Ei}px`;break}case"top":{e.style.top=`${o-c.height-Ei}px`,e.style.left=`${a+r/2-c.width/2}px`;break}case"right":{e.style.top=`${o+l/2-c.height/2}px`,e.style.left=`${a+r+Ei}px`;break}case"bottom":{e.style.top=`${o+l+Ei}px`,e.style.left=`${a+r/2-c.width/2}px`;break}}return e.dataset.direction=d,{refresh:()=>{this.renderTooltip(t,e,s)}}}createErrorLabelElem(t,e,s){const n=document.createElement("div");n.innerHTML=e;const o=this.isTooltip()?s==null?void 0:s.errorLabelStyle:(s==null?void 0:s.errorLabelStyle)||this.globalConfig.errorLabelStyle;return Object.assign(n.style,o),n.classList.add(...bt((s==null?void 0:s.errorLabelCssClass)||this.globalConfig.errorLabelCssClass),"just-validate-error-label"),this.isTooltip()&&(n.dataset.tooltip="true"),this.globalConfig.testingMode&&(n.dataset.testId=`error-label-${t}`),this.errorLabels[t]=n,n}createSuccessLabelElem(t,e,s){if(e===void 0)return null;const n=document.createElement("div");n.innerHTML=e;const o=(s==null?void 0:s.successLabelStyle)||this.globalConfig.successLabelStyle;return Object.assign(n.style,o),n.classList.add(...bt((s==null?void 0:s.successLabelCssClass)||this.globalConfig.successLabelCssClass),"just-validate-success-label"),this.globalConfig.testingMode&&(n.dataset.testId=`success-label-${t}`),this.successLabels[t]=n,n}renderErrorsContainer(t,e){const s=e||this.globalConfig.errorsContainer;if(typeof s=="string"){const n=this.form.querySelector(s);if(n)return n.appendChild(t),!0;console.error(`Error container with ${s} selector not found. Errors will be rendered as usual`)}return s instanceof Element?(s.appendChild(t),!0):(s!==void 0&&console.error("Error container not found. It should be a string or existing Element. Errors will be rendered as usual"),!1)}renderGroupLabel(t,e,s,n){!n&&this.renderErrorsContainer(e,s)||t.appendChild(e)}renderFieldLabel(t,e,s,n){var o,a,r,l,c,d,u;if(!(!n&&this.renderErrorsContainer(e,s)))if(t.type==="checkbox"||t.type==="radio"){const h=document.querySelector(`label[for="${t.getAttribute("id")}"]`);((a=(o=t.parentElement)==null?void 0:o.tagName)==null?void 0:a.toLowerCase())==="label"?(l=(r=t.parentElement)==null?void 0:r.parentElement)==null||l.appendChild(e):h?(c=h.parentElement)==null||c.appendChild(e):(d=t.parentElement)==null||d.appendChild(e)}else(u=t.parentElement)==null||u.appendChild(e)}showLabels(t,e){Object.keys(t).forEach((s,n)=>{const o=t[s],a=this.getKeyByFieldSelector(s);if(!a||!this.fields[a]){console.error("Field not found. Check the field selector.");return}const r=this.fields[a];r.isValid=!e,this.clearFieldStyle(a),this.clearFieldLabel(a),this.renderFieldError(a,!1,o),n===0&&this.globalConfig.focusInvalidField&&setTimeout(()=>r.elem.focus(),0)})}showErrors(t){if(typeof t!="object")throw Error("[showErrors]: Errors should be an object with key: value format");this.showLabels(t,!0)}showSuccessLabels(t){if(typeof t!="object")throw Error("[showSuccessLabels]: Labels should be an object with key: value format");this.showLabels(t,!1)}renderFieldError(t,e=!1,s){var n,o,a,r,l,c;const d=this.fields[t];if(d.isValid===!1&&(this.isValid=!1),d.isValid===void 0||!e&&!this.isSubmitted&&!d.touched&&s===void 0)return;if(d.isValid){if(!d.asyncCheckPending){const h=this.createSuccessLabelElem(t,s!==void 0?s:d.successMessage,d.config);h&&this.renderFieldLabel(d.elem,h,(n=d.config)==null?void 0:n.errorsContainer,!0),d.elem.classList.add(...bt(((o=d.config)==null?void 0:o.successFieldCssClass)||this.globalConfig.successFieldCssClass))}return}d.elem.classList.add(...bt(((a=d.config)==null?void 0:a.errorFieldCssClass)||this.globalConfig.errorFieldCssClass));const u=this.createErrorLabelElem(t,s!==void 0?s:d.errorMessage,d.config);this.renderFieldLabel(d.elem,u,(r=d.config)==null?void 0:r.errorsContainer),this.isTooltip()&&this.tooltips.push(this.renderTooltip(d.elem,u,(c=(l=d.config)==null?void 0:l.tooltip)==null?void 0:c.position))}renderGroupError(t,e=!0){var s,n,o,a;const r=this.groupFields[t];if(r.isValid===!1&&(this.isValid=!1),r.isValid===void 0||!e&&!this.isSubmitted&&!r.touched)return;if(r.isValid){r.elems.forEach(d=>{var u,h;Object.assign(d.style,((u=r.config)==null?void 0:u.successFieldStyle)||this.globalConfig.successFieldStyle),d.classList.add(...bt(((h=r.config)==null?void 0:h.successFieldCssClass)||this.globalConfig.successFieldCssClass))});const c=this.createSuccessLabelElem(t,r.successMessage,r.config);c&&this.renderGroupLabel(r.groupElem,c,(s=r.config)==null?void 0:s.errorsContainer,!0);return}this.isValid=!1,r.elems.forEach(c=>{var d,u;Object.assign(c.style,((d=r.config)==null?void 0:d.errorFieldStyle)||this.globalConfig.errorFieldStyle),c.classList.add(...bt(((u=r.config)==null?void 0:u.errorFieldCssClass)||this.globalConfig.errorFieldCssClass))});const l=this.createErrorLabelElem(t,r.errorMessage,r.config);this.renderGroupLabel(r.groupElem,l,(n=r.config)==null?void 0:n.errorsContainer),this.isTooltip()&&this.tooltips.push(this.renderTooltip(r.groupElem,l,(a=(o=r.config)==null?void 0:o.tooltip)==null?void 0:a.position))}renderErrors(t=!1){if(!(!this.isSubmitted&&!t&&!this.globalConfig.validateBeforeSubmitting)){this.clearErrors(),this.isValid=!0;for(const e in this.groupFields)this.renderGroupError(e);for(const e in this.fields)this.renderFieldError(e)}}destroy(){this.eventListeners.forEach(t=>{this.removeListener(t.type,t.elem,t.func)}),Object.keys(this.customStyleTags).forEach(t=>{this.customStyleTags[t].remove()}),this.clearErrors(),this.globalConfig.lockForm&&this.unlockForm()}refresh(){this.destroy(),this.form?(this.initialize(this.form,this.globalConfig),Object.keys(this.fields).forEach(t=>{const e=this.getFieldSelectorByKey(t);e&&this.addField(e,[...this.fields[t].rules],this.fields[t].config)})):console.error("Cannot initialize the library! Form is not defined")}setCurrentLocale(t){if(typeof t!="string"&&t!==void 0){console.error("Current locale should be a string");return}this.currentLocale=t,this.isSubmitted&&this.validate()}onSuccess(t){return this.onSuccessCallback=t,this}onFail(t){return this.onFailCallback=t,this}onValidate(t){return this.onValidateCallback=t,this}}const cn={form:document.querySelector("#sign-up-form"),input:document.querySelector("#email"),btn:document.querySelector("#submit-form"),modal:document.querySelector(".form-modal"),userEmail:document.querySelector(".user-email")},Ss={emptyMessage:"Заполните это поле",errorMessage:"Некорректный email",successMessage:"Подходит"},te={fields:{success:"success-field",error:"error-field"},labels:{general:"labels",success:"success-label",error:"error-label"},modifiers:{granted:"unlocked",denied:"locked"}},Gm=new Wm(cn.form,{successFieldCssClass:[te.fields.success],errorFieldCssClass:[te.fields.error],successLabelCssClass:[te.labels.general,te.labels.success],errorLabelCssClass:[te.labels.general,te.labels.error],validateBeforeSubmitting:!0});Gm.addField(cn.input,[{rule:"required",errorMessage:Ss.emptyMessage},{rule:"email",errorMessage:Ss.errorMessage}],{successMessage:Ss.successMessage});class Ym{constructor(t,e){E(this,"unlockSubmitBtn",()=>{this.btn.classList.replace(this.cssClasses.modifiers.denied,this.cssClasses.modifiers.granted)});E(this,"lockSubmitBtn",()=>{this.btn.classList.replace(this.cssClasses.modifiers.granted,this.cssClasses.modifiers.denied)});E(this,"getState",()=>this.input.classList.contains(this.cssClasses.fields.success));E(this,"handleInputChange",()=>this.getState()?this.unlockSubmitBtn():this.lockSubmitBtn());E(this,"removeSuccessLabel",()=>document.querySelector(`.${this.cssClasses.labels.success}`).remove());E(this,"clearInput",()=>this.input.value="");E(this,"insertUserEmail",()=>this.userEmail.textContent=this.input.value);E(this,"restoreInitialState",()=>{this.clearInput(),this.removeSuccessLabel(),this.lockSubmitBtn()});E(this,"handleFormSubmit",t=>{this.getState()&&(t.preventDefault(),this.insertUserEmail(),this.modal.showModal(),this.restoreInitialState())});E(this,"init",()=>{this.input.addEventListener("input",this.handleInputChange),this.form.addEventListener("submit",this.handleFormSubmit)});this.form=t.form,this.input=t.input,this.btn=t.btn,this.modal=t.modal,this.userEmail=t.userEmail,this.cssClasses=e}}const Xm=new Ym(cn,te);Xm.init();Ec(document.querySelectorAll("table"));const Um=new kc;Um.initWith("role",{table:"table",thead:"rowgroup",tbody:"rowgroup",tfoot:"rowgroup",tr:"row",td:"cell",th:"columnheader","th[scope=row]":"rowheader"});const Km=new pa("w");Km.initWith([["w-master-2","w-slave-2"]]);const Zm=new pa("h");Zm.initWith([["h-master-1","h-slave-1"],["h-master-2","h-slave-2"],["h-master-3","h-slave-3"]]);const se=document.querySelector(".sidebar"),Zo=document.querySelector(".sidebar-toggle");let Jo=null;Zo.addEventListener("click",()=>{Zo.classList.toggle("active"),se.classList.contains("isOpen")?(se.classList.remove("isOpen"),clearTimeout(Jo)):(se.style.display="initial",Jo=setTimeout(()=>requestAnimationFrame(()=>se.classList.add("isOpen")),.1))});se.addEventListener("transitionend",()=>!se.classList.contains("isOpen")&&(se.style.display="none"));const dn=document.querySelector('[href="mailto:nospam@google.com"]');let Qo=null;const Jm=()=>dn.setAttribute("href","mailto:KrivoshlykovNN@yandex.ru"),Qm=()=>dn.setAttribute("href","mailto:nospampls@google.com"),tg=()=>{clearTimeout(Qo),Jm(),Qo=setTimeout(Qm,1)};dn.addEventListener("click",tg);const eg=(i,t)=>{document.querySelectorAll(`${i} ${t}`).forEach(s=>{const n=s.closest(`${i}`),o=()=>{s.style.display="none",n.removeEventListener("scrollend",o)};n.addEventListener("scrollend",o)})};eg(".layout-center",".scroll-down");console.log(`%cCoded by ✨Nazhdaque✨
 https://www.frontendmentor.io/profile/Nazhdaque/solutions`,"background: #222; color: chartreuse;");
