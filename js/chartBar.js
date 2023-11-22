@@ -1,7 +1,5 @@
 import Chart from "chart.js/auto";
 
-const ctx = document.getElementById("chart-bar");
-
 const labels = ["January", "February", "March", "April", "May", "June", "July"];
 const data = {
 	labels: labels,
@@ -47,4 +45,6 @@ const config = {
 	options: options,
 };
 
-new Chart(ctx, config);
+document
+	.querySelectorAll(".chart-bar")
+	.forEach(chart => new Chart(chart, config));

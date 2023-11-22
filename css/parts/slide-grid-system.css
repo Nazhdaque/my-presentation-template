@@ -14,13 +14,3 @@
 	--col: 3;
 	--x: 1;
 }
-
-.slide-grid-system .masonry > *:nth-child(4) img {
-	object-position: 80%;
-}
-.slide-grid-system .masonry > *:nth-child(7) img {
-	object-position: 40%;
-}
-.slide-grid-system .masonry > *:nth-child(10) img {
-	object-position: 10%;
-}

@@ -22,9 +22,6 @@
 	height: 100%;
 	width: 0.2em;
 }
-.ttl-box::before {
-	grid-area: 1 / 1;
-}
 
 .ttl-box__ttl {
 	grid-column: 2;
@@ -34,7 +31,7 @@
 	grid-column: 1 / span 2;
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| */
+/* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| pipe */
 .ttl-box_bg-pipe-down {
 	font-size: 0.5em;
 }
@@ -45,5 +42,18 @@
 	grid-area: 2 / 1;
 }
 .ttl-box_bg-pipe-down .ttl-box__sub {
+	grid-column: auto;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| right - left */
+.ttl-box_rl {
+	grid-auto-columns: 1fr min-content;
+	text-align: right;
+}
+.ttl-box_rl::before {
+	grid-area: 1 / 2;
+	margin: 0 0 0 1em;
+}
+.ttl-box_rl .ttl-box__ttl {
 	grid-column: auto;
 }

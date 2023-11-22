@@ -1,22 +1,6 @@
 import Chart from "chart.js/auto";
 import ChartDataLabels from "chartjs-plugin-datalabels";
-
-class BrandColors {
-	constructor() {
-		this.brandColors = [];
-	}
-
-	getValues = colorNames => {
-		colorNames.forEach(colorName =>
-			this.brandColors.push(
-				getComputedStyle(document.documentElement, null).getPropertyValue(
-					colorName
-				)
-			)
-		);
-		return this.brandColors;
-	};
-}
+import { BrandColors } from "./brandColors";
 
 const brandColors = new BrandColors();
 const chartColors = brandColors.getValues([

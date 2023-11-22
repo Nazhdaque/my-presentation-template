@@ -33,7 +33,7 @@
 	--r: 0.8em; /* control the cutout */
 
 	color: var(--clr-0a-solid);
-	background: var(--clr-1b-solid);
+	background: var(--clr-2b-solid);
 	position: absolute;
 	border-bottom: var(--f) solid #0005;
 	border-left: var(--r) solid #0000;
@@ -47,6 +47,7 @@
 		var(--r) calc(50% - var(--f) / 2)
 	);
 
+	z-index: 1;
 	padding: 0.25em 1em;
 	width: max-content;
 	height: min-content;

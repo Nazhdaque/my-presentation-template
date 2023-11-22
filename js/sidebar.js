@@ -9,7 +9,7 @@ const template = i => html`
 			<button
 				class="sidebar-item__btn marker ellipsis-box slide-to"
 				type="button">
-				<span class="ellipsis">Перейти к слайду</span>
+				<span class="ellipsis">Пустая ссылка</span>
 				<svg class="chevron chevron-right">
 					<use href="images/icons/chevron.svg#chevron"></use>
 				</svg>
@@ -18,7 +18,7 @@ const template = i => html`
 	</li>
 `;
 
-for (let i = 0; i <= 16; i++) items.push(template(i + 1));
+for (let i = 0; i <= 5; i++) items.push(template(i + 1));
 
 render(items, container);
 

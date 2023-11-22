@@ -28,3 +28,7 @@
 .demo-cards .filters {
 	--filters: drop-shadow(0 0 0.75rem var(--clr-1a-solid));
 }
+
+.demo-cards canvas {
+	background-color: var(--clr-0a-solid);
+}

@@ -71,6 +71,7 @@
 .phone::before {
 	height: 100%;
 	font-family: var(--ff-rg);
+	font-weight: var(--fw-sb);
 	padding-inline: 0;
 	content: "+7 (985) 285-66-68";
 	background-color: var(--clr-1a-solid);
