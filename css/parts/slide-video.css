@@ -35,6 +35,12 @@
 	--transform: rotate(45deg);
 }
 
+.slide-video .ttl-box {
+	--col: 3;
+	--x: 1;
+	--bg: var(--clr-2b-solid);
+}
+
 .slide-video .cards {
 	--col: 3;
 	--gap-x: 2rem;
@@ -45,12 +51,6 @@
 .slide-video .img-box {
 	--asp: 16 / 9;
 	--img-h: auto;
-}
-
-.slide-video .ttl-box {
-	--col: 3;
-	--x: 1;
-	--bg: var(--clr-2b-solid);
 }
 
 .slide-video .side-ribbon {

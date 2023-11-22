@@ -6,8 +6,9 @@
 			<div class="slide-bg circle w-img"></div>
 			<div class="slide-bg heptagon"></div>
 
-			<div class="ttl-box ttl-box_bg-pipe fs-xl">
-				<h2 class="ttl-box__ttl">Подгрузка видео по клику и scroll-snap</h2>
+			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
+				<h2 class="ttl-box__ttl">Подгрузка видео по клику, scroll-snap... и слайдер</h2>
+				<p class="ttl-box__sub fs-md">в слайдере 😜</p>
 			</div>
 
 			<ul class="grid-x cards">
@@ -41,37 +42,16 @@
 							<figcaption class="side-ribbon fs-xs caps">Just a video sample</figcaption>
 						</figure>
 					</div>
+
 					<div class="card__body card__body_bg">
 						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi officia illum facere expedita
 							aspernatur nisi non alias enim ducimus repellendus accusamus eum iure voluptates!</p>
 					</div>
 				</li>
 
-
 				<li class="card gap-0">
-					<div class="card__body card__body_bg">
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam maxime fugit suscipit, odio
-							nostrum rerum obcaecati quidem sapiente. Modi quo voluptatum placeat architecto, corporis officiis
-							et aspernatur expedita.</p>
-
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quia nihil porro reprehenderit laudantium
-							dolore recusandae quisquam maxime, expedita iste qui vero.</p>
-
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium itaque ab error tempora dolorem,
-							facilis hic culpa quibusdam? Tempore illum ipsam eum reiciendis possimus eos ipsum repellat facilis
-							blanditiis fuga consequuntur, suscipit ullam dolorem?</p>
-					</div>
-				</li>
-
-				<li class="card gap-0">
-					<div class="card__body card__body_bg">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae expedita eveniet
-							voluptatibus, magnam accusantium sunt architecto esse nam et voluptates facere.</p>
-					</div>
-
 					<div class="card__head">
 						<h3 class="card__ttl card__ttl_bg caps ellipsis">Scroll-snap</h3>
-
 						<div class="card__img img-box">
 							<ul class="scroll-snap-block">
 								<li class="img-box">
@@ -79,19 +59,16 @@
 											 src="./images/demo-4.webp"
 											 alt="">
 								</li>
-
 								<li class="img-box">
 									<img class="o-fit-cover"
 											 src="./images/demo-3.webp"
 											 alt="">
 								</li>
-
 								<li class="img-box">
 									<img class="o-fit-cover"
 											 src="./images/demo-2.webp"
 											 alt="">
 								</li>
-
 								<li class="img-box">
 									<img class="o-fit-cover"
 											 src="./images/demo-1.webp"
@@ -106,6 +83,74 @@
 							<div class="scroll-down__chevron"></div>
 							<span class="scroll-down__text">Scroll down</span>
 						</div>
+					</div>
+
+					<div class="card__body card__body_bg">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae expedita eveniet
+							voluptatibus, magnam accusantium sunt architecto esse nam et voluptates facere.</p>
+					</div>
+				</li>
+
+				<li class="card gap-0">
+					<div class="card__head pattern-bg-2">
+						<h3 class="card__ttl card__ttl_bg caps ellipsis z-up"
+								style="--z: 2;">Swiper slider</h3>
+						<div class="card__img img-box">
+							<div class="swiper swiper-basic"
+									 id="swiper-basic">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<img class="o-fit-cover"
+												 src="./images/demo-4.webp"
+												 alt="">
+									</li>
+
+									<li class="swiper-slide">
+										<img class="o-fit-cover"
+												 src="./images/demo-3.webp"
+												 alt="">
+									</li>
+
+									<li class="swiper-slide">
+										<figure class="video o-hidden">
+											<a href="https://www.youtube.com/watch?v=URVHRhBSjj8"
+												 class="video__link"
+												 rel="noopener noreferrer"
+												 aria-label="link to video"></a>
+											<picture>
+												<source srcset="https://i.ytimg.com/vi_webp/URVHRhBSjj8/maxresdefault.webp"
+																type="image/webp">
+												<img class="video__media"
+														 src="https://i.ytimg.com/vi/URVHRhBSjj8/maxresdefault.jpg"
+														 alt="It's a demo video sample">
+											</picture>
+											</a>
+											<button class="video__button"
+															aria-label="Play video">
+												<svg width="68"
+														 height="48"
+														 viewBox="0 0 68 48">
+													<path class="video__button-shape"
+																d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+													</path>
+													<path class="video__button-icon"
+																d="M 45,24 27,14 27,34"></path>
+												</svg>
+											</button>
+											<figcaption class="side-ribbon fs-xs caps">Just a video sample</figcaption>
+										</figure>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="card__body card__body_bg">
+						<div class="ttl-box ttl-box_bg-pipe">
+							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
+							quis debitis doloribus tempora blanditiis!</p>
 					</div>
 				</li>
 			</ul>

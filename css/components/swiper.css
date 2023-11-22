@@ -22,7 +22,8 @@
 	padding-inline: var(--gap) !important;
 	margin-inline: calc(var(--gap) * -2) !important;
 	justify-self: center; */
-
+}
+.swiper.main-slider {
 	width: 100vw; /* required for chrome */
 }
 
@@ -36,11 +37,9 @@
 }
 
 .swiper-slide {
-	background-color: var(--clr-0a-solid);
-	padding-block: 1rem 3rem;
 	overflow: hidden; /* required */
 }
-
-.swiper-wrapper {
-	/* overflow: hidden; */ /* required for effectCreative */
+.swiper-slide:not(.swiper .swiper .swiper-slide) {
+	background-color: var(--clr-0a-solid);
+	padding-block: 1rem 3rem;
 }

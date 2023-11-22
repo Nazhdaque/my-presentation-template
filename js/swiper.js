@@ -5,11 +5,11 @@ import {
 	Pagination,
 	Keyboard,
 	HashNavigation,
-	// Autoplay,
-	// Mousewheel,
+	Autoplay,
+	Mousewheel,
 	// Scrollbar,
 	// Parallax,
-	// EffectCreative,
+	EffectCreative,
 	// EffectCoverflow,
 } from "swiper/modules";
 import "swiper/css/navigation";
@@ -47,21 +47,6 @@ const mainSlider = new Swiper(".main-slider", {
 			simulateTouch: false,
 		},
 	},
-
-	// effect: "creative",
-	// creativeEffect: {
-	// 	prev: {
-	// 		shadow: true,
-	// 		translate: [0, 0, -400],
-	// 	},
-	// 	next: {
-	// 		translate: ["100%", 0, 0],
-	// 	},
-	// },
-	// mousewheel: {
-	// 	sensitivity: 2,
-	// 	invert: true,
-	// },
 });
 
 // ---
@@ -72,3 +57,31 @@ document
 	.forEach((item, index) =>
 		item.addEventListener("click", () => jumpToSlide(index))
 	);
+
+// ---
+const swiperBasic = new Swiper(".swiper-basic", {
+	modules: [Autoplay, Keyboard, Mousewheel, EffectCreative],
+	loop: true,
+	speed: 1000,
+	autoplay: { delay: 5000 },
+	spaceBetween: 16,
+	direction: "horizontal",
+	mousewheel: {
+		sensitivity: 2,
+		invert: true,
+	},
+	grabCursor: true,
+	slidesPerView: 1,
+	initialSlide: 1,
+
+	effect: "creative",
+	creativeEffect: {
+		prev: {
+			shadow: true,
+			translate: [0, 0, -400],
+		},
+		next: {
+			translate: ["100%", 0, 0],
+		},
+	},
+});
