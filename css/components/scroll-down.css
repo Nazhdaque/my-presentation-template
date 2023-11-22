@@ -1,6 +1,6 @@
 .scroll-down {
 	--size: 1.5rem;
-	--clr: var(--clr-2b-solid);
+	--clr: var(--clr-1b-solid);
 
 	width: var(--size);
 	display: grid;
