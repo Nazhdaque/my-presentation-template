@@ -1,3 +1,5 @@
+// disabled
+
 // export class Modal {
 // 	constructor() {
 // 		this.modal = document.querySelector(".modal");

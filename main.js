@@ -1,6 +1,6 @@
 import "./css/main.css";
 import "./js/importHTML.js";
-import "./js/sidebar.js";
+// import "./js/sidebar.js";
 import "./js/swiper.js";
 import "material-icons/iconfont/round.css";
 import { SizeSetter } from "./js/sizeSetter.js";
@@ -18,7 +18,7 @@ accenTable(document.querySelectorAll("table"));
 
 const attrSetter = new AttrSetter();
 attrSetter.initWith("role", {
-	table: "table",
+	// table: "table",
 	// caption: "caption",
 	thead: "rowgroup",
 	tbody: "rowgroup",

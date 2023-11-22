@@ -1,19 +1,20 @@
-import sidebar from "../html/parts/sidebar.html?raw";
 import slide_title from "../html/parts/slide-title-slide.html?raw";
 import slide_advantages from "../html/parts/slide-advantages.html?raw";
 import slide_grid from "../html/parts/slide-grid-system.html?raw";
-import slide_table from "../html/parts/slide-table.html?raw";
-import slide_cards from "../html/parts/slide-cards.html?raw";
-import slide_trapeze_bg from "../html/parts/slide-trapeze-bg.html?raw";
-import slide_charts from "../html/parts/slide-charts.html?raw";
 import slide_typography from "../html/parts/slide-typography.html?raw";
+import slide_cards from "../html/parts/slide-cards.html?raw";
 import slide_video from "../html/parts/slide-video.html?raw";
-import slide_form from "../html/parts/slide-form.html?raw";
+import slide_table from "../html/parts/slide-table.html?raw";
+import slide_charts from "../html/parts/slide-charts.html?raw";
 import slide_doughnut from "../html/parts/slide-doughnut.html?raw";
+import slide_form from "../html/parts/slide-form.html?raw";
+
 import slide_diag_bg from "../html/parts/slide-diag-bg.html?raw";
+import slide_trapeze_bg from "../html/parts/slide-trapeze-bg.html?raw";
 import slide_blobs_bg from "../html/parts/slide-blobs-bg.html?raw";
-import slide_plarson from "../html/parts/__plarson.html?raw";
 import formModal from "../html/parts/form-modal.html?raw";
+import sidebar from "../html/parts/sidebar.html?raw";
+import slide_plarson from "../html/parts/__plarson.html?raw";
 
 document.querySelector(".sidebar").insertAdjacentHTML("beforeend", sidebar);
 

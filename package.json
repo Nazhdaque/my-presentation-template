@@ -15,11 +15,9 @@
 		"vite": "^4.4.11"
 	},
 	"dependencies": {
-		"accordion-js": "^3.3.4",
 		"chart.js": "^4.4.0",
 		"chartjs-plugin-datalabels": "^2.2.0",
 		"just-validate": "^4.2.0",
-		"lit-html": "^3.0.0",
 		"material-icons": "^1.13.12",
 		"swiper": "^10.3.1"
 	}
