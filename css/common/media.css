@@ -57,10 +57,6 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| sm */
 @media (width <= 576px) {
-	.slide-bg {
-		--image: url(/images/demo-3.webp);
-	}
-
 	.sm-shadow-bottom {
 		--shadow: var(--img-shadow-bottom);
 	}
@@ -69,9 +65,11 @@
 	.sm-a-flow-row {
 		grid-auto-flow: row;
 	}
-	.sm-grid-col-a {
+
+	/* .sm-grid-col-a {
 		grid-column: auto;
-	}
+	} */ /* for demo chess-grid-12 */
+
 	/* .sm-col-span-0 {
 		grid-column: auto;
 	}

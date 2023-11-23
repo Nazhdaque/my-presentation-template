@@ -74,6 +74,7 @@
 	font-weight: var(--fw-sb);
 	padding-inline: 0;
 	content: "+7 (985) 285-66-68";
+	white-space: nowrap;
 	background-color: var(--clr-1a-solid);
 	color: var(--clr-0a-solid);
 	border-radius: 100vw;
