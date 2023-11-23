@@ -406,7 +406,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 
 			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
 				<h2 class="ttl-box__ttl">Модульная сетка</h2>
-				<p class="ttl-box__sub fs-md">Настраиваемая, любой конфигурации, «резиновая», responsive</p>
+				<p class="ttl-box__sub fs-md">Настраиваемая, любой конфигурации, «резиновая», responsive без медиа-запросов</p>
 			</div>
 
 			<ol class="demo grid-x"
@@ -1309,7 +1309,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 							<span class="tag">семантически
 								корректная,</span>
 							<span class="tag">с
-								подсветкой строк, колонок, заголовков,</span>
+								подсветкой строк, </span>
+							<span class="tag">колонок,</span>
+							<span class="tag">заголовков,</span>
 							<span class="tag">маркировкой ячеек по клику</span>
 						</p>
 					</div>
@@ -1442,6 +1444,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg circle w-img"></div>
+			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
+				<h2 class="ttl-box__ttl">Doughnut chart demo page</h2>
+			</div>
 
 			<div class="grid-x"
 					 style="--col: 2">
