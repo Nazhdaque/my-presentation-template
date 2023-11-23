@@ -88,7 +88,7 @@
 
 .cards_arrows_rl .ttl-box__ttl,
 .cards_arrows_odd_rl > *:nth-child(2n-1) .ttl-box__ttl {
-	grid-column: 1;
+	grid-area: 1;
 	text-align: right;
 }
 
