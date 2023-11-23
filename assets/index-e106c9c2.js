@@ -1146,8 +1146,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 			<div class="slide-bg heptagon"></div>
 
 			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
-				<h2 class="ttl-box__ttl">Подгрузка видео по клику, scroll-snap... и слайдер</h2>
-				<p class="ttl-box__sub fs-md">в слайдере 😜</p>
+				<h2 class="ttl-box__ttl">Подгрузка видео по клику, scroll-snap, слайдер</h2>
 			</div>
 
 			<ul class="grid-x cards">
