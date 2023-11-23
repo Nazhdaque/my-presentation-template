@@ -1,6 +1,7 @@
 .ttl-box {
 	--img-h: 1.5em;
 	--img-size: 1.5em;
+	--gap: min(1em, 1rem);
 
 	display: grid;
 	align-items: center;
@@ -11,14 +12,14 @@
 
 .ttl-box__img {
 	grid-area: 1 / 1;
-	margin: 0 1em 0 0;
+	margin: 0 var(--gap) 0 0;
 }
 
 .ttl-box_bg-pipe::before {
 	isolation: isolate;
 	content: "";
 	background: var(--bg, var(--clr-1b-solid));
-	margin: 0 1em 0 0;
+	margin: 0 var(--gap) 0 0;
 	height: 100%;
 	width: 0.2em;
 }
@@ -52,7 +53,7 @@
 }
 .ttl-box_rl::before {
 	grid-area: 1 / 2;
-	margin: 0 0 0 1em;
+	margin: 0 0 0 var(--gap);
 }
 .ttl-box_rl .ttl-box__ttl {
 	grid-column: auto;
