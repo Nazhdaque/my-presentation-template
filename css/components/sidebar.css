@@ -90,7 +90,13 @@
 }
 
 /* marker */
+.marker .mui-icon {
+	--icon-size: 4em;
+}
+
 .marker::before {
+	font-size: 2rem;
+	width: 2em;
 	grid-area: 1 / 1;
 	align-self: stretch;
 	line-height: 1;
@@ -103,8 +109,6 @@
 	font-weight: var(--fw-sb);
 	background-color: var(--clr-bg);
 	color: var(--clr-txt);
-	font-size: 2rem;
-	width: 2em;
 }
 .sidebar-item__btn.marker::before {
 	counter-increment: sidebar-counter;
