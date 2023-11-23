@@ -1711,9 +1711,6 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 			<div class="ttl-box fs-3xl">
 				<div class="ttl-box__img img-box round icon-bg sphere"
 						 style="--sphere: var(--sphere-2b)">
-					<svg class="o-fit-contain inner-icon figures">
-						<use href="./images/icons/sprites/figures.svg#figure-2"></use>
-					</svg>
 					<i class="material-icons-round mui-icon">accessible</i>
 				</div>
 				<h2 class="ttl-box__ttl">TEST ZONE</h2>
@@ -1866,6 +1863,13 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 	<h2 class="ac-header sidebar-item__ttl">
 		<button class="sidebar-item__btn marker ellipsis-box slide-to"
 						type="button">
+
+			<div class="img-box icon-bg">
+				<svg class="o-fit-contain inner-icon figures">
+					<use href="./images/icons/sprites/figures.svg#figure-2"></use>
+				</svg>
+			</div>
+
 			<span class="ellipsis">Слайд</span>
 			<svg class="chevron chevron-right">
 				<use href="images/icons/chevron.svg#chevron"></use>
@@ -1878,6 +1882,11 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 	<h2 class="ac-header sidebar-item__ttl">
 		<button class="sidebar-item__btn marker ellipsis-box slide-to"
 						type="button">
+
+			<div class="img-box icon-bg">
+				<i class="material-icons-round mui-icon">diamond</i>
+			</div>
+
 			<span class="ellipsis">Слайд</span>
 			<svg class="chevron chevron-right">
 				<use href="images/icons/chevron.svg#chevron"></use>
@@ -1890,6 +1899,13 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 	<h2 class="ac-header sidebar-item__ttl">
 		<button class="sidebar-item__btn marker ellipsis-box slide-to"
 						type="button">
+
+			<div class="img-box icon-bg">
+				<img class="inner-icon"
+						 src="./images/rubik-0.svg"
+						 alt="">
+			</div>
+
 			<span class="ellipsis">Слайд</span>
 			<svg class="chevron chevron-right">
 				<use href="images/icons/chevron.svg#chevron"></use>
@@ -1898,7 +1914,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 	</h2>
 </li>
 
-<!-- sidebar accordion item  -->
+<!-- sidebar accordion item -->
 <!-- <li class="ac sidebar-item">
 	<h2 class="ac-header sidebar-item__ttl">
 		<button class="ac-trigger sidebar-item__btn marker ellipsis-box"
