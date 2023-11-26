@@ -4,7 +4,7 @@
 
 	--img-size: 10rem;
 	--img-h: var(--img-size);
-	--card-gap: var(--gap-x, 2em);
+	--card-gap: 2em;
 }
 
 .card {

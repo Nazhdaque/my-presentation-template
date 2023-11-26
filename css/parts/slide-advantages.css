@@ -45,3 +45,15 @@
 	--sphere: var(--sphere-2b);
 	--clr: var(--clr-1a-solid);
 }
+
+.__slide-advantages .__demo-pic-1 {
+	--filters: drop-shadow(0 0 2rem var(--clr-2b-solid));
+	--img-h: 10rem;
+
+	margin-top: 3rem;
+}
+
+.__slide-advantages .__left-col {
+	display: flex;
+	flex-direction: column;
+}

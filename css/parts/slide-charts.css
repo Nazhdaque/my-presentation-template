@@ -1,5 +1,5 @@
-.slide-charts .slide-bg,
-.slide-charts .slide-bg-overlay {
+.__slide-charts .slide-bg,
+.__slide-charts .slide-bg-overlay {
 	--w: var(--w-block);
 	--h: var(--h-block);
 	--side: var(--bottom);
@@ -8,19 +8,19 @@
 	--trend-base: 90%;
 }
 
-.slide-charts .slide-bg:nth-child(1),
-.slide-charts .slide-bg-overlay:nth-child(1) {
+.__slide-charts .slide-bg:nth-child(1),
+.__slide-charts .slide-bg-overlay:nth-child(1) {
 	--side: var(--top);
 	--clip: var(--clp-top);
 	--bg: var(--clr-1b-solid-invert);
 }
 
-.slide-charts .slide-bg:nth-child(2) {
+.__slide-charts .slide-bg:nth-child(2) {
 	--pos: center 20%;
 	--image: url(/images/demo-4.webp);
 }
 
-.slide-charts .slide-body {
+.__slide-charts .slide-body {
 	--col: 4;
 	--x: 3;
 	--gap-x: 2rem;
@@ -33,11 +33,15 @@
 	padding: 2rem;
 }
 
-.slide-charts .slide-body > * {
+.__slide-charts .slide-body > * {
 	aspect-ratio: 1;
 }
 
-.slide-charts .ttl-box {
+.__slide-charts .slide-ttl {
+	--gap-x: 0.5em;
+	--gap-y: 0.25em;
 	--col: 3;
 	--x: 1;
+	--clr: var(--clr-1a-solid);
+	--sphere: var(--sphere-1b);
 }

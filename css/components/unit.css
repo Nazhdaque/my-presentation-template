@@ -2,8 +2,8 @@
 	--unit-img-size: var(--img-size, 1.5em);
 
 	display: grid;
-	column-gap: var(--gap-x, normal);
-	row-gap: var(--gap-y, normal);
+	column-gap: var(--gap-x, 1em);
+	row-gap: var(--gap-y, 0.5em);
 	grid-template-columns: min-content 1fr min-content;
 	grid-auto-rows: min-content;
 	/* place-items: center; do not use this with multy-col */
@@ -28,7 +28,7 @@
 .unit__head {
 	grid-area: 1 / 2;
 	margin-bottom: 0;
-	place-self: center start;
+	place-self: var(--place-head, center start);
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
@@ -58,8 +58,12 @@
 	margin: 0 auto 1.5em auto;
 }
 
+.unit__body :last-child {
+	margin-bottom: 0;
+}
+
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
-.unit_bg {
+.txt-box-bg {
 	background-color: hsl(var(--clr-2c-alpha), 0.15);
 	padding: var(--card-gap);
 }

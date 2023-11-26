@@ -1,5 +1,5 @@
-.slide-trapeze-bg .slide-bg,
-.slide-trapeze-bg .slide-bg-overlay {
+.__slide-trapeze-bg .slide-bg,
+.__slide-trapeze-bg .slide-bg-overlay {
 	--side: var(--right);
 	--clip: var(--clp-right);
 	--bg: var(--clr-1a-solid-invert);
@@ -11,15 +11,18 @@
 	--image: url(/images/demo-4.webp);
 	--pos: 60%;
 }
-.slide-trapeze-bg .slide-bg:first-child,
-.slide-trapeze-bg .slide-bg-overlay:first-child {
+.__slide-trapeze-bg .slide-bg:first-child,
+.__slide-trapeze-bg .slide-bg-overlay:first-child {
 	--left: 0 auto 0 -19%;
 	--side: var(--left);
 	--clip: var(--clp-left);
 }
 
-.slide-trapeze-bg .ttl-box {
-	--col: 3;
-	--x: 1;
-	--bg: var(--clr-2b-solid);
+.__slide-trapeze-bg .slide-ttl {
+	--gap-x: 0.5em;
+	--gap-y: 0.25em;
+	--col: 5;
+	--x: 2;
+	--clr: var(--clr-1a-solid);
+	/* --sphere: var(--sphere-2c-1a); */
 }

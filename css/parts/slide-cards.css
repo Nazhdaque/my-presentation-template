@@ -15,10 +15,6 @@
 .__slide-cards .cards {
 	--gap-x: 2rem;
 	--gap-y: 6rem;
-	--card-gap: 1.5rem;
-}
-.__slide-cards .cards .x-axis {
-	--card-gap: 2rem;
 }
 
 .__slide-cards .cards .unit {

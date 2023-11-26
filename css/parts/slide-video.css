@@ -49,6 +49,11 @@
 	--gap-y: var(--gap-x);
 }
 
+.__slide-video .cards .unit {
+	--gap-x: 1em;
+	--gap-y: 0.5em;
+}
+
 .__slide-video .img-box {
 	--asp: 16 / 9;
 	--img-h: auto;

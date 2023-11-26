@@ -1,24 +1,27 @@
-<li class="swiper-slide slide-doughnut"
+<li class="swiper-slide __slide-doughnut"
 		data-hash="demo-doughnut-chart">
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg circle w-img"></div>
-			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
-				<h2 class="ttl-box__ttl">Doughnut chart demo page</h2>
+
+			<div class="unit fs-xl slide-ttl width-x">
+				<div class="unit__img img-box icon-bg round sphere">
+					<i class="material-icons-round mui-icon">pie_chart</i>
+				</div>
+				<h2 class="unit__head">Круговая диаграмма</h2>
 			</div>
 
-			<div class="grid-x"
-					 style="--col: 2">
+			<div class="grid-x slide-body">
 				<div class="grid-x cards">
 					<div class="card">
 						<div class="card__head">
-							<div class="card__img img-box"
+							<div class="card__img img-box __demo-chart"
 									 style="--shadow: none;">
 								<canvas class="chart-doughnut"></canvas>
 							</div>
 						</div>
 
-						<div class="card__body txt-col-x">
+						<div class="txt-col-x">
 							<div class="img-box icon-bg round txt-icon"
 									 style="--size-x: 4;">
 								<img class="o-fit-cover"
@@ -35,32 +38,51 @@
 					</div>
 				</div>
 
-				<div class="grid-x cards">
-					<div class="card">
-						<div class="card__body txt-col-x">
-							<div class="ttl-box">
-								<div class="ttl-box__img img-box icon-bg round sphere"></div>
-								<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
-								<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+
+				<div class="card">
+					<div class="unit">
+						<div class="unit__body grid-full-width txt-col-x">
+
+							<div class="unit __right-col-heading">
+								<div class="unit__img img-box icon-bg round sphere">
+									<svg class="inner-icon figures">
+										<use href="./images/icons/sprites/figures.svg#figure-2"></use>
+									</svg>
+								</div>
+								<h3 class="unit__head caps">Lorem ipsum dolor</h3>
 							</div>
 
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
-								quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
-								repudiandae. Eveniet placeat ducimus reprehenderit enim tempore atque ipsam consectetur repudiandae
-								quaerat!</p>
-							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum harum doloremque, reprehenderit
-								accusantium cum et eius rem neque ex ullam asperiores nisi inventore molestias consequatur veritatis
-								laudantium. Nam sint placeat fugiat harum. Voluptate culpa voluptates consequatur neque similique quis
-								voluptatem?</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum adipisci autem, eius dolore ad suscipit
+								dolorum voluptate, velit laudantium deserunt quos nulla dolores obcaecati quam ullam animi dolor
+								recusandae, ipsum voluptatum repellendus beatae nobis tempora soluta esse? Consectetur, labore nemo odio
+								tempora ratione obcaecati dolore incidunt nisi, ut voluptatibus suscipit, totam perspiciatis illum autem
+								qui nam inventore quibusdam! Accusamus, natus./p>
+
+							<ul class="plain-list fs-sm">
+								<li class="unit">
+									<div class="arrow-right"></div>
+									<p class="unit__head">Lorem ipsum dolor sit!</p>
+								</li>
+
+								<li class="unit">
+									<div class="arrow-right"></div>
+									<p class="unit__head">Sit amet consectetur adipisicing.</p>
+								</li>
+
+								<li class="unit">
+									<div class="arrow-right"></div>
+									<p class="unit__head">Consectetur, labore nemo odio
+										tempora.</p>
+								</li>
+							</ul>
 						</div>
+					</div>
 
-						<div class="card__head">
-							<div class="card__img img-box"
-									 style="--shadow: none;">
-								<img class="o-fit-contain filters"
-										 src="./images/rubik-1.svg"
-										 alt="">
-							</div>
+					<div class="card__head">
+						<div class="card__img img-box __bottom-pic">
+							<img class="o-fit-contain filters"
+									 src="./images/rubik-1.svg"
+									 alt="">
 						</div>
 					</div>
 				</div>
