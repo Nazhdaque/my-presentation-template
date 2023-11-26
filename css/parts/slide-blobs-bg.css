@@ -1,4 +1,4 @@
-.slide-blobs-bg .slide-bg:nth-child(1) {
+.__slide-blobs-bg .slide-bg:nth-child(1) {
 	--left: -10% auto 0 -10%;
 	--side: var(--left);
 	--w-inline: max(40%, 10rem);
@@ -12,7 +12,7 @@
 	--asp-ratio: 1;
 }
 
-.slide-blobs-bg .slide-bg:nth-child(2) {
+.__slide-blobs-bg .slide-bg:nth-child(2) {
 	--bg: var(--clr-1a-solid-invert);
 	--right: 40% -7% 0 auto;
 	--side: var(--right);
@@ -22,7 +22,7 @@
 	--asp-ratio: 1;
 }
 
-.slide-blobs-bg .slide-bg:nth-child(3) {
+.__slide-blobs-bg .slide-bg:nth-child(3) {
 	--bg: var(--clr-1b-solid-invert);
 	--right: -45% 35% 0 auto;
 	--side: var(--right);
@@ -30,4 +30,12 @@
 	--h-inline: unset;
 	--radius: 52% 48% 35% 65% / 48% 69% 31% 52%;
 	--asp-ratio: 1;
+}
+
+.__slide-blobs-bg .slide-ttl {
+	--gap-x: 0.5em;
+	--gap-y: 0.25em;
+	--col: 3;
+	--x: 1;
+	--sphere: var(--sphere-2b);
 }

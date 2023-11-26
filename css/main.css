@@ -16,9 +16,7 @@
 @import url(./components/arrows.css) layer(components);
 @import url(./components/unit.css) layer(components);
 
-@import url(./components/ttl-box.css) layer(components);
 @import url(./components/cards.css) layer(components);
-@import url(./components/cards-arrows.css) layer(components);
 @import url(./components/icons.css) layer(components);
 @import url(./components/txt-link.css) layer(components);
 @import url(./components/table.css) layer(components);

@@ -1,5 +1,5 @@
-.slide-diag-bg .slide-bg,
-.slide-diag-bg .slide-bg-overlay {
+.__slide-diag-bg .slide-bg,
+.__slide-diag-bg .slide-bg-overlay {
 	--side: var(--center);
 	--clip: var(--clp-right);
 	--image: url(/images/demo-4.webp);
@@ -8,7 +8,7 @@
 	--clr-filter: hsl(100, 100%, 50%, 0.1);
 }
 
-.slide-diag-bg .flex-space-x > .width-x {
+.__slide-diag-bg .flex-space-x > .width-x {
 	--col: 3;
 	--x: 1;
 
@@ -16,8 +16,10 @@
 	gap: var(--heading-bottom-indent);
 }
 
-.slide-diag-bg .cards_arrows_rl {
-	--head-bg-clr: var(--clr-2a-alpha);
-	--bg: var(--clr-2a-solid);
-	--sphere: var(--sphere-2a);
+.__slide-diag-bg .slide-ttl {
+	--gap-x: 0.5em;
+	--gap-y: 0.25em;
+	--col: 3;
+	--x: 1;
+	--sphere: var(--sphere-2b);
 }

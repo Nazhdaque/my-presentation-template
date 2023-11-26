@@ -88,7 +88,7 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| title side */
-.card__head_ttl-side {
+.-ttl-right {
 	grid-auto-flow: column;
 	grid-auto-columns: minmax(var(--img-h), auto) 1fr;
 	gap: var(--card-gap);
