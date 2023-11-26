@@ -41,7 +41,7 @@
 .__pro-cons-list .arrow-right {
 	--clr: var(--clr-1a-alpha);
 }
-.__pro-cons-list .unit.rl {
+.__pro-cons-list .unit.-rl {
 	--sphere: var(--sphere-2b);
 	--clr: var(--clr-1a-solid);
 }
