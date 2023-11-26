@@ -6,7 +6,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 			<div class="slide-bg-overlay"></div>
 
 			<div class="unit fs-3xl width-x slide-ttl">
-				<div class="unit__img pipe"></div>
+				<div class="unit__img -pipe"></div>
 				<h1 class="unit__head">Шаблон-конструктор презентаций</h1>
 				<p class="unit__body fs-md grid-full-width">Альтернатива .pptx</p>
 			</div>
@@ -21,7 +21,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 					</div>
 
 					<div class="unit unit__head">
-						<div class="unit__img pipe"></div>
+						<div class="unit__img -pipe"></div>
 						<h2 class="unit__head caps z-down">Следует понимать</h2>
 					</div>
 
@@ -39,7 +39,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 					</div>
 
 					<div class="unit unit__head">
-						<div class="unit__img pipe"></div>
+						<div class="unit__img -pipe"></div>
 						<h2 class="unit__head caps z-down">Важно подчеркнуть</h2>
 					</div>
 
@@ -56,7 +56,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 					</div>
 
 					<div class="unit unit__head">
-						<div class="unit__img pipe"></div>
+						<div class="unit__img -pipe"></div>
 						<h2 class="unit__head caps z-down">Стоит отметить</h2>
 					</div>
 
@@ -74,7 +74,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 					</div>
 
 					<div class="unit unit__head">
-						<div class="unit__img pipe"></div>
+						<div class="unit__img -pipe"></div>
 						<h2 class="unit__head caps z-down">Тем не менее</h2>
 					</div>
 
@@ -101,8 +101,8 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 			</div>
 
 			<div class="width-x __left-col">
-				<div class="unit rl fs-xl slide-ttl">
-					<div class="unit__img pipe"></div>
+				<div class="unit -rl fs-xl slide-ttl">
+					<div class="unit__img -pipe"></div>
 					<h2 class="unit__head">Плюсы <br>MS PowerPoint</h2>
 					<p class="unit__body fs-md grid-full-width t-align-r">Всего два, зато какие!</p>
 				</div>
@@ -112,7 +112,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						<div class="unit__img img-box icon-bg round sphere">
 							<i class="material-icons-round mui-icon">child_care</i>
 						</div>
-						<p class="unit__head pipe caps">Что-то получится даже у ребенка</p>
+						<p class="unit__head -pipe caps">Что-то получится даже у ребенка</p>
 						<div class="arrow-right"></div>
 
 						<div class="unit__body grid-full-width">
@@ -134,7 +134,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						<div class="unit__img img-box icon-bg round sphere">
 							<i class="material-icons-round mui-icon">screenshot_monitor</i>
 						</div>
-						<p class="unit__head pipe caps">Никаких сюрпризов</p>
+						<p class="unit__head -pipe caps">Никаких сюрпризов</p>
 						<div class="arrow-right"></div>
 
 						<div class="unit__body grid-full-width">
@@ -160,15 +160,15 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 
 			<div class="width-x">
 				<div class="unit fs-xl slide-ttl">
-					<div class="unit__img pipe"></div>
+					<div class="unit__img -pipe"></div>
 					<h2 class="unit__head">Чем такая презентация <br>лучше, чем MS PowerPoint</h2>
 					<p class="unit__body fs-md grid-full-width">Спойлер: пожалуй, всем! Счет 12:2 не в пользу PP</p>
 				</div>
 
 				<ul class="plain-list ordered-list __pro-cons-list">
-					<li class="unit rl">
+					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere"></div>
-						<p class="unit__head pipe rl caps">Готово к использованию</p>
+						<p class="unit__head -pipe -rl caps">Готово к использованию</p>
 						<div class="arrow-left"></div>
 
 						<div class="unit__body grid-full-width">
@@ -177,9 +177,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</li>
 
-					<li class="unit rl">
+					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere"></div>
-						<p class="unit__head pipe rl caps">Без лишних телодвижений</p>
+						<p class="unit__head -pipe -rl caps">Без лишних телодвижений</p>
 						<div class="arrow-left"></div>
 
 						<div class="unit__body grid-full-width">
@@ -188,9 +188,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</li>
 
-					<li class="unit rl">
+					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere"></div>
-						<p class="unit__head pipe rl caps">Интуитивно понятно</p>
+						<p class="unit__head -pipe -rl caps">Интуитивно понятно</p>
 						<div class="arrow-left"></div>
 
 						<div class="unit__body grid-full-width">
@@ -200,9 +200,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</li>
 
-					<li class="unit rl">
+					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere"></div>
-						<p class="unit__head pipe rl caps">Выглядит отлично</p>
+						<p class="unit__head -pipe -rl caps">Выглядит отлично</p>
 						<div class="arrow-left"></div>
 
 						<div class="unit__body grid-full-width">
@@ -215,9 +215,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</li>
 
-					<li class="unit rl">
+					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere"></div>
-						<p class="unit__head pipe rl caps">Аккуратно</p>
+						<p class="unit__head -pipe -rl caps">Аккуратно</p>
 						<div class="arrow-left"></div>
 
 						<div class="unit__body grid-full-width">
@@ -230,9 +230,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</li>
 
-					<li class="unit rl">
+					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere"></div>
-						<p class="unit__head pipe rl caps">Все поместится</p>
+						<p class="unit__head -pipe -rl caps">Все поместится</p>
 						<div class="arrow-left"></div>
 
 						<div class="unit__body grid-full-width">
@@ -244,9 +244,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</li>
 
-					<li class="unit rl">
+					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere"></div>
-						<p class="unit__head pipe rl caps">Легко кастомизировать</p>
+						<p class="unit__head -pipe -rl caps">Легко кастомизировать</p>
 						<div class="arrow-left"></div>
 
 						<div class="unit__body grid-full-width">
@@ -259,9 +259,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</li>
 
-					<li class="unit rl">
+					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere"></div>
-						<p class="unit__head pipe rl caps">Reusability</p>
+						<p class="unit__head -pipe -rl caps">Reusability</p>
 						<div class="arrow-left"></div>
 
 						<div class="unit__body grid-full-width">
@@ -273,9 +273,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</li>
 
-					<li class="unit rl">
+					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere"></div>
-						<p class="unit__head pipe rl caps">Адаптивность и responsive</p>
+						<p class="unit__head -pipe -rl caps">Адаптивность и responsive</p>
 						<div class="arrow-left"></div>
 
 						<div class="unit__body grid-full-width">
@@ -287,9 +287,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</li>
 
-					<li class="unit rl">
+					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere"></div>
-						<p class="unit__head pipe rl caps">Огромный потенциал</p>
+						<p class="unit__head -pipe -rl caps">Огромный потенциал</p>
 						<div class="arrow-left"></div>
 
 						<div class="unit__body grid-full-width">
@@ -299,9 +299,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</li>
 
-					<li class="unit rl">
+					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere"></div>
-						<p class="unit__head pipe rl caps">Сторонние библиотеки</p>
+						<p class="unit__head -pipe -rl caps">Сторонние библиотеки</p>
 						<div class="arrow-left"></div>
 
 						<div class="unit__body grid-full-width">
@@ -321,9 +321,9 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</li>
 
-					<li class="unit rl">
+					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere"></div>
-						<p class="unit__head pipe rl caps">Полноценный веб-ресурс</p>
+						<p class="unit__head -pipe -rl caps">Полноценный веб-ресурс</p>
 						<div class="arrow-left"></div>
 
 						<div class="unit__body grid-full-width">
@@ -353,7 +353,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 			</div>
 
 			<div class="unit fs-xl slide-ttl width-x">
-				<div class="unit__img pipe"></div>
+				<div class="unit__img -pipe"></div>
 				<h2 class="unit__head">Модульная сетка</h2>
 				<p class="unit__body fs-md grid-full-width">Настраиваемая, любой конфигурации, «резиновая», responsive без
 					медиа-запросов</p>
@@ -472,17 +472,17 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 			<div class="slide-bg zigzag w-img"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
-				<div class="unit__img pipe"></div>
+				<div class="unit__img -pipe"></div>
 				<h2 class="unit__head">Типографика</h2>
 				<p class="unit__body fs-md grid-full-width">fluid, + адаптируется к размеру экрана на отметке 768px</p>
 			</div>
 
 			<ul class="plain-list flex-space-x __typo-list">
-				<li class="unit rl width-x">
+				<li class="unit -rl width-x">
 					<div class="unit__img img-box icon-bg round sphere">
 						<i class="material-icons-round mui-icon">monitor</i>
 					</div>
-					<p class="unit__head pipe caps fs-md">Большая терция</p>
+					<p class="unit__head -pipe caps fs-md">Большая терция</p>
 					<div class="arrow-left"></div>
 
 					<ul class="unit__body grid-full-width">
@@ -501,7 +501,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 					<div class="unit__img img-box icon-bg round sphere">
 						<i class="material-icons-round mui-icon">phone_android</i>
 					</div>
-					<p class="unit__head rl pipe caps fs-md">Большая секунда</p>
+					<p class="unit__head -rl -pipe caps fs-md">Большая секунда</p>
 					<div class="arrow-right"></div>
 
 					<ul class="unit__body grid-full-width">
@@ -568,7 +568,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 					</div>
 
 					<div class="unit">
-						<div class="unit__img pipe"></div>
+						<div class="unit__img -pipe"></div>
 						<h3 class="unit__head caps">Lekom ipsum dolor sit</h3>
 						<div class="unit__body grid-full-width">
 							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
@@ -672,8 +672,8 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</div>
 
-					<div class="unit txt-box-bg">
-						<div class="unit__img pipe"></div>
+					<div class="unit -bg">
+						<div class="unit__img -pipe"></div>
 						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
 						<div class="unit__body grid-full-width">
 							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
@@ -695,8 +695,8 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</div>
 
-					<div class="unit txt-box-bg">
-						<div class="unit__img pipe"></div>
+					<div class="unit -bg">
+						<div class="unit__img -pipe"></div>
 						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
 						<div class="unit__body grid-full-width">
 							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
@@ -752,7 +752,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 				</li>
 
 				<li class="card">
-					<div class="card__head card__head_ttl-side sm-a-flow-row">
+					<div class="card__head -ttl-right sm-a-flow-row">
 						<div class="card__img img-box icon-bg overlay sm-shadow-bottom"
 								 style="--overlay: var(--eye)">
 							<img class="o-fit-cover"
@@ -765,7 +765,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 
 						<div class="unit">
-							<div class="unit__img pipe"></div>
+							<div class="unit__img -pipe"></div>
 							<h3 class="unit__head caps z-down">Lorem ipsum dolor</h3>
 							<p class="unit__body grid-full-width fs-sm z-down">Lorem ipsum dolor sit amet</p>
 						</div>
@@ -789,8 +789,8 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</div>
 
-					<div class="unit txt-box-bg">
-						<div class="unit__img pipe"></div>
+					<div class="unit -bg">
+						<div class="unit__img -pipe"></div>
 						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
 						<div class="unit__body grid-full-width">
 							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
@@ -850,8 +850,8 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 				</li>
 
 				<li class="card gap-0">
-					<div class="unit txt-box-bg">
-						<div class="unit__img pipe"></div>
+					<div class="unit -bg">
+						<div class="unit__img -pipe"></div>
 						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
 						<div class="unit__body grid-full-width">
 							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
@@ -867,7 +867,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</div>
 
-					<div class="unit txt-box-bg">
+					<div class="unit -bg">
 						<div class="unit__body grid-full-width">
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perspiciatis quasi eaque rem omnis,
 								repudiandae eveniet non quod dolores odio odit doloribus sunt quas officiis est nihil recusandae neque
@@ -878,7 +878,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 
 				<li class="card x-axis gap-0 card_triple lg-a-flow-row c-span-x lg-c-span-0"
 						style="--span: 2">
-					<div class="unit txt-box-bg">
+					<div class="unit -bg">
 						<div class="unit__img img-box icon-bg round sphere">
 							<i class="material-icons-round mui-icon">gpp_good</i>
 						</div>
@@ -905,7 +905,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</div>
 
-					<div class="unit txt-box-bg">
+					<div class="unit -bg">
 						<div class="unit__body grid-full-width">
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
 								quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
@@ -953,7 +953,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						<h3 class="card__ttl card__ttl_bg caps ellipsis">Lorem ipsum dolor</h3>
 					</div>
 
-					<div class="unit txt-box-bg">
+					<div class="unit -bg">
 						<div class="unit__body grid-full-width txt-col-x"
 								 style="--col: 3">
 							<div class="img-box icon-bg round txt-icon"
@@ -1071,7 +1071,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 
 						<div class="unit">
-							<div class="unit__img pipe"></div>
+							<div class="unit__img -pipe"></div>
 							<p class="unit__head fs-xs caps">Anthony Lekomski</p>
 							<p class="unit__body fs-xs grid-full-width">Senior Printer Guru at Lorem Printum company</p>
 						</div>
@@ -1098,7 +1098,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 			<div class="slide-bg heptagon"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
-				<div class="unit__img pipe"></div>
+				<div class="unit__img -pipe"></div>
 				<h2 class="unit__head">Подгрузка видео по клику, scroll-snap, слайдер</h2>
 			</div>
 
@@ -1134,7 +1134,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</figure>
 					</div>
 
-					<div class="unit txt-box-bg">
+					<div class="unit -bg">
 						<div class="unit__body grid-full-width">
 							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 								Commodi officia illum facere expedita
@@ -1180,7 +1180,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 					</div>
 
 					<div class="unit">
-						<div class="unit__img pipe"></div>
+						<div class="unit__img -pipe"></div>
 						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
 						<div class="unit__body grid-full-width">
 							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
@@ -1244,7 +1244,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 						</div>
 					</div>
 
-					<div class="unit txt-box-bg">
+					<div class="unit -bg">
 						<div class="unit__body grid-full-width">
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
 								Necessitatibus recusandae expedita eveniet
@@ -1265,7 +1265,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 				<caption>
 					<div class="unit slide-ttl width-x">
 						<h2 class="unit__head fs-md caps">Таблица</h2>
-						<p class="unit__body fs-sm grid-full-width"><span class="tag">Адаптивная,</span>
+						<p class="unit__body fs-xs grid-full-width"><span class="tag">Адаптивная,</span>
 							<span class="tag">семантически
 								корректная,</span>
 							<span class="tag">с
@@ -1495,22 +1495,22 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 			</div>
 		</div>
 	</div>
-</li>`,so=`<li class="swiper-slide slide-form"
+</li>`,so=`<li class="swiper-slide __slide-form"
 		data-hash="demo-form">
 	<div class="layout-center">
 		<div class="slide-content width-x">
 			<div class="slide-bg spike w-img"></div>
 			<div class="slide-bg spike w-img"></div>
 
-			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
-				<h2 class="ttl-box__ttl">Форма обратной связи</h2>
-				<p class="ttl-box__sub fs-md">С валидацией на фронте и сообщением об успешной отправке</p>
+			<div class="unit fs-xl slide-ttl width-x">
+				<div class="unit__img img-box icon-bg round sphere">
+					<i class="material-icons-round mui-icon">alternate_email</i>
+				</div>
+				<h2 class="unit__head">Форма обратной связи</h2>
+				<p class="unit__body fs-md grid-full-width">С валидацией на фронте и сообщением об успешной отправке</p>
 			</div>
 
 			<div class="grid-x width-x slide-body">
-				<!-- <button class="btn-plain outlined">Подписаться на рассылку</button>
-				<button class="btn-glow ellipsis-box"><span class="ellipsis">Подписаться на рассылку</span></button> -->
-
 				<form class="sign-up-form"
 							id="sign-up-form">
 
@@ -1535,31 +1535,32 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 			</div>
 		</div>
 	</div>
-</li>`,no=`<li class="swiper-slide slide-diag-bg"
+</li>`,no=`<li class="swiper-slide __slide-diag-bg"
 		data-hash="diag-bg">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg diag w-img"></div>
 			<div class="slide-bg-overlay diag"></div>
 
-			<div class="ttl-box ttl-box_bg-pipe fs-xl width-x">
-				<h2 class="ttl-box__ttl">js heightSetter test</h2>
+			<div class="unit fs-xl slide-ttl width-x">
+				<div class="unit__img img-box icon-bg round sphere">
+					<i class="material-icons-round mui-icon">javascript</i>
+				</div>
+				<h2 class="unit__head caps">Test zone</h2>
+				<p class="unit__body fs-md grid-full-width">js heightSetter test page</p>
 			</div>
 
 			<div class="flex-space-x">
 				<div class="width-x">
-					<ul class="grid-x cards cards_arrows cards_arrows_rl">
-						<li class="card h-master-1">
-							<div class="card__head card__head_ttl-side card__head_arrow">
-								<div class="card__img img-box icon-bg round sphere">
-									<i class="material-icons-round mui-icon">add_reaction</i>
-								</div>
-								<div class="ttl-box ttl-box_bg-pipe">
-									<h3 class="ttl-box__ttl caps z-down">Lorem ipsum dolor</h3>
-								</div>
+					<ul class="plain-list __pro-cons-list">
+						<li class="unit -rl h-master-1">
+							<div class="unit__img img-box icon-bg round sphere">
+								<i class="material-icons-round mui-icon">add_reaction</i>
 							</div>
+							<h3 class="unit__head -pipe caps">Lorem ipsum dolor</h3>
+							<div class="arrow-left"></div>
 
-							<div class="card__body">
+							<div class="unit__body grid-full-width">
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea veniam labore, magni officiis maiores
 									aliquid fugit fuga aliquam dicta, ipsum odit commodi expedita alias necessitatibus. Fugit,
 									blanditiis
@@ -1568,17 +1569,14 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 							</div>
 						</li>
 
-						<li class="card h-slave-2">
-							<div class="card__head card__head_ttl-side card__head_arrow">
-								<div class="card__img img-box icon-bg round sphere">
-									<i class="material-icons-round mui-icon">add_moderator</i>
-								</div>
-								<div class="ttl-box ttl-box_bg-pipe">
-									<h3 class="ttl-box__ttl caps z-down">Lorem ipsum dolor sit</h3>
-								</div>
+						<li class="unit -rl h-slave-2">
+							<div class="unit__img img-box icon-bg round sphere">
+								<i class="material-icons-round mui-icon">add_moderator</i>
 							</div>
+							<h3 class="unit__head -pipe caps">Lorem ipsum dolor</h3>
+							<div class="arrow-left"></div>
 
-							<div class="card__body">
+							<div class="unit__body grid-full-width">
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex optio rem sapiente porro esse tempore
 									dolorum consequatur recusandae fuga quibusdam, sed ad, dolorem nostrum? Eveniet atque amet magni
 									nulla
@@ -1586,17 +1584,14 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 							</div>
 						</li>
 
-						<li class="card h-slave-3">
-							<div class="card__head card__head_ttl-side card__head_arrow">
-								<div class="card__img img-box icon-bg round sphere">
-									<i class="material-icons-round mui-icon">announcement</i>
-								</div>
-								<div class="ttl-box ttl-box_bg-pipe">
-									<h3 class="ttl-box__ttl caps z-down">Lorem ipsum dolor sit amet</h3>
-								</div>
+						<li class="unit -rl h-slave-3">
+							<div class="unit__img img-box icon-bg round sphere">
+								<i class="material-icons-round mui-icon">announcement</i>
 							</div>
+							<h3 class="unit__head -pipe caps">Lorem ipsum dolor</h3>
+							<div class="arrow-left"></div>
 
-							<div class="card__body">
+							<div class="unit__body grid-full-width">
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, sunt ad. Aliquam provident iste
 									reiciendis harum quibusdam itaque laborum, voluptates nobis rerum? Aspernatur suscipit molestiae a
 									numquam, recusandae impedit veniam!</p>
@@ -1606,35 +1601,29 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 				</div>
 
 				<div class="width-x">
-					<ul class="grid-x cards cards_arrows">
-						<li class="card h-slave-1">
-							<div class="card__head card__head_ttl-side card__head_arrow">
-								<div class="card__img img-box icon-bg round sphere">
-									<i class="material-icons-round mui-icon">architecture</i>
-								</div>
-								<div class="ttl-box ttl-box_bg-pipe">
-									<h3 class="ttl-box__ttl caps z-down">Lorem ipsum</h3>
-								</div>
+					<ul class="plain-list __pro-cons-list">
+						<li class="unit h-slave-1">
+							<div class="unit__img img-box icon-bg round sphere">
+								<i class="material-icons-round mui-icon">architecture</i>
 							</div>
+							<h3 class="unit__head -pipe -rl caps">Lorem ipsum dolor</h3>
+							<div class="arrow-right"></div>
 
-							<div class="card__body">
+							<div class="unit__body grid-full-width">
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, consequatur amet. Quasi
 									aliquam
 									totam voluptatem quibusdam nam et rem qui.</p>
 							</div>
 						</li>
 
-						<li class="card h-master-2">
-							<div class="card__head card__head_ttl-side card__head_arrow">
-								<div class="card__img img-box icon-bg round sphere">
-									<i class="material-icons-round mui-icon">archive</i>
-								</div>
-								<div class="ttl-box ttl-box_bg-pipe">
-									<h3 class="ttl-box__ttl caps z-down">Lorem ipsum dolor sit amet</h3>
-								</div>
+						<li class="unit h-master-2">
+							<div class="unit__img img-box icon-bg round sphere">
+								<i class="material-icons-round mui-icon">archive</i>
 							</div>
+							<h3 class="unit__head -pipe -rl caps">Lorem ipsum dolor</h3>
+							<div class="arrow-right"></div>
 
-							<div class="card__body">
+							<div class="unit__body grid-full-width">
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsa dolor excepturi corrupti
 									illo
 									commodi tempora temporibus nulla voluptas quaerat. Optio, facere possimus eius odit magnam iure
@@ -1646,17 +1635,14 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 							</div>
 						</li>
 
-						<li class="card h-master-3">
-							<div class="card__head card__head_ttl-side card__head_arrow">
-								<div class="card__img img-box icon-bg round sphere">
-									<i class="material-icons-round mui-icon">apartment</i>
-								</div>
-								<div class="ttl-box ttl-box_bg-pipe">
-									<h3 class="ttl-box__ttl caps z-down">Lorem ipsum dolor sit</h3>
-								</div>
+						<li class="unit h-master-3">
+							<div class="unit__img img-box icon-bg round sphere">
+								<i class="material-icons-round mui-icon">apartment</i>
 							</div>
+							<h3 class="unit__head -pipe -rl caps">Lorem ipsum dolor</h3>
+							<div class="arrow-right"></div>
 
-							<div class="card__body">
+							<div class="unit__body grid-full-width">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor earum voluptates quo sed deleniti
 									nulla
 									magnam iusto suscipit assumenda. Laboriosam dolorem, maiores quos ex animi debitis at
@@ -1689,7 +1675,7 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 
 		</div>
 	</div>
-</li>`,ro=`<li class="swiper-slide slide-blobs-bg"
+</li>`,ro=`<li class="swiper-slide __slide-blobs-bg"
 		data-hash="blobs-bg">
 	<div class="layout-center">
 		<div class="slide-content width-x lg-flex-dir-col">
@@ -1697,13 +1683,12 @@ var Gr=Object.defineProperty;var Yr=(i,t,e)=>t in i?Gr(i,t,{enumerable:!0,config
 			<div class="slide-bg"></div>
 			<div class="slide-bg"></div>
 
-			<div class="ttl-box fs-3xl">
-				<div class="ttl-box__img img-box round icon-bg sphere"
-						 style="--sphere: var(--sphere-2b)">
+			<div class="unit fs-2xl fw-bd slide-ttl width-x">
+				<div class="unit__img img-box icon-bg round sphere">
 					<i class="material-icons-round mui-icon">accessible</i>
 				</div>
-				<h2 class="ttl-box__ttl">TEST ZONE</h2>
-				<p class="ttl-box__sub fs-md">Under construction, unfinished!</p>
+				<h2 class="unit__head caps">Test zone</h2>
+				<p class="unit__body fs-md grid-full-width">Content under construction!</p>
 			</div>
 
 		</div>
