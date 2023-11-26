@@ -5,10 +5,6 @@
 		--x: 1;
 		justify-self: center;
 	}
-
-	.xl-flex-dir-col {
-		flex-direction: column;
-	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| lg */
@@ -20,10 +16,6 @@
 	/* .table media styles are in the table.css */
 
 	/* utilities */
-	.lg-flex-dir-col {
-		flex-direction: column;
-	}
-
 	.lg-shadow-bottom {
 		--shadow: var(--img-shadow-bottom);
 	}
@@ -40,9 +32,6 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| md */
 @media (width <= 768px) {
 	/* utilities */
-	.md-flex-dir-col {
-		flex-direction: column;
-	}
 	.md-min-h-auto {
 		min-height: auto !important;
 	}

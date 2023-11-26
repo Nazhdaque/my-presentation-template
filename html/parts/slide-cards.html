@@ -1,4 +1,4 @@
-<li class="swiper-slide demo-cards"
+<li class="swiper-slide __slide-cards"
 		data-hash="demo-cards">
 	<div class="layout-center">
 		<div class="slide-content">
@@ -11,17 +11,18 @@
 				<span class="scroll-down__text">Scroll down</span>
 			</div>
 
-			<div class="ttl-box width-x fs-xl">
-				<div class="ttl-box__img img-box icon-bg round sphere">
-					<svg class="o-fit-contain inner-icon figures">
+			<div class="unit fs-xl slide-ttl width-x">
+				<div class="unit__img img-box icon-bg round sphere">
+					<svg class="inner-icon figures">
 						<use href="./images/icons/sprites/figures.svg#figure-2"></use>
 					</svg>
 				</div>
-				<h2 class="ttl-box__ttl">Карточки</h2>
-				<p class="ttl-box__sub fs-md">инфоблоки с картинками, иконками и т.д.</p>
+				<h2 class="unit__head">Карточки</h2>
+				<p class="unit__body fs-md grid-full-width">инфоблоки с картинками, иконками и т.д.</p>
 			</div>
 
-			<ul class="grid-x cards">
+			<ul class="grid-x cards"
+					style="--col: 3">
 				<li class="card">
 					<div class="card__head">
 						<div class="card__img img-box overlay cq-container"
@@ -37,15 +38,17 @@
 							<div class="rec">REC</div>
 						</div>
 					</div>
-					<div class="card__body">
-						<div class="ttl-box ttl-box_bg-pipe">
-							<h3 class="ttl-box__ttl caps">Lekom ipsum dolor sit</h3>
-							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+
+					<div class="unit">
+						<div class="unit__img pipe"></div>
+						<h3 class="unit__head caps">Lekom ipsum dolor sit</h3>
+						<div class="unit__body grid-full-width">
+							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
+								quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
+								repudiandae. Eveniet placeat ducimus reprehenderit enim tempore atque ipsam consectetur repudiandae
+								quaerat!</p>
 						</div>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
-							quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
-							repudiandae. Eveniet placeat ducimus reprehenderit enim tempore atque ipsam consectetur repudiandae
-							quaerat!</p>
 					</div>
 				</li>
 
@@ -58,16 +61,17 @@
 									 alt="">
 						</div>
 					</div>
-					<div class="card__body">
-						<div class="ttl-box">
-							<div class="ttl-box__img img-box icon-bg round sphere"></div>
-							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
-							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+
+					<div class="unit">
+						<div class="unit__img img-box icon-bg round sphere"></div>
+						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
+						<div class="unit__body grid-full-width">
+							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quod natus odio voluptas tempore hic quo
+								debitis perferendis mollitia voluptatum accusamus, culpa, officia similique ratione doloribus sint
+								architecto? Provident dignissimos a obcaecati corrupti deserunt iusto quidem. Veritatis voluptatem
+								reiciendis sapiente! Maiores dolores vero adipisci corporis atque soluta debitis placeat aut.</p>
 						</div>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quod natus odio voluptas tempore hic quo
-							debitis perferendis mollitia voluptatum accusamus, culpa, officia similique ratione doloribus sint
-							architecto? Provident dignissimos a obcaecati corrupti deserunt iusto quidem. Veritatis voluptatem
-							reiciendis sapiente! Maiores dolores vero adipisci corporis atque soluta debitis placeat aut.</p>
 					</div>
 				</li>
 
@@ -80,39 +84,44 @@
 						</div>
 						<h3 class="card__ttl card__ttl_bg caps ellipsis">Lorem ipsum dolor</h3>
 					</div>
-					<div class="card__body">
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi officia illum facere expedita
-							aspernatur nisi non alias enim ducimus repellendus accusamus eum iure voluptates suscipit asperiores
-							laborum animi magnam, iusto delectus.</p>
 
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, atque possimus, accusamus, in
-							perferendis adipisci molestias hic consectetur aut maxime ratione? Magni accusantium reiciendis vel sunt
-							asperiores praesentium?</p>
+					<div class="unit">
+						<div class="unit__body grid-full-width">
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi officia illum facere expedita
+								aspernatur nisi non alias enim ducimus repellendus accusamus eum iure voluptates suscipit asperiores
+								laborum animi magnam, iusto delectus.</p>
+
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, atque possimus, accusamus, in
+								perferendis adipisci molestias hic consectetur aut maxime ratione? Magni accusantium reiciendis vel sunt
+								asperiores praesentium?</p>
+						</div>
 					</div>
 				</li>
 
 				<li class="card">
-					<div class="card__body">
-						<div class="ttl-box">
-							<div class="ttl-box__img img-box icon-bg round sphere"></div>
-							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
-							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+					<div class="unit">
+						<div class="unit__img img-box icon-bg round sphere"></div>
+						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
+						<div class="unit__body grid-full-width">
+							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, nesciunt quas? Amet, dignissimos
+								eligendi? Sed, rerum maiores, quidem saepe laudantium iste laborum quae nam doloremque ipsum culpa
+								placeat
+								in sit!</p>
+							<div class="img-box icon-bg round txt-icon"
+									 style="--size-x: 3;
+							--bg: var(--clr-2b-solid);">
+								<img class="inner-icon"
+										 src="./images/rubik-0.svg"
+										 alt="">
+							</div>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officiis suscipit minima deleniti
+								maiores
+								tempora facere aut, esse adipisci aliquid quia neque quo consectetur earum, dicta amet qui excepturi?
+								Voluptatibus id minus dolore nemo eveniet assumenda unde, vitae voluptates atque?</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi fugiat non eveniet accusantium ex
+								voluptas iste neque, facere cupiditate aperiam.</p>
 						</div>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, nesciunt quas? Amet, dignissimos
-							eligendi? Sed, rerum maiores, quidem saepe laudantium iste laborum quae nam doloremque ipsum culpa placeat
-							in sit!</p>
-						<div class="img-box icon-bg round txt-icon"
-								 style="--size-x: 3;
-						--bg: var(--clr-2b-solid);">
-							<img class="inner-icon"
-									 src="./images/rubik-0.svg"
-									 alt="">
-						</div>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officiis suscipit minima deleniti maiores
-							tempora facere aut, esse adipisci aliquid quia neque quo consectetur earum, dicta amet qui excepturi?
-							Voluptatibus id minus dolore nemo eveniet assumenda unde, vitae voluptates atque?</p>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi fugiat non eveniet accusantium ex
-							voluptas iste neque, facere cupiditate aperiam.</p>
 					</div>
 				</li>
 
@@ -134,15 +143,17 @@
 									 alt="">
 						</div>
 					</div>
-					<div class="card__body card__body_bg">
-						<div class="ttl-box ttl-box_bg-pipe">
-							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
-							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+
+					<div class="unit unit_bg">
+						<div class="unit__img pipe"></div>
+						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
+						<div class="unit__body grid-full-width">
+							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
+								quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
+								repudiandae. Eveniet placeat ducimus reprehenderit enim tempore atque ipsam consectetur repudiandae
+								quaerat!</p>
 						</div>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
-							quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
-							repudiandae. Eveniet placeat ducimus reprehenderit enim tempore atque ipsam consectetur repudiandae
-							quaerat!</p>
 					</div>
 				</li>
 
@@ -155,15 +166,17 @@
 									 alt="">
 						</div>
 					</div>
-					<div class="card__body card__body_bg">
-						<div class="ttl-box ttl-box_bg-pipe">
-							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
-							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+
+					<div class="unit unit_bg">
+						<div class="unit__img pipe"></div>
+						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
+						<div class="unit__body grid-full-width">
+							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
+								quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
+								repudiandae. Eveniet placeat ducimus reprehenderit enim tempore atque ipsam consectetur repudiandae
+								quaerat!</p>
 						</div>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
-							quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
-							repudiandae. Eveniet placeat ducimus reprehenderit enim tempore atque ipsam consectetur repudiandae
-							quaerat!</p>
 					</div>
 				</li>
 
@@ -178,62 +191,66 @@
 						<h3 class="card__ttl card__ttl_bg caps ellipsis">Lorem ipsum dolor sit</h3>
 					</div>
 
-					<div class="card__body">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio voluptatum quae! Eveniet incidunt
-							accusantium veritatis, nostrum sunt dolores ratione. Exercitationem distinctio adipisci repellat?</p>
+					<div class="unit">
+						<div class="unit__body grid-full-width">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio voluptatum quae! Eveniet
+								incidunt
+								accusantium veritatis, nostrum sunt dolores ratione. Exercitationem distinctio adipisci repellat?</p>
 
-						<ul class="grid-x cards cards_plain-list fs-sm cards_ordered-list">
-							<li class="card">
-								<div class="card__head card__head_ttl-side">
-									<div class="card__img img-box icon-bg round sphere"></div>
-									<div class="ttl-box">
-										<p class="ttl-box__ttl z-down">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-											Consequuntur, animi.</p>
+							<ul class="plain-list fs-sm">
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round sphere">
+										<i class="material-icons-round mui-icon">commute</i>
 									</div>
-								</div>
-							</li>
+									<p class="unit__head">Lorem ipsum dolor sit</p>
+								</li>
 
-							<li class="card">
-								<div class="card__head card__head_ttl-side">
-									<div class="card__img img-box icon-bg round sphere"></div>
-									<div class="ttl-box">
-										<p class="ttl-box__ttl z-down">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-											magni obcaecati optio repellendus delectus quasi.</p>
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round sphere">
+										<i class="material-icons-round mui-icon">build_circle</i>
 									</div>
-								</div>
-							</li>
+									<p class="unit__head">Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+								</li>
 
-							<li class="card">
-								<div class="card__head card__head_ttl-side">
-									<div class="card__img img-box icon-bg round sphere"></div>
-									<div class="ttl-box">
-										<p class="ttl-box__ttl z-down">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round sphere">
+										<i class="material-icons-round mui-icon">home</i>
 									</div>
-								</div>
-							</li>
-						</ul>
+									<p class="unit__head">Lorem ipsum dolor sit amet consectetur</p>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</li>
 
 				<li class="card">
 					<div class="card__head card__head_ttl-side sm-a-flow-row">
-						<div class="card__img img-box icon-bg round sphere">
-							<svg class="o-fit-contain inner-icon figures">
-								<use href="./images/icons/sprites/figures.svg#figure-2"></use>
+						<div class="card__img img-box icon-bg overlay sm-shadow-bottom"
+								 style="--overlay: var(--eye)">
+							<img class="o-fit-cover"
+									 style="--pos: 100%"
+									 src="./images/demo-4.webp"
+									 alt="">
+							<svg class="inner-icon figures">
+								<use href="./images/icons/sprites/figures.svg#figure-1"></use>
 							</svg>
 						</div>
-						<div class="ttl-box ttl-box_bg-pipe">
-							<h3 class="ttl-box__ttl caps z-down">Lorem ipsum dolor</h3>
-							<p class="ttl-box__sub fs-sm z-down">Lorem ipsum dolor sit amet</p>
+
+						<div class="unit">
+							<div class="unit__img pipe"></div>
+							<h3 class="unit__head caps z-down">Lorem ipsum dolor</h3>
+							<p class="unit__body grid-full-width fs-sm z-down">Lorem ipsum dolor sit amet</p>
 						</div>
 					</div>
 
-					<div class="card__body">
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi aut eaque architecto cum quos iste,
-							molestias eum vero. Ea porro deleniti ut dolor quasi nesciunt exercitationem, totam sapiente adipisci
-							minus! Beatae eum ipsa odit ex.</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus reprehenderit voluptatum ut
-							consequatur, soluta tenetur laborum natus recusandae porro sunt.</p>
+					<div class="unit">
+						<div class="unit__body grid-full-width">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi aut eaque architecto cum quos iste,
+								molestias eum vero. Ea porro deleniti ut dolor quasi nesciunt exercitationem, totam sapiente adipisci
+								minus! Beatae eum ipsa odit ex.</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus reprehenderit voluptatum ut
+								consequatur, soluta tenetur laborum natus recusandae porro sunt.</p>
+						</div>
 					</div>
 				</li>
 
@@ -244,13 +261,15 @@
 						</div>
 					</div>
 
-					<div class="card__body card__body_bg">
-						<div class="ttl-box ttl-box_bg-pipe">
-							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
-							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+					<div class="unit unit_bg">
+						<div class="unit__img pipe"></div>
+						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
+						<div class="unit__body grid-full-width">
+							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio voluptatum quae! Eveniet
+								incidunt
+								accusantium veritatis, nostrum sunt dolores ratione. Exercitationem distinctio adipisci?</p>
 						</div>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio voluptatum quae! Eveniet incidunt
-							accusantium veritatis, nostrum sunt dolores ratione. Exercitationem distinctio adipisci?</p>
 					</div>
 				</li>
 
@@ -258,89 +277,94 @@
 					<div class="card__head">
 						<div class="polygon-ribbon-rounded-cutout-tl fs-sm">Nice!</div>
 						<div class="card__img img-box pattern-bg-1"></div>
-						<div class="card__ttl">
-							<div class="ttl-box">
-								<div class="ttl-box__img img-box icon-bg round sphere"></div>
-								<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
-								<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-							</div>
-						</div>
 
+						<div class="unit card__head-unit width-x"
+								 style="--col: 3; --x: 2; --container-width: 100%">
+							<div class="unit__img img-box icon-bg round sphere">
+								<svg class="inner-icon figures">
+									<use href="./images/icons/sprites/figures.svg#figure-2"></use>
+								</svg>
+							</div>
+							<h3 class="unit__head caps">Lorem ipsum dolor</h3>
+							<p class="unit__body grid-full-width fs-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+								similique vitae possimus.</p>
+						</div>
 					</div>
-					<div class="card__body">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, pariatur aspernatur exercitationem et
+
+					<div class="unit">
+						<p class="unit__body grid-full-width">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+							pariatur aspernatur exercitationem et
 							earum consectetur dolor quisquam ipsam esse tempore!</p>
 					</div>
 				</li>
 
 				<li class="card x-axis sm-a-flow-row">
 					<div class="card__head">
-						<div class="card__img img-box icon-bg round overlay sm-shadow-bottom"
-								 style="--overlay: var(--eye)">
-							<img class="o-fit-cover"
-									 style="--pos: 100%"
-									 src="./images/demo-4.webp"
-									 alt="">
-							<svg class="o-fit-contain inner-icon figures">
-								<use href="./images/icons/sprites/figures.svg#figure-2"></use>
+						<div class="card__img img-box icon-bg round sphere"
+								 style="--sphere: var(--sphere-2c-1a)">
+							<svg class="inner-icon figures">
+								<use href="./images/icons/sprites/figures.svg#figure-8"></use>
 							</svg>
 						</div>
 					</div>
 
-					<div class="card__body">
-						<div class="ttl-box">
-							<div class="ttl-box__img img-box icon-bg round sphere"></div>
-							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
-							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+					<div class="unit">
+						<div class="unit__img img-box icon-bg round sphere"></div>
+						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
+						<div class="unit__body grid-full-width">
+							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae exercitationem suscipit unde
+								laudantium perspiciatis eius ex repellendus odio cum nemo accusamus nam eos non dolor doloribus ratione
+								quo facilis facere labore, quas et excepturi rem corrupti! Nam consectetur sint fugit?</p>
 						</div>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae exercitationem suscipit unde
-							laudantium perspiciatis eius ex repellendus odio cum nemo accusamus nam eos non dolor doloribus ratione
-							quo facilis facere labore, quas et excepturi rem corrupti! Nam consectetur sint fugit?</p>
 					</div>
 				</li>
 
 				<li class="card gap-0">
-					<div class="card__body card__body_bg">
-						<div class="ttl-box ttl-box_bg-pipe">
-							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
-							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+					<div class="unit unit_bg">
+						<div class="unit__img pipe"></div>
+						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
+						<div class="unit__body grid-full-width">
+							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque cum minima blanditiis enim
+								quas itaque nemo eaque perspiciatis iste?</p>
 						</div>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque cum minima blanditiis enim
-							quas itaque nemo eaque perspiciatis iste?</p>
 					</div>
+
 					<div class="card__head">
 						<div class="polygon-ribbon-cutout-rt fs-sm">Это не картинка!</div>
 						<div class="card__img img-box">
-							<!-- <img class="o-fit-cover"
-									 style="--pos: top"
-									 src="./images/demo-3.webp"
-									 alt=""> -->
 							<canvas class="chart-line"></canvas>
 						</div>
 					</div>
-					<div class="card__body card__body_bg">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perspiciatis quasi eaque rem omnis,
-							repudiandae eveniet non quod dolores odio odit doloribus sunt quas officiis est nihil recusandae neque
-							aliquam?</p>
+
+					<div class="unit unit_bg">
+						<div class="unit__body grid-full-width">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perspiciatis quasi eaque rem omnis,
+								repudiandae eveniet non quod dolores odio odit doloribus sunt quas officiis est nihil recusandae neque
+								aliquam?</p>
+						</div>
 					</div>
 				</li>
 
 				<li class="card x-axis gap-0 card_triple lg-a-flow-row c-span-x lg-c-span-0"
 						style="--span: 2">
-					<div class="card__body card__body_bg">
-						<div class="ttl-box">
-							<div class="ttl-box__img img-box icon-bg round sphere">
-								<i class="material-icons-round mui-icon">gpp_good</i>
-							</div>
-							<h3 class="ttl-box__ttl caps">Lorem ipsum dolor</h3>
-							<p class="ttl-box__sub fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+					<div class="unit unit_bg">
+						<div class="unit__img img-box icon-bg round sphere">
+							<i class="material-icons-round mui-icon">gpp_good</i>
 						</div>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
-							quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
-							repudiandae. Eveniet placeat ducimus reprehenderit enim tempore atque ipsam consectetur repudiandae
-							quaerat!</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea blanditiis, itaque ipsum aut illo
-							repellat reprehenderit omnis unde minima.</p>
+						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
+						<div class="unit__body grid-full-width">
+							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
+								quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
+								repudiandae. Eveniet placeat ducimus reprehenderit enim tempore atque ipsam consectetur repudiandae
+								quaerat!</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quidem quae animi possimus eos in
+								qui odio dicta labore quos aperiam, repellendus eaque beatae nam temporibus consequatur a alias
+								recusandae quod repellat tempore, autem reprehenderit dolor natus! Atque sint reiciendis harum.
+								Veritatis maiores praesentium dolorem culpa repellat minima labore tempora.</p>
+						</div>
 					</div>
 
 					<div class="card__head">
@@ -352,48 +376,38 @@
 						</div>
 					</div>
 
-					<div class="card__body card__body_bg">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
-							quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
-							repudiandae. Eveniet placeat ducimus reprehenderit enim tempore atque ipsam consectetur repudiandae
-							quaerat!</p>
+					<div class="unit unit_bg">
+						<div class="unit__body grid-full-width">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum dicta iusto saepe aliquam, sint
+								quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
+								repudiandae.</p>
 
-						<ul class="grid-x cards cards_plain-list fs-sm">
-							<li class="card">
-								<div class="card__head card__head_ttl-side">
-									<div class="card__img img-box icon-bg round sphere">
-										<i class="material-icons-round mui-icon">commute</i>
+							<ul class="plain-list ordered-list">
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round sphere"></div>
+									<p class="unit__head">Lorem ipsum dolor sit</p>
+									<div class="arrow-down"></div>
+									<div class="unit__body fs-sm">
+										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, cupiditate.</p>
 									</div>
-									<div class="ttl-box">
-										<p class="ttl-box__ttl z-down">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-											Consequuntur, animi.</p>
-									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="card">
-								<div class="card__head card__head_ttl-side">
-									<div class="card__img img-box icon-bg round sphere">
-										<i class="material-icons-round mui-icon">build_circle</i>
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round sphere"></div>
+									<p class="unit__head">Lorem ipsum, dolor sit amet</p>
+									<div class="arrow-down"></div>
+									<div class="unit__body fs-sm">
+										<p>Lorem ipsum, dolor sit amet consectetur adipisicing itaque et nam
+											aspernatur unde.</p>
 									</div>
-									<div class="ttl-box">
-										<p class="ttl-box__ttl z-down">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-											magni obcaecati optio repellendus delectus quasi.</p>
-									</div>
-								</div>
-							</li>
+								</li>
 
-							<li class="card">
-								<div class="card__head card__head_ttl-side">
-									<div class="card__img img-box icon-bg round sphere">
-										<i class="material-icons-round mui-icon">home</i>
-									</div>
-									<div class="ttl-box">
-										<p class="ttl-box__ttl z-down">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-									</div>
-								</div>
-							</li>
-						</ul>
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round sphere"></div>
+									<p class="unit__head">Lorem ipsum dolor sit amet consectetur</p>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</li>
 			</ul>
@@ -409,55 +423,63 @@
 						</div>
 						<h3 class="card__ttl card__ttl_bg caps ellipsis">Lorem ipsum dolor</h3>
 					</div>
-					<div class="card__body card__body_bg txt-col-x"
-							 style="--col: 3">
-						<div class="img-box icon-bg round txt-icon"
-								 style="--size-x: 4;
+
+					<div class="unit unit_bg">
+						<div class="unit__body grid-full-width txt-col-x"
+								 style="--col: 3">
+							<div class="img-box icon-bg round txt-icon"
+									 style="--size-x: 4;
 						--bg: var(--clr-2b-solid);">
-							<img class="inner-icon"
-									 src="./images/rubik-1.svg"
-									 alt="">
-						</div>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti odit perspiciatis dolor debitis atque,
-							et velit cum neque nulla est porro. Quidem animi, cupiditate delectus incidunt rem architecto odio.
-							Eveniet iusto assumenda dolorem doloribus ad fugit ab sapiente quam corporis aspernatur ipsum consequatur
-							dolor, ipsam hic maiores totam molestias doloremque! Accusamus voluptatum distinctio reprehenderit!</p>
+								<img class="inner-icon"
+										 src="./images/rubik-1.svg"
+										 alt="">
+							</div>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti odit perspiciatis dolor debitis
+								atque,
+								et velit cum neque nulla est porro. Quidem animi, cupiditate delectus incidunt rem architecto odio.
+								Eveniet iusto assumenda dolorem doloribus ad fugit ab sapiente quam corporis aspernatur ipsum
+								consequatur
+								dolor, ipsam hic maiores totam molestias doloremque! Accusamus voluptatum distinctio reprehenderit!</p>
 
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure vitae tempora, enim explicabo, illo velit
-							facilis adipisci, quaerat quasi sint corrupti temporibus quo! Adipisci molestiae enim harum veritatis
-							magnam vero recusandae doloribus maxime sed soluta, ut error? Pariatur adipisci rem consequuntur
-							laudantium totam! Itaque, harum, sapiente iure, dicta eligendi cum dolor nesciunt odio.</p>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure vitae tempora, enim explicabo, illo
+								velit
+								facilis adipisci, quaerat quasi sint corrupti temporibus quo! Adipisci molestiae enim harum veritatis
+								magnam vero recusandae doloribus maxime sed soluta, ut error? Pariatur adipisci rem consequuntur
+								laudantium totam! Itaque, harum, sapiente iure, dicta eligendi cum dolor nesciunt odio.</p>
 
-						<div class="img-box icon-bg round txt-icon"
-								 style="--size-x: 3;
+							<div class="img-box icon-bg round txt-icon"
+									 style="--size-x: 3;
 						--bg: var(--clr-1b-solid);">
-							<img class="inner-icon"
-									 src="./images/rubik-2.svg"
-									 alt="">
-						</div>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora unde enim sequi facilis. Aliquam quia
-							mollitia ipsum nisi aspernatur, error veniam, adipisci delectus ex ipsam, itaque laudantium nam aperiam
-							vel ab cum ullam animi incidunt distinctio aliquid. Explicabo nemo quidem, alias exercitationem molestias
-							odit nobis. Praesentium dolorum sequi iure atque minima, voluptate eum.</p>
+								<img class="inner-icon"
+										 src="./images/rubik-2.svg"
+										 alt="">
+							</div>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora unde enim sequi facilis. Aliquam quia
+								mollitia ipsum nisi aspernatur, error veniam, adipisci delectus ex ipsam, itaque laudantium nam aperiam
+								vel ab cum ullam animi incidunt distinctio aliquid. Explicabo nemo quidem, alias exercitationem
+								molestias
+								odit nobis. Praesentium dolorum sequi iure atque minima, voluptate eum.</p>
 
-						<div class="img-box icon-bg round txt-icon"
-								 style="--size-x: 2;
-						--bg: var(--clr-2a-solid);">
-							<img class="inner-icon"
-									 src="./images/rubik-0.svg"
-									 alt="">
+							<div class="img-box icon-bg round txt-icon"
+									 style="--size-x: 2;
+						--bg: var(--clr-1a-solid);">
+								<img class="inner-icon"
+										 src="./images/rubik-0.svg"
+										 alt="">
+							</div>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aperiam recusandae asperiores quaerat,
+								dicta placeat voluptates! Expedita distinctio nam reprehenderit, at iure laboriosam natus illo placeat.
+								Doloremque, quos mollitia architecto velit tempore, perferendis quasi minus harum aut itaque magnam
+								sequi
+								beatae fugiat sunt adipisci. Velit porro quidem aliquid deleniti cupiditate.</p>
 						</div>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aperiam recusandae asperiores quaerat,
-							dicta placeat voluptates! Expedita distinctio nam reprehenderit, at iure laboriosam natus illo placeat.
-							Doloremque, quos mollitia architecto velit tempore, perferendis quasi minus harum aut itaque magnam sequi
-							beatae fugiat sunt adipisci. Velit porro quidem aliquid deleniti cupiditate.</p>
 					</div>
 				</li>
 			</ul>
 
 			<ul class="cards">
-				<li class="card">
-					<div class="card__body txt-col-x"
+				<li class="unit">
+					<div class="unit__body grid-full-width txt-col-x"
 							 style="--col: 4">
 						<div class="card__head">
 							<div class="card__img img-box">
@@ -465,61 +487,49 @@
 										 src="./images/demo-2.webp"
 										 alt="">
 							</div>
-							<h3 class="card__ttl card__ttl_bg caps ellipsis">Lorem ipsum</h3>
+							<h3 class="card__ttl card__ttl_bg caps ellipsis">Lorem ipsum dolor</h3>
 						</div>
-
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti odit perspiciatis dolor debitis atque,
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti odit perspiciatis dolor debitis
+							atque,
 							et velit cum neque nulla est porro. Quidem animi, cupiditate delectus incidunt rem architecto odio.
-							Eveniet iusto assumenda dolorem doloribus ad fugit ab sapiente quam corporis aspernatur ipsum consequatur
+							Eveniet iusto assumenda dolorem doloribus ad fugit ab sapiente quam corporis aspernatur ipsum
+							consequatur
 							dolor, ipsam hic maiores totam molestias doloremque! Accusamus voluptatum distinctio reprehenderit:</p>
 
-						<ul class="grid-x cards cards_plain-list fs-sm">
-							<li class="card">
-								<div class="card__head card__head_ttl-side">
-									<div class="card__img img-box icon-bg">
-										<img class="o-fit-contain"
-												 src="./images/rubik-0.svg"
-												 alt="">
-									</div>
-									<div class="ttl-box">
-										<p class="ttl-box__ttl z-down">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-											Consequuntur, animi.</p>
-									</div>
+						<ul class="plain-list">
+							<li class="unit">
+								<div class="unit__img img-box icon-bg">
+									<img src="./images/rubik-0.svg"
+											 alt="">
 								</div>
+								<p class="unit__head fs-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+									animi.</p>
 							</li>
 
-							<li class="card">
-								<div class="card__head card__head_ttl-side">
-									<div class="card__img img-box icon-bg">
-										<img class="o-fit-contain"
-												 src="./images/rubik-1.svg"
-												 alt="">
-									</div>
-									<div class="ttl-box">
-										<p class="ttl-box__ttl z-down">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-											magni obcaecati optio repellendus delectus quasi.</p>
-									</div>
+							<li class="unit">
+								<div class="unit__img img-box icon-bg">
+									<img src="./images/rubik-1.svg"
+											 alt="">
 								</div>
+								<p class="unit__head fs-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates magni
+									obcaecati optio repellendus delectus quasi.</p>
 							</li>
 
-							<li class="card">
-								<div class="card__head card__head_ttl-side">
-									<div class="card__img img-box icon-bg">
-										<img class="o-fit-contain"
-												 src="./images/rubik-2.svg"
-												 alt="">
-									</div>
-									<div class="ttl-box">
-										<p class="ttl-box__ttl z-down">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-									</div>
+							<li class="unit">
+								<div class="unit__img img-box icon-bg">
+									<img src="./images/rubik-2.svg"
+											 alt="">
 								</div>
+								<p class="unit__head fs-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 							</li>
 						</ul>
 
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure vitae tempora, enim explicabo, illo velit
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure vitae tempora, enim explicabo, illo
+							velit
 							facilis adipisci, quaerat quasi sint corrupti temporibus quo! Adipisci molestiae enim harum veritatis
 							magnam vero recusandae doloribus maxime sed soluta, ut error? Pariatur adipisci rem consequuntur
 							laudantium totam! Itaque, harum, sapiente iure, dicta eligendi cum dolor nesciunt odio.</p>
+
 
 						<div class="card__head">
 							<div class="card__img img-box icon-bg round overlay"
@@ -531,17 +541,16 @@
 							</div>
 						</div>
 
-						<div class="ttl-box ttl-box_bg-pipe ttl-box_bg-pipe-down">
-							<p class="ttl-box__ttl caps fs-xs">Anthony Lekomski</p>
-							<small class="ttl-box__sub fs-xs">Senior Printer Guru at Lorem Printum company</small>
+						<div class="unit">
+							<div class="unit__img pipe"></div>
+							<p class="unit__head fs-xs caps">Anthony Lekomski</p>
+							<p class="unit__body fs-xs grid-full-width">Senior Printer Guru at Lorem Printum company</p>
 						</div>
 
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora unde enim sequi facilis. Aliquam quia
 							mollitia ipsum nisi aspernatur, error veniam, adipisci delectus ex ipsam, itaque laudantium nam aperiam
 							vel ab cum ullam animi incidunt distinctio aliquid. Explicabo nemo quidem, alias exercitationem molestias
 							odit nobis. Praesentium dolorum sequi iure atque minima, voluptate eum.</p>
-
-
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aperiam recusandae asperiores quaerat,
 							dicta placeat voluptates! Expedita distinctio nam reprehenderit, at iure laboriosam natus illo placeat.
 							Doloremque, quos mollitia architecto velit tempore, perferendis quasi minus harum aut itaque magnam sequi

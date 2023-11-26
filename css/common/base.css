@@ -32,7 +32,7 @@ b {
 	font-weight: var(--fw-sb);
 }
 
-:where(p):not(:only-child, :last-child, :last-of-type) {
+:where(p) {
 	margin-bottom: 1em;
 }
 

@@ -8,13 +8,7 @@
 	--clr-filter: hsl(100, 100%, 50%, 0.1);
 }
 
-.slide-diag-bg .slide-body {
-	display: flex;
-	justify-content: space-between;
-	align-items: start;
-	gap: var(--header-height);
-}
-.slide-diag-bg .slide-body > .width-x {
+.slide-diag-bg .flex-space-x > .width-x {
 	--col: 3;
 	--x: 1;
 

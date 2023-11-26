@@ -4,11 +4,8 @@
 }
 
 .slide-content {
-	margin-top: calc(
-		var(--swiper-pagination-height) - var(--swiper-pagination-bottom)
-	);
 	display: grid;
-	gap: 4rem;
+	gap: var(--gap, 4em);
 	align-items: center;
 	grid-auto-rows: min-content;
 }

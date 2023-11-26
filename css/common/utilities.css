@@ -149,8 +149,11 @@
 	order: 1;
 }
 
-.j-self-s {
-	/* justify-self: start; */
+.flex-space-x {
+	display: flex;
+	justify-content: var(--flex-space, space-evenly);
+	gap: var(--gap, 4em);
+	flex-wrap: wrap;
 }
 
 .overlay::after {
@@ -216,6 +219,10 @@
 
 .filters {
 	filter: var(--filters, none);
+}
+
+.t-align-r {
+	text-align: right;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| colors */

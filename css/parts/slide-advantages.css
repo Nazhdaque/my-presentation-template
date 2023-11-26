@@ -1,5 +1,5 @@
-.slide-advantages .slide-bg,
-.slide-advantages .slide-bg-overlay {
+.__slide-advantages .slide-bg,
+.__slide-advantages .slide-bg-overlay {
 	--side: var(--left);
 	--clip: var(--clp-left);
 	--overlay: linear-gradient(
@@ -13,28 +13,35 @@
 	--pos: 80%;
 }
 
-.slide-advantages .ttl-box {
+.__slide-advantages .flex-space-x > .width-x {
 	--col: 3;
 	--x: 1;
-	--bg: var(--clr-2b-solid);
 }
 
-.slide-advantages .slide-content {
-	display: flex;
-	justify-content: space-between;
-	align-items: start;
-	gap: var(--header-height);
-}
-.slide-advantages .slide-content > .width-x {
+.__slide-advantages .slide-ttl {
+	--gap-x: 0.75em;
+	--gap-y: 0.5em;
 	--col: 5;
-	--x: 2;
+	--x: 3;
+	--clr: var(--clr-2b-solid);
 
-	display: grid;
-	gap: var(--heading-bottom-indent);
+	margin-bottom: 2em;
 }
 
-.slide-advantages .cards_arrows_rl .ttl-box {
-	/* --head-bg-clr: var(--clr-2a-alpha); */
-	--bg: var(--clr-1a-solid) !important;
-	/* --sphere: var(--sphere-2a); */
+.__pro-cons-list {
+	--img-size: min(3em, 3vw + 1em);
+	--img-place: center;
+
+	row-gap: var(--img-size);
+}
+.__pro-cons-list .unit {
+	--gap-x: var(--img-size);
+	--gap-y: 1.5em;
+}
+.__pro-cons-list .arrow-right {
+	--clr: var(--clr-1a-alpha);
+}
+.__pro-cons-list .unit.rl {
+	--sphere: var(--sphere-2b);
+	--clr: var(--clr-1a-solid);
 }

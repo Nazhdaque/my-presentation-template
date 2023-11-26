@@ -1,4 +1,4 @@
-.slide-title-slide .slide-bg {
+.__slide-title-slide .slide-bg {
 	--side: 0;
 	--w: 100%;
 	--overlay: linear-gradient(
@@ -9,30 +9,35 @@
 	--tint: var(--clr-1a-solid);
 }
 
-.slide-title-slide .slide-content {
+.__slide-title-slide .slide-content {
 	grid-auto-rows: min-content 1fr min-content;
 }
 
-.slide-title-slide .ttl-box {
-	--col: 7;
+.__slide-title-slide .slide-ttl {
+	--gap-x: 0.5em;
+	--gap-y: 0.25em;
+	--col: 5;
 	--x: 3;
 }
 
-.slide-title-slide .cards {
+.__first-slide-list {
 	--col: 4;
-	--gap-x: 2rem;
-	--gap-y: 4rem;
-	--img-h: 4rem;
+	--gap-x: 1.5em;
+	--gap-y: 6rem;
+	--img-size: 4em;
+}
+.__first-slide-list .unit {
+	--gap-y: 1.5rem;
 }
 
-.slide-ribbon {
+.__slide-title-slide .slide-ribbon {
 	position: relative;
 	padding-block: 1em;
 	place-self: end;
 	color: var(--clr-0a-solid);
 	isolation: isolate;
 }
-.slide-ribbon::before {
+.__slide-title-slide .slide-ribbon::before {
 	position: absolute;
 	content: "";
 	inset: 0 -1000% 0 0;

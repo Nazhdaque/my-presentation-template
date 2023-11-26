@@ -1,4 +1,4 @@
-.slide-grid-system .slide-bg {
+.__slide-grid-system .slide-bg {
 	--image: url(/images/demo-3.webp);
 	--side: 0;
 	--w: 100%;
@@ -10,7 +10,9 @@
 	--tint: hsla(250, 70%, 40%, 0.5);
 }
 
-.slide-grid-system .ttl-box {
+.__slide-grid-system .slide-ttl {
+	--gap-x: 0.5em;
+	--gap-y: 0.25em;
 	--col: 3;
 	--x: 1;
 }

@@ -1,0 +1,124 @@
+.unit {
+	--unit-img-size: var(--img-size, 1.5em);
+
+	display: grid;
+	column-gap: var(--gap-x, normal);
+	row-gap: var(--gap-y, normal);
+	grid-template-columns: min-content 1fr min-content;
+	grid-auto-rows: min-content;
+	/* place-items: center; do not use this with multy-col */
+}
+.unit:has(.unit__body:only-child) {
+	row-gap: 0;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.unit__img {
+	--img-h: var(--unit-img-size);
+
+	place-self: var(--img-place, start);
+}
+.unit__img.pipe {
+	isolation: isolate;
+	background: var(--clr, var(--clr-1b-solid));
+	height: 100%;
+	width: 0.2em;
+}
+
+.unit__head {
+	grid-area: 1 / 2;
+	margin-bottom: 0;
+	place-self: center start;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.unit__head.pipe {
+	display: grid;
+	gap: 1em;
+	grid-template-columns: 0.2em 1fr;
+}
+.unit__head.pipe::before {
+	isolation: isolate;
+	content: "";
+	background-color: var(--clr, var(--clr-2b-solid));
+}
+.unit__head.pipe.rl {
+	grid-template-columns: 1fr 0.2em;
+}
+.unit__head.pipe.rl::before {
+	grid-area: 1 / 2;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.unit__body {
+	grid-area: 2 / 2;
+}
+
+.unit__body .card__head {
+	margin: 0 auto 1.5em auto;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.unit_bg {
+	background-color: hsl(var(--clr-2c-alpha), 0.15);
+	padding: var(--card-gap);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.unit.rl .unit__img {
+	grid-area: 1 / 3;
+}
+.unit.rl .unit__head {
+	place-self: center end;
+	text-align: right;
+}
+
+/* .unit__img.rl {
+	grid-area: 1 / 3;
+}
+.unit__head.rl {
+	place-self: center end;
+	text-align: right;
+} */
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| into the card head with img on bg */
+.card__head-unit {
+	grid-area: 1 / 1;
+	place-self: center;
+	padding: 1em;
+	z-index: 1;
+	pointer-events: none;
+}
+.card__head-unit .unit__body {
+	margin-bottom: 0;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.plain-list {
+	--sphere: var(--sphere-2c-1a);
+
+	display: grid;
+	row-gap: 0.5em;
+	margin-bottom: 1em;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.ordered-list {
+	counter-reset: list-counter 0;
+}
+
+.ordered-list > * {
+	counter-increment: list-counter;
+}
+.ordered-list .icon-bg::before {
+	content: counter(list-counter);
+	font-family: var(--ff-rg);
+	font-size: calc(var(--img-w) / 2);
+	font-weight: var(--fw-sb);
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
+.unit .arrow-down,
+.unit .arrow-up {
+	grid-area: 2 / 1;
+}
