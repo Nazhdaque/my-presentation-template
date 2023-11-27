@@ -27,7 +27,7 @@
 }
 
 .__demo-chart {
-	--img-h: 23rem;
+	--img-h: 22rem;
 }
 
 .__slide-doughnut .txt-col-x {
@@ -39,6 +39,8 @@
 .__slide-doughnut .__bottom-pic {
 	--filters: drop-shadow(0 0 0.5rem var(--clr-1a-solid));
 	--img-h: 10rem;
+
+	margin-bottom: 4em;
 }
 
 .__right-col-heading {
@@ -55,5 +57,5 @@
 .__slide-doughnut .arrow-right {
 	--img-size: 1rem;
 	---min-arrow-length: calc(var(--img-size) * 1.5);
-	--clr: var(--clr-1a-alpha);
+	--clr: var(--clr-1b-alpha);
 }

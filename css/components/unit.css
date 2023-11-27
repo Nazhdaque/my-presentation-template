@@ -12,6 +12,10 @@
 	row-gap: 0;
 }
 
+.unit.fs-xs {
+	row-gap: 0.25em;
+}
+
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
 .unit__img {
 	--img-h: var(--unit-img-size);
@@ -25,13 +29,13 @@
 	width: 0.2em;
 }
 
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 .unit__head {
 	grid-area: 1 / 2;
 	margin-bottom: 0;
 	place-self: var(--place-head, center start);
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| */
 .unit__head.-pipe {
 	display: grid;
 	gap: 1em;
@@ -86,18 +90,21 @@
 } */
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| into the card head with img on bg */
-.card__head-unit {
+.card__head-ttl {
 	grid-area: 1 / 1;
 	place-self: center;
 	padding: 1em;
 	z-index: 1;
 	pointer-events: none;
 }
-.card__head-unit .unit__body {
-	margin-bottom: 0;
-}
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
+.unit .arrow-down,
+.unit .arrow-up {
+	grid-area: 2 / 1;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| lists */
 .plain-list {
 	--sphere: var(--sphere-2c-1a);
 
@@ -119,10 +126,4 @@
 	font-family: var(--ff-rg);
 	font-size: calc(var(--img-w) / 2);
 	font-weight: var(--fw-sb);
-}
-
-/* |||||||||| |||||||||| |||||||||| |||||||||| */
-.unit .arrow-down,
-.unit .arrow-up {
-	grid-area: 2 / 1;
 }

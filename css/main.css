@@ -43,10 +43,8 @@
 @import url(./parts/slide-doughnut.css) layer(parts);
 @import url(./parts/slide-trapeze-bg.css) layer(parts);
 @import url(./parts/slide-form.css) layer(parts);
-
 @import url(./parts/slide-diag-bg.css) layer(parts);
 @import url(./parts/slide-blobs-bg.css) layer(parts);
-@import url(./parts/__plarson.css) layer(parts);
 @import url(./parts/slides.css) layer(parts);
 @import url(./parts/footer.css) layer(parts);
 

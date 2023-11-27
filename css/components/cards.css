@@ -18,6 +18,7 @@
 	display: grid;
 	position: relative;
 	align-items: center;
+	row-gap: 1em;
 }
 
 .card__img {
@@ -35,10 +36,10 @@
 	pointer-events: none;
 }
 
-.card__ttl_bg {
+.card__ttl.-bg {
 	color: var(--clr-0a-solid);
 }
-.card__ttl_bg::before {
+.card__ttl.-bg::before {
 	position: absolute;
 	content: "";
 	inset: 0;
@@ -53,16 +54,6 @@
 	);
 	z-index: -1;
 }
-
-/* |||||||||| |||||||||| |||||||||| |||||||||| card body */
-/* .card__body .card__head {
-	min-height: var(--img-h);
-	margin-bottom: 1.5em;
-}
-
-.card__body .ttl-box {
-	margin-bottom: 1rem;
-} */
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| x-axis */
 .x-axis.card {
@@ -83,8 +74,8 @@
 }
 
 .x-axis.card_triple {
-	grid-auto-columns: auto minmax(var(--img-h), auto) auto;
-	grid-auto-rows: auto minmax(var(--img-h), auto) auto;
+	grid-auto-columns: 1fr var(--img-h) 1fr;
+	grid-auto-rows: auto var(--img-h) auto;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| title side */

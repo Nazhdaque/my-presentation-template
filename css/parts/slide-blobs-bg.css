@@ -1,9 +1,9 @@
 .__slide-blobs-bg .slide-bg:nth-child(1) {
-	--left: -10% auto 0 -10%;
+	--left: -35% auto 0 -10%;
 	--side: var(--left);
 	--w-inline: max(40%, 10rem);
 	--h-inline: unset;
-	--radius: 27% 73% 76% 24% / 57% 25% 75% 43%;
+	--radius: 75% 25% 28% 72% / 47% 60% 40% 53%;
 	--overlay: linear-gradient(
 		90deg,
 		hsl(0, 0%, 0%, 0.2) 10%,

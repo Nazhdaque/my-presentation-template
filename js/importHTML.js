@@ -14,7 +14,6 @@ import slide_trapeze_bg from "../html/parts/slide-trapeze-bg.html?raw";
 import slide_blobs_bg from "../html/parts/slide-blobs-bg.html?raw";
 import formModal from "../html/parts/form-modal.html?raw";
 import sidebar from "../html/parts/sidebar.html?raw";
-import slide_plarson from "../html/parts/__plarson.html?raw";
 
 document.querySelector(".sidebar").insertAdjacentHTML("beforeend", sidebar);
 
@@ -32,7 +31,6 @@ slidesContainer.insertAdjacentHTML("beforeend", slide_form);
 slidesContainer.insertAdjacentHTML("beforeend", slide_trapeze_bg);
 slidesContainer.insertAdjacentHTML("beforeend", slide_diag_bg);
 slidesContainer.insertAdjacentHTML("beforeend", slide_blobs_bg);
-slidesContainer.insertAdjacentHTML("beforeend", slide_plarson);
 
 document
 	.querySelector(".form-modal")

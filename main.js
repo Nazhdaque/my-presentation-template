@@ -9,7 +9,6 @@ import { accenTable } from "./js/accenTable";
 import "./js/chartDoughnut.js";
 import "./js/chartBar.js";
 import "./js/chartLine.js";
-import "./js/__plarson.js";
 import "./js/video.js";
 import "./js/form.js";
 
@@ -102,3 +101,16 @@ console.log(
 	"%cCoded by ✨Nazhdaque✨\nhttps://www.frontendmentor.io/profile/Nazhdaque/solutions",
 	"background: #222; color: chartreuse;"
 );
+
+// const getExactTime = () =>
+// 	new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000)
+// 		.toISOString()
+// 		.replace(/T/, " ")
+// 		.replace(/\./, "::")
+// 		.replace(/Z/, "ms");
+
+const logMessage = (msg, date) =>
+	console.log(
+		`%cPLARSON test message: ${date} - ${msg}`,
+		`background: #222; color: magenta;`
+	);
