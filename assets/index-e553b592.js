@@ -1049,7 +1049,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 				</li>
 			</ul>
 
-			<ul class="cards">
+			<div class="cards">
 				<div class="unit">
 					<div class="unit__body grid-full-width txt-col-x"
 							 style="--col: 4">
@@ -1132,7 +1132,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 							beatae fugiat sunt adipisci. Velit porro quidem aliquid deleniti cupiditate.</p>
 					</div>
 				</div>
-			</ul>
+			</div>
 		</div>
 	</div>
 </li>`,Zr=`<li class="swiper-slide __slide-video"
