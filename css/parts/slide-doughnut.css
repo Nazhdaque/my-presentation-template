@@ -1,4 +1,5 @@
 .__slide-doughnut .slide-bg {
+	--image: url(/images/demo-3-xl.webp);
 	--w: auto;
 	--h: 80%;
 	--side: var(--center);
@@ -7,7 +8,7 @@
 		hsl(0, 0%, 0%, 0.2) 10%,
 		hsl(0, 0%, 0%, 0.8) 90%
 	);
-	--image: url(/images/demo-3.webp);
+	--pos: 100%;
 }
 
 .__slide-doughnut .slide-ttl {

@@ -1,4 +1,5 @@
 .__slide-blobs-bg .slide-bg:nth-child(1) {
+	--image: url(/images/demo-5-xl.webp);
 	--left: -35% auto 0 -10%;
 	--side: var(--left);
 	--w-inline: max(40%, 10rem);
@@ -10,6 +11,7 @@
 		hsl(0, 0%, 0%, 0.8) 90%
 	);
 	--asp-ratio: 1;
+	--pos: 100%;
 }
 
 .__slide-blobs-bg .slide-bg:nth-child(2) {

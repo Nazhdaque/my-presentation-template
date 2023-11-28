@@ -1,4 +1,5 @@
 .__slide-title-slide .slide-bg {
+	--image: url(/images/demo-1-xl.webp);
 	--side: 0;
 	--w: 100%;
 	--overlay: linear-gradient(

@@ -54,14 +54,15 @@
 					</div>
 				</li>
 
-				<li class="card x-axis sm-a-flow-row">
+				<li class="card x-axis xs-a-flow-row">
 					<div class="card__head">
-						<div class="card__img img-box sm-shadow-bottom">
+						<picture class="card__img img-box xs-shadow-bottom">
+							<source media="(max-width: 576px)"
+											srcset="./images/demo-4-xs.webp">
 							<img class="o-fit-cover"
-									 style="--pos: 85%"
-									 src="./images/demo-4.webp"
+									 src="./images/demo-4-xs-vertical.webp"
 									 alt="">
-						</div>
+						</picture>
 					</div>
 
 					<div class="unit">
@@ -79,11 +80,11 @@
 
 				<li class="card">
 					<div class="card__head">
-						<div class="card__img img-box">
+						<picture class="card__img img-box">
 							<img class="o-fit-cover"
-									 src="./images/demo-4.webp"
+									 src="./images/demo-4-xl.webp"
 									 alt="">
-						</div>
+						</picture>
 						<h3 class="card__ttl -bg caps ellipsis">Lorem ipsum dolor</h3>
 					</div>
 
@@ -110,13 +111,13 @@
 								eligendi? Sed, rerum maiores, quidem saepe laudantium iste laborum quae nam doloremque ipsum culpa
 								placeat
 								in sit!</p>
-							<div class="img-box icon-bg round txt-icon"
-									 style="--size-x: 3;
+							<picture class="img-box icon-bg round txt-icon"
+											 style="--size-x: 3;
 							--bg: var(--clr-2b-solid);">
 								<img class="inner-icon"
 										 src="./images/rubik-0.svg"
 										 alt="">
-							</div>
+							</picture>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officiis suscipit minima deleniti
 								maiores
 								tempora facere aut, esse adipisci aliquid quia neque quo consectetur earum, dicta amet qui excepturi?
@@ -128,22 +129,23 @@
 				</li>
 
 				<li class="card">
-					<div class="card__img img-box filters"
-							 style="--shadow: none; --img-h: 100%;">
+					<picture class="card__img img-box filters"
+									 style="--shadow: none; --img-h: 100%;">
 						<img class="o-fit-contain"
 								 src="./images/rubik-0.svg"
 								 alt="">
-					</div>
+					</picture>
 				</li>
 
-				<li class="card x-axis sm-a-flow-row gap-0">
+				<li class="card x-axis xs-a-flow-row gap-0">
 					<div class="card__head">
-						<div class="card__img img-box sm-shadow-bottom">
+						<picture class="card__img img-box xs-shadow-bottom">
+							<source media="(max-width: 576px)"
+											srcset="./images/demo-3-xs.webp">
 							<img class="o-fit-cover"
-									 style="--pos: 80%"
-									 src="./images/demo-3.webp"
+									 src="./images/demo-3-xs-vertical.webp"
 									 alt="">
-						</div>
+						</picture>
 					</div>
 
 					<div class="unit -bg">
@@ -161,12 +163,11 @@
 
 				<li class="card gap-0">
 					<div class="card__head">
-						<div class="card__img img-box">
+						<picture class="card__img img-box">
 							<img class="o-fit-cover"
-									 style="--pos: center 100%"
-									 src="./images/demo-2.webp"
+									 src="./images/demo-2-sm.webp"
 									 alt="">
-						</div>
+						</picture>
 					</div>
 
 					<div class="unit -bg">
@@ -184,12 +185,12 @@
 
 				<li class="card">
 					<div class="card__head">
-						<div class="card__img img-box icon-bg round">
+						<picture class="card__img img-box icon-bg round">
 							<img class="o-fit-cover"
 									 style="--pos: 100%"
-									 src="./images/demo-3.webp"
+									 src="./images/demo-3-xl.webp"
 									 alt="">
-						</div>
+						</picture>
 						<h3 class="card__ttl -bg caps ellipsis">Lorem ipsum dolor sit</h3>
 					</div>
 
@@ -226,12 +227,12 @@
 				</li>
 
 				<li class="card">
-					<div class="card__head -ttl-right sm-a-flow-row">
-						<div class="card__img img-box icon-bg overlay sm-shadow-bottom"
+					<div class="card__head -ttl-right xs-a-flow-row">
+						<div class="card__img img-box icon-bg overlay xs-shadow-bottom"
 								 style="--overlay: var(--eye)">
 							<img class="o-fit-cover"
-									 style="--pos: 100%"
-									 src="./images/demo-4.webp"
+									 style="--pos: 80%"
+									 src="./images/demo-5-xl.webp"
 									 alt="">
 							<svg class="inner-icon figures">
 								<use href="./images/icons/sprites/figures.svg#figure-1"></use>
@@ -258,9 +259,9 @@
 					</div>
 				</li>
 
-				<li class="card x-axis sm-a-flow-row">
+				<li class="card x-axis xs-a-flow-row">
 					<div class="card__head">
-						<div class="card__img img-box icon-bg round sphere sm-shadow-bottom">
+						<div class="card__img img-box icon-bg round sphere xs-shadow-bottom">
 							<i class="material-icons-round mui-icon">gpp_good</i>
 						</div>
 					</div>
@@ -308,7 +309,7 @@
 					</div>
 				</li>
 
-				<li class="card x-axis sm-a-flow-row">
+				<li class="card x-axis xs-a-flow-row">
 					<div class="card__head">
 						<div class="card__img img-box icon-bg round sphere"
 								 style="--sphere: var(--sphere-2c-1a)">
@@ -344,9 +345,9 @@
 
 					<div class="card__head">
 						<div class="polygon-ribbon-cutout-rt fs-sm">Это не картинка!</div>
-						<div class="card__img img-box">
+						<picture class="card__img img-box">
 							<canvas class="chart-line"></canvas>
-						</div>
+						</picture>
 					</div>
 
 					<div class="unit -bg">
@@ -358,7 +359,7 @@
 					</div>
 				</li>
 
-				<li class="card x-axis gap-0 card_triple lg-a-flow-row c-span-x lg-c-span-0"
+				<li class="card x-axis gap-0 card_triple md-a-flow-row c-span-x md-c-span-0"
 						style="--span: 2">
 					<div class="unit -bg">
 						<div class="unit__img img-box icon-bg round sphere">
@@ -381,12 +382,14 @@
 					</div>
 
 					<div class="card__head">
-						<div class="card__img img-box lg-shadow-bottom">
+						<picture class="card__img img-box md-shadow-bottom">
+							<source media="(max-width: 992px)"
+											srcset="./images/demo-5-xl.webp">
 							<img class="o-fit-cover"
-									 style="--pos: left"
-									 src="./images/demo-1.webp"
+									 style="--pos: 0% 100%"
+									 src="./images/demo-5-xs-vertical.webp"
 									 alt="">
-						</div>
+						</picture>
 					</div>
 
 					<div class="unit -bg">
@@ -432,25 +435,27 @@
 				<li class="card gap-0">
 
 					<div class="card__head">
-						<div class="card__img img-box">
+						<picture class="card__img img-box">
+							<source media="(max-width: 576px)"
+											srcset="./images/demo-1-xs.webp">
 							<img class="o-fit-cover"
 									 style="--pos: center 80%"
-									 src="./images/demo-1.webp"
+									 src="./images/demo-1-xl.webp"
 									 alt="">
-						</div>
+						</picture>
 						<h3 class="card__ttl -bg caps ellipsis">Lorem ipsum dolor</h3>
 					</div>
 
 					<div class="unit -bg">
 						<div class="unit__body grid-full-width txt-col-x"
 								 style="--col: 3">
-							<div class="img-box icon-bg round txt-icon"
-									 style="--size-x: 4;
+							<picture class="img-box icon-bg round txt-icon"
+											 style="--size-x: 4;
 						--bg: var(--clr-2b-solid);">
 								<img class="inner-icon"
 										 src="./images/rubik-1.svg"
 										 alt="">
-							</div>
+							</picture>
 
 							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti odit perspiciatis dolor debitis
 								atque,
@@ -464,13 +469,13 @@
 								magnam vero recusandae doloribus maxime sed soluta, ut error? Pariatur adipisci rem consequuntur
 								laudantium totam! Itaque, harum, sapiente iure, dicta eligendi cum dolor nesciunt odio.</p>
 
-							<div class="img-box icon-bg round txt-icon"
-									 style="--size-x: 3;
+							<picture class="img-box icon-bg round txt-icon"
+											 style="--size-x: 3;
 						--bg: var(--clr-1b-solid);">
 								<img class="inner-icon"
 										 src="./images/rubik-2.svg"
 										 alt="">
-							</div>
+							</picture>
 
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora unde enim sequi facilis. Aliquam quia
 								mollitia ipsum nisi aspernatur, error veniam, adipisci delectus ex ipsam, itaque laudantium nam aperiam
@@ -478,13 +483,13 @@
 								molestias
 								odit nobis. Praesentium dolorum sequi iure atque minima, voluptate eum.</p>
 
-							<div class="img-box icon-bg round txt-icon"
-									 style="--size-x: 2;
+							<picture class="img-box icon-bg round txt-icon"
+											 style="--size-x: 2;
 						--bg: var(--clr-2a-solid);">
 								<img class="inner-icon"
 										 src="./images/rubik-0.svg"
 										 alt="">
-							</div>
+							</picture>
 
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aperiam recusandae asperiores quaerat,
 								dicta placeat voluptates! Expedita distinctio nam reprehenderit, at iure laboriosam natus illo placeat.
@@ -502,11 +507,11 @@
 							 style="--col: 4">
 
 						<div class="card__head">
-							<div class="card__img img-box">
+							<picture class="card__img img-box">
 								<img class="o-fit-cover"
-										 src="./images/demo-2.webp"
+										 src="./images/demo-2-sm.webp"
 										 alt="">
-							</div>
+							</picture>
 							<h3 class="card__ttl -bg caps ellipsis">Lorem ipsum dolor</h3>
 						</div>
 
@@ -519,28 +524,28 @@
 
 						<ul class="plain-list">
 							<li class="unit">
-								<div class="unit__img img-box icon-bg">
+								<picture class="unit__img img-box icon-bg">
 									<img src="./images/rubik-0.svg"
 											 alt="">
-								</div>
+								</picture>
 								<p class="unit__head fs-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
 									animi.</p>
 							</li>
 
 							<li class="unit">
-								<div class="unit__img img-box icon-bg">
+								<picture class="unit__img img-box icon-bg">
 									<img src="./images/rubik-1.svg"
 											 alt="">
-								</div>
+								</picture>
 								<p class="unit__head fs-sm">Voluptates magni
 									obcaecati optio repellendus delectus quasi.</p>
 							</li>
 
 							<li class="unit">
-								<div class="unit__img img-box icon-bg">
+								<picture class="unit__img img-box icon-bg">
 									<img src="./images/rubik-2.svg"
 											 alt="">
-								</div>
+								</picture>
 								<p class="unit__head fs-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 							</li>
 						</ul>
@@ -552,18 +557,18 @@
 							laudantium totam! Itaque, harum, sapiente iure, dicta eligendi cum dolor nesciunt odio.</p>
 
 						<figure class="card__head">
-							<div class="card__img img-box icon-bg round overlay"
-									 style="--overlay: var(--eye)">
+							<picture class="card__img img-box icon-bg round overlay"
+											 style="--overlay: var(--eye)">
 								<img class="o-fit-cover"
 										 style="--pos: 20%"
 										 src="./images/demo-person-1.webp"
 										 alt="">
-							</div>
+							</picture>
 
 							<figcaption class="unit fs-xs">
 								<div class="unit__img -pipe"></div>
-								<p class="unit__head caps">Anthony Lekomski</p>
-								<div class="unit__body grid-full-width">
+								<p class="unit__head caps z-down">Anthony Lekomski</p>
+								<div class="unit__body grid-full-width z-down">
 									<p>Senior Printer Guru at Lorem Printum company</p>
 								</div>
 							</figcaption>

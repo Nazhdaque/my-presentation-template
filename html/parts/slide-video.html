@@ -18,7 +18,9 @@
 							<a href="https://www.youtube.com/watch?v=URVHRhBSjj8"
 								 class="video__link"
 								 rel="noopener noreferrer"
-								 aria-label="link to video"></a>
+								 aria-label="link to video">
+							</a>
+
 							<picture>
 								<source srcset="https://i.ytimg.com/vi_webp/URVHRhBSjj8/maxresdefault.webp"
 												type="image/webp">
@@ -26,7 +28,7 @@
 										 src="https://i.ytimg.com/vi/URVHRhBSjj8/maxresdefault.jpg"
 										 alt="It's a demo video sample">
 							</picture>
-							</a>
+
 							<button class="video__button"
 											aria-label="Play video">
 								<svg width="68"
@@ -56,28 +58,23 @@
 					<div class="card__head">
 						<h3 class="card__ttl -bg caps ellipsis">Scroll-snap</h3>
 						<div class="card__img img-box">
-							<ul class="scroll-snap-block">
-								<li class="img-box">
+							<div class="scroll-snap-block">
+								<picture class="img-box">
 									<img class="o-fit-cover"
-											 src="./images/demo-4.webp"
+											 src="./images/demo-4-xl.webp"
 											 alt="">
-								</li>
-								<li class="img-box">
+								</picture>
+								<picture class="img-box">
 									<img class="o-fit-cover"
-											 src="./images/demo-3.webp"
+											 src="./images/demo-6-sm.webp"
 											 alt="">
-								</li>
-								<li class="img-box">
+								</picture>
+								<picture class="img-box">
 									<img class="o-fit-cover"
-											 src="./images/demo-2.webp"
+											 src="./images/demo-5-xl.webp"
 											 alt="">
-								</li>
-								<li class="img-box">
-									<img class="o-fit-cover"
-											 src="./images/demo-1.webp"
-											 alt="">
-								</li>
-							</ul>
+								</picture>
+							</div>
 						</div>
 
 						<div class="scroll-down z-up">
@@ -106,25 +103,27 @@
 						<div class="card__img img-box">
 							<div class="swiper swiper-basic"
 									 id="swiper-basic">
-								<ul class="swiper-wrapper">
-									<li class="swiper-slide">
+								<div class="swiper-wrapper">
+									<picture class="swiper-slide">
 										<img class="o-fit-cover"
-												 src="./images/demo-4.webp"
+												 src="./images/demo-2-sm.webp"
 												 alt="">
-									</li>
+									</picture>
 
-									<li class="swiper-slide">
+									<picture class="swiper-slide">
 										<img class="o-fit-cover"
-												 src="./images/demo-3.webp"
+												 src="./images/demo-3-xl.webp"
 												 alt="">
-									</li>
+									</picture>
 
-									<li class="swiper-slide">
+									<div class="swiper-slide">
 										<figure class="video o-hidden">
 											<a href="https://www.youtube.com/watch?v=URVHRhBSjj8"
 												 class="video__link"
 												 rel="noopener noreferrer"
-												 aria-label="link to video"></a>
+												 aria-label="link to video">
+											</a>
+
 											<picture>
 												<source srcset="https://i.ytimg.com/vi_webp/URVHRhBSjj8/maxresdefault.webp"
 																type="image/webp">
@@ -132,7 +131,7 @@
 														 src="https://i.ytimg.com/vi/URVHRhBSjj8/maxresdefault.jpg"
 														 alt="It's a demo video sample">
 											</picture>
-											</a>
+
 											<button class="video__button"
 															aria-label="Play video">
 												<svg width="68"
@@ -147,8 +146,8 @@
 											</button>
 											<figcaption class="side-ribbon fs-xs caps">Just a video sample</figcaption>
 										</figure>
-									</li>
-								</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

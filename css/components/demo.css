@@ -16,7 +16,7 @@
 	overflow: hidden;
 }
 
-.demo > * > *:not(img) {
+.demo > * > *:not(img, picture) {
 	padding: 1rem;
 }
 

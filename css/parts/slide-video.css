@@ -1,4 +1,5 @@
 .__slide-video .slide-bg:nth-child(1) {
+	--image: url(/images/demo-1-xl.webp);
 	--left: -50% auto 0 50%;
 	--side: var(--left);
 	--w-inline: max(45%, 10rem);
@@ -24,7 +25,7 @@
 	);
 	--tint: var(--clr-2b-solid);
 	--bg-blend-mode: luminosity, overlay;
-	--image: url(/images/demo-3.webp);
+	--image: url(/images/demo-6-sm.webp);
 }
 
 .__slide-video .slide-bg:nth-child(3) {

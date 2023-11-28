@@ -1,5 +1,6 @@
 .__slide-typography .slide-bg,
 .__slide-typography .slide-bg-overlay {
+	--image: url(/images/demo-1-xl.webp);
 	--w-inline: max(50%, 10rem);
 	--side: var(--left);
 	--mask: var(--clp-left);

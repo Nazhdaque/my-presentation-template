@@ -89,9 +89,9 @@ const scrollDownPromptDisable = (scrollContainer, prompt) => {
 		const container = el.closest(`${scrollContainer}`);
 		const handler = () => {
 			el.style.display = "none";
-			container.removeEventListener("scrollend", handler);
+			container.removeEventListener("scrollend", handler, { passive: true });
 		};
-		container.addEventListener("scrollend", handler);
+		container.addEventListener("scrollend", handler, { passive: true });
 	});
 };
 scrollDownPromptDisable(".layout-center", ".scroll-down");
@@ -108,9 +108,3 @@ console.log(
 // 		.replace(/T/, " ")
 // 		.replace(/\./, "::")
 // 		.replace(/Z/, "ms");
-
-const logMessage = (msg, date) =>
-	console.log(
-		`%cPLARSON test message: ${date} - ${msg}`,
-		`background: #222; color: magenta;`
-	);

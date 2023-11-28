@@ -8,7 +8,7 @@
 		hsl(0, 0%, 0%, 0.1) 0%,
 		hsl(0, 0%, 0%, 0.7) 70%
 	);
-	--image: url(/images/demo-4.webp);
+	--image: url(/images/demo-5-xl.webp);
 	--pos: 60%;
 }
 .__slide-trapeze-bg .slide-bg:first-child,

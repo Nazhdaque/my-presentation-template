@@ -1,8 +1,3 @@
-.slide-bg {
-	--image: url(/images/demo-1.webp);
-	--bg-pos: 90%;
-}
-
 .slide-content {
 	display: grid;
 	gap: var(--gap, 4em);

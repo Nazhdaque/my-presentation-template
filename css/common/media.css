@@ -1,4 +1,8 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| xl */
+@media (width <= 1400px) {
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| lg */
 @media (width <= 1200px) {
 	.slide-content {
 		--col: 2;
@@ -7,62 +11,100 @@
 	}
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| lg */
+/* |||||||||| |||||||||| |||||||||| |||||||||| md */
 @media (width <= 992px) {
+	/* .table media styles are in the table.css */
+
 	.slide-content {
 		--col: 3;
 	}
 
-	/* .table media styles are in the table.css */
-
 	/* utilities */
-	.lg-shadow-bottom {
+	.md-shadow-bottom {
 		--shadow: var(--img-shadow-bottom);
 	}
 
-	.lg-a-flow-row {
+	.md-a-flow-row {
 		grid-auto-flow: row;
 	}
 
-	.lg-c-span-0 {
+	.md-c-span-0 {
 		grid-column: auto;
 	}
-}
-
-/* |||||||||| |||||||||| |||||||||| |||||||||| md */
-@media (width <= 768px) {
-	/* utilities */
-	.md-min-h-auto {
-		min-height: auto !important;
-	}
-
-	/* .md-d-grid {
-		display: grid;
-	}
-	.md-d-none {
-		display: none;
-	} */
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| sm */
+@media (width <= 768px) {
+	/* utilities */
+	.sm-min-h-auto {
+		min-height: auto !important;
+	}
+
+	.sm-d-grid {
+		display: grid;
+	}
+
+	.sm-d-none {
+		display: none;
+	}
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| xs */
 @media (width <= 576px) {
-	.sm-shadow-bottom {
-		--shadow: var(--img-shadow-bottom);
+	.__slide-title-slide .slide-bg {
+		--image: url(/images/demo-1-xs-vertical.webp);
+	}
+	.__slide-advantages .slide-bg {
+		--image: url(/images/demo-3-xs-vertical.webp);
+	}
+	.__slide-grid-system .slide-bg {
+		--image: url(/images/demo-3-xs-vertical.webp);
+	}
+	.__slide-typography .slide-bg {
+		--image: url(/images/demo-1-xs-vertical.webp);
+	}
+	.__slide-video .slide-bg:nth-child(1) {
+		--image: url(/images/demo-1-xs-vertical.webp);
+	}
+	.__slide-video .slide-bg:nth-child(3) {
+		--image: url(/images/demo-6-xs.webp);
+	}
+	.__slide-charts .slide-bg:nth-child(2) {
+		--image: url(/images/demo-4-xs.webp);
+	}
+	.__slide-doughnut .slide-bg {
+		--image: url(/images/demo-3-xs-vertical.webp);
+	}
+	.__slide-form .slide-bg:nth-child(1) {
+		--image: url(/images/demo-4-xs-vertical.webp);
+	}
+	.__slide-trapeze-bg .slide-bg {
+		--image: url(/images/demo-5-xs-vertical.webp);
+	}
+	.__slide-diag-bg .slide-bg {
+		--image: url(/images/demo-5-xs-vertical-2.webp);
+	}
+	.__slide-blobs-bg .slide-bg {
+		--image: url(/images/demo-5-xs.webp);
 	}
 
 	/* utilities */
-	.sm-a-flow-row {
+	.xs-shadow-bottom {
+		--shadow: var(--img-shadow-bottom);
+	}
+
+	.xs-a-flow-row {
 		grid-auto-flow: row;
 	}
 
-	/* .sm-grid-col-a {
+	/* .xs-grid-col-a {
 		grid-column: auto;
 	} */ /* for demo chess-grid-12 */
 
-	/* .sm-col-span-0 {
+	/* .xs-col-span-0 {
 		grid-column: auto;
 	}
-	.sm-row-span-0 {
+	.xs-row-span-0 {
 		grid-row: auto;
 	} */
 }

@@ -16,8 +16,8 @@
 }
 
 .__slide-charts .slide-bg:nth-child(2) {
+	--image: url(/images/demo-4-xl.webp);
 	--pos: center 20%;
-	--image: url(/images/demo-4.webp);
 }
 
 .__slide-charts .slide-body {
