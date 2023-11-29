@@ -1,7 +1,7 @@
 var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,configurable:!0,writable:!0,value:e}):i[t]=e;var L=(i,t,e)=>(Wr(i,typeof t!="symbol"?t+"":t,e),e);(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))s(n);new MutationObserver(n=>{for(const a of n)if(a.type==="childList")for(const r of a.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&s(r)}).observe(document,{childList:!0,subtree:!0});function e(n){const a={};return n.integrity&&(a.integrity=n.integrity),n.referrerPolicy&&(a.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?a.credentials="include":n.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function s(n){if(n.ep)return;n.ep=!0;const a=e(n);fetch(n.href,a)}})();const Gr=`<li class="swiper-slide __slide-title-slide"
 		data-hash="title-slide">
 	<div class="layout-center">
-		<div class="slide-content width-x">
+		<div class="slide-content">
 			<div class="slide-bg w-img"></div>
 			<div class="slide-bg-overlay"></div>
 
@@ -356,7 +356,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 </li>`,Xr=`<li class="swiper-slide __slide-grid-system"
 		data-hash="grid-system">
 	<div class="layout-center">
-		<div class="slide-content width-x">
+		<div class="slide-content">
 			<div class="slide-bg w-img"></div>
 
 			<div class="scroll-down">
@@ -500,7 +500,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 </li>`,Ur=`<li class="swiper-slide __slide-typography"
 		data-hash="typography">
 	<div class="layout-center">
-		<div class="slide-content width-x">
+		<div class="slide-content">
 			<div class="slide-bg zigzag w-img"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
@@ -590,7 +590,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 				</div>
 				<h2 class="unit__head">Карточки</h2>
 				<div class="unit__body fs-md grid-full-width">
-					<p>инфоблоки с картинками, иконками и т.д.</p>
+					<p>Адаптивные текстовые блоки с инфографикой: картинки, иконки, графики и т.д.<br><small
+									 class="fs-xs">библиотека Material Icons установлена по умолчанию, но иконки могут быть абсолютно
+							любые</small></p>
 				</div>
 			</div>
 
@@ -642,7 +644,6 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 						<div class="unit__img img-box icon-bg round sphere"></div>
 						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
 						<div class="unit__body grid-full-width">
-							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
 							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quod natus odio voluptas tempore hic quo
 								debitis perferendis mollitia voluptatum accusamus, culpa, officia similique ratione doloribus sint
 								architecto? Provident dignissimos a obcaecati corrupti deserunt iusto quidem. Veritatis voluptatem
@@ -749,6 +750,12 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 									 src="./images/demo-2-sm.webp"
 									 alt="">
 						</picture>
+
+						<div class="__icons-box">
+							<i class="material-icons-round mui-icon">gpp_good</i>
+							<i class="material-icons-round mui-icon">handshake</i>
+							<i class="material-icons-round mui-icon">business_center</i>
+						</div>
 					</div>
 
 					<div class="unit -bg">
@@ -880,9 +887,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 								 --x: 2; 
 								 --container-width: 100%">
 							<div class="unit__img img-box icon-bg round sphere">
-								<svg class="inner-icon figures">
-									<use href="./images/icons/sprites/figures.svg#figure-2"></use>
-								</svg>
+								<i class="material-icons-round mui-icon">fingerprint</i>
 							</div>
 							<h3 class="unit__head caps">Lorem ipsum dolor</h3>
 							<div class="unit__body grid-full-width fs-sm">
@@ -905,7 +910,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 						<div class="card__img img-box icon-bg round sphere"
 								 style="--sphere: var(--sphere-2c-1a)">
 							<svg class="inner-icon figures">
-								<use href="./images/icons/sprites/figures.svg#figure-8"></use>
+								<use href="./images/icons/sprites/figures.svg#figure-9"></use>
 							</svg>
 							<i class="material-icons-round mui-icon">question_mark</i>
 						</div>
@@ -915,7 +920,6 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 						<div class="unit__img img-box icon-bg round sphere"></div>
 						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
 						<div class="unit__body grid-full-width">
-							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur</p>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae exercitationem suscipit unde
 								laudantium perspiciatis eius ex repellendus odio cum nemo accusamus nam eos non dolor doloribus ratione
 								quo facilis facere labore, quas et excepturi rem corrupti! Nam consectetur sint fugit?</p>
@@ -995,20 +999,20 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 								<li class="unit">
 									<div class="unit__img img-box icon-bg round sphere"></div>
 									<p class="unit__head">Lorem ipsum dolor sit</p>
-									<div class="arrow-down"></div>
-									<div class="unit__body fs-sm">
+									<div class="unit__body -shift-r fs-sm">
 										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, cupiditate.</p>
 									</div>
+									<div class="arrow-down"></div>
 								</li>
 
 								<li class="unit">
 									<div class="unit__img img-box icon-bg round sphere"></div>
 									<p class="unit__head">Lorem ipsum, dolor sit amet</p>
-									<div class="arrow-down"></div>
-									<div class="unit__body fs-sm">
+									<div class="unit__body -shift-r fs-sm">
 										<p>Lorem ipsum, dolor sit amet consectetur adipisicing itaque et nam
 											aspernatur unde.</p>
 									</div>
+									<div class="arrow-down"></div>
 								</li>
 
 								<li class="unit">
@@ -1177,6 +1181,12 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 							mollitia ipsum nisi aspernatur, error veniam, adipisci delectus ex ipsam, itaque laudantium nam aperiam
 							vel ab cum ullam animi incidunt distinctio aliquid. Explicabo nemo quidem, alias exercitationem molestias
 							odit nobis. Praesentium dolorum sequi iure atque minima, voluptate eum.</p>
+
+						<picture class="img-box icon-bg round txt-icon"
+										 style="--size-x: 3;">
+							<img src="./images/rubik-1.svg"
+									 alt="">
+						</picture>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aperiam recusandae asperiores quaerat,
 							dicta placeat voluptates! Expedita distinctio nam reprehenderit, at iure laboriosam natus illo placeat.
 							Doloremque, quos mollitia architecto velit tempore, perferendis quasi minus harum aut itaque magnam sequi
@@ -1189,7 +1199,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 </li>`,Zr=`<li class="swiper-slide __slide-video"
 		data-hash="demo-video-and-scroll-snap">
 	<div class="layout-center">
-		<div class="slide-content width-x">
+		<div class="slide-content width-x -md-width-1-3-center">
 			<div class="slide-bg circle w-img"></div>
 			<div class="slide-bg circle w-img"></div>
 			<div class="slide-bg heptagon"></div>
@@ -1368,7 +1378,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 </li>`,Jr=`<li class="swiper-slide __slide-table"
 		data-hash="demo-table">
 	<div class="layout-center">
-		<div class="slide-content width-x">
+		<div class="slide-content width-x -md-width-1-3-center">
 			<div class="slide-bg rounded"></div>
 
 			<table>
@@ -1488,7 +1498,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 </li>`,Qr=`<li class="swiper-slide __slide-charts"
 		data-hash="demo-charts">
 	<div class="layout-center">
-		<div class="slide-content width-x">
+		<div class="slide-content width-x -lg-width-1-3-center">
 			<div class="slide-bg spike"></div>
 			<div class="slide-bg spike w-img"></div>
 
@@ -1521,7 +1531,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 </li>`,to=`<li class="swiper-slide __slide-doughnut"
 		data-hash="demo-doughnut-chart">
 	<div class="layout-center">
-		<div class="slide-content width-x">
+		<div class="slide-content">
 			<div class="slide-bg circle w-img"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
@@ -1612,7 +1622,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 </li>`,eo=`<li class="swiper-slide __slide-form"
 		data-hash="demo-form">
 	<div class="layout-center">
-		<div class="slide-content width-x">
+		<div class="slide-content">
 			<div class="slide-bg spike w-img"></div>
 			<div class="slide-bg spike w-img"></div>
 
@@ -1654,7 +1664,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 </li>`,io=`<li class="swiper-slide __slide-diag-bg"
 		data-hash="diag-bg">
 	<div class="layout-center">
-		<div class="slide-content">
+		<div class="slide-content width-x -xl-width-1-3-center">
 			<div class="slide-bg diag w-img"></div>
 			<div class="slide-bg-overlay diag"></div>
 
@@ -1662,86 +1672,123 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 				<div class="unit__img img-box icon-bg round sphere">
 					<i class="material-icons-round mui-icon">javascript</i>
 				</div>
-				<h2 class="unit__head caps">Test zone</h2>
+				<h2 class="unit__head caps">Test area</h2>
 				<div class="unit__body fs-md grid-full-width">
-					<p>js heightSetter test page</p>
+					<p>js heightSetter test page <br><small class="fs-xs">and fun with flex / grid layout</small></p>
 				</div>
 			</div>
 
 			<div class="flex-space-x">
 				<div class="width-x">
-					<ul class="plain-list __pro-cons-list">
+					<ul class="plain-list __snake-list">
 						<li class="unit -rl h-master-1">
-							<div class="unit__img img-box icon-bg round sphere">
-								<i class="material-icons-round mui-icon">add_reaction</i>
-							</div>
-							<h3 class="unit__head -pipe caps">Lorem ipsum dolor</h3>
-							<div class="arrow-left"></div>
 
-							<div class="unit__body grid-full-width">
+							<div class="unit__img img-box icon-bg round sphere">
+								<i class="material-icons-round mui-icon">directions_run</i>
+							</div>
+
+							<h3 class="unit__head -pipe -rl caps">Ready Steady Go!</h3>
+
+							<div class="arrow-right"></div>
+
+							<div class="unit__body -shift-l">
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea veniam labore, magni officiis maiores
 									aliquid fugit fuga aliquam dicta, ipsum odit commodi expedita alias necessitatibus. Fugit,
 									blanditiis
 									tempore beatae magnam iure rerum ut eum! Adipisci minima fugiat odit fugit. Quidem suscipit tempora
 									autem, modi iure voluptates magnam delectus a maiores!</p>
 							</div>
+
+							<div class="arrow-down"></div>
 						</li>
 
-						<li class="unit -rl h-slave-2">
+						<li class="unit h-slave-2">
 							<div class="unit__img img-box icon-bg round sphere">
-								<i class="material-icons-round mui-icon">add_moderator</i>
+								<i class="material-icons-round mui-icon">location_on</i>
 							</div>
-							<h3 class="unit__head -pipe caps">Lorem ipsum dolor</h3>
+
 							<div class="arrow-left"></div>
 
-							<div class="unit__body grid-full-width">
+							<div class="unit__img img-box icon-bg round sphere">
+								<i class="material-icons-round mui-icon">location_on</i>
+							</div>
+
+							<div class="unit__body -shift-r">
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex optio rem sapiente porro esse tempore
 									dolorum consequatur recusandae fuga quibusdam, sed ad, dolorem nostrum? Eveniet atque amet magni
 									nulla
 									sequi fugiat praesentium iure numquam quos, accusantium dicta at tempora voluptas.</p>
 							</div>
+
+							<div class="arrow-down"></div>
 						</li>
 
-						<li class="unit -rl h-slave-3">
+						<li class="unit h-slave-3">
 							<div class="unit__img img-box icon-bg round sphere">
-								<i class="material-icons-round mui-icon">announcement</i>
+								<i class="material-icons-round mui-icon">location_on</i>
 							</div>
-							<h3 class="unit__head -pipe caps">Lorem ipsum dolor</h3>
-							<div class="arrow-left"></div>
 
-							<div class="unit__body grid-full-width">
+							<div class="arrow-right"></div>
+
+							<div class="unit__img img-box icon-bg round sphere d-none xl-d-grid">
+								<i class="material-icons-round mui-icon">location_on</i>
+							</div>
+
+							<div class="arrow-right xl-d-none"></div>
+
+							<div class="unit__body grid-full-width -xl-shift-l">
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, sunt ad. Aliquam provident iste
 									reiciendis harum quibusdam itaque laborum, voluptates nobis rerum? Aspernatur suscipit molestiae a
 									numquam, recusandae impedit veniam!</p>
 							</div>
+
+							<div class="arrow-down d-none xl-d-grid"></div>
 						</li>
 					</ul>
 				</div>
 
 				<div class="width-x">
-					<ul class="plain-list __pro-cons-list">
-						<li class="unit h-slave-1">
-							<div class="unit__img img-box icon-bg round sphere">
-								<i class="material-icons-round mui-icon">architecture</i>
-							</div>
-							<h3 class="unit__head -pipe -rl caps">Lorem ipsum dolor</h3>
-							<div class="arrow-right"></div>
+					<ul class="plain-list __snake-list -head">
+						<li class="unit h-master-3 order-up xl-order-0">
 
-							<div class="unit__body grid-full-width">
-								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, consequatur amet. Quasi
-									aliquam
-									totam voluptatem quibusdam nam et rem qui.</p>
+							<div class="unit__img img-box icon-bg round sphere">
+								<i class="material-icons-round mui-icon">location_on</i>
 							</div>
+
+							<div class="arrow-right xl-d-none"></div>
+
+							<div class="arrow-left d-none xl-d-grid"></div>
+
+							<div class="unit__img img-box icon-bg round sphere">
+								<i class="material-icons-round mui-icon">location_on</i>
+							</div>
+
+							<div class="unit__body -xl-shift-r grid-full-width ">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor earum voluptates quo sed deleniti
+									nulla
+									magnam iusto suscipit assumenda. Laboriosam dolorem, maiores quos ex animi debitis at
+									necessitatibus?
+									Aliquid, exercitationem animi? Ducimus cumque molestiae laboriosam reprehenderit eum quidem libero
+									molestias ea iure quos hic iusto temporibus nisi tenetur maxime exercitationem, nemo quasi possimus?
+									Iure architecto quia ullam amet dicta magni?</p>
+							</div>
+
+							<div class="arrow-down d-none xl-d-grid"></div>
 						</li>
 
 						<li class="unit h-master-2">
 							<div class="unit__img img-box icon-bg round sphere">
-								<i class="material-icons-round mui-icon">archive</i>
+								<i class="material-icons-round mui-icon">location_on</i>
 							</div>
-							<h3 class="unit__head -pipe -rl caps">Lorem ipsum dolor</h3>
-							<div class="arrow-right"></div>
 
-							<div class="unit__body grid-full-width">
+							<div class="arrow-left xl-d-none"></div>
+							<div class="arrow-right d-none xl-d-grid"></div>
+
+							<div class="unit__img img-box icon-bg round sphere">
+								<i class="material-icons-round mui-icon">location_on</i>
+							</div>
+
+							<div class="unit__body -shift-l -xl-shift-l">
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsa dolor excepturi corrupti
 									illo
 									commodi tempora temporibus nulla voluptas quaerat. Optio, facere possimus eius odit magnam iure
@@ -1751,24 +1798,28 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 									magnam. A, adipisci eum laborum est possimus soluta omnis quas dolor repellendus odit consequatur
 									deleniti vero magni!</p>
 							</div>
+
+							<div class="arrow-up xl-d-none"></div>
+							<div class="arrow-down d-none xl-d-grid"></div>
 						</li>
 
-						<li class="unit h-master-3">
-							<div class="unit__img img-box icon-bg round sphere">
-								<i class="material-icons-round mui-icon">apartment</i>
-							</div>
-							<h3 class="unit__head -pipe -rl caps">Lorem ipsum dolor</h3>
-							<div class="arrow-right"></div>
+						<li class="unit h-slave-1 order-down xl-order-0">
+							<div class="arrow-left d-none xl-d-grid"></div>
 
-							<div class="unit__body grid-full-width">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor earum voluptates quo sed deleniti
-									nulla
-									magnam iusto suscipit assumenda. Laboriosam dolorem, maiores quos ex animi debitis at
-									necessitatibus?
-									Aliquid, exercitationem animi? Ducimus cumque molestiae laboriosam reprehenderit eum quidem libero
-									molestias ea iure quos hic iusto temporibus nisi tenetur maxime exercitationem, nemo quasi possimus?
-									Iure architecto quia ullam amet dicta magni?</p>
+							<h3 class="unit__head -pipe caps">Finish!</h3>
+
+							<div class="unit__img img-box icon-bg round sphere">
+								<i class="material-icons-round mui-icon">flag_circle</i>
 							</div>
+
+							<div class="unit__body -shift-r xl-grid-full-width">
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, consequatur amet. Quasi
+									aliquam
+									totam voluptatem quibusdam nam et rem qui.</p>
+							</div>
+
+							<div class="arrow-up xl-d-none"></div>
+							<div class="arrow-right xl-d-none"></div>
 						</li>
 					</ul>
 				</div>
@@ -1778,7 +1829,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 </li>`,so=`<li class="swiper-slide __slide-trapeze-bg"
 		data-hash="trapeze-bg">
 	<div class="layout-center">
-		<div class="slide-content width-x">
+		<div class="slide-content">
 			<div class="slide-bg trapeze"></div>
 			<div class="slide-bg trapeze w-img"></div>
 
@@ -1798,7 +1849,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 </li>`,no=`<li class="swiper-slide __slide-blobs-bg"
 		data-hash="blobs-bg">
 	<div class="layout-center">
-		<div class="slide-content width-x md-flex-dir-col">
+		<div class="slide-content">
 			<div class="slide-bg w-img"></div>
 			<div class="slide-bg"></div>
 			<div class="slide-bg"></div>
@@ -1807,7 +1858,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 				<div class="unit__img img-box icon-bg round sphere">
 					<i class="material-icons-round mui-icon">accessible</i>
 				</div>
-				<h2 class="unit__head caps">Test zone</h2>
+				<h2 class="unit__head caps">Test area</h2>
 				<div class="unit__body fs-md grid-full-width">
 					<p>Content under construction!</p>
 				</div>
