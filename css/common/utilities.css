@@ -142,13 +142,6 @@
 	grid-row: span var(--span, 2);
 }
 
-.order-start-1 {
-	order: -1;
-}
-.order-end-1 {
-	order: 1;
-}
-
 .flex-space-x {
 	display: flex;
 	justify-content: var(--flex-space, space-evenly);
@@ -217,12 +210,23 @@
 	z-index: var(--z, -1);
 }
 
+.order-up {
+	order: var(--order, 1);
+}
+.order-down {
+	order: var(--order, -1);
+}
+
 .filters {
 	filter: var(--filters, none);
 }
 
 .t-align-r {
 	text-align: right;
+}
+
+.d-none {
+	display: none;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| colors */

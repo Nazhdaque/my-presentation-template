@@ -23,3 +23,31 @@
 	--x: 1;
 	--sphere: var(--sphere-2b);
 }
+
+.__slide-diag-bg .__snake-list {
+	--img-size: min(3em, 3vw + 1em);
+	--img-place: start center;
+	--gap-y: 1.5em;
+
+	row-gap: var(--gap-y);
+}
+.__slide-diag-bg .__snake-list .unit {
+	--gap-x: var(--gap-y);
+}
+
+.__slide-diag-bg .flex-space-x :nth-child(1) .__snake-list {
+	--sphere: var(--sphere-2b);
+}
+
+.__slide-diag-bg .flex-space-x :nth-child(2) .__snake-list {
+	--sphere: var(--sphere-2a);
+	--clr: var(--clr-2a-solid);
+}
+
+/* --- */
+.__snake-list.-head .arrow-left,
+.__snake-list.-head .arrow-right,
+.__snake-list.-head .arrow-up,
+.__snake-list.-head .arrow-down {
+	--clr: var(--clr-2a-alpha);
+}

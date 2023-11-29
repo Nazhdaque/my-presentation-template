@@ -66,6 +66,24 @@
 	margin-bottom: 0;
 }
 
+/* .unit .arrow-down,
+.unit .arrow-up {
+	grid-area: 2 / 1;
+} */
+
+.unit__body.-shift-l {
+	grid-area: 2 / 1 / 2 / 3;
+}
+.unit__body.-shift-l + * {
+	grid-area: 2 / 3;
+}
+.unit__body.-shift-r {
+	grid-area: 2 / 2 / 2 / 4;
+}
+.unit__body.-shift-r + * {
+	grid-area: 2 / 1;
+}
+
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
 .unit.-bg {
 	background-color: hsl(var(--clr-2c-alpha), 0.15);
@@ -96,12 +114,6 @@
 	padding: 1em;
 	z-index: 1;
 	pointer-events: none;
-}
-
-/* |||||||||| |||||||||| |||||||||| |||||||||| */
-.unit .arrow-down,
-.unit .arrow-up {
-	grid-area: 2 / 1;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| lists */

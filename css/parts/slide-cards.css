@@ -34,3 +34,14 @@
 .__slide-cards canvas {
 	background-color: var(--clr-0a-solid);
 }
+
+.__slide-cards .__icons-box {
+	grid-area: 1 / 1;
+	place-self: center end;
+	z-index: 1;
+}
+.__slide-cards .__icons-box > * {
+	--icon-size: 2em;
+
+	margin: 0.5em;
+}

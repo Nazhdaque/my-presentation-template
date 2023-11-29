@@ -4,7 +4,7 @@
 .arrow-right {
 	--factor-1: 2;
 	--factor-2: 0.75;
-	---min-arrow-length: calc(var(--img-size) * 2);
+	--min-arrow-length: calc(var(--img-size) * 2);
 
 	--clr: var(--clr-2b-alpha);
 	--head-size: calc(var(--img-size) / var(--factor-1));
@@ -19,12 +19,12 @@
 }
 .arrow-left,
 .arrow-right {
-	min-width: var(---min-arrow-length);
+	min-width: var(--min-arrow-length);
 	min-height: var(--img-size);
 }
 .arrow-up,
 .arrow-down {
-	min-height: var(---min-arrow-length);
+	min-height: var(--min-arrow-length);
 	min-width: var(--img-size);
 }
 .arrow-up::before,

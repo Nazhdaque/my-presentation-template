@@ -1,11 +1,37 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| xl */
 @media (width <= 1400px) {
+	.width-x.-xl-width-1-3-center {
+		--col: 3;
+		--x: 1;
+		justify-self: center;
+	}
+
+	.unit__body.-xl-shift-l {
+		grid-area: 2 / 1 / 2 / 3;
+	}
+	.unit__body.-xl-shift-r {
+		grid-area: 2 / 2 / 2 / 4;
+	}
+
+	/* utilities */
+	.xl-d-none {
+		display: none;
+	}
+	.xl-d-grid {
+		display: grid;
+	}
+	.xl-order-0 {
+		order: 0;
+	}
+	.xl-grid-full-width {
+		grid-column: 1 / -1;
+	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| lg */
 @media (width <= 1200px) {
-	.slide-content {
-		--col: 2;
+	.width-x.-lg-width-1-3-center {
+		--col: 3;
 		--x: 1;
 		justify-self: center;
 	}
@@ -15,8 +41,10 @@
 @media (width <= 992px) {
 	/* .table media styles are in the table.css */
 
-	.slide-content {
+	.width-x.-md-width-1-3-center {
 		--col: 3;
+		--x: 1;
+		justify-self: center;
 	}
 
 	/* utilities */
