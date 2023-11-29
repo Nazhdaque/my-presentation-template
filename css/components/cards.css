@@ -27,6 +27,10 @@
 	place-self: center;
 }
 
+.card__img.round {
+	--shadow: var(--img-shadow-bottom);
+}
+
 /* |||||||||| |||||||||| card title */
 .card__ttl {
 	grid-area: 1 / 1;
