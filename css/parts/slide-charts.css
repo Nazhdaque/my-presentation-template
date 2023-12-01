@@ -4,8 +4,8 @@
 	--h: var(--h-block);
 	--side: var(--bottom);
 	--clip: var(--clp-bottom);
-	--tilt-base: -25%;
-	--trend-base: 90%;
+	--angle: -25%;
+	--trend: 90%;
 }
 
 .__slide-charts .slide-bg:nth-child(1),

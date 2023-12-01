@@ -1,5 +1,6 @@
 .slide-bg,
 .slide-bg-overlay {
+	/* defaults */
 	--w-inline: max(25%, 10rem);
 	--h-inline: 100%;
 	--w-block: 50%, var(--max-content-width);
@@ -19,10 +20,10 @@
 	--right-top: 0 0 auto auto;
 	--rigth-bottom: auto 0 0 auto;
 
-	--tilt-base: 75%;
-	--trend-base: 50%;
-	--tilt-pair: calc(100% - var(--tilt-base));
-	--trend-pair: calc(100% - var(--trend-base));
+	--angle: 75%;
+	--trend: 50%;
+	--angle-pair: calc(100% - var(--angle));
+	--trend-pair: calc(100% - var(--trend));
 
 	--scale: 2.5;
 
@@ -86,63 +87,58 @@
 
 /* |||||||||| |||||||||| */
 .diag {
-	--w-inline: max(50%, 768px);
-	--clp-left: polygon(
-		0 0,
-		var(--tilt-base) 0,
-		100% 100%,
-		var(--tilt-pair) 100%
-	);
+	--w: max(50%, 768px);
+	--clp-left: polygon(0 0, var(--angle) 0, 100% 100%, var(--angle-pair) 100%);
 	--clp-right: polygon(
-		var(--tilt-pair) 0%,
+		var(--angle-pair) 0%,
 		100% 0%,
-		var(--tilt-base) 100%,
+		var(--angle) 100%,
 		0% 100%
 	);
 }
 
 /* |||||||||| |||||||||| */
 .trapeze {
-	--clp-left: polygon(0 0, 100% 0, var(--tilt-base, 50%) 100%, 0% 100%);
-	--clp-right: polygon(var(--tilt-pair, 50%) 0, 100% 0, 100% 100%, 0% 100%);
+	--clp-left: polygon(0 0, 100% 0, var(--angle, 50%) 100%, 0% 100%);
+	--clp-right: polygon(var(--angle-pair, 50%) 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 /* |||||||||| |||||||||| */
 .triangle {
-	--clp-left-top: polygon(100% 0, 0 var(--tilt-base), 0 0);
-	--clp-right-top: polygon(0 0, 100% 0, 100% var(--tilt-base));
-	--clp-left-bottom: polygon(0 var(--tilt-pair), 0% 100%, 100% 100%);
-	--clp-right-bottom: polygon(100% var(--tilt-pair), 0% 100%, 100% 100%);
+	--clp-left-top: polygon(100% 0, 0 var(--angle), 0 0);
+	--clp-right-top: polygon(0 0, 100% 0, 100% var(--angle));
+	--clp-left-bottom: polygon(0 var(--angle-pair), 0% 100%, 100% 100%);
+	--clp-right-bottom: polygon(100% var(--angle-pair), 0% 100%, 100% 100%);
 }
 
 /* |||||||||| |||||||||| */
 .spike {
 	--clp-left: polygon(
 		0% 0%,
-		var(--tilt-base) 0%,
-		100% var(--trend-base),
-		var(--tilt-base) 100%,
+		var(--angle) 0%,
+		100% var(--trend),
+		var(--angle) 100%,
 		0% 100%
 	);
 	--clp-right: polygon(
 		100% 0,
-		calc(100% - var(--tilt-base)) 0,
+		calc(100% - var(--angle)) 0,
 		0 var(--trend-pair),
-		calc(100% - var(--tilt-base)) 100%,
+		calc(100% - var(--angle)) 100%,
 		100% 100%
 	);
 
 	--clp-left-sub: polygon(
 		0% 0%,
 		100% 0%,
-		var(--tilt-base) var(--trend-pair),
+		var(--angle) var(--trend-pair),
 		100% 100%,
 		0% 100%
 	);
 	--clp-right-sub: polygon(
 		100% 0,
 		0 0,
-		var(--tilt-pair) var(--trend-base),
+		var(--angle-pair) var(--trend),
 		0 100%,
 		100% 100%
 	);
@@ -150,16 +146,16 @@
 	--clp-top: polygon(
 		0% 0%,
 		100% 0,
-		100% var(--tilt-base),
-		var(--trend-base) 100%,
-		0 var(--tilt-base)
+		100% var(--angle),
+		var(--trend) 100%,
+		0 var(--angle)
 	);
 	--clp-bottom: polygon(
 		0 100%,
 		100% 100%,
-		100% var(--tilt-pair),
+		100% var(--angle-pair),
 		var(--trend-pair) 0,
-		0 var(--tilt-pair)
+		0 var(--angle-pair)
 	);
 }
 

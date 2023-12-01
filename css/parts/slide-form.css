@@ -1,12 +1,10 @@
-.__slide-form .slide-bg,
-.__slide-form .slide-bg-overlay {
+.__slide-form .slide-bg {
 	--w-inline: max(10%, 5rem);
-	--tilt-base: -10%;
-	--trend-base: 15%;
+	--angle: -10%;
+	--trend: 15%;
 }
 
-.__slide-form .slide-bg:nth-child(1),
-.__slide-form .slide-bg-overlay:nth-child(1) {
+.__slide-form .slide-bg:nth-child(1) {
 	--image: url(/images/demo-4-xl.webp);
 	--side: var(--left);
 	--clip: var(--clp-left);

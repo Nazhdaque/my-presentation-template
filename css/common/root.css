@@ -15,6 +15,7 @@
 	/* --clr-1a-solid-invert: hsl(37, 54%, 76%); */ /* true invert */
 	/* invert considering --clr-0a-solid: rgb 255 - 245 = 10; R - 10, G - 10, B - 10 */
 	--clr-1a-solid-invert: rgb(217, 192, 151);
+	--clr-1a-alpha-invert: 37, 46%, 72%;
 	--clr-1a-solid-darken-50: hsl(217, 54%, 12%);
 
 	/* #ef991f */
@@ -36,6 +37,7 @@
 	--clr-2b-alpha: 353, 70%, 55%;
 	/* --clr-2b-solid-invert: hsl(173, 70%, 45%); */
 	--clr-2b-solid-invert: rgb(24, 185, 166);
+	--clr-2b-alpha-invert: 173, 70%, 45%;
 	--clr-2b-solid-darken-50: hsl(353, 70%, 27.5%);
 
 	/* #c7c5d3 */

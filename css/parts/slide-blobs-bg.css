@@ -2,8 +2,8 @@
 	--image: url(/images/demo-5-xl.webp);
 	--left: -35% auto 0 -10%;
 	--side: var(--left);
-	--w-inline: max(40%, 10rem);
-	--h-inline: unset;
+	--w: max(40%, 10rem);
+	--h: auto;
 	--radius: 75% 25% 28% 72% / 47% 60% 40% 53%;
 	--overlay: linear-gradient(
 		90deg,
@@ -18,8 +18,8 @@
 	--bg: var(--clr-1a-solid-invert);
 	--right: 40% -7% 0 auto;
 	--side: var(--right);
-	--w-inline: max(30%, 7rem);
-	--h-inline: unset;
+	--w: max(30%, 7rem);
+	--h: auto;
 	--radius: 36% 64% 16% 84% / 57% 38% 62% 43%;
 	--asp-ratio: 1;
 }
@@ -28,8 +28,8 @@
 	--bg: var(--clr-1b-solid-invert);
 	--right: -45% 35% 0 auto;
 	--side: var(--right);
-	--w-inline: max(10%, 4rem);
-	--h-inline: unset;
+	--w: max(10%, 4rem);
+	--h: auto;
 	--radius: 52% 48% 35% 65% / 48% 69% 31% 52%;
 	--asp-ratio: 1;
 }

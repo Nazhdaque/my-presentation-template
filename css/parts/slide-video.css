@@ -2,7 +2,7 @@
 	--image: url(/images/demo-1-xl.webp);
 	--left: -50% auto 0 50%;
 	--side: var(--left);
-	--w-inline: max(45%, 10rem);
+	--w: max(45%, 10rem);
 	--overlay: repeating-linear-gradient(
 		90deg,
 		hsla(0, 0%, 0%, 0) 0,
@@ -17,7 +17,7 @@
 .__slide-video .slide-bg:nth-child(2) {
 	--left: 60% 60% 0 auto;
 	--side: var(--left);
-	--w-inline: max(35%, 7rem);
+	--w: max(35%, 7rem);
 	--overlay: linear-gradient(
 		0deg,
 		hsl(0, 0%, 0%, 0.2) 20%,
@@ -32,7 +32,7 @@
 	--bg: var(--clr-1b-solid-invert);
 	--left: 75% 15% 0 auto;
 	--side: var(--left);
-	--w-inline: max(10%, 4rem);
+	--w: max(10%, 4rem);
 	--transform: rotate(45deg);
 }
 
