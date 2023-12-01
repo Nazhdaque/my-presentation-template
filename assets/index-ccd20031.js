@@ -3,7 +3,6 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg w-img"></div>
-			<div class="slide-bg-overlay"></div>
 
 			<div class="unit fs-3xl width-x slide-ttl">
 				<div class="unit__img -pipe"></div>
@@ -101,7 +100,6 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 	<div class="layout-center">
 		<div class="flex-space-x">
 			<div class="slide-bg trapeze w-img"></div>
-			<div class="slide-bg-overlay trapeze"></div>
 
 			<div class="scroll-down">
 				<div class="scroll-down__chevron"></div>
@@ -1500,7 +1498,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 	<div class="layout-center">
 		<div class="slide-content width-x -lg-width-1-3-center">
 			<div class="slide-bg spike"></div>
-			<div class="slide-bg spike w-img"></div>
+			<div class="slide-bg spike w-img xs-d-none"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
 				<div class="unit__img img-box icon-bg round sphere">
@@ -1624,7 +1622,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg spike w-img"></div>
-			<div class="slide-bg spike w-img"></div>
+			<div class="slide-bg spike w-img xs-d-none"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
 				<div class="unit__img img-box icon-bg round sphere">
@@ -1831,7 +1829,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg trapeze"></div>
-			<div class="slide-bg trapeze w-img"></div>
+			<div class="slide-bg trapeze w-img xs-d-none"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
 				<div class="unit__img img-box icon-bg round sphere">
