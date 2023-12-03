@@ -11,7 +11,7 @@
 		hsla(0, 0%, 0%, 0.3) 20%
 	);
 	--tint: var(--clr-1a-solid);
-	--bg-blend-mode: luminosity, overlay;
+	--img-blends: luminosity, overlay;
 }
 
 .__slide-video .slide-bg:nth-child(2) {
@@ -24,12 +24,12 @@
 		hsl(0, 0%, 0%, 0.8) 90%
 	);
 	--tint: var(--clr-2b-solid);
-	--bg-blend-mode: luminosity, overlay;
+	--img-blends: luminosity, overlay;
 	--image: url(/images/demo-6-sm.webp);
 }
 
 .__slide-video .slide-bg:nth-child(3) {
-	--bg: var(--clr-1b-solid-invert);
+	--bg: var(--clr-1b-solid);
 	--left: 75% 15% 0 auto;
 	--side: var(--left);
 	--w: max(10%, 4rem);

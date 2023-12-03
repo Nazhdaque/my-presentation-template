@@ -1,5 +1,5 @@
 .__slide-cards .slide-bg {
-	--bg: var(--clr-1a-solid-invert);
+	--bg: var(--clr-1a-solid);
 	--side: var(--left);
 	--clip: var(--clp-left);
 }

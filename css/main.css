@@ -45,6 +45,7 @@
 @import url(./parts/slide-form.css) layer(parts);
 @import url(./parts/slide-diag-bg.css) layer(parts);
 @import url(./parts/slide-blobs-bg.css) layer(parts);
+@import url(./parts/slide-skewed-overlay.css) layer(parts);
 @import url(./parts/slides.css) layer(parts);
 @import url(./parts/footer.css) layer(parts);
 

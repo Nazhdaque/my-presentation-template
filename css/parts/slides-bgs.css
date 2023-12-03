@@ -54,11 +54,12 @@
 }
 .slide-bg::before {
 	z-index: -1;
-	background-color: var(--bg, var(--clr-1a-solid-invert));
+	background-color: var(--bg, var(--clr-1a-solid));
 	background-position: var(--pos, center);
+	filter: invert(1);
 }
 .slide-bg::after {
-	background-color: var(--clr-0a-solid);
+	background-color: white;
 	mix-blend-mode: difference;
 }
 
@@ -69,13 +70,16 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	filter: var(--filters, invert(1));
-	background-blend-mode: var(--bg-blend-mode, luminosity);
+	background-blend-mode: var(--img-blends, luminosity);
 }
 
 /* |||||||||| |||||||||| addition overlay for using with grayscale filter, color filters */
 .slide-bg-overlay::before {
-	background: var(--clr-filter);
+	background: var(--overlay-bg, var(--clr-filter));
 	z-index: -1;
+	filter: var(--overlay-filters, invert(1));
+	mix-blend-mode: var(--overlay-blends, none);
+	transform: var(--overlay-transform, none);
 }
 
 /* |||||||||| |||||||||| |||||||||| figures */

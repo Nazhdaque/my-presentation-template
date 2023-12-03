@@ -12,7 +12,7 @@
 .__slide-charts .slide-bg-overlay:nth-child(1) {
 	--side: var(--top);
 	--clip: var(--clp-top);
-	--bg: var(--clr-1b-solid-invert);
+	--bg: var(--clr-1b-solid);
 }
 
 .__slide-charts .slide-bg:nth-child(2) {

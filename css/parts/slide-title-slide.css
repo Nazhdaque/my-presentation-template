@@ -10,6 +10,13 @@
 	--tint: var(--clr-1a-solid);
 }
 
+.__slide-title-slide .slide-bg-overlay {
+	--side: var(--left);
+	--clip: var(--clp-left);
+	--clr-filter: var(--clr-1b-solid);
+	--overlay-blends: overlay;
+}
+
 .__slide-title-slide .slide-content {
 	grid-auto-rows: min-content 1fr min-content;
 }

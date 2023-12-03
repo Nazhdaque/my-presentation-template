@@ -2,7 +2,7 @@
 .__slide-trapeze-bg .slide-bg-overlay {
 	--side: var(--right);
 	--clip: var(--clp-right);
-	--bg: var(--clr-1a-solid-invert);
+	--bg: var(--clr-1a-solid);
 	--overlay: linear-gradient(
 		-90deg,
 		hsl(0, 0%, 0%, 0.1) 0%,

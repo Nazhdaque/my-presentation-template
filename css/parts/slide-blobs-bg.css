@@ -15,7 +15,7 @@
 }
 
 .__slide-blobs-bg .slide-bg:nth-child(2) {
-	--bg: var(--clr-1a-solid-invert);
+	--bg: var(--clr-1a-solid);
 	--right: 40% -7% 0 auto;
 	--side: var(--right);
 	--w: max(30%, 7rem);
@@ -25,7 +25,7 @@
 }
 
 .__slide-blobs-bg .slide-bg:nth-child(3) {
-	--bg: var(--clr-1b-solid-invert);
+	--bg: var(--clr-1b-solid);
 	--right: -45% 35% 0 auto;
 	--side: var(--right);
 	--w: max(10%, 4rem);

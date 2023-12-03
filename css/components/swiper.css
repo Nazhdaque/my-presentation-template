@@ -2,9 +2,9 @@
 	--swiper-navigation-size: 2rem;
 	--swiper-navigation-top-offset: 50%;
 	--swiper-navigation-sides-offset: 1rem;
-	--swiper-navigation-color: var(--clr-1a-solid-invert);
-	--swiper-pagination-color: var(--clr-1b-solid-invert);
-	--swiper-pagination-bullet-inactive-color: var(--clr-1a-solid-invert);
+	--swiper-navigation-color: var(--clr-1a-solid);
+	--swiper-pagination-color: var(--clr-1b-solid);
+	--swiper-pagination-bullet-inactive-color: var(--clr-1a-solid);
 	--swiper-pagination-bullet-inactive-opacity: 0.4;
 	--swiper-pagination-bullet-opacity: 1;
 	--swiper-pagination-bullet-horizontal-gap: 0.5rem;
@@ -31,6 +31,11 @@
 .swiper-button-next,
 .swiper-pagination {
 	mix-blend-mode: difference;
+	filter: invert(1);
+}
+.swiper-button-prev,
+.swiper-button-next {
+	filter: invert(1) brightness(2) contrast(2) saturate(2);
 }
 .swiper-pagination {
 	margin-bottom: -8px;

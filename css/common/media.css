@@ -85,10 +85,10 @@
 	.__slide-advantages .slide-bg {
 		--angle: -40%;
 		--w: 110%;
-		--tint: var(--clr-2a-solid-invert);
+		--tint: var(--clr-2a-solid);
 		--image: none;
 		--overlay: none;
-		--filters: none;
+		--filters: invert(1);
 	}
 	.__slide-grid-system .slide-bg {
 		--image: url(/images/demo-3-xs-vertical.webp);
@@ -103,7 +103,7 @@
 		--image: url(/images/demo-6-xs.webp);
 	}
 	.__slide-charts .slide-bg:nth-child(1) {
-		--bg: var(--clr-2b-solid-invert);
+		--bg: var(--clr-2b-solid);
 		--angle: 25%;
 		--trend: 100%;
 		--h: 70%;
