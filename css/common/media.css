@@ -133,6 +133,9 @@
 	.__slide-blobs-bg .slide-bg {
 		--image: url(/images/demo-5-xs.webp);
 	}
+	.__slide-skewed-overlay .slide-bg {
+		--image: url(/images/demo-1-xs-vertical.webp);
+	}
 
 	/* utilities */
 	.xs-d-none {
