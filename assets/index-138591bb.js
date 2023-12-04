@@ -118,7 +118,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</div>
 				</div>
 
-				<ul class="plain-list sphere-2c __pro-cons-list">
+				<ul class="plain-list sphere-1a __pro-cons-list">
 					<li class="unit">
 						<div class="unit__img img-box icon-bg round">
 							<i class="material-icons-round mui-icon">child_care</i>
@@ -2022,7 +2022,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 						type="button">
 
 			<div class="img-box icon-bg">
-				<i class="material-icons-round mui-icon">diamond</i>
+				<i class="material-icons-round mui-icon clr-0a">diamond</i>
 			</div>
 
 			<span class="ellipsis">Слайд</span>
