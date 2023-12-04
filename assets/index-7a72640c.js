@@ -74,7 +74,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 				</li>
 
 				<li class="unit">
-					<div class="unit__img img-box icon-bg round sphere"
+					<div class="unit__img img-box icon-bg round sphere-1b"
 							 style="--img-size: 4rem">
 						<svg class="inner-icon figures">
 							<use href="./images/icons/sprites/figures.svg#figure-2"></use>
@@ -109,7 +109,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 				<span class="scroll-down__text">Scroll down</span>
 			</div>
 
-			<div class="width-x __left-col">
+			<div class="width-x __left-col clr-2b">
 				<div class="unit -rl fs-xl slide-ttl">
 					<div class="unit__img -pipe"></div>
 					<h2 class="unit__head">Плюсы <br>MS PowerPoint</h2>
@@ -118,13 +118,13 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</div>
 				</div>
 
-				<ul class="plain-list __pro-cons-list">
+				<ul class="plain-list sphere-2c __pro-cons-list">
 					<li class="unit">
-						<div class="unit__img img-box icon-bg round sphere">
+						<div class="unit__img img-box icon-bg round">
 							<i class="material-icons-round mui-icon">child_care</i>
 						</div>
 						<h3 class="unit__head -pipe caps">Что-то получится даже у ребенка</h3>
-						<div class="arrow-right"></div>
+						<div class="arrow-right clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Сделать презентацию в PP <b>с нуля</b> куда проще и быстрее, чем сверстать и настроить веб-проект. Но
@@ -142,11 +142,11 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit">
-						<div class="unit__img img-box icon-bg round sphere">
+						<div class="unit__img img-box icon-bg round">
 							<i class="material-icons-round mui-icon">screenshot_monitor</i>
 						</div>
 						<h3 class="unit__head -pipe caps">Никаких сюрпризов</h3>
-						<div class="arrow-right"></div>
+						<div class="arrow-right clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Пожалуй, главное преимущество PP заключается в том, что такая презентация будет выглядеть одинаково
@@ -171,7 +171,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 				</ul>
 			</div>
 
-			<div class="width-x">
+			<div class="width-x clr-1a">
 				<div class="unit fs-xl slide-ttl">
 					<div class="unit__img -pipe"></div>
 					<h2 class="unit__head">Чем такая презентация <br>лучше, чем MS PowerPoint</h2>
@@ -180,11 +180,11 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</div>
 				</div>
 
-				<ul class="plain-list ordered-list __pro-cons-list">
+				<ul class="plain-list ordered-list sphere-2b __pro-cons-list">
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round"></div>
 						<h3 class="unit__head -pipe -rl caps">Готово к использованию</h3>
-						<div class="arrow-left"></div>
+						<div class="arrow-left clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Не нужны никакие спец. программы для просмотра — все открывается по ссылке и работает в любом браузере,
@@ -193,9 +193,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round"></div>
 						<h3 class="unit__head -pipe -rl caps">Без лишних телодвижений</h3>
-						<div class="arrow-left"></div>
+						<div class="arrow-left clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Нет необходимости скачивать и / или пересылать файлы по почте, хранить их где-то. Кроме того, они имеют
@@ -204,9 +204,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round"></div>
 						<h3 class="unit__head -pipe -rl caps">Интуитивно понятно</h3>
-						<div class="arrow-left"></div>
+						<div class="arrow-left clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Привычные каждому пользователю возможности управления мышкой, клавиатурой, тачпэдом ноутбука, жестами
@@ -216,9 +216,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round"></div>
 						<h3 class="unit__head -pipe -rl caps">Выглядит отлично</h3>
-						<div class="arrow-left"></div>
+						<div class="arrow-left clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Все мы примерно представляем, как выглядит среднестатистическая презентация в .pptx, да еще, как
@@ -231,9 +231,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round"></div>
 						<h3 class="unit__head -pipe -rl caps">Аккуратно</h3>
-						<div class="arrow-left"></div>
+						<div class="arrow-left clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Опрятность, перфектность во всем, что касается макета и расположения элементов на странице. Модульная
@@ -246,9 +246,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round"></div>
 						<h3 class="unit__head -pipe -rl caps">Все поместится</h3>
-						<div class="arrow-left"></div>
+						<div class="arrow-left clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Добавить контент в слайд — никаких проблем даже в том случае, если что-то не помещается в область
@@ -260,9 +260,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round"></div>
 						<h3 class="unit__head -pipe -rl caps">Легко кастомизировать</h3>
-						<div class="arrow-left"></div>
+						<div class="arrow-left clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Здесь разница просто колоссальная. В .pptx презентации любые изменения — это утомительный ручной труд в
@@ -275,9 +275,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round"></div>
 						<h3 class="unit__head -pipe -rl caps">Reusability</h3>
-						<div class="arrow-left"></div>
+						<div class="arrow-left clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Это преимущество прямо следует из предыдущего пункта. PP-презентация — вещь, как правило, одноразовая,
@@ -289,9 +289,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round"></div>
 						<h3 class="unit__head -pipe -rl caps">Адаптивность и responsive</h3>
-						<div class="arrow-left"></div>
+						<div class="arrow-left clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Возможность комфортного просмотра на любом устройстве, с т.ч. с экрана смартфона. В этом легко
@@ -303,9 +303,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round"></div>
 						<h3 class="unit__head -pipe -rl caps">Огромный потенциал</h3>
-						<div class="arrow-left"></div>
+						<div class="arrow-left clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Возможности связки HTML — CSS — JS в плане визуализации контента несоизмеримо шире, чем в PP.
@@ -315,9 +315,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round"></div>
 						<h3 class="unit__head -pipe -rl caps">Сторонние библиотеки</h3>
-						<div class="arrow-left"></div>
+						<div class="arrow-left clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Доступно множество профессиональных решений мирового уровня, позволяющих создавать
@@ -335,9 +335,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round"></div>
 						<h3 class="unit__head -pipe -rl caps">Полноценный веб-ресурс</h3>
-						<div class="arrow-left"></div>
+						<div class="arrow-left clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
 							<p>Который начинает работать на вас с момента публикации на домене компании. Страница проиндексируется и
@@ -513,7 +513,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 
 			<ul class="plain-list flex-space-x __typo-list">
 				<li class="unit -rl width-x">
-					<div class="unit__img img-box icon-bg round sphere">
+					<div class="unit__img img-box icon-bg round sphere-2c">
 						<i class="material-icons-round mui-icon">monitor</i>
 					</div>
 					<h3 class="unit__head -pipe caps fs-md">Большая терция</h3>
@@ -539,8 +539,8 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</ul>
 				</li>
 
-				<li class="unit width-x">
-					<div class="unit__img img-box icon-bg round sphere">
+				<li class="unit width-x clr-1a">
+					<div class="unit__img img-box icon-bg round sphere-1b">
 						<i class="material-icons-round mui-icon">phone_android</i>
 					</div>
 					<h3 class="unit__head -rl -pipe caps fs-md">Большая секунда</h3>
@@ -582,7 +582,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 			</div>
 
 			<div class="unit fs-xl slide-ttl width-x">
-				<div class="unit__img img-box icon-bg round sphere">
+				<div class="unit__img img-box icon-bg round sphere-1b">
 					<svg class="inner-icon figures">
 						<use href="./images/icons/sprites/figures.svg#figure-2"></use>
 					</svg>
@@ -595,8 +595,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 				</div>
 			</div>
 
-			<ul class="grid-x cards"
-					style="--col: 3">
+			<ul class="grid-x cards col-3">
 				<li class="card">
 					<div class="card__head">
 						<div class="card__img img-box overlay cq-container"
@@ -640,7 +639,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</div>
 
 					<div class="unit">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round sphere-1b"></div>
 						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
 						<div class="unit__body grid-full-width">
 							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quod natus odio voluptas tempore hic quo
@@ -680,7 +679,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 
 				<li class="card">
 					<div class="unit">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round sphere-1b"></div>
 						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
 						<div class="unit__body grid-full-width">
 							<p class="fs-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
@@ -688,9 +687,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 								eligendi? Sed, rerum maiores, quidem saepe laudantium iste laborum quae nam doloremque ipsum culpa
 								placeat
 								in sit!</p>
-							<picture class="img-box icon-bg round txt-icon"
-											 style="--size-x: 3;
-							--bg: var(--clr-2b-solid);">
+							<picture class="img-box icon-bg round txt-icon clr-2b">
 								<img class="inner-icon"
 										 src="./images/rubik-0.svg"
 										 alt="">
@@ -706,8 +703,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 				</li>
 
 				<li class="card">
-					<picture class="card__img img-box filters"
-									 style="--shadow: none; --img-h: 100%;">
+					<picture class="card__img img-box img-card figure filters">
 						<img class="o-fit-contain"
 								 src="./images/rubik-0.svg"
 								 alt="">
@@ -791,23 +787,23 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 								incidunt
 								accusantium veritatis, nostrum sunt dolores ratione. Exercitationem distinctio adipisci repellat?</p>
 
-							<ul class="plain-list fs-sm">
+							<ul class="plain-list fs-sm sphere-2c">
 								<li class="unit">
-									<div class="unit__img img-box icon-bg round sphere">
+									<div class="unit__img img-box icon-bg round">
 										<i class="material-icons-round mui-icon">commute</i>
 									</div>
 									<p class="unit__head">Lorem ipsum dolor sit</p>
 								</li>
 
 								<li class="unit">
-									<div class="unit__img img-box icon-bg round sphere">
+									<div class="unit__img img-box icon-bg round">
 										<i class="material-icons-round mui-icon">build_circle</i>
 									</div>
 									<p class="unit__head">Lorem ipsum, dolor sit amet consectetur adipisicing</p>
 								</li>
 
 								<li class="unit">
-									<div class="unit__img img-box icon-bg round sphere">
+									<div class="unit__img img-box icon-bg round">
 										<i class="material-icons-round mui-icon">home</i>
 									</div>
 									<p class="unit__head">Lorem ipsum dolor sit amet consectetur</p>
@@ -819,8 +815,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 
 				<li class="card">
 					<div class="card__head -ttl-right xs-a-flow-row">
-						<div class="card__img img-box icon-bg overlay xs-shadow-bottom"
-								 style="--overlay: var(--eye)">
+						<div class="card__img img-box icon-bg overlay eye xs-shadow-bottom">
 							<picture>
 								<source media="(max-width: 576px)"
 												srcset="./images/demo-5-xs.webp">
@@ -858,7 +853,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 
 				<li class="card x-axis xs-a-flow-row">
 					<div class="card__head">
-						<div class="card__img img-box icon-bg round sphere xs-shadow-bottom">
+						<div class="card__img img-box icon-bg round sphere-1b xs-shadow-bottom">
 							<i class="material-icons-round mui-icon">gpp_good</i>
 						</div>
 					</div>
@@ -880,12 +875,8 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 						<div class="polygon-ribbon-rounded-cutout-tl fs-sm">Nice!</div>
 						<div class="card__img img-box pattern-bg-1"></div>
 
-						<div class="unit card__head-ttl width-x"
-								 style="
-								 --col: 3; 
-								 --x: 2; 
-								 --container-width: 100%">
-							<div class="unit__img img-box icon-bg round sphere">
+						<div class="unit card__head-ttl width-x">
+							<div class="unit__img img-box icon-bg round sphere-1b">
 								<i class="material-icons-round mui-icon">fingerprint</i>
 							</div>
 							<h3 class="unit__head caps">Lorem ipsum dolor</h3>
@@ -906,8 +897,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 
 				<li class="card x-axis xs-a-flow-row">
 					<div class="card__head">
-						<div class="card__img img-box icon-bg round sphere"
-								 style="--sphere: var(--sphere-2c-1a)">
+						<div class="card__img img-box icon-bg round sphere-2c">
 							<svg class="inner-icon figures">
 								<use href="./images/icons/sprites/figures.svg#figure-9"></use>
 							</svg>
@@ -916,7 +906,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</div>
 
 					<div class="unit">
-						<div class="unit__img img-box icon-bg round sphere"></div>
+						<div class="unit__img img-box icon-bg round sphere-1b"></div>
 						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
 						<div class="unit__body grid-full-width">
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae exercitationem suscipit unde
@@ -953,10 +943,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</div>
 				</li>
 
-				<li class="card x-axis gap-0 card_triple md-a-flow-row c-span-x md-c-span-0"
-						style="--span: 2">
+				<li class="card x-axis gap-0 card_triple md-a-flow-row c-span-x md-c-span-0">
 					<div class="unit -bg">
-						<div class="unit__img img-box icon-bg round sphere">
+						<div class="unit__img img-box icon-bg round sphere-1b">
 							<i class="material-icons-round mui-icon">gpp_good</i>
 						</div>
 
@@ -994,28 +983,28 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 								quis debitis doloribus tempora blanditiis, ipsum ratione a impedit quibusdam! Odio amet dolorem
 								repudiandae.</p>
 
-							<ul class="plain-list ordered-list">
+							<ul class="plain-list ordered-list sphere-2c">
 								<li class="unit">
-									<div class="unit__img img-box icon-bg round sphere"></div>
+									<div class="unit__img img-box icon-bg round"></div>
 									<p class="unit__head">Lorem ipsum dolor sit</p>
 									<div class="unit__body -shift-r fs-sm">
 										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, cupiditate.</p>
 									</div>
-									<div class="arrow-down"></div>
+									<div class="arrow-down clr-2b"></div>
 								</li>
 
 								<li class="unit">
-									<div class="unit__img img-box icon-bg round sphere"></div>
+									<div class="unit__img img-box icon-bg round"></div>
 									<p class="unit__head">Lorem ipsum, dolor sit amet</p>
 									<div class="unit__body -shift-r fs-sm">
 										<p>Lorem ipsum, dolor sit amet consectetur adipisicing itaque et nam
 											aspernatur unde.</p>
 									</div>
-									<div class="arrow-down"></div>
+									<div class="arrow-down clr-2b"></div>
 								</li>
 
 								<li class="unit">
-									<div class="unit__img img-box icon-bg round sphere"></div>
+									<div class="unit__img img-box icon-bg round"></div>
 									<p class="unit__head">Lorem ipsum dolor sit amet consectetur</p>
 								</li>
 							</ul>
@@ -1045,11 +1034,8 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</div>
 
 					<div class="unit -bg">
-						<div class="unit__body grid-full-width txt-col-x"
-								 style="--col: 3">
-							<picture class="img-box icon-bg round txt-icon"
-											 style="--size-x: 4;
-						--bg: var(--clr-2b-solid);">
+						<div class="unit__body grid-full-width txt-col-x col-3">
+							<picture class="img-box icon-bg round txt-icon clr-2b size-x4">
 								<img class="inner-icon"
 										 src="./images/rubik-1.svg"
 										 alt="">
@@ -1067,9 +1053,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 								magnam vero recusandae doloribus maxime sed soluta, ut error? Pariatur adipisci rem consequuntur
 								laudantium totam! Itaque, harum, sapiente iure, dicta eligendi cum dolor nesciunt odio.</p>
 
-							<picture class="img-box icon-bg round txt-icon"
-											 style="--size-x: 3;
-						--bg: var(--clr-1b-solid);">
+							<picture class="img-box icon-bg round txt-icon clr-1b">
 								<img class="inner-icon"
 										 src="./images/rubik-2.svg"
 										 alt="">
@@ -1081,9 +1065,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 								molestias
 								odit nobis. Praesentium dolorum sequi iure atque minima, voluptate eum.</p>
 
-							<picture class="img-box icon-bg round txt-icon"
-											 style="--size-x: 2;
-						--bg: var(--clr-2a-solid);">
+							<picture class="img-box icon-bg round txt-icon clr-2a size-x2">
 								<img class="inner-icon"
 										 src="./images/rubik-0.svg"
 										 alt="">
@@ -1101,8 +1083,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 
 			<div class="cards">
 				<div class="unit">
-					<div class="unit__body grid-full-width txt-col-x"
-							 style="--col: 4">
+					<div class="unit__body grid-full-width txt-col-x col-4">
 
 						<div class="card__head">
 							<picture class="card__img img-box">
@@ -1157,8 +1138,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 							laudantium totam! Itaque, harum, sapiente iure, dicta eligendi cum dolor nesciunt odio.</p>
 
 						<figure class="card__head">
-							<picture class="card__img img-box icon-bg round overlay"
-											 style="--overlay: var(--eye)">
+							<picture class="card__img img-box icon-bg round overlay eye">
 								<img class="o-fit-cover"
 										 style="--pos: 20%"
 										 loading="lazy"
@@ -1181,8 +1161,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 							vel ab cum ullam animi incidunt distinctio aliquid. Explicabo nemo quidem, alias exercitationem molestias
 							odit nobis. Praesentium dolorum sequi iure atque minima, voluptate eum.</p>
 
-						<picture class="img-box icon-bg round txt-icon"
-										 style="--size-x: 3;">
+						<picture class="img-box icon-bg round txt-icon">
 							<img src="./images/rubik-1.svg"
 									 alt="">
 						</picture>
@@ -1201,7 +1180,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 		<div class="slide-content width-x -md-width-1-3-center">
 			<div class="slide-bg circle w-img"></div>
 			<div class="slide-bg circle w-img"></div>
-			<div class="slide-bg heptagon"></div>
+			<div class="slide-bg heptagon clr-1b"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
 				<div class="unit__img -pipe"></div>
@@ -1378,7 +1357,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 		data-hash="demo-table">
 	<div class="layout-center">
 		<div class="slide-content width-x -md-width-1-3-center">
-			<div class="slide-bg rounded"></div>
+			<div class="slide-bg rounded clr-1b"></div>
 
 			<table>
 				<caption>
@@ -1498,16 +1477,16 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 		data-hash="demo-charts">
 	<div class="layout-center">
 		<div class="slide-content width-x -lg-width-1-3-center">
-			<div class="slide-bg spike"></div>
+			<div class="slide-bg spike clr-1b"></div>
 			<div class="slide-bg spike w-img xs-d-none"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
-				<div class="unit__img img-box icon-bg round sphere">
+				<div class="unit__img img-box icon-bg round sphere-1b">
 					<i class="material-icons-round mui-icon">area_chart</i>
 				</div>
 				<h2 class="unit__head">Сhart.js</h2>
 				<div class="unit__body fs-md grid-full-width">
-					<p>Интерактивные <a class="tag"
+					<p>Интерактивные <a class="tag clr-1a"
 							 href="https://www.chartjs.org/"
 							 target="_blank"
 							 rel="noopener noreferrer">графики</a> для визуализации любых типов данных</p>
@@ -1534,7 +1513,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 			<div class="slide-bg circle w-img"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
-				<div class="unit__img img-box icon-bg round sphere">
+				<div class="unit__img img-box icon-bg round sphere-2c">
 					<i class="material-icons-round mui-icon">pie_chart</i>
 				</div>
 				<h2 class="unit__head">Круговая диаграмма</h2>
@@ -1573,7 +1552,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 						<div class="unit__body grid-full-width txt-col-x">
 
 							<div class="unit __right-col-heading">
-								<div class="unit__img img-box icon-bg round sphere">
+								<div class="unit__img img-box icon-bg round sphere-1b">
 									<svg class="inner-icon figures">
 										<use href="./images/icons/sprites/figures.svg#figure-2"></use>
 									</svg>
@@ -1587,7 +1566,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 								tempora ratione obcaecati dolore incidunt nisi, ut voluptatibus suscipit, totam perspiciatis illum autem
 								qui nam inventore quibusdam! Accusamus, natus./p>
 
-							<ul class="plain-list fs-sm">
+							<ul class="plain-list fs-sm clr-1b">
 								<li class="unit">
 									<div class="arrow-right"></div>
 									<p class="unit__head">Lorem ipsum dolor sit!</p>
@@ -1626,7 +1605,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 			<div class="slide-bg spike w-img xs-d-none"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
-				<div class="unit__img img-box icon-bg round sphere">
+				<div class="unit__img img-box icon-bg round sphere-1b">
 					<i class="material-icons-round mui-icon">alternate_email</i>
 				</div>
 				<h2 class="unit__head">Форма обратной связи</h2>
@@ -1660,15 +1639,15 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 			</div>
 		</div>
 	</div>
-</li>`,io=`<li class="swiper-slide __slide-diag-bg"
-		data-hash="diag-bg">
+</li>`,io=`<li class="swiper-slide __slide-snake-list"
+		data-hash="snake-list">
 	<div class="layout-center">
 		<div class="slide-content width-x -xl-width-1-3-center">
 			<div class="slide-bg diag w-img"></div>
 			<div class="slide-bg-overlay diag"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
-				<div class="unit__img img-box icon-bg round sphere">
+				<div class="unit__img img-box icon-bg round sphere-2b">
 					<i class="material-icons-round mui-icon">javascript</i>
 				</div>
 				<h2 class="unit__head caps">Test area</h2>
@@ -1679,10 +1658,10 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 
 			<div class="flex-space-x">
 				<div class="width-x">
-					<ul class="plain-list __snake-list">
+					<ul class="plain-list clr-2b __snake-list">
 						<li class="unit -rl h-master-1">
 
-							<div class="unit__img img-box icon-bg round sphere">
+							<div class="unit__img img-box icon-bg round sphere-2b">
 								<i class="material-icons-round mui-icon">directions_run</i>
 							</div>
 
@@ -1702,13 +1681,13 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 						</li>
 
 						<li class="unit h-slave-2">
-							<div class="unit__img img-box icon-bg round sphere">
+							<div class="unit__img img-box icon-bg round sphere-2b">
 								<i class="material-icons-round mui-icon">location_on</i>
 							</div>
 
 							<div class="arrow-left"></div>
 
-							<div class="unit__img img-box icon-bg round sphere">
+							<div class="unit__img img-box icon-bg round sphere-2b">
 								<i class="material-icons-round mui-icon">location_on</i>
 							</div>
 
@@ -1723,13 +1702,13 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 						</li>
 
 						<li class="unit h-slave-3">
-							<div class="unit__img img-box icon-bg round sphere">
+							<div class="unit__img img-box icon-bg round sphere-2b">
 								<i class="material-icons-round mui-icon">location_on</i>
 							</div>
 
 							<div class="arrow-right"></div>
 
-							<div class="unit__img img-box icon-bg round sphere d-none xl-d-grid">
+							<div class="unit__img img-box icon-bg round sphere sphere-2b d-none xl-d-grid">
 								<i class="material-icons-round mui-icon">location_on</i>
 							</div>
 
@@ -1747,10 +1726,10 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 				</div>
 
 				<div class="width-x">
-					<ul class="plain-list __snake-list -head">
+					<ul class="plain-list clr-2a __snake-list -head">
 						<li class="unit h-master-3 order-up xl-order-0">
 
-							<div class="unit__img img-box icon-bg round sphere">
+							<div class="unit__img img-box icon-bg round sphere-2a">
 								<i class="material-icons-round mui-icon">location_on</i>
 							</div>
 
@@ -1758,7 +1737,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 
 							<div class="arrow-left d-none xl-d-grid"></div>
 
-							<div class="unit__img img-box icon-bg round sphere">
+							<div class="unit__img img-box icon-bg round sphere-2a">
 								<i class="material-icons-round mui-icon">location_on</i>
 							</div>
 
@@ -1776,14 +1755,14 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 						</li>
 
 						<li class="unit h-master-2">
-							<div class="unit__img img-box icon-bg round sphere">
+							<div class="unit__img img-box icon-bg round sphere-2a">
 								<i class="material-icons-round mui-icon">location_on</i>
 							</div>
 
 							<div class="arrow-left xl-d-none"></div>
 							<div class="arrow-right d-none xl-d-grid"></div>
 
-							<div class="unit__img img-box icon-bg round sphere">
+							<div class="unit__img img-box icon-bg round sphere-2a">
 								<i class="material-icons-round mui-icon">location_on</i>
 							</div>
 
@@ -1807,7 +1786,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 
 							<h3 class="unit__head -pipe caps">Finish!</h3>
 
-							<div class="unit__img img-box icon-bg round sphere">
+							<div class="unit__img img-box icon-bg round sphere-2a">
 								<i class="material-icons-round mui-icon">flag_circle</i>
 							</div>
 
@@ -1833,7 +1812,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 			<div class="slide-bg trapeze w-img xs-d-none"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
-				<div class="unit__img img-box icon-bg round sphere">
+				<div class="unit__img img-box icon-bg round sphere-1b">
 					<i class="material-icons-round mui-icon">question_mark</i>
 				</div>
 				<h2 class="unit__head">Lorem ipsum dolor sit amet</h2>
@@ -1851,10 +1830,10 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 		<div class="slide-content">
 			<div class="slide-bg w-img"></div>
 			<div class="slide-bg"></div>
-			<div class="slide-bg"></div>
+			<div class="slide-bg clr-1b"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
-				<div class="unit__img img-box icon-bg round sphere">
+				<div class="unit__img img-box icon-bg round sphere-2b">
 					<i class="material-icons-round mui-icon">hardware</i>
 				</div>
 				<h2 class="unit__head caps">Test area</h2>
@@ -1870,7 +1849,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 			<div class="slide-bg-overlay skew"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
-				<div class="unit__img img-box icon-bg round sphere">
+				<div class="unit__img img-box icon-bg round sphere-2c">
 					<i class="material-icons-round mui-icon">hardware</i>
 				</div>
 				<h2 class="unit__head caps">Test area</h2>
@@ -2143,5 +2122,5 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
  * (c) 2017-2022 chartjs-plugin-datalabels contributors
  * Released under the MIT license
  */var Ma=function(){if(typeof window<"u"){if(window.devicePixelRatio)return window.devicePixelRatio;var i=window.screen;if(i)return(i.deviceXDPI||1)/(i.logicalXDPI||1)}return 1}(),Re={toTextLines:function(i){var t=[],e;for(i=[].concat(i);i.length;)e=i.pop(),typeof e=="string"?t.unshift.apply(t,e.split(`
-`)):Array.isArray(e)?i.push.apply(i,e):z(i)||t.unshift(""+e);return t},textSize:function(i,t,e){var s=[].concat(t),n=s.length,a=i.font,r=0,o;for(i.font=e.string,o=0;o<n;++o)r=Math.max(i.measureText(s[o]).width,r);return i.font=a,{height:n*e.lineHeight,width:r}},bound:function(i,t,e){return Math.max(i,Math.min(t,e))},arrayDiff:function(i,t){var e=i.slice(),s=[],n,a,r,o;for(n=0,r=t.length;n<r;++n)o=t[n],a=e.indexOf(o),a===-1?s.push([o,1]):e.splice(a,1);for(n=0,r=e.length;n<r;++n)s.push([e[n],-1]);return s},rasterize:function(i){return Math.round(i*Ma)/Ma}};function as(i,t){var e=t.x,s=t.y;if(e===null)return{x:0,y:-1};if(s===null)return{x:1,y:0};var n=i.x-e,a=i.y-s,r=Math.sqrt(n*n+a*a);return{x:r?n/r:0,y:r?a/r:-1}}function Uf(i,t,e,s,n){switch(n){case"center":e=s=0;break;case"bottom":e=0,s=1;break;case"right":e=1,s=0;break;case"left":e=-1,s=0;break;case"top":e=0,s=-1;break;case"start":e=-e,s=-s;break;case"end":break;default:n*=Math.PI/180,e=Math.cos(n),s=Math.sin(n);break}return{x:i,y:t,vx:e,vy:s}}var Kf=0,Fr=1,zr=2,Rr=4,Vr=8;function hi(i,t,e){var s=Kf;return i<e.left?s|=Fr:i>e.right&&(s|=zr),t<e.top?s|=Vr:t>e.bottom&&(s|=Rr),s}function Zf(i,t){for(var e=i.x0,s=i.y0,n=i.x1,a=i.y1,r=hi(e,s,t),o=hi(n,a,t),l,c,d;!(!(r|o)||r&o);)l=r||o,l&Vr?(c=e+(n-e)*(t.top-s)/(a-s),d=t.top):l&Rr?(c=e+(n-e)*(t.bottom-s)/(a-s),d=t.bottom):l&zr?(d=s+(a-s)*(t.right-e)/(n-e),c=t.right):l&Fr&&(d=s+(a-s)*(t.left-e)/(n-e),c=t.left),l===r?(e=c,s=d,r=hi(e,s,t)):(n=c,a=d,o=hi(n,a,t));return{x0:e,x1:n,y0:s,y1:a}}function fi(i,t){var e=t.anchor,s=i,n,a;return t.clamp&&(s=Zf(s,t.area)),e==="start"?(n=s.x0,a=s.y0):e==="end"?(n=s.x1,a=s.y1):(n=(s.x0+s.x1)/2,a=(s.y0+s.y1)/2),Uf(n,a,i.vx,i.vy,t.align)}var pi={arc:function(i,t){var e=(i.startAngle+i.endAngle)/2,s=Math.cos(e),n=Math.sin(e),a=i.innerRadius,r=i.outerRadius;return fi({x0:i.x+s*a,y0:i.y+n*a,x1:i.x+s*r,y1:i.y+n*r,vx:s,vy:n},t)},point:function(i,t){var e=as(i,t.origin),s=e.x*i.options.radius,n=e.y*i.options.radius;return fi({x0:i.x-s,y0:i.y-n,x1:i.x+s,y1:i.y+n,vx:e.x,vy:e.y},t)},bar:function(i,t){var e=as(i,t.origin),s=i.x,n=i.y,a=0,r=0;return i.horizontal?(s=Math.min(i.x,i.base),a=Math.abs(i.base-i.x)):(n=Math.min(i.y,i.base),r=Math.abs(i.base-i.y)),fi({x0:s,y0:n+r,x1:s+a,y1:n,vx:e.x,vy:e.y},t)},fallback:function(i,t){var e=as(i,t.origin);return fi({x0:i.x,y0:i.y,x1:i.x+(i.width||0),y1:i.y+(i.height||0),vx:e.x,vy:e.y},t)}},Dt=Re.rasterize;function Jf(i){var t=i.borderWidth||0,e=i.padding,s=i.size.height,n=i.size.width,a=-n/2,r=-s/2;return{frame:{x:a-e.left-t,y:r-e.top-t,w:n+e.width+t*2,h:s+e.height+t*2},text:{x:a,y:r,w:n,h:s}}}function Qf(i,t){var e=t.chart.getDatasetMeta(t.datasetIndex).vScale;if(!e)return null;if(e.xCenter!==void 0&&e.yCenter!==void 0)return{x:e.xCenter,y:e.yCenter};var s=e.getBasePixel();return i.horizontal?{x:s,y:null}:{x:null,y:s}}function tp(i){return i instanceof le?pi.arc:i instanceof Fe?pi.point:i instanceof ze?pi.bar:pi.fallback}function ep(i,t,e,s,n,a){var r=Math.PI/2;if(a){var o=Math.min(a,n/2,s/2),l=t+o,c=e+o,d=t+s-o,u=e+n-o;i.moveTo(t,c),l<d&&c<u?(i.arc(l,c,o,-Math.PI,-r),i.arc(d,c,o,-r,0),i.arc(d,u,o,0,r),i.arc(l,u,o,r,Math.PI)):l<d?(i.moveTo(l,e),i.arc(d,c,o,-r,r),i.arc(l,c,o,r,Math.PI+r)):c<u?(i.arc(l,c,o,-Math.PI,0),i.arc(l,u,o,0,Math.PI)):i.arc(l,c,o,-Math.PI,Math.PI),i.closePath(),i.moveTo(t,e)}else i.rect(t,e,s,n)}function ip(i,t,e){var s=e.backgroundColor,n=e.borderColor,a=e.borderWidth;!s&&(!n||!a)||(i.beginPath(),ep(i,Dt(t.x)+a/2,Dt(t.y)+a/2,Dt(t.w)-a,Dt(t.h)-a,e.borderRadius),i.closePath(),s&&(i.fillStyle=s,i.fill()),n&&a&&(i.strokeStyle=n,i.lineWidth=a,i.lineJoin="miter",i.stroke()))}function sp(i,t,e){var s=e.lineHeight,n=i.w,a=i.x,r=i.y+s/2;return t==="center"?a+=n/2:(t==="end"||t==="right")&&(a+=n),{h:s,w:n,x:a,y:r}}function np(i,t,e){var s=i.shadowBlur,n=e.stroked,a=Dt(e.x),r=Dt(e.y),o=Dt(e.w);n&&i.strokeText(t,a,r,o),e.filled&&(s&&n&&(i.shadowBlur=0),i.fillText(t,a,r,o),s&&n&&(i.shadowBlur=s))}function ap(i,t,e,s){var n=s.textAlign,a=s.color,r=!!a,o=s.font,l=t.length,c=s.textStrokeColor,d=s.textStrokeWidth,u=c&&d,h;if(!(!l||!r&&!u))for(e=sp(e,n,o),i.font=o.string,i.textAlign=n,i.textBaseline="middle",i.shadowBlur=s.textShadowBlur,i.shadowColor=s.textShadowColor,r&&(i.fillStyle=a),u&&(i.lineJoin="round",i.lineWidth=d,i.strokeStyle=c),h=0,l=t.length;h<l;++h)np(i,t[h],{stroked:u,filled:r,w:e.w,x:e.x,y:e.y+e.h*h})}var Br=function(i,t,e,s){var n=this;n._config=i,n._index=s,n._model=null,n._rects=null,n._ctx=t,n._el=e};St(Br.prototype,{_modelize:function(i,t,e,s){var n=this,a=n._index,r=Z(q([e.font,{}],s,a)),o=q([e.color,X.color],s,a);return{align:q([e.align,"center"],s,a),anchor:q([e.anchor,"center"],s,a),area:s.chart.chartArea,backgroundColor:q([e.backgroundColor,null],s,a),borderColor:q([e.borderColor,null],s,a),borderRadius:q([e.borderRadius,0],s,a),borderWidth:q([e.borderWidth,0],s,a),clamp:q([e.clamp,!1],s,a),clip:q([e.clip,!1],s,a),color:o,display:i,font:r,lines:t,offset:q([e.offset,4],s,a),opacity:q([e.opacity,1],s,a),origin:Qf(n._el,s),padding:tt(q([e.padding,4],s,a)),positioner:tp(n._el),rotation:q([e.rotation,0],s,a)*(Math.PI/180),size:Re.textSize(n._ctx,t,r),textAlign:q([e.textAlign,"start"],s,a),textShadowBlur:q([e.textShadowBlur,0],s,a),textShadowColor:q([e.textShadowColor,o],s,a),textStrokeColor:q([e.textStrokeColor,o],s,a),textStrokeWidth:q([e.textStrokeWidth,0],s,a)}},update:function(i){var t=this,e=null,s=null,n=t._index,a=t._config,r,o,l,c=q([a.display,!0],i,n);c&&(r=i.dataset.data[n],o=I($(a.formatter,[r,i]),r),l=z(o)?[]:Re.toTextLines(o),l.length&&(e=t._modelize(c,l,a,i),s=Jf(e))),t._model=e,t._rects=s},geometry:function(){return this._rects?this._rects.frame:{}},rotation:function(){return this._model?this._model.rotation:0},visible:function(){return this._model&&this._model.opacity},model:function(){return this._model},draw:function(i,t){var e=this,s=i.ctx,n=e._model,a=e._rects,r;this.visible()&&(s.save(),n.clip&&(r=n.area,s.beginPath(),s.rect(r.left,r.top,r.right-r.left,r.bottom-r.top),s.clip()),s.globalAlpha=Re.bound(0,n.opacity,1),s.translate(Dt(t.x),Dt(t.y)),s.rotate(n.rotation),ip(s,a.frame,n),ap(s,n.lines,a.text,n),s.restore())}});var rp=Number.MIN_SAFE_INTEGER||-9007199254740991,op=Number.MAX_SAFE_INTEGER||9007199254740991;function we(i,t,e){var s=Math.cos(e),n=Math.sin(e),a=t.x,r=t.y;return{x:a+s*(i.x-a)-n*(i.y-r),y:r+n*(i.x-a)+s*(i.y-r)}}function Ta(i,t){var e=op,s=rp,n=t.origin,a,r,o,l,c;for(a=0;a<i.length;++a)r=i[a],o=r.x-n.x,l=r.y-n.y,c=t.vx*o+t.vy*l,e=Math.min(e,c),s=Math.max(s,c);return{min:e,max:s}}function gi(i,t){var e=t.x-i.x,s=t.y-i.y,n=Math.sqrt(e*e+s*s);return{vx:(t.x-i.x)/n,vy:(t.y-i.y)/n,origin:i,ln:n}}var Nr=function(){this._rotation=0,this._rect={x:0,y:0,w:0,h:0}};St(Nr.prototype,{center:function(){var i=this._rect;return{x:i.x+i.w/2,y:i.y+i.h/2}},update:function(i,t,e){this._rotation=e,this._rect={x:t.x+i.x,y:t.y+i.y,w:t.w,h:t.h}},contains:function(i){var t=this,e=1,s=t._rect;return i=we(i,t.center(),-t._rotation),!(i.x<s.x-e||i.y<s.y-e||i.x>s.x+s.w+e*2||i.y>s.y+s.h+e*2)},intersects:function(i){var t=this._points(),e=i._points(),s=[gi(t[0],t[1]),gi(t[0],t[3])],n,a,r;for(this._rotation!==i._rotation&&s.push(gi(e[0],e[1]),gi(e[0],e[3])),n=0;n<s.length;++n)if(a=Ta(t,s[n]),r=Ta(e,s[n]),a.max<r.min||r.max<a.min)return!1;return!0},_points:function(){var i=this,t=i._rect,e=i._rotation,s=i.center();return[we({x:t.x,y:t.y},s,e),we({x:t.x+t.w,y:t.y},s,e),we({x:t.x+t.w,y:t.y+t.h},s,e),we({x:t.x,y:t.y+t.h},s,e)]}});function Hr(i,t,e){var s=t.positioner(i,t),n=s.vx,a=s.vy;if(!n&&!a)return{x:s.x,y:s.y};var r=e.w,o=e.h,l=t.rotation,c=Math.abs(r/2*Math.cos(l))+Math.abs(o/2*Math.sin(l)),d=Math.abs(r/2*Math.sin(l))+Math.abs(o/2*Math.cos(l)),u=1/Math.max(Math.abs(n),Math.abs(a));return c*=n*u,d*=a*u,c+=t.offset*n,d+=t.offset*a,{x:s.x+c,y:s.y+d}}function lp(i,t){var e,s,n,a;for(e=i.length-1;e>=0;--e)for(n=i[e].$layout,s=e-1;s>=0&&n._visible;--s)a=i[s].$layout,a._visible&&n._box.intersects(a._box)&&t(n,a);return i}function cp(i){var t,e,s,n,a,r,o;for(t=0,e=i.length;t<e;++t)s=i[t],n=s.$layout,n._visible&&(o=new Proxy(s._el,{get:(l,c)=>l.getProps([c],!0)[c]}),a=s.geometry(),r=Hr(o,s.model(),a),n._box.update(r,a,s.rotation()));return lp(i,function(l,c){var d=l._hidable,u=c._hidable;d&&u||u?c._visible=!1:d&&(l._visible=!1)})}var Ve={prepare:function(i){var t=[],e,s,n,a,r;for(e=0,n=i.length;e<n;++e)for(s=0,a=i[e].length;s<a;++s)r=i[e][s],t.push(r),r.$layout={_box:new Nr,_hidable:!1,_visible:!0,_set:e,_idx:r._index};return t.sort(function(o,l){var c=o.$layout,d=l.$layout;return c._idx===d._idx?d._set-c._set:d._idx-c._idx}),this.update(t),t},update:function(i){var t=!1,e,s,n,a,r;for(e=0,s=i.length;e<s;++e)n=i[e],a=n.model(),r=n.$layout,r._hidable=a&&a.display==="auto",r._visible=n.visible(),t|=r._hidable;t&&cp(i)},lookup:function(i,t){var e,s;for(e=i.length-1;e>=0;--e)if(s=i[e].$layout,s&&s._visible&&s._box.contains(t))return i[e];return null},draw:function(i,t){var e,s,n,a,r,o;for(e=0,s=t.length;e<s;++e)n=t[e],a=n.$layout,a._visible&&(r=n.geometry(),o=Hr(n._el,n.model(),r),a._box.update(o,r,n.rotation()),n.draw(i,o))}},dp=function(i){if(z(i))return null;var t=i,e,s,n;if(R(i))if(!z(i.label))t=i.label;else if(!z(i.r))t=i.r;else for(t="",e=Object.keys(i),n=0,s=e.length;n<s;++n)t+=(n!==0?", ":"")+e[n]+": "+i[e[n]];return""+t},up={align:"center",anchor:"center",backgroundColor:null,borderColor:null,borderRadius:0,borderWidth:0,clamp:!1,clip:!1,color:void 0,display:!0,font:{family:void 0,lineHeight:1.2,size:void 0,style:void 0,weight:null},formatter:dp,labels:void 0,listeners:{},offset:4,opacity:1,padding:{top:4,right:4,bottom:4,left:4},rotation:0,textAlign:"start",textStrokeColor:void 0,textStrokeWidth:0,textShadowBlur:0,textShadowColor:void 0},at="$datalabels",$r="$default";function hp(i,t){var e=i.datalabels,s={},n=[],a,r;return e===!1?null:(e===!0&&(e={}),t=St({},[t,e]),a=t.labels||{},r=Object.keys(a),delete t.labels,r.length?r.forEach(function(o){a[o]&&n.push(St({},[t,a[o],{_key:o}]))}):n.push(t),s=n.reduce(function(o,l){return H(l.listeners||{},function(c,d){o[d]=o[d]||{},o[d][l._key||$r]=c}),delete l.listeners,o},{}),{labels:n,listeners:s})}function ks(i,t,e,s){if(t){var n=e.$context,a=e.$groups,r;t[a._set]&&(r=t[a._set][a._key],r&&$(r,[n,s])===!0&&(i[at]._dirty=!0,e.update(n)))}}function fp(i,t,e,s,n){var a,r;!e&&!s||(e?s?e!==s&&(r=a=!0):r=!0:a=!0,r&&ks(i,t.leave,e,n),a&&ks(i,t.enter,s,n))}function pp(i,t){var e=i[at],s=e._listeners,n,a;if(!(!s.enter&&!s.leave)){if(t.type==="mousemove")a=Ve.lookup(e._labels,t);else if(t.type!=="mouseout")return;n=e._hovered,e._hovered=a,fp(i,s,n,a,t)}}function gp(i,t){var e=i[at],s=e._listeners.click,n=s&&Ve.lookup(e._labels,t);n&&ks(i,s,n,t)}var mp={id:"datalabels",defaults:up,beforeInit:function(i){i[at]={_actives:[]}},beforeUpdate:function(i){var t=i[at];t._listened=!1,t._listeners={},t._datasets=[],t._labels=[]},afterDatasetUpdate:function(i,t,e){var s=t.index,n=i[at],a=n._datasets[s]=[],r=i.isDatasetVisible(s),o=i.data.datasets[s],l=hp(o,e),c=t.meta.data||[],d=i.ctx,u,h,f,m,p,v,x,g;for(d.save(),u=0,f=c.length;u<f;++u)if(x=c[u],x[at]=[],r&&x&&i.getDataVisibility(u)&&!x.skip)for(h=0,m=l.labels.length;h<m;++h)p=l.labels[h],v=p._key,g=new Br(p,d,x,u),g.$groups={_set:s,_key:v||$r},g.$context={active:!1,chart:i,dataIndex:u,dataset:o,datasetIndex:s},g.update(g.$context),x[at].push(g),a.push(g);d.restore(),St(n._listeners,l.listeners,{merger:function(b,y,_){y[b]=y[b]||{},y[b][t.index]=_[b],n._listened=!0}})},afterUpdate:function(i){i[at]._labels=Ve.prepare(i[at]._datasets)},afterDatasetsDraw:function(i){Ve.draw(i,i[at]._labels)},beforeEvent:function(i,t){if(i[at]._listened){var e=t.event;switch(e.type){case"mousemove":case"mouseout":pp(i,e);break;case"click":gp(i,e);break}}},afterEvent:function(i){var t=i[at],e=t._actives,s=t._actives=i.getActiveElements(),n=Re.arrayDiff(e,s),a,r,o,l,c,d,u;for(a=0,r=n.length;a<r;++a)if(c=n[a],c[1])for(u=c[0].element[at]||[],o=0,l=u.length;o<l;++o)d=u[o],d.$context.active=c[1]===1,d.update(d.$context);(t._dirty||n.length)&&(Ve.update(t._labels),i.render()),delete t._dirty}};class bp{constructor(){L(this,"getValues",t=>(t.forEach(e=>this.brandColors.push(getComputedStyle(document.documentElement,null).getPropertyValue(e))),this.brandColors));this.brandColors=[]}}const vp=new bp,Se=vp.getValues(["--clr-1a-solid","--clr-1b-solid","--clr-2a-solid","--clr-2b-solid","--clr-2c-solid"]),xp={labels:["Data-1","Data-2","Data-3","Data-4","Data-5"],datasets:[{label:"Amount",data:[65,72,88,43,56],backgroundColor:[Se[0],Se[1],Se[2],Se[3],Se[4]],hoverOffset:50}]},yp={cutout:50,maintainAspectRatio:!1,plugins:{legend:{position:"left"},colors:{enabled:!0},datalabels:{backgroundColor:"#000",borderRadius:3,font:{size:14},formatter:(i,t)=>{const s=t.chart.data.datasets[0].data.reduce((a,r)=>a+r,0);return(i/s*100).toFixed(2)+"%"},color:"#fff"}}},_p={type:"doughnut",plugins:[mp],options:yp,data:xp};document.querySelectorAll(".chart-doughnut").forEach(i=>new pt(i,_p));const wp=["January","February","March","April","May","June","July"],Sp={labels:wp,datasets:[{label:"Dataset-1",data:[65,34,82,75,47,55,91],backgroundColor:["rgba(255, 99, 132, 0.2)","rgba(255, 159, 64, 0.2)","rgba(255, 205, 86, 0.2)","rgba(75, 192, 192, 0.2)","rgba(54, 162, 235, 0.2)","rgba(153, 102, 255, 0.2)","rgba(201, 203, 207, 0.2)"],borderColor:["rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(153, 102, 255)","rgb(201, 203, 207)"],borderWidth:1}]},Mp={maintainAspectRatio:!1,scales:{y:{beginAtZero:!0}}},Tp={type:"bar",data:Sp,options:Mp};document.querySelectorAll(".chart-bar").forEach(i=>new pt(i,Tp));const kp=["January","February","March","April","May","June","July"],Cp={labels:kp,datasets:[{label:"Data-1",data:[65,34,82,75,47,55,91],fill:{target:!0,above:"rgba(54, 162, 235, 0.1)"},tension:.25},{label:"Data-2",data:[25,44,54,32,14,46,52],fill:{target:!0,above:"rgba(255, 99, 132, 0.1)"},tension:.25}]},Ep={maintainAspectRatio:!1,scales:{y:{beginAtZero:!0}}},Lp={type:"line",data:Cp,options:Ep};document.querySelectorAll(".chart-line").forEach(i=>new pt(i,Lp));const Pp=()=>{const i=document.querySelectorAll(".video");for(let t=0;t<i.length;t++)Ap(i[t])},Ap=i=>{const t=i.querySelector(".video__link"),e=i.querySelector(".video__media"),s=i.querySelector(".video__button"),n=Op(e);i.addEventListener("click",()=>{const a=Dp(n);t.remove(),s.remove(),i.appendChild(a)}),i.classList.add("video--enabled")},Op=i=>{const t=/https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;return i.src.match(t)[1]},Dp=i=>{const t=document.createElement("iframe");return t.setAttribute("allowfullscreen",""),t.setAttribute("allow","autoplay"),t.setAttribute("src",Ip(i)),t.classList.add("video__media"),t},Ip=i=>{const t="?rel=0&showinfo=0&autoplay=1";return"https://www.youtube.com/embed/"+i+t};Pp();var Fp=Object.defineProperty,zp=(i,t,e)=>t in i?Fp(i,t,{enumerable:!0,configurable:!0,writable:!0,value:e}):i[t]=e,N=(i,t,e)=>(zp(i,typeof t!="symbol"?t+"":t,e),e);const Rp=/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,Vp=/^-?[0-9]\d*$/,Bp=/^(?=.*[A-Za-z])(?=.*\d).{8,}$/,Np=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,Hp=i=>{let t=i;return typeof i=="string"&&(t=i.trim()),!t},$p=i=>Rp.test(i),jp=(i,t)=>i.length>t,qp=(i,t)=>i.length<t,Wp=i=>typeof i!="string"?!1:!isNaN(+i)&&!isNaN(parseFloat(i)),Gp=i=>Vp.test(i),Yp=i=>Bp.test(i),Xp=i=>Np.test(i),Up=(i,t)=>i>t,Kp=(i,t)=>i<t,Tt=i=>typeof i!="string"||i==="";var B=(i=>(i.Required="required",i.Email="email",i.MinLength="minLength",i.MaxLength="maxLength",i.Password="password",i.Number="number",i.Integer="integer",i.MaxNumber="maxNumber",i.MinNumber="minNumber",i.StrongPassword="strongPassword",i.CustomRegexp="customRegexp",i.MinFilesCount="minFilesCount",i.MaxFilesCount="maxFilesCount",i.Files="files",i))(B||{}),Cs=(i=>(i.Required="required",i))(Cs||{}),jr=(i=>(i.Label="label",i.LabelArrow="labelArrow",i))(jr||{});const ka=[{key:B.Required,dict:{en:"The field is required"}},{key:B.Email,dict:{en:"Email has invalid format"}},{key:B.MaxLength,dict:{en:"The field must contain a maximum of :value characters"}},{key:B.MinLength,dict:{en:"The field must contain a minimum of :value characters"}},{key:B.Password,dict:{en:"Password must contain minimum eight characters, at least one letter and one number"}},{key:B.StrongPassword,dict:{en:"Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"}},{key:B.Number,dict:{en:"Value should be a number"}},{key:B.MaxNumber,dict:{en:"Number should be less or equal than :value"}},{key:B.MinNumber,dict:{en:"Number should be more or equal than :value"}},{key:B.MinFilesCount,dict:{en:"Files count should be more or equal than :value"}},{key:B.MaxFilesCount,dict:{en:"Files count should be less or equal than :value"}},{key:B.Files,dict:{en:"Uploaded files have one or several invalid properties (extension/size/type etc)."}}],Zp="Value is incorrect",Me=i=>typeof i=="object"&&i!==null&&"then"in i&&typeof i.then=="function",Jp=i=>{let t=i;const e=[];for(;t;)e.unshift(t),t=t.parentNode;return e},Qp=(i,t)=>{const e=[...t].reverse();for(let s=0,n=e.length;s<n;++s){const a=e[s];for(const r in i){const o=i[r];if(o.groupElem===a)return[r,o]}}return null},xt=i=>Array.isArray(i)?i.filter(t=>t.length>0):typeof i=="string"&&i.trim()?[...i.split(" ").filter(t=>t.length>0)]:[],Te=i=>i instanceof Element||i instanceof HTMLDocument,tg=".just-validate-error-label[data-tooltip=true]{position:fixed;padding:4px 8px;background:#423f3f;color:#fff;white-space:nowrap;z-index:10;border-radius:4px;transform:translateY(-5px)}.just-validate-error-label[data-tooltip=true]:before{content:'';width:0;height:0;border-left:solid 5px transparent;border-right:solid 5px transparent;border-bottom:solid 5px #423f3f;position:absolute;z-index:3;display:block;bottom:-5px;transform:rotate(180deg);left:calc(50% - 5px)}.just-validate-error-label[data-tooltip=true][data-direction=left]{transform:translateX(-5px)}.just-validate-error-label[data-tooltip=true][data-direction=left]:before{right:-7px;bottom:auto;left:auto;top:calc(50% - 2px);transform:rotate(90deg)}.just-validate-error-label[data-tooltip=true][data-direction=right]{transform:translateX(5px)}.just-validate-error-label[data-tooltip=true][data-direction=right]:before{right:auto;bottom:auto;left:-7px;top:calc(50% - 2px);transform:rotate(-90deg)}.just-validate-error-label[data-tooltip=true][data-direction=bottom]{transform:translateY(5px)}.just-validate-error-label[data-tooltip=true][data-direction=bottom]:before{right:auto;bottom:auto;left:calc(50% - 5px);top:-5px;transform:rotate(0)}",mi=5,rs={errorFieldStyle:{color:"#b81111",border:"1px solid #B81111"},errorFieldCssClass:"just-validate-error-field",successFieldCssClass:"just-validate-success-field",errorLabelStyle:{color:"#b81111"},errorLabelCssClass:"just-validate-error-label",successLabelCssClass:"just-validate-success-label",focusInvalidField:!0,lockForm:!0,testingMode:!1,validateBeforeSubmitting:!1};class eg{constructor(t,e,s){N(this,"form",null),N(this,"fields",{}),N(this,"groupFields",{}),N(this,"errors",{}),N(this,"isValid",!1),N(this,"isSubmitted",!1),N(this,"globalConfig",rs),N(this,"errorLabels",{}),N(this,"successLabels",{}),N(this,"eventListeners",[]),N(this,"dictLocale",ka),N(this,"currentLocale","en"),N(this,"customStyleTags",{}),N(this,"onSuccessCallback"),N(this,"onFailCallback"),N(this,"onValidateCallback"),N(this,"tooltips",[]),N(this,"lastScrollPosition"),N(this,"isScrollTick"),N(this,"fieldIds",new Map),N(this,"getKeyByFieldSelector",n=>this.fieldIds.get(n)),N(this,"getFieldSelectorByKey",n=>{for(const[a,r]of this.fieldIds)if(n===r)return a}),N(this,"getCompatibleFields",()=>{const n={};return Object.keys(this.fields).forEach(a=>{let r=a;const o=this.getFieldSelectorByKey(a);typeof o=="string"&&(r=o),n[r]={...this.fields[a]}}),n}),N(this,"setKeyByFieldSelector",n=>{if(this.fieldIds.has(n))return this.fieldIds.get(n);const a=String(this.fieldIds.size+1);return this.fieldIds.set(n,a),a}),N(this,"refreshAllTooltips",()=>{this.tooltips.forEach(n=>{n.refresh()})}),N(this,"handleDocumentScroll",()=>{this.lastScrollPosition=window.scrollY,this.isScrollTick||(window.requestAnimationFrame(()=>{this.refreshAllTooltips(),this.isScrollTick=!1}),this.isScrollTick=!0)}),N(this,"formSubmitHandler",n=>{n.preventDefault(),this.isSubmitted=!0,this.validateHandler(n)}),N(this,"handleFieldChange",n=>{let a;for(const r in this.fields)if(this.fields[r].elem===n){a=r;break}a&&(this.fields[a].touched=!0,this.validateField(a,!0))}),N(this,"handleGroupChange",n=>{let a;for(const r in this.groupFields)if(this.groupFields[r].elems.find(l=>l===n)){a=r;break}a&&(this.groupFields[a].touched=!0,this.validateGroup(a,!0))}),N(this,"handlerChange",n=>{n.target&&(this.handleFieldChange(n.target),this.handleGroupChange(n.target),this.renderErrors())}),this.initialize(t,e,s)}initialize(t,e,s){if(this.form=null,this.errors={},this.isValid=!1,this.isSubmitted=!1,this.globalConfig=rs,this.errorLabels={},this.successLabels={},this.eventListeners=[],this.customStyleTags={},this.tooltips=[],this.currentLocale="en",typeof t=="string"){const n=document.querySelector(t);if(!n)throw Error(`Form with ${t} selector not found! Please check the form selector`);this.setForm(n)}else if(t instanceof HTMLFormElement)this.setForm(t);else throw Error("Form selector is not valid. Please specify a string selector or a DOM element.");if(this.globalConfig={...rs,...e},s&&(this.dictLocale=[...s,...ka]),this.isTooltip()){const n=document.createElement("style");n.textContent=tg,this.customStyleTags[jr.Label]=document.head.appendChild(n),this.addListener("scroll",document,this.handleDocumentScroll)}}getLocalisedString(t,e,s){var n;const a=s??t;let r=(n=this.dictLocale.find(o=>o.key===a))==null?void 0:n.dict[this.currentLocale];if(r||s&&(r=s),r&&e!==void 0)switch(t){case B.MaxLength:case B.MinLength:case B.MaxNumber:case B.MinNumber:case B.MinFilesCount:case B.MaxFilesCount:r=r.replace(":value",String(e))}return r||s||Zp}getFieldErrorMessage(t,e){const s=typeof t.errorMessage=="function"?t.errorMessage(this.getElemValue(e),this.fields):t.errorMessage;return this.getLocalisedString(t.rule,t.value,s)}getFieldSuccessMessage(t,e){const s=typeof t=="function"?t(this.getElemValue(e),this.fields):t;return this.getLocalisedString(void 0,void 0,s)}getGroupErrorMessage(t){return this.getLocalisedString(t.rule,void 0,t.errorMessage)}getGroupSuccessMessage(t){if(t.successMessage)return this.getLocalisedString(void 0,void 0,t.successMessage)}setFieldInvalid(t,e){this.fields[t].isValid=!1,this.fields[t].errorMessage=this.getFieldErrorMessage(e,this.fields[t].elem)}setFieldValid(t,e){this.fields[t].isValid=!0,e!==void 0&&(this.fields[t].successMessage=this.getFieldSuccessMessage(e,this.fields[t].elem))}setGroupInvalid(t,e){this.groupFields[t].isValid=!1,this.groupFields[t].errorMessage=this.getGroupErrorMessage(e)}setGroupValid(t,e){this.groupFields[t].isValid=!0,this.groupFields[t].successMessage=this.getGroupSuccessMessage(e)}getElemValue(t){switch(t.type){case"checkbox":return t.checked;case"file":return t.files;default:return t.value}}validateGroupRule(t,e,s){switch(s.rule){case Cs.Required:e.every(n=>!n.checked)?this.setGroupInvalid(t,s):this.setGroupValid(t,s)}}validateFieldRule(t,e,s,n=!1){const a=s.value,r=this.getElemValue(e);if(s.plugin){s.plugin(r,this.getCompatibleFields())||this.setFieldInvalid(t,s);return}switch(s.rule){case B.Required:{Hp(r)&&this.setFieldInvalid(t,s);break}case B.Email:{if(Tt(r))break;$p(r)||this.setFieldInvalid(t,s);break}case B.MaxLength:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof a!="number"){console.error(`Value for ${s.rule} rule for [${t}] should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Tt(r))break;jp(r,a)&&this.setFieldInvalid(t,s);break}case B.MinLength:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof a!="number"){console.error(`Value for ${s.rule} rule for [${t}] should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Tt(r))break;qp(r,a)&&this.setFieldInvalid(t,s);break}case B.Password:{if(Tt(r))break;Yp(r)||this.setFieldInvalid(t,s);break}case B.StrongPassword:{if(Tt(r))break;Xp(r)||this.setFieldInvalid(t,s);break}case B.Number:{if(Tt(r))break;Wp(r)||this.setFieldInvalid(t,s);break}case B.Integer:{if(Tt(r))break;Gp(r)||this.setFieldInvalid(t,s);break}case B.MaxNumber:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof a!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Tt(r))break;const o=+r;(Number.isNaN(o)||Up(o,a))&&this.setFieldInvalid(t,s);break}case B.MinNumber:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof a!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Tt(r))break;const o=+r;(Number.isNaN(o)||Kp(o,a))&&this.setFieldInvalid(t,s);break}case B.CustomRegexp:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);return}let o;try{o=new RegExp(a)}catch{console.error(`Value for ${s.rule} rule for [${t}] should be a valid regexp. This field will be always invalid.`),this.setFieldInvalid(t,s);break}const l=String(r);l!==""&&!o.test(l)&&this.setFieldInvalid(t,s);break}case B.MinFilesCount:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof a!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Number.isFinite(r==null?void 0:r.length)&&r.length<a){this.setFieldInvalid(t,s);break}break}case B.MaxFilesCount:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof a!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Number.isFinite(r==null?void 0:r.length)&&r.length>a){this.setFieldInvalid(t,s);break}break}case B.Files:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);return}if(typeof a!="object"){console.error(`Value for ${s.rule} rule for [${t}] field should be an object. This field will be always invalid.`),this.setFieldInvalid(t,s);return}const o=a.files;if(typeof o!="object"){console.error(`Value for ${s.rule} rule for [${t}] field should be an object with files array. This field will be always invalid.`),this.setFieldInvalid(t,s);return}const l=(c,d)=>{const u=Number.isFinite(d.minSize)&&c.size<d.minSize,h=Number.isFinite(d.maxSize)&&c.size>d.maxSize,f=Array.isArray(d.names)&&!d.names.includes(c.name),m=Array.isArray(d.extensions)&&!d.extensions.includes(c.name.split(".")[c.name.split(".").length-1]),p=Array.isArray(d.types)&&!d.types.includes(c.type);return u||h||f||m||p};if(typeof r=="object"&&r!==null)for(let c=0,d=r.length;c<d;++c){const u=r.item(c);if(!u){this.setFieldInvalid(t,s);break}if(l(u,o)){this.setFieldInvalid(t,s);break}}break}default:{if(typeof s.validator!="function"){console.error(`Validator for custom rule for [${t}] field should be a function. This field will be always invalid.`),this.setFieldInvalid(t,s);return}const o=s.validator(r,this.getCompatibleFields());if(typeof o!="boolean"&&typeof o!="function"&&console.error(`Validator return value for [${t}] field should be boolean or function. It will be cast to boolean.`),typeof o=="function")if(n)this.fields[t].asyncCheckPending=!0;else{this.fields[t].asyncCheckPending=!1;const l=o();if(!Me(l)){console.error(`Validator function for custom rule for [${t}] field should return a Promise. This field will be always invalid.`),this.setFieldInvalid(t,s);return}return l.then(c=>{c||this.setFieldInvalid(t,s)}).catch(()=>{this.setFieldInvalid(t,s)})}o||this.setFieldInvalid(t,s)}}}isFormValid(){let t=!0;for(let e=0,s=Object.values(this.fields).length;e<s;++e){const n=Object.values(this.fields)[e];if(n.isValid===void 0){t=void 0;break}if(n.isValid===!1){t=!1;break}}for(let e=0,s=Object.values(this.groupFields).length;e<s;++e){const n=Object.values(this.groupFields)[e];if(n.isValid===void 0){t=void 0;break}if(n.isValid===!1){t=!1;break}}return t}validateField(t,e=!1){var s;const n=this.fields[t];n.isValid=!0;const a=[];return[...n.rules].reverse().forEach(r=>{const o=this.validateFieldRule(t,n.elem,r,e);Me(o)&&a.push(o)}),n.isValid&&this.setFieldValid(t,(s=n.config)==null?void 0:s.successMessage),Promise.allSettled(a).finally(()=>{var r;e&&((r=this.onValidateCallback)==null||r.call(this,{isValid:this.isFormValid(),isSubmitted:this.isSubmitted,fields:this.getCompatibleFields(),groups:{...this.groupFields}}))})}revalidateField(t){if(typeof t!="string"&&!Te(t))throw Error("Field selector is not valid. Please specify a string selector or a valid DOM element.");const e=this.getKeyByFieldSelector(t);return!e||!this.fields[e]?(console.error("Field not found. Check the field selector."),Promise.reject()):new Promise(s=>{this.validateField(e,!0).finally(()=>{this.clearFieldStyle(e),this.clearFieldLabel(e),this.renderFieldError(e,!0),s(!!this.fields[e].isValid)})})}revalidateGroup(t){if(typeof t!="string"&&!Te(t))throw Error("Group selector is not valid. Please specify a string selector or a valid DOM element.");const e=this.getKeyByFieldSelector(t);return!e||!this.groupFields[e]?(console.error("Group not found. Check the group selector."),Promise.reject()):new Promise(s=>{this.validateGroup(e).finally(()=>{this.clearFieldLabel(e),this.renderGroupError(e,!0),s(!!this.groupFields[e].isValid)})})}validateGroup(t,e=!1){const s=this.groupFields[t],n=[];return[...s.rules].reverse().forEach(a=>{const r=this.validateGroupRule(t,s.elems,a);Me(r)&&n.push(r)}),Promise.allSettled(n).finally(()=>{var a;e&&((a=this.onValidateCallback)==null||a.call(this,{isValid:this.isFormValid(),isSubmitted:this.isSubmitted,fields:this.getCompatibleFields(),groups:{...this.groupFields}}))})}focusInvalidField(){for(const t in this.fields){const e=this.fields[t];if(!e.isValid){setTimeout(()=>e.elem.focus(),0);break}}}afterSubmitValidation(t=!1){this.renderErrors(t),this.globalConfig.focusInvalidField&&this.focusInvalidField()}validate(t=!1){return new Promise(e=>{const s=[];Object.keys(this.fields).forEach(n=>{const a=this.validateField(n);Me(a)&&s.push(a)}),Object.keys(this.groupFields).forEach(n=>{const a=this.validateGroup(n);Me(a)&&s.push(a)}),Promise.allSettled(s).then(()=>{var n;this.afterSubmitValidation(t),(n=this.onValidateCallback)==null||n.call(this,{isValid:this.isFormValid(),isSubmitted:this.isSubmitted,fields:this.getCompatibleFields(),groups:{...this.groupFields}}),e(!!s.length)})})}revalidate(){return new Promise(t=>{this.validateHandler(void 0,!0).finally(()=>{this.globalConfig.focusInvalidField&&this.focusInvalidField(),t(this.isValid)})})}validateHandler(t,e=!1){return this.globalConfig.lockForm&&this.lockForm(),this.validate(e).finally(()=>{var s,n;this.globalConfig.lockForm&&this.unlockForm(),this.isValid?(s=this.onSuccessCallback)==null||s.call(this,t):(n=this.onFailCallback)==null||n.call(this,this.getCompatibleFields(),this.groupFields)})}setForm(t){this.form=t,this.form.setAttribute("novalidate","novalidate"),this.removeListener("submit",this.form,this.formSubmitHandler),this.addListener("submit",this.form,this.formSubmitHandler)}addListener(t,e,s){e.addEventListener(t,s),this.eventListeners.push({type:t,elem:e,func:s})}removeListener(t,e,s){e.removeEventListener(t,s),this.eventListeners=this.eventListeners.filter(n=>n.type!==t||n.elem!==e)}addField(t,e,s){if(typeof t!="string"&&!Te(t))throw Error("Field selector is not valid. Please specify a string selector or a valid DOM element.");let n;if(typeof t=="string"?n=this.form.querySelector(t):n=t,!n)throw Error("Field doesn't exist in the DOM! Please check the field selector.");if(!Array.isArray(e)||!e.length)throw Error("Rules argument should be an array and should contain at least 1 element.");e.forEach(r=>{if(!("rule"in r||"validator"in r||"plugin"in r))throw Error("Rules argument must contain at least one rule or validator property.");if(!r.validator&&!r.plugin&&(!r.rule||!Object.values(B).includes(r.rule)))throw Error(`Rule should be one of these types: ${Object.values(B).join(", ")}. Provided value: ${r.rule}`)});const a=this.setKeyByFieldSelector(t);return this.fields[a]={elem:n,rules:e,isValid:void 0,touched:!1,config:s},this.setListeners(n),(this.isSubmitted||this.globalConfig.validateBeforeSubmitting)&&this.validateField(a),this}removeField(t){if(typeof t!="string"&&!Te(t))throw Error("Field selector is not valid. Please specify a string selector or a valid DOM element.");const e=this.getKeyByFieldSelector(t);if(!e||!this.fields[e])return console.error("Field not found. Check the field selector."),this;const s=this.getListenerType(this.fields[e].elem.type);return this.removeListener(s,this.fields[e].elem,this.handlerChange),this.clearErrors(),delete this.fields[e],this}removeGroup(t){if(typeof t!="string")throw Error("Group selector is not valid. Please specify a string selector.");const e=this.getKeyByFieldSelector(t);return!e||!this.groupFields[e]?(console.error("Group not found. Check the group selector."),this):(this.groupFields[e].elems.forEach(s=>{const n=this.getListenerType(s.type);this.removeListener(n,s,this.handlerChange)}),this.clearErrors(),delete this.groupFields[e],this)}addRequiredGroup(t,e,s,n){if(typeof t!="string"&&!Te(t))throw Error("Group selector is not valid. Please specify a string selector or a valid DOM element.");let a;if(typeof t=="string"?a=this.form.querySelector(t):a=t,!a)throw Error("Group selector not found! Please check the group selector.");const r=a.querySelectorAll("input"),o=Array.from(r).filter(c=>{const d=Qp(this.groupFields,Jp(c));return d?d[1].elems.find(u=>u!==c):!0}),l=this.setKeyByFieldSelector(t);return this.groupFields[l]={rules:[{rule:Cs.Required,errorMessage:e,successMessage:n}],groupElem:a,elems:o,touched:!1,isValid:void 0,config:s},r.forEach(c=>{this.setListeners(c)}),this}getListenerType(t){switch(t){case"checkbox":case"select-one":case"file":case"radio":return"change";default:return"input"}}setListeners(t){const e=this.getListenerType(t.type);this.removeListener(e,t,this.handlerChange),this.addListener(e,t,this.handlerChange)}clearFieldLabel(t){var e,s;(e=this.errorLabels[t])==null||e.remove(),(s=this.successLabels[t])==null||s.remove()}clearFieldStyle(t){var e,s,n,a;const r=this.fields[t],o=((e=r.config)==null?void 0:e.errorFieldStyle)||this.globalConfig.errorFieldStyle;Object.keys(o).forEach(c=>{r.elem.style[c]=""});const l=((s=r.config)==null?void 0:s.successFieldStyle)||this.globalConfig.successFieldStyle||{};Object.keys(l).forEach(c=>{r.elem.style[c]=""}),r.elem.classList.remove(...xt(((n=r.config)==null?void 0:n.errorFieldCssClass)||this.globalConfig.errorFieldCssClass),...xt(((a=r.config)==null?void 0:a.successFieldCssClass)||this.globalConfig.successFieldCssClass))}clearErrors(){var t,e;Object.keys(this.errorLabels).forEach(s=>this.errorLabels[s].remove()),Object.keys(this.successLabels).forEach(s=>this.successLabels[s].remove());for(const s in this.fields)this.clearFieldStyle(s);for(const s in this.groupFields){const n=this.groupFields[s],a=((t=n.config)==null?void 0:t.errorFieldStyle)||this.globalConfig.errorFieldStyle;Object.keys(a).forEach(o=>{n.elems.forEach(l=>{var c;l.style[o]="",l.classList.remove(...xt(((c=n.config)==null?void 0:c.errorFieldCssClass)||this.globalConfig.errorFieldCssClass))})});const r=((e=n.config)==null?void 0:e.successFieldStyle)||this.globalConfig.successFieldStyle||{};Object.keys(r).forEach(o=>{n.elems.forEach(l=>{var c;l.style[o]="",l.classList.remove(...xt(((c=n.config)==null?void 0:c.successFieldCssClass)||this.globalConfig.successFieldCssClass))})})}this.tooltips=[]}isTooltip(){return!!this.globalConfig.tooltip}lockForm(){const t=this.form.querySelectorAll("input, textarea, button, select");for(let e=0,s=t.length;e<s;++e)t[e].setAttribute("data-just-validate-fallback-disabled",t[e].disabled?"true":"false"),t[e].setAttribute("disabled","disabled"),t[e].style.pointerEvents="none",t[e].style.webkitFilter="grayscale(100%)",t[e].style.filter="grayscale(100%)"}unlockForm(){const t=this.form.querySelectorAll("input, textarea, button, select");for(let e=0,s=t.length;e<s;++e)t[e].getAttribute("data-just-validate-fallback-disabled")!=="true"&&t[e].removeAttribute("disabled"),t[e].style.pointerEvents="",t[e].style.webkitFilter="",t[e].style.filter=""}renderTooltip(t,e,s){var n;const{top:a,left:r,width:o,height:l}=t.getBoundingClientRect(),c=e.getBoundingClientRect(),d=s||((n=this.globalConfig.tooltip)==null?void 0:n.position);switch(d){case"left":{e.style.top=`${a+l/2-c.height/2}px`,e.style.left=`${r-c.width-mi}px`;break}case"top":{e.style.top=`${a-c.height-mi}px`,e.style.left=`${r+o/2-c.width/2}px`;break}case"right":{e.style.top=`${a+l/2-c.height/2}px`,e.style.left=`${r+o+mi}px`;break}case"bottom":{e.style.top=`${a+l+mi}px`,e.style.left=`${r+o/2-c.width/2}px`;break}}return e.dataset.direction=d,{refresh:()=>{this.renderTooltip(t,e,s)}}}createErrorLabelElem(t,e,s){const n=document.createElement("div");n.innerHTML=e;const a=this.isTooltip()?s==null?void 0:s.errorLabelStyle:(s==null?void 0:s.errorLabelStyle)||this.globalConfig.errorLabelStyle;return Object.assign(n.style,a),n.classList.add(...xt((s==null?void 0:s.errorLabelCssClass)||this.globalConfig.errorLabelCssClass),"just-validate-error-label"),this.isTooltip()&&(n.dataset.tooltip="true"),this.globalConfig.testingMode&&(n.dataset.testId=`error-label-${t}`),this.errorLabels[t]=n,n}createSuccessLabelElem(t,e,s){if(e===void 0)return null;const n=document.createElement("div");n.innerHTML=e;const a=(s==null?void 0:s.successLabelStyle)||this.globalConfig.successLabelStyle;return Object.assign(n.style,a),n.classList.add(...xt((s==null?void 0:s.successLabelCssClass)||this.globalConfig.successLabelCssClass),"just-validate-success-label"),this.globalConfig.testingMode&&(n.dataset.testId=`success-label-${t}`),this.successLabels[t]=n,n}renderErrorsContainer(t,e){const s=e||this.globalConfig.errorsContainer;if(typeof s=="string"){const n=this.form.querySelector(s);if(n)return n.appendChild(t),!0;console.error(`Error container with ${s} selector not found. Errors will be rendered as usual`)}return s instanceof Element?(s.appendChild(t),!0):(s!==void 0&&console.error("Error container not found. It should be a string or existing Element. Errors will be rendered as usual"),!1)}renderGroupLabel(t,e,s,n){!n&&this.renderErrorsContainer(e,s)||t.appendChild(e)}renderFieldLabel(t,e,s,n){var a,r,o,l,c,d,u;if(!(!n&&this.renderErrorsContainer(e,s)))if(t.type==="checkbox"||t.type==="radio"){const h=document.querySelector(`label[for="${t.getAttribute("id")}"]`);((r=(a=t.parentElement)==null?void 0:a.tagName)==null?void 0:r.toLowerCase())==="label"?(l=(o=t.parentElement)==null?void 0:o.parentElement)==null||l.appendChild(e):h?(c=h.parentElement)==null||c.appendChild(e):(d=t.parentElement)==null||d.appendChild(e)}else(u=t.parentElement)==null||u.appendChild(e)}showLabels(t,e){Object.keys(t).forEach((s,n)=>{const a=t[s],r=this.getKeyByFieldSelector(s);if(!r||!this.fields[r]){console.error("Field not found. Check the field selector.");return}const o=this.fields[r];o.isValid=!e,this.clearFieldStyle(r),this.clearFieldLabel(r),this.renderFieldError(r,!1,a),n===0&&this.globalConfig.focusInvalidField&&setTimeout(()=>o.elem.focus(),0)})}showErrors(t){if(typeof t!="object")throw Error("[showErrors]: Errors should be an object with key: value format");this.showLabels(t,!0)}showSuccessLabels(t){if(typeof t!="object")throw Error("[showSuccessLabels]: Labels should be an object with key: value format");this.showLabels(t,!1)}renderFieldError(t,e=!1,s){var n,a,r,o,l,c;const d=this.fields[t];if(d.isValid===!1&&(this.isValid=!1),d.isValid===void 0||!e&&!this.isSubmitted&&!d.touched&&s===void 0)return;if(d.isValid){if(!d.asyncCheckPending){const h=this.createSuccessLabelElem(t,s!==void 0?s:d.successMessage,d.config);h&&this.renderFieldLabel(d.elem,h,(n=d.config)==null?void 0:n.errorsContainer,!0),d.elem.classList.add(...xt(((a=d.config)==null?void 0:a.successFieldCssClass)||this.globalConfig.successFieldCssClass))}return}d.elem.classList.add(...xt(((r=d.config)==null?void 0:r.errorFieldCssClass)||this.globalConfig.errorFieldCssClass));const u=this.createErrorLabelElem(t,s!==void 0?s:d.errorMessage,d.config);this.renderFieldLabel(d.elem,u,(o=d.config)==null?void 0:o.errorsContainer),this.isTooltip()&&this.tooltips.push(this.renderTooltip(d.elem,u,(c=(l=d.config)==null?void 0:l.tooltip)==null?void 0:c.position))}renderGroupError(t,e=!0){var s,n,a,r;const o=this.groupFields[t];if(o.isValid===!1&&(this.isValid=!1),o.isValid===void 0||!e&&!this.isSubmitted&&!o.touched)return;if(o.isValid){o.elems.forEach(d=>{var u,h;Object.assign(d.style,((u=o.config)==null?void 0:u.successFieldStyle)||this.globalConfig.successFieldStyle),d.classList.add(...xt(((h=o.config)==null?void 0:h.successFieldCssClass)||this.globalConfig.successFieldCssClass))});const c=this.createSuccessLabelElem(t,o.successMessage,o.config);c&&this.renderGroupLabel(o.groupElem,c,(s=o.config)==null?void 0:s.errorsContainer,!0);return}this.isValid=!1,o.elems.forEach(c=>{var d,u;Object.assign(c.style,((d=o.config)==null?void 0:d.errorFieldStyle)||this.globalConfig.errorFieldStyle),c.classList.add(...xt(((u=o.config)==null?void 0:u.errorFieldCssClass)||this.globalConfig.errorFieldCssClass))});const l=this.createErrorLabelElem(t,o.errorMessage,o.config);this.renderGroupLabel(o.groupElem,l,(n=o.config)==null?void 0:n.errorsContainer),this.isTooltip()&&this.tooltips.push(this.renderTooltip(o.groupElem,l,(r=(a=o.config)==null?void 0:a.tooltip)==null?void 0:r.position))}renderErrors(t=!1){if(!(!this.isSubmitted&&!t&&!this.globalConfig.validateBeforeSubmitting)){this.clearErrors(),this.isValid=!0;for(const e in this.groupFields)this.renderGroupError(e);for(const e in this.fields)this.renderFieldError(e)}}destroy(){this.eventListeners.forEach(t=>{this.removeListener(t.type,t.elem,t.func)}),Object.keys(this.customStyleTags).forEach(t=>{this.customStyleTags[t].remove()}),this.clearErrors(),this.globalConfig.lockForm&&this.unlockForm()}refresh(){this.destroy(),this.form?(this.initialize(this.form,this.globalConfig),Object.keys(this.fields).forEach(t=>{const e=this.getFieldSelectorByKey(t);e&&this.addField(e,[...this.fields[t].rules],this.fields[t].config)})):console.error("Cannot initialize the library! Form is not defined")}setCurrentLocale(t){if(typeof t!="string"&&t!==void 0){console.error("Current locale should be a string");return}this.currentLocale=t,this.isSubmitted&&this.validate()}onSuccess(t){return this.onSuccessCallback=t,this}onFail(t){return this.onFailCallback=t,this}onValidate(t){return this.onValidateCallback=t,this}}const Ys={form:document.querySelector("#sign-up-form"),input:document.querySelector("#email"),btn:document.querySelector("#submit-form"),modal:document.querySelector(".form-modal"),userEmail:document.querySelector(".user-email")},os={emptyMessage:"Заполните это поле",errorMessage:"Некорректный email",successMessage:"Подходит"},Jt={fields:{success:"success-field",error:"error-field"},labels:{general:"labels",success:"success-label",error:"error-label"},modifiers:{granted:"unlocked",denied:"locked"}},ig=new eg(Ys.form,{successFieldCssClass:[Jt.fields.success],errorFieldCssClass:[Jt.fields.error],successLabelCssClass:[Jt.labels.general,Jt.labels.success],errorLabelCssClass:[Jt.labels.general,Jt.labels.error],validateBeforeSubmitting:!0});ig.addField(Ys.input,[{rule:"required",errorMessage:os.emptyMessage},{rule:"email",errorMessage:os.errorMessage}],{successMessage:os.successMessage});class sg{constructor(t,e){L(this,"unlockSubmitBtn",()=>{this.btn.classList.replace(this.cssClasses.modifiers.denied,this.cssClasses.modifiers.granted)});L(this,"lockSubmitBtn",()=>{this.btn.classList.replace(this.cssClasses.modifiers.granted,this.cssClasses.modifiers.denied)});L(this,"getState",()=>this.input.classList.contains(this.cssClasses.fields.success));L(this,"handleInputChange",()=>this.getState()?this.unlockSubmitBtn():this.lockSubmitBtn());L(this,"removeSuccessLabel",()=>document.querySelector(`.${this.cssClasses.labels.success}`).remove());L(this,"clearInput",()=>this.input.value="");L(this,"insertUserEmail",()=>this.userEmail.textContent=this.input.value);L(this,"restoreInitialState",()=>{this.clearInput(),this.removeSuccessLabel(),this.lockSubmitBtn()});L(this,"handleFormSubmit",t=>{this.getState()&&(t.preventDefault(),this.insertUserEmail(),this.modal.showModal(),this.restoreInitialState())});L(this,"init",()=>{this.input.addEventListener("input",this.handleInputChange),this.form.addEventListener("submit",this.handleFormSubmit)});this.form=t.form,this.input=t.input,this.btn=t.btn,this.modal=t.modal,this.userEmail=t.userEmail,this.cssClasses=e}}const ng=new sg(Ys,Jt);ng.init();$l(document.querySelectorAll("table"));const ag=new Hl;ag.initWith("role",{thead:"rowgroup",tbody:"rowgroup",tfoot:"rowgroup",tr:"row",td:"cell",th:"columnheader","th[scope=row]":"rowheader"});const rg=new Ra("w");rg.initWith([["w-master-2","w-slave-2"]]);const og=new Ra("h");og.initWith([["h-master-1","h-slave-1"],["h-master-2","h-slave-2"],["h-master-3","h-slave-3"]]);const te=document.querySelector(".sidebar"),Ca=document.querySelector(".sidebar-toggle");let Ea=null;Ca.addEventListener("click",()=>{Ca.classList.toggle("active"),te.classList.contains("isOpen")?(te.classList.remove("isOpen"),clearTimeout(Ea)):(te.style.display="initial",Ea=setTimeout(()=>requestAnimationFrame(()=>te.classList.add("isOpen")),.1))});te.addEventListener("transitionend",()=>!te.classList.contains("isOpen")&&(te.style.display="none"));const Xs=document.querySelector('[href="mailto:nospam@google.com"]');let La=null;const lg=()=>Xs.setAttribute("href","mailto:KrivoshlykovNN@yandex.ru"),cg=()=>Xs.setAttribute("href","mailto:nospampls@google.com"),dg=()=>{clearTimeout(La),lg(),La=setTimeout(cg,1)};Xs.addEventListener("click",dg);const ug=(i,t)=>{document.querySelectorAll(`${i} ${t}`).forEach(s=>{const n=s.closest(`${i}`),a=()=>{s.style.display="none",n.removeEventListener("scrollend",a,{passive:!0})};n.addEventListener("scrollend",a,{passive:!0})})};ug(".layout-center",".scroll-down");console.log(`%cCoded by ✨Nazhdaque✨
+`)):Array.isArray(e)?i.push.apply(i,e):z(i)||t.unshift(""+e);return t},textSize:function(i,t,e){var s=[].concat(t),n=s.length,a=i.font,r=0,o;for(i.font=e.string,o=0;o<n;++o)r=Math.max(i.measureText(s[o]).width,r);return i.font=a,{height:n*e.lineHeight,width:r}},bound:function(i,t,e){return Math.max(i,Math.min(t,e))},arrayDiff:function(i,t){var e=i.slice(),s=[],n,a,r,o;for(n=0,r=t.length;n<r;++n)o=t[n],a=e.indexOf(o),a===-1?s.push([o,1]):e.splice(a,1);for(n=0,r=e.length;n<r;++n)s.push([e[n],-1]);return s},rasterize:function(i){return Math.round(i*Ma)/Ma}};function as(i,t){var e=t.x,s=t.y;if(e===null)return{x:0,y:-1};if(s===null)return{x:1,y:0};var n=i.x-e,a=i.y-s,r=Math.sqrt(n*n+a*a);return{x:r?n/r:0,y:r?a/r:-1}}function Uf(i,t,e,s,n){switch(n){case"center":e=s=0;break;case"bottom":e=0,s=1;break;case"right":e=1,s=0;break;case"left":e=-1,s=0;break;case"top":e=0,s=-1;break;case"start":e=-e,s=-s;break;case"end":break;default:n*=Math.PI/180,e=Math.cos(n),s=Math.sin(n);break}return{x:i,y:t,vx:e,vy:s}}var Kf=0,Fr=1,zr=2,Rr=4,Vr=8;function hi(i,t,e){var s=Kf;return i<e.left?s|=Fr:i>e.right&&(s|=zr),t<e.top?s|=Vr:t>e.bottom&&(s|=Rr),s}function Zf(i,t){for(var e=i.x0,s=i.y0,n=i.x1,a=i.y1,r=hi(e,s,t),o=hi(n,a,t),l,c,d;!(!(r|o)||r&o);)l=r||o,l&Vr?(c=e+(n-e)*(t.top-s)/(a-s),d=t.top):l&Rr?(c=e+(n-e)*(t.bottom-s)/(a-s),d=t.bottom):l&zr?(d=s+(a-s)*(t.right-e)/(n-e),c=t.right):l&Fr&&(d=s+(a-s)*(t.left-e)/(n-e),c=t.left),l===r?(e=c,s=d,r=hi(e,s,t)):(n=c,a=d,o=hi(n,a,t));return{x0:e,x1:n,y0:s,y1:a}}function fi(i,t){var e=t.anchor,s=i,n,a;return t.clamp&&(s=Zf(s,t.area)),e==="start"?(n=s.x0,a=s.y0):e==="end"?(n=s.x1,a=s.y1):(n=(s.x0+s.x1)/2,a=(s.y0+s.y1)/2),Uf(n,a,i.vx,i.vy,t.align)}var pi={arc:function(i,t){var e=(i.startAngle+i.endAngle)/2,s=Math.cos(e),n=Math.sin(e),a=i.innerRadius,r=i.outerRadius;return fi({x0:i.x+s*a,y0:i.y+n*a,x1:i.x+s*r,y1:i.y+n*r,vx:s,vy:n},t)},point:function(i,t){var e=as(i,t.origin),s=e.x*i.options.radius,n=e.y*i.options.radius;return fi({x0:i.x-s,y0:i.y-n,x1:i.x+s,y1:i.y+n,vx:e.x,vy:e.y},t)},bar:function(i,t){var e=as(i,t.origin),s=i.x,n=i.y,a=0,r=0;return i.horizontal?(s=Math.min(i.x,i.base),a=Math.abs(i.base-i.x)):(n=Math.min(i.y,i.base),r=Math.abs(i.base-i.y)),fi({x0:s,y0:n+r,x1:s+a,y1:n,vx:e.x,vy:e.y},t)},fallback:function(i,t){var e=as(i,t.origin);return fi({x0:i.x,y0:i.y,x1:i.x+(i.width||0),y1:i.y+(i.height||0),vx:e.x,vy:e.y},t)}},Dt=Re.rasterize;function Jf(i){var t=i.borderWidth||0,e=i.padding,s=i.size.height,n=i.size.width,a=-n/2,r=-s/2;return{frame:{x:a-e.left-t,y:r-e.top-t,w:n+e.width+t*2,h:s+e.height+t*2},text:{x:a,y:r,w:n,h:s}}}function Qf(i,t){var e=t.chart.getDatasetMeta(t.datasetIndex).vScale;if(!e)return null;if(e.xCenter!==void 0&&e.yCenter!==void 0)return{x:e.xCenter,y:e.yCenter};var s=e.getBasePixel();return i.horizontal?{x:s,y:null}:{x:null,y:s}}function tp(i){return i instanceof le?pi.arc:i instanceof Fe?pi.point:i instanceof ze?pi.bar:pi.fallback}function ep(i,t,e,s,n,a){var r=Math.PI/2;if(a){var o=Math.min(a,n/2,s/2),l=t+o,c=e+o,d=t+s-o,u=e+n-o;i.moveTo(t,c),l<d&&c<u?(i.arc(l,c,o,-Math.PI,-r),i.arc(d,c,o,-r,0),i.arc(d,u,o,0,r),i.arc(l,u,o,r,Math.PI)):l<d?(i.moveTo(l,e),i.arc(d,c,o,-r,r),i.arc(l,c,o,r,Math.PI+r)):c<u?(i.arc(l,c,o,-Math.PI,0),i.arc(l,u,o,0,Math.PI)):i.arc(l,c,o,-Math.PI,Math.PI),i.closePath(),i.moveTo(t,e)}else i.rect(t,e,s,n)}function ip(i,t,e){var s=e.backgroundColor,n=e.borderColor,a=e.borderWidth;!s&&(!n||!a)||(i.beginPath(),ep(i,Dt(t.x)+a/2,Dt(t.y)+a/2,Dt(t.w)-a,Dt(t.h)-a,e.borderRadius),i.closePath(),s&&(i.fillStyle=s,i.fill()),n&&a&&(i.strokeStyle=n,i.lineWidth=a,i.lineJoin="miter",i.stroke()))}function sp(i,t,e){var s=e.lineHeight,n=i.w,a=i.x,r=i.y+s/2;return t==="center"?a+=n/2:(t==="end"||t==="right")&&(a+=n),{h:s,w:n,x:a,y:r}}function np(i,t,e){var s=i.shadowBlur,n=e.stroked,a=Dt(e.x),r=Dt(e.y),o=Dt(e.w);n&&i.strokeText(t,a,r,o),e.filled&&(s&&n&&(i.shadowBlur=0),i.fillText(t,a,r,o),s&&n&&(i.shadowBlur=s))}function ap(i,t,e,s){var n=s.textAlign,a=s.color,r=!!a,o=s.font,l=t.length,c=s.textStrokeColor,d=s.textStrokeWidth,u=c&&d,h;if(!(!l||!r&&!u))for(e=sp(e,n,o),i.font=o.string,i.textAlign=n,i.textBaseline="middle",i.shadowBlur=s.textShadowBlur,i.shadowColor=s.textShadowColor,r&&(i.fillStyle=a),u&&(i.lineJoin="round",i.lineWidth=d,i.strokeStyle=c),h=0,l=t.length;h<l;++h)np(i,t[h],{stroked:u,filled:r,w:e.w,x:e.x,y:e.y+e.h*h})}var Br=function(i,t,e,s){var n=this;n._config=i,n._index=s,n._model=null,n._rects=null,n._ctx=t,n._el=e};St(Br.prototype,{_modelize:function(i,t,e,s){var n=this,a=n._index,r=Z(q([e.font,{}],s,a)),o=q([e.color,X.color],s,a);return{align:q([e.align,"center"],s,a),anchor:q([e.anchor,"center"],s,a),area:s.chart.chartArea,backgroundColor:q([e.backgroundColor,null],s,a),borderColor:q([e.borderColor,null],s,a),borderRadius:q([e.borderRadius,0],s,a),borderWidth:q([e.borderWidth,0],s,a),clamp:q([e.clamp,!1],s,a),clip:q([e.clip,!1],s,a),color:o,display:i,font:r,lines:t,offset:q([e.offset,4],s,a),opacity:q([e.opacity,1],s,a),origin:Qf(n._el,s),padding:tt(q([e.padding,4],s,a)),positioner:tp(n._el),rotation:q([e.rotation,0],s,a)*(Math.PI/180),size:Re.textSize(n._ctx,t,r),textAlign:q([e.textAlign,"start"],s,a),textShadowBlur:q([e.textShadowBlur,0],s,a),textShadowColor:q([e.textShadowColor,o],s,a),textStrokeColor:q([e.textStrokeColor,o],s,a),textStrokeWidth:q([e.textStrokeWidth,0],s,a)}},update:function(i){var t=this,e=null,s=null,n=t._index,a=t._config,r,o,l,c=q([a.display,!0],i,n);c&&(r=i.dataset.data[n],o=I($(a.formatter,[r,i]),r),l=z(o)?[]:Re.toTextLines(o),l.length&&(e=t._modelize(c,l,a,i),s=Jf(e))),t._model=e,t._rects=s},geometry:function(){return this._rects?this._rects.frame:{}},rotation:function(){return this._model?this._model.rotation:0},visible:function(){return this._model&&this._model.opacity},model:function(){return this._model},draw:function(i,t){var e=this,s=i.ctx,n=e._model,a=e._rects,r;this.visible()&&(s.save(),n.clip&&(r=n.area,s.beginPath(),s.rect(r.left,r.top,r.right-r.left,r.bottom-r.top),s.clip()),s.globalAlpha=Re.bound(0,n.opacity,1),s.translate(Dt(t.x),Dt(t.y)),s.rotate(n.rotation),ip(s,a.frame,n),ap(s,n.lines,a.text,n),s.restore())}});var rp=Number.MIN_SAFE_INTEGER||-9007199254740991,op=Number.MAX_SAFE_INTEGER||9007199254740991;function we(i,t,e){var s=Math.cos(e),n=Math.sin(e),a=t.x,r=t.y;return{x:a+s*(i.x-a)-n*(i.y-r),y:r+n*(i.x-a)+s*(i.y-r)}}function Ta(i,t){var e=op,s=rp,n=t.origin,a,r,o,l,c;for(a=0;a<i.length;++a)r=i[a],o=r.x-n.x,l=r.y-n.y,c=t.vx*o+t.vy*l,e=Math.min(e,c),s=Math.max(s,c);return{min:e,max:s}}function gi(i,t){var e=t.x-i.x,s=t.y-i.y,n=Math.sqrt(e*e+s*s);return{vx:(t.x-i.x)/n,vy:(t.y-i.y)/n,origin:i,ln:n}}var Nr=function(){this._rotation=0,this._rect={x:0,y:0,w:0,h:0}};St(Nr.prototype,{center:function(){var i=this._rect;return{x:i.x+i.w/2,y:i.y+i.h/2}},update:function(i,t,e){this._rotation=e,this._rect={x:t.x+i.x,y:t.y+i.y,w:t.w,h:t.h}},contains:function(i){var t=this,e=1,s=t._rect;return i=we(i,t.center(),-t._rotation),!(i.x<s.x-e||i.y<s.y-e||i.x>s.x+s.w+e*2||i.y>s.y+s.h+e*2)},intersects:function(i){var t=this._points(),e=i._points(),s=[gi(t[0],t[1]),gi(t[0],t[3])],n,a,r;for(this._rotation!==i._rotation&&s.push(gi(e[0],e[1]),gi(e[0],e[3])),n=0;n<s.length;++n)if(a=Ta(t,s[n]),r=Ta(e,s[n]),a.max<r.min||r.max<a.min)return!1;return!0},_points:function(){var i=this,t=i._rect,e=i._rotation,s=i.center();return[we({x:t.x,y:t.y},s,e),we({x:t.x+t.w,y:t.y},s,e),we({x:t.x+t.w,y:t.y+t.h},s,e),we({x:t.x,y:t.y+t.h},s,e)]}});function Hr(i,t,e){var s=t.positioner(i,t),n=s.vx,a=s.vy;if(!n&&!a)return{x:s.x,y:s.y};var r=e.w,o=e.h,l=t.rotation,c=Math.abs(r/2*Math.cos(l))+Math.abs(o/2*Math.sin(l)),d=Math.abs(r/2*Math.sin(l))+Math.abs(o/2*Math.cos(l)),u=1/Math.max(Math.abs(n),Math.abs(a));return c*=n*u,d*=a*u,c+=t.offset*n,d+=t.offset*a,{x:s.x+c,y:s.y+d}}function lp(i,t){var e,s,n,a;for(e=i.length-1;e>=0;--e)for(n=i[e].$layout,s=e-1;s>=0&&n._visible;--s)a=i[s].$layout,a._visible&&n._box.intersects(a._box)&&t(n,a);return i}function cp(i){var t,e,s,n,a,r,o;for(t=0,e=i.length;t<e;++t)s=i[t],n=s.$layout,n._visible&&(o=new Proxy(s._el,{get:(l,c)=>l.getProps([c],!0)[c]}),a=s.geometry(),r=Hr(o,s.model(),a),n._box.update(r,a,s.rotation()));return lp(i,function(l,c){var d=l._hidable,u=c._hidable;d&&u||u?c._visible=!1:d&&(l._visible=!1)})}var Ve={prepare:function(i){var t=[],e,s,n,a,r;for(e=0,n=i.length;e<n;++e)for(s=0,a=i[e].length;s<a;++s)r=i[e][s],t.push(r),r.$layout={_box:new Nr,_hidable:!1,_visible:!0,_set:e,_idx:r._index};return t.sort(function(o,l){var c=o.$layout,d=l.$layout;return c._idx===d._idx?d._set-c._set:d._idx-c._idx}),this.update(t),t},update:function(i){var t=!1,e,s,n,a,r;for(e=0,s=i.length;e<s;++e)n=i[e],a=n.model(),r=n.$layout,r._hidable=a&&a.display==="auto",r._visible=n.visible(),t|=r._hidable;t&&cp(i)},lookup:function(i,t){var e,s;for(e=i.length-1;e>=0;--e)if(s=i[e].$layout,s&&s._visible&&s._box.contains(t))return i[e];return null},draw:function(i,t){var e,s,n,a,r,o;for(e=0,s=t.length;e<s;++e)n=t[e],a=n.$layout,a._visible&&(r=n.geometry(),o=Hr(n._el,n.model(),r),a._box.update(o,r,n.rotation()),n.draw(i,o))}},dp=function(i){if(z(i))return null;var t=i,e,s,n;if(R(i))if(!z(i.label))t=i.label;else if(!z(i.r))t=i.r;else for(t="",e=Object.keys(i),n=0,s=e.length;n<s;++n)t+=(n!==0?", ":"")+e[n]+": "+i[e[n]];return""+t},up={align:"center",anchor:"center",backgroundColor:null,borderColor:null,borderRadius:0,borderWidth:0,clamp:!1,clip:!1,color:void 0,display:!0,font:{family:void 0,lineHeight:1.2,size:void 0,style:void 0,weight:null},formatter:dp,labels:void 0,listeners:{},offset:4,opacity:1,padding:{top:4,right:4,bottom:4,left:4},rotation:0,textAlign:"start",textStrokeColor:void 0,textStrokeWidth:0,textShadowBlur:0,textShadowColor:void 0},at="$datalabels",$r="$default";function hp(i,t){var e=i.datalabels,s={},n=[],a,r;return e===!1?null:(e===!0&&(e={}),t=St({},[t,e]),a=t.labels||{},r=Object.keys(a),delete t.labels,r.length?r.forEach(function(o){a[o]&&n.push(St({},[t,a[o],{_key:o}]))}):n.push(t),s=n.reduce(function(o,l){return H(l.listeners||{},function(c,d){o[d]=o[d]||{},o[d][l._key||$r]=c}),delete l.listeners,o},{}),{labels:n,listeners:s})}function ks(i,t,e,s){if(t){var n=e.$context,a=e.$groups,r;t[a._set]&&(r=t[a._set][a._key],r&&$(r,[n,s])===!0&&(i[at]._dirty=!0,e.update(n)))}}function fp(i,t,e,s,n){var a,r;!e&&!s||(e?s?e!==s&&(r=a=!0):r=!0:a=!0,r&&ks(i,t.leave,e,n),a&&ks(i,t.enter,s,n))}function pp(i,t){var e=i[at],s=e._listeners,n,a;if(!(!s.enter&&!s.leave)){if(t.type==="mousemove")a=Ve.lookup(e._labels,t);else if(t.type!=="mouseout")return;n=e._hovered,e._hovered=a,fp(i,s,n,a,t)}}function gp(i,t){var e=i[at],s=e._listeners.click,n=s&&Ve.lookup(e._labels,t);n&&ks(i,s,n,t)}var mp={id:"datalabels",defaults:up,beforeInit:function(i){i[at]={_actives:[]}},beforeUpdate:function(i){var t=i[at];t._listened=!1,t._listeners={},t._datasets=[],t._labels=[]},afterDatasetUpdate:function(i,t,e){var s=t.index,n=i[at],a=n._datasets[s]=[],r=i.isDatasetVisible(s),o=i.data.datasets[s],l=hp(o,e),c=t.meta.data||[],d=i.ctx,u,h,f,m,p,v,x,g;for(d.save(),u=0,f=c.length;u<f;++u)if(x=c[u],x[at]=[],r&&x&&i.getDataVisibility(u)&&!x.skip)for(h=0,m=l.labels.length;h<m;++h)p=l.labels[h],v=p._key,g=new Br(p,d,x,u),g.$groups={_set:s,_key:v||$r},g.$context={active:!1,chart:i,dataIndex:u,dataset:o,datasetIndex:s},g.update(g.$context),x[at].push(g),a.push(g);d.restore(),St(n._listeners,l.listeners,{merger:function(b,y,_){y[b]=y[b]||{},y[b][t.index]=_[b],n._listened=!0}})},afterUpdate:function(i){i[at]._labels=Ve.prepare(i[at]._datasets)},afterDatasetsDraw:function(i){Ve.draw(i,i[at]._labels)},beforeEvent:function(i,t){if(i[at]._listened){var e=t.event;switch(e.type){case"mousemove":case"mouseout":pp(i,e);break;case"click":gp(i,e);break}}},afterEvent:function(i){var t=i[at],e=t._actives,s=t._actives=i.getActiveElements(),n=Re.arrayDiff(e,s),a,r,o,l,c,d,u;for(a=0,r=n.length;a<r;++a)if(c=n[a],c[1])for(u=c[0].element[at]||[],o=0,l=u.length;o<l;++o)d=u[o],d.$context.active=c[1]===1,d.update(d.$context);(t._dirty||n.length)&&(Ve.update(t._labels),i.render()),delete t._dirty}};class bp{constructor(){L(this,"getValues",t=>(t.forEach(e=>this.brandColors.push(`hsl(${getComputedStyle(document.documentElement,null).getPropertyValue(e)})`)),this.brandColors));this.brandColors=[]}}const vp=new bp,Se=vp.getValues(["--clr-1a","--clr-1b","--clr-2a","--clr-2b","--clr-2c"]),xp={labels:["Data-1","Data-2","Data-3","Data-4","Data-5"],datasets:[{label:"Amount",data:[65,72,88,43,56],backgroundColor:[Se[0],Se[1],Se[2],Se[3],Se[4]],hoverOffset:50}]},yp={cutout:50,maintainAspectRatio:!1,plugins:{legend:{position:"left"},colors:{enabled:!0},datalabels:{backgroundColor:"#000",borderRadius:3,font:{size:14},formatter:(i,t)=>{const s=t.chart.data.datasets[0].data.reduce((a,r)=>a+r,0);return(i/s*100).toFixed(2)+"%"},color:"#fff"}}},_p={type:"doughnut",plugins:[mp],options:yp,data:xp};document.querySelectorAll(".chart-doughnut").forEach(i=>new pt(i,_p));const wp=["January","February","March","April","May","June","July"],Sp={labels:wp,datasets:[{label:"Dataset-1",data:[65,34,82,75,47,55,91],backgroundColor:["rgba(255, 99, 132, 0.2)","rgba(255, 159, 64, 0.2)","rgba(255, 205, 86, 0.2)","rgba(75, 192, 192, 0.2)","rgba(54, 162, 235, 0.2)","rgba(153, 102, 255, 0.2)","rgba(201, 203, 207, 0.2)"],borderColor:["rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(153, 102, 255)","rgb(201, 203, 207)"],borderWidth:1}]},Mp={maintainAspectRatio:!1,scales:{y:{beginAtZero:!0}}},Tp={type:"bar",data:Sp,options:Mp};document.querySelectorAll(".chart-bar").forEach(i=>new pt(i,Tp));const kp=["January","February","March","April","May","June","July"],Cp={labels:kp,datasets:[{label:"Data-1",data:[65,34,82,75,47,55,91],fill:{target:!0,above:"rgba(54, 162, 235, 0.1)"},tension:.25},{label:"Data-2",data:[25,44,54,32,14,46,52],fill:{target:!0,above:"rgba(255, 99, 132, 0.1)"},tension:.25}]},Ep={maintainAspectRatio:!1,scales:{y:{beginAtZero:!0}}},Lp={type:"line",data:Cp,options:Ep};document.querySelectorAll(".chart-line").forEach(i=>new pt(i,Lp));const Pp=()=>{const i=document.querySelectorAll(".video");for(let t=0;t<i.length;t++)Ap(i[t])},Ap=i=>{const t=i.querySelector(".video__link"),e=i.querySelector(".video__media"),s=i.querySelector(".video__button"),n=Op(e);i.addEventListener("click",()=>{const a=Dp(n);t.remove(),s.remove(),i.appendChild(a)}),i.classList.add("video--enabled")},Op=i=>{const t=/https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;return i.src.match(t)[1]},Dp=i=>{const t=document.createElement("iframe");return t.setAttribute("allowfullscreen",""),t.setAttribute("allow","autoplay"),t.setAttribute("src",Ip(i)),t.classList.add("video__media"),t},Ip=i=>{const t="?rel=0&showinfo=0&autoplay=1";return"https://www.youtube.com/embed/"+i+t};Pp();var Fp=Object.defineProperty,zp=(i,t,e)=>t in i?Fp(i,t,{enumerable:!0,configurable:!0,writable:!0,value:e}):i[t]=e,N=(i,t,e)=>(zp(i,typeof t!="symbol"?t+"":t,e),e);const Rp=/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,Vp=/^-?[0-9]\d*$/,Bp=/^(?=.*[A-Za-z])(?=.*\d).{8,}$/,Np=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,Hp=i=>{let t=i;return typeof i=="string"&&(t=i.trim()),!t},$p=i=>Rp.test(i),jp=(i,t)=>i.length>t,qp=(i,t)=>i.length<t,Wp=i=>typeof i!="string"?!1:!isNaN(+i)&&!isNaN(parseFloat(i)),Gp=i=>Vp.test(i),Yp=i=>Bp.test(i),Xp=i=>Np.test(i),Up=(i,t)=>i>t,Kp=(i,t)=>i<t,Tt=i=>typeof i!="string"||i==="";var B=(i=>(i.Required="required",i.Email="email",i.MinLength="minLength",i.MaxLength="maxLength",i.Password="password",i.Number="number",i.Integer="integer",i.MaxNumber="maxNumber",i.MinNumber="minNumber",i.StrongPassword="strongPassword",i.CustomRegexp="customRegexp",i.MinFilesCount="minFilesCount",i.MaxFilesCount="maxFilesCount",i.Files="files",i))(B||{}),Cs=(i=>(i.Required="required",i))(Cs||{}),jr=(i=>(i.Label="label",i.LabelArrow="labelArrow",i))(jr||{});const ka=[{key:B.Required,dict:{en:"The field is required"}},{key:B.Email,dict:{en:"Email has invalid format"}},{key:B.MaxLength,dict:{en:"The field must contain a maximum of :value characters"}},{key:B.MinLength,dict:{en:"The field must contain a minimum of :value characters"}},{key:B.Password,dict:{en:"Password must contain minimum eight characters, at least one letter and one number"}},{key:B.StrongPassword,dict:{en:"Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"}},{key:B.Number,dict:{en:"Value should be a number"}},{key:B.MaxNumber,dict:{en:"Number should be less or equal than :value"}},{key:B.MinNumber,dict:{en:"Number should be more or equal than :value"}},{key:B.MinFilesCount,dict:{en:"Files count should be more or equal than :value"}},{key:B.MaxFilesCount,dict:{en:"Files count should be less or equal than :value"}},{key:B.Files,dict:{en:"Uploaded files have one or several invalid properties (extension/size/type etc)."}}],Zp="Value is incorrect",Me=i=>typeof i=="object"&&i!==null&&"then"in i&&typeof i.then=="function",Jp=i=>{let t=i;const e=[];for(;t;)e.unshift(t),t=t.parentNode;return e},Qp=(i,t)=>{const e=[...t].reverse();for(let s=0,n=e.length;s<n;++s){const a=e[s];for(const r in i){const o=i[r];if(o.groupElem===a)return[r,o]}}return null},xt=i=>Array.isArray(i)?i.filter(t=>t.length>0):typeof i=="string"&&i.trim()?[...i.split(" ").filter(t=>t.length>0)]:[],Te=i=>i instanceof Element||i instanceof HTMLDocument,tg=".just-validate-error-label[data-tooltip=true]{position:fixed;padding:4px 8px;background:#423f3f;color:#fff;white-space:nowrap;z-index:10;border-radius:4px;transform:translateY(-5px)}.just-validate-error-label[data-tooltip=true]:before{content:'';width:0;height:0;border-left:solid 5px transparent;border-right:solid 5px transparent;border-bottom:solid 5px #423f3f;position:absolute;z-index:3;display:block;bottom:-5px;transform:rotate(180deg);left:calc(50% - 5px)}.just-validate-error-label[data-tooltip=true][data-direction=left]{transform:translateX(-5px)}.just-validate-error-label[data-tooltip=true][data-direction=left]:before{right:-7px;bottom:auto;left:auto;top:calc(50% - 2px);transform:rotate(90deg)}.just-validate-error-label[data-tooltip=true][data-direction=right]{transform:translateX(5px)}.just-validate-error-label[data-tooltip=true][data-direction=right]:before{right:auto;bottom:auto;left:-7px;top:calc(50% - 2px);transform:rotate(-90deg)}.just-validate-error-label[data-tooltip=true][data-direction=bottom]{transform:translateY(5px)}.just-validate-error-label[data-tooltip=true][data-direction=bottom]:before{right:auto;bottom:auto;left:calc(50% - 5px);top:-5px;transform:rotate(0)}",mi=5,rs={errorFieldStyle:{color:"#b81111",border:"1px solid #B81111"},errorFieldCssClass:"just-validate-error-field",successFieldCssClass:"just-validate-success-field",errorLabelStyle:{color:"#b81111"},errorLabelCssClass:"just-validate-error-label",successLabelCssClass:"just-validate-success-label",focusInvalidField:!0,lockForm:!0,testingMode:!1,validateBeforeSubmitting:!1};class eg{constructor(t,e,s){N(this,"form",null),N(this,"fields",{}),N(this,"groupFields",{}),N(this,"errors",{}),N(this,"isValid",!1),N(this,"isSubmitted",!1),N(this,"globalConfig",rs),N(this,"errorLabels",{}),N(this,"successLabels",{}),N(this,"eventListeners",[]),N(this,"dictLocale",ka),N(this,"currentLocale","en"),N(this,"customStyleTags",{}),N(this,"onSuccessCallback"),N(this,"onFailCallback"),N(this,"onValidateCallback"),N(this,"tooltips",[]),N(this,"lastScrollPosition"),N(this,"isScrollTick"),N(this,"fieldIds",new Map),N(this,"getKeyByFieldSelector",n=>this.fieldIds.get(n)),N(this,"getFieldSelectorByKey",n=>{for(const[a,r]of this.fieldIds)if(n===r)return a}),N(this,"getCompatibleFields",()=>{const n={};return Object.keys(this.fields).forEach(a=>{let r=a;const o=this.getFieldSelectorByKey(a);typeof o=="string"&&(r=o),n[r]={...this.fields[a]}}),n}),N(this,"setKeyByFieldSelector",n=>{if(this.fieldIds.has(n))return this.fieldIds.get(n);const a=String(this.fieldIds.size+1);return this.fieldIds.set(n,a),a}),N(this,"refreshAllTooltips",()=>{this.tooltips.forEach(n=>{n.refresh()})}),N(this,"handleDocumentScroll",()=>{this.lastScrollPosition=window.scrollY,this.isScrollTick||(window.requestAnimationFrame(()=>{this.refreshAllTooltips(),this.isScrollTick=!1}),this.isScrollTick=!0)}),N(this,"formSubmitHandler",n=>{n.preventDefault(),this.isSubmitted=!0,this.validateHandler(n)}),N(this,"handleFieldChange",n=>{let a;for(const r in this.fields)if(this.fields[r].elem===n){a=r;break}a&&(this.fields[a].touched=!0,this.validateField(a,!0))}),N(this,"handleGroupChange",n=>{let a;for(const r in this.groupFields)if(this.groupFields[r].elems.find(l=>l===n)){a=r;break}a&&(this.groupFields[a].touched=!0,this.validateGroup(a,!0))}),N(this,"handlerChange",n=>{n.target&&(this.handleFieldChange(n.target),this.handleGroupChange(n.target),this.renderErrors())}),this.initialize(t,e,s)}initialize(t,e,s){if(this.form=null,this.errors={},this.isValid=!1,this.isSubmitted=!1,this.globalConfig=rs,this.errorLabels={},this.successLabels={},this.eventListeners=[],this.customStyleTags={},this.tooltips=[],this.currentLocale="en",typeof t=="string"){const n=document.querySelector(t);if(!n)throw Error(`Form with ${t} selector not found! Please check the form selector`);this.setForm(n)}else if(t instanceof HTMLFormElement)this.setForm(t);else throw Error("Form selector is not valid. Please specify a string selector or a DOM element.");if(this.globalConfig={...rs,...e},s&&(this.dictLocale=[...s,...ka]),this.isTooltip()){const n=document.createElement("style");n.textContent=tg,this.customStyleTags[jr.Label]=document.head.appendChild(n),this.addListener("scroll",document,this.handleDocumentScroll)}}getLocalisedString(t,e,s){var n;const a=s??t;let r=(n=this.dictLocale.find(o=>o.key===a))==null?void 0:n.dict[this.currentLocale];if(r||s&&(r=s),r&&e!==void 0)switch(t){case B.MaxLength:case B.MinLength:case B.MaxNumber:case B.MinNumber:case B.MinFilesCount:case B.MaxFilesCount:r=r.replace(":value",String(e))}return r||s||Zp}getFieldErrorMessage(t,e){const s=typeof t.errorMessage=="function"?t.errorMessage(this.getElemValue(e),this.fields):t.errorMessage;return this.getLocalisedString(t.rule,t.value,s)}getFieldSuccessMessage(t,e){const s=typeof t=="function"?t(this.getElemValue(e),this.fields):t;return this.getLocalisedString(void 0,void 0,s)}getGroupErrorMessage(t){return this.getLocalisedString(t.rule,void 0,t.errorMessage)}getGroupSuccessMessage(t){if(t.successMessage)return this.getLocalisedString(void 0,void 0,t.successMessage)}setFieldInvalid(t,e){this.fields[t].isValid=!1,this.fields[t].errorMessage=this.getFieldErrorMessage(e,this.fields[t].elem)}setFieldValid(t,e){this.fields[t].isValid=!0,e!==void 0&&(this.fields[t].successMessage=this.getFieldSuccessMessage(e,this.fields[t].elem))}setGroupInvalid(t,e){this.groupFields[t].isValid=!1,this.groupFields[t].errorMessage=this.getGroupErrorMessage(e)}setGroupValid(t,e){this.groupFields[t].isValid=!0,this.groupFields[t].successMessage=this.getGroupSuccessMessage(e)}getElemValue(t){switch(t.type){case"checkbox":return t.checked;case"file":return t.files;default:return t.value}}validateGroupRule(t,e,s){switch(s.rule){case Cs.Required:e.every(n=>!n.checked)?this.setGroupInvalid(t,s):this.setGroupValid(t,s)}}validateFieldRule(t,e,s,n=!1){const a=s.value,r=this.getElemValue(e);if(s.plugin){s.plugin(r,this.getCompatibleFields())||this.setFieldInvalid(t,s);return}switch(s.rule){case B.Required:{Hp(r)&&this.setFieldInvalid(t,s);break}case B.Email:{if(Tt(r))break;$p(r)||this.setFieldInvalid(t,s);break}case B.MaxLength:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof a!="number"){console.error(`Value for ${s.rule} rule for [${t}] should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Tt(r))break;jp(r,a)&&this.setFieldInvalid(t,s);break}case B.MinLength:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof a!="number"){console.error(`Value for ${s.rule} rule for [${t}] should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Tt(r))break;qp(r,a)&&this.setFieldInvalid(t,s);break}case B.Password:{if(Tt(r))break;Yp(r)||this.setFieldInvalid(t,s);break}case B.StrongPassword:{if(Tt(r))break;Xp(r)||this.setFieldInvalid(t,s);break}case B.Number:{if(Tt(r))break;Wp(r)||this.setFieldInvalid(t,s);break}case B.Integer:{if(Tt(r))break;Gp(r)||this.setFieldInvalid(t,s);break}case B.MaxNumber:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof a!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Tt(r))break;const o=+r;(Number.isNaN(o)||Up(o,a))&&this.setFieldInvalid(t,s);break}case B.MinNumber:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof a!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Tt(r))break;const o=+r;(Number.isNaN(o)||Kp(o,a))&&this.setFieldInvalid(t,s);break}case B.CustomRegexp:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);return}let o;try{o=new RegExp(a)}catch{console.error(`Value for ${s.rule} rule for [${t}] should be a valid regexp. This field will be always invalid.`),this.setFieldInvalid(t,s);break}const l=String(r);l!==""&&!o.test(l)&&this.setFieldInvalid(t,s);break}case B.MinFilesCount:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof a!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Number.isFinite(r==null?void 0:r.length)&&r.length<a){this.setFieldInvalid(t,s);break}break}case B.MaxFilesCount:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);break}if(typeof a!="number"){console.error(`Value for ${s.rule} rule for [${t}] field should be a number. The field will be always invalid.`),this.setFieldInvalid(t,s);break}if(Number.isFinite(r==null?void 0:r.length)&&r.length>a){this.setFieldInvalid(t,s);break}break}case B.Files:{if(a===void 0){console.error(`Value for ${s.rule} rule for [${t}] field is not defined. This field will be always invalid.`),this.setFieldInvalid(t,s);return}if(typeof a!="object"){console.error(`Value for ${s.rule} rule for [${t}] field should be an object. This field will be always invalid.`),this.setFieldInvalid(t,s);return}const o=a.files;if(typeof o!="object"){console.error(`Value for ${s.rule} rule for [${t}] field should be an object with files array. This field will be always invalid.`),this.setFieldInvalid(t,s);return}const l=(c,d)=>{const u=Number.isFinite(d.minSize)&&c.size<d.minSize,h=Number.isFinite(d.maxSize)&&c.size>d.maxSize,f=Array.isArray(d.names)&&!d.names.includes(c.name),m=Array.isArray(d.extensions)&&!d.extensions.includes(c.name.split(".")[c.name.split(".").length-1]),p=Array.isArray(d.types)&&!d.types.includes(c.type);return u||h||f||m||p};if(typeof r=="object"&&r!==null)for(let c=0,d=r.length;c<d;++c){const u=r.item(c);if(!u){this.setFieldInvalid(t,s);break}if(l(u,o)){this.setFieldInvalid(t,s);break}}break}default:{if(typeof s.validator!="function"){console.error(`Validator for custom rule for [${t}] field should be a function. This field will be always invalid.`),this.setFieldInvalid(t,s);return}const o=s.validator(r,this.getCompatibleFields());if(typeof o!="boolean"&&typeof o!="function"&&console.error(`Validator return value for [${t}] field should be boolean or function. It will be cast to boolean.`),typeof o=="function")if(n)this.fields[t].asyncCheckPending=!0;else{this.fields[t].asyncCheckPending=!1;const l=o();if(!Me(l)){console.error(`Validator function for custom rule for [${t}] field should return a Promise. This field will be always invalid.`),this.setFieldInvalid(t,s);return}return l.then(c=>{c||this.setFieldInvalid(t,s)}).catch(()=>{this.setFieldInvalid(t,s)})}o||this.setFieldInvalid(t,s)}}}isFormValid(){let t=!0;for(let e=0,s=Object.values(this.fields).length;e<s;++e){const n=Object.values(this.fields)[e];if(n.isValid===void 0){t=void 0;break}if(n.isValid===!1){t=!1;break}}for(let e=0,s=Object.values(this.groupFields).length;e<s;++e){const n=Object.values(this.groupFields)[e];if(n.isValid===void 0){t=void 0;break}if(n.isValid===!1){t=!1;break}}return t}validateField(t,e=!1){var s;const n=this.fields[t];n.isValid=!0;const a=[];return[...n.rules].reverse().forEach(r=>{const o=this.validateFieldRule(t,n.elem,r,e);Me(o)&&a.push(o)}),n.isValid&&this.setFieldValid(t,(s=n.config)==null?void 0:s.successMessage),Promise.allSettled(a).finally(()=>{var r;e&&((r=this.onValidateCallback)==null||r.call(this,{isValid:this.isFormValid(),isSubmitted:this.isSubmitted,fields:this.getCompatibleFields(),groups:{...this.groupFields}}))})}revalidateField(t){if(typeof t!="string"&&!Te(t))throw Error("Field selector is not valid. Please specify a string selector or a valid DOM element.");const e=this.getKeyByFieldSelector(t);return!e||!this.fields[e]?(console.error("Field not found. Check the field selector."),Promise.reject()):new Promise(s=>{this.validateField(e,!0).finally(()=>{this.clearFieldStyle(e),this.clearFieldLabel(e),this.renderFieldError(e,!0),s(!!this.fields[e].isValid)})})}revalidateGroup(t){if(typeof t!="string"&&!Te(t))throw Error("Group selector is not valid. Please specify a string selector or a valid DOM element.");const e=this.getKeyByFieldSelector(t);return!e||!this.groupFields[e]?(console.error("Group not found. Check the group selector."),Promise.reject()):new Promise(s=>{this.validateGroup(e).finally(()=>{this.clearFieldLabel(e),this.renderGroupError(e,!0),s(!!this.groupFields[e].isValid)})})}validateGroup(t,e=!1){const s=this.groupFields[t],n=[];return[...s.rules].reverse().forEach(a=>{const r=this.validateGroupRule(t,s.elems,a);Me(r)&&n.push(r)}),Promise.allSettled(n).finally(()=>{var a;e&&((a=this.onValidateCallback)==null||a.call(this,{isValid:this.isFormValid(),isSubmitted:this.isSubmitted,fields:this.getCompatibleFields(),groups:{...this.groupFields}}))})}focusInvalidField(){for(const t in this.fields){const e=this.fields[t];if(!e.isValid){setTimeout(()=>e.elem.focus(),0);break}}}afterSubmitValidation(t=!1){this.renderErrors(t),this.globalConfig.focusInvalidField&&this.focusInvalidField()}validate(t=!1){return new Promise(e=>{const s=[];Object.keys(this.fields).forEach(n=>{const a=this.validateField(n);Me(a)&&s.push(a)}),Object.keys(this.groupFields).forEach(n=>{const a=this.validateGroup(n);Me(a)&&s.push(a)}),Promise.allSettled(s).then(()=>{var n;this.afterSubmitValidation(t),(n=this.onValidateCallback)==null||n.call(this,{isValid:this.isFormValid(),isSubmitted:this.isSubmitted,fields:this.getCompatibleFields(),groups:{...this.groupFields}}),e(!!s.length)})})}revalidate(){return new Promise(t=>{this.validateHandler(void 0,!0).finally(()=>{this.globalConfig.focusInvalidField&&this.focusInvalidField(),t(this.isValid)})})}validateHandler(t,e=!1){return this.globalConfig.lockForm&&this.lockForm(),this.validate(e).finally(()=>{var s,n;this.globalConfig.lockForm&&this.unlockForm(),this.isValid?(s=this.onSuccessCallback)==null||s.call(this,t):(n=this.onFailCallback)==null||n.call(this,this.getCompatibleFields(),this.groupFields)})}setForm(t){this.form=t,this.form.setAttribute("novalidate","novalidate"),this.removeListener("submit",this.form,this.formSubmitHandler),this.addListener("submit",this.form,this.formSubmitHandler)}addListener(t,e,s){e.addEventListener(t,s),this.eventListeners.push({type:t,elem:e,func:s})}removeListener(t,e,s){e.removeEventListener(t,s),this.eventListeners=this.eventListeners.filter(n=>n.type!==t||n.elem!==e)}addField(t,e,s){if(typeof t!="string"&&!Te(t))throw Error("Field selector is not valid. Please specify a string selector or a valid DOM element.");let n;if(typeof t=="string"?n=this.form.querySelector(t):n=t,!n)throw Error("Field doesn't exist in the DOM! Please check the field selector.");if(!Array.isArray(e)||!e.length)throw Error("Rules argument should be an array and should contain at least 1 element.");e.forEach(r=>{if(!("rule"in r||"validator"in r||"plugin"in r))throw Error("Rules argument must contain at least one rule or validator property.");if(!r.validator&&!r.plugin&&(!r.rule||!Object.values(B).includes(r.rule)))throw Error(`Rule should be one of these types: ${Object.values(B).join(", ")}. Provided value: ${r.rule}`)});const a=this.setKeyByFieldSelector(t);return this.fields[a]={elem:n,rules:e,isValid:void 0,touched:!1,config:s},this.setListeners(n),(this.isSubmitted||this.globalConfig.validateBeforeSubmitting)&&this.validateField(a),this}removeField(t){if(typeof t!="string"&&!Te(t))throw Error("Field selector is not valid. Please specify a string selector or a valid DOM element.");const e=this.getKeyByFieldSelector(t);if(!e||!this.fields[e])return console.error("Field not found. Check the field selector."),this;const s=this.getListenerType(this.fields[e].elem.type);return this.removeListener(s,this.fields[e].elem,this.handlerChange),this.clearErrors(),delete this.fields[e],this}removeGroup(t){if(typeof t!="string")throw Error("Group selector is not valid. Please specify a string selector.");const e=this.getKeyByFieldSelector(t);return!e||!this.groupFields[e]?(console.error("Group not found. Check the group selector."),this):(this.groupFields[e].elems.forEach(s=>{const n=this.getListenerType(s.type);this.removeListener(n,s,this.handlerChange)}),this.clearErrors(),delete this.groupFields[e],this)}addRequiredGroup(t,e,s,n){if(typeof t!="string"&&!Te(t))throw Error("Group selector is not valid. Please specify a string selector or a valid DOM element.");let a;if(typeof t=="string"?a=this.form.querySelector(t):a=t,!a)throw Error("Group selector not found! Please check the group selector.");const r=a.querySelectorAll("input"),o=Array.from(r).filter(c=>{const d=Qp(this.groupFields,Jp(c));return d?d[1].elems.find(u=>u!==c):!0}),l=this.setKeyByFieldSelector(t);return this.groupFields[l]={rules:[{rule:Cs.Required,errorMessage:e,successMessage:n}],groupElem:a,elems:o,touched:!1,isValid:void 0,config:s},r.forEach(c=>{this.setListeners(c)}),this}getListenerType(t){switch(t){case"checkbox":case"select-one":case"file":case"radio":return"change";default:return"input"}}setListeners(t){const e=this.getListenerType(t.type);this.removeListener(e,t,this.handlerChange),this.addListener(e,t,this.handlerChange)}clearFieldLabel(t){var e,s;(e=this.errorLabels[t])==null||e.remove(),(s=this.successLabels[t])==null||s.remove()}clearFieldStyle(t){var e,s,n,a;const r=this.fields[t],o=((e=r.config)==null?void 0:e.errorFieldStyle)||this.globalConfig.errorFieldStyle;Object.keys(o).forEach(c=>{r.elem.style[c]=""});const l=((s=r.config)==null?void 0:s.successFieldStyle)||this.globalConfig.successFieldStyle||{};Object.keys(l).forEach(c=>{r.elem.style[c]=""}),r.elem.classList.remove(...xt(((n=r.config)==null?void 0:n.errorFieldCssClass)||this.globalConfig.errorFieldCssClass),...xt(((a=r.config)==null?void 0:a.successFieldCssClass)||this.globalConfig.successFieldCssClass))}clearErrors(){var t,e;Object.keys(this.errorLabels).forEach(s=>this.errorLabels[s].remove()),Object.keys(this.successLabels).forEach(s=>this.successLabels[s].remove());for(const s in this.fields)this.clearFieldStyle(s);for(const s in this.groupFields){const n=this.groupFields[s],a=((t=n.config)==null?void 0:t.errorFieldStyle)||this.globalConfig.errorFieldStyle;Object.keys(a).forEach(o=>{n.elems.forEach(l=>{var c;l.style[o]="",l.classList.remove(...xt(((c=n.config)==null?void 0:c.errorFieldCssClass)||this.globalConfig.errorFieldCssClass))})});const r=((e=n.config)==null?void 0:e.successFieldStyle)||this.globalConfig.successFieldStyle||{};Object.keys(r).forEach(o=>{n.elems.forEach(l=>{var c;l.style[o]="",l.classList.remove(...xt(((c=n.config)==null?void 0:c.successFieldCssClass)||this.globalConfig.successFieldCssClass))})})}this.tooltips=[]}isTooltip(){return!!this.globalConfig.tooltip}lockForm(){const t=this.form.querySelectorAll("input, textarea, button, select");for(let e=0,s=t.length;e<s;++e)t[e].setAttribute("data-just-validate-fallback-disabled",t[e].disabled?"true":"false"),t[e].setAttribute("disabled","disabled"),t[e].style.pointerEvents="none",t[e].style.webkitFilter="grayscale(100%)",t[e].style.filter="grayscale(100%)"}unlockForm(){const t=this.form.querySelectorAll("input, textarea, button, select");for(let e=0,s=t.length;e<s;++e)t[e].getAttribute("data-just-validate-fallback-disabled")!=="true"&&t[e].removeAttribute("disabled"),t[e].style.pointerEvents="",t[e].style.webkitFilter="",t[e].style.filter=""}renderTooltip(t,e,s){var n;const{top:a,left:r,width:o,height:l}=t.getBoundingClientRect(),c=e.getBoundingClientRect(),d=s||((n=this.globalConfig.tooltip)==null?void 0:n.position);switch(d){case"left":{e.style.top=`${a+l/2-c.height/2}px`,e.style.left=`${r-c.width-mi}px`;break}case"top":{e.style.top=`${a-c.height-mi}px`,e.style.left=`${r+o/2-c.width/2}px`;break}case"right":{e.style.top=`${a+l/2-c.height/2}px`,e.style.left=`${r+o+mi}px`;break}case"bottom":{e.style.top=`${a+l+mi}px`,e.style.left=`${r+o/2-c.width/2}px`;break}}return e.dataset.direction=d,{refresh:()=>{this.renderTooltip(t,e,s)}}}createErrorLabelElem(t,e,s){const n=document.createElement("div");n.innerHTML=e;const a=this.isTooltip()?s==null?void 0:s.errorLabelStyle:(s==null?void 0:s.errorLabelStyle)||this.globalConfig.errorLabelStyle;return Object.assign(n.style,a),n.classList.add(...xt((s==null?void 0:s.errorLabelCssClass)||this.globalConfig.errorLabelCssClass),"just-validate-error-label"),this.isTooltip()&&(n.dataset.tooltip="true"),this.globalConfig.testingMode&&(n.dataset.testId=`error-label-${t}`),this.errorLabels[t]=n,n}createSuccessLabelElem(t,e,s){if(e===void 0)return null;const n=document.createElement("div");n.innerHTML=e;const a=(s==null?void 0:s.successLabelStyle)||this.globalConfig.successLabelStyle;return Object.assign(n.style,a),n.classList.add(...xt((s==null?void 0:s.successLabelCssClass)||this.globalConfig.successLabelCssClass),"just-validate-success-label"),this.globalConfig.testingMode&&(n.dataset.testId=`success-label-${t}`),this.successLabels[t]=n,n}renderErrorsContainer(t,e){const s=e||this.globalConfig.errorsContainer;if(typeof s=="string"){const n=this.form.querySelector(s);if(n)return n.appendChild(t),!0;console.error(`Error container with ${s} selector not found. Errors will be rendered as usual`)}return s instanceof Element?(s.appendChild(t),!0):(s!==void 0&&console.error("Error container not found. It should be a string or existing Element. Errors will be rendered as usual"),!1)}renderGroupLabel(t,e,s,n){!n&&this.renderErrorsContainer(e,s)||t.appendChild(e)}renderFieldLabel(t,e,s,n){var a,r,o,l,c,d,u;if(!(!n&&this.renderErrorsContainer(e,s)))if(t.type==="checkbox"||t.type==="radio"){const h=document.querySelector(`label[for="${t.getAttribute("id")}"]`);((r=(a=t.parentElement)==null?void 0:a.tagName)==null?void 0:r.toLowerCase())==="label"?(l=(o=t.parentElement)==null?void 0:o.parentElement)==null||l.appendChild(e):h?(c=h.parentElement)==null||c.appendChild(e):(d=t.parentElement)==null||d.appendChild(e)}else(u=t.parentElement)==null||u.appendChild(e)}showLabels(t,e){Object.keys(t).forEach((s,n)=>{const a=t[s],r=this.getKeyByFieldSelector(s);if(!r||!this.fields[r]){console.error("Field not found. Check the field selector.");return}const o=this.fields[r];o.isValid=!e,this.clearFieldStyle(r),this.clearFieldLabel(r),this.renderFieldError(r,!1,a),n===0&&this.globalConfig.focusInvalidField&&setTimeout(()=>o.elem.focus(),0)})}showErrors(t){if(typeof t!="object")throw Error("[showErrors]: Errors should be an object with key: value format");this.showLabels(t,!0)}showSuccessLabels(t){if(typeof t!="object")throw Error("[showSuccessLabels]: Labels should be an object with key: value format");this.showLabels(t,!1)}renderFieldError(t,e=!1,s){var n,a,r,o,l,c;const d=this.fields[t];if(d.isValid===!1&&(this.isValid=!1),d.isValid===void 0||!e&&!this.isSubmitted&&!d.touched&&s===void 0)return;if(d.isValid){if(!d.asyncCheckPending){const h=this.createSuccessLabelElem(t,s!==void 0?s:d.successMessage,d.config);h&&this.renderFieldLabel(d.elem,h,(n=d.config)==null?void 0:n.errorsContainer,!0),d.elem.classList.add(...xt(((a=d.config)==null?void 0:a.successFieldCssClass)||this.globalConfig.successFieldCssClass))}return}d.elem.classList.add(...xt(((r=d.config)==null?void 0:r.errorFieldCssClass)||this.globalConfig.errorFieldCssClass));const u=this.createErrorLabelElem(t,s!==void 0?s:d.errorMessage,d.config);this.renderFieldLabel(d.elem,u,(o=d.config)==null?void 0:o.errorsContainer),this.isTooltip()&&this.tooltips.push(this.renderTooltip(d.elem,u,(c=(l=d.config)==null?void 0:l.tooltip)==null?void 0:c.position))}renderGroupError(t,e=!0){var s,n,a,r;const o=this.groupFields[t];if(o.isValid===!1&&(this.isValid=!1),o.isValid===void 0||!e&&!this.isSubmitted&&!o.touched)return;if(o.isValid){o.elems.forEach(d=>{var u,h;Object.assign(d.style,((u=o.config)==null?void 0:u.successFieldStyle)||this.globalConfig.successFieldStyle),d.classList.add(...xt(((h=o.config)==null?void 0:h.successFieldCssClass)||this.globalConfig.successFieldCssClass))});const c=this.createSuccessLabelElem(t,o.successMessage,o.config);c&&this.renderGroupLabel(o.groupElem,c,(s=o.config)==null?void 0:s.errorsContainer,!0);return}this.isValid=!1,o.elems.forEach(c=>{var d,u;Object.assign(c.style,((d=o.config)==null?void 0:d.errorFieldStyle)||this.globalConfig.errorFieldStyle),c.classList.add(...xt(((u=o.config)==null?void 0:u.errorFieldCssClass)||this.globalConfig.errorFieldCssClass))});const l=this.createErrorLabelElem(t,o.errorMessage,o.config);this.renderGroupLabel(o.groupElem,l,(n=o.config)==null?void 0:n.errorsContainer),this.isTooltip()&&this.tooltips.push(this.renderTooltip(o.groupElem,l,(r=(a=o.config)==null?void 0:a.tooltip)==null?void 0:r.position))}renderErrors(t=!1){if(!(!this.isSubmitted&&!t&&!this.globalConfig.validateBeforeSubmitting)){this.clearErrors(),this.isValid=!0;for(const e in this.groupFields)this.renderGroupError(e);for(const e in this.fields)this.renderFieldError(e)}}destroy(){this.eventListeners.forEach(t=>{this.removeListener(t.type,t.elem,t.func)}),Object.keys(this.customStyleTags).forEach(t=>{this.customStyleTags[t].remove()}),this.clearErrors(),this.globalConfig.lockForm&&this.unlockForm()}refresh(){this.destroy(),this.form?(this.initialize(this.form,this.globalConfig),Object.keys(this.fields).forEach(t=>{const e=this.getFieldSelectorByKey(t);e&&this.addField(e,[...this.fields[t].rules],this.fields[t].config)})):console.error("Cannot initialize the library! Form is not defined")}setCurrentLocale(t){if(typeof t!="string"&&t!==void 0){console.error("Current locale should be a string");return}this.currentLocale=t,this.isSubmitted&&this.validate()}onSuccess(t){return this.onSuccessCallback=t,this}onFail(t){return this.onFailCallback=t,this}onValidate(t){return this.onValidateCallback=t,this}}const Ys={form:document.querySelector("#sign-up-form"),input:document.querySelector("#email"),btn:document.querySelector("#submit-form"),modal:document.querySelector(".form-modal"),userEmail:document.querySelector(".user-email")},os={emptyMessage:"Заполните это поле",errorMessage:"Некорректный email",successMessage:"Подходит"},Jt={fields:{success:"success-field",error:"error-field"},labels:{general:"labels",success:"success-label",error:"error-label"},modifiers:{granted:"unlocked",denied:"locked"}},ig=new eg(Ys.form,{successFieldCssClass:[Jt.fields.success],errorFieldCssClass:[Jt.fields.error],successLabelCssClass:[Jt.labels.general,Jt.labels.success],errorLabelCssClass:[Jt.labels.general,Jt.labels.error],validateBeforeSubmitting:!0});ig.addField(Ys.input,[{rule:"required",errorMessage:os.emptyMessage},{rule:"email",errorMessage:os.errorMessage}],{successMessage:os.successMessage});class sg{constructor(t,e){L(this,"unlockSubmitBtn",()=>{this.btn.classList.replace(this.cssClasses.modifiers.denied,this.cssClasses.modifiers.granted)});L(this,"lockSubmitBtn",()=>{this.btn.classList.replace(this.cssClasses.modifiers.granted,this.cssClasses.modifiers.denied)});L(this,"getState",()=>this.input.classList.contains(this.cssClasses.fields.success));L(this,"handleInputChange",()=>this.getState()?this.unlockSubmitBtn():this.lockSubmitBtn());L(this,"removeSuccessLabel",()=>document.querySelector(`.${this.cssClasses.labels.success}`).remove());L(this,"clearInput",()=>this.input.value="");L(this,"insertUserEmail",()=>this.userEmail.textContent=this.input.value);L(this,"restoreInitialState",()=>{this.clearInput(),this.removeSuccessLabel(),this.lockSubmitBtn()});L(this,"handleFormSubmit",t=>{this.getState()&&(t.preventDefault(),this.insertUserEmail(),this.modal.showModal(),this.restoreInitialState())});L(this,"init",()=>{this.input.addEventListener("input",this.handleInputChange),this.form.addEventListener("submit",this.handleFormSubmit)});this.form=t.form,this.input=t.input,this.btn=t.btn,this.modal=t.modal,this.userEmail=t.userEmail,this.cssClasses=e}}const ng=new sg(Ys,Jt);ng.init();$l(document.querySelectorAll("table"));const ag=new Hl;ag.initWith("role",{thead:"rowgroup",tbody:"rowgroup",tfoot:"rowgroup",tr:"row",td:"cell",th:"columnheader","th[scope=row]":"rowheader"});const rg=new Ra("w");rg.initWith([["w-master-2","w-slave-2"]]);const og=new Ra("h");og.initWith([["h-master-1","h-slave-1"],["h-master-2","h-slave-2"],["h-master-3","h-slave-3"]]);const te=document.querySelector(".sidebar"),Ca=document.querySelector(".sidebar-toggle");let Ea=null;Ca.addEventListener("click",()=>{Ca.classList.toggle("active"),te.classList.contains("isOpen")?(te.classList.remove("isOpen"),clearTimeout(Ea)):(te.style.display="initial",Ea=setTimeout(()=>requestAnimationFrame(()=>te.classList.add("isOpen")),.1))});te.addEventListener("transitionend",()=>!te.classList.contains("isOpen")&&(te.style.display="none"));const Xs=document.querySelector('[href="mailto:nospam@google.com"]');let La=null;const lg=()=>Xs.setAttribute("href","mailto:KrivoshlykovNN@yandex.ru"),cg=()=>Xs.setAttribute("href","mailto:nospampls@google.com"),dg=()=>{clearTimeout(La),lg(),La=setTimeout(cg,1)};Xs.addEventListener("click",dg);const ug=(i,t)=>{document.querySelectorAll(`${i} ${t}`).forEach(s=>{const n=s.closest(`${i}`),a=()=>{s.style.display="none",n.removeEventListener("scrollend",a,{passive:!0})};n.addEventListener("scrollend",a,{passive:!0})})};ug(".layout-center",".scroll-down");console.log(`%cCoded by ✨Nazhdaque✨
 https://www.frontendmentor.io/profile/Nazhdaque/solutions`,"background: #222; color: chartreuse;");
