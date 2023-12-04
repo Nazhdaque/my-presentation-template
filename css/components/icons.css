@@ -1,7 +1,7 @@
 .icon-bg {
 	--img-w: var(--img-h);
 
-	background: var(--bg-solid, none);
+	background: var(--clr-solid, none);
 	transition: var(--tsn, none);
 	border-radius: var(--radius, initial);
 	line-height: normal;
@@ -23,19 +23,19 @@
 }
 
 .sphere-1a {
-	--bg-solid: var(--sphere-1a);
+	--clr-solid: var(--sphere-1a);
 }
 .sphere-1b {
-	--bg-solid: var(--sphere-1b);
+	--clr-solid: var(--sphere-1b);
 }
 .sphere-2a {
-	--bg-solid: var(--sphere-2a);
+	--clr-solid: var(--sphere-2a);
 }
 .sphere-2b {
-	--bg-solid: var(--sphere-2b);
+	--clr-solid: var(--sphere-2b);
 }
 .sphere-2c {
-	--bg-solid: var(--sphere-2c);
+	--clr-solid: var(--sphere-2c);
 }
 
 .eye {
@@ -68,7 +68,7 @@
 .mui-icon {
 	--icon-size: calc(var(--img-w) * 0.75);
 
-	color: hsl(var(--clr-0a)) !important;
+	color: var(--clr-solid, var(--clr-0a)) !important;
 	font-size: var(--icon-size) !important;
 	display: grid !important;
 	place-items: center;
@@ -79,11 +79,10 @@
 .contacts-icon {
 	--icon-size: calc(var(--img-h) * 0.65);
 	--img-h: var(--logo-height);
-	--bg-solid: hsl(var(--clr-1a));
 	--tsn: background-color var(--time);
 }
 .contacts-icon:where(:hover, :focus-visible) {
-	--bg-solid: hsl(var(--clr-1b));
+	--clr-solid: hsl(var(--clr-1b)) !important;
 }
 
 .phone {
@@ -102,7 +101,7 @@
 	padding-inline: 0;
 	content: "+7 (985) 285-66-68";
 	white-space: nowrap;
-	background-color: hsl(var(--clr-1a));
+	background-color: var(--clr-solid, hsl(var(--clr-1a)));
 	color: hsl(var(--clr-0a));
 	border-radius: 100vw;
 	display: grid;
@@ -115,7 +114,6 @@
 .phone:where(:hover, :focus-visible)::before {
 	width: var(--content-width);
 	padding-inline: 1.5em 0.25em;
-	background-color: hsl(var(--clr-1b));
 	opacity: 1;
 }
 
@@ -126,12 +124,12 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| icomoon icons */
 .social-icon {
 	font-size: var(--logo-height) !important;
-	color: hsl(var(--clr-1a)) !important;
+	color: var(--clr-solid, hsl(var(--clr-1a))) !important;
 	width: 1em;
 	transition: color var(--time);
 }
 .social-icon:where(:hover, :focus-visible) {
-	color: hsl(var(--clr-1b)) !important;
+	--clr-solid: hsl(var(--clr-1b));
 }
 
 .icon-vk,

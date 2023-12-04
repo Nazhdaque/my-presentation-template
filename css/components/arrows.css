@@ -6,7 +6,7 @@
 	--factor-2: 0.75;
 	--min-arrow-length: calc(var(--img-size) * 2);
 
-	--arrow-clr: var(--bg-alpha, var(--clr-1b));
+	--arrow-clr: var(--clr-alpha, var(--clr-1b));
 	--head-size: calc(var(--img-size) / var(--factor-1));
 	--body-thickness: calc(var(--img-size) / (var(--factor-1) * var(--factor-2)));
 	--body-size: calc(100% - var(--head-size) + 1px);

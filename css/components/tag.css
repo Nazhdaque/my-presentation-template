@@ -9,17 +9,17 @@
 	margin-inline: 0.25em;
 	border-radius: 100vw;
 	color: hsl(var(--clr-0a));
-	background: var(--bg-solid, hsl(var(--clr-1b)));
+	background: var(--clr-solid, hsl(var(--clr-1b)));
 	isolation: isolate;
 	letter-spacing: 2px;
 }
 .tag.clr-1a::before {
-	--bg-solid: var(--sphere-1b);
+	--clr-solid: var(--sphere-1b);
 }
 .tag::before {
 	isolation: isolate;
 	content: "";
-	background: var(--bg-solid, var(--sphere-2c));
+	background: var(--clr-solid, var(--sphere-2c));
 	background-size: contain;
 	width: var(--img-size);
 	height: var(--img-size);

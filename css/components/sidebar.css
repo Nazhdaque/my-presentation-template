@@ -51,7 +51,7 @@
 }
 
 .sidebar-item__btn .icon-bg {
-	--bg-solid: var(--clr-bg);
+	--clr-solid: var(--clr-bg);
 	--tsn: background-color var(--time) var(--easing);
 
 	grid-area: 1 / 1;

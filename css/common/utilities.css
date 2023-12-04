@@ -250,26 +250,27 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| colors */
-.clr-txt-0a {
-	color: hsl(var(--clr-0a));
+.clr-0a {
+	--clr-solid: hsl(var(--clr-0a));
+	--clr-alpha: var(--clr-0a);
 }
-.clr-txt-0b {
-	color: hsl(var(--clr-0b));
-}
-
+/* .clr-0b {
+	--clr-solid: hsl(var(--clr-0b));
+	--clr-alpha: var(--clr-0b);
+} */
 .clr-1a {
-	--bg-solid: hsl(var(--clr-1a));
-	--bg-alpha: var(--clr-1a);
+	--clr-solid: hsl(var(--clr-1a));
+	--clr-alpha: var(--clr-1a);
 }
 .clr-1b {
-	--bg-solid: hsl(var(--clr-1b));
-	--bg-alpha: var(--clr-1b);
+	--clr-solid: hsl(var(--clr-1b));
+	--clr-alpha: var(--clr-1b);
 }
 .clr-2a {
-	--bg-solid: hsl(var(--clr-2a));
-	--bg-alpha: var(--clr-2a);
+	--clr-solid: hsl(var(--clr-2a));
+	--clr-alpha: var(--clr-2a);
 }
 .clr-2b {
-	--bg-solid: hsl(var(--clr-2b));
-	--bg-alpha: var(--clr-2b);
+	--clr-solid: hsl(var(--clr-2b));
+	--clr-alpha: var(--clr-2b);
 }

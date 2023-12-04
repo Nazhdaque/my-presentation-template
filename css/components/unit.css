@@ -24,7 +24,7 @@
 }
 .unit__img.-pipe {
 	isolation: isolate;
-	background: var(--bg-solid, hsl(var(--clr-1b)));
+	background: var(--clr-solid, hsl(var(--clr-1b)));
 	height: 100%;
 	width: 0.2em;
 }
@@ -44,7 +44,7 @@
 .unit__head.-pipe::before {
 	isolation: isolate;
 	content: "";
-	background-color: var(--bg-solid, hsl(var(--clr-1b)));
+	background-color: var(--clr-solid, hsl(var(--clr-1b)));
 }
 .unit__head.-pipe.-rl {
 	grid-template-columns: 1fr 0.2em;
