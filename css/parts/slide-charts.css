@@ -12,7 +12,6 @@
 .__slide-charts .slide-bg-overlay:nth-child(1) {
 	--side: var(--top);
 	--clip: var(--clp-top);
-	--bg: var(--clr-1b-solid);
 }
 
 .__slide-charts .slide-bg:nth-child(2) {
@@ -27,7 +26,7 @@
 	--gap-y: 2rem;
 
 	z-index: 1;
-	background-color: var(--clr-0a-solid);
+	background-color: hsl(var(--clr-0a));
 	border-radius: 8px;
 	place-self: start center;
 	padding: 2rem;
@@ -42,6 +41,4 @@
 	--gap-y: 0.25em;
 	--col: 3;
 	--x: 1;
-	--clr: var(--clr-1a-solid);
-	--sphere: var(--sphere-1b);
 }

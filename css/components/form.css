@@ -1,11 +1,10 @@
 .sign-up-form {
-	--success-color-solid: hsl(150, 75%, 50%);
-	--error-color-solid: var(--clr-2b-solid);
-	--error-color-alpha: var(--clr-2b-alpha);
+	--clr-fine: hsl(150, 75%, 50%);
+	--clr-fail: var(--clr-2b);
 
 	display: grid;
 	gap: 1rem;
-	color: var(--clr-1a-solid);
+	color: hsl(var(--clr-1a));
 }
 
 .sign-up-form__item {
@@ -25,22 +24,22 @@
 }
 
 .input-field {
-	--outline-color: hsl(var(--clr-1b-alpha), 0.5);
+	--outline-color: hsl(var(--clr-1b), 0.5);
 	--outline-thikness: calc(var(--border-thikness) * 2);
 	--outline-offset: calc(
 		(var(--outline-thikness) + var(--border-thikness)) * -1
 	);
 
-	border: var(--border-thikness) solid var(--clr-2c-solid);
-	background-color: var(--clr-0a-solid);
-	color: var(--clr-1a-solid);
+	border: var(--border-thikness) solid hsl(var(--clr-2c));
+	background-color: hsl(var(--clr-0a));
+	color: hsl(var(--clr-1a));
 }
 .input-field::placeholder {
-	color: var(--clr-2c-solid);
+	color: hsl(var(--clr-2c));
 	opacity: 1;
 }
 .input-field:where(:hover, :focus-visible) {
-	border-color: var(--clr-1a-solid);
+	border-color: hsl(var(--clr-1a));
 }
 .input-field:focus-visible {
 	outline: var(--outline-thikness) solid var(--outline-color);
@@ -55,16 +54,16 @@
 	right: 0;
 }
 .error-label {
-	color: var(--error-color-solid) !important;
+	color: hsl(var(--clr-fail)) !important;
 }
 .success-label {
-	color: var(--success-color-solid) !important;
+	color: var(--clr-fine) !important;
 }
 
 .input-field.error-field {
-	color: var(--error-color-solid);
-	border-color: var(--error-color-solid);
-	background-color: hsl(var(--error-color-alpha), 0.15);
+	color: hsl(var(--clr-fail));
+	border-color: hsl(var(--clr-fail));
+	background-color: hsl(var(--clr-fail), 0.15);
 }
 .input-field.error-field::placeholder {
 	opacity: 0;

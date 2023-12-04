@@ -13,7 +13,7 @@
 	gap: var(--card-gap);
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| card head */
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 .card__head {
 	display: grid;
 	position: relative;
@@ -31,7 +31,15 @@
 	--shadow: var(--img-shadow-bottom);
 }
 
-/* |||||||||| |||||||||| card title */
+.card__img.figure {
+	--shadow: none;
+}
+
+.card__img.img-card {
+	--img-h: 100%;
+}
+
+/* |||||||||| |||||||||| */
 .card__ttl {
 	grid-area: 1 / 1;
 	place-self: center;
@@ -41,7 +49,7 @@
 }
 
 .card__ttl.-bg {
-	color: var(--clr-0a-solid);
+	color: hsl(var(--clr-0a));
 }
 .card__ttl.-bg::before {
 	position: absolute;
@@ -59,7 +67,20 @@
 	z-index: -1;
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| x-axis */
+/* |||||||||| |||||||||| */
+.card__head-ttl {
+	--col: 3;
+	--x: 2;
+	--container-width: 100%;
+
+	grid-area: 1 / 1;
+	place-self: center;
+	padding: 1em;
+	z-index: 1;
+	pointer-events: none;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 .x-axis.card {
 	--shadow: var(--img-shadow-right);
 
@@ -82,7 +103,7 @@
 	grid-auto-rows: auto var(--img-h) auto;
 }
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| title side */
+/* |||||||||| |||||||||| |||||||||| |||||||||| */
 .-ttl-right {
 	grid-auto-flow: column;
 	grid-auto-columns: minmax(var(--img-h), auto) 1fr;

@@ -3,84 +3,80 @@
 	font-size: clamp(15px, 1dvw + 1dvh + 0.5vmin, 18px);
 	--max-content-width: 100rem;
 
-	/* |||||||||| |||||||||| |||||||||| |||||||||| colors */
+	/* |||||||||| |||||||||| |||||||||| |||||||||| */
 	/* #f5f5f5 */
-	--clr-0a-solid: hsl(0, 0%, 96%);
-	--clr-0a-alpha: 0, 0%, 96%;
-	--clr-0b-solid: hsl(0, 0%, 13%);
+	--clr-0a: 0, 0%, 96%;
+	--clr-0b: 0, 0%, 13%;
 
 	/* #1c355e */
-	--clr-1a-solid: hsl(217, 54%, 24%);
-	--clr-1a-alpha: 217, 54%, 24%;
-	--clr-1a-solid-darken-50: hsl(217, 54%, 12%);
+	--clr-1a-h: 217;
+	--clr-1a-s: 54%;
+	--clr-1a-l: 24%;
+	--clr-1a: var(--clr-1a-h), var(--clr-1a-s), var(--clr-1a-l);
 
 	/* #ef991f */
-	--clr-1b-solid: hsl(35, 87%, 53%);
-	--clr-1b-alpha: 35, 87%, 53%;
-	--clr-1b-solid-darken-50: hsl(35, 87%, 26.5%);
+	--clr-1b-h: 35;
+	--clr-1b-s: 87%;
+	--clr-1b-l: 53%;
+	--clr-1b: var(--clr-1b-h), var(--clr-1b-s), var(--clr-1b-l);
 
 	/* #2d7ad2 */
-	--clr-2a-solid: hsl(212, 65%, 50%);
-	--clr-2a-alpha: 212, 65%, 50%;
-	--clr-2a-solid-darken-50: hsl(212, 65%, 25%);
+	--clr-2a-h: 212;
+	--clr-2a-s: 65%;
+	--clr-2a-l: 50%;
+	--clr-2a: var(--clr-2a-h), var(--clr-2a-s), var(--clr-2a-l);
 
 	/* #dd3c4f */
-	--clr-2b-solid: hsl(353, 70%, 55%);
-	--clr-2b-alpha: 353, 70%, 55%;
-	--clr-2b-solid-darken-50: hsl(353, 70%, 27.5%);
+	--clr-2b-h: 353;
+	--clr-2b-s: 70%;
+	--clr-2b-l: 55%;
+	--clr-2b: var(--clr-2b-h), var(--clr-2b-s), var(--clr-2b-l);
 
 	/* #c7c5d3 */
-	--clr-2c-solid: rgb(199, 197, 211);
-	--clr-2c-alpha: 249, 14%, 80%;
-	--clr-2c-solid-darken-50: hsl(249, 14%, 40%);
+	--clr-2c-h: 249;
+	--clr-2c-s: 14%;
+	--clr-2c-l: 80%;
+	--clr-2c: var(--clr-2c-h), var(--clr-2c-s), var(--clr-2c-l);
 
-	/* |||||||||| |||||||||| |||||||||| |||||||||| icons bgs and img overlays */
+	/* |||||||||| |||||||||| |||||||||| |||||||||| */
 	--sphere-1a: radial-gradient(
 		circle at 65% 15%,
 		white 1px,
-		var(--clr-1a-solid) 3%,
-		var(--clr-1a-solid-darken-50) 60%,
-		var(--clr-1a-solid) 100%
+		hsl(var(--clr-1a-h), var(--clr-1a-s), calc(var(--clr-1a-l) * 1.5)) 3%,
+		hsl(var(--clr-1a-h), var(--clr-1a-s), calc(var(--clr-1a-l) * 0.5)) 60%,
+		hsl(var(--clr-1a-h), var(--clr-1a-s), calc(var(--clr-1a-l) * 1.5)) 100%
 	);
 
 	--sphere-1b: radial-gradient(
 		circle at 65% 15%,
 		white 1px,
-		var(--clr-1b-solid) 3%,
-		var(--clr-1b-solid-darken-50) 60%,
-		var(--clr-1b-solid) 100%
+		hsl(var(--clr-1b)) 3%,
+		hsl(var(--clr-1b-h), var(--clr-1b-s), calc(var(--clr-1b-l) * 0.4)) 60%,
+		hsl(var(--clr-1b)) 100%
 	);
 
 	--sphere-2a: radial-gradient(
 		circle at 65% 15%,
 		white 1px,
-		var(--clr-2a-solid) 3%,
-		var(--clr-2a-solid-darken-50) 60%,
-		var(--clr-2a-solid) 100%
+		hsl(var(--clr-2a)) 3%,
+		hsl(var(--clr-2a-h), var(--clr-2a-s), calc(var(--clr-2a-l) * 0.5)) 60%,
+		hsl(var(--clr-2a)) 100%
 	);
 
 	--sphere-2b: radial-gradient(
 		circle at 65% 15%,
 		white 1px,
-		var(--clr-2b-solid) 3%,
-		var(--clr-2b-solid-darken-50) 60%,
-		var(--clr-2b-solid) 100%
+		hsl(var(--clr-2b)) 3%,
+		hsl(var(--clr-2b-h), var(--clr-2b-s), calc(var(--clr-2b-l) * 0.5)) 60%,
+		hsl(var(--clr-2b)) 100%
 	);
 
 	--sphere-2c: radial-gradient(
 		circle at 65% 15%,
 		white 1px,
-		var(--clr-2c-solid) 3%,
-		var(--clr-2c-solid-darken-50) 60%,
-		var(--clr-2c-solid) 100%
-	);
-
-	--sphere-2c-1a: radial-gradient(
-		circle at 65% 15%,
-		white 1px,
-		var(--clr-2c-solid) 3%,
-		var(--clr-1a-solid-darken-50) 60%,
-		var(--clr-2c-solid) 100%
+		hsl(var(--clr-2c)) 3%,
+		hsl(var(--clr-2c-h), var(--clr-2c-s), calc(var(--clr-2c-l) * 0.1)) 60%,
+		hsl(var(--clr-2c)) 100%
 	);
 
 	--eye: radial-gradient(
@@ -90,11 +86,11 @@
 		hsl(0, 0%, 50%, 0.15) 100%
 	);
 
-	/* |||||||||| |||||||||| |||||||||| |||||||||| transition */
+	/* |||||||||| |||||||||| |||||||||| |||||||||| */
 	--time: 0.1s;
 	--easing: ease-in;
 
-	/* |||||||||| |||||||||| |||||||||| |||||||||| logo & header */
+	/* |||||||||| |||||||||| |||||||||| |||||||||| */
 	--logo-size: 2rem;
 	--logo-x: 1;
 	--logo-y: 1;

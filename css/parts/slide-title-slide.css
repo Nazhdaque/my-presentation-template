@@ -7,13 +7,13 @@
 		hsl(0, 0%, 0%, 0.4) 0%,
 		hsl(0, 0%, 0%, 0.8) 100%
 	);
-	--tint: var(--clr-1a-solid);
+	--tint: hsl(var(--clr-1a));
 }
 
 .__slide-title-slide .slide-bg-overlay {
 	--side: var(--left);
 	--clip: var(--clp-left);
-	--clr-filter: var(--clr-1b-solid);
+	--clr-filter: hsl(var(--clr-1b));
 	--overlay-blends: overlay;
 }
 
@@ -42,7 +42,7 @@
 	position: relative;
 	padding-block: 1em;
 	place-self: end;
-	color: var(--clr-0a-solid);
+	color: hsl(var(--clr-0a));
 	isolation: isolate;
 }
 .__slide-title-slide .slide-ribbon::before {
@@ -50,7 +50,7 @@
 	content: "";
 	inset: 0 -1000% 0 0;
 	z-index: -1;
-	background-color: var(--clr-1b-solid);
+	background-color: hsl(var(--clr-1b));
 	transform: skew(-30deg) translateX(-2em);
 	box-shadow: -0.25rem -0.25rem 0.5rem 0.25rem hsla(0, 0%, 0%, 0.15);
 }

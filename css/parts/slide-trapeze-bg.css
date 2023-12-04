@@ -2,7 +2,6 @@
 .__slide-trapeze-bg .slide-bg-overlay {
 	--side: var(--right);
 	--clip: var(--clp-right);
-	--bg: var(--clr-1a-solid);
 	--overlay: linear-gradient(
 		-90deg,
 		hsl(0, 0%, 0%, 0.1) 0%,
@@ -23,6 +22,4 @@
 	--gap-y: 0.25em;
 	--col: 5;
 	--x: 2;
-	--clr: var(--clr-1a-solid);
-	/* --sphere: var(--sphere-2c-1a); */
 }

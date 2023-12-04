@@ -1,9 +1,9 @@
 .sidebar {
 	--col: 3;
 	--x: 1;
-	--sb-border: 1px dotted var(--clr-0a-solid);
-	--clr-bg: var(--clr-1a-solid);
-	--clr-txt: var(--clr-0a-solid);
+	--sb-border: 1px dotted hsl(var(--clr-0a));
+	--clr-bg: hsl(var(--clr-1a));
+	--clr-txt: hsl(var(--clr-0a));
 
 	overflow-y: scroll;
 	overscroll-behavior: contain;
@@ -13,7 +13,7 @@
 	inset: 0 0 0 auto;
 	margin-block: var(--header-height) auto;
 	z-index: 2;
-	background-color: var(--clr-1a-solid);
+	background-color: hsl(var(--clr-1a));
 	counter-reset: sidebar-counter;
 	translate: var(--width-x);
 	display: none;
@@ -38,8 +38,8 @@
 	font-family: inherit;
 	font-size: var(--fs-rg);
 	font-weight: var(--fw-sb);
-	color: var(--clr-1a-solid);
-	background-color: var(--clr-0a-solid);
+	color: hsl(var(--clr-1a));
+	background-color: hsl(var(--clr-0a));
 	cursor: pointer;
 	transition: color var(--time) var(--easing);
 	display: grid;
@@ -51,7 +51,7 @@
 }
 
 .sidebar-item__btn .icon-bg {
-	--bg: var(--clr-bg);
+	--bg-solid: var(--clr-bg);
 	--tsn: background-color var(--time) var(--easing);
 
 	grid-area: 1 / 1;
@@ -59,7 +59,7 @@
 
 .chevron {
 	--size: 1em;
-	--clr: var(--clr-1a-solid);
+	--clr: hsl(var(--clr-1a));
 
 	stroke: var(--clr);
 	width: var(--size);
@@ -84,7 +84,7 @@
 	display: grid;
 	grid-template-columns: min-content 1fr;
 	align-items: center;
-	color: var(--clr-0a-solid);
+	color: hsl(var(--clr-0a));
 	gap: 0.75em;
 	padding-right: 1.5em;
 }
@@ -115,8 +115,8 @@
 	content: counter(sidebar-counter);
 }
 .sidebar-item__link.marker::before {
-	--clr-bg: var(--clr-0a-solid);
-	--clr-txt: var(--clr-1a-solid);
+	--clr-bg: hsl(var(--clr-0a));
+	--clr-txt: hsl(var(--clr-1a));
 
 	counter-increment: sidebar-item__counter;
 	content: counter(sidebar-item__counter);
@@ -126,7 +126,7 @@
 
 /* active states */
 .is-active .chevron {
-	--clr: var(--clr-1b-solid);
+	--clr: hsl(var(--clr-1b));
 
 	transform: rotateX(180deg);
 }
@@ -134,8 +134,8 @@
 .sidebar-item__btn.marker:where(:focus-visible, :hover)::before,
 .sidebar-item__link.marker:where(:focus-visible, :hover)::before,
 .sidebar-item__btn:where(:focus-visible, :hover) .icon-bg {
-	--clr-bg: var(--clr-1b-solid);
-	--clr-txt: var(--clr-0a-solid);
+	--clr-bg: hsl(var(--clr-1b));
+	--clr-txt: hsl(var(--clr-0a));
 }
 
 /* default accordion library styles */

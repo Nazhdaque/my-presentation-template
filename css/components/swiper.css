@@ -2,9 +2,9 @@
 	--swiper-navigation-size: 2rem;
 	--swiper-navigation-top-offset: 50%;
 	--swiper-navigation-sides-offset: 1rem;
-	--swiper-navigation-color: var(--clr-1a-solid);
-	--swiper-pagination-color: var(--clr-1b-solid);
-	--swiper-pagination-bullet-inactive-color: var(--clr-1a-solid);
+	--swiper-navigation-color: hsl(var(--clr-1a));
+	--swiper-pagination-color: hsl(var(--clr-1b));
+	--swiper-pagination-bullet-inactive-color: hsl(var(--clr-1a));
 	--swiper-pagination-bullet-inactive-opacity: 0.4;
 	--swiper-pagination-bullet-opacity: 1;
 	--swiper-pagination-bullet-horizontal-gap: 0.5rem;
@@ -15,7 +15,7 @@
 	/* --swiper-scrollbar-border-radius: 0.75rem;
 	--swiper-scrollbar-bottom: 0.275rem;
 	--swiper-scrollbar-bg-color: rgba(0, 0, 0, 0);
-	--swiper-scrollbar-drag-bg-color: var(--clr-0a-solid);
+	--swiper-scrollbar-drag-bg-color: hsl(var(--clr-0a));
 	--swiper-scrollbar-size: 0.5rem; */
 
 	/* max-width: calc(100% + var(--gap) * 2);
@@ -45,6 +45,6 @@
 	overflow: hidden; /* required */
 }
 .swiper-slide:not(.swiper .swiper .swiper-slide) {
-	background-color: var(--clr-0a-solid);
+	background-color: hsl(var(--clr-0a));
 	padding-block: 1rem 3rem;
 }

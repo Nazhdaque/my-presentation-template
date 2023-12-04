@@ -4,11 +4,11 @@ import { BrandColors } from "./brandColors";
 
 const brandColors = new BrandColors();
 const chartColors = brandColors.getValues([
-	"--clr-1a-solid",
-	"--clr-1b-solid",
-	"--clr-2a-solid",
-	"--clr-2b-solid",
-	"--clr-2c-solid",
+	"--clr-1a",
+	"--clr-1b",
+	"--clr-2a",
+	"--clr-2b",
+	"--clr-2c",
 ]);
 
 const data = {

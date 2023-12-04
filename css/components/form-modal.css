@@ -3,7 +3,7 @@
 	max-width: 100%;
 	height: calc(100vh - var(--header-height) * 2);
 	max-height: 100%;
-	background-color: hsl(var(--clr-1a-alpha), 0.5);
+	background-color: hsl(var(--clr-1a), 0.5);
 	border: none;
 	place-items: center;
 	margin-block: auto;
@@ -16,7 +16,7 @@
 	--col: 4;
 	--x: 1;
 
-	background-color: var(--clr-0a-solid);
+	background-color: hsl(var(--clr-0a));
 	border-radius: 12px;
 	display: grid;
 	grid-template-rows: min-content 2.5fr min-content;

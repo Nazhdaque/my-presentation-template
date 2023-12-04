@@ -7,7 +7,7 @@
 		hsl(0, 0%, 0%, 0.4) 0%,
 		hsl(0, 0%, 0%, 0.8) 100%
 	);
-	--tint: var(--clr-2a-solid);
+	--tint: hsl(var(--clr-2a));
 }
 
 .__slide-skewed-overlay .slide-bg-overlay {
@@ -18,7 +18,7 @@
 			90deg,
 			hsla(0, 0%, 0%, 0) 0,
 			hsla(0, 0%, 0%, 0.3) 20%,
-			hsla(var(--clr-2b-alpha), 0.3) 20%,
+			hsla(var(--clr-2b), 0.3) 20%,
 			hsla(0, 0%, 0%, 0.6) 40%
 		),
 		var(--clr-filter);

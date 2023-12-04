@@ -9,7 +9,7 @@
 		hsl(0, 0%, 0%, 0.33) 0%,
 		hsl(0, 0%, 0%, 0.66) 50%
 	);
-	--tint: var(--clr-1b-solid);
+	--tint: hsl(var(--clr-1b));
 }
 
 .__slide-typography .slide-ttl {
@@ -34,21 +34,6 @@
 	--gap-x: min(2em, 2vw + 1em);
 
 	grid-auto-rows: min-content 1fr;
-}
-
-.__typo-list > *:nth-child(1) {
-	--clr: var(--clr-1b-solid);
-}
-.__typo-list .arrow-left {
-	--clr: var(--clr-1b-alpha);
-}
-
-.__typo-list > *:nth-child(2) {
-	--sphere: var(--sphere-1b);
-	--clr: var(--clr-1a-solid);
-}
-.__typo-list .arrow-right {
-	--clr: var(--clr-1a-alpha);
 }
 
 .__typo-list .unit__body {

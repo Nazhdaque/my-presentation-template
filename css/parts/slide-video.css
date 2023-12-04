@@ -10,7 +10,7 @@
 		hsla(0, 0%, 0%, 0.15) 10%,
 		hsla(0, 0%, 0%, 0.3) 20%
 	);
-	--tint: var(--clr-1a-solid);
+	--tint: hsl(var(--clr-1a));
 	--img-blends: luminosity, overlay;
 }
 
@@ -23,13 +23,12 @@
 		hsl(0, 0%, 0%, 0.2) 20%,
 		hsl(0, 0%, 0%, 0.8) 90%
 	);
-	--tint: var(--clr-2b-solid);
+	--tint: hsl(var(--clr-2b));
 	--img-blends: luminosity, overlay;
 	--image: url(/images/demo-6-sm.webp);
 }
 
 .__slide-video .slide-bg:nth-child(3) {
-	--bg: var(--clr-1b-solid);
 	--left: 75% 15% 0 auto;
 	--side: var(--left);
 	--w: max(10%, 4rem);
@@ -41,7 +40,6 @@
 	--gap-y: 0.25em;
 	--col: 3;
 	--x: 1;
-	--clr: var(--clr-2b-solid);
 }
 
 .__slide-video .cards {

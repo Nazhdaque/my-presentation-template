@@ -1,5 +1,4 @@
 .__slide-cards .slide-bg {
-	--bg: var(--clr-1a-solid);
 	--side: var(--left);
 	--clip: var(--clp-left);
 }
@@ -28,11 +27,11 @@
 }
 
 .__slide-cards .filters {
-	--filters: drop-shadow(0 0 0.75rem var(--clr-1a-solid));
+	--filters: drop-shadow(0 0 0.75rem hsl(var(--clr-1a)));
 }
 
 .__slide-cards canvas {
-	background-color: var(--clr-0a-solid);
+	background-color: hsl(var(--clr-0a));
 }
 
 .__slide-cards .__icons-box {

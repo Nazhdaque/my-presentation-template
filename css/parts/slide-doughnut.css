@@ -16,8 +16,6 @@
 	--gap-y: 0.25em;
 	--col: 5;
 	--x: 2;
-	--clr: var(--clr-1a-solid);
-	--sphere: var(--sphere-2c-1a);
 }
 
 .__slide-doughnut .slide-body {
@@ -38,7 +36,7 @@
 }
 
 .__slide-doughnut .__bottom-pic {
-	--filters: drop-shadow(0 0 0.5rem var(--clr-1a-solid));
+	--filters: drop-shadow(0 0 0.5rem hsl(var(--clr-1a)));
 	--img-h: 10rem;
 
 	margin-bottom: 4em;
@@ -57,6 +55,6 @@
 
 .__slide-doughnut .arrow-right {
 	--img-size: 1rem;
-	---min-arrow-length: calc(var(--img-size) * 1.5);
-	--clr: var(--clr-1b-alpha);
+	--min-arrow-length: calc(var(--img-size) * 1.5);
+	--img-place: center;
 }

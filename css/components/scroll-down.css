@@ -1,6 +1,6 @@
 .scroll-down {
 	--size: 1.5rem;
-	--clr: var(--clr-2b-solid);
+	--clr: hsl(var(--clr-2b));
 
 	width: var(--size);
 	display: grid;
@@ -23,13 +23,13 @@
 }
 
 .scroll-down__chevron:first-child {
-	--clr: var(--clr-1a-solid);
+	--clr: hsl(var(--clr-1a));
 
 	animation: move 3s ease-out 1s infinite;
 }
 
 .scroll-down__chevron:nth-child(2) {
-	--clr: var(--clr-1b-solid);
+	--clr: hsl(var(--clr-1b));
 
 	animation: move 3s ease-out 2s infinite;
 }

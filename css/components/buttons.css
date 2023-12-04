@@ -30,26 +30,26 @@
 }
 
 .btn-plain {
-	--btn-clr-txt: var(--clr-0a-solid);
-	--btn-clr-bg: var(--clr-1a-solid);
-	--btn-clr-border: var(--clr-1a-solid);
+	--btn-clr-txt: hsl(var(--clr-0a));
+	--btn-clr-bg: hsl(var(--clr-1a));
+	--btn-clr-border: hsl(var(--clr-1a));
 	--btn-radius: 8px;
-	--btn-shadow: 0 0.85em 0.5em -0.5em hsl(var(--clr-1a-alpha), 0.25);
+	--btn-shadow: 0 0.85em 0.5em -0.5em hsl(var(--clr-1a), 0.25);
 
-	--btn-clr-txt--focus-hover: var(--clr-1a-solid);
-	--btn-clr-bg--focus-hover: var(--clr-1b-solid);
-	--btn-clr-border--focus-hover: var(--clr-1a-solid);
-	--btn-shadow--focus-hover: 0 0.85em 0.5em -0.5em hsl(var(--clr-1b-alpha), 0.25);
+	--btn-clr-txt--focus-hover: hsl(var(--clr-1a));
+	--btn-clr-bg--focus-hover: hsl(var(--clr-1b));
+	--btn-clr-border--focus-hover: hsl(var(--clr-1a));
+	--btn-shadow--focus-hover: 0 0.85em 0.5em -0.5em hsl(var(--clr-1b), 0.25);
 
-	--btn-clr-txt--active: var(--clr-0a-solid);
-	--btn-clr-bg--active: var(--clr-1a-solid);
-	--btn-clr-border--active: var(--clr-1a-solid);
+	--btn-clr-txt--active: hsl(var(--clr-0a));
+	--btn-clr-bg--active: hsl(var(--clr-1a));
+	--btn-clr-border--active: hsl(var(--clr-1a));
 }
 
 .outlined {
-	--btn-clr-txt: var(--clr-1a-solid);
+	--btn-clr-txt: hsl(var(--clr-1a));
 	--btn-clr-bg: transparent;
-	--btn-clr-border: var(--clr-1a-solid);
+	--btn-clr-border: hsl(var(--clr-1a));
 	--btn-shadow: none;
 }
 
@@ -59,16 +59,16 @@
 	--btn-bg-pos: right center;
 	--btn-bg-img: linear-gradient(
 		to right,
-		var(--clr-1a-solid) 0%,
-		var(--clr-1a-solid) 51%,
-		var(--clr-2b-solid) 76%,
-		var(--clr-1b-solid) 100%
+		hsl(var(--clr-1a)) 0%,
+		hsl(var(--clr-1a)) 51%,
+		hsl(var(--clr-2b)) 76%,
+		hsl(var(--clr-1b)) 100%
 	);
 	--easing: ease-in;
 	--time: 0.25s;
 	--time-active: 0.1s;
 
-	color: var(--clr-0a-solid);
+	color: hsl(var(--clr-0a));
 	background-size: var(--btn-bg-size, auto);
 	background-image: var(--btn-bg-img, none);
 	padding: var(--btn-p-block, 1em) var(--btn-p-inline, 1.5em);

@@ -1,0 +1,35 @@
+.__slide-snake-list .slide-bg,
+.__slide-snake-list .slide-bg-overlay {
+	--side: var(--center);
+	--clip: var(--clp-right);
+	--image: url(/images/demo-5-xl.webp);
+	--filters: invert(1) grayscale(1) contrast(0.75) brightness(1.1);
+	--pos: 0%;
+	--clr-filter: hsla(200, 100%, 50%, 0.1);
+}
+
+.__slide-snake-list .flex-space-x > .width-x {
+	--col: 3;
+	--x: 1;
+
+	display: grid;
+	gap: var(--heading-bottom-indent);
+}
+
+.__slide-snake-list .slide-ttl {
+	--gap-x: 0.5em;
+	--gap-y: 0.25em;
+	--col: 3;
+	--x: 1;
+}
+
+.__slide-snake-list .__snake-list {
+	--img-size: min(3em, 3vw + 1em);
+	--img-place: start center;
+	--gap-y: 1.5em;
+
+	row-gap: var(--gap-y);
+}
+.__slide-snake-list .__snake-list .unit {
+	--gap-x: var(--gap-y);
+}

@@ -24,7 +24,7 @@
 }
 .unit__img.-pipe {
 	isolation: isolate;
-	background: var(--clr, var(--clr-1b-solid));
+	background: var(--bg-solid, hsl(var(--clr-1b)));
 	height: 100%;
 	width: 0.2em;
 }
@@ -44,7 +44,7 @@
 .unit__head.-pipe::before {
 	isolation: isolate;
 	content: "";
-	background-color: var(--clr, var(--clr-2b-solid));
+	background-color: var(--bg-solid, hsl(var(--clr-1b)));
 }
 .unit__head.-pipe.-rl {
 	grid-template-columns: 1fr 0.2em;
@@ -86,7 +86,7 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
 .unit.-bg {
-	background-color: hsl(var(--clr-2c-alpha), 0.15);
+	background-color: hsl(var(--clr-2c), 0.15);
 	padding: var(--card-gap);
 }
 
@@ -107,19 +107,8 @@
 	text-align: right;
 } */
 
-/* |||||||||| |||||||||| |||||||||| |||||||||| into the card head with img on bg */
-.card__head-ttl {
-	grid-area: 1 / 1;
-	place-self: center;
-	padding: 1em;
-	z-index: 1;
-	pointer-events: none;
-}
-
 /* |||||||||| |||||||||| |||||||||| |||||||||| lists */
 .plain-list {
-	--sphere: var(--sphere-2c-1a);
-
 	display: grid;
 	row-gap: 0.5em;
 	margin-bottom: 1em;

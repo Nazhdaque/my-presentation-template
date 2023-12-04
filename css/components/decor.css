@@ -3,7 +3,7 @@
 .corners-2 {
 	--size: 4cqw;
 	--indent: 1cqw;
-	--border: 0.5cqw solid var(--clr, var(--clr-1a-solid));
+	--border: 0.5cqw solid var(--clr, hsl(var(--clr-1a)));
 	position: absolute;
 }
 .corners-1::before,
@@ -47,7 +47,7 @@
 	--size: 2cqw;
 
 	inset: 2.75cqw 3cqw auto auto !important;
-	color: var(--clr-0a-solid);
+	color: hsl(var(--clr-0a));
 	font-size: var(--size);
 	line-height: 1;
 	display: grid;

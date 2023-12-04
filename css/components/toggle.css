@@ -7,7 +7,7 @@
 	--rotate-neg: calc(var(--rotate) * -1);
 	--space-neg: calc(var(--space) * -1);
 	--transform-neg: translateY(var(--space-neg)) rotate(var(--rotate-neg));
-	--sidebar-toggle-clr: var(--clr-1a-solid);
+	--sidebar-toggle-clr: hsl(var(--clr-1a));
 
 	height: var(--size);
 	aspect-ratio: 1;
@@ -52,7 +52,7 @@
 }
 
 .sidebar-toggle:where(:hover, :focus-visible) .sidebar-toggle-img {
-	--sidebar-toggle-clr: var(--clr-1b-solid);
+	--sidebar-toggle-clr: hsl(var(--clr-1b));
 
 	background: var(--bg-fill);
 	background-size: 300% auto;

@@ -1,7 +1,6 @@
 .__slide-table .slide-bg {
 	--side: var(--right);
 	--clip: var(--clp-right);
-	--bg: var(--clr-1b-solid);
 }
 
 .__slide-table .slide-content {

@@ -8,7 +8,7 @@
 	border-width: 0 calc(2 * var(--f)) var(--r) 0;
 	background: radial-gradient(50% 100% at bottom, #0005 98%, #0000 101%) 100% 0 /
 		calc(2 * var(--f)) var(--f) no-repeat border-box;
-	background-color: var(--clr-2b-solid);
+	background-color: hsl(var(--clr-2b));
 	border-radius: var(--f) var(--f) 0 0;
 	clip-path: polygon(
 		100% 0,
@@ -25,15 +25,15 @@
 	width: min-content;
 	height: min-content;
 	inset: calc(-1 * var(--f)) 1rem auto auto !important;
-	color: var(--clr-0a-solid);
+	color: hsl(var(--clr-0a));
 }
 
 .polygon-ribbon-cutout-rt {
 	--f: 0.3em; /* control the folded part */
 	--r: 0.8em; /* control the cutout */
 
-	color: var(--clr-0a-solid);
-	background: var(--clr-2b-solid);
+	color: hsl(var(--clr-0a));
+	background: hsl(var(--clr-2b));
 	position: absolute;
 	border-bottom: var(--f) solid #0005;
 	border-left: var(--r) solid #0000;
@@ -52,7 +52,7 @@
 	width: max-content;
 	height: min-content;
 	inset: 1rem calc(-1 * var(--f)) auto auto !important;
-	color: var(--clr-0a-solid);
+	color: hsl(var(--clr-0a));
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| side ribbon */
@@ -63,7 +63,7 @@
 	--bottom-left: auto auto 1em 1em;
 	--left: 0 -1.5em auto auto;
 
-	color: var(--clr-0a-solid);
+	color: hsl(var(--clr-0a));
 	position: absolute;
 	inset: var(--place, var(--top-right)) !important;
 	z-index: 1;
@@ -79,6 +79,6 @@
 	height: 100%;
 	z-index: -1;
 	transform: skew(var(--skew, 20deg)) translateX(-0.75em);
-	background: var(--bg, var(--clr-1b-solid));
+	background: var(--bg, hsl(var(--clr-1b)));
 	backdrop-filter: var(--filters, none);
 }

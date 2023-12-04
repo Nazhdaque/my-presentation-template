@@ -9,7 +9,7 @@ import slide_charts from "../html/parts/slide-charts.html?raw";
 import slide_doughnut from "../html/parts/slide-doughnut.html?raw";
 import slide_form from "../html/parts/slide-form.html?raw";
 
-import slide_diag_bg from "../html/parts/slide-diag-bg.html?raw";
+import slide_snake_list from "../html/parts/slide-snake-list.html?raw";
 import slide_trapeze_bg from "../html/parts/slide-trapeze-bg.html?raw";
 import slide_blobs_bg from "../html/parts/slide-blobs-bg.html?raw";
 import slide_skewed_overlay from "../html/parts/slide-skewed-overlay.html?raw";
@@ -30,7 +30,7 @@ slidesContainer.insertAdjacentHTML("beforeend", slide_charts);
 slidesContainer.insertAdjacentHTML("beforeend", slide_doughnut);
 slidesContainer.insertAdjacentHTML("beforeend", slide_form);
 slidesContainer.insertAdjacentHTML("beforeend", slide_trapeze_bg);
-slidesContainer.insertAdjacentHTML("beforeend", slide_diag_bg);
+slidesContainer.insertAdjacentHTML("beforeend", slide_snake_list);
 slidesContainer.insertAdjacentHTML("beforeend", slide_blobs_bg);
 slidesContainer.insertAdjacentHTML("beforeend", slide_skewed_overlay);
 

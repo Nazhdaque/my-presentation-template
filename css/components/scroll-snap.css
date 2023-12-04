@@ -1,6 +1,6 @@
 .scroll-snap-inline,
 .scroll-snap-block {
-	--clr: var(--clr-2b-solid);
+	--clr: hsl(var(--clr-2b));
 
 	display: grid;
 	gap: 1rem;

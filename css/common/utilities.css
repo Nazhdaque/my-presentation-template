@@ -49,6 +49,16 @@
 	grid-template-columns: var(--col-x);
 }
 
+.col-2 {
+	--col: 2;
+}
+.col-3 {
+	--col: 3;
+}
+.col-4 {
+	--col: 4;
+}
+
 /* |||||||||| |||||||||| |||||||||| flex */
 .flex-x {
 	--width-x: min(
@@ -88,6 +98,16 @@
 	);
 
 	width: var(--width-x);
+}
+
+.w-2 {
+	--x: 2;
+}
+.w-3 {
+	--x: 3;
+}
+.w-4 {
+	--x: 4;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| text columns */
@@ -231,11 +251,25 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| colors */
 .clr-txt-0a {
-	color: var(--clr-0a-solid);
+	color: hsl(var(--clr-0a));
 }
 .clr-txt-0b {
-	color: var(--clr-0b-solid);
+	color: hsl(var(--clr-0b));
 }
-.clr-txt-2b {
-	color: var(--clr-2b-solid);
+
+.clr-1a {
+	--bg-solid: hsl(var(--clr-1a));
+	--bg-alpha: var(--clr-1a);
+}
+.clr-1b {
+	--bg-solid: hsl(var(--clr-1b));
+	--bg-alpha: var(--clr-1b);
+}
+.clr-2a {
+	--bg-solid: hsl(var(--clr-2a));
+	--bg-alpha: var(--clr-2a);
+}
+.clr-2b {
+	--bg-solid: hsl(var(--clr-2b));
+	--bg-alpha: var(--clr-2b);
 }
