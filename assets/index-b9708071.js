@@ -118,9 +118,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</div>
 				</div>
 
-				<ul class="plain-list sphere-1a __pro-cons-list">
+				<ul class="plain-list __pro-cons-list">
 					<li class="unit">
-						<div class="unit__img img-box icon-bg round">
+						<div class="unit__img img-box icon-bg round sphere-1a">
 							<i class="material-icons-round mui-icon">child_care</i>
 						</div>
 						<h3 class="unit__head -pipe caps">Что-то получится даже у ребенка</h3>
@@ -142,7 +142,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit">
-						<div class="unit__img img-box icon-bg round">
+						<div class="unit__img img-box icon-bg round sphere-1a">
 							<i class="material-icons-round mui-icon">screenshot_monitor</i>
 						</div>
 						<h3 class="unit__head -pipe caps">Никаких сюрпризов</h3>
@@ -180,9 +180,9 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</div>
 				</div>
 
-				<ul class="plain-list ordered-list sphere-2b __pro-cons-list">
+				<ul class="plain-list ordered-list __pro-cons-list">
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round"></div>
+						<div class="unit__img img-box icon-bg round sphere-2b"></div>
 						<h3 class="unit__head -pipe -rl caps">Готово к использованию</h3>
 						<div class="arrow-left clr-2b"></div>
 
@@ -193,7 +193,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round"></div>
+						<div class="unit__img img-box icon-bg round sphere-2b"></div>
 						<h3 class="unit__head -pipe -rl caps">Без лишних телодвижений</h3>
 						<div class="arrow-left clr-2b"></div>
 
@@ -204,7 +204,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round"></div>
+						<div class="unit__img img-box icon-bg round sphere-2b"></div>
 						<h3 class="unit__head -pipe -rl caps">Интуитивно понятно</h3>
 						<div class="arrow-left clr-2b"></div>
 
@@ -216,7 +216,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round"></div>
+						<div class="unit__img img-box icon-bg round sphere-2b"></div>
 						<h3 class="unit__head -pipe -rl caps">Выглядит отлично</h3>
 						<div class="arrow-left clr-2b"></div>
 
@@ -231,7 +231,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round"></div>
+						<div class="unit__img img-box icon-bg round sphere-2b"></div>
 						<h3 class="unit__head -pipe -rl caps">Аккуратно</h3>
 						<div class="arrow-left clr-2b"></div>
 
@@ -246,7 +246,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round"></div>
+						<div class="unit__img img-box icon-bg round sphere-2b"></div>
 						<h3 class="unit__head -pipe -rl caps">Все поместится</h3>
 						<div class="arrow-left clr-2b"></div>
 
@@ -260,7 +260,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round"></div>
+						<div class="unit__img img-box icon-bg round sphere-2b"></div>
 						<h3 class="unit__head -pipe -rl caps">Легко кастомизировать</h3>
 						<div class="arrow-left clr-2b"></div>
 
@@ -275,7 +275,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round"></div>
+						<div class="unit__img img-box icon-bg round sphere-2b"></div>
 						<h3 class="unit__head -pipe -rl caps">Reusability</h3>
 						<div class="arrow-left clr-2b"></div>
 
@@ -289,7 +289,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round"></div>
+						<div class="unit__img img-box icon-bg round sphere-2b"></div>
 						<h3 class="unit__head -pipe -rl caps">Адаптивность и responsive</h3>
 						<div class="arrow-left clr-2b"></div>
 
@@ -303,7 +303,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round"></div>
+						<div class="unit__img img-box icon-bg round sphere-2b"></div>
 						<h3 class="unit__head -pipe -rl caps">Огромный потенциал</h3>
 						<div class="arrow-left clr-2b"></div>
 
@@ -315,7 +315,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round"></div>
+						<div class="unit__img img-box icon-bg round sphere-2b"></div>
 						<h3 class="unit__head -pipe -rl caps">Сторонние библиотеки</h3>
 						<div class="arrow-left clr-2b"></div>
 
@@ -335,7 +335,7 @@ var qr=Object.defineProperty;var Wr=(i,t,e)=>t in i?qr(i,t,{enumerable:!0,config
 					</li>
 
 					<li class="unit -rl">
-						<div class="unit__img img-box icon-bg round"></div>
+						<div class="unit__img img-box icon-bg round sphere-2b"></div>
 						<h3 class="unit__head -pipe -rl caps">Полноценный веб-ресурс</h3>
 						<div class="arrow-left clr-2b"></div>
 
