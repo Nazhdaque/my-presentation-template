@@ -6,10 +6,9 @@ export class BrandColors {
 	getValues = colorNames => {
 		colorNames.forEach(colorName =>
 			this.brandColors.push(
-				`hsl(${getComputedStyle(
-					document.documentElement,
-					null
-				).getPropertyValue(colorName)})`
+				getComputedStyle(document.documentElement, null).getPropertyValue(
+					colorName
+				)
 			)
 		);
 		return this.brandColors;

@@ -72,7 +72,7 @@ const swiperBasic = new Swiper(".swiper-basic", {
 	},
 	grabCursor: true,
 	slidesPerView: 1,
-	initialSlide: 1,
+	initialSlide: 0,
 
 	effect: "creative",
 	creativeEffect: {

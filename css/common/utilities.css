@@ -227,7 +227,7 @@
 	z-index: var(--z, 1);
 }
 .z-down {
-	z-index: var(--z, -1);
+	z-index: calc(var(--z, 1) * -1);
 }
 
 .order-up {
