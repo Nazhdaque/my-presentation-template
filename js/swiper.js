@@ -63,7 +63,11 @@ const swiperBasic = new Swiper(".swiper-basic", {
 	modules: [Autoplay, Keyboard, Mousewheel, EffectCreative],
 	loop: true,
 	speed: 1000,
-	autoplay: { delay: 5000 },
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: true,
+		pauseOnMouseEnter: true,
+	},
 	spaceBetween: 16,
 	direction: "horizontal",
 	mousewheel: {

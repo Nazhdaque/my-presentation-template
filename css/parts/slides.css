@@ -1,6 +1,7 @@
 .slide-content {
 	display: grid;
-	gap: var(--gap, 4em);
+	column-gap: var(--gap-x, 4em);
+	row-gap: var(--gap-y, 4em);
 	align-items: center;
 	grid-auto-rows: min-content;
 }

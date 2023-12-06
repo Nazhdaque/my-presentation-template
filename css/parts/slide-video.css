@@ -57,8 +57,3 @@
 	--asp: 16 / 9;
 	--img-h: auto;
 }
-
-.__slide-video .side-ribbon {
-	--place: var(--top-left);
-	--move-ribbon: var(--left);
-}

@@ -1,15 +1,14 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
 .polygon-ribbon-rounded-cutout-tl {
-	--f: 0.3em; /* control the folded part */
-	--r: 0.8em; /* control the cutout */
+	--f: 0.3em;
+	--r: 0.6em;
 
-	position: absolute;
 	border: solid #0000;
 	border-width: 0 calc(2 * var(--f)) var(--r) 0;
+	border-radius: var(--f) var(--f) 0 0;
 	background: radial-gradient(50% 100% at bottom, #0005 98%, #0000 101%) 100% 0 /
 		calc(2 * var(--f)) var(--f) no-repeat border-box;
 	background-color: var(--clr-solid, hsl(var(--clr-2b)));
-	border-radius: var(--f) var(--f) 0 0;
 	clip-path: polygon(
 		100% 0,
 		0 0,
@@ -20,23 +19,22 @@
 		100% var(--f)
 	);
 
-	z-index: 1;
-	padding: 0.75em;
+	position: absolute;
+	inset: calc(-1 * var(--f)) 1rem auto auto !important;
 	width: min-content;
 	height: min-content;
-	inset: calc(-1 * var(--f)) 1rem auto auto !important;
+	padding: 0.75em;
 	color: hsl(var(--clr-0a));
+	z-index: 1;
 }
 
 .polygon-ribbon-cutout-rt {
-	--f: 0.3em; /* control the folded part */
-	--r: 0.8em; /* control the cutout */
+	--f: 0.3em;
+	--r: 0.5em;
 
-	color: hsl(var(--clr-0a));
-	background: var(--clr-solid, hsl(var(--clr-2b)));
-	position: absolute;
-	border-bottom: var(--f) solid #0005;
 	border-left: var(--r) solid #0000;
+	border-bottom: var(--f) solid #0005;
+	background: var(--clr-solid, hsl(var(--clr-2b)));
 	clip-path: polygon(
 		0 0,
 		100% 0,
@@ -47,21 +45,23 @@
 		var(--r) calc(50% - var(--f) / 2)
 	);
 
-	z-index: 1;
-	padding: 0.25em 1em;
+	position: absolute;
+	inset: 1rem calc(-1 * var(--f)) auto auto !important;
 	width: max-content;
 	height: min-content;
-	inset: 1rem calc(-1 * var(--f)) auto auto !important;
+	padding: 0.25em 1em;
 	color: hsl(var(--clr-0a));
+	z-index: 1;
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| side ribbon */
 .side-ribbon {
-	--top-right: 1em 1em auto auto;
-	--top-left: 1em auto auto 1em;
-	--bottom-right: auto 1em 1em auto;
-	--bottom-left: auto auto 1em 1em;
+	--top-right: 2em 1em auto auto;
+	--top-left: 2em auto auto 1em;
+	--bottom-right: auto 1em 2em auto;
+	--bottom-left: auto auto 2em 1em;
 	--left: 0 -1.5em auto auto;
+	--border: 1px solid white;
 
 	color: hsl(var(--clr-0a));
 	position: absolute;
@@ -69,16 +69,54 @@
 	z-index: 1;
 	line-height: 1;
 	padding: 0.5em;
+	filter: drop-shadow(-1px 1px 1px hsla(0, 0%, 0%, 0.333));
 }
 
-.side-ribbon::before {
+.side-ribbon::before,
+.side-ribbon::after {
 	position: absolute;
 	content: "";
 	inset: var(--move-ribbon, 0);
 	width: 150%;
 	height: 100%;
 	z-index: -1;
-	transform: skew(var(--skew, 20deg)) translateX(-0.75em);
+	transform: skew(var(--skew, 25deg)) translateX(-0.75em);
 	background: var(--clr-solid, hsl(var(--clr-1b)));
-	backdrop-filter: var(--filters, none);
+	border-bottom: var(--border);
+}
+.side-ribbon::before {
+	transform: skew(calc(var(--skew, 25deg) * -1)) translateX(-0.75em);
+}
+.side-ribbon::after {
+	border-left: var(--border);
+	z-index: -2;
+}
+
+/* --- */
+.side-ribbon.-br {
+	--place: var(--bottom-right);
+}
+
+.side-ribbon.-tl {
+	--place: var(--top-left);
+}
+
+.side-ribbon.-bl {
+	--place: var(--bottom-left);
+}
+
+.side-ribbon.-tl,
+.side-ribbon.-bl {
+	--move-ribbon: var(--left);
+
+	filter: drop-shadow(1px 1px 1px hsla(0, 0%, 0%, 0.333));
+}
+
+.side-ribbon.-tl::before,
+.side-ribbon.-bl::before {
+	border-right: var(--border);
+}
+.side-ribbon.-tl::after,
+.side-ribbon.-bl::after {
+	z-index: -1;
 }
