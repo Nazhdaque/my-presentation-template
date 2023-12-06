@@ -48,6 +48,10 @@
 	}
 
 	/* utilities */
+	.md-d-grid {
+		display: grid;
+	}
+
 	.md-shadow-bottom {
 		--shadow: var(--img-shadow-bottom);
 	}

@@ -15,7 +15,6 @@
 @import url(./components/glitch-img.css) layer(components);
 @import url(./components/arrows.css) layer(components);
 @import url(./components/unit.css) layer(components);
-
 @import url(./components/cards.css) layer(components);
 @import url(./components/icons.css) layer(components);
 @import url(./components/txt-link.css) layer(components);
@@ -31,7 +30,7 @@
 @import url(./components/tag.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
-@import url(./parts/slides-bgs.css) layer(parts);
+@import url(./parts/slides.css) layer(parts);
 @import url(./parts/slide-title-slide.css) layer(parts);
 @import url(./parts/slide-advantages) layer(parts);
 @import url(./parts/slide-table.css) layer(parts);
@@ -46,7 +45,6 @@
 @import url(./parts/slide-snake-list.css) layer(parts);
 @import url(./parts/slide-blobs-bg.css) layer(parts);
 @import url(./parts/slide-skewed-overlay.css) layer(parts);
-@import url(./parts/slides.css) layer(parts);
 @import url(./parts/footer.css) layer(parts);
 
 @import url(./common/utilities.css) layer(utilities);

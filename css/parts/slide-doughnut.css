@@ -11,13 +11,6 @@
 	--pos: 100%;
 }
 
-.__slide-doughnut .slide-ttl {
-	--gap-x: 0.5em;
-	--gap-y: 0.25em;
-	--col: 5;
-	--x: 2;
-}
-
 .__slide-doughnut .slide-body {
 	--col: 2;
 	--gap-x: 5vw;

@@ -19,6 +19,11 @@
 	--pos: center 20%;
 }
 
+.__slide-charts .slide-ttl {
+	--col: 4;
+	--x: 1;
+}
+
 .__slide-charts .slide-body {
 	--col: 4;
 	--x: 3;
@@ -28,17 +33,11 @@
 	z-index: 1;
 	background-color: hsl(var(--clr-0a));
 	border-radius: 8px;
-	place-self: start center;
-	padding: 2rem;
+	place-self: center;
+	padding: 1rem;
+	margin-block: 4rem;
 }
 
 .__slide-charts .slide-body > * {
 	aspect-ratio: 1;
-}
-
-.__slide-charts .slide-ttl {
-	--gap-x: 0.5em;
-	--gap-y: 0.25em;
-	--col: 3;
-	--x: 1;
 }

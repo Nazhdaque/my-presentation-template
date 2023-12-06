@@ -16,10 +16,3 @@
 	--side: var(--left);
 	--clip: var(--clp-left);
 }
-
-.__slide-trapeze-bg .slide-ttl {
-	--gap-x: 0.5em;
-	--gap-y: 0.25em;
-	--col: 5;
-	--x: 2;
-}

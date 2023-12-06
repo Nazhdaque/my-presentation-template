@@ -17,19 +17,6 @@
 	--overlay-blends: overlay;
 }
 
-.__slide-title-slide .slide-content {
-	--gap-y: 0rem;
-
-	grid-auto-rows: min-content 1fr;
-}
-
-.__slide-title-slide .slide-ttl {
-	--gap-x: 0.5em;
-	--gap-y: 0.25em;
-	--col: 5;
-	--x: 2;
-}
-
 .__first-slide-list {
 	--col: 4;
 	--gap-x: 1.5em;
@@ -43,6 +30,14 @@
 }
 
 .__slide-title-slide .side-ribbon {
-	--bottom-right: auto 1em 2.5em auto;
+	--bottom-right: auto 1em 3em auto;
+
 	padding: 0.75em;
+	animation: slide-out 0.5s cubic-bezier(0.36, 0, 0.66, -0.56) 3s forwards;
+}
+
+@keyframes slide-out {
+	100% {
+		transform: translateX(200%);
+	}
 }

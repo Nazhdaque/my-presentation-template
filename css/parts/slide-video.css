@@ -46,6 +46,8 @@
 	--col: 3;
 	--gap-x: 2rem;
 	--gap-y: var(--gap-x);
+
+	margin-block: 4rem;
 }
 
 .__slide-video .cards .unit {

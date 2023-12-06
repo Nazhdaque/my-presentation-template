@@ -3,9 +3,14 @@
 	--clip: var(--clp-left);
 }
 
+.__slide-cards .slide-content {
+	--gap-y: 6rem;
+
+	grid-auto-rows: min-content;
+	margin-bottom: var(--gap-y);
+}
+
 .__slide-cards .slide-ttl {
-	--gap-x: 0.5em;
-	--gap-y: 0.25em;
 	--col: 3;
 	--x: 1;
 }

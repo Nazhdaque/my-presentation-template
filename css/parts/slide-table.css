@@ -4,9 +4,10 @@
 }
 
 .__slide-table .slide-content {
-	grid-auto-rows: auto;
+	place-self: center;
 }
 
 .__slide-table .slide-ttl {
+	--col: 1;
 	--place-head: center;
 }

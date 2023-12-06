@@ -24,13 +24,11 @@
 	--col: 4;
 	--x: 1;
 
-	place-self: start center;
+	place-self: center;
+	margin-block: 6rem 12rem;
 }
 
 .__slide-form .slide-ttl {
-	--gap-x: 0.5em;
-	--gap-y: 0.25em;
 	--col: 3;
 	--x: 1;
-	--clr: hsl(var(--clr-2b));
 }

@@ -11,8 +11,13 @@
 }
 
 .__slide-grid-system .slide-ttl {
-	--gap-x: 0.5em;
-	--gap-y: 0.25em;
 	--col: 3;
 	--x: 1;
+}
+
+.__slide-grid-system .slide-content {
+	--gap-y: 4rem;
+
+	grid-auto-rows: min-content;
+	margin-bottom: 6rem;
 }

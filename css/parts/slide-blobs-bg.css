@@ -31,10 +31,3 @@
 	--radius: 52% 48% 35% 65% / 48% 69% 31% 52%;
 	--asp-ratio: 1;
 }
-
-.__slide-blobs-bg .slide-ttl {
-	--gap-x: 0.5em;
-	--gap-y: 0.25em;
-	--col: 3;
-	--x: 1;
-}
