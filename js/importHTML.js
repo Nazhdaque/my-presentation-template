@@ -8,7 +8,6 @@ import slide_table from "../html/parts/slide-table.html?raw";
 import slide_charts from "../html/parts/slide-charts.html?raw";
 import slide_doughnut from "../html/parts/slide-doughnut.html?raw";
 import slide_form from "../html/parts/slide-form.html?raw";
-
 import slide_snake_list from "../html/parts/slide-snake-list.html?raw";
 import slide_trapeze_bg from "../html/parts/slide-trapeze-bg.html?raw";
 import slide_blobs_bg from "../html/parts/slide-blobs-bg.html?raw";

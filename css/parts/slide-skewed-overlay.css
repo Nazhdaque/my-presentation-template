@@ -1,27 +1,15 @@
 .__slide-skewed-overlay .slide-bg {
-	--image: url(/images/demo-1-xl.webp);
+	--image: url(/images/rubik-0.svg);
 	--side: 0;
 	--w: 100%;
-	--overlay: linear-gradient(
-		90deg,
-		hsl(0, 0%, 0%, 0.4) 0%,
-		hsl(0, 0%, 0%, 0.8) 100%
-	);
-	--tint: hsl(var(--clr-2a));
-}
+	--bg-size: auto;
 
-.__slide-skewed-overlay .slide-bg-overlay {
-	--w: max(40%, 576px);
-	--side: var(--center);
-	--clr-filter: hsla(0, 0%, 100%, 0.1);
-	--overlay-bg: repeating-linear-gradient(
-			90deg,
-			hsla(0, 0%, 0%, 0) 0,
-			hsla(0, 0%, 0%, 0.3) 20%,
-			hsla(var(--clr-2b), 0.3) 20%,
-			hsla(0, 0%, 0%, 0.6) 40%
-		),
-		var(--clr-filter);
-	--overlay-blends: hard-light;
-	--overlay-transform: skew(-10deg);
+	/* --overlay: linear-gradient(hsl(0, 0%, 0%, 0.4) 0%, hsl(0, 0%, 0%, 0.4) 100%); */
+	--underlay: repeating-linear-gradient(
+		-75deg,
+		hsl(var(--clr-2b), 1) 0,
+		hsl(var(--clr-2b), 1) 50%,
+		hsl(var(--clr-1a), 1) 50%,
+		hsl(var(--clr-1a), 1) 100%
+	);
 }

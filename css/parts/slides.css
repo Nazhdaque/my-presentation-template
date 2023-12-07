@@ -82,9 +82,10 @@
 /* |||||||||| |||||||||| with image */
 .w-img::before {
 	background-color: var(--tint, none);
-	background-image: var(--overlay, none), var(--image, none);
+	background-image: var(--overlay, none), var(--image, none),
+		var(--underlay, none);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: var(--bg-size, cover);
 	filter: var(--filters, invert(1));
 	background-blend-mode: var(--img-blends, luminosity);
 }
