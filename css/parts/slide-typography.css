@@ -1,5 +1,4 @@
-.__slide-typography .slide-bg,
-.__slide-typography .slide-bg-overlay {
+.__slide-typography .slide-bg {
 	--image: url(/images/demo-1-xl.webp);
 	--w: max(50%, 10rem);
 	--side: var(--left);
@@ -21,9 +20,10 @@
 	--gap-x: min(5em, 7vw + 1em);
 	--gap-y: 3em;
 	--img-size: var(--gap-x);
-	--img-place: center;
+
 	--col: 3;
-	--x: 1;
+	--justify: center;
+	--grow: 0;
 
 	margin-block: 3rem;
 }

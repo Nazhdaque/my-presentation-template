@@ -64,23 +64,23 @@
 	--width-x: min(
 		(
 			(
-					(
-							var(--container-width, var(--max-content-width)) -
-								var(--gap-x, 0rem) * (var(--col) - 1)
-						) / var(--col)
-				) * var(--shrink, 0.75)
+				(
+						var(--container-width, var(--max-content-width)) -
+							var(--gap-x, 0rem) * (var(--col) - 1)
+					) / var(--col)
+			)
 		),
 		100%
 	);
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	column-gap: var(--gap-x, 0rem);
-	row-gap: var(--gap-y, 0rem);
+	justify-content: var(--justify, center);
+	column-gap: var(--gap-x, normal);
+	row-gap: var(--gap-y, normal);
 }
 .flex-x > * {
-	flex: 1 1 var(--width-x);
+	flex: var(--grow, 1) 1 var(--width-x);
 }
 
 /* |||||||||| |||||||||| |||||||||| width */
@@ -160,13 +160,6 @@
 }
 .r-span-x {
 	grid-row: span var(--span, 2);
-}
-
-.flex-space-x {
-	display: flex;
-	justify-content: var(--flex-space, space-evenly);
-	gap: var(--gap, 4em);
-	flex-wrap: wrap;
 }
 
 .overlay::after {

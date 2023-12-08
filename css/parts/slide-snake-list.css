@@ -8,18 +8,16 @@
 	--clr-filter: hsla(200, 100%, 50%, 0.1);
 }
 
-.__slide-snake-list .slide-content {
-	--gap-y: 6rem;
+.__slide-snake-list .slide-body {
+	--col: 2;
+	--x: 1.5;
+	--shrink: 0.33;
+	--grow: 0;
+	--gap-x: 6em;
+	--gap-y: var(--gap-x);
 
-	margin-bottom: 6rem;
-}
-
-.__slide-snake-list .flex-space-x > .width-x {
-	--col: 3;
-	--x: 1;
-
-	display: grid;
-	gap: var(--heading-bottom-indent);
+	place-self: center;
+	margin-block: var(--gap-x);
 }
 
 .__slide-snake-list .__snake-list {

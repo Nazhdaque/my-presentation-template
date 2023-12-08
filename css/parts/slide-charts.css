@@ -25,19 +25,16 @@
 }
 
 .__slide-charts .slide-body {
-	--col: 4;
-	--x: 3;
+	--col: 3;
+	--grow: 0;
 	--gap-x: 2rem;
-	--gap-y: 2rem;
+	--gap-y: var(--gap-x);
 
-	z-index: 1;
-	background-color: hsl(var(--clr-0a));
-	border-radius: 8px;
-	place-self: center;
-	padding: 1rem;
-	margin-block: 4rem;
+	margin-block: var(--gap-x);
 }
 
 .__slide-charts .slide-body > * {
-	aspect-ratio: 1;
+	background-color: hsl(var(--clr-0a));
+	padding: 1rem;
+	aspect-ratio: 2 / 1;
 }

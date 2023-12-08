@@ -16,6 +16,8 @@
 	--gap-x: 5vw;
 	--gap-y: var(--gap-x);
 	--card-gap: 3rem;
+
+	margin-block: 3rem;
 }
 
 .__demo-chart {

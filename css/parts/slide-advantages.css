@@ -1,4 +1,4 @@
-.__slide-advantages .slide-bg,
+/* .__slide-advantages .slide-bg,
 .__slide-advantages .slide-bg-overlay {
 	--image: url(/images/demo-3-xl.webp);
 	--side: var(--left);
@@ -11,13 +11,33 @@
 	--tint: hsl(var(--clr-2b));
 	--filters: invert(1) grayscale(0.5) contrast(0.75);
 	--pos: 80%;
+} */
+
+.__slide-advantages .slide-bg {
+	--image: url(/images/rubik-0.svg);
+	--side: 0;
+	--w: 100%;
+	--bg-size: auto;
+
+	--overlay: linear-gradient(hsl(0, 0%, 0%, 0.4) 0%, hsl(0, 0%, 0%, 0.4) 100%);
+
+	--underlay: repeating-linear-gradient(
+		-80deg,
+		hsl(var(--clr-2b), 1) 0,
+		hsl(var(--clr-2b), 1) 50%,
+		hsl(var(--clr-1a), 1) 50%,
+		hsl(var(--clr-1a), 1) 100%
+	);
 }
 
-.__slide-advantages .flex-space-x {
-	--col: 3;
-	--x: 1;
+.__slide-advantages .flex-x {
+	--col: 2.5;
+	--justify: space-around;
+	--grow: 0;
+	--gap-x: 6em;
+	--gap-y: var(--gap-x);
 
-	margin-bottom: 6rem;
+	margin-bottom: var(--gap-x);
 }
 
 .__slide-advantages .slide-ttl {
@@ -39,8 +59,17 @@
 }
 
 .__slide-advantages .__demo-pic-1 {
-	--filters: drop-shadow(0 0 2rem hsl(var(--clr-2b)));
+	--filters: drop-shadow(0 0 2rem hsl(var(--clr-1b)));
 	--img-h: 10rem;
 
 	margin-top: 3rem;
+}
+
+@keyframes slide-bg-img {
+	0% {
+		background-position: center 0%;
+	}
+	100% {
+		background-position: center 100%;
+	}
 }

@@ -86,8 +86,10 @@
 		var(--underlay, none);
 	background-repeat: no-repeat;
 	background-size: var(--bg-size, cover);
+	background-position: var(--pos, center);
 	filter: var(--filters, invert(1));
 	background-blend-mode: var(--img-blends, luminosity);
+	animation: var(--animate, none);
 }
 
 /* |||||||||| |||||||||| addition overlay for using with grayscale filter, color filters */

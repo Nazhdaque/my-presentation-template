@@ -1,11 +1,5 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| xl */
 @media (width <= 1400px) {
-	.width-x.-xl-width-1-3-center {
-		--col: 3;
-		--x: 1;
-		justify-self: center;
-	}
-
 	.unit__body.-xl-shift-l {
 		grid-area: 2 / 1 / 2 / 3;
 	}
@@ -14,52 +8,42 @@
 	}
 
 	/* utilities */
-	.xl-d-none {
-		display: none;
-	}
-	.xl-d-grid {
-		display: grid;
-	}
-	.xl-order-0 {
-		order: 0;
-	}
-	.xl-grid-full-width {
-		grid-column: 1 / -1;
-	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| lg */
 @media (width <= 1200px) {
-	.width-x.-lg-width-1-3-center {
-		--col: 3;
-		--x: 1;
-		justify-self: center;
-	}
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| md */
 @media (width <= 992px) {
 	/* .table media styles are in the table.css */
 
-	.width-x.-md-width-1-3-center {
+	.__slide-snake-list .slide-body {
 		--col: 3;
 		--x: 1;
-		justify-self: center;
+		--shrink: 1;
 	}
 
 	/* utilities */
-	.md-d-grid {
-		display: grid;
-	}
-
 	.md-shadow-bottom {
 		--shadow: var(--img-shadow-bottom);
 	}
 
+	.md-d-grid {
+		display: grid;
+	}
+	.md-d-none {
+		display: none;
+	}
+	.md-order-0 {
+		order: 0;
+	}
+	.md-grid-full-width {
+		grid-column: 1 / -1;
+	}
 	.md-a-flow-row {
 		grid-auto-flow: row;
 	}
-
 	.md-c-span-0 {
 		grid-column: auto;
 	}
@@ -71,11 +55,9 @@
 	.sm-min-h-auto {
 		min-height: auto !important;
 	}
-
 	.sm-d-grid {
 		display: grid;
 	}
-
 	.sm-d-none {
 		display: none;
 	}
@@ -85,14 +67,6 @@
 @media (width <= 576px) {
 	.__slide-title-slide .slide-bg {
 		--image: url(/images/demo-1-xs-vertical.webp);
-	}
-	.__slide-advantages .slide-bg {
-		--angle: -40%;
-		--w: 110%;
-		--tint: hsl(var(--clr-2a));
-		--image: none;
-		--overlay: none;
-		--filters: invert(1);
 	}
 	.__slide-grid-system .slide-bg {
 		--image: url(/images/demo-3-xs-vertical.webp);
@@ -137,19 +111,14 @@
 	.__slide-blobs-bg .slide-bg {
 		--image: url(/images/demo-5-xs.webp);
 	}
-	/* .__slide-skewed-overlay .slide-bg {
-		--image: url(/images/demo-1-xs-vertical.webp);
-	} */
 
 	/* utilities */
 	.xs-d-none {
 		display: none;
 	}
-
 	.xs-shadow-bottom {
 		--shadow: var(--img-shadow-bottom);
 	}
-
 	.xs-a-flow-row {
 		grid-auto-flow: row;
 	}
