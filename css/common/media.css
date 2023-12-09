@@ -77,9 +77,7 @@
 	.__slide-video .slide-bg:nth-child(1) {
 		--image: url(/images/demo-1-xs-vertical.webp);
 	}
-	.__slide-video .slide-bg:nth-child(3) {
-		--image: url(/images/demo-6-xs.webp);
-	}
+
 	.__slide-charts .slide-bg:nth-child(1) {
 		--bg: hsl(var(--clr-2b));
 		--angle: 25%;
@@ -88,13 +86,6 @@
 	}
 	.__slide-doughnut .slide-bg {
 		--image: url(/images/demo-3-xs-vertical.webp);
-	}
-	.__slide-form .slide-bg:nth-child(1) {
-		--image: url(/images/demo-4-xs-vertical.webp);
-		--w: 100%;
-		--h: 100%;
-		--angle: 0%;
-		--trend: 50%;
 	}
 	.__slide-trapeze-bg .slide-bg {
 		--angle: 45%;
@@ -113,6 +104,9 @@
 	}
 
 	/* utilities */
+	.xs-d-contents {
+		display: contents;
+	}
 	.xs-d-none {
 		display: none;
 	}

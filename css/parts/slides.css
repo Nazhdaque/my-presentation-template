@@ -65,7 +65,7 @@
 	mask: var(--mask, none);
 	border-radius: var(--radius, none);
 	transform: var(--transform, none);
-	aspect-ratio: var(--asp-ratio, none);
+	aspect-ratio: var(--asp, none);
 	/* overflow: hidden; */
 }
 .slide-bg::before {
@@ -184,8 +184,8 @@
 
 .circle {
 	--radius: 50%;
-	--asp-ratio: 1;
-	--h-inline: unset;
+	--h: auto;
+	--asp: 1;
 }
 
 .heptagon {
@@ -198,9 +198,28 @@
 		0% 60%,
 		10% 20%
 	);
-	--h-inline: unset;
-	--asp-ratio: 1;
+
+	--h: auto;
+	--asp: 1;
 }
+
+.nonagon {
+	--clip: polygon(
+		50% 0%,
+		83% 12%,
+		100% 43%,
+		94% 78%,
+		68% 100%,
+		32% 100%,
+		6% 78%,
+		0% 43%,
+		17% 12%
+	);
+
+	--h: auto;
+	--asp: 1;
+}
+
 /* |||||||||| |||||||||| waves https://css-generators.com/ */
 .waves {
 	--clp-left: radial-gradient(

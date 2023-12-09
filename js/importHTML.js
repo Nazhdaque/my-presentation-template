@@ -10,8 +10,8 @@ import slide_doughnut from "../html/parts/slide-doughnut.html?raw";
 import slide_form from "../html/parts/slide-form.html?raw";
 import slide_snake_list from "../html/parts/slide-snake-list.html?raw";
 import slide_trapeze_bg from "../html/parts/slide-trapeze-bg.html?raw";
-import slide_blobs_bg from "../html/parts/slide-blobs-bg.html?raw";
-import slide_skewed_overlay from "../html/parts/slide-skewed-overlay.html?raw";
+import slide_diamonds_bg from "../html/parts/slide-diamonds-bg.html?raw";
+import slide_stripes_rubik_bg from "../html/parts/slide-stripes-rubik-bg.html?raw";
 import formModal from "../html/parts/form-modal.html?raw";
 import sidebar from "../html/parts/sidebar.html?raw";
 
@@ -30,8 +30,8 @@ slidesContainer.insertAdjacentHTML("beforeend", slide_doughnut);
 slidesContainer.insertAdjacentHTML("beforeend", slide_form);
 slidesContainer.insertAdjacentHTML("beforeend", slide_trapeze_bg);
 slidesContainer.insertAdjacentHTML("beforeend", slide_snake_list);
-slidesContainer.insertAdjacentHTML("beforeend", slide_blobs_bg);
-slidesContainer.insertAdjacentHTML("beforeend", slide_skewed_overlay);
+slidesContainer.insertAdjacentHTML("beforeend", slide_diamonds_bg);
+slidesContainer.insertAdjacentHTML("beforeend", slide_stripes_rubik_bg);
 
 document
 	.querySelector(".form-modal")
