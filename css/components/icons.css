@@ -138,7 +138,7 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
-.polygon {
+.diamond {
 	--deg: 7deg;
 	--image: url(/images/demo-bg-1.svg);
 	--transform: rotate(var(--deg));
@@ -149,9 +149,18 @@
 	);
 	--filters: invert(1) brightness(1.15) saturate(1.15);
 
-	filter: drop-shadow(0 0 0.2rem hsla(var(--clr-1a), 0.75));
+	/* filter: drop-shadow(0 0 0.1rem hsla(var(--clr-1a), 0.75)); */
+	position: relative;
 }
-.polygon > * {
+.diamond::before {
+	position: absolute;
+	content: "";
+	inset: 5%;
+	background: var(--underlay);
+	border-radius: 50%;
+	filter: blur(100px) brightness(2) opacity(0.33) saturate(2);
+}
+.diamond > * {
 	clip-path: var(--clip, none);
 	background-image: var(--image, none), var(--underlay, none);
 	background-size: cover;
@@ -160,7 +169,7 @@
 	background-blend-mode: var(--img-blends, luminosity);
 	transform: rotate(var(--deg));
 }
-.polygon > *::after {
+.diamond > *::after {
 	content: "";
 	position: absolute;
 	inset: 0;
@@ -168,7 +177,7 @@
 	mix-blend-mode: difference;
 }
 
-.polygon__icon {
+.diamond__icon {
 	transform: rotate(calc(var(--deg) * -1));
 	filter: invert(1);
 }
