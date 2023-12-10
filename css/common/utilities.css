@@ -241,6 +241,9 @@
 .d-none {
 	display: none;
 }
+.d-contents {
+	display: contents;
+}
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| colors */
 .clr-0a {
