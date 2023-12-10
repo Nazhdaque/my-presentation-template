@@ -1,5 +1,5 @@
-var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,configurable:!0,writable:!0,value:e}):i[t]=e;var L=(i,t,e)=>(Ur(i,typeof t!="symbol"?t+"":t,e),e);(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))s(n);new MutationObserver(n=>{for(const a of n)if(a.type==="childList")for(const r of a.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&s(r)}).observe(document,{childList:!0,subtree:!0});function e(n){const a={};return n.integrity&&(a.integrity=n.integrity),n.referrerPolicy&&(a.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?a.credentials="include":n.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function s(n){if(n.ep)return;n.ep=!0;const a=e(n);fetch(n.href,a)}})();const Kr=`<li class="swiper-slide __slide-title-slide"
-		data-hash="title-slide">
+var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,configurable:!0,writable:!0,value:e}):i[t]=e;var L=(i,t,e)=>(Ur(i,typeof t!="symbol"?t+"":t,e),e);(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))s(n);new MutationObserver(n=>{for(const a of n)if(a.type==="childList")for(const r of a.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&s(r)}).observe(document,{childList:!0,subtree:!0});function e(n){const a={};return n.integrity&&(a.integrity=n.integrity),n.referrerPolicy&&(a.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?a.credentials="include":n.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function s(n){if(n.ep)return;n.ep=!0;const a=e(n);fetch(n.href,a)}})();const Kr=`<section class="swiper-slide __slide-title-slide"
+				 data-hash="title-slide">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg w-img"></div>
@@ -20,8 +20,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 				</div>
 			</div>
 
-			<ul class="grid-x __first-slide-list">
-				<li class="unit">
+			<div class="grid-x __first-slide-list">
+				<section class="unit">
 					<div class="unit__img img-box icon-bg"
 							 style="--img-size: 4rem">
 						<svg class="o-fit-contain figures">
@@ -39,9 +39,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 							быть
 							любыми в рамках предложенного формата.</p>
 					</div>
-				</li>
+				</section>
 
-				<li class="unit">
+				<section class="unit">
 					<div class="unit__img img-box icon-bg"
 							 style="--img-size: 4rem">
 						<svg class="o-fit-contain figures">
@@ -58,9 +58,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 						<p>Основные усилия направлены на создание универсальной
 							функциональности без привязки к контенту.</p>
 					</div>
-				</li>
+				</section>
 
-				<li class="unit">
+				<section class="unit">
 					<div class="unit__img img-box icon-bg"
 							 style="--img-size: 4rem">
 						<svg class="o-fit-contain figures">
@@ -78,9 +78,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 							главная
 							цель проекта.</p>
 					</div>
-				</li>
+				</section>
 
-				<li class="unit">
+				<section class="unit">
 					<div class="unit__img img-box icon-bg round sphere-1b"
 							 style="--img-size: 4rem">
 						<svg class="inner-icon figures">
@@ -97,14 +97,14 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 						<p>Уже сейчас это полнофункциональный продукт, готовый к использованию по
 							назначению.</p>
 					</div>
-				</li>
-			</ul>
+				</section>
+			</div>
 
 			<p class="side-ribbon -br fs-rg caps">under development</p>
 		</div>
 	</div>
-</li>`,Zr=`<li class="swiper-slide __slide-advantages"
-		data-hash="advantages">
+</section>`,Zr=`<section class="swiper-slide __slide-advantages"
+				 data-hash="advantages">
 	<div class="layout-center">
 		<div class="flex-x">
 			<div class="slide-bg w-img"></div>
@@ -116,10 +116,10 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 				<span class="scroll-down__text">Scroll down</span>
 			</div>
 
-			<div class="clr-1a">
+			<article class="clr-1a">
 				<div class="unit -rl fs-xl slide-ttl">
 					<div class="unit__img -pipe"></div>
-					<h2 class="unit__head">Достоинства <br>MS PowerPoint</h2>
+					<h1 class="unit__head">Достоинства <br>MS PowerPoint</h1>
 					<div class="unit__body fs-md grid-full-width t-align-r">
 						<p>Всего два, зато какие!</p>
 					</div>
@@ -130,7 +130,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 						<div class="unit__img img-box icon-bg round sphere-2b">
 							<i class="material-icons-round mui-icon">child_care</i>
 						</div>
-						<h3 class="unit__head -pipe caps">Что-то получится даже у ребенка</h3>
+						<h2 class="unit__head -pipe caps">Что-то получится даже у ребенка</h2>
 						<div class="arrow-right clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
@@ -152,7 +152,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 						<div class="unit__img img-box icon-bg round sphere-2b">
 							<i class="material-icons-round mui-icon">screenshot_monitor</i>
 						</div>
-						<h3 class="unit__head -pipe caps">Никаких сюрпризов</h3>
+						<h2 class="unit__head -pipe caps">Никаких сюрпризов</h2>
 						<div class="arrow-right clr-2b"></div>
 
 						<div class="unit__body grid-full-width">
@@ -176,21 +176,21 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 						</picture>
 					</li>
 				</ul>
-			</div>
+			</article>
 
-			<div class="clr-2b">
+			<article class="clr-2b">
 				<div class="unit fs-xl slide-ttl">
 					<div class="unit__img -pipe"></div>
-					<h2 class="unit__head">Почему web-проект лучше, <br> чем MS PowerPoint</h2>
+					<h1 class="unit__head">Почему web-проект лучше, <br> чем MS PowerPoint</h1>
 					<div class="unit__body fs-md grid-full-width">
 						<p>Спойлер: пожалуй, всем! Счет 12:2 не в пользу PP</p>
 					</div>
 				</div>
 
-				<ul class="plain-list ordered-list">
+				<ol class="plain-list ordered-list">
 					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere-1a"></div>
-						<h3 class="unit__head -pipe -rl caps">Готово к использованию</h3>
+						<h2 class="unit__head -pipe -rl caps">Готово к использованию</h2>
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
@@ -201,7 +201,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere-1a"></div>
-						<h3 class="unit__head -pipe -rl caps">Без лишних телодвижений</h3>
+						<h2 class="unit__head -pipe -rl caps">Без лишних телодвижений</h2>
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
@@ -212,7 +212,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere-1a"></div>
-						<h3 class="unit__head -pipe -rl caps">Интуитивно понятно</h3>
+						<h2 class="unit__head -pipe -rl caps">Интуитивно понятно</h2>
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
@@ -224,7 +224,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere-1a"></div>
-						<h3 class="unit__head -pipe -rl caps">Выглядит отлично</h3>
+						<h2 class="unit__head -pipe -rl caps">Выглядит отлично</h2>
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
@@ -239,7 +239,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere-1a"></div>
-						<h3 class="unit__head -pipe -rl caps">Аккуратно</h3>
+						<h2 class="unit__head -pipe -rl caps">Аккуратно</h2>
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
@@ -254,7 +254,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere-1a"></div>
-						<h3 class="unit__head -pipe -rl caps">Все поместится</h3>
+						<h2 class="unit__head -pipe -rl caps">Все поместится</h2>
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
@@ -268,7 +268,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere-1a"></div>
-						<h3 class="unit__head -pipe -rl caps">Легко кастомизировать</h3>
+						<h2 class="unit__head -pipe -rl caps">Легко кастомизировать</h2>
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
@@ -283,7 +283,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere-1a"></div>
-						<h3 class="unit__head -pipe -rl caps">Reusability</h3>
+						<h2 class="unit__head -pipe -rl caps">Reusability</h2>
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
@@ -297,7 +297,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere-1a"></div>
-						<h3 class="unit__head -pipe -rl caps">Адаптивность и responsive</h3>
+						<h2 class="unit__head -pipe -rl caps">Адаптивность и responsive</h2>
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
@@ -311,7 +311,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere-1a"></div>
-						<h3 class="unit__head -pipe -rl caps">Огромный потенциал</h3>
+						<h2 class="unit__head -pipe -rl caps">Огромный потенциал</h2>
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
@@ -323,7 +323,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere-1a"></div>
-						<h3 class="unit__head -pipe -rl caps">Сторонние библиотеки</h3>
+						<h2 class="unit__head -pipe -rl caps">Сторонние библиотеки</h2>
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
@@ -343,7 +343,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 					<li class="unit -rl">
 						<div class="unit__img img-box icon-bg round sphere-1a"></div>
-						<h3 class="unit__head -pipe -rl caps">Полноценный веб-ресурс</h3>
+						<h2 class="unit__head -pipe -rl caps">Полноценный веб-ресурс</h2>
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
@@ -355,12 +355,12 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								инструментов SEO-продвижения. Формы обратной связи, если это вам нужно.</p>
 						</div>
 					</li>
-				</ul>
-			</div>
+				</ol>
+			</article>
 		</div>
 	</div>
-</li>`,Jr=`<li class="swiper-slide __slide-grid-system"
-		data-hash="grid-system">
+</section>`,Jr=`<section class="swiper-slide __slide-grid-system"
+				 data-hash="grid-system">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg w-img"></div>
@@ -503,8 +503,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 			</ol> -->
 		</div>
 	</div>
-</li>`,Qr=`<li class="swiper-slide __slide-typography"
-		data-hash="typography">
+</section>`,Qr=`<section class="swiper-slide __slide-typography"
+				 data-hash="typography">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg zigzag w-img"></div>
@@ -518,8 +518,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 				</div>
 			</div>
 
-			<ul class="slide-body plain-list flex-x">
-				<li class="unit -rl">
+			<div class="slide-body plain-list flex-x">
+				<section class="unit -rl">
 					<div class="unit__img img-box icon-bg round sphere-2c">
 						<i class="material-icons-round mui-icon">monitor</i>
 					</div>
@@ -544,9 +544,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 						<li class="fs-xs"
 								style="--fs-xs: 0.64rem;">Lorem ipsum</li>
 					</ul>
-				</li>
+				</section>
 
-				<li class="unit clr-1a">
+				<section class="unit clr-1a">
 					<div class="unit__img img-box icon-bg round sphere-1b">
 						<i class="material-icons-round mui-icon">phone_android</i>
 					</div>
@@ -571,12 +571,12 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 						<li class="fs-xs"
 								style="--fs-xs: 0.79rem;">Lorem ipsum</li>
 					</ul>
-				</li>
-			</ul>
+				</section>
+			</div>
 		</div>
 	</div>
-</li>`,to=`<li class="swiper-slide __slide-cards"
-		data-hash="demo-cards">
+</section>`,to=`<section class="swiper-slide __slide-cards"
+				 data-hash="demo-cards">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg spike"></div>
@@ -602,8 +602,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 				</div>
 			</div>
 
-			<ul class="grid-x cards col-3">
-				<li class="card">
+			<div class="grid-x cards col-3">
+				<section class="card">
 					<div class="card__head">
 						<div class="card__img img-box overlay cq-container"
 								 style="--overlay: hsl(175, 85%, 30%, 0.25)">
@@ -630,9 +630,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								quaerat!</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card x-axis xs-a-flow-row">
+				<section class="card x-axis xs-a-flow-row">
 					<div class="card__head">
 						<picture class="card__img img-box xs-shadow-bottom">
 							<source media="(max-width: 576px)"
@@ -655,9 +655,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								reiciendis sapiente! Maiores dolores vero adipisci corporis atque soluta debitis placeat aut.</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card">
+				<section class="card">
 					<div class="card__head">
 						<picture class="card__img img-box">
 							<source media="(max-width: 576px)"
@@ -682,9 +682,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								asperiores praesentium?</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card">
+				<section class="card">
 					<div class="unit">
 						<div class="unit__img img-box icon-bg round sphere-1b"></div>
 						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
@@ -707,17 +707,17 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								voluptas iste neque, facere cupiditate aperiam.</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card">
+				<div class="card">
 					<picture class="card__img img-box img-card figure filters">
 						<img class="o-fit-contain"
 								 src="./images/rubik-0.svg"
 								 alt="">
 					</picture>
-				</li>
+				</div>
 
-				<li class="card x-axis xs-a-flow-row gap-0">
+				<section class="card x-axis xs-a-flow-row gap-0">
 					<div class="card__head">
 						<picture class="card__img img-box xs-shadow-bottom">
 							<source media="(max-width: 576px)"
@@ -741,9 +741,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								quaerat!</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card gap-0">
+				<section class="card gap-0">
 					<div class="card__head">
 						<picture class="card__img img-box">
 							<img class="o-fit-cover"
@@ -771,9 +771,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								quaerat!</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card">
+				<section class="card">
 					<div class="card__head">
 						<picture class="card__img img-box icon-bg round">
 							<source media="(max-width: 576px)"
@@ -818,9 +818,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 							</ul>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card">
+				<section class="card">
 					<div class="card__head -ttl-right xs-a-flow-row">
 						<div class="card__img img-box icon-bg overlay eye xs-shadow-bottom">
 							<picture>
@@ -856,9 +856,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								consequatur, soluta tenetur laborum natus recusandae porro sunt.</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card x-axis xs-a-flow-row">
+				<section class="card x-axis xs-a-flow-row">
 					<div class="card__head">
 						<div class="card__img img-box icon-bg round sphere-1b xs-shadow-bottom">
 							<i class="material-icons-round mui-icon">gpp_good</i>
@@ -875,9 +875,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								accusantium veritatis, nostrum sunt dolores ratione. Exercitationem distinctio adipisci?</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card">
+				<section class="card">
 					<div class="card__head">
 						<div class="polygon-ribbon-rounded-cutout-tl fs-sm">Nice!</div>
 						<div class="card__img img-box pattern-bg-1"></div>
@@ -900,9 +900,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								earum consectetur dolor quisquam ipsam esse tempore!</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card x-axis xs-a-flow-row">
+				<section class="card x-axis xs-a-flow-row">
 					<div class="card__head">
 						<div class="polygon nonagon">
 							<div class="card__img img-box icon-bg">
@@ -920,9 +920,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								quo facilis facere labore, quas et excepturi rem corrupti! Nam consectetur sint fugit?</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card gap-0">
+				<section class="card gap-0">
 					<div class="unit -bg">
 						<div class="unit__img -pipe"></div>
 						<h3 class="unit__head caps">Lorem ipsum dolor</h3>
@@ -947,9 +947,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								aliquam?</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card x-axis gap-0 card_triple md-a-flow-row c-span-x md-c-span-0">
+				<section class="card x-axis gap-0 card_triple md-a-flow-row c-span-x md-c-span-0">
 					<div class="unit -bg">
 						<div class="unit__img img-box icon-bg round sphere-1b">
 							<i class="material-icons-round mui-icon">gpp_good</i>
@@ -1019,11 +1019,11 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								maxime nihil ut soluta ad facilis.</p>
 						</div>
 					</div>
-				</li>
-			</ul>
+				</section>
+			</div>
 
-			<ul class="cards">
-				<li class="card gap-0">
+			<div class="cards">
+				<section class="card gap-0">
 
 					<div class="card__head">
 						<picture class="card__img img-box">
@@ -1084,11 +1084,11 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								beatae fugiat sunt adipisci. Velit porro quidem aliquid deleniti cupiditate.</p>
 						</div>
 					</div>
-				</li>
-			</ul>
+				</section>
+			</div>
 
 			<div class="cards">
-				<div class="unit">
+				<section class="unit">
 					<div class="unit__body grid-full-width txt-col-x col-4">
 
 						<div class="card__head">
@@ -1176,12 +1176,12 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 							Doloremque, quos mollitia architecto velit tempore, perferendis quasi minus harum aut itaque magnam sequi
 							beatae fugiat sunt adipisci. Velit porro quidem aliquid deleniti cupiditate.</p>
 					</div>
-				</div>
+				</section>
 			</div>
 		</div>
 	</div>
-</li>`,eo=`<li class="swiper-slide __slide-video"
-		data-hash="demo-video-and-scroll-snap">
+</section>`,eo=`<section class="swiper-slide __slide-video"
+				 data-hash="demo-video-and-scroll-snap">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg circle w-img"></div>
@@ -1193,8 +1193,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 				<h2 class="unit__head">Подгрузка видео по клику, scroll-snap, слайдер</h2>
 			</div>
 
-			<ul class="grid-x cards">
-				<li class="card gap-0">
+			<div class="grid-x cards">
+				<section class="card gap-0">
 					<div class="card__head">
 						<figure class="video o-hidden">
 							<a href="https://www.youtube.com/watch?v=URVHRhBSjj8"
@@ -1236,9 +1236,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								aspernatur nisi non alias enim ducimus repellendus accusamus eum iure voluptates!</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card">
+				<section class="card">
 					<div class="card__head">
 						<h3 class="card__ttl -bg caps ellipsis">Scroll-snap</h3>
 						<div class="card__img img-box">
@@ -1288,9 +1288,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								quis debitis doloribus tempora blanditiis!</p>
 						</div>
 					</div>
-				</li>
+				</section>
 
-				<li class="card gap-0">
+				<section class="card gap-0">
 					<div class="card__head">
 						<h3 class="card__ttl -bg caps ellipsis z-up"
 								style="--z: 2;">Swiper slider</h3>
@@ -1365,12 +1365,12 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 								voluptatibus, magnam accusantium sunt architecto esse nam et voluptates facere.</p>
 						</div>
 					</div>
-				</li>
-			</ul>
+				</section>
+			</div>
 		</div>
 	</div>
-</li>`,io=`<li class="swiper-slide __slide-table"
-		data-hash="demo-table">
+</section>`,io=`<section class="swiper-slide __slide-table"
+				 data-hash="demo-table">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg rounded clr-1b"></div>
@@ -1489,8 +1489,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 		</div>
 	</div>
-</li>`,so=`<li class="swiper-slide __slide-charts"
-		data-hash="demo-charts">
+</section>`,so=`<section class="swiper-slide __slide-charts"
+				 data-hash="demo-charts">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg spike clr-1b"></div>
@@ -1522,8 +1522,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 			</ul>
 		</div>
 	</div>
-</li>`,no=`<li class="swiper-slide __slide-doughnut"
-		data-hash="demo-doughnut-chart">
+</section>`,no=`<section class="swiper-slide __slide-doughnut"
+				 data-hash="demo-doughnut-chart">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg circle w-img"></div>
@@ -1562,7 +1562,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 					</div>
 				</div>
 
-				<div class="card">
+				<section class="card">
 					<div class="unit">
 						<div class="unit__body grid-full-width txt-col-x">
 
@@ -1608,12 +1608,12 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 									 alt="">
 						</picture>
 					</div>
-				</div>
+				</section>
 			</div>
 		</div>
 	</div>
-</li>`,ao=`<li class="swiper-slide __slide-form"
-		data-hash="demo-form">
+</section>`,ao=`<section class="swiper-slide __slide-form"
+				 data-hash="demo-form">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg trapeze w-img xs-d-none"></div>
@@ -1654,8 +1654,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 			</div>
 		</div>
 	</div>
-</li>`,ro=`<li class="swiper-slide __slide-snake-list"
-		data-hash="snake-list">
+</section>`,ro=`<section class="swiper-slide __slide-snake-list"
+				 data-hash="snake-list">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg diag w-img"></div>
@@ -1815,8 +1815,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 			</div>
 		</div>
 	</div>
-</li>`,oo=`<li class="swiper-slide __slide-trapeze-bg"
-		data-hash="trapeze-bg">
+</section>`,oo=`<section class="swiper-slide __slide-trapeze-bg"
+				 data-hash="trapeze-bg">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg trapeze"></div>
@@ -1836,8 +1836,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 			<div class="slide-body"></div>
 		</div>
 	</div>
-</li>`,lo=`<li class="swiper-slide __slide-diamonds-bg"
-		data-hash="diamonds-bg">
+</section>`,lo=`<section class="swiper-slide __slide-diamonds-bg"
+				 data-hash="diamonds-bg">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg w-img nonagon"></div>
@@ -1854,8 +1854,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 		</div>
 	</div>
-</li>`,co=`<li class="swiper-slide __slide-stripes-rubik-bg"
-		data-hash="stripes-rubik-bg">
+</section>`,co=`<section class="swiper-slide __slide-stripes-rubik-bg"
+				 data-hash="stripes-rubik-bg">
 	<div class="layout-center">
 		<div class="slide-content">
 			<div class="slide-bg w-img"></div>
@@ -1870,7 +1870,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 		</div>
 	</div>
-</li>`,uo=`<div class="form-modal__content width-x">
+</section>`,uo=`<div class="form-modal__content width-x">
 	<img class="form-modal__icon"
 			 src="./images/icons/icon-success.svg"
 			 alt="round orange-pink gradient check mark icon svg">
