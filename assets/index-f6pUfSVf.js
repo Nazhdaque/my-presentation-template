@@ -904,7 +904,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 
 				<section class="card x-axis xs-a-flow-row">
 					<div class="card__head">
-						<div class="diamond nonagon">
+						<div class="diamond polygon-9">
 							<div class="card__img img-box icon-bg">
 								<i class="material-icons-round mui-icon diamond__icon">gpp_good</i>
 							</div>
@@ -1188,7 +1188,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 		<div class="slide-content">
 			<div class="slide-bg circle w-img"></div>
 			<div class="slide-bg circle w-img"></div>
-			<div class="slide-bg nonagon w-img"></div>
+			<div class="slide-bg polygon-9 w-img"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
 				<div class="unit__img -pipe"></div>
@@ -1528,7 +1528,7 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 				 data-hash="demo-doughnut-chart">
 	<div class="layout-center">
 		<div class="slide-content">
-			<div class="slide-bg circle w-img"></div>
+			<div class="slide-bg polygon-15 w-img"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
 				<div class="unit__img img-box icon-bg round sphere-2c">
@@ -1842,9 +1842,9 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 				 data-hash="diamonds-bg">
 	<div class="layout-center">
 		<div class="slide-content">
-			<div class="slide-bg w-img nonagon"></div>
-			<div class="slide-bg w-img nonagon"></div>
-			<div class="slide-bg w-img heptagon"></div>
+			<div class="slide-bg w-img polygon-13"></div>
+			<div class="slide-bg w-img polygon-11"></div>
+			<div class="slide-bg w-img polygon-9"></div>
 
 
 			<div class="unit fs-xl slide-ttl width-x">
