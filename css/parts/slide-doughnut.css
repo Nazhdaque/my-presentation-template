@@ -1,14 +1,21 @@
 .__slide-doughnut .slide-bg {
-	--image: url(/images/demo-3-xl.webp);
 	--w: auto;
 	--h: 80%;
 	--side: var(--center);
+	--image: url(/images/demo-3-xl.webp);
 	--overlay: linear-gradient(
 		-90deg,
 		hsl(0, 0%, 0%, 0.2) 10%,
-		hsl(0, 0%, 0%, 0.8) 90%
+		hsl(0, 0%, 0%, 0.5) 90%
 	);
+	--underlay: url(/images/demo-bg-1.svg),
+		linear-gradient(
+			90deg,
+			hsl(var(--clr-1b), 0.75) 10%,
+			hsl(var(--clr-1a), 0.75) 60%
+		);
 	--pos: 100%;
+	--img-blends: luminosity, overlay;
 }
 
 .__slide-doughnut .slide-body {

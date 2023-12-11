@@ -28,16 +28,15 @@
 	--image: url(/images/demo-6-sm.webp);
 }
 
-.__slide-video .nonagon {
+.__slide-video .polygon-9 {
 	--left: 75% 35% 0 auto;
 	--side: var(--left);
 	--w: max(7%, 4rem);
-	--transform: rotate(45deg);
 
 	--image: url(/images/demo-bg-1.svg);
+	--transform: rotate(-120deg);
 	--underlay: linear-gradient(
-		40deg,
-		hsl(var(--clr-2b), 1) 10%,
+		hsl(var(--clr-2b), 1) 0%,
 		hsl(var(--clr-1a), 1) 60%
 	);
 

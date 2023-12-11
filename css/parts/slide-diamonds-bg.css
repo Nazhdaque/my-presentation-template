@@ -1,38 +1,44 @@
-.__slide-diamonds-bg .nonagon {
-	--image: url(/images/demo-bg-1.svg);
+.__slide-diamonds-bg .polygon-13 {
 	--left: -30% auto 0 5%;
 	--side: var(--left);
 	--w: max(26%, 10rem);
-	--transform: rotate(115deg);
-	--underlay: linear-gradient(
-		-20deg,
-		hsl(var(--clr-2a), 1) 20%,
-		hsl(var(--clr-2b), 1) 95%
-	);
+	--image: url(/images/demo-5-xl.webp);
+	--underlay: url(/images/demo-bg-1.svg),
+		linear-gradient(
+			70deg,
+			hsl(var(--clr-2a), 0.75) 20%,
+			hsl(var(--clr-2b), 0.75) 95%
+		);
+	--img-blends: luminosity, overlay;
+	--pos: 80%;
 }
 
-.__slide-diamonds-bg .nonagon:nth-child(2) {
-	--image: url(/images/demo-bg-1.svg);
+.__slide-diamonds-bg .polygon-11 {
 	--right: 50% 5% 0 auto;
 	--side: var(--right);
 	--w: max(18%, 7rem);
-	--transform: rotate(15deg);
-	--underlay: linear-gradient(
-		-60deg,
-		hsl(var(--clr-1a), 1) 20%,
-		hsl(var(--clr-1b), 1) 80%
-	);
+	--image: url(/images/demo-4-xl.webp);
+	--underlay: url(/images/demo-bg-1.svg), url(/images/demo-bg-1.svg),
+		linear-gradient(
+			-30deg,
+			hsl(var(--clr-1a), 0.75) 20%,
+			hsl(var(--clr-1b), 0.75) 80%
+		);
+	--img-blends: luminosity, overlay;
+	--pos: 30%;
 }
 
-.__slide-diamonds-bg .heptagon {
-	--image: url(/images/demo-bg-1.svg);
+.__slide-diamonds-bg .polygon-9 {
 	--right: -45% 35% 0 auto;
 	--side: var(--right);
 	--w: max(10%, 4rem);
-	--transform: rotate(67deg);
-	--underlay: linear-gradient(
-		230deg,
-		hsl(var(--clr-1b), 1) 20%,
-		hsl(var(--clr-2b), 1) 80%
-	);
+	--image: url(/images/demo-6-sm.webp);
+	--underlay: url(/images/demo-bg-1.svg), url(/images/demo-bg-1.svg),
+		linear-gradient(
+			-30deg,
+			hsl(var(--clr-1b), 0.75) 20%,
+			hsl(var(--clr-2b), 0.75) 80%
+		);
+	--img-blends: luminosity, overlay;
+	--pos: 20%;
 }

@@ -77,7 +77,6 @@
 	.__slide-video .slide-bg:nth-child(1) {
 		--image: url(/images/demo-1-xs-vertical.webp);
 	}
-
 	.__slide-charts .slide-bg:nth-child(1) {
 		--bg: hsl(var(--clr-2b));
 		--angle: 25%;
@@ -99,8 +98,11 @@
 		--pos: center 0%;
 		--clr-filter: hsla(75, 100%, 50%, 0.1);
 	}
-	.__slide-blobs-bg .slide-bg {
+	.__slide-diamonds-bg .polygon-13 {
 		--image: url(/images/demo-5-xs.webp);
+	}
+	.__slide-diamonds-bg .polygon-11 {
+		--image: url(/images/demo-4-xs.webp);
 	}
 
 	/* utilities */

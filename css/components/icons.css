@@ -139,15 +139,13 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
 .diamond {
-	--deg: 7deg;
+	--deg: -80deg;
 	--image: url(/images/demo-bg-1.svg);
-	--transform: rotate(var(--deg));
 	--underlay: linear-gradient(
-		90deg,
-		hsl(var(--clr-1a), 1) 30%,
+		hsl(var(--clr-1a), 1) 40%,
 		hsl(var(--clr-1b), 1) 100%
 	);
-	--filters: invert(1) brightness(1.15) saturate(1.15);
+	--filters: brightness(1.15) saturate(1.15);
 
 	/* filter: drop-shadow(0 0 0.1rem hsla(var(--clr-1a), 0.75)); */
 	position: relative;
@@ -155,29 +153,22 @@
 .diamond::before {
 	position: absolute;
 	content: "";
-	inset: 5%;
+	inset: 0;
 	background: var(--underlay);
 	border-radius: 50%;
+	transform: rotate(var(--deg, 0));
 	filter: blur(100px) brightness(2) opacity(0.33) saturate(2);
 }
 .diamond > * {
 	clip-path: var(--clip, none);
 	background-image: var(--image, none), var(--underlay, none);
 	background-size: cover;
-	background-position: var(--pos, center);
-	filter: var(--filters, invert(1));
-	background-blend-mode: var(--img-blends, luminosity);
-	transform: rotate(var(--deg));
-}
-.diamond > *::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background-color: white;
-	mix-blend-mode: difference;
+	background-position: center;
+	background-blend-mode: luminosity;
+	filter: var(--filters);
+	transform: rotate(var(--deg, 0));
 }
 
 .diamond__icon {
-	transform: rotate(calc(var(--deg) * -1));
-	filter: invert(1);
+	transform: rotate(calc(var(--deg, 0) * -1));
 }
