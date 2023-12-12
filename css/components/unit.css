@@ -16,6 +16,10 @@
 	row-gap: 0.25em;
 }
 
+.unit.subttl {
+	margin-block: 1.5em 0.75em;
+}
+
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
 .unit__img {
 	--img-h: var(--unit-img-size);

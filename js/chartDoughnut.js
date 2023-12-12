@@ -11,11 +11,37 @@ const chartColors = brandColors.getValues([
 	"--clr-2c",
 ]);
 
+const labelCenter = {
+	id: "labelCenter",
+	beforeDatasetsDraw(chart, args, pluginOptions) {
+		const { ctx, data } = chart;
+		ctx.save();
+		const xAxis = chart.getDatasetMeta(0).data[0].x;
+		const yAxis = chart.getDatasetMeta(0).data[0].y;
+		if (chart._active.length > 0) {
+			// const txtLabel = chart.config.data.labels[chart._active[0].index];
+			const numLabel =
+				chart.config.data.datasets[chart._active[0].datasetIndex].data[
+					chart._active[0].index
+				];
+			const clr =
+				chart.config.data.datasets[chart._active[0].datasetIndex]
+					.backgroundColor[chart._active[0].index];
+			ctx.font = "600 2em Montserrat";
+			ctx.fillStyle = clr;
+			ctx.textAlign = "center";
+			ctx.textBaseline = "middle";
+			ctx.fillText(`${numLabel}`, xAxis, yAxis);
+		}
+		ctx.restore();
+	},
+};
+
 const config = {
 	type: "doughnut",
-	plugins: [ChartDataLabels],
+	plugins: [ChartDataLabels, labelCenter],
 	options: {
-		cutout: 50,
+		cutout: 70,
 		layout: {
 			padding: {
 				top: 10,
@@ -48,7 +74,7 @@ const config = {
 		datasets: [
 			{
 				label: "Amount",
-				data: [65, 72, 88, 43, 56],
+				data: [35.91, 42.36, 28.07, 24.39, 21.28],
 				backgroundColor: [
 					`hsl(${chartColors[0]})`,
 					`hsl(${chartColors[1]})`,
@@ -64,4 +90,4 @@ const config = {
 
 document
 	.querySelectorAll(".chart-doughnut")
-	.forEach(chart => new Chart(chart, config));
+	.forEach(ctx => new Chart(ctx, config));

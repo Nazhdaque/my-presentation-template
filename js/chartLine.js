@@ -16,21 +16,21 @@ const data = {
 	datasets: [
 		{
 			label: "Data-1",
-			data: [65, 34, 82, 75, 47, 55, 91],
-			borderColor: `hsl(${chartColors[2]}, 1)`,
+			data: [22.95, 28.41, 61.34, 33.66, 36.89, 24.16, 31.74],
+			borderColor: `hsl(${chartColors[0]}, 1)`,
 			fill: {
 				target: true,
-				above: `hsl(${chartColors[2]}, 0.1)`,
+				above: `hsl(${chartColors[0]}, 0.1)`,
 			},
 			tension: 0.25,
 			pointStyle: "circle",
-			backgroundColor: `hsl(${chartColors[2]}, 1)`,
+			backgroundColor: `hsl(${chartColors[1]}, 1)`,
 			pointRadius: 5,
 			pointHoverRadius: 15,
 		},
 		{
 			label: "Data-2",
-			data: [25, 44, 54, 32, 14, 46, 52],
+			data: [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48],
 			borderColor: `hsl(${chartColors[3]}, 1)`,
 			borderDash: [6, 2],
 			fill: {
@@ -39,7 +39,7 @@ const data = {
 			},
 			tension: 0.25,
 			pointStyle: "circle",
-			backgroundColor: `hsl(${chartColors[3]}, 1)`,
+			backgroundColor: `hsl(${chartColors[2]}, 1)`,
 			pointRadius: 5,
 			pointHoverRadius: 15,
 		},
@@ -49,9 +49,7 @@ const data = {
 const options = {
 	maintainAspectRatio: false,
 	scales: {
-		y: {
-			beginAtZero: true,
-		},
+		y: { beginAtZero: true },
 	},
 };
 
