@@ -1255,24 +1255,21 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 									<figcaption class="side-ribbon -br fs-xs caps">Это интерактивный график</figcaption>
 									<canvas class="chart-line"></canvas>
 								</figure>
-								<picture class="img-box"
-												 tabindex="1">
+								<picture class="img-box">
 									<img class="o-fit-cover"
 											 loading="lazy"
 											 decoding="async"
 											 src="./images/demo-4-xl.webp"
 											 alt="">
 								</picture>
-								<picture class="img-box"
-												 tabindex="1">
+								<picture class="img-box">
 									<img class="o-fit-cover"
 											 loading="lazy"
 											 decoding="async"
 											 src="./images/demo-6-sm.webp"
 											 alt="">
 								</picture>
-								<picture class="img-box"
-												 tabindex="1">
+								<picture class="img-box">
 									<img class="o-fit-cover"
 											 loading="lazy"
 											 decoding="async"
