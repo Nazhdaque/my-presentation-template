@@ -148,6 +148,8 @@
 	--filters: brightness(1.15) saturate(1.15);
 
 	/* filter: drop-shadow(0 0 0.1rem hsla(var(--clr-1a), 0.75)); */
+	height: var(--img-h);
+	aspect-ratio: var(--asp);
 	position: relative;
 }
 .diamond::before {
@@ -157,7 +159,7 @@
 	background: var(--underlay);
 	border-radius: 50%;
 	transform: rotate(var(--deg, 0));
-	filter: blur(100px) brightness(2) opacity(0.33) saturate(2);
+	filter: blur(2rem) brightness(2) opacity(0.33) saturate(2);
 }
 .diamond > * {
 	clip-path: var(--clip, none);
