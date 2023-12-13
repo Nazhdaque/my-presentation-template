@@ -139,6 +139,7 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
 .diamond {
+	--shadow: none;
 	--deg: -80deg;
 	--image: url(/images/demo-bg-1.svg);
 	--underlay: linear-gradient(
