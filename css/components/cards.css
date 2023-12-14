@@ -5,6 +5,8 @@
 	--img-size: 10rem;
 	--img-h: var(--img-size);
 	--card-gap: 2em;
+
+	place-self: var(--place, auto);
 }
 
 .card {

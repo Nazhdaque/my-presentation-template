@@ -16,3 +16,22 @@
 	--side: var(--left);
 	--clip: var(--clp-left);
 }
+
+.__slide-trapeze-bg .slide-content {
+	--gap-y: 3rem;
+}
+
+.__slide-trapeze-bg .cards {
+	--img-h: min(25rem, 90vw);
+	--gap-y: 0.5em;
+	--place: center;
+}
+
+.__slide-trapeze-bg .card {
+	grid-auto-columns: var(--img-h);
+}
+
+.__slide-trapeze-bg .plain-list {
+	--img-size: 2rem;
+	--img-place: center;
+}
