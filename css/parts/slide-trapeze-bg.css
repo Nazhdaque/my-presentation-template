@@ -17,14 +17,12 @@
 	--clip: var(--clp-left);
 }
 
-.__slide-trapeze-bg .slide-content {
-	--gap-y: 3rem;
-}
-
 .__slide-trapeze-bg .cards {
-	--img-h: min(25rem, 90vw);
+	--img-h: min(25rem, 100vw - 2rem);
 	--gap-y: 0.5em;
 	--place: center;
+
+	margin-block: 3rem;
 }
 
 .__slide-trapeze-bg .card {
