@@ -1834,14 +1834,49 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 				<div class="unit__img img-box icon-bg round sphere-1b">
 					<i class="material-icons-round mui-icon">question_mark</i>
 				</div>
-				<h2 class="unit__head">Lorem ipsum dolor sit amet</h2>
+				<h2 class="unit__head">Яндекс-карты</h2>
 				<div class="unit__body fs-md grid-full-width">
 					<p>Consectetur adipisicing elit. Maxime,
 						repellendus!</p>
 				</div>
 			</div>
 
-			<div class="slide-body"></div>
+			<div class="cards">
+				<section class="card x-axis md-a-flow-row gap-0">
+					<div class="card__head">
+						<picture class="card__img img-box xs-shadow-bottom"
+										 id="ymap">
+						</picture>
+					</div>
+
+					<div class="unit -bg">
+						<div class="unit__body grid-full-width">
+							<ul class="plain-list sphere-2c">
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round">
+										<i class="material-icons-round mui-icon">location_on</i>
+									</div>
+									<p class="unit__head">Lorem ipsum dolor sit.</p>
+								</li>
+
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round">
+										<i class="material-icons-round mui-icon">location_on</i>
+									</div>
+									<p class="unit__head">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+								</li>
+
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round">
+										<i class="material-icons-round mui-icon">location_on</i>
+									</div>
+									<p class="unit__head">Lorem ipsum dolor sit amet.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
 		</div>
 	</div>
 </section>`,lo=`<section class="swiper-slide __slide-diamonds-bg"
