@@ -17,6 +17,10 @@
 	--clip: var(--clp-left);
 }
 
+.__slide-trapeze-bg .slide-ttl .unit__img {
+	--img-h: 1.6em;
+}
+
 .__slide-trapeze-bg .cards {
 	--img-h: min(25rem, 100vw - 2rem);
 	--gap-y: 0.5em;

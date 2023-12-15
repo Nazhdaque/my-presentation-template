@@ -17,7 +17,7 @@
 	--overlay-blends: overlay;
 }
 
-.__first-slide-list {
+.__title-slide-info {
 	--col: 4;
 	--gap-x: 1.5em;
 	--gap-y: 6rem;
@@ -25,7 +25,7 @@
 
 	margin-block: 8em;
 }
-.__first-slide-list .unit {
+.__title-slide-info .unit {
 	--gap-y: 1.5rem;
 }
 
