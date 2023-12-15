@@ -20,11 +20,10 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 				</div>
 			</div>
 
-			<div class="grid-x __first-slide-list">
+			<div class="grid-x __title-slide-info">
 				<section class="unit">
-					<div class="unit__img img-box icon-bg"
-							 style="--img-size: 4rem">
-						<svg class="o-fit-contain figures">
+					<div class="unit__img img-box icon-bg">
+						<svg class="o-fit-contain">
 							<use href="./images/icons/sprites/figures.svg#figure-1"></use>
 						</svg>
 					</div>
@@ -42,9 +41,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 				</section>
 
 				<section class="unit">
-					<div class="unit__img img-box icon-bg"
-							 style="--img-size: 4rem">
-						<svg class="o-fit-contain figures">
+					<div class="unit__img img-box icon-bg">
+						<svg class="o-fit-contain">
 							<use href="./images/icons/sprites/figures.svg#figure-3"></use>
 						</svg>
 					</div>
@@ -61,9 +59,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 				</section>
 
 				<section class="unit">
-					<div class="unit__img img-box icon-bg"
-							 style="--img-size: 4rem">
-						<svg class="o-fit-contain figures">
+					<div class="unit__img img-box icon-bg">
+						<svg class="o-fit-contain">
 							<use href="./images/icons/sprites/figures.svg#figure-4"></use>
 						</svg>
 					</div>
@@ -81,9 +78,8 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 				</section>
 
 				<section class="unit">
-					<div class="unit__img img-box icon-bg round sphere-1b"
-							 style="--img-size: 4rem">
-						<svg class="inner-icon figures">
+					<div class="unit__img img-box icon-bg round sphere-1b">
+						<svg class="inner-icon">
 							<use href="./images/icons/sprites/figures.svg#figure-2"></use>
 						</svg>
 					</div>
@@ -1831,14 +1827,12 @@ var Xr=Object.defineProperty;var Ur=(i,t,e)=>t in i?Xr(i,t,{enumerable:!0,config
 			<div class="slide-bg trapeze w-img xs-d-none"></div>
 
 			<div class="unit fs-xl slide-ttl width-x">
-				<div class="unit__img img-box icon-bg round sphere-1b">
-					<i class="material-icons-round mui-icon">question_mark</i>
-				</div>
+				<picture class="unit__img img-box icon-bg">
+					<img class="o-fit-contain"
+							 src="./images/icons/yandex.svg"
+							 alt="">
+				</picture>
 				<h2 class="unit__head">Яндекс-карты</h2>
-				<!-- <div class="unit__body fs-md grid-full-width">
-					<p>Consectetur adipisicing elit. Maxime,
-						repellendus!</p>
-				</div> -->
 			</div>
 
 			<div class="cards">
