@@ -32,4 +32,8 @@
 .__slide-trapeze-bg .plain-list {
 	--img-size: 2rem;
 	--img-place: center;
+	--gap-x: 0.75em;
+	--gap-y: 0.25em;
+
+	row-gap: 1.5em;
 }
