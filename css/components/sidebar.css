@@ -136,6 +136,7 @@
 .sidebar-item__btn:where(:focus-visible, :hover) .icon-bg {
 	--clr-bg: hsl(var(--clr-1b));
 	--clr-txt: hsl(var(--clr-0a));
+	--clr-alpha: var(--clr-1a);
 }
 
 /* default accordion library styles */
@@ -149,4 +150,19 @@
 }
 .ac.is-active .ac-panel {
 	visibility: visible;
+}
+
+/* --- */
+.sidebar .diamond {
+	--underlay: linear-gradient(
+		hsl(var(--clr-1a), 1) 20%,
+		hsl(var(--clr-2b), 1) 80%
+	);
+
+	padding: 0.25em;
+}
+
+.sidebar .arrow-right {
+	--img-size: 3.5em;
+	--min-arrow-length: var(--img-size);
 }

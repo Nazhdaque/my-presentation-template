@@ -1,13 +1,5 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| xl */
 @media (width <= 1400px) {
-	.unit__body.-xl-shift-l {
-		grid-area: 2 / 1 / 2 / 3;
-	}
-	.unit__body.-xl-shift-r {
-		grid-area: 2 / 2 / 2 / 4;
-	}
-
-	/* utilities */
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| lg */
@@ -22,6 +14,16 @@
 		--col: 3;
 		--x: 1;
 		--shrink: 1;
+	}
+	.__slide-snake-list .__snake-list {
+		--row-x: repeat(6, auto);
+	}
+
+	.unit__body.-md-shift-l {
+		grid-area: 2 / 1 / 2 / 3;
+	}
+	.unit__body.-md-shift-r {
+		grid-area: 2 / 2 / 2 / 4;
 	}
 
 	/* utilities */

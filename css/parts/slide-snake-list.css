@@ -12,7 +12,6 @@
 	--col: 2;
 	--x: 1.5;
 	--shrink: 0.33;
-	--grow: 0;
 	--gap-x: 6em;
 	--gap-y: var(--gap-x);
 
@@ -24,6 +23,8 @@
 	--img-size: min(3em, 3vw + 1em);
 	--img-place: start center;
 	--gap-y: 1.5em;
+	--flow: column;
+	--row-x: repeat(3, auto);
 
 	row-gap: var(--gap-y);
 }

@@ -46,16 +46,18 @@
 	display: grid;
 	column-gap: var(--gap-x, 0rem);
 	row-gap: var(--gap-y, 0rem);
-	grid-template-columns: var(--col-x);
+	grid-template-columns: var(--col-x, none);
+	grid-template-rows: var(--row-x, none);
+	grid-auto-flow: var(--flow, row);
 }
 
-.col-2 {
+.-col-2 {
 	--col: 2;
 }
-.col-3 {
+.-col-3 {
 	--col: 3;
 }
-.col-4 {
+.-col-4 {
 	--col: 4;
 }
 
@@ -100,13 +102,13 @@
 	width: var(--width-x);
 }
 
-.w-2 {
+.-w-2 {
 	--x: 2;
 }
-.w-3 {
+.-w-3 {
 	--x: 3;
 }
-.w-4 {
+.-w-4 {
 	--x: 4;
 }
 

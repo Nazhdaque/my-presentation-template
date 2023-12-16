@@ -28,3 +28,28 @@
 // 	duration: 200,
 // 	showMultiple: true,
 // });
+
+const sidebar = document.querySelector(".sidebar");
+const sidebarToggle = document.querySelector(".sidebar-toggle");
+let sidebarTimerId = null;
+
+sidebarToggle.addEventListener("click", () => {
+	sidebarToggle.classList.toggle("active");
+
+	if (sidebar.classList.contains("isOpen")) {
+		sidebar.classList.remove("isOpen");
+		clearTimeout(sidebarTimerId);
+	} else {
+		sidebar.style.display = "initial";
+		sidebarTimerId = setTimeout(
+			() => requestAnimationFrame(() => sidebar.classList.add("isOpen")),
+			0.1
+		);
+	}
+});
+
+sidebar.addEventListener(
+	"transitionend",
+	() =>
+		!sidebar.classList.contains("isOpen") && (sidebar.style.display = "none")
+);
