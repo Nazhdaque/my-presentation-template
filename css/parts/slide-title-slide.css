@@ -23,7 +23,7 @@
 	--gap-y: 6rem;
 	--img-size: 4em;
 
-	margin-block: 8em;
+	margin-block: 4em;
 }
 .__title-slide-info .unit {
 	--gap-y: 1.5rem;
@@ -32,12 +32,50 @@
 .__slide-title-slide .side-ribbon {
 	--bottom-right: auto 1em 3em auto;
 
-	padding: 0.75em;
-	animation: slide-out 0.5s cubic-bezier(0.36, 0, 0.66, -0.56) 3s forwards;
+	padding: 1em 0.75em;
+	animation: slide-out 0.5s cubic-bezier(0.36, 0, 0.66, -0.56) 6s forwards;
 }
 
+/* --- */
+.__browsers {
+	--img-h: 2rem;
+	--radius: calc(var(--img-h) * 0.7);
+	--bottom-left: auto auto 3em auto;
+
+	position: absolute;
+	inset: var(--bottom-left);
+}
+.__browsers .inner-icon {
+	padding: 15%;
+}
+.__browsers .__safari {
+	margin-top: 0.06em;
+}
+.__browsers .mui-icon {
+	--icon-size: var(--img-h);
+}
+.__browsers > * {
+	animation: collapse 0.5s cubic-bezier(0.36, 0, 0.66, -0.56) 6s forwards;
+}
+
+/* --- */
 @keyframes slide-out {
 	100% {
 		transform: translateX(200%);
+	}
+}
+
+@keyframes collapse {
+	100% {
+		--radius: 0;
+		--r-offset: 0.75turn;
+		--d: calc(var(--i) / var(--total));
+		--r-amount: 1turn;
+		--r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
+		--transform: rotate(var(--r)) translate(var(--radius))
+			rotate(calc(-1 * var(--r)));
+
+		transform: var(--transform);
+		opacity: 0;
 	}
 }

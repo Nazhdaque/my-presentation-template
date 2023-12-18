@@ -6,13 +6,13 @@ export class SizeSetter {
 	observer = slaves =>
 		new ResizeObserver(masters =>
 			masters.forEach(master => {
-				const width = master.borderBoxSize[0].inlineSize;
-				const height = master.borderBoxSize[0].blockSize;
 				switch (this.prop) {
 					case "w":
+						const width = master.borderBoxSize[0].inlineSize;
 						slaves.forEach(slave => (slave.style.maxWidth = `${width}px`));
 						break;
 					case "h":
+						const height = master.borderBoxSize[0].blockSize;
 						slaves.forEach(slave => (slave.style.minHeight = `${height}px`));
 						break;
 				}

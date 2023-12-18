@@ -27,6 +27,7 @@
 @import url(./components/form-modal.css) layer(components);
 @import url(./components/scroll-down.css) layer(components);
 @import url(./components/tag.css) layer(components);
+@import url(./components/place-on-circle.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
 @import url(./parts/slides.css) layer(parts);
@@ -39,7 +40,7 @@
 @import url(./parts/slide-typography.css) layer(parts);
 @import url(./parts/slide-video.css) layer(parts);
 @import url(./parts/slide-doughnut.css) layer(parts);
-@import url(./parts/slide-trapeze-bg.css) layer(parts);
+@import url(./parts/slide-yandex-map.css) layer(parts);
 @import url(./parts/slide-form.css) layer(parts);
 @import url(./parts/slide-snake-list.css) layer(parts);
 @import url(./parts/slide-diamonds-bg.css) layer(parts);

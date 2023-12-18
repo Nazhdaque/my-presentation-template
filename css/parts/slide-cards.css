@@ -4,10 +4,10 @@
 }
 
 .__slide-cards .slide-content {
-	--gap-y: 6rem;
+	--gap-y: 4rem;
 
 	grid-auto-rows: min-content;
-	margin-bottom: var(--gap-y);
+	margin-bottom: 6rem;
 }
 
 .__slide-cards .slide-ttl {
@@ -39,6 +39,7 @@
 	background-color: hsl(var(--clr-0a));
 }
 
+/* --- */
 .__slide-cards .__icons-box {
 	grid-area: 1 / 1;
 	place-self: center end;

@@ -1,0 +1,20 @@
+.place-on-circle {
+	display: grid;
+	place-items: center;
+	grid-template-areas: "place-on-circle";
+	border-radius: 50%;
+	width: calc(3 * var(--radius));
+	height: calc(3 * var(--radius));
+}
+
+.place-on-circle > * {
+	--d: calc(var(--i) / var(--total));
+	--r-offset: 0.25turn;
+	--r-amount: 1turn;
+	--r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
+	--transform: rotate(var(--r)) translate(var(--radius))
+		rotate(calc(-1 * var(--r)));
+
+	grid-area: place-on-circle;
+	transform: var(--transform);
+}
