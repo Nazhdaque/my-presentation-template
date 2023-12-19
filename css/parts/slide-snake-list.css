@@ -22,7 +22,7 @@
 
 .__slide-snake-list .__snake-list {
 	--img-size: min(3em, 3vw + 1em);
-	--img-place: start center;
+	--img-place: center;
 	--gap-y: 1.5em;
 	--flow: column;
 	--row-x: repeat(3, auto);
@@ -31,4 +31,6 @@
 }
 .__slide-snake-list .__snake-list .unit {
 	--gap-x: var(--gap-y);
+
+	grid-auto-rows: min-content 1fr;
 }
