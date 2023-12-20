@@ -10,42 +10,79 @@ const chartColors = brandColors.getValues([
 	"--clr-2c",
 ]);
 
-class chartValues {
+class ChartValues {
 	constructor(data) {
 		this.data = data;
-		this.chartColors = {
-			main: `hsl(${chartColors[0]}, 0.6)`,
-			mainOnHover: `hsl(${chartColors[0]}, 1)`,
-			accent: `hsl(${chartColors[1]}, 0.6)`,
-			accentOnHover: `hsl(${chartColors[1]}, 1)`,
-		};
-		this.keys = [...new Set(this.data.flatMap(Object.keys))];
-		this.amounts = this.getAmounts();
-		this.maxValue = this.getMaxValue();
+		this.chartColors = [
+			{
+				main: `hsl(${chartColors[0]}, 0.6)`,
+				main_active: `hsl(${chartColors[0]}, 1)`,
+				// accent: `hsl(${chartColors[1]}, 0.6)`,
+				// accent_active: `hsl(${chartColors[1]}, 1)`,
+			},
+			{
+				main: `hsl(${chartColors[1]}, 0.6)`,
+				main_active: `hsl(${chartColors[1]}, 1)`,
+				// accent: `hsl(${chartColors[3]}, 0.6)`,
+				// accent_active: `hsl(${chartColors[3]}, 1)`,
+			},
+		];
+
+		this.labels = [];
+		this.amounts = [];
+		this.maxValues = [];
 	}
 
-	getlabels = () => this.data.map(entry => entry[this.keys[0]]);
-	getAmounts = () => this.data.map(entry => entry[this.keys[1]]);
-	getMaxValue = () => Math.max(...this.amounts);
-	getMainBgColor = () =>
-		this.data.map(entry =>
-			entry[this.keys[1]] === this.maxValue
-				? this.chartColors.accent
-				: this.chartColors.main
-		);
-	getHoverBgColor = () =>
-		this.data.map(entry =>
-			entry[this.keys[1]] === this.maxValue
-				? this.chartColors.accentOnHover
-				: this.chartColors.mainOnHover
-		);
+	getChartLabels = () => {
+		this.data.forEach(entry => this.labels.push(Object.keys(entry)));
+		return this.labels;
+	};
+	getChartData = () => {
+		this.data.forEach(entry => this.amounts.push(Object.values(entry)));
+		return this.amounts;
+	};
+	getMaxValues = () => {
+		this.amounts.forEach(entry => this.maxValues.push(Math.max(...entry)));
+		return this.maxValues;
+	};
+	colorizeChart = () => {
+		const mainColors = [];
+		const activeColors = [];
+
+		this.data.forEach((dataset, index) => {
+			const clrSet_main = [];
+			const clrSet_active = [];
+
+			for (const key in dataset) {
+				switch (dataset[key]) {
+					case this.getMaxValues()[index]:
+						const color = this.chartColors[index].accent;
+						const color_active = this.chartColors[index].accent_active;
+
+						color && clrSet_main.push(color);
+						color_active && clrSet_active.push(color_active);
+						break;
+					default:
+						clrSet_main.push(this.chartColors[index].main);
+						clrSet_active.push(this.chartColors[index].main_active);
+				}
+			}
+
+			mainColors.push(clrSet_main);
+			activeColors.push(clrSet_active);
+		});
+
+		return {
+			mainColors: mainColors,
+			activeColors: activeColors,
+		};
+	};
+
 	getValues = () => {
 		return {
-			labels: this.getlabels(),
-			data: this.getAmounts(),
-			bgClr: this.getMainBgColor(),
-			hoverBgClr: this.getHoverBgColor(),
-			chartColors: this.chartColors,
+			labels: this.getChartLabels(),
+			data: this.getChartData(),
+			colors: this.colorizeChart(),
 		};
 	};
 }
@@ -53,7 +90,7 @@ class chartValues {
 const getData = async () => {
 	const responce = await fetch("chart-data.json");
 	const data = await responce.json();
-	const values = new chartValues(data);
+	const values = new ChartValues(data);
 	return values.getValues();
 };
 
@@ -65,14 +102,22 @@ const getChart = async () => {
 			new Chart(chart, {
 				type: "bar",
 				data: {
-					labels: demoChart.labels,
+					labels: demoChart.labels[0],
 					datasets: [
 						{
-							label: "Income",
-							data: demoChart.data,
-							backgroundColor: demoChart.bgClr,
-							hoverBackgroundColor: demoChart.hoverBgClr,
-							borderColor: demoChart.hoverBgClr,
+							label: "data-1",
+							data: demoChart.data[0],
+							backgroundColor: demoChart.colors.mainColors[0],
+							hoverBackgroundColor: demoChart.colors.activeColors[0],
+							borderColor: demoChart.colors.activeColors[0],
+							borderWidth: 2,
+						},
+						{
+							label: "data-2",
+							data: demoChart.data[1],
+							backgroundColor: demoChart.colors.mainColors[1],
+							hoverBackgroundColor: demoChart.colors.activeColors[1],
+							borderColor: demoChart.colors.activeColors[1],
 							borderWidth: 2,
 						},
 					],
@@ -80,7 +125,8 @@ const getChart = async () => {
 				options: {
 					maintainAspectRatio: false,
 					scales: {
-						y: { beginAtZero: true },
+						x: { stacked: true },
+						y: { beginAtZero: true, stacked: true },
 					},
 				},
 			})
