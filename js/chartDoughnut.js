@@ -41,15 +41,8 @@ const config = {
 	type: "doughnut",
 	plugins: [ChartDataLabels, labelCenter],
 	options: {
-		cutout: 70,
-		layout: {
-			padding: {
-				top: 10,
-				bottom: 10,
-			},
-		},
-		maintainAspectRatio: false,
 		plugins: {
+			tooltip: { enabled: false },
 			legend: { position: "left" },
 			colors: { enabled: true },
 			datalabels: {
@@ -66,6 +59,14 @@ const config = {
 					return percentage.toFixed(2) + "%";
 				},
 				color: "#fff",
+			},
+		},
+		maintainAspectRatio: false,
+		cutout: 70,
+		layout: {
+			padding: {
+				top: 12,
+				bottom: 12,
 			},
 		},
 	},

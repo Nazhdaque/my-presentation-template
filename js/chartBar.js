@@ -1,4 +1,5 @@
 import Chart from "chart.js/auto";
+import ChartDataLabels from "chartjs-plugin-datalabels";
 import { BrandColors } from "./brandColors";
 
 const brandColors = new BrandColors();
@@ -10,6 +11,9 @@ const chartColors = brandColors.getValues([
 	"--clr-2c",
 ]);
 
+// ---
+
+//---
 class ChartValues {
 	constructor(data) {
 		this.data = data;
@@ -23,6 +27,12 @@ class ChartValues {
 			{
 				main: `hsl(${chartColors[1]}, 0.6)`,
 				main_active: `hsl(${chartColors[1]}, 1)`,
+				// accent: `hsl(${chartColors[3]}, 0.6)`,
+				// accent_active: `hsl(${chartColors[3]}, 1)`,
+			},
+			{
+				main: `hsl(${chartColors[3]}, 0.6)`,
+				main_active: `hsl(${chartColors[3]}, 1)`,
 				// accent: `hsl(${chartColors[3]}, 0.6)`,
 				// accent_active: `hsl(${chartColors[3]}, 1)`,
 			},
@@ -96,41 +106,96 @@ const getData = async () => {
 
 const getChart = async () => {
 	const demoChart = await getData();
+	const topLabels = {
+		id: "topLabels",
+		afterDatasetsDraw(chart, args, pluginOptions) {
+			const {
+				ctx,
+				scales: { x, y },
+			} = chart;
 
-	document.querySelectorAll(".chart-bar").forEach(
-		chart =>
-			new Chart(chart, {
-				type: "bar",
-				data: {
-					labels: demoChart.labels[0],
-					datasets: [
-						{
-							label: "data-1",
-							data: demoChart.data[0],
-							backgroundColor: demoChart.colors.mainColors[0],
-							hoverBackgroundColor: demoChart.colors.activeColors[0],
-							borderColor: demoChart.colors.activeColors[0],
-							borderWidth: 2,
-						},
-						{
-							label: "data-2",
-							data: demoChart.data[1],
-							backgroundColor: demoChart.colors.mainColors[1],
-							hoverBackgroundColor: demoChart.colors.activeColors[1],
-							borderColor: demoChart.colors.activeColors[1],
-							borderWidth: 2,
-						},
-					],
-				},
-				options: {
-					maintainAspectRatio: false,
-					scales: {
-						x: { stacked: true },
-						y: { beginAtZero: true, stacked: true },
+			chart.data.datasets[0].data.forEach((datapoints, index) => {
+				const datasetArray = [];
+
+				chart.data.datasets.forEach(dataset =>
+					datasetArray.push(dataset.data[index])
+				);
+
+				const totalSum = (total, values) => total + values;
+				let sum = datasetArray.reduce(totalSum, 0).toFixed(2);
+
+				ctx.font = "bold 0.85rem sans-serif";
+				ctx.fillStyle = chart.data.datasets[2].borderColor[index];
+				ctx.textAlign = "center";
+				ctx.fillText(
+					sum,
+					x.getPixelForValue(index),
+					chart.getDatasetMeta(2).data[index].y - 10
+				);
+			});
+		},
+	};
+	const config = {
+		type: "bar",
+		plugins: [ChartDataLabels, topLabels],
+		data: {
+			labels: demoChart.labels[0],
+			datasets: [
+				{
+					label: "data-1",
+					data: demoChart.data[0],
+					backgroundColor: demoChart.colors.mainColors[0],
+					hoverBackgroundColor: demoChart.colors.activeColors[0],
+					borderColor: demoChart.colors.activeColors[0],
+					borderWidth: 2,
+					datalabels: {
+						// color: chart => chart.dataset.borderColor[chart.dataIndex],
+						color: demoChart.colors.activeColors[1],
 					},
 				},
-			})
-	);
+				{
+					label: "data-2",
+					data: demoChart.data[1],
+					backgroundColor: demoChart.colors.mainColors[1],
+					hoverBackgroundColor: demoChart.colors.activeColors[1],
+					borderColor: demoChart.colors.activeColors[1],
+					borderWidth: 2,
+					datalabels: {
+						color: demoChart.colors.activeColors[2],
+					},
+				},
+				{
+					label: "data-3",
+					data: demoChart.data[2],
+					backgroundColor: demoChart.colors.mainColors[2],
+					hoverBackgroundColor: demoChart.colors.activeColors[2],
+					borderColor: demoChart.colors.activeColors[2],
+					borderWidth: 2,
+					datalabels: {
+						color: demoChart.colors.activeColors[0],
+					},
+				},
+			],
+		},
+		options: {
+			plugins: {
+				tooltip: { enabled: false },
+			},
+			maintainAspectRatio: false,
+			scales: {
+				x: { stacked: true },
+				y: {
+					beginAtZero: true,
+					stacked: true,
+					grace: 10,
+				},
+			},
+		},
+	};
+
+	document
+		.querySelectorAll(".chart-bar")
+		.forEach(ctx => new Chart(ctx, config));
 };
 
 getChart();
