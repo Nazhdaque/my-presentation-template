@@ -1,8 +1,8 @@
 import Chart from "chart.js/auto";
 import ChartDataLabels from "chartjs-plugin-datalabels";
-import { BrandColors } from "./brandColors";
+import { GetCustomPropsValues } from "./getCustomPropsValues";
 
-const brandColors = new BrandColors();
+const brandColors = new GetCustomPropsValues();
 const chartColors = brandColors.getValues([
 	"--clr-1a",
 	"--clr-1b",
@@ -11,75 +11,78 @@ const chartColors = brandColors.getValues([
 	"--clr-2c",
 ]);
 
-// ---
-
 //---
 class ChartValues {
 	constructor(data) {
 		this.data = data;
 		this.chartColors = [
 			{
-				main: `hsl(${chartColors[0]}, 0.6)`,
-				main_active: `hsl(${chartColors[0]}, 1)`,
-				// accent: `hsl(${chartColors[1]}, 0.6)`,
-				// accent_active: `hsl(${chartColors[1]}, 1)`,
+				mainColor: `hsl(${chartColors[0]}, 0.6)`,
+				activeMainColor: `hsl(${chartColors[0]}, 1)`,
+				// accentColor: `hsl(${chartColors[1]}, 0.6)`,
+				// accentActiveColor: `hsl(${chartColors[1]}, 1)`,
 			},
 			{
-				main: `hsl(${chartColors[1]}, 0.6)`,
-				main_active: `hsl(${chartColors[1]}, 1)`,
-				// accent: `hsl(${chartColors[3]}, 0.6)`,
-				// accent_active: `hsl(${chartColors[3]}, 1)`,
+				mainColor: `hsl(${chartColors[1]}, 0.6)`,
+				activeMainColor: `hsl(${chartColors[1]}, 1)`,
+				// accentColor: `hsl(${chartColors[3]}, 0.6)`,
+				// accentActiveColor: `hsl(${chartColors[3]}, 1)`,
 			},
 			{
-				main: `hsl(${chartColors[3]}, 0.6)`,
-				main_active: `hsl(${chartColors[3]}, 1)`,
-				// accent: `hsl(${chartColors[3]}, 0.6)`,
-				// accent_active: `hsl(${chartColors[3]}, 1)`,
+				mainColor: `hsl(${chartColors[3]}, 0.6)`,
+				activeMainColor: `hsl(${chartColors[3]}, 1)`,
+				// accentColor: `hsl(${chartColors[2]}, 0.6)`,
+				// accentActiveColor: `hsl(${chartColors[2]}, 1)`,
 			},
 		];
 
 		this.labels = [];
-		this.amounts = [];
+		this.datasets = [];
 		this.maxValues = [];
 	}
 
-	getChartLabels = () => {
-		this.data.forEach(entry => this.labels.push(Object.keys(entry)));
+	getLabels = () => {
+		this.labels.push(Object.keys(this.data));
 		return this.labels;
 	};
-	getChartData = () => {
-		this.data.forEach(entry => this.amounts.push(Object.values(entry)));
-		return this.amounts;
+	getDatasets = () => {
+		const data = Object.values(this.data);
+		for (let i = data[0].length; i > 0; i--) {
+			const dataItem = [];
+			data.forEach(item => dataItem.push(item.shift()));
+			this.datasets.push(dataItem);
+		}
+		return this.datasets;
 	};
 	getMaxValues = () => {
-		this.amounts.forEach(entry => this.maxValues.push(Math.max(...entry)));
+		this.datasets.forEach(entry => this.maxValues.push(Math.max(...entry)));
 		return this.maxValues;
 	};
 	colorizeChart = () => {
 		const mainColors = [];
 		const activeColors = [];
 
-		this.data.forEach((dataset, index) => {
-			const clrSet_main = [];
-			const clrSet_active = [];
+		this.datasets.forEach((dataset, index) => {
+			const colorsMain = [];
+			const colorsActive = [];
 
 			for (const key in dataset) {
 				switch (dataset[key]) {
 					case this.getMaxValues()[index]:
-						const color = this.chartColors[index].accent;
-						const color_active = this.chartColors[index].accent_active;
+						const clrMain = this.chartColors[index].accentColor;
+						const clrActive = this.chartColors[index].accentActiveColor;
 
-						color && clrSet_main.push(color);
-						color_active && clrSet_active.push(color_active);
+						clrMain && colorsMain.push(clrMain);
+						clrActive && colorsActive.push(clrActive);
 						break;
 					default:
-						clrSet_main.push(this.chartColors[index].main);
-						clrSet_active.push(this.chartColors[index].main_active);
+						colorsMain.push(this.chartColors[index].mainColor);
+						colorsActive.push(this.chartColors[index].activeMainColor);
 				}
 			}
 
-			mainColors.push(clrSet_main);
-			activeColors.push(clrSet_active);
+			mainColors.push(colorsMain);
+			activeColors.push(colorsActive);
 		});
 
 		return {
@@ -90,8 +93,8 @@ class ChartValues {
 
 	getValues = () => {
 		return {
-			labels: this.getChartLabels(),
-			data: this.getChartData(),
+			labels: this.getLabels(),
+			data: this.getDatasets(),
 			colors: this.colorizeChart(),
 		};
 	};
@@ -199,3 +202,13 @@ const getChart = async () => {
 };
 
 getChart();
+
+// {
+// 	"August": [22.95, 17.45, 35.14],
+// 	"September": [28.41, 34.91, 41.28],
+// 	"November": [61.34, 52.36, 19.76],
+// 	"December": [33.66, 31.07, 26.12],
+// 	"January": [36.89, 23.39, 37.5],
+// 	"February": [24.16, 43.28, 18.28],
+// 	"March": [31.74, 25.48, 23.11]
+// }

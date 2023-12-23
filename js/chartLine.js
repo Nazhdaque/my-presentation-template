@@ -1,7 +1,7 @@
 import Chart from "chart.js/auto";
-import { BrandColors } from "./brandColors";
+import { GetCustomPropsValues } from "./getCustomPropsValues";
 
-const brandColors = new BrandColors();
+const brandColors = new GetCustomPropsValues();
 const chartColors = brandColors.getValues([
 	"--clr-1a",
 	"--clr-1b",
