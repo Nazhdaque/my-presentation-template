@@ -6,9 +6,7 @@ function init() {
 			center: [55.823738, 37.412635],
 			zoom: 11,
 		},
-		{
-			searchControlProvider: "yandex#search",
-		}
+		{ searchControlProvider: "yandex#search" }
 	);
 
 	const address_1 = new ymaps.Placemark(
@@ -27,9 +25,7 @@ function init() {
 			balloonContentFooter: "Метка на карте указывает прямо на вход в офис!",
 			hintContent: "Кочновский проезд, 4к2",
 		},
-		{
-			preset: "islands#redStretchyIcon",
-		}
+		{ preset: "islands#redStretchyIcon" }
 	);
 
 	const address_2 = new ymaps.GeoObject(
@@ -43,9 +39,7 @@ function init() {
 				hintContent: "Первомайская улица, 16",
 			},
 		},
-		{
-			preset: "islands#blueStretchyIcon",
-		}
+		{ preset: "islands#blueStretchyIcon" }
 	);
 
 	myMap.geoObjects.add(address_1).add(address_2);

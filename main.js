@@ -5,9 +5,9 @@ import "./js/swiper.js";
 import "./js/proxiEmail.js";
 import "./js/scrollDownPromptDisable.js";
 import "material-icons/iconfont/round.css";
-import { SizeSetter } from "./js/sizeSetter.js";
-import { AttrSetter } from "./js/attrSetter";
-import { accenTable } from "./js/accenTable";
+import { SizeSetter } from "./js/SizeSetter.js";
+import { AttrSetter } from "./js/AttrSetter.js";
+import { accenTable } from "./js/accenTable.js";
 import "./js/chartDoughnut.js";
 import "./js/chartBar.js";
 import "./js/chartLine.js";
@@ -37,13 +37,6 @@ widthSetter.initWith([
 	// ["w-master-1", "w-slave-1"],
 	["w-master-2", "w-slave-2"],
 ]);
-
-// const heightSetter = new SizeSetter("h");
-// heightSetter.initWith([
-// 	["h-master-1", "h-slave-1"],
-// 	["h-master-2", "h-slave-2"],
-// 	["h-master-3", "h-slave-3"],
-// ]);
 
 // ---
 console.log(

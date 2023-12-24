@@ -1,6 +1,6 @@
 import Chart from "chart.js/auto";
 import ChartDataLabels from "chartjs-plugin-datalabels";
-import { GetCustomPropsValues } from "./getCustomPropsValues";
+import { GetCustomPropsValues } from "./GetCustomPropsValues";
 
 const brandColors = new GetCustomPropsValues();
 const chartColors = brandColors.getValues([

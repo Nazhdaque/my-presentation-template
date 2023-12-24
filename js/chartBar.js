@@ -4,8 +4,8 @@ import { getChartData } from "./getChartData";
 
 const getChart = async () => {
 	const demoChart = await getChartData("chart-data.json");
-	const labesOnTop = {
-		id: "labesOnTop",
+	const labelsOnTop = {
+		id: "labelsOnTop",
 		afterDatasetsDraw(chart, args, pluginOptions) {
 			const {
 				ctx,
@@ -37,7 +37,7 @@ const getChart = async () => {
 
 	const config = {
 		type: "bar",
-		plugins: [ChartDataLabels, labesOnTop],
+		plugins: [ChartDataLabels, labelsOnTop],
 		data: {
 			labels: demoChart.labels[0],
 			datasets: [

@@ -1,3 +1,5 @@
+import { MobileDesktopStatesManager } from "./MobileDesktopStatesManager.js";
+
 export const accenTable = tables => {
 	tables.forEach(table => {
 		const colHeads = table.querySelectorAll("thead th:not(:first-child)");
@@ -18,42 +20,19 @@ export const accenTable = tables => {
 				};
 				const handleClick = () => cell.classList.toggle("clr-accent");
 
-				const setState = isDesktop => {
-					switch (isDesktop) {
-						case true:
-							cell.addEventListener("mouseover", handleOver);
-							cell.addEventListener("mouseout", handleOut);
-							cell.addEventListener("click", handleClick);
-							break;
-						case false:
-							cell.removeEventListener("mouseover", handleOver);
-							cell.removeEventListener("mouseout", handleOut);
-							cell.removeEventListener("click", handleClick);
-							break;
-					}
+				const onMobile = () => {
+					cell.removeEventListener("mouseover", handleOver);
+					cell.removeEventListener("mouseout", handleOut);
+					cell.removeEventListener("click", handleClick);
+				};
+				const onDesktop = () => {
+					cell.addEventListener("mouseover", handleOver);
+					cell.addEventListener("mouseout", handleOut);
+					cell.addEventListener("click", handleClick);
 				};
 
-				const checkState = breakpoint =>
-					window.innerWidth >= breakpoint && setState(true);
-
-				const toggleState = isDesktopSize =>
-					isDesktopSize ? setState(true) : setState(false);
-
-				const watchState = breakpoint => {
-					const mediaQueryList = window.matchMedia(
-						`(min-width: ${breakpoint}px)`
-					);
-					mediaQueryList.addEventListener("change", event =>
-						toggleState(event.matches)
-					);
-				};
-
-				const disableOn = breakpoint => {
-					checkState(breakpoint);
-					watchState(breakpoint);
-				};
-
-				disableOn(992);
+				const manager = new MobileDesktopStatesManager(onMobile, onDesktop);
+				manager.toggleStateOn(992);
 			});
 		});
 	});

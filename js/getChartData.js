@@ -1,14 +1,14 @@
-import { GetCustomPropsValues } from "./getCustomPropsValues";
+import { GetCustomPropsValues } from "./GetCustomPropsValues";
 
 export const getChartData = async url => {
 	const responce = await fetch(url);
 	const data = await responce.json();
-	const values = new ChartValues(data);
+	const values = new ChartValues(data, chartColors);
 	return values.getValues();
 };
 
-const brandColors = new GetCustomPropsValues();
-const chartColors = brandColors.getValues([
+const clrProps = new GetCustomPropsValues();
+const clrValues = clrProps.getValues([
 	"--clr-1a",
 	"--clr-1b",
 	"--clr-2a",
@@ -16,24 +16,25 @@ const chartColors = brandColors.getValues([
 	"--clr-2c",
 ]);
 
-class ChartValues {
-	constructor(data) {
-		this.data = data;
-		this.chartColors = [
-			{
-				basicColor: `hsl(${chartColors[0]}, 0.6)`,
-				hoverColor: `hsl(${chartColors[0]}, 1)`,
-			},
-			{
-				basicColor: `hsl(${chartColors[1]}, 0.6)`,
-				hoverColor: `hsl(${chartColors[1]}, 1)`,
-			},
-			{
-				basicColor: `hsl(${chartColors[3]}, 0.6)`,
-				hoverColor: `hsl(${chartColors[3]}, 1)`,
-			},
-		];
+const chartColors = [
+	{
+		basicColor: `hsl(${clrValues[0]}, 0.6)`,
+		hoverColor: `hsl(${clrValues[0]}, 1)`,
+	},
+	{
+		basicColor: `hsl(${clrValues[1]}, 0.6)`,
+		hoverColor: `hsl(${clrValues[1]}, 1)`,
+	},
+	{
+		basicColor: `hsl(${clrValues[3]}, 0.6)`,
+		hoverColor: `hsl(${clrValues[3]}, 1)`,
+	},
+];
 
+class ChartValues {
+	constructor(data, chartColors) {
+		this.data = data;
+		this.chartColors = chartColors;
 		this.labels = [];
 		this.datasets = [];
 		this.maxValues = [];
@@ -66,8 +67,12 @@ class ChartValues {
 				const basicColorSet = [];
 				const hoverColorSet = [];
 
-				basicColorSet.push(this.chartColors[index].basicColor);
-				hoverColorSet.push(this.chartColors[index].hoverColor);
+				basicColorSet.push(
+					this.chartColors[index]?.basicColor ?? this.chartColors[0].basicColor
+				);
+				hoverColorSet.push(
+					this.chartColors[index]?.hoverColor ?? this.chartColors[0].hoverColor
+				);
 
 				basicColors.push(basicColorSet);
 				hoverColors.push(hoverColorSet);

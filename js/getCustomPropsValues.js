@@ -1,14 +1,14 @@
 export class GetCustomPropsValues {
 	constructor() {
-		this.props = [];
+		this.values = [];
 	}
 
 	getValues = props => {
 		props.forEach(prop =>
-			this.props.push(
+			this.values.push(
 				getComputedStyle(document.documentElement, null).getPropertyValue(prop)
 			)
 		);
-		return this.props;
+		return this.values;
 	};
 }

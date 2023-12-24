@@ -17,6 +17,16 @@ import "swiper/css/pagination";
 // import "swiper/css/parallax";
 // import "swiper/css/scrollbar";
 
+// ---
+const jumpToSlide = number => mainSlider.slideTo(number);
+
+document
+	.querySelectorAll(".slide-to")
+	.forEach((item, index) =>
+		item.addEventListener("click", () => jumpToSlide(index))
+	);
+
+// ---
 const mainSlider = new Swiper(".main-slider", {
 	modules: [Navigation, Pagination, Keyboard, HashNavigation],
 	initialSlide: 0,
@@ -48,15 +58,6 @@ const mainSlider = new Swiper(".main-slider", {
 		},
 	},
 });
-
-// ---
-const jumpToSlide = number => mainSlider.slideTo(number);
-
-document
-	.querySelectorAll(".slide-to")
-	.forEach((item, index) =>
-		item.addEventListener("click", () => jumpToSlide(index))
-	);
 
 // ---
 const swiperBasic = new Swiper(".swiper-basic", {

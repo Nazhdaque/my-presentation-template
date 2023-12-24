@@ -1,7 +1,7 @@
 .sidebar {
 	--col: 3;
 	--x: 1;
-	--sb-border: 1px dotted hsl(var(--clr-0a));
+	--sb-border: 2px dotted hsl(var(--clr-1a));
 	--clr-bg: hsl(var(--clr-1a));
 	--clr-txt: hsl(var(--clr-0a));
 
@@ -13,7 +13,6 @@
 	inset: 0 0 0 auto;
 	margin-block: var(--header-height) auto;
 	z-index: 2;
-	background-color: hsl(var(--clr-1a));
 	counter-reset: sidebar-counter;
 	translate: var(--width-x);
 	display: none;
