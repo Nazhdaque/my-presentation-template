@@ -7,8 +7,8 @@ export const getChartData = async url => {
 	return values.getValues();
 };
 
-const clrProps = new GetCustomPropsValues();
-const clrValues = clrProps.getValues([
+const getColors = new GetCustomPropsValues();
+const clrValues = getColors.getValues([
 	"--clr-1a",
 	"--clr-1b",
 	"--clr-2a",
@@ -16,20 +16,18 @@ const clrValues = clrProps.getValues([
 	"--clr-2c",
 ]);
 
-const chartColors = [
-	{
-		basicColor: `hsl(${clrValues[0]}, 0.6)`,
-		hoverColor: `hsl(${clrValues[0]}, 1)`,
-	},
-	{
-		basicColor: `hsl(${clrValues[1]}, 0.6)`,
-		hoverColor: `hsl(${clrValues[1]}, 1)`,
-	},
-	{
-		basicColor: `hsl(${clrValues[3]}, 0.6)`,
-		hoverColor: `hsl(${clrValues[3]}, 1)`,
-	},
-];
+const chartColors = {
+	basic: [
+		`hsl(${clrValues[0]}, 0.6)`,
+		`hsl(${clrValues[1]}, 0.6)`,
+		`hsl(${clrValues[3]}, 0.6)`,
+	],
+	hover: [
+		`hsl(${clrValues[0]}, 1)`,
+		`hsl(${clrValues[1]}, 1)`,
+		`hsl(${clrValues[3]}, 1)`,
+	],
+};
 
 class ChartValues {
 	constructor(data, chartColors) {
@@ -37,13 +35,13 @@ class ChartValues {
 		this.chartColors = chartColors;
 		this.labels = [];
 		this.datasets = [];
-		this.maxValues = [];
 	}
 
 	getLabels = () => {
 		this.data.forEach(item => this.labels.push(Object.keys(item)));
 		return this.labels;
 	};
+
 	getDatasets = () => {
 		this.data.forEach(item => {
 			const datasetArray = [];
@@ -58,30 +56,27 @@ class ChartValues {
 		});
 		return this.datasets;
 	};
-	colorizeChart = () => {
-		const basicColors = [];
-		const hoverColors = [];
 
-		this.datasets.forEach(datasetArray => {
-			datasetArray.forEach((dataset, index) => {
-				const basicColorSet = [];
-				const hoverColorSet = [];
+	getColors = () => {
+		const basic = [];
+		const hover = [];
 
-				basicColorSet.push(
-					this.chartColors[index]?.basicColor ?? this.chartColors[0].basicColor
-				);
-				hoverColorSet.push(
-					this.chartColors[index]?.hoverColor ?? this.chartColors[0].hoverColor
-				);
+		this.datasets.forEach(item => {
+			item.forEach((item, i) => {
+				const basicSet = [];
+				const hoverSet = [];
 
-				basicColors.push(basicColorSet);
-				hoverColors.push(hoverColorSet);
+				basicSet.push(this.chartColors.basic[i] ?? this.chartColors.basic[0]);
+				hoverSet.push(this.chartColors.hover[i] ?? this.chartColors.hover[0]);
+
+				basic.push(basicSet);
+				hover.push(hoverSet);
 			});
 		});
 
 		return {
-			basicColors: basicColors,
-			hoverColors: hoverColors,
+			basic: basic,
+			hover: hover,
 		};
 	};
 
@@ -89,7 +84,7 @@ class ChartValues {
 		return {
 			labels: this.getLabels(),
 			data: this.getDatasets(),
-			colors: this.colorizeChart(),
+			colors: this.getColors(),
 		};
 	};
 }

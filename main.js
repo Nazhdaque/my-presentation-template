@@ -33,10 +33,7 @@ attrSetter.initWith("role", {
 
 // ---
 const widthSetter = new SizeSetter("w");
-widthSetter.initWith([
-	// ["w-master-1", "w-slave-1"],
-	["w-master-2", "w-slave-2"],
-]);
+widthSetter.initWith([["w-master-1", "w-slave-1"]]);
 
 // ---
 console.log(

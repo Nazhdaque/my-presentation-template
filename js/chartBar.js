@@ -3,7 +3,7 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 import { getChartData } from "./getChartData";
 
 const getChart = async () => {
-	const demoChart = await getChartData("chart-data.json");
+	const barChart = await getChartData("chart-data.json");
 	const labelsOnTop = {
 		id: "labelsOnTop",
 		afterDatasetsDraw(chart, args, pluginOptions) {
@@ -39,37 +39,37 @@ const getChart = async () => {
 		type: "bar",
 		plugins: [ChartDataLabels, labelsOnTop],
 		data: {
-			labels: demoChart.labels[0],
+			labels: barChart.labels[0],
 			datasets: [
 				{
 					label: "data-1",
-					data: demoChart.data[0][0], // [first]: index of object with data, [second]: index of value in the array
-					backgroundColor: demoChart.colors.basicColors[0],
-					hoverBackgroundColor: demoChart.colors.hoverColors[0],
-					borderColor: demoChart.colors.hoverColors[0],
+					data: barChart.data[0][0], // [first]: index of object with data, [second]: index of value in the array
+					backgroundColor: barChart.colors.basic[0],
+					hoverBackgroundColor: barChart.colors.hover[0],
+					borderColor: barChart.colors.hover[0],
 					borderWidth: 2,
 					datalabels: {
 						// color: chart => chart.dataset.borderColor[chart.dataIndex],
-						color: demoChart.colors.hoverColors[1],
+						color: barChart.colors.hover[1],
 					},
 				},
 				{
 					label: "data-2",
-					data: demoChart.data[0][1],
-					backgroundColor: demoChart.colors.basicColors[1],
-					hoverBackgroundColor: demoChart.colors.hoverColors[1],
-					borderColor: demoChart.colors.hoverColors[1],
+					data: barChart.data[0][1],
+					backgroundColor: barChart.colors.basic[1],
+					hoverBackgroundColor: barChart.colors.hover[1],
+					borderColor: barChart.colors.hover[1],
 					borderWidth: 2,
-					datalabels: { color: demoChart.colors.hoverColors[2] },
+					datalabels: { color: barChart.colors.hover[2] },
 				},
 				{
 					label: "data-3",
-					data: demoChart.data[0][2],
-					backgroundColor: demoChart.colors.basicColors[2],
-					hoverBackgroundColor: demoChart.colors.hoverColors[2],
-					borderColor: demoChart.colors.hoverColors[2],
+					data: barChart.data[0][2],
+					backgroundColor: barChart.colors.basic[2],
+					hoverBackgroundColor: barChart.colors.hover[2],
+					borderColor: barChart.colors.hover[2],
 					borderWidth: 2,
-					datalabels: { color: demoChart.colors.hoverColors[0] },
+					datalabels: { color: barChart.colors.hover[0] },
 				},
 			],
 		},
