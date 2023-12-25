@@ -36,5 +36,5 @@
 .__slide-charts .slide-body > * {
 	background-color: hsl(var(--clr-0a));
 	padding: 1rem;
-	aspect-ratio: 2 / 1;
+	aspect-ratio: 2 / 1.5;
 }

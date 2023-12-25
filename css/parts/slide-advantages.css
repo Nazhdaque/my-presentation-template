@@ -3,9 +3,7 @@
 	--side: 0;
 	--w: 100%;
 	--bg-size: auto;
-
 	--overlay: linear-gradient(hsl(0, 0%, 0%, 0.4) 0%, hsl(0, 0%, 0%, 0.4) 100%);
-
 	--underlay: repeating-linear-gradient(
 		-80deg,
 		hsl(var(--clr-2b), 1) 0,

@@ -1,6 +1,7 @@
 import Chart from "chart.js/auto";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { getChartData } from "./getChartData";
+import { MobileDesktopStatesManager } from "./MobileDesktopStatesManager";
 
 const getChart = async () => {
 	const barChart = await getChartData("chart-data.json");
@@ -96,3 +97,14 @@ const getChart = async () => {
 };
 
 getChart();
+
+// --
+const barsFontSize = new MobileDesktopStatesManager(
+	() => {
+		Chart.defaults.font.size = 8;
+	},
+	() => {
+		Chart.defaults.font.size = 13;
+	}
+);
+barsFontSize.toggleStateOn(576);
