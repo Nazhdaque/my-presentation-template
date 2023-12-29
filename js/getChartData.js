@@ -44,15 +44,15 @@ class ChartValues {
 
 	getDatasets = () => {
 		this.data.forEach(item => {
-			const datasetArray = [];
+			const datasets = [];
 			for (const key in item) {
 				for (let i = item[key].length; i > 0; i--) {
 					const dataset = [];
 					Object.values(item).forEach(item => dataset.push(item.shift()));
-					datasetArray.push(dataset);
+					datasets.push(dataset);
 				}
 			}
-			this.datasets.push(datasetArray);
+			this.datasets.push(datasets);
 		});
 		return this.datasets;
 	};

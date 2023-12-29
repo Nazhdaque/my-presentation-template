@@ -239,6 +239,9 @@
 .t-align-r {
 	text-align: right;
 }
+.t-align-c {
+	text-align: center;
+}
 
 .d-none {
 	display: none;

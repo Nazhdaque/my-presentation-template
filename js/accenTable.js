@@ -11,12 +11,12 @@ export const accenTable = tables => {
 
 			cells.forEach((cell, colIndex) => {
 				const handleOver = () => {
-					colHeads[colIndex].classList.add("clr-accent");
-					rowHeads[rowIndex].classList.add("clr-accent");
+					colHeads[colIndex]?.classList.add("clr-accent");
+					rowHeads[rowIndex]?.classList.add("clr-accent");
 				};
 				const handleOut = () => {
-					colHeads[colIndex].classList.remove("clr-accent");
-					rowHeads[rowIndex].classList.remove("clr-accent");
+					colHeads[colIndex]?.classList.remove("clr-accent");
+					rowHeads[rowIndex]?.classList.remove("clr-accent");
 				};
 				const handleClick = () => cell.classList.toggle("clr-accent");
 

@@ -57,6 +57,8 @@ table {
 	position: relative;
 	/* isolation: isolate; */
 	overflow: hidden;
+	width: 100%;
+	table-layout: fixed;
 }
 
 tbody tr:last-child > *:first-child {
@@ -92,6 +94,11 @@ th {
 	text-transform: uppercase;
 }
 
+tr,
+td {
+	height: 100%;
+}
+
 th,
 td {
 	padding: var(--indent) calc(var(--indent) * 2);
@@ -106,7 +113,7 @@ tr:nth-child(2n) * {
 thead th {
 	text-align: center;
 }
-thead th:nth-child(2n-1):not(:first-child) {
+thead th:nth-child(2n-1) {
 	color: var(--clr-txt--dk);
 }
 thead th:first-child {
@@ -118,7 +125,7 @@ thead th:nth-child(2n):not(:first-child) {
 	color: var(--clr-txt--lt);
 }
 
-tr:nth-child(2n + 1) *:not(thead th),
+tr:nth-child(2n + 1) > *:not(thead th),
 caption {
 	background-color: var(--clr-bg-1--lt);
 }
@@ -154,7 +161,7 @@ th {
 
 /* --- */
 .clr-accent,
-th:not(thead th:first-child):hover {
+th:hover {
 	background-color: var(--clr-accent) !important;
 	color: var(--clr-txt--lt) !important;
 }
@@ -183,21 +190,25 @@ thead th:not(thead th:first-child):hover::after {
 	width: var(--thickness);
 }
 
-tbody .clr-accent::before,
-tbody th:hover::before {
+tbody .clr-accent::before {
 	bottom: var(--offset);
 	left: calc(100% + var(--thickness));
 	/* left: 100%; */
 	height: var(--thickness);
 	width: 9999%;
 }
-tbody .clr-accent::after,
-tbody th:hover::after {
+
+tbody .clr-accent::after {
 	top: var(--offset);
 	left: calc(100% + var(--thickness));
 	/* left: 100%; */
 	height: var(--thickness);
 	width: 9999%;
+}
+
+tbody td.clr-accent::before,
+tbody td.clr-accent::after {
+	width: 0;
 }
 
 @media (max-width: 992px) {
