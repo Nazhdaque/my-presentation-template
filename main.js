@@ -13,11 +13,10 @@ import "./js/chartBar.js";
 import "./js/chartLine.js";
 import "./js/video.js";
 import "./js/form.js";
-// import "./js/yandexMap.js";
-import "./js/svet.js";
+import "./js/yandexMap.js";
 
 // ---
-accenTable(document.querySelectorAll("table"));
+accenTable(document.querySelector(".demo-table"));
 
 const attrSetter = new AttrSetter();
 attrSetter.initWith("role", {

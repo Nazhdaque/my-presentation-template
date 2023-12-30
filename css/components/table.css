@@ -161,7 +161,7 @@ th {
 
 /* --- */
 .clr-accent,
-th:hover {
+th:not(thead th:first-child):hover {
 	background-color: var(--clr-accent) !important;
 	color: var(--clr-txt--lt) !important;
 }
@@ -190,6 +190,8 @@ thead th:not(thead th:first-child):hover::after {
 	width: var(--thickness);
 }
 
+tbody .clr-accent::before,
+tbody th:hover::before,
 tbody .clr-accent::before {
 	bottom: var(--offset);
 	left: calc(100% + var(--thickness));
@@ -198,6 +200,8 @@ tbody .clr-accent::before {
 	width: 9999%;
 }
 
+tbody .clr-accent::after,
+tbody th:hover::after,
 tbody .clr-accent::after {
 	top: var(--offset);
 	left: calc(100% + var(--thickness));
