@@ -7,6 +7,16 @@ export const getChartData = async url => {
 	return values.getValues();
 };
 
+const flipArray = source => {
+	const result = [];
+	source.forEach(
+		(_, i) =>
+			i < source[i].length &&
+			result.push(source.reduce((total, current) => [...total, current[i]], []))
+	);
+	return result;
+};
+
 const getColors = new GetCustomPropsValues();
 const clrValues = getColors.getValues([
 	"--clr-1a",
@@ -43,17 +53,9 @@ class ChartValues {
 	};
 
 	getDatasets = () => {
-		this.data.forEach(item => {
-			const datasets = [];
-			for (const key in item) {
-				for (let i = item[key].length; i > 0; i--) {
-					const dataset = [];
-					Object.values(item).forEach(item => dataset.push(item.shift()));
-					datasets.push(dataset);
-				}
-			}
-			this.datasets.push(datasets);
-		});
+		this.data.forEach(item =>
+			this.datasets.push(flipArray(Object.values(item)))
+		);
 		return this.datasets;
 	};
 
