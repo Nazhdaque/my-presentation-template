@@ -7,6 +7,9 @@
 	align-self: center;
 }
 
-.__slide-table .slide-ttl {
+.auto-table {
+	--col: 3;
+	--x: 3;
+
 	--place-head: center;
 }

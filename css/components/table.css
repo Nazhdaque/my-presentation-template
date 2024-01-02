@@ -21,20 +21,15 @@ tbody th {
 } */
 
 table {
-	/* --clr-0a-solid: hsl(0, 0%, 93%); */
-
 	--clr-txt--lt: hsl(var(--clr-0a));
 	--clr-txt--dk: hsl(var(--clr-0b));
-
 	--clr-bg-0: var(--clr-txt--dk);
 	--clr-bg-1--lt: hsl(var(--clr-1a), 0.1);
 	--clr-bg-1--dk: hsl(var(--clr-1a), 1);
 	--clr-bg-2--lt: hsl(var(--clr-1b), 0.1);
 	--clr-bg-2--dk: hsl(var(--clr-1b), 1);
 	--clr-accent: var(--clr-bg-2--dk);
-
 	--table-shadow: 0rem 2rem 2rem -1rem hsl(0, 0%, 0%, 0.25);
-
 	--thickness: 2px;
 	--offset: calc(var(--thickness) * -1);
 	--indent: 0.75rem;
@@ -43,19 +38,14 @@ table {
 
 	/* border-spacing: 0 var(--thickness); */
 	border-spacing: var(--thickness);
-
 	font-size: var(--fs-rg);
 	text-align: left;
 	background-color: var(--clr-txt--lt);
-
 	border-bottom-left-radius: var(--outer-radius);
 	border-bottom-right-radius: var(--outer-radius);
-
 	box-shadow: var(--table-shadow);
-
 	z-index: 1;
 	position: relative;
-	/* isolation: isolate; */
 	overflow: hidden;
 	width: 100%;
 	table-layout: fixed;
@@ -89,19 +79,22 @@ caption::before {
 }
 
 caption,
-th {
-	font-weight: var(--fw-sb);
+th,
+th::before,
+td::before {
+	font-weight: var(--fw-sb) !important;
 	text-transform: uppercase;
 }
 
 tr,
 td {
 	height: 100%;
+	text-align: right;
 }
 
 th,
 td {
-	padding: var(--indent) calc(var(--indent) * 2);
+	padding: var(--indent);
 	background-color: var(--clr-txt--lt);
 	background-clip: padding-box;
 }
@@ -132,6 +125,7 @@ caption {
 
 th {
 	color: var(--clr-txt--lt);
+	text-align: center;
 }
 tbody tr:nth-child(2n-1) th {
 	background-color: var(--clr-bg-1--dk);
@@ -215,7 +209,7 @@ tbody td.clr-accent::after {
 	width: 0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
 	table {
 		border-spacing: 0 var(--thickness);
 	}

@@ -31,7 +31,7 @@ export const accenTable = table => {
 			};
 
 			const manager = new MobileDesktopStatesManager(onMobile, onDesktop);
-			manager.toggleStateOn(992);
+			manager.toggleStateOn(1200);
 		});
 	});
 };

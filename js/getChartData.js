@@ -64,7 +64,7 @@ class ChartValues {
 		const hover = [];
 
 		this.datasets.forEach(item => {
-			item.forEach((item, i) => {
+			item.forEach((_, i) => {
 				const basicSet = [];
 				const hoverSet = [];
 
@@ -76,10 +76,7 @@ class ChartValues {
 			});
 		});
 
-		return {
-			basic: basic,
-			hover: hover,
-		};
+		return { basic, hover };
 	};
 
 	getValues = () => {

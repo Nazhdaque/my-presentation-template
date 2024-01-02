@@ -13,22 +13,31 @@ import "./js/chartBar.js";
 import "./js/chartLine.js";
 import "./js/video.js";
 import "./js/form.js";
-import "./js/yandexMap.js";
+import { FetchWrapper } from "./js/FetchWrapper.js";
+import { FillTable } from "./js/fillTable.js";
+// import "./js/yandexMap.js";
 
 // ---
-accenTable(document.querySelector(".demo-table"));
+const API = new FetchWrapper("");
+API.get("table-data.json").then(data => {
+	const autoTable = new FillTable(".auto-table", data[0]);
+	autoTable.fillTable();
+	// autoTable.fillTable("flip");
 
-const attrSetter = new AttrSetter();
-attrSetter.initWith("role", {
-	// table: "table",
-	// caption: "caption",
-	thead: "rowgroup",
-	tbody: "rowgroup",
-	tfoot: "rowgroup",
-	tr: "row",
-	td: "cell",
-	th: "columnheader",
-	"th[scope=row]": "rowheader",
+	accenTable(document.querySelector(".auto-table"));
+
+	const attrSetter = new AttrSetter();
+	attrSetter.initWith("role", {
+		// table: "table",
+		// caption: "caption",
+		thead: "rowgroup",
+		tbody: "rowgroup",
+		tfoot: "rowgroup",
+		tr: "row",
+		td: "cell",
+		th: "columnheader",
+		"th[scope=row]": "rowheader",
+	});
 });
 
 // ---
