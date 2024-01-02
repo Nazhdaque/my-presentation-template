@@ -15,7 +15,7 @@ import "./js/video.js";
 import "./js/form.js";
 import { FetchWrapper } from "./js/FetchWrapper.js";
 import { FillTable } from "./js/fillTable.js";
-// import "./js/yandexMap.js";
+import "./js/yandexMap.js";
 
 // ---
 const API = new FetchWrapper("");
