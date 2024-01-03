@@ -4,16 +4,16 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| lg */
 @media (width <= 1200px) {
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| md */
+@media (width <= 992px) {
+	/* table media styles are in the table.css, accentable.js */
 	.auto-table {
 		--x: 1;
 
 		justify-self: center;
 	}
-}
-
-/* |||||||||| |||||||||| |||||||||| |||||||||| md */
-@media (width <= 992px) {
-	/* .table media styles are in the table.css */
 
 	.__slide-snake-list .slide-body {
 		--col: 3;

@@ -94,7 +94,7 @@ td {
 
 th,
 td {
-	padding: var(--indent);
+	padding: var(--indent) calc(var(--indent) * 2);
 	background-color: var(--clr-txt--lt);
 	background-clip: padding-box;
 }
@@ -209,7 +209,7 @@ tbody td.clr-accent::after {
 	width: 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
 	table {
 		border-spacing: 0 var(--thickness);
 	}

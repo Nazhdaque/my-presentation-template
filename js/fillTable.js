@@ -27,7 +27,8 @@ export class FillTable {
 	fillThead = flip => {
 		let rowContent = `<th scope="col"></th>`;
 		this.colHeads(flip).forEach(
-			item => (rowContent += `<th scope="col">${item}</th>`)
+			item =>
+				(rowContent += `<th scope="col"><p class="ellipsis">${item}</p></th>`)
 		);
 		return `<tr>${rowContent}</tr>`;
 	};
@@ -35,7 +36,9 @@ export class FillTable {
 	fillTbody = flip => {
 		let rows;
 		this.tableData(flip).forEach((item, i) => {
-			let row = `<th scope="row">${this.rowHeads(flip)[i]}</th>`;
+			let row = `<th scope="row"><p class="ellipsis">${
+				this.rowHeads(flip)[i]
+			}</p></th>`;
 			item.forEach(
 				(item, i) =>
 					(row += `<td data-cell="${this.colHeads(flip)[i]}">${item}</td>`)

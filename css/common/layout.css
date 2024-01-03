@@ -1,7 +1,7 @@
 .layout-body {
 	display: grid;
 	/* 1fr working on mozilla, not working on webkit-based browsers */
-	grid-template-rows: min-content var(--main-height) min-content;
+	/* grid-template-rows: min-content var(--main-height) min-content; */
 }
 
 .layout-center {
