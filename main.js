@@ -14,12 +14,12 @@ import "./js/chartLine.js";
 import "./js/video.js";
 import "./js/form.js";
 import { FetchWrapper } from "./js/FetchWrapper.js";
-import { FillTable } from "./js/fillTable.js";
+import { FillTable } from "./js/FillTable.js";
 import "./js/yandexMap.js";
 
 // ---
 const API = new FetchWrapper("");
-API.get("table-data.json").then(data => {
+API.get("demo-data.json").then(data => {
 	const autoTable = new FillTable(".auto-table", data[0]);
 	autoTable.fillTable();
 	// autoTable.fillTable("flip");

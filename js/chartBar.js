@@ -4,7 +4,7 @@ import { getChartData } from "./getChartData";
 import { MobileDesktopStatesManager } from "./MobileDesktopStatesManager";
 
 const getChart = async () => {
-	const barChart = await getChartData("chart-data.json");
+	const barChart = await getChartData("demo-data.json");
 	const labelsOnTop = {
 		id: "labelsOnTop",
 		afterDatasetsDraw(chart, args, pluginOptions) {
@@ -40,11 +40,11 @@ const getChart = async () => {
 		type: "bar",
 		plugins: [ChartDataLabels, labelsOnTop],
 		data: {
-			labels: barChart.labels[0],
+			labels: barChart.dataLabels[0],
 			datasets: [
 				{
-					label: "data-1",
-					data: barChart.data[0][0], // [first]: index of object with data, [second]: index of value in the array
+					label: barChart.labels[0][0], // [first]: index of object with data, [second]: index of value in the array
+					data: barChart.data[0][0],
 					backgroundColor: barChart.colors.basic[0],
 					hoverBackgroundColor: barChart.colors.hover[0],
 					borderColor: barChart.colors.hover[0],
@@ -55,7 +55,7 @@ const getChart = async () => {
 					},
 				},
 				{
-					label: "data-2",
+					label: barChart.labels[0][1],
 					data: barChart.data[0][1],
 					backgroundColor: barChart.colors.basic[1],
 					hoverBackgroundColor: barChart.colors.hover[1],
@@ -64,7 +64,7 @@ const getChart = async () => {
 					datalabels: { color: barChart.colors.hover[2] },
 				},
 				{
-					label: "data-3",
+					label: barChart.labels[0][2],
 					data: barChart.data[0][2],
 					backgroundColor: barChart.colors.basic[2],
 					hoverBackgroundColor: barChart.colors.hover[2],

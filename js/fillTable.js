@@ -4,8 +4,8 @@ export class FillTable {
 		this.thead = document.querySelector(`${this.tableName} thead`);
 		this.tbody = document.querySelector(`${this.tableName} tbody`);
 		this.tableContent = data;
-		this.colHeads = flip => this.tableContent.heads[flip === "flip" ? 1 : 0];
-		this.rowHeads = flip => this.tableContent.heads[flip === "flip" ? 0 : 1];
+		this.colHeads = flip => this.tableContent.head[flip === "flip" ? 1 : 0];
+		this.rowHeads = flip => this.tableContent.head[flip === "flip" ? 0 : 1];
 		this.tableData = flip =>
 			flip === "flip"
 				? this.tableContent.data
