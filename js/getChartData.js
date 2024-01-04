@@ -7,9 +7,9 @@ const parseCSV = async url => {
 	const data = await responce.text();
 	return Papa.parse(data).data;
 };
-const demoData = await parseCSV("demo-data.csv");
 
-export const getChartData = () => {
+export const getChartData = async () => {
+	const demoData = await parseCSV("demo-data.csv");
 	const values = new ChartValues(demoData, chartColors);
 	return values.getValues();
 };

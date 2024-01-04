@@ -3,8 +3,8 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 import { getChartData } from "./getChartData";
 import { MobileDesktopStatesManager } from "./MobileDesktopStatesManager";
 
-const getChart = () => {
-	const barChart = getChartData();
+const getChart = async () => {
+	const barChart = await getChartData();
 	const labelsOnTop = {
 		id: "labelsOnTop",
 		afterDatasetsDraw(chart, args, pluginOptions) {
