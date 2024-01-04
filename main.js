@@ -16,6 +16,7 @@ import "./js/form.js";
 import { FetchWrapper } from "./js/FetchWrapper.js";
 import { FillTable } from "./js/FillTable.js";
 import "./js/yandexMap.js";
+import Papa from "papaparse";
 
 // ---
 const API = new FetchWrapper("");
@@ -56,3 +57,14 @@ console.log(
 // 		.replace(/T/, " ")
 // 		.replace(/\./, "::")
 // 		.replace(/Z/, "ms");
+
+const parseCSV = async url => {
+	const responce = await fetch(url);
+	const data = await responce.text();
+	const papaparse = data => Papa.parse(data);
+	const result = papaparse(data);
+	return result;
+};
+
+const csv = await parseCSV("demo-table.csv");
+const tableData = csv.data;

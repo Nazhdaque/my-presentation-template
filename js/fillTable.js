@@ -1,3 +1,5 @@
+import { flipArray } from "./flipArray";
+
 export class FillTable {
 	constructor(tableName, data) {
 		this.tableName = tableName;
@@ -9,20 +11,8 @@ export class FillTable {
 		this.tableData = flip =>
 			flip === "flip"
 				? this.tableContent.data
-				: this.flipArray(this.tableContent.data);
+				: flipArray(this.tableContent.data);
 	}
-
-	flipArray = source => {
-		const result = [];
-		source.forEach(
-			(_, i) =>
-				i < source[i].length &&
-				result.push(
-					source.reduce((total, current) => [...total, current[i]], [])
-				)
-		);
-		return result;
-	};
 
 	fillThead = flip => {
 		let rowContent = `<th scope="col"></th>`;

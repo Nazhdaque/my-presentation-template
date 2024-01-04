@@ -98,7 +98,7 @@ const getChart = async () => {
 
 getChart();
 
-// --
+// ---
 const barsFontSize = new MobileDesktopStatesManager(
 	() => {
 		Chart.defaults.font.size = 8;
