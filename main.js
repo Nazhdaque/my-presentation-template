@@ -24,9 +24,13 @@ const parseCSV = async url => {
 	const data = await responce.text();
 	return Papa.parse(data).data;
 };
-const demoData = await parseCSV("demo-data.csv");
-const autoTable = new FillTable(".auto-table", flipArray(demoData));
-autoTable.fillTable();
+
+const buildTable = async () => {
+	const demoData = await parseCSV("demo-data.csv");
+	const autoTable = new FillTable(".auto-table", flipArray(demoData));
+	autoTable.fillTable();
+};
+buildTable();
 
 accenTable(document.querySelector(".auto-table"));
 
