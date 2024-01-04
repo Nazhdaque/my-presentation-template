@@ -1,45 +1,39 @@
-import { flipArray } from "./flipArray";
-
 export class FillTable {
 	constructor(tableName, data) {
 		this.tableName = tableName;
 		this.thead = document.querySelector(`${this.tableName} thead`);
 		this.tbody = document.querySelector(`${this.tableName} tbody`);
-		this.tableContent = data;
-		this.colHeads = flip => this.tableContent.head[flip === "flip" ? 1 : 0];
-		this.rowHeads = flip => this.tableContent.head[flip === "flip" ? 0 : 1];
-		this.tableData = flip =>
-			flip === "flip"
-				? this.tableContent.data
-				: flipArray(this.tableContent.data);
+		this.tableData = data;
+		this.colHeads = data.shift(0);
 	}
 
-	fillThead = flip => {
-		let rowContent = `<th scope="col"></th>`;
-		this.colHeads(flip).forEach(
+	fillThead = () => {
+		let rowContent = ``;
+		this.colHeads.forEach(
 			item =>
 				(rowContent += `<th scope="col"><p class="ellipsis">${item}</p></th>`)
 		);
 		return `<tr>${rowContent}</tr>`;
 	};
 
-	fillTbody = flip => {
+	fillTbody = () => {
 		let rows;
-		this.tableData(flip).forEach((item, i) => {
-			let row = `<th scope="row"><p class="ellipsis">${
-				this.rowHeads(flip)[i]
-			}</p></th>`;
+		this.tableData.forEach((item, i) => {
+			let rowContent = `<th scope="row"><p class="ellipsis">${item[0]}</p></th>`;
 			item.forEach(
 				(item, i) =>
-					(row += `<td data-cell="${this.colHeads(flip)[i]}">${item}</td>`)
+					i > 0 &&
+					(rowContent += `<td data-cell="${this.colHeads[i]}">${item}</td>`)
 			);
-			i === 0 ? (rows = `<tr>${row}</tr>`) : (rows += `<tr>${row}</tr>`);
+			i === 0
+				? (rows = `<tr>${rowContent}</tr>`)
+				: (rows += `<tr>${rowContent}</tr>`);
 		});
 		return rows;
 	};
 
-	fillTable = flip => {
-		this.thead.innerHTML = this.fillThead(flip);
-		this.tbody.innerHTML = this.fillTbody(flip);
+	fillTable = () => {
+		this.thead.innerHTML = this.fillThead();
+		this.tbody.innerHTML = this.fillTbody();
 	};
 }

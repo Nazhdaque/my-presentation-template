@@ -4,23 +4,22 @@ export class ChartValues {
 	constructor(data, chartColors) {
 		this.data = data;
 		this.chartColors = chartColors;
+		this.labels = this.data.shift(0).slice(1);
 		this.dataLabels = [];
-		this.labels = [];
 		this.datasets = [];
 	}
 
 	getDataLabels = () => {
-		this.data.forEach(item => this.dataLabels.push(item.head[0]));
+		this.data.forEach(item => this.dataLabels.push(item.shift(0)));
 		return this.dataLabels;
 	};
 
-	getLabels = () => {
-		this.data.forEach(item => this.labels.push(item.head[1]));
-		return this.labels;
-	};
-
 	getDatasets = () => {
-		this.data.forEach(item => this.datasets.push(flipArray(item.data)));
+		flipArray(this.data).forEach(item => {
+			const dataset = [];
+			item.forEach(item => dataset.push(Number.parseFloat(item, 10)));
+			this.datasets.push(dataset);
+		});
 		return this.datasets;
 	};
 
@@ -46,8 +45,8 @@ export class ChartValues {
 
 	getValues = () => {
 		return {
+			labels: this.labels,
 			dataLabels: this.getDataLabels(),
-			labels: this.getLabels(),
 			data: this.getDatasets(),
 			colors: this.getColors(),
 		};

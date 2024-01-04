@@ -13,32 +13,34 @@ import "./js/chartBar.js";
 import "./js/chartLine.js";
 import "./js/video.js";
 import "./js/form.js";
-import { FetchWrapper } from "./js/FetchWrapper.js";
 import { FillTable } from "./js/FillTable.js";
 import "./js/yandexMap.js";
 import Papa from "papaparse";
+import { flipArray } from "./js/flipArray.js";
 
 // ---
-const API = new FetchWrapper("");
-API.get("demo-data.json").then(data => {
-	const autoTable = new FillTable(".auto-table", data[0]);
-	autoTable.fillTable();
-	// autoTable.fillTable("flip");
+const parseCSV = async url => {
+	const responce = await fetch(url);
+	const data = await responce.text();
+	return Papa.parse(data).data;
+};
+const demoData = await parseCSV("demo-data.csv");
+const autoTable = new FillTable(".auto-table", flipArray(demoData));
+autoTable.fillTable();
 
-	accenTable(document.querySelector(".auto-table"));
+accenTable(document.querySelector(".auto-table"));
 
-	const attrSetter = new AttrSetter();
-	attrSetter.initWith("role", {
-		// table: "table",
-		// caption: "caption",
-		thead: "rowgroup",
-		tbody: "rowgroup",
-		tfoot: "rowgroup",
-		tr: "row",
-		td: "cell",
-		th: "columnheader",
-		"th[scope=row]": "rowheader",
-	});
+const attrSetter = new AttrSetter();
+attrSetter.initWith("role", {
+	// table: "table",
+	// caption: "caption",
+	thead: "rowgroup",
+	tbody: "rowgroup",
+	tfoot: "rowgroup",
+	tr: "row",
+	td: "cell",
+	th: "columnheader",
+	"th[scope=row]": "rowheader",
 });
 
 // ---
@@ -57,14 +59,3 @@ console.log(
 // 		.replace(/T/, " ")
 // 		.replace(/\./, "::")
 // 		.replace(/Z/, "ms");
-
-const parseCSV = async url => {
-	const responce = await fetch(url);
-	const data = await responce.text();
-	const papaparse = data => Papa.parse(data);
-	const result = papaparse(data);
-	return result;
-};
-
-const csv = await parseCSV("demo-table.csv");
-const tableData = csv.data;
