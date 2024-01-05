@@ -1,16 +1,9 @@
-import { GetCustomPropsValues } from "./GetCustomPropsValues";
+import { GetCustomPropsValues, parseCSV, trimData } from "../helpers.js";
 import { ChartValues } from "./ChartValues.js";
-import Papa from "papaparse";
-
-const parseCSV = async url => {
-	const responce = await fetch(url);
-	const data = await responce.text();
-	return Papa.parse(data).data;
-};
 
 export const getChartData = async () => {
 	const demoData = await parseCSV("demo-data.csv");
-	const values = new ChartValues(demoData, chartColors);
+	const values = new ChartValues(trimData(demoData, [0, 3, 0, 7]), chartColors);
 	return values.getValues();
 };
 

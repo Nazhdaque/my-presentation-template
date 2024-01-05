@@ -1,5 +1,5 @@
 import Chart from "chart.js/auto";
-import { GetCustomPropsValues } from "./GetCustomPropsValues";
+import { GetCustomPropsValues } from "../helpers.js";
 
 const brandColors = new GetCustomPropsValues();
 const chartColors = brandColors.getValues([

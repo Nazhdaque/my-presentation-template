@@ -1,4 +1,4 @@
-import { flipArray } from "./flipArray";
+import { flipArray } from "../helpers.js";
 
 export class ChartValues {
 	constructor(data, chartColors) {

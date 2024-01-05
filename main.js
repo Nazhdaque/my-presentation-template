@@ -5,47 +5,47 @@ import "./js/swiper.js";
 import "./js/proxiEmail.js";
 import "./js/scrollDownPromptDisable.js";
 import "material-icons/iconfont/round.css";
-import { SizeSetter } from "./js/SizeSetter.js";
-import { AttrSetter } from "./js/AttrSetter.js";
-import { accenTable } from "./js/accenTable.js";
-import "./js/chartDoughnut.js";
-import "./js/chartBar.js";
-import "./js/chartLine.js";
+import {
+	SizeSetter,
+	AttrSetter,
+	flipArray,
+	parseCSV,
+	trimData,
+} from "./js/helpers.js";
+import { accenTable } from "./js/table/accenTable.js";
+import { FillTable } from "./js/table/FillTable.js";
+import "./js/charts/chartDoughnut.js";
+import "./js/charts/chartBar.js";
+import "./js/charts/chartLine.js";
 import "./js/video.js";
 import "./js/form.js";
-import { FillTable } from "./js/FillTable.js";
 import "./js/yandexMap.js";
-import Papa from "papaparse";
-import { flipArray } from "./js/flipArray.js";
-
-// ---
-const parseCSV = async url => {
-	const responce = await fetch(url);
-	const data = await responce.text();
-	return Papa.parse(data).data;
-};
 
 const buildTable = async () => {
 	const demoData = await parseCSV("demo-data.csv");
-	const autoTable = new FillTable(".auto-table", flipArray(demoData));
+
+	const autoTable = new FillTable(
+		".auto-table",
+		trimData(flipArray(demoData), [0, 7, 0, 3])
+	);
 	autoTable.fillTable();
+
+	accenTable(document.querySelector(".auto-table"));
+
+	const attrSetter = new AttrSetter();
+	attrSetter.initWith("role", {
+		// table: "table",
+		// caption: "caption",
+		thead: "rowgroup",
+		tbody: "rowgroup",
+		tfoot: "rowgroup",
+		tr: "row",
+		td: "cell",
+		th: "columnheader",
+		"th[scope=row]": "rowheader",
+	});
 };
 buildTable();
-
-accenTable(document.querySelector(".auto-table"));
-
-const attrSetter = new AttrSetter();
-attrSetter.initWith("role", {
-	// table: "table",
-	// caption: "caption",
-	thead: "rowgroup",
-	tbody: "rowgroup",
-	tfoot: "rowgroup",
-	tr: "row",
-	td: "cell",
-	th: "columnheader",
-	"th[scope=row]": "rowheader",
-});
 
 // ---
 const widthSetter = new SizeSetter("w");

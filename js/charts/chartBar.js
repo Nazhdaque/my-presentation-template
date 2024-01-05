@@ -1,7 +1,7 @@
 import Chart from "chart.js/auto";
 import ChartDataLabels from "chartjs-plugin-datalabels";
-import { getChartData } from "./getChartData";
-import { MobileDesktopStatesManager } from "./MobileDesktopStatesManager";
+import { getChartData } from "./getChartData.js";
+import { MobileDesktopStatesManager } from "../helpers.js";
 
 const getChart = async () => {
 	const barChart = await getChartData();
@@ -109,26 +109,7 @@ const barsFontSize = new MobileDesktopStatesManager(
 );
 barsFontSize.toggleStateOn(576);
 
-// {
-// 	"head": [
-// 		[
-// 			"August",
-// 			"September",
-// 			"November",
-// 			"December",
-// 			"January",
-// 			"February",
-// 			"March"
-// 		],
-// 		["data-4", "data-5", "data-6"]
-// 	],
 // 	"data": [
-// 		[31.11, 23.55, 26.18],
-// 		[41.32, 27.78, 32.84],
-// 		[25.62, 36.21, 27.95],
-// 		[21.74, 47.07, 34.83],
-// 		[25.76, 28.62, 29.11],
 // 		[27.87, 38.55, 29.44],
 // 		[36.43, 42.12, 35.68]
 // 	]
-// }

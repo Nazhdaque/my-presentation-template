@@ -1,4 +1,4 @@
-import { MobileDesktopStatesManager } from "./MobileDesktopStatesManager.js";
+import { MobileDesktopStatesManager } from "../helpers.js";
 
 export const accenTable = table => {
 	const colHeads = table.querySelectorAll("thead th:not(:first-child)");
