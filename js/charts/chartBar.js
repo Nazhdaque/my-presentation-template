@@ -4,7 +4,8 @@ import { getChartData } from "./getChartData.js";
 import { MobileDesktopStatesManager } from "../helpers.js";
 
 const getChart = async () => {
-	const barChart = await getChartData();
+	const barChart = await getChartData("demo-data.csv", [0, 3, 0, 7]);
+
 	const labelsOnTop = {
 		id: "labelsOnTop",
 		afterDatasetsDraw(chart, args, pluginOptions) {
@@ -108,8 +109,3 @@ const barsFontSize = new MobileDesktopStatesManager(
 	}
 );
 barsFontSize.toggleStateOn(576);
-
-// 	"data": [
-// 		[27.87, 38.55, 29.44],
-// 		[36.43, 42.12, 35.68]
-// 	]

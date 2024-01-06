@@ -26,21 +26,25 @@ export class ChartValues {
 	getColors = () => {
 		const basic = [];
 		const hover = [];
+		const extra = [];
 
 		this.datasets.forEach(item => {
 			item.forEach((_, i) => {
 				const basicSet = [];
 				const hoverSet = [];
+				const extraSet = [];
 
 				basicSet.push(this.chartColors.basic[i] ?? this.chartColors.basic[0]);
 				hoverSet.push(this.chartColors.hover[i] ?? this.chartColors.hover[0]);
+				extraSet.push(this.chartColors.extra[i] ?? this.chartColors.extra[0]);
 
 				basic.push(basicSet);
 				hover.push(hoverSet);
+				extra.push(extraSet);
 			});
 		});
 
-		return { basic, hover };
+		return { basic, hover, extra };
 	};
 
 	getValues = () => {
