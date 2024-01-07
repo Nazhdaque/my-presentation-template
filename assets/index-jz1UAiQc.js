@@ -560,7 +560,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 				<h2 class="unit__head">Типографика</h2>
 				<div class="unit__body fs-md grid-full-width">
 					<p>fluid, + адаптируется к размеру экрана на отметке 768px <br><small class="fs-xs">везде, кроме инфографики
-							на этом слайде</small></p>
+							на этом слайде. Так надо!</small></p>
 				</div>
 			</div>
 
@@ -678,7 +678,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 					</div>
 				</section>
 
-				<section class="card x-axis xs-a-flow-row">
+				<section class="card -flow-col -xs-flow-row">
 					<div class="card__head">
 						<picture class="card__img img-box xs-shadow-bottom">
 							<source media="(max-width: 576px)"
@@ -763,7 +763,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 					</picture>
 				</div>
 
-				<section class="card x-axis xs-a-flow-row gap-0">
+				<section class="card -flow-col -xs-flow-row gap-0">
 					<div class="card__head">
 						<picture class="card__img img-box xs-shadow-bottom">
 							<source media="(max-width: 576px)"
@@ -867,7 +867,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 				</section>
 
 				<section class="card">
-					<div class="card__head -ttl-right xs-a-flow-row">
+					<div class="card__head -ttl-right -xs-flow-row">
 						<div class="card__img img-box icon-bg overlay eye xs-shadow-bottom">
 							<picture>
 								<source media="(max-width: 576px)"
@@ -904,7 +904,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 					</div>
 				</section>
 
-				<section class="card x-axis xs-a-flow-row">
+				<section class="card -flow-col -xs-flow-row">
 					<div class="card__head">
 						<div class="card__img img-box icon-bg round sphere-1b xs-shadow-bottom">
 							<i class="material-icons-round mui-icon">gpp_good</i>
@@ -948,7 +948,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 					</div>
 				</section>
 
-				<section class="card x-axis xs-a-flow-row">
+				<section class="card -flow-col -xs-flow-row">
 					<div class="card__head">
 						<div class="card__img diamond polygon-9">
 							<div class="img-box icon-bg">
@@ -997,7 +997,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 					</div>
 				</section>
 
-				<section class="card x-axis gap-0 card_triple md-a-flow-row c-span-x md-c-span-0">
+				<section class="card -flow-col gap-0 card_triple md-a-flow-row c-span-x md-c-span-0">
 					<div class="unit -bg">
 						<div class="unit__img img-box icon-bg round sphere-1b">
 							<i class="material-icons-round mui-icon">gpp_good</i>
@@ -1429,19 +1429,82 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 		<div class="slide-content">
 			<div class="slide-bg rounded clr-1b"></div>
 
-			<table class="auto-table width-x">
+			<div class="grid-x cards width-x md-width-x-1-center">
+				<section class="card -flow-col -md-flow-row width-x">
+					<div class="card__head">
+						<picture class="card__img img-box md-shadow-bottom">
+							<img class="o-fit-cover"
+									 loading="lazy"
+									 decoding="async"
+									 src="./images/demo-table.webp"
+									 alt="">
+						</picture>
+					</div>
+
+					<div class="unit">
+						<div class="unit__img img-box icon-bg round sphere-2b">
+							<i class="material-icons-round mui-icon">table_chart</i>
+						</div>
+						<h1 class="unit__head caps fw-sb">API для верстки простых таблиц</h1>
+						<div class="unit__body grid-full-width">
+							<ul class="plain-list ordered-list sphere-2c">
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round"></div>
+									<p class="unit__head">Исходная таблица сохраняется в формате <a class="tag clr-1a"
+											 href="https://ru.wikipedia.org/wiki/CSV"
+											 target="_blank"
+											 rel="noopener noreferrer">.csv</a></p>
+									<div class="unit__body -shift-r fs-sm">
+										<p>На входе обычная таблица из Excell / Google Tables.</p>
+									</div>
+									<div class="arrow-down clr-2b"></div>
+								</li>
+
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round"></div>
+									<p class="unit__head">Полученный файл копируется в проект</p>
+									<div class="unit__body -shift-r fs-sm">
+										<p>и служит источником данных для построения таблиц или графиков.</p>
+									</div>
+									<div class="arrow-down clr-2b"></div>
+								</li>
+
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round"></div>
+									<p class="unit__head">Настройка параметров вывода (опция)</p>
+									<div class="unit__body -shift-r fs-sm">
+										<p>Предусмотрена возможность выборки данных и разворота таблицы на 90°.</p>
+									</div>
+									<div class="arrow-down clr-2b"></div>
+								</li>
+
+								<li class="unit">
+									<div class="unit__img img-box icon-bg round"></div>
+									<p class="unit__head">На странице автоматически строится таблица</p>
+									<div class="unit__body -shift-r fs-sm">
+										<p>API предоставляет готовую верстку c данными из вашего файла.</p>
+									</div>
+									<div class="arrow-down clr-2b"></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<table class="auto-table width-x md-width-x-1-center">
 				<caption>
 					<div class="unit slide-ttl">
 						<h2 class="unit__head fs-md caps">Таблица</h2>
 						<div class="unit__body fs-xs grid-full-width">
 							<p>
-								<span class="tag clr-1a">Автопостроение из .csv,</span>
-								<span class="tag">↻ 90° «строки ➤ колонки»,</span>
-								<span class="tag">адаптивная,</span>
-								<span class="tag">семантически корректная,</span>
-								<span class="tag">с подсветкой заголовков,</span>
-								<span class="tag">колонок и строк,</span>
-								<span class="tag">маркировкой ячеек по клику</span>
+								<span class="tag clr-2b">Автопостроение из .csv,</span>
+								<span class="tag clr-1a">↻ 90°: строки ➤ колонки,</span>
+								<span class="tag clr-1a">адаптивная,</span>
+								<span class="tag clr-1a">семантически корректная,</span>
+								<span class="tag clr-1a">с подсветкой заголовков,</span>
+								<span class="tag clr-1a">колонок и строк,</span>
+								<span class="tag clr-1a">маркировкой ячеек по клику</span>
 							</p>
 						</div>
 					</div>
@@ -1764,7 +1827,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 			</div>
 
 			<div class="cards">
-				<section class="card x-axis md-a-flow-row gap-0">
+				<section class="card -flow-col -md-flow-row gap-0">
 					<div class="card__head">
 						<picture class="card__img img-box xs-shadow-bottom"
 										 id="ymap">
