@@ -83,24 +83,25 @@
 }
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| */
-.x-axis.card {
+.-flow-col.card {
 	--shadow: var(--img-shadow-right);
 
 	grid-auto-flow: column;
-	grid-auto-columns: minmax(var(--img-h), auto) auto;
+	grid-auto-columns: minmax(min(var(--img-h), 100%), auto) auto;
+	grid-auto-rows: auto;
 }
 
-.x-axis .img-box {
+.-flow-col .img-box {
 	--img-h: 100%;
 }
 
-.x-axis .icon-bg {
+.-flow-col .icon-bg {
 	--img-w: var(--img-size);
 	--img-h: auto;
 	--asp: 1;
 }
 
-.x-axis.card_triple {
+.-flow-col.card_triple {
 	grid-auto-columns: 1fr var(--img-h) 1fr;
 	grid-auto-rows: auto var(--img-h) auto;
 }

@@ -31,6 +31,7 @@
 
 .__slide-yandex-map .card {
 	grid-auto-columns: var(--img-h);
+	grid-auto-rows: var(--img-h);
 }
 
 .__slide-yandex-map .plain-list {

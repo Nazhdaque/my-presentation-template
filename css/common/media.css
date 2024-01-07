@@ -9,7 +9,7 @@
 /* |||||||||| |||||||||| |||||||||| |||||||||| md */
 @media (width <= 992px) {
 	/* table media styles are in the table.css, accentable.js */
-	.auto-table {
+	.md-width-x-1-center {
 		--x: 1;
 
 		justify-self: center;
@@ -29,6 +29,11 @@
 	}
 	.unit__body.-md-shift-r {
 		grid-area: 2 / 2 / 2 / 4;
+	}
+
+	.-md-flow-row {
+		grid-auto-flow: row;
+		grid-auto-rows: minmax(var(--img-h), auto) auto;
 	}
 
 	/* utilities */
@@ -58,6 +63,11 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| sm */
 @media (width <= 768px) {
+	.-sm-flow-row {
+		grid-auto-flow: row;
+		grid-auto-rows: minmax(var(--img-h), auto) auto;
+	}
+
 	/* utilities */
 	.sm-min-h-auto {
 		min-height: auto !important;
@@ -67,6 +77,9 @@
 	}
 	.sm-d-none {
 		display: none;
+	}
+	.sm-shadow-bottom {
+		--shadow: var(--img-shadow-bottom);
 	}
 }
 
@@ -112,6 +125,11 @@
 		--image: url(/images/demo-4-xs.webp);
 	}
 
+	.-xs-flow-row {
+		grid-auto-flow: row;
+		grid-auto-rows: minmax(var(--img-h), auto) auto;
+	}
+
 	/* utilities */
 	.xs-d-contents {
 		display: contents;
@@ -121,9 +139,6 @@
 	}
 	.xs-shadow-bottom {
 		--shadow: var(--img-shadow-bottom);
-	}
-	.xs-a-flow-row {
-		grid-auto-flow: row;
 	}
 
 	/* .xs-grid-col-a {
