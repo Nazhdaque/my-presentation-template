@@ -1439,6 +1439,22 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 									 src="./images/demo-table.webp"
 									 alt="">
 						</picture>
+						<div class="__icons-box">
+							<img loading="lazy"
+									 decoding="async"
+									 src="./images/icons/ms-excel-logo.svg"
+									 alt="">
+							<div class="arrow-right clr-2b"></div>
+							<img loading="lazy"
+									 decoding="async"
+									 src="./images/icons/csv-icon.svg"
+									 alt="">
+							<div class="arrow-right clr-2b"></div>
+							<img loading="lazy"
+									 decoding="async"
+									 src="./images/icons/html5-logo.svg"
+									 alt="">
+						</div>
 					</div>
 
 					<div class="unit">
@@ -1455,7 +1471,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 											 target="_blank"
 											 rel="noopener noreferrer">.csv</a></p>
 									<div class="unit__body -shift-r fs-sm">
-										<p>На входе обычная таблица из Excell / Google Tables.</p>
+										<p>На входе обычная таблица из Excel / Google Tables.</p>
 									</div>
 									<div class="arrow-down clr-2b"></div>
 								</li>
@@ -1464,7 +1480,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 									<div class="unit__img img-box icon-bg round"></div>
 									<p class="unit__head">Полученный файл копируется в проект</p>
 									<div class="unit__body -shift-r fs-sm">
-										<p>и служит источником данных для построения таблиц или графиков.</p>
+										<p>и может служить источником данных для построения таблиц или графиков.</p>
 									</div>
 									<div class="arrow-down clr-2b"></div>
 								</li>
