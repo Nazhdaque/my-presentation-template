@@ -1440,20 +1440,34 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 									 alt="">
 						</picture>
 						<div class="__icons-box">
-							<img loading="lazy"
-									 decoding="async"
-									 src="./images/icons/ms-excel-logo.svg"
-									 alt="">
+							<div class="img-box icon-bg clr-1b">
+								<img class="inner-icon"
+										 loading="lazy"
+										 decoding="async"
+										 src="./images/icons/ms-excel-logo.svg"
+										 alt="">
+							</div>
 							<div class="arrow-right clr-2b"></div>
-							<img loading="lazy"
-									 decoding="async"
-									 src="./images/icons/csv-icon.svg"
-									 alt="">
+							<div class="img-box icon-bg clr-1b">
+								<img style="transform: scale(1.1)"
+										 class="inner-icon"
+										 loading="lazy"
+										 decoding="async"
+										 src="./images/icons/csv-icon.svg"
+										 alt="">
+							</div>
 							<div class="arrow-right clr-2b"></div>
-							<img loading="lazy"
-									 decoding="async"
-									 src="./images/icons/html5-logo.svg"
-									 alt="">
+							<div class="img-box icon-bg clr-1b">
+								<i class="material-icons-round mui-icon clr-0a">tune</i>
+							</div>
+							<div class="arrow-right clr-2b"></div>
+							<div class="img-box icon-bg clr-1a">
+								<img class="inner-icon"
+										 loading="lazy"
+										 decoding="async"
+										 src="./images/icons/html5-logo.svg"
+										 alt="">
+							</div>
 						</div>
 					</div>
 
