@@ -33,7 +33,7 @@ table {
 	--thickness: 2px;
 	--offset: calc(var(--thickness) * -1);
 	--indent: 0.75rem;
-	--inner-radius: 8px;
+	--inner-radius: 0px;
 	--outer-radius: calc(var(--inner-radius) + var(--thickness));
 
 	/* border-spacing: 0 var(--thickness); */

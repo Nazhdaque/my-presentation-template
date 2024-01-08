@@ -13,6 +13,27 @@
 	--pos: left top;
 }
 
+.__slide-table .__icons-box {
+	--img-size: 1.5rem;
+	--icon-size: 3rem;
+	--img-place: center;
+
+	grid-area: 1 / 1;
+	place-self: center;
+	place-items: center;
+	z-index: 1;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns:
+		var(--icon-size) var(--img-size) var(--icon-size) var(--img-size)
+		var(--icon-size);
+	gap: 1rem;
+	filter: drop-shadow(0.15rem 0.15rem 0.15rem hsla(0, 0%, 0%, 0.5));
+}
+.__slide-table .__icons-box > img:nth-of-type(2) {
+	transform: scale(1.1);
+}
+
 .auto-table {
 	--col: 3;
 	--x: 3;
@@ -21,9 +42,9 @@
 }
 
 .__slide-table .cards {
-	--gap-x: 2rem;
 	--col: 3;
 	--x: 2;
+	--card-gap: 3rem;
 	--img-size: 25rem;
 }
 
