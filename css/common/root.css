@@ -41,7 +41,7 @@
 	/* |||||||||| |||||||||| |||||||||| |||||||||| */
 	--sphere-1a: radial-gradient(
 		circle at 65% 15%,
-		white 1px,
+		white 0.01em,
 		hsl(
 				var(--clr-1a-h),
 				calc(var(--clr-1a-s) * 0.5),
@@ -64,7 +64,7 @@
 
 	--sphere-1b: radial-gradient(
 		circle at 65% 15%,
-		white 1px,
+		white 0.01em,
 		hsl(var(--clr-1b)) 3%,
 		hsl(var(--clr-1b-h), var(--clr-1b-s), calc(var(--clr-1b-l) * 0.4)) 60%,
 		hsl(var(--clr-1b)) 100%
@@ -72,7 +72,7 @@
 
 	--sphere-2a: radial-gradient(
 		circle at 65% 15%,
-		white 1px,
+		white 0.01em,
 		hsl(var(--clr-2a)) 3%,
 		hsl(var(--clr-2a-h), var(--clr-2a-s), calc(var(--clr-2a-l) * 0.5)) 60%,
 		hsl(var(--clr-2a)) 100%
@@ -80,7 +80,7 @@
 
 	--sphere-2b: radial-gradient(
 		circle at 65% 15%,
-		white 1px,
+		white 0.01em,
 		hsl(var(--clr-2b)) 3%,
 		hsl(var(--clr-2b-h), var(--clr-2b-s), calc(var(--clr-2b-l) * 0.5)) 60%,
 		hsl(var(--clr-2b)) 100%
@@ -88,7 +88,7 @@
 
 	--sphere-2c: radial-gradient(
 		circle at 65% 15%,
-		white 1px,
+		white 0.01em,
 		hsl(var(--clr-2c)) 3%,
 		hsl(var(--clr-2c-h), var(--clr-2c-s), calc(var(--clr-2c-l) * 0.1)) 60%,
 		hsl(var(--clr-2c)) 100%

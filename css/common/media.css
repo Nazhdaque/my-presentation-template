@@ -8,7 +8,7 @@
 
 /* |||||||||| |||||||||| |||||||||| |||||||||| md */
 @media (width <= 992px) {
-	/* table media styles are in the table.css, accentable.js */
+	/* table media styles are in the table.css, also check table/accenTable.js */
 	.md-width-x-1-center {
 		--x: 1;
 
