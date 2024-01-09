@@ -255,7 +255,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 						<div class="arrow-left clr-1a"></div>
 
 						<div class="unit__body grid-full-width">
-							<p>Возможность комфортного просмотра на любом устройстве, с т.ч. с экрана смартфона. В этом легко
+							<p>Возможность комфортного просмотра на любом устройстве, в т.ч. с экрана смартфона. В этом легко
 								убедиться: плавно потяните за уголок окна браузера, чтобы уменьшить область просмотра до размеров экрана
 								смартфона. Макет страницы на ваших глазах гибко подстроится («резиновая» верстка) под эти изменения,
 								сохраняя при этом аккуратный вид и читаемость. А теперь вспомните, что из себя представляет просмотр
@@ -642,9 +642,8 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 				</div>
 				<h2 class="unit__head">Карточки</h2>
 				<div class="unit__body fs-md grid-full-width">
-					<p>Текстовые блоки с картинками, иконками, графиками, перечнями и т.д.<br><small class="fs-xs">библиотека
-							Material Icons установлена по умолчанию, но иконки могут быть абсолютно
-							любые</small></p>
+					<p>Инфоблоки с иллюстрациями<br><small class="fs-xs">Базовые макеты можно дополнить любыми контекстуально
+							релевантными элементами</small></p>
 				</div>
 			</div>
 
@@ -1439,6 +1438,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 									 src="./images/demo-table.webp"
 									 alt="">
 						</picture>
+
 						<div class="__icons-box">
 							<div class="img-box icon-bg clr-1b">
 								<img class="inner-icon"
@@ -1447,7 +1447,9 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 										 src="./images/icons/ms-excel-logo.svg"
 										 alt="">
 							</div>
+
 							<div class="arrow-right clr-2b"></div>
+
 							<div class="img-box icon-bg clr-1b">
 								<img style="transform: scale(1.1)"
 										 class="inner-icon"
@@ -1456,11 +1458,15 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 										 src="./images/icons/csv-icon.svg"
 										 alt="">
 							</div>
+
 							<div class="arrow-right clr-2b"></div>
+
 							<div class="img-box icon-bg clr-1b">
 								<i class="material-icons-round mui-icon clr-0a">tune</i>
 							</div>
+
 							<div class="arrow-right clr-2b"></div>
+
 							<div class="img-box icon-bg clr-1a">
 								<img class="inner-icon"
 										 loading="lazy"
@@ -1475,7 +1481,9 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 						<div class="unit__img img-box icon-bg round sphere-2b">
 							<i class="material-icons-round mui-icon">table_chart</i>
 						</div>
+
 						<h1 class="unit__head caps fw-sb">API для верстки простых таблиц</h1>
+
 						<div class="unit__body grid-full-width">
 							<ul class="plain-list ordered-list sphere-2c">
 								<li class="unit">
@@ -1485,7 +1493,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 											 target="_blank"
 											 rel="noopener noreferrer">.csv</a></p>
 									<div class="unit__body -shift-r fs-sm">
-										<p>На входе обычная таблица из Excel / Google Tables.</p>
+										<p>На входе — обычная таблица из Excel / Google Tables.</p>
 									</div>
 									<div class="arrow-down clr-2b"></div>
 								</li>
