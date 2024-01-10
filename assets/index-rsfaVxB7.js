@@ -636,9 +636,7 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 
 			<div class="unit fs-xl slide-ttl width-x">
 				<div class="unit__img img-box icon-bg round sphere-1b">
-					<svg class="inner-icon figures">
-						<use href="./images/icons/sprites/figures.svg#figure-2"></use>
-					</svg>
+					<i class="material-icons-round mui-icon">subtitles</i>
 				</div>
 				<h2 class="unit__head">Карточки</h2>
 				<div class="unit__body fs-md grid-full-width">
@@ -1567,13 +1565,9 @@ var Eo=Object.defineProperty;var Lo=(i,t,e)=>t in i?Eo(i,t,{enumerable:!0,config
 				</div>
 				<h2 class="unit__head">Сhart.js</h2>
 				<div class="unit__body fs-md grid-full-width">
-					<p>Интерактивные <a class="tag clr-1a"
-							 href="https://www.chartjs.org/"
-							 target="_blank"
-							 rel="noopener noreferrer">графики</a><br>для визуализации любых типов данных<br><small
-									 class="fs-xs caps">В
-							этом проекте графики строятся <span class="tag clr-1a">автоматически</span> на основании данных из
-							.csv-файла</small></p>
+					<p>Интерактивные графики<br>для визуализации любых типов данных<br><small class="fs-xs">Демо-графики в
+							этом проекте строятся на основании данных из .csv-файла автоматически</small>
+					</p>
 				</div>
 			</div>
 
