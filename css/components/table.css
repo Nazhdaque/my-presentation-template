@@ -99,6 +99,15 @@ td {
 	background-clip: padding-box;
 }
 
+th > *,
+td > * {
+	display: block;
+	max-width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 tr:nth-child(2n) * {
 	/* background-color: var(--clr-bg-2--lt); */
 }

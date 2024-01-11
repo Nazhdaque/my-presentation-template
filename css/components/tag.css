@@ -13,12 +13,7 @@
 	isolation: isolate;
 	letter-spacing: 2px;
 }
-.tag.clr-1a::before {
-	--clr-solid: var(--sphere-1b);
-}
-.tag.clr-2b::before {
-	--clr-solid: var(--sphere-2c);
-}
+
 .tag::before {
 	isolation: isolate;
 	content: "";
@@ -28,6 +23,15 @@
 	height: var(--img-size);
 	border-radius: 50%;
 	position: relative;
+}
+.tag.clr-1a::before {
+	--clr-solid: var(--sphere-1b);
+}
+.tag.clr-1b::before {
+	--clr-solid: var(--sphere-2c);
+}
+.tag.clr-2b::before {
+	--clr-solid: var(--sphere-2c);
 }
 
 .fs-md .tag {

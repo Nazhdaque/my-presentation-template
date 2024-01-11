@@ -10,8 +10,7 @@ export class FillTable {
 	fillThead = () => {
 		let rowContent = ``;
 		this.colHeads.forEach(
-			item =>
-				(rowContent += `<th scope="col"><p class="ellipsis">${item}</p></th>`)
+			item => (rowContent += `<th scope="col"><span>${item}</span></th>`)
 		);
 		return `<tr>${rowContent}</tr>`;
 	};
@@ -19,11 +18,11 @@ export class FillTable {
 	fillTbody = () => {
 		let rows;
 		this.tableData.forEach((item, i) => {
-			let rowContent = `<th scope="row"><p class="ellipsis">${item[0]}</p></th>`;
+			let rowContent = `<th scope="row"><span>${item[0]}</span></th>`;
 			item.forEach(
 				(item, i) =>
 					i > 0 &&
-					(rowContent += `<td data-cell="${this.colHeads[i]}">${item}</td>`)
+					(rowContent += `<td data-cell="${this.colHeads[i]}"><span>${item}</span></td>`)
 			);
 			i === 0
 				? (rows = `<tr>${rowContent}</tr>`)

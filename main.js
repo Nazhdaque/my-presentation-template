@@ -26,7 +26,7 @@ const buildTable = async () => {
 
 	const autoTable = new FillTable(
 		".auto-table",
-		trimData(flipArray(demoData), [0, 7, 0, 3])
+		trimData(flipArray(demoData), [0, 9, 0, 3])
 	);
 	autoTable.fillTable();
 
