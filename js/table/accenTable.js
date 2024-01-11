@@ -1,12 +1,14 @@
 import { MobileDesktopStatesManager } from "../helpers.js";
 
 export const accenTable = table => {
-	const colHeads = table.querySelectorAll("thead th:not(:first-child)");
-	const rowHeads = table.querySelectorAll("tbody th");
-	const rows = table.querySelectorAll("tbody tr");
+	const colHeads = table.querySelectorAll(
+		".tbl-column-heading:not(:first-child)"
+	);
+	const rowHeads = table.querySelectorAll(".tbl-row-heading");
+	const rows = table.querySelectorAll(".tbl-body .tbl-row");
 
 	rows.forEach((row, rowIndex) => {
-		const cells = row.querySelectorAll("td");
+		const cells = row.querySelectorAll(".tbl-cell");
 
 		cells.forEach((cell, colIndex) => {
 			const handleOver = () => {
