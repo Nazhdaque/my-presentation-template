@@ -5,39 +5,45 @@ export class FillTable {
 		this.tbody = document.querySelector(`${this.tableName} .tbl-body`);
 		this.tableData = data;
 		this.colHeads = data.shift(0);
+		this.setClass = i => (i % 2 ? "-even" : "-odd");
 	}
 
 	fillThead = () => {
-		let rowContent = ``;
+		let cells = ``;
+
 		this.colHeads.forEach(
-			item =>
-				(rowContent += `
-					<th class="tbl-heading tbl-column-heading" scope="col">
-						<span>${item}</span>
+			(item, i) =>
+				(cells += `
+					<th class="tbl-heading -col-heading ${this.setClass(i)}" scope="col">
+						<span class="ellipsis">${item}</span>
 					</th>`)
 		);
-		return `<tr class="tbl-row">${rowContent}</tr>`;
+
+		return `<tr>${cells}</tr>`;
 	};
 
 	fillTbody = () => {
 		let rows;
+
 		this.tableData.forEach((item, i) => {
-			let rowContent = `
-				<th class="tbl-heading tbl-row-heading" scope="row">
-					<span>${item[0]}</span>
+			let cells = `
+				<th class="tbl-heading -row-heading ${this.setClass(i)}" scope="row">
+					<span class="ellipsis">${item[0]}</span>
 				</th>`;
+
 			item.forEach(
 				(item, i) =>
 					i > 0 &&
-					(rowContent += `
+					(cells += `
 						<td class="tbl-cell" data-cell="${this.colHeads[i]}">
-							<span>${item}</span>
+							<span class="ellipsis">${item}</span>
 						</td>`)
 			);
-			i === 0
-				? (rows = `<tr class="tbl-row">${rowContent}</tr>`)
-				: (rows += `<tr class="tbl-row">${rowContent}</tr>`);
+
+			const row = `<tr class="tbl-row ${this.setClass(i)}">${cells}</tr>`;
+			i === 0 ? (rows = row) : (rows += row);
 		});
+
 		return rows;
 	};
 

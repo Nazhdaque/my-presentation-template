@@ -4,12 +4,12 @@
 
 	overflow: auto;
 }
-.tbl-column-heading {
+.-col-heading {
 	position: sticky;
 	top: 0;
 	z-index: 1;
 }
-.tbl-column-heading:first-child {
+.-col-heading:first-child {
 	position: sticky;
 	left: 0;
 	z-index: 2;
@@ -28,11 +28,11 @@
 	--clr-bg-1--dk: hsl(var(--clr-1a), 1);
 	--clr-bg-2--lt: hsl(var(--clr-1b), 0.1);
 	--clr-bg-2--dk: hsl(var(--clr-1b), 1);
-	--clr-accent: var(--clr-bg-2--dk);
+	--clr-accent: hsl(var(--clr-1b), 1);
 	--table-shadow: 0rem 2rem 2rem -1rem hsl(0, 0%, 0%, 0.25);
 	--thickness: 2px;
 	--offset: calc(var(--thickness) * -1);
-	--indent: 0.75rem;
+	--indent: 0.5rem;
 	--inner-radius: 0px;
 	--outer-radius: calc(var(--inner-radius) + var(--thickness));
 
@@ -51,17 +51,9 @@
 	table-layout: fixed;
 }
 
-.tbl-body .tbl-row:last-child > *:first-child {
-	border-bottom-left-radius: var(--inner-radius);
-}
-.tbl-body .tbl-row:last-child > *:last-child {
-	border-bottom-right-radius: var(--inner-radius);
-}
-
 .tbl-caption {
 	/* margin: var(--thickness) var(--thickness) 0 var(--thickness); */
 	padding: calc(var(--indent) * 2);
-	color: var(--clr-txt--dk) !important;
 	background-color: var(--clr-bg-1--lt);
 	position: relative;
 	border-top-left-radius: var(--inner-radius);
@@ -79,16 +71,26 @@
 
 .tbl-caption,
 .tbl-heading,
-.tbl-heading::before,
 .tbl-cell::before {
 	font-weight: var(--fw-sb) !important;
 	text-transform: uppercase;
 }
 
-.tbl-row,
-.tbl-cell {
-	height: 100%;
-	text-align: right;
+.tbl-heading {
+	text-align: center;
+	position: relative;
+}
+.-col-heading.-even {
+	background-color: var(--clr-bg-1--dk);
+	color: var(--clr-txt--lt);
+}
+.-row-heading.-even {
+	background-color: var(--clr-bg-1--lt);
+	color: var(--clr-txt-1--dk);
+}
+.-row-heading.-odd {
+	background-color: var(--clr-bg-1--dk);
+	color: var(--clr-txt--lt);
 }
 
 .tbl-heading,
@@ -97,58 +99,31 @@
 	background-color: var(--clr-txt--lt);
 	background-clip: padding-box;
 }
-
-.tbl-heading > *,
-.tbl-cell > * {
-	display: block;
-	max-width: 100%;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
+.tbl-row,
+.tbl-cell {
+	height: 100%;
+	text-align: right;
 }
-
-.tbl-row:nth-child(2n) * {
-	/* background-color: var(--clr-bg-2--lt); */
-}
-
-.tbl-heading {
-	text-align: center;
-	position: relative;
-}
-
-.tbl-column-heading:nth-child(2n - 1) {
-	color: var(--clr-txt--dk);
-}
-.tbl-column-heading:first-child {
-	/* background-color: var(--clr-bg-1--lt); */
-}
-.tbl-column-heading:nth-child(2n) {
-	background-color: var(--clr-bg-1--dk);
-	color: var(--clr-txt--lt);
-}
-
-.tbl-row:nth-child(2n + 1) .tbl-cell {
+.tbl-row.-odd .tbl-cell {
 	background-color: var(--clr-bg-1--lt);
 }
 
-.tbl-body .tbl-row:nth-child(2n - 1) .tbl-heading {
-	background-color: var(--clr-bg-1--dk);
-	color: var(--clr-txt--lt);
+.tbl-row:last-child > *:first-child {
+	border-bottom-left-radius: var(--inner-radius);
 }
-.tbl-body .tbl-row:nth-child(2n) .tbl-heading {
-	background-color: var(--clr-bg-1--lt);
-	color: var(--clr-txt-1--dk);
+.tbl-row:last-child > *:last-child {
+	border-bottom-right-radius: var(--inner-radius);
 }
 
-.tbl-column-heading:nth-child(2n) > *::selection,
-.tbl-body .tbl-row:nth-child(2n - 1) .tbl-heading > *::selection {
+.-col-heading.-even > *::selection,
+.tbl-row.-odd .tbl-heading > *::selection {
 	background-color: var(--clr-txt--lt);
 	color: var(--clr-txt--dk);
 }
 
-/* --- */
+/* active states */
 .clr-accent,
-.tbl-heading:not(.tbl-column-heading:first-child):hover {
+.tbl-heading:not(.-col-heading:first-child):hover {
 	background-color: var(--clr-accent) !important;
 	color: var(--clr-txt--lt) !important;
 }
@@ -161,7 +136,7 @@
 	background-color: var(--clr-accent);
 }
 .tbl-head .clr-accent::before,
-.tbl-column-heading:not(.tbl-column-heading:first-child):hover::before {
+.-col-heading:not(.-col-heading:first-child):hover::before {
 	top: calc(100% + var(--thickness));
 	left: var(--offset);
 	/* left: 0; */
@@ -169,7 +144,7 @@
 	width: var(--thickness);
 }
 .tbl-head .clr-accent::after,
-.tbl-column-heading:not(.tbl-column-heading:first-child):hover::after {
+.-col-heading:not(.-col-heading:first-child):hover::after {
 	top: calc(100% + var(--thickness));
 	right: var(--offset);
 	/* right: 0; */
