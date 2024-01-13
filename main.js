@@ -19,18 +19,22 @@ import "./js/charts/chartBar.js";
 import "./js/charts/chartLine.js";
 import "./js/video.js";
 import "./js/form.js";
-import "./js/yandexMap.js";
+// import "./js/yandexMap.js";
 
 const buildTable = async () => {
 	const demoData = await parseCSV("demo-data.csv");
 
-	const autoTable = new FillTable(
-		".auto-table",
+	const foldTable = new FillTable(
+		".tbl.-fold",
 		trimData(flipArray(demoData), [0, 9, 0, 3])
 	);
-	autoTable.fillTable();
 
-	accenTable(document.querySelector(".auto-table"));
+	const scrollTable = new FillTable(".tbl.-scroll", demoData);
+
+	foldTable.fillTable();
+	scrollTable.fillTable();
+
+	accenTable(document.querySelector(".tbl.-fold"));
 
 	const attrSetter = new AttrSetter();
 	attrSetter.initWith("role", {

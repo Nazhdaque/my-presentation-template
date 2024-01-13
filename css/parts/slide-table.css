@@ -1,12 +1,31 @@
+.__slide-table {
+	--gap-y: 3rem;
+	--gap-x: 3rem;
+	--col: 3;
+	--x: 3;
+}
+
 .__slide-table .slide-bg {
 	--side: var(--right);
 	--clip: var(--clp-right);
 }
 
 .__slide-table .slide-content {
-	--gap-y: 3rem;
-
 	place-items: start stretch;
+}
+
+.__slide-table .grid-x {
+	grid-auto-rows: minmax(15rem, 1fr);
+}
+
+.__slide-table picture {
+	grid-area: 1 / 1;
+}
+
+.__slide-table .unit {
+	--img-size: 1.5em;
+	--gap-x: 1em;
+	--gap-y: 0.5em;
 }
 
 .__slide-table .o-fit-cover {
@@ -14,7 +33,7 @@
 }
 
 .__slide-table .__icons-box {
-	--img-size: min(3rem, 10vw);
+	--img-h: min(3rem, 10vw);
 
 	grid-area: 1 / 1;
 	place-self: center;
@@ -30,22 +49,11 @@
 	--min-arrow-length: var(--img-size);
 }
 
-.auto-table {
-	--col: 3;
-	--x: 3;
+.__slide-table .__table-box {
+	overflow: auto;
+	overscroll-behavior: contain;
+}
 
+.__slide-table .tbl {
 	--place-head: center;
-}
-
-.__slide-table .cards {
-	--col: 3;
-	--x: 2;
-	--card-gap: 3rem;
-	--img-size: 25rem;
-}
-
-.__slide-table .unit {
-	--img-size: 1.5em;
-	--gap-x: 1em;
-	--gap-y: 0.5em;
 }

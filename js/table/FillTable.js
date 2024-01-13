@@ -1,8 +1,8 @@
 export class FillTable {
 	constructor(tableName, data) {
 		this.tableName = tableName;
-		this.thead = document.querySelector(`${this.tableName} .tbl-head`);
-		this.tbody = document.querySelector(`${this.tableName} .tbl-body`);
+		this.thead = document.querySelector(`${this.tableName} .tbl__head`);
+		this.tbody = document.querySelector(`${this.tableName} .tbl__body`);
 		this.tableData = data;
 		this.colHeads = data.shift(0);
 		this.setClass = i => (i % 2 ? "-even" : "-odd");
@@ -14,7 +14,7 @@ export class FillTable {
 		this.colHeads.forEach(
 			(item, i) =>
 				(cells += `
-					<th class="tbl-heading -col-heading ${this.setClass(i)}" scope="col">
+					<th class="tbl__heading -col-heading ${this.setClass(i)}" scope="col">
 						<span class="ellipsis">${item}</span>
 					</th>`)
 		);
@@ -27,7 +27,7 @@ export class FillTable {
 
 		this.tableData.forEach((item, i) => {
 			let cells = `
-				<th class="tbl-heading -row-heading ${this.setClass(i)}" scope="row">
+				<th class="tbl__heading -row-heading ${this.setClass(i)}" scope="row">
 					<span class="ellipsis">${item[0]}</span>
 				</th>`;
 
@@ -35,12 +35,12 @@ export class FillTable {
 				(item, i) =>
 					i > 0 &&
 					(cells += `
-						<td class="tbl-cell" data-cell="${this.colHeads[i]}">
+						<td class="tbl__cell" data-cell="${this.colHeads[i]}">
 							<span class="ellipsis">${item}</span>
 						</td>`)
 			);
 
-			const row = `<tr class="tbl-row ${this.setClass(i)}">${cells}</tr>`;
+			const row = `<tr class="tbl__row ${this.setClass(i)}">${cells}</tr>`;
 			i === 0 ? (rows = row) : (rows += row);
 		});
 

@@ -3,10 +3,10 @@ import { MobileDesktopStatesManager } from "../helpers.js";
 export const accenTable = table => {
 	const colHeads = table.querySelectorAll(".-col-heading:not(:first-child)");
 	const rowHeads = table.querySelectorAll(".-row-heading");
-	const rows = table.querySelectorAll(".tbl-row");
+	const rows = table.querySelectorAll(".tbl__row");
 
 	rows.forEach((row, rowIndex) => {
-		const cells = row.querySelectorAll(".tbl-cell");
+		const cells = row.querySelectorAll(".tbl__cell");
 
 		cells.forEach((cell, colIndex) => {
 			const handleOver = () => {
