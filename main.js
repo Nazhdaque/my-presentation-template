@@ -19,7 +19,7 @@ import "./js/charts/chartBar.js";
 import "./js/charts/chartLine.js";
 import "./js/video.js";
 import "./js/form.js";
-// import "./js/yandexMap.js";
+import "./js/yandexMap.js";
 
 const buildTable = async () => {
 	const demoData = await parseCSV("demo-data.csv");
