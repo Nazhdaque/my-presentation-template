@@ -471,6 +471,8 @@ var Lo=Object.defineProperty;var Po=(i,t,e)=>t in i?Lo(i,t,{enumerable:!0,config
 				<li>
 					<picture>
 						<img class="o-fit-cover"
+								 loading="lazy"
+								 decoding="async"
 								 src="images/demo-1-xl.webp"
 								 alt="">
 					</picture>
@@ -497,6 +499,8 @@ var Lo=Object.defineProperty;var Po=(i,t,e)=>t in i?Lo(i,t,{enumerable:!0,config
 					<picture>
 						<img class="o-fit-cover"
 								 style="--pos: 80%;"
+								 loading="lazy"
+								 decoding="async"
 								 src="images/demo-1-xl.webp"
 								 alt="">
 					</picture>
@@ -510,6 +514,8 @@ var Lo=Object.defineProperty;var Po=(i,t,e)=>t in i?Lo(i,t,{enumerable:!0,config
 					<picture>
 						<img class="o-fit-cover"
 								 style="--pos: 40%"
+								 loading="lazy"
+								 decoding="async"
 								 src="images/demo-1-xl.webp"
 								 alt="">
 					</picture>
@@ -523,6 +529,8 @@ var Lo=Object.defineProperty;var Po=(i,t,e)=>t in i?Lo(i,t,{enumerable:!0,config
 					<picture>
 						<img class="o-fit-cover"
 								 style="--pos: 10%"
+								 loading="lazy"
+								 decoding="async"
 								 src="images/demo-1-xl.webp"
 								 alt="">
 					</picture>
@@ -1520,6 +1528,7 @@ var Lo=Object.defineProperty;var Po=(i,t,e)=>t in i?Lo(i,t,{enumerable:!0,config
 								<h2 class="unit__head fs-md caps">Таблица 2</h2>
 								<div class="unit__body fs-xs grid-full-width">
 									<p>вариант:
+										<span class="tag clr-1a">всегда полноразмерная,</span>
 										<span class="tag clr-1a">скролл по двум осям,</span>
 										<span class="tag clr-1a">прилипающие заголовки</span>
 									</p>
