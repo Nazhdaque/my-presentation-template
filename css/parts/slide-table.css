@@ -1,6 +1,6 @@
 .__slide-table {
-	--gap-y: 3rem;
-	--gap-x: 3rem;
+	--gap-y: 1.5rem;
+	--gap-x: 1.5rem;
 	--col: 3;
 	--x: 3;
 }
@@ -12,6 +12,7 @@
 
 .__slide-table .slide-content {
 	place-items: start stretch;
+	place-self: center stretch;
 }
 
 .__slide-table .grid-x {
