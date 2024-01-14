@@ -180,7 +180,7 @@
 	outline: var(--thickness) solid var(--clr-accent);
 }
 
-/* specific styles and additional layer because of color transparency */
+/* specific styles and extra layer due to color transparency */
 .tbl.-scroll .-row-heading {
 	background-color: var(--clr-txt--lt);
 }
@@ -210,8 +210,8 @@
 	.tbl.-fold .tbl__body .tbl__heading {
 		display: grid;
 		place-items: center;
-		background-color: var(--clr-bg-1--dk) !important;
-		color: var(--clr-txt--lt) !important;
+		background-color: var(--clr-bg-1--dk);
+		color: var(--clr-txt--lt);
 	}
 
 	.tbl.-fold .tbl__cell {
@@ -221,16 +221,16 @@
 		grid-template-columns: max-content 1fr;
 		position: static;
 		margin-top: var(--thickness);
-		background-color: var(--clr-bg-1--lt) !important;
+		background-color: var(--clr-bg-1--lt);
 	}
 	.tbl.-fold .tbl__cell:nth-child(2n) {
-		background-color: var(--clr-txt--lt) !important;
+		background-color: var(--clr-txt--lt);
 	}
 	.tbl.-fold .tbl__cell::before {
 		content: attr(data-cell) ": ";
 	}
 	.tbl.-fold .tbl__cell:hover {
-		background-color: var(--clr-bg-2--lt) !important;
+		background-color: var(--clr-bg-2--lt);
 	}
 
 	/* .tbl.-fold .tbl__body .tbl__row:last-child > *:first-child {
