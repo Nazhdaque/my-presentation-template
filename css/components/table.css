@@ -1,101 +1,95 @@
 .tbl {
 	--clr-0-light: hsl(var(--clr-0a));
-	--clr-0-dark: hsl(var(--clr-0b));
 	--clr-1-light: hsl(var(--clr-1a), 0.1);
 	--clr-1-dark: hsl(var(--clr-1a), 1);
 	--clr-2-light: hsl(var(--clr-1b), 0.1);
 	--clr-accent: hsl(var(--clr-1b), 1);
-	--table-shadow: 0rem 2rem 2rem -1rem hsl(0, 0%, 0%, 0.25);
+	--tbl-shadow: 0rem 1.75rem 1.75rem -1rem hsl(var(--clr-1a), 0.25);
 	--line: 2px;
 	--offset: calc(var(--line) * -1);
 	--indent: 0.5rem;
-	--inner-radius: 0px;
+	/* --inner-radius: 8px;
 	--outer-radius: calc(var(--inner-radius) + var(--line));
 
+	border-bottom-left-radius: var(--outer-radius);
+	border-bottom-right-radius: var(--outer-radius); */
+	position: relative;
 	border-spacing: var(--line);
 	font-size: var(--fs-rg);
 	text-align: left;
-	background-color: var(--clr-0-light);
-	border-bottom-left-radius: var(--outer-radius);
-	border-bottom-right-radius: var(--outer-radius);
-	box-shadow: var(--table-shadow);
-	z-index: 1;
-	position: relative;
 	overflow: hidden;
+	z-index: 1;
 	width: 100%;
 	table-layout: fixed;
+	box-shadow: var(--tbl-shadow);
+	background-color: var(--clr-0-light);
 }
 
-.tbl__caption {
-	padding: calc(var(--indent) * 2);
+/* --- colors */
+.tbl__caption,
+.tbl__row.-odd .tbl__cell,
+.-row-heading.-even {
 	background-color: var(--clr-1-light);
+	color: var(--clr-1-dark);
+}
+.-col-heading.-even,
+.-row-heading.-odd {
+	background-color: var(--clr-1-dark);
+	color: var(--clr-0-light);
+}
+.tbl__caption::before,
+.-col-heading.-odd,
+.-col-heading.-even > *::selection,
+.tbl__row.-odd .tbl__heading > *::selection {
+	background-color: var(--clr-0-light);
+	color: var(--clr-1-dark);
+}
+/* colors --- */
+
+.tbl__caption {
 	position: relative;
-	border-top-left-radius: var(--inner-radius);
-	border-top-right-radius: var(--inner-radius);
+	padding: calc(var(--indent) * 2);
 }
 .tbl__caption::before {
 	position: absolute;
 	content: "";
 	inset: 0;
-	background-color: var(--clr-0-light);
 	z-index: -1;
-	border-top-left-radius: var(--inner-radius);
-	border-top-right-radius: var(--inner-radius);
-}
-
-.tbl__caption,
-.tbl__heading,
-.tbl__cell::before {
-	font-weight: var(--fw-sb);
-	text-transform: uppercase;
 }
 
 .tbl__heading {
+	font-weight: var(--fw-rg);
+	text-transform: capitalize;
 	text-align: center;
 	position: relative;
-}
-.-col-heading.-even {
-	background-color: var(--clr-1-dark);
-	color: var(--clr-0-light);
-}
-.-row-heading.-even {
-	background-color: var(--clr-1-light);
-	color: var(--clr-txt-1--dk);
-}
-.-row-heading.-odd {
-	background-color: var(--clr-1-dark);
-	color: var(--clr-0-light);
 }
 
 .tbl__heading,
 .tbl__cell {
 	padding: var(--indent) calc(var(--indent) * 2);
-	background-color: var(--clr-0-light);
 	background-clip: padding-box;
 }
 .tbl__row,
 .tbl__cell {
-	height: 100%;
+	height: 100%; /* this can be useful if there is a complex layout inside the cell */
 	text-align: right;
 }
-.tbl__row.-odd .tbl__cell {
-	background-color: var(--clr-1-light);
-}
 
-.tbl__row:last-child > *:first-child {
+/* --- corners radius */
+/* .tbl__caption,
+.tbl__caption::before {
+	border-top-left-radius: var(--inner-radius);
+	border-top-right-radius: var(--inner-radius);
+}
+.tbl__row:last-child .tbl__cell:first-child {
 	border-bottom-left-radius: var(--inner-radius);
 }
-.tbl__row:last-child > *:last-child {
+.tbl__row:last-child .tbl__cell:last-child {
 	border-bottom-right-radius: var(--inner-radius);
-}
+} */
+/* corners radius --- */
 
-.-col-heading.-even > *::selection,
-.tbl__row.-odd .tbl__heading > *::selection {
-	background-color: var(--clr-0-light);
-	color: var(--clr-0-dark);
-}
-
-/* |||||||||| |||||||||| |||||||||| |||||||||| folding table */
+/* highlighting of cells and headers of a folding table */
 .tbl.-fold .clr-accent,
 .tbl.-fold .tbl__heading:not(.-col-heading:first-child):hover {
 	background-color: var(--clr-accent) !important;
@@ -158,41 +152,35 @@
 	overscroll-behavior: contain;
 }
 
-.tbl.-scroll .-col-heading {
-	position: sticky;
-	top: 0;
-	z-index: 1;
-}
-.tbl.-scroll .-col-heading:first-child {
-	position: sticky;
-	left: 0;
-	z-index: 2;
-}
+.tbl.-scroll .-col-heading,
 .tbl.-scroll .-row-heading {
 	position: sticky;
+}
+.tbl.-scroll .-col-heading {
+	top: 0;
+}
+.tbl.-scroll .-col-heading:first-child {
 	left: 0;
 	z-index: 1;
+}
+.tbl.-scroll .-row-heading {
+	left: 0;
 }
 
 .tbl.-scroll .tbl__cell:hover {
 	outline: var(--line) solid var(--clr-accent);
 }
 
-/* specific styles and extra layer due to color transparency */
-.tbl.-scroll .-row-heading {
+/* specific styles and extra layer due to color transparency / solid color is not used to control colors centrally */
+.tbl.-scroll .-row-heading.-even {
 	background-color: var(--clr-0-light);
 }
-.tbl.-scroll .-row-heading::after {
+.tbl.-scroll .-row-heading.-even::after {
+	background-color: var(--clr-1-light);
 	position: absolute;
 	content: "";
 	inset: 0;
 	z-index: -1;
-}
-.tbl.-scroll .-row-heading.-even::after {
-	background-color: var(--clr-1-light);
-}
-.tbl.-scroll .-row-heading.-odd::after {
-	background-color: var(--clr-1-dark);
 }
 
 /* media only for folding table */
@@ -206,17 +194,15 @@
 	}
 
 	.tbl.-fold .tbl__body .tbl__heading {
-		display: grid;
-		place-items: center;
+		display: flex;
 		background-color: var(--clr-1-dark);
 		color: var(--clr-0-light);
 	}
 
 	.tbl.-fold .tbl__cell {
-		display: grid;
-		align-items: center;
+		display: flex;
+		justify-content: space-between;
 		gap: 1rem;
-		grid-template-columns: max-content 1fr;
 		position: static;
 		margin-top: var(--line);
 		background-color: var(--clr-1-light);
