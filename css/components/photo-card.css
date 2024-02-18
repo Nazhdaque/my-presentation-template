@@ -1,0 +1,32 @@
+.photo-card {
+	--p: 1.75rem;
+	--c: calc(var(--p) * 1.6);
+	--d: calc(var(--p) / 3);
+
+	margin: calc(var(--p) * -0.4); /* my tweak */
+
+	padding: var(--p);
+	background: radial-gradient(farthest-side at 0 0, #000, #0000) 0 0 / var(--c)
+			var(--c),
+		radial-gradient(farthest-side at 100% 100%, #000, #0000) 100% 100% /
+			var(--c) var(--c),
+		linear-gradient(#fff 0 0) 50% 50% / calc(100% - var(--p))
+			calc(100% - var(--p)),
+		linear-gradient(#0000, #000 25% 75%, #0000) 50% 50% / calc(100% - var(--p))
+			calc(100% - var(--d)),
+		linear-gradient(90deg, #0000, #000 25% 75%, #0000) 50% 50% /
+			calc(100% - var(--d)) calc(100% - var(--p)),
+		radial-gradient(farthest-side at 0 100%, #00000018, #0000)
+			calc(100% - var(--d) * 0.5) calc(var(--d) * 0.5) / var(--d) var(--d),
+		radial-gradient(farthest-side at 100% 0, #00000018, #0000)
+			calc(var(--d) * 0.5) calc(100% - var(--d) * 0.5) / var(--d) var(--d);
+	background-repeat: no-repeat;
+	clip-path: polygon(
+		0 var(--c),
+		var(--c) 0,
+		100% 0,
+		100% calc(100% - var(--c)),
+		calc(100% - var(--c)) 100%,
+		0 100%
+	);
+}

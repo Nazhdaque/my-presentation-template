@@ -1,10 +1,10 @@
 export class FillTable {
-	constructor(tableName, data) {
+	constructor(tableName, csv) {
 		this.tableName = tableName;
 		this.thead = document.querySelector(`${this.tableName} .tbl__head`);
 		this.tbody = document.querySelector(`${this.tableName} .tbl__body`);
-		this.tableData = data;
-		this.colHeads = data.shift(0);
+		this.csv = csv;
+		this.colHeads = csv.shift(0);
 		this.setClass = i => (i % 2 ? "-even" : "-odd");
 	}
 
@@ -25,7 +25,7 @@ export class FillTable {
 	fillTbody = () => {
 		let rows;
 
-		this.tableData.forEach((item, i) => {
+		this.csv.forEach((item, i) => {
 			let cells = `
 				<th class="tbl__heading -row-heading ${this.setClass(i)}" scope="row">
 					<span class="ellipsis">${item[0]}</span>
@@ -35,7 +35,7 @@ export class FillTable {
 				(item, i) =>
 					i > 0 &&
 					(cells += `
-						<td class="tbl__cell" data-cell="${this.colHeads[i]}">
+						<td class="tbl__cell" csv-cell="${this.colHeads[i]}">
 							<span class="ellipsis">${item}</span>
 						</td>`)
 			);

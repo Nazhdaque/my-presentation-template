@@ -27,14 +27,14 @@
 .__slide-charts .slide-body {
 	--col: 3;
 	--grow: 0;
-	--gap-x: 2rem;
+	--gap-x: 3rem;
 	--gap-y: var(--gap-x);
 
 	margin-block: var(--gap-x);
 }
 
 .__slide-charts .slide-body > * {
-	background-color: hsl(var(--clr-0a));
+	/* background-color: hsl(var(--clr-0a)); */
 	padding: 1rem;
 	aspect-ratio: 2 / 1.5;
 }

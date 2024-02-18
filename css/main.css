@@ -28,6 +28,7 @@
 @import url(./components/scroll-down.css) layer(components);
 @import url(./components/tag.css) layer(components);
 @import url(./components/place-on-circle.css) layer(components);
+@import url(./components/photo-card.css) layer(components);
 
 @import url(./parts/header.css) layer(parts);
 @import url(./parts/slides.css) layer(parts);

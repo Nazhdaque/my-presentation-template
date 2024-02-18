@@ -156,10 +156,10 @@
 .demo > * {
 	--clr-shift: 0;
 	--hue: calc(var(--clr-shift) + var(--deg));
-	--thickness: 0.1rem;
+	--thickness: 0.125rem;
 	--density: 2;
 	--transparency: 0.25;
-	--border: hsl(var(--hue), 100%, 50%) 0.1rem dotted;
+	--border: hsl(var(--hue), 100%, 50%) var(--thickness) dotted;
 
 	position: relative;
 }

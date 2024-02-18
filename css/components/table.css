@@ -211,7 +211,7 @@
 		background-color: var(--clr-0-light);
 	}
 	.tbl.-fold .tbl__cell::before {
-		content: attr(data-cell) ": ";
+		content: attr(csv-cell) ": ";
 	}
 	.tbl.-fold .tbl__cell:hover {
 		background-color: var(--clr-2-light);
